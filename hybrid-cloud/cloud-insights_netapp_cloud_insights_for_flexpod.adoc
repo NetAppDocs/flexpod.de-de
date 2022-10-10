@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_netapp_cloud_insights_for_flexpod.html 
+keywords: cloud, insights, flexpod, customer, value, technical, report, aff, storage, system 
+summary: Die in diesem technischen Bericht detaillierte Lösung ist die Konfiguration des NetApp Cloud Insights Service zur Überwachung des NetApp AFF A800 Storage-Systems mit NetApp ONTAP, das als Teil einer FlexPod Datacenter-Lösung implementiert wird. 
+---
+= TR-4868: NetApp Cloud Insights für FlexPod
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Alan Cowles, NetApp
+
+In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
+
+Die in diesem technischen Bericht detaillierte Lösung ist die Konfiguration des NetApp Cloud Insights Service zur Überwachung des NetApp AFF A800 Storage-Systems mit NetApp ONTAP, das als Teil einer FlexPod Datacenter-Lösung implementiert wird.
+
+
+
+== Mehrwert für den Kunden
+
+Die hier vorgestellte Lösung bietet Kunden, die an einer umfassenden Monitoring-Lösung für ihre Hybrid Cloud-Umgebungen interessiert sind und in der ONTAP als primäres Storage-System implementiert wird. Dies umfasst FlexPod Umgebungen, die AFF und FAS Storage-Systeme von NetApp nutzen.

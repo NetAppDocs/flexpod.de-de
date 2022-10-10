@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_vmware_vcenter_server_6.7u2_installation_procedure.html 
+keywords: vmware, vcenter, installation, procedure, express, c, series, c190, deployment 
+summary: Dieser Abschnitt enthält ausführliche Verfahren zur Installation von VMware vCenter Server 6.7 in einer FlexPod Express-Konfiguration. 
+---
+= Installationsverfahren für VMware vCenter Server 6.7U2
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+Dieser Abschnitt enthält ausführliche Verfahren zur Installation von VMware vCenter Server 6.7 in einer FlexPod Express-Konfiguration.
+
+
+NOTE: FlexPod Express verwendet die VMware vCenter Server Appliance (VCSA).
+
+
+
+== Laden Sie die VMware vCenter Server Appliance herunter
+
+So laden Sie die VMware vCenter Server Appliance (VCSA) herunter:
+
+. Laden Sie die VCSA herunter. Öffnen Sie den Download-Link, indem Sie bei der Verwaltung des ESXi-Hosts auf das Symbol vCenter Server abrufen klicken.
+. Laden Sie die VCSA von der VMware-Website herunter.
+. Obwohl die installierbare Microsoft Windows vCenter Server unterstützt wird, empfiehlt VMware VCSA für neue Implementierungen.
+. Mounten Sie das ISO-Image.
+. Navigieren Sie zum verzeichnis vcsa- ui-Installer > win32. Doppelklicken `installer.exe`.
+. Klicken Sie Auf Installieren.
+. Klicken Sie auf der Seite Einführung auf Weiter.
++
+image:express-c-series-c190-deploy_image34.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie als Bereitstellungstyp den Embedded Platform Services Controller aus.
++
+image:express-c-series-c190-deploy_image35.png["Fehler: Fehlendes Grafikbild"]
+
++
+
+NOTE: Falls erforderlich wird auch die Controller-Implementierung für externe Plattformen im Rahmen der FlexPod Express Lösung unterstützt.
+
+. Geben Sie im Appliance Deployment Target die IP-Adresse eines bereitgestelltem ESXi-Hosts, den Root-Benutzernamen und das Root-Passwort ein.
++
+image:express-c-series-c190-deploy_image36.png["Fehler: Fehlendes Grafikbild"]
+
+. Legen Sie die Appliance-VM fest, indem Sie VCSA als VM-Name und das Root-Passwort eingeben, das Sie für VCSA verwenden möchten.
++
+image:express-c-series-c190-deploy_image37.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie die Implementierungsgröße aus, die am besten zu Ihrer Umgebung passt. Klicken Sie Auf Weiter.
++
+image:express-c-series-c190-deploy_image38.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie die aus `infra_datastore` Datenspeicher: Klicken Sie Auf Weiter.
+. Geben Sie die folgenden Informationen auf der Seite Netzwerkeinstellungen konfigurieren ein, und klicken Sie auf Weiter.
++
+.. Wählen Sie MGMT-Network für Netzwerk.
+.. Geben Sie den FQDN oder die IP ein, die für den VCSA verwendet werden sollen.
+.. Geben Sie die zu verwendenden IP-Adresse ein.
+.. Geben Sie die zu verwendenden Subnetzmaske ein.
+.. Geben Sie das Standard-Gateway ein.
+.. Geben Sie den DNS-Server ein.
+
+
+. Überprüfen Sie auf der Seite bereit zum Abschließen von Phase 1, ob die von Ihnen eingegebenen Einstellungen korrekt sind. Klicken Sie Auf Fertig Stellen.
++
+image:express-c-series-c190-deploy_image39.png["Fehler: Fehlendes Grafikbild"]
+
+. Überprüfen Sie Ihre Einstellungen in Phase 1, bevor Sie mit der Bereitstellung der Appliance beginnen.
++
+image:express-c-series-c190-deploy_image40.png["Fehler: Fehlendes Grafikbild"]
+
++
+Die VCSA wird jetzt installiert. Dieser Vorgang dauert mehrere Minuten.
+
+. Wenn Phase 1 abgeschlossen ist, wird eine Meldung angezeigt, die angibt, dass sie abgeschlossen ist. Klicken Sie auf Weiter, um die Konfiguration von Phase 2 zu beginnen.
+. Klicken Sie auf der Seite Einführung in Phase 2 auf Weiter.
++
+image:express-c-series-c190-deploy_image41.png["Fehler: Fehlendes Grafikbild"]
+
+. Eingabe `\<<var_ntp_id>>` Für die NTP-Serveradresse. Sie können mehrere NTP-IP-Adressen eingeben.
+. Wenn Sie Hochverfügbarkeit (HA) in vCenter Server verwenden möchten, stellen Sie sicher, dass der SSH-Zugriff aktiviert ist.
+. Konfigurieren Sie den SSO-Domänennamen, das Passwort und den Standortnamen. Klicken Sie Auf Weiter.
++
+image:express-c-series-c190-deploy_image42.png["Fehler: Fehlendes Grafikbild"]
+
++
+
+NOTE: Notieren Sie diese Werte für Ihre Referenz, insbesondere wenn Sie vom abweichen `vsphere.local` Domain-Name:
+
+. Treten Sie auf Wunsch dem VMware Customer Experience-Programm bei. Klicken Sie Auf Weiter.
++
+image:express-c-series-c190-deploy_image43.png["Fehler: Fehlendes Grafikbild"]
+
+. Zeigen Sie die Zusammenfassung Ihrer Einstellungen an. Klicken Sie auf Fertig stellen oder verwenden Sie die Schaltfläche Zurück, um die Einstellungen zu bearbeiten.
+. Es wird eine Meldung angezeigt, die besagt, dass Sie die Installation nach dem Start nicht unterbrechen oder beenden können. Klicken Sie auf OK, um fortzufahren.
++
+image:express-c-series-c190-deploy_image44.png["Fehler: Fehlendes Grafikbild"]
+
++
+Die Einrichtung der Appliance wird fortgesetzt. Dies dauert einige Minuten.
+
++
+Es wird eine Meldung angezeigt, die angibt, dass das Setup erfolgreich war.
+
+. Die Links, die der Installer zum Zugriff auf vCenter Server bereitstellt, sind anklickbar.
+
+
+link:express-c-series-c190-design_vmware_vcenter_server_6.7u2_and_vsphere_clustering_configuration.html["Als Nächstes: Clustering-Konfiguration für VMware vCenter Server 6.7U2 und vSphere"]

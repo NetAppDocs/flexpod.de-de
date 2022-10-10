@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: security/flexpod-fips-cybersecurity-threats-in-healthcare.html 
+keywords: ransomware, malware, extortion, data breach, malicious agents 
+summary: Bedrohungen für die Gesundheit sind multidimensional in der Natur und in der Wirkung. Regierungen weltweit haben verschiedene Bestimmungen zur Sicherung von ePHI erlassen. Die schädlichen Auswirkungen und die sich immer weiter entwickelnden Bedrohungen für das Gesundheitswesen erschweren es Organisationen im Gesundheitswesen, alle Bedrohungen zu schützen. 
+---
+= Cyber-Sicherheitsbedrohungen im Gesundheitswesen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-fips-introduction.html["Zurück: Einführung."]
+
+Jedes Problem stellt eine neue Chance dar – ein Beispiel für eine solche Chance wird von der COVID-Pandemie präsentiert. Laut A https://www.hhs.gov/sites/default/files/2020-hph-cybersecurty-retrospective-tlpwhite.pdf["Bericht"^] Durch das Department of Health and Human Services (HHS) Cybersecurity Program hat die COVID-Antwort zu einer erhöhten Anzahl von Ransomware-Angriffen geführt. In der dritten Märzwoche 2020 wurden 6,000 neue Internet-Domains registriert. Mehr als 50 % der Domänen haben Malware gehostet. Ransomware-Angriffe verliefen 2020 fast 50 % aller Datenschutzverstöße im Gesundheitswesen mit Auswirkungen auf mehr als 630 Organisationen im Gesundheitswesen und rund 29 Millionen Datensätze im Gesundheitswesen. 19 Leaker/Sites verdoppelten die Erpressung. Mit 24.5 % Sicherheitsverletzungen hat sich die Branche im Jahr 2020 die höchste Anzahl von Datenverletzungen festgestellt.
+
+Böswillige Mitarbeiter versuchten, die Sicherheit und den Datenschutz von geschützten Gesundheitsdaten (PHI) zu verletzen, indem sie die Informationen verkaufen oder sie bedrohen, sie zu zerstören oder auszusetzen. Es werden häufig gezielte und Massenübertragungsversuche unternommen, um sich unbefugten Zugriff auf ePHI zu verschaffen. Rund 75 % der exponierten Patientenakten im zweiten Halbjahr 2020 waren auf kompromittierte Geschäftspartner zurückzuführen.
+
+Die folgende Liste der Gesundheitseinrichtungen wurde von den böswilligen Agenten ins Visier gesetzt:
+
+* Krankenhaussysteme
+* Life-Science-Labore
+* Forschungslabors
+* Rehabilitationseinrichtungen
+* Kommune Krankenhäuser und Kliniken
+
+
+Die Vielfalt der Applikationen, die ein Gesundheitswesen ausmachen, ist unbestreitbar und wird zunehmend komplexer. Büros für Informationssicherheit stehen vor der Herausforderung, eine Governance für eine Vielzahl VON IT-Systemen und -Assets zu gewährleisten. Die folgende Abbildung zeigt die klinischen Möglichkeiten eines typischen Krankenhaussystems.
+
+image:flexpod-fips-image2.png["Fehler: Fehlendes Grafikbild"]
+
+Patientendaten bilden das Herzstück dieses Bildes. Der Verlust von Patientendaten und das Stigma, das mit sensiblen Erkrankungen verbunden ist, sind sehr real. Weitere sensible Themen sind das Risiko sozialer Ausgrenzung, Erpressung, Profiling, die Anfälligkeit für zielgerichtetes Marketing, Ausbeutung und die mögliche finanzielle Haftung gegenüber Kostenträgern über medizinische Informationen jenseits der Privilegien des Zahlers.
+
+Bedrohungen für die Gesundheit sind multidimensional in der Natur und in der Wirkung. Regierungen weltweit haben verschiedene Bestimmungen zur Sicherung von ePHI erlassen. Die schädlichen Auswirkungen und die sich immer weiter entwickelnden Bedrohungen für das Gesundheitswesen erschweren es Organisationen im Gesundheitswesen, alle Bedrohungen zu schützen.
+
+Im Folgenden finden Sie eine Liste der häufigsten Bedrohungen, die im Gesundheitswesen identifiziert werden:
+
+* Ransomware-Angriffe
+* Verlust oder Diebstahl von Geräten oder Daten mit vertraulichen Informationen
+* Phishing-Angriffe
+* Angriffe auf angeschlossene medizinische Geräte, die die Patientensicherheit beeinträchtigen können
+* E-Mail-Phishing-Angriffe
+* Verlust oder Diebstahl von Geräten oder Daten
+* Protokollkompromiss für Remote Desktops
+* Softwareschwachstelle
+
+
+Einrichtungen im Gesundheitswesen arbeiten in juristischen und gesetzlichen Regelungen, die so kompliziert sind wie ihre digitalen Ökosysteme. Zu dieser Umgebung gehören u. a. die folgenden:
+
+* Office des National Coordinators (for Healthcare Technology) ONC-zertifizierte Standards für Interoperabilität in der elektronischen Gesundheitsinformationstechnologie
+* Medicare Access und das Kinderversicherungsprogramm ReacreAuthorization Act (MACRA)/sinnvolle Nutzung
+* Mehrfachverpflichtungen nach der Food and Drug Administration (FDA)
+* Die Gemeinsame Akkreditierungsverfahren der Kommission
+* HIPAA-Anforderungen erfüllt
+* Anforderungen von HITECH
+* Mindeststandards für akzeptable Risiken für Kostenträger
+* Datenschutzregeln und Sicherheitsregeln
+* Anforderungen des Bundesgesetzes zur Modernisierung der Informationssicherheit, die in Bundesverträge und Forschungszuschüsse von Behörden wie den nationalen Gesundheitseinrichtungen aufgenommen werden
+* Payment Card Industry Data Security Standard (PCI-DSS)
+* Substanzmissbrauch und Mental Health Services Administration (SAMHSA) Anforderungen
+* Der Gramm-Leach-Bliley Act für die Finanzverarbeitung
+* Das Stark-Gesetz bezieht sich auf die Erbringung von Dienstleistungen an verbundene Organisationen
+* Family Educational Rights and Privacy Act (FERPA) für Institutionen, die an der Hochschulbildung teilnehmen
+* Genetic Information Nondiscrimination Act (GINA)
+* Die neue Datenschutz-Grundverordnung (DSGVO) in der Europäischen Union
+
+
+Die Standards der Sicherheitsarchitektur entwickeln sich rasant weiter, um zu verhindern, dass böswillige Akteure ein System der Gesundheitsinformationen beeinträchtigen. Einer dieser Standards ist FIPS 140-2, definiert durch das National Institute of Standards and Technology (NIST). Die FIPS-Veröffentlichung 140-2 enthält Angaben zu den USA Behördliche Anforderungen für ein kryptografisches Modul. Die Sicherheitsanforderungen decken Bereiche ab, die sich auf eine sichere Konstruktion und Implementierung eines kryptografischen Moduls beziehen und können auf EINEN TREFFER angewendet werden. Klar definierte kryptografische Grenzen sorgen für ein einfacheres Sicherheitsmanagement und bleiben mit den kryptografischen Modulen auf dem aktuellen Stand. Diese Grenzen verhindern schwache Crypto-Module, die problemlos von böswilligen Akteuren genutzt werden können. Sie können auch menschliche Fehler beim Management von Standard-kryptografischen Modulen verhindern.
+
+NIST hat zusammen mit dem Communications Security Establishment (CSE) das Cryptographic Module Validation Program (CMVP) eingerichtet, um kryptografische Module für FIPS 140-2 Validierungsstufen zu zertifizieren. Mithilfe eines FIPS 140-2-2-zertifizierten Moduls sind Bundesbehörden zum Schutz sensibler oder wertvoller Daten während der Übertragung und im Ruhezustand verpflichtet. Aufgrund des Erfolgs beim Schutz sensibler oder wertvoller Informationen haben sich viele Gesundheitssysteme für die Verschlüsselung von ePHI entschieden, indem FIPS 140-2-2-kryptografische Module verwendet werden, die über das gesetzlich geforderte Mindestsicherheitsniveau hinausgehen.
+
+Die Nutzung und Implementierung der FlexPod FIPS 140-2 Funktionen dauert nur Stunden (nicht Tage). Die FIPS-Compliance-Konformität ist für die meisten Unternehmen im Gesundheitswesen verfügbar, unabhängig von der Größe. Mit klar definierten kryptografischen Grenzen und gut dokumentierten und einfachen Implementierungsschritten legt eine FIPS 140-2-2-konforme FlexPod-Architektur solide Sicherheitsgrundlage für die Infrastruktur fest und ermöglicht einfache Verbesserungen zur weiteren Erhöhung des Schutzes von Sicherheitsbedrohungen.
+
+link:flexpod-fips-overview-of-fips-140-2.html["Weiter: Überblick über FIPS 140-2."]

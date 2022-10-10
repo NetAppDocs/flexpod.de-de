@@ -1,0 +1,180 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec__power_and_cabling_requirements.html 
+keywords: power, cabling, requirements, flexpod, express, cisco, ucs, minimum, cabling 
+summary: In diesem Abschnitt werden die Strom- und Mindestanforderungen für die Verkabelung bei einem FlexPod Express Design beschrieben. 
+---
+= Strom- und Verkabelungsanforderungen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+In diesem Abschnitt werden die Strom- und Mindestanforderungen für die Verkabelung bei einem FlexPod Express Design beschrieben.
+
+
+
+== Stromversorgung
+
+Die Energieanforderungen basieren auf US-amerikanischen Spezifikationen und übernehmen die Nutzung der Wechselstromversorgung. Andere Länder haben möglicherweise unterschiedliche Anforderungen an die Stromversorgung. Für die meisten Komponenten stehen auch Gleichstrom-Optionen (DC) zur Verfügung. Weitere Informationen über die erforderliche maximale Leistung sowie weitere detaillierte Informationen zur Stromversorgung finden Sie in den detaillierten technischen Spezifikationen für jede Hardware-Komponente.
+
+Detaillierte Informationen zur Stromversorgung von Cisco UCS finden Sie im http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/["Cisco UCS – Stromversorgungsrechner"^].
+
+In der folgenden Tabelle sind die pro Gerät erforderlichen Stromanschlüsse aufgeführt.
+
+|===
+| Cisco Nexus Switches | Stromkabel erforderlich 
+
+
+| Cisco Nexus 3048 | 2 C13/C14-Netzkabel für jeden Switch der Cisco Nexus 3000-Serie 
+
+
+| Cisco Nexus 3524 | 2 C13/C14-Netzkabel für jeden Switch der Cisco Nexus 3000-Serie 
+
+
+| Cisco Nexus 9396 | 2 C13/C14-Netzkabel für jeden Switch der Cisco Nexus 9000-Serie 
+|===
+|===
+| Cisco UCS-Gehäuse | Stromkabel erforderlich 
+
+
+| Cisco UCS 5108 | 2 CAB-US515P-C19-US/CAB-US520-C19-US für jedes Cisco UCS Gehäuse 
+|===
+|===
+| Cisco Server der UCS B-Serie | Stromkabel erforderlich 
+
+
+| CISCO UCS B200 M4 | N/A; Blade-Server wird durch Gehäuse mit Strom versorgt 
+
+
+| CISCO UCS B420 M4 | N/A; Blade-Server wird durch Gehäuse mit Strom versorgt 
+
+
+| CISCO UCS B200 M5 | N/A; Blade-Server wird durch Gehäuse mit Strom versorgt 
+
+
+| CISCO UCS B480 M5 | N/A; Blade-Server wird durch Gehäuse mit Strom versorgt 
+|===
+|===
+| Cisco UCS C-Serie Server | Stromanschlüsse erforderlich 
+
+
+| CISCO UCS C220 M4 .3+| 2 x C13/C14-Netzkabel für jeden Cisco UCS Server 
+
+
+| CISCO UCS C240 M4 
+
+
+| CISCO UCS C460 M4 CISCO UCS C220 M5 CISCO UCS C240 M5 CISCO UCS C480 M5 
+|===
+|===
+| NetApp FAS Controller | Erforderliche Energie-Ports (pro HA-Paar) 
+
+
+| FAS2554 | 2 x C13/C14 
+
+
+| FAS2552 | 2 x C13/C14 
+
+
+| FAS2520 | 2 x C13/C14 
+
+
+| FAS8020 | 2 x C13/C14 
+|===
+|===
+| E-Series Controller | Erforderliche Energie-Ports (pro HA-Paar) 
+
+
+| E2824 | 2 x C14/C20 
+|===
+|===
+| NetApp FAS Platten-Shelves | Stromanschlüsse erforderlich 
+
+
+| DS212C | 2 x C13/C14 
+
+
+| DS224C | 2 x C13/C14 
+
+
+| DS460C | 2 x C13/C14 
+
+
+| DS2246 | 2 x C13/C14 
+
+
+| DS4246 | 4 x C13/C14 
+|===
+|===
+| E-Series Platten-Shelves | Stromanschlüsse erforderlich 
+
+
+| DE460C | 2 x C14/C20 
+
+
+| DE224C | 2 x C14/C20 
+
+
+| DE212C | 2 x C14/C20 
+|===
+
+
+== Mindestanforderungen an die Kabel
+
+In diesem Abschnitt werden die Mindestanforderungen an die Kabel für ein FlexPod Express Design beschrieben. Für die meisten FlexPod Implementierungen sind zusätzliche Kabel erforderlich. Die Anzahl variiert jedoch je nach Größe und Umfang der Implementierung.
+
+In der folgenden Tabelle ist die Mindestanzahl der für jedes Gerät erforderlichen Kabel aufgeführt.
+
+|===
+| Switches der Cisco Nexus 3000 Serie | Kabel erforderlich 
+
+
+| Cisco Nexus 31108 .5+| Mindestens zwei 10-GbE-Glasfaserkabel oder Twinax-Kabel pro Switch 
+
+
+| Cisco Nexus 3172PQ 
+
+
+| Cisco Nexus 3048 
+
+
+| Cisco Nexus 3524 
+
+
+| Cisco Nexus 9396 
+
+
+| DS212C |  
+
+
+| DS2246 .4+| Die Anzahl der SAS-Kabel hängt von der spezifischen Konfiguration der Festplatten-Shelfs ab 
+
+
+| DS460C 
+
+
+| DS224C 
+
+
+| DS4246 
+
+
+| E2800  a| 
+* Mindestens ein Gigabit-Ethernet-Kabel (1GbE) für das Management pro Controller
+* Mindestens zwei 10-GbE-Kabel pro Controller (für iSCSI) oder zwei FC-Kabel erfüllen die Geschwindigkeitsanforderungen
+
+
+
+
+| DE460C | 2 x Mini-SAS-HD-Kabel pro Festplatten-Shelf 
+
+
+| DE224C | 2 x Mini-SAS-HD-Kabel pro Festplatten-Shelf 
+
+
+| DE212C | 2 x Mini-SAS-HD-Kabel pro Festplatten-Shelf 
+|===

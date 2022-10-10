@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_minimum_hardware_requirements.html 
+keywords: minimum, hardware, requirements, fas, cimc, configuration, rack, servers, ucs 
+summary: In diesem Abschnitt werden die Mindestanforderungen an die Hardware für die verschiedenen Versionen von FlexPod Express beschrieben. 
+---
+= Mindestanforderungen an die Hardware
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+In diesem Abschnitt werden die Mindestanforderungen an die Hardware für die verschiedenen Versionen von FlexPod Express beschrieben.
+
+
+
+== FlexPod Express mit NetApp FAS
+
+Zu den Hardwareanforderungen für FlexPod Express Lösungen, die NetApp FAS Controller für zugrunde liegenden Storage verwenden, gehören die in diesem Abschnitt beschriebenen Konfigurationen.
+
+
+
+=== CIMC-basierte Konfiguration (Standalone Rack Server)
+
+Die Konfiguration des Cisco Integrated Management Controller (CIMC) umfasst die folgenden Hardwarekomponenten:
+
+* Zwei 10 Gbit/s-Standard-Ethernet-Switches in einer redundanten Konfiguration (Cisco Nexus 31108 wird empfohlen, mit Unterstützung der Cisco Nexus 3000- und 9000-Modelle)
+* Standalone-Rack-Server der Cisco UCS C-Serie
+* Zwei AFF Controller der C190, AFF A250, FAS2600 oder FAS 2700 Serie in einer HA-Paar-Konfiguration, die als Cluster mit zwei Nodes implementiert wird
+
+
+
+
+=== Von Cisco UCS gemanagte Konfiguration
+
+Die Bestätigung, die durch Cisco UCS gemanagt wird, umfasst die folgenden Hardwarekomponenten:
+
+* Zwei 10 Gbit/s Standard-Ethernet-Switches in einer redundanten Konfiguration (Cisco Nexus 3524 wird empfohlen)
+* Ein Cisco UCS 5108 Wechselstrom-Blade-Server-Chassis (AC
+* Zwei Cisco UCS 6324 Fabric Interconnects
+* Cisco UCS B-Series Server (mindestens vier Cisco UCS B200 M5 Blade Server)
+* Zwei AFF C190, AFF A250, FAS2750 oder FAS2720 Controller in einer HA-Paar-Konfiguration (erfordert zwei verfügbare Unified Target Adapter 2 [UTA2]-Ports pro Controller)
+
+
+
+
+== FlexPod Express mit E-Series
+
+Zu den Hardwareanforderungen für die FlexPod Express Konfiguration mit E-Series Starter gehören:
+
+* Zwei Cisco UCS 6324 Fabric Interconnects
+* Ein Cisco UCS Mini-Chassis 5108 AC2 oder DC2 (die Cisco UCS 6324 Fabric Interconnects werden nur in den AC2- und DC2-Gehäusen unterstützt)
+* Cisco UCS B-Series Server (mindestens zwei Cisco UCS B200 M4 Blade Server)
+* Eine HA-Paar-Konfiguration eines E-Series E2824 Storage-Systems mit mindestens 12 Festplattenlaufwerken
+* Zwei 10 Gbit/s Standard-Ethernet-Switches in einer redundanten Konfiguration (vorhandene Switches im Datacenter können verwendet werden)
+
+
+Diese Hardwarekomponenten sind erforderlich, um eine Einstiegkonfiguration der Lösung zu erstellen; bei Bedarf können zusätzliche Blade Server und Festplatten hinzugefügt werden. Das E2824 Storage-System der E-Series kann durch eine höhere Plattform ersetzt werden und kann auch als All-Flash-System ausgeführt werden.

@@ -1,0 +1,92 @@
+---
+section: healthcare
+title: Gesundheitswesen
+entries:
+- title: FlexPod für die Genomik
+  type: solutions
+  entries:
+  - title: Einführung
+    url: "/healthcare/flexpod-genomics-introduction.html"
+  - title: Vorteile der Implementierung genomischer Workloads auf FlexPod
+    url: "/healthcare/flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html"
+  - title: Hardware- und Softwarekomponenten der Lösungsinfrastruktur
+    url: "/healthcare/flexpod-genomics-solution-infrastructure-hardware-and-software-components.html"
+  - title: Genomik - GATK Einrichtung und Ausführung
+    url: "/healthcare/flexpod-genomics-genomics---gatk-setup-and-execution.html"
+  - title: Ausgabe zur Ausführung des GATK unter Verwendung der JAR-Datei
+    url: "/healthcare/flexpod-genomics-appendix-a.html"
+  - title: Ausgabe zur Ausführung des GATK mit dem Skript ./gatk
+    url: "/healthcare/flexpod-genomics-appendix-b.html"
+  - title: Ausgabe zur Ausführung von GATK mit Cromwell Engine
+    url: "/healthcare/flexpod-genomics-appendix-c.html"
+  - title: GPU-Einrichtung
+    url: "/healthcare/flexpod-genomics-appendix-d-gpu-setup.html"
+  - title: Schlussfolgerung
+    url: "/healthcare/flexpod-genomics-conclusion.html"
+- title: FlexPod for MEDITECH Directional Sizing Guide
+  type: solutions
+  entries:
+  - title: Überblick
+    url: "/healthcare/ehr-meditech-sizing_introduction.html"
+  - title: MEDITECH Workload – Übersicht
+    url: "/healthcare/ehr-meditech-sizing_meditech_workload_overview.html"
+  - title: Technische Spezifikationen für kleine, mittlere und große Architekturen
+    url: "/healthcare/ehr-meditech-sizing_technical_specifications_for_small,_medium_and_large_architectures.html"
+  - title: Weitere Informationen
+    url: "/healthcare/ehr-meditech-sizing_additional_information.html"
+  - title: Danksagungen
+    url: "/healthcare/ehr-meditech-sizing_acknowledgments.html"
+- title: Bereitstellungsleitfaden für das FlexPod-Rechenzentrum für MEDITECH
+  type: solutions
+  entries:
+  - title: Überblick
+    url: "/healthcare/ehr-meditech-deploy_overview.html"
+  - title: Konzipieren
+    url: "/healthcare/ehr-meditech-deploy_design.html"
+  - title: Implementierung und Konfiguration
+    entries:
+    - title: Überblick
+      url: "/healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html"
+    - title: Basiskonfiguration
+      url: "/healthcare/ehr-meditech-deploy_base_infrastructure_configuration.html"
+    - title: Cisco UCS Blade-Server- und Switch-Konfiguration
+      url: "/healthcare/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html"
+    - title: Best Practices für die ESXi Konfiguration
+      url: "/healthcare/ehr-meditech-deploy_esxi_configuration_best_practices.html"
+    - title: NetApp Konfiguration
+      url: "/healthcare/ehr-meditech-deploy_netapp_configuration.html"
+    - title: Konfiguration von Aggregaten
+      url: "/healthcare/ehr-meditech-deploy_aggregate_configuration.html"
+    - title: Konfiguration von Storage Virtual Machines
+      url: "/healthcare/ehr-meditech-deploy_storage_virtual_machine_configuration.html"
+    - title: Konfiguration von Volumes
+      url: "/healthcare/ehr-meditech-deploy_volume_configuration.html"
+    - title: LUN-Konfiguration
+      url: "/healthcare/ehr-meditech-deploy_lun_configuration.html"
+    - title: Konfiguration der Initiatorgruppe
+      url: "/healthcare/ehr-meditech-deploy_initiator_group_configuration.html"
+    - title: LUN-Zuordnungen
+      url: "/healthcare/ehr-meditech-deploy_lun_mappings.html"
+  - title: MEDITECH Module und Komponenten
+    url: "/healthcare/ehr-meditech-deploy_meditech_modules_and_components.html"
+  - title: Danksagungen
+    url: "/healthcare/ehr-meditech-deploy_acknowledgments.html"
+  - title: Wo Sie weitere Informationen finden
+    url: "/healthcare/ehr-meditech-deploy_where_to_find_additional_information.html"
+- title: FlexPod für die medizinische Bildverarbeitung
+  type: solutions
+  entries:
+  - title: Überblick
+    url: "/healthcare/medical-imaging_introduction.html"
+  - title: Der Netapp Architektur Sind
+    url: "/healthcare/medical-imaging_architecture.html"
+  - title: Hardware- und Softwarekomponenten der Lösungsinfrastruktur
+    url: "/healthcare/medical-imaging_solution_infrastructure_hardware_and_software_components.html"
+  - title: Dimensionierung der Lösung
+    url: "/healthcare/medical-imaging_solution_sizing.html"
+  - title: Best Practices in sich vereint
+    url: "/healthcare/medical-imaging_best_practices.html"
+  - title: Schlussfolgerung
+    url: "/healthcare/medical-imaging_conclusion.html"
+  - title: Weitere Informationen
+    url: "/healthcare/medical-imaging_additional_information.html"

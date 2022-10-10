@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: security/security-ransomware_ransomware_protection_measures.html 
+keywords: ransomware, protection, measures, storage, snapshot, snaprestore, snaplock, snapcenter, cisco, nexus, ucs 
+summary: In diesem Abschnitt werden die wichtigsten Funktionen der NetApp ONTAP Datenmanagement-Software sowie die Tools für Cisco UCS und Cisco Nexus erläutert, mit denen Sie gegen Ransomware-Angriffe sichern und wiederherstellen können. 
+---
+= Schutzmaßnahmen gegen Ransomware
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+In diesem Abschnitt werden die wichtigsten Funktionen der NetApp ONTAP Datenmanagement-Software sowie die Tools für Cisco UCS und Cisco Nexus erläutert, mit denen Sie gegen Ransomware-Angriffe sichern und wiederherstellen können.
+
+
+
+== NetApp ONTAP
+
+Die ONTAP Software bietet viele nützliche Funktionen für die Datensicherung, von denen die meisten für Kunden mit einem ONTAP System kostenlos sind. Sie können die folgenden Funktionen zu jeder Zeit nutzen, um Daten vor Angriffen zu schützen:
+
+* *NetApp Snapshot Technologie.* Eine Snapshot-Kopie ist ein schreibgeschütztes Image eines Volumes, das den Status eines Filesystems zu einem bestimmten Zeitpunkt erfasst. Diese Kopien helfen, Daten ohne Auswirkungen auf die System-Performance zu sichern und belegen gleichzeitig nicht viel Storage. NetApp empfiehlt, einen Zeitplan für die Erstellung von Snapshot-Kopien zu erstellen. Sie sollten auch eine lange Aufbewahrungszeit halten, weil einige Malware kann ruhend gehen und dann wieder aktivieren Wochen oder Monate nach einer Infektion. Im Falle eines Angriffs kann das Volume mithilfe einer Snapshot-Kopie zurückgesetzt werden, die vor der Infektion erstellt wurde.
+* *NetApp SnapRestore Technologie.* SnapRestore Daten-Recovery-Software ist extrem nützlich, um Daten zu beschädigen oder nur die Datei Inhalte zurücksetzen. SnapRestore setzt die Attribute eines Volume nicht zurück. Dies ist wesentlich schneller als ein Administrator, indem er Dateien aus der Snapshot Kopie in das aktive Filesystem kopiert. Die Geschwindigkeit, mit der Daten wiederhergestellt werden können, ist hilfreich, wenn viele Dateien so schnell wie möglich wiederhergestellt werden müssen. Wird ein Angriff verursacht, hilft dieser äußerst effiziente Recovery-Prozess der schnellen Wiederherstellung des Geschäftsbetriebs.
+* *NetApp SnapCenter Technologie.* die SnapCenter Software nutzt Storage-basierte Backup- und Replizierungsfunktionen von NetApp, um applikationskonsistente Datensicherung zu ermöglichen. Diese Software lässt sich in Enterprise-Applikationen integrieren und bietet applikationsspezifische und datenbankspezifische Workflows, um die Anforderungen von Applikations-, Datenbank- und Administratoren virtueller Infrastrukturen zu erfüllen. SnapCenter bietet eine unkomplizierte Enterprise-Plattform zur sicheren Koordinierung und Verwaltung der Datensicherung für alle Applikationen, Datenbanken und Filesysteme. Die Fähigkeit zur applikationskonsistenten Datensicherung ist bei der Datenwiederherstellung wichtig, da Applikationen schneller in einem konsistenten Status wiederhergestellt werden können.
+* *NetApp SnapLock Technologie.* SnapLock stellt ein speziellen Volume zur Verfügung, in dem Dateien gespeichert und in einen nicht löschbaren, nicht überschreibbaren Zustand versetzt werden können. Die Produktionsdaten des Benutzers, die sich in einem FlexVol Volume befinden, können durch NetApp SnapMirror bzw. SnapVault Technologie gespiegelt oder in ein SnapLock Volume archiviert werden. Die Dateien im SnapLock Volume, das Volume selbst und das Hosting-Aggregat können bis zum Ende der Aufbewahrungsdauer nicht gelöscht werden.
+* *NetApp FPolicy Technologie.* Verwenden Sie FPolicy Software, um Angriffe zu verhindern, indem Operationen auf Dateien mit bestimmten Erweiterungen dierlauben. Ein FPolicy-Ereignis kann für bestimmte Dateivorgänge ausgelöst werden. Das Ereignis ist mit einer Richtlinie verknüpft, die die Engine aufruft, die es verwenden muss. Sie können eine Richtlinie mit einer Reihe von Dateierweiterungen konfigurieren, die möglicherweise Ransomware enthalten könnten. Wenn eine Datei mit einer nicht zulässigen Erweiterung versucht, einen nicht autorisierten Vorgang auszuführen, verhindert FPolicy die Ausführung dieses Vorgangs.
+
+
+
+
+== Netzwerk: Cisco Nexus
+
+Die Cisco NX OS-Software unterstützt die NetFlow-Funktion, die eine verbesserte Erkennung von Netzwerkanomalien und -Sicherheit ermöglicht. NetFlow erfasst die Metadaten jedes Gesprächs im Netzwerk, die an der Kommunikation beteiligten Parteien, das verwendete Protokoll und die Dauer der Transaktion. Nachdem die Informationen aggregiert und analysiert wurden, können sie einen Einblick in das normale Verhalten geben.
+
+Die gesammelten Daten ermöglichen außerdem die Identifizierung fragwürdiger Aktivitätsmuster, wie etwa die Verbreitung von Malware im Netzwerk, die ansonsten unbemerkt bleiben kann.
+
+NetFlow verwendet Flows, um Statistiken für die Netzwerküberwachung bereitzustellen. Ein Flow ist ein unidirektionaler Strom von Paketen, der auf einer Quellschnittstelle (oder VLAN) ankommt und die gleichen Werte für die Schlüssel hat. Ein Schlüssel ist ein identifizierter Wert für ein Feld innerhalb des Pakets. Sie erstellen einen Flow mithilfe eines Flow-Datensatzes, um die eindeutigen Tasten für Ihren Flow zu definieren. Sie können die Daten, die NetFlow für Ihre Ströme sammelt, mit Hilfe eines Flow-Exporterers in einen Remote NetFlow Collector, wie z. B. Cisco Stealthwatch, exportieren. Stealthwatch verwendet diese Informationen für die kontinuierliche Überwachung des Netzwerks und bietet Bedrohungserkennung in Echtzeit sowie eine Forensik zum Vorfallsreaktion, falls ein Ransomware-Ausbruch auftritt.
+
+
+
+== Computing: Cisco UCS
+
+Cisco UCS ist der Computing-Endpunkt in einer FlexPod Architektur. Sie können mehrere Cisco Produkte verwenden, um diese Stack-Ebene auf Betriebssystemebene zu sichern.
+
+Sie können die folgenden wichtigen Produkte auf der Computing- oder Anwendungsebene implementieren:
+
+* *Cisco Advanced Malware Protection (AMP) for Endpoints.* Diese Lösung wird auf Microsoft Windows und Linux Betriebssystemen unterstützt und umfasst Funktionen für Prävention, Erkennung und Reaktion. Diese Sicherheitssoftware verhindert Verstöße, blockiert Malware am Einstiegspunkt und überwacht und analysiert kontinuierlich die Datei- und Prozessaktivitäten, um Bedrohungen schnell zu erkennen, einzudämmen und zu beseitigen, die den Schutz vor der Front-Line-Lösung ausweichen können.
++
+Die Komponente „bösartiger Aktivitätsschutz“ (MAP) von AMP überwacht kontinuierlich alle Endpoint-Aktivitäten und ermöglicht die Laufzeiterkennung und das Blockieren des anormalen Verhaltens eines laufenden Programms auf dem Endpunkt. Wenn beispielsweise das Endpunktverhalten auf Ransomware hinweist, werden die abgebrochene Prozesse beendet, um Endpunktverschlüsselung zu verhindern und den Angriff zu stoppen.
+
+* *Cisco Advanced Malware Protection for Email Security.* E-Mails sind das erste Fahrzeug, um Malware zu verbreiten und Cyber-Angriffe durchzuführen. Im Durchschnitt werden an einem einzigen Tag rund 100 Milliarden E-Mails ausgetauscht, die Angreifern einen ausgezeichneten Penetrationsvektor in die Systeme des Benutzers bieten. Daher ist es absolut unerlässlich, sich gegen diese Angriffslinie zu verteidigen.
++
+AMP analysiert E-Mails auf Bedrohungen wie Zero-Day-Exploits und entstickende Malware, die in bösartigen Anhängen verborgen sind. Darüber hinaus nutzt es branchenführende URL-Informationen, um schädliche Links zu bekämpfen. Anwender erhalten erweiterten Schutz vor Spear-Phishing, Ransomware und anderen anspruchsvollen Angriffen.
+
+* *Intrusion Prevention System der nächsten Generation (NGIPS).* Cisco Firepower NGIPS kann als physische Appliance im Datacenter oder als virtuelle Appliance auf VMware (NGIPSv für VMware) eingesetzt werden. Dieses hocheffiziente Abwehrsystem für Angriffe sorgt für zuverlässige Leistung und niedrige Gesamtbetriebskosten. Der Schutz vor Bedrohungen kann durch optionale Abonnementlizenzen erweitert werden, um AMP, Transparenz und Kontrolle von Anwendungen sowie URL-Filterfunktionen bereitzustellen. Virtualisierte NGIPS überprüft den Datenverkehr zwischen Virtual Machines (VMs) und erleichtert die Bereitstellung und das Management von NGIPS-Lösungen an Standorten mit begrenzten Ressourcen. Dadurch wird der Schutz sowohl für physische als auch für virtuelle Ressourcen erhöht.
+

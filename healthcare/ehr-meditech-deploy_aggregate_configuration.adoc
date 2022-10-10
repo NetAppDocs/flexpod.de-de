@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_aggregate_configuration.html 
+keywords: aggregate, configuration, raid, groups, dp, storage, expansion, snapshot, copy, 
+summary: NetApp empfiehlt NetApp RAID DP Technologie als RAID-Typ für alle Aggregate in einem NetApp FAS oder AFF System, einschließlich regulärer NetApp Flash Pool Aggregate. Die MEDITECH-Dokumentation kann die Verwendung von RAID 10 angeben, MEDITECH hat jedoch die Verwendung von RAID DP genehmigt. 
+---
+= Konfiguration von Aggregaten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== NetApp RAID DP
+
+NetApp empfiehlt NetApp RAID DP Technologie als RAID-Typ für alle Aggregate in einem NetApp FAS oder AFF System, einschließlich regulärer NetApp Flash Pool Aggregate. Die MEDITECH-Dokumentation kann die Verwendung von RAID 10 angeben, MEDITECH hat jedoch die Verwendung von RAID DP genehmigt.
+
+
+
+== Größe und Anzahl der RAID-Gruppen
+
+Die standardmäßige RAID-Gruppengröße ist 16. Diese Größe ist möglicherweise nicht optimal für die Aggregate für die MEDITECH Hosts auf Ihrer spezifischen Website. Informationen zur Anzahl der Festplatten, die NetApp empfiehlt, in einer RAID-Gruppe zu verwenden, finden Sie unter https://fieldportal.netapp.com/content/190829["NetApp TR-3838: Konfigurationsleitfaden für Storage-Subsysteme"^].
+
+Die RAID-Gruppengröße ist für die Storage-Erweiterung wichtig, da NetApp empfiehlt, Festplatten zu einem Aggregat mit einer oder mehreren Festplattengruppen hinzuzufügen, die der RAID-Gruppengröße entsprechen. Die Anzahl der RAID-Gruppen hängt von der Anzahl der Datenfestplatten und der Größe der RAID-Gruppen ab. Verwenden Sie das Sizing Tool NetApp System Performance Modeler (SPM), um die Anzahl der benötigten Datendisks zu bestimmen. Nachdem Sie die Anzahl der Datenfestplatten bestimmt haben, passen Sie die RAID-Gruppengröße an, um die Anzahl der Parity-Festplatten im empfohlenen Bereich für RAID-Gruppengröße pro Festplattentyp zu minimieren.
+
+Einzelheiten zur Verwendung des SPM-Dimensionierungstools für MEDITECH-Umgebungen finden Sie unter https://fieldportal.netapp.com/content/198446["NetApp TR-4190: NetApp Sizing Guidelines for MEDITECH Environments"^].
+
+
+
+== Überlegungen zur Storage-Erweiterung
+
+Wenn Sie Aggregate mit mehr Festplatten erweitern, fügen Sie die Festplatten in Gruppen hinzu, die der aggregierten RAID-Gruppengröße entsprechen. Der nachfolgende Ansatz sorgt für konsistente Performance im gesamten Aggregat.
+
+Beispiel: Wenn Sie einem Aggregat Storage hinzufügen möchten, das mit einer RAID-Gruppengröße von 20 erstellt wurde, empfiehlt NetApp die Anzahl der Festplatten, eine oder mehrere Gruppen mit 20 Festplatten hinzuzufügen. Also sollten Sie 20, 40, 60 usw. Festplatten hinzufügen.
+
+Nach der Erweiterung von Aggregaten können Sie die Performance verbessern, indem Sie Neuzuweisung-Aufgaben auf den betroffenen Volumes oder Aggregaten ausführen, um vorhandene Daten-Stripes auf die neuen Festplatten zu verteilen. Diese Aktion ist hilfreich, insbesondere wenn das bestehende Aggregat fast voll war.
+
+
+NOTE: Die Neuzuweisung von Zeitplänen sollte während der nicht produktiven Zeit geplant werden, da es sich um eine äußerst CPU- und festplattenbasierte Aufgabe handelt.
+
+Weitere Informationen zur Verwendung der Neuzuordnung nach einer Aggregaterweiterung finden Sie unter https://fieldportal.netapp.com/content/192896["NetApp TR-3929: Reallocate Best Practices Guide"^].
+
+
+
+== Snapshot Kopien auf Aggregatebene
+
+Setzen Sie die NetApp Snapshot Kopie-Reserve auf Aggregatebene auf null und deaktivieren Sie den standardmäßigen Snapshot Zeitplan für das Aggregat. Löschen Sie gegebenenfalls vorhandene Snapshot Kopien auf Aggregatebene.
+
+link:ehr-meditech-deploy_storage_virtual_machine_configuration.html["Weiter: Konfiguration Von Storage Virtual Machines."]

@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_architecture.html 
+keywords: architecture, solution, technology, diagram, hardware, requirements, case, details, software, cloud, insights 
+summary: In diesem Abschnitt beschäftigen wir uns mit der Architektur einer konvergenten FlexPod Datacenter Infrastruktur, einschließlich eines NetApp AFF A800 Systems, das von Cloud Insights überwacht wird. 
+---
+= Der Netapp Architektur Sind
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+In diesem Abschnitt beschäftigen wir uns mit der Architektur einer konvergenten FlexPod Datacenter Infrastruktur, einschließlich eines NetApp AFF A800 Systems, das von Cloud Insights überwacht wird.
+
+
+
+== Lösungstechnologie
+
+Eine FlexPod Datacenter Lösung umfasst die folgenden Mindestkomponenten, um eine hochverfügbare, leicht skalierbare, validierte und unterstützte konvergente Infrastrukturumgebung bereitzustellen.
+
+* Zwei NetApp ONTAP Storage-Nodes (ein HA-Paar)
+* Zwei Cisco Nexus Datacenter Netzwerk-Switches
+* Zwei Cisco MDS Fabric Switches (optional für FC-Implementierungen)
+* Zwei Cisco UCS Fabric Interconnects
+* Ein Cisco UCS Blade Chassis mit zwei Cisco UCS Blade Servern der B-Serie
+
+
+Oder
+
+* Zwei Cisco UCS C-Series Rack-Server
+
+
+Damit Cloud Insights Daten sammeln kann, muss ein Unternehmen eine Erfassungseinheit als virtuelle oder physische Maschine entweder innerhalb seiner FlexPod-Datacenter-Umgebung oder an einem Ort bereitstellen, an dem die IT-Abteilung die Komponenten kontaktieren kann, von denen sie Daten erfassen. Sie können die Software Acquisition Unit auf einem System installieren, auf dem mehrere unterstützte Windows- oder Linux-Betriebssysteme ausgeführt werden. In der folgenden Tabelle sind die Lösungskomponenten für diese Software aufgeführt.
+
+|===
+| Betriebssystem | Version 
+
+
+| Microsoft Windows | 10 
+
+
+| Microsoft Windows Server | 2012, 2012 R2, 2016, 2019 
+
+
+| Red Hat Enterprise Linux | 7.2 – 7.6 
+
+
+| CentOS | 7.2 – 7.6 
+
+
+| Oracle Enterprise Linux | 7.5 
+
+
+| Debian | 9 
+
+
+| Ubuntu | 18.04 LTS 
+|===
+
+
+== Architekturdiagramm
+
+Die folgende Abbildung zeigt die Lösungsarchitektur.
+
+image:cloud-insights_image2.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== Hardwareanforderungen
+
+In der folgenden Tabelle werden die Hardwarekomponenten aufgeführt, die für die Implementierung der Lösung erforderlich sind. Je nach den Anforderungen des Kunden können die tatsächlich in einer konkreten Implementierung dieser Lösung eingesetzten Hardwarekomponenten abweichen.
+
+|===
+| Trennt | Menge 
+
+
+| Cisco Nexus 9336C-FX2 | 2 
+
+
+| Cisco UCS 6454 Fabric Interconnect | 2 
+
+
+| Cisco UCS 5108 Blade-Chassis | 1 
+
+
+| Cisco UCS 2408 Fabric Extender | 2 
+
+
+| Cisco UCS B200 M5 Blades | 2 
+
+
+| NetApp AFF A800 | 2 
+|===
+
+
+== Softwareanforderungen
+
+In der folgenden Tabelle werden die Softwarekomponenten aufgeführt, die für die Implementierung der Lösung erforderlich sind. Je nach den Anforderungen des Kunden können die in einer konkreten Implementierung dieser Lösung verwendeten Softwarekomponenten abweichen.
+
+|===
+| Software | Version 
+
+
+| Cisco Nexus-Firmware | 9.3 (5) 
+
+
+| Cisco UCS Version | 4.1(2a) 
+
+
+| NetApp ONTAP-Version | 9.7 
+
+
+| NetApp Cloud Insights-Version | September 2020, Basic 
+
+
+| Red Hat Enterprise Linux | 7.6 
+
+
+| VMware vSphere | 6.7U3 
+|===
+
+
+== Einzelheiten zum Anwendungsfall
+
+Diese Lösung trifft auf folgende Anwendungsfälle zu:
+
+* Analyse der Umgebung mit den Daten, die dem digitalen Berater von NetApp Active IQ zur Bewertung der Risiken von Storage-Systemen bereitgestellt werden, und Empfehlungen zur Storage-Optimierung
+* Fehlerbehebung im in einem in einem FlexPod Datacenter implementierten ONTAP Storage-System durch Überprüfung der Systemstatistiken in Echtzeit
+* Generierung benutzerdefinierter Dashboards zur einfachen Überwachung spezifischer Interessenbereiche für die in einer konvergenten FlexPod Datacenter Infrastruktur implementierten ONTAP Storage-Systeme
+

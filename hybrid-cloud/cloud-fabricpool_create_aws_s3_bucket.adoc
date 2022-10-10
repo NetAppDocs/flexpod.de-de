@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_create_aws_s3_bucket.html 
+keywords: create, aws, s3, bucket, cloud, fabricpool, flexpod, tiers, create 
+summary: Buckets sind Objektspeicher-Container, in denen Daten gespeichert sind. Name und Speicherort des Buckets, in dem Daten gespeichert werden, müssen angegeben werden, bevor sie zu einem Aggregat als Cloud-Tier hinzugefügt werden können. 
+---
+= AWS S3 Bucket erstellen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Buckets sind Objektspeicher-Container, in denen Daten gespeichert sind. Name und Speicherort des Buckets, in dem Daten gespeichert werden, müssen angegeben werden, bevor sie zu einem Aggregat als Cloud-Tier hinzugefügt werden können.
+
+
+NOTE: Buckets können nicht mit OnCommand System Manager, OnCommand Unified Manager oder ONTAP erstellt werden.
+
+FabricPool unterstützt den Anhang eines Buckets pro Aggregat, wie in der folgenden Abbildung dargestellt. Ein einzelner Bucket kann mit einem einzelnen Aggregat verbunden werden, und ein einzelner Bucket kann mit mehreren Aggregaten verbunden werden. Jedoch kann ein einzelnes Aggregat nicht an mehrere Buckets angehängt werden. Obwohl ein einzelner Bucket an mehrere Aggregate in einem Cluster angeschlossen werden kann, empfiehlt NetApp nicht, einen einzelnen Bucket an Aggregate in mehreren Clustern anzuschließen.
+
+Bedenken Sie bei der Planung einer Storage-Architektur, wie sich die Bucket-to-Aggregat-Beziehung auf die Performance auswirken kann. Viele Objektspeicher-Provider legen eine maximal unterstützte Anzahl an IOPS auf Bucket- oder Container-Ebene fest. Umgebungen, die maximale Performance erfordern, sollten mehrere Buckets verwenden, um die Möglichkeit zu verringern, dass Objekt-Storage-IOPS-Einschränkungen die Performance über mehrere FabricPool Aggregate beeinträchtigen könnten. Das Anschließen eines einzelnen Buckets oder Containers an alle FabricPool-Aggregate in einem Cluster könnte für Umgebungen von Vorteil sein, in denen eine Performance-Managebarkeit gegenüber der Cloud-Tier wichtig ist.
+
+image:cloud-fabricpool_image10.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== Erstellen eines S3-Buckets
+
+. Geben Sie in der AWS Management-Konsole von der Startseite aus S3 in die Suchleiste ein.
+. Wählen Sie in der Cloud skalierbaren S3-Storage aus.
++
+image:cloud-fabricpool_image11.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie auf der S3-Startseite die Option Create Bucket aus.
+. Geben Sie einen DNS-konformen Namen ein, und wählen Sie die Region aus, die zum Erstellen des Buckets dienen soll.
++
+image:cloud-fabricpool_image12.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie auf Erstellen, um den Objektspeicher-Bucket zu erstellen.
+
+
+link:cloud-fabricpool_add_a_cloud_tier_to_ontap.html["Als Nächstes: Cloud-Tier zu ONTAP hinzufügen"]

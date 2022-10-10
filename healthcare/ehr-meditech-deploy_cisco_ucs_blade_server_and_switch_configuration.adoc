@@ -1,0 +1,198 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html 
+keywords: cisco, ucs, blade, server, switch, configuration, nexus, mds 
+summary: Dieses Dokument bietet allgemeine Hinweise zur Grundkonfiguration einer FlexPod-Umgebung für MEDITECH-Software. In diesem Abschnitt stellen wir grundlegende Schritte mit einigen Beispielen für die Vorbereitung des Cisco UCS Computing-Plattformelements der FlexPod-Konfiguration dar. 
+---
+= Cisco UCS Blade-Server- und Switch-Konfiguration
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Die Software FlexPod for MEDITECH ist auf jeder Stufe mit Fehlertoleranz ausgelegt. Es gibt keinen Single Point of Failure im System. Für eine optimale Performance empfiehlt Cisco den Einsatz von Hot-Spare Blade-Servern.
+
+Dieses Dokument bietet allgemeine Hinweise zur Grundkonfiguration einer FlexPod-Umgebung für MEDITECH-Software. In diesem Abschnitt stellen wir grundlegende Schritte mit einigen Beispielen für die Vorbereitung des Cisco UCS Computing-Plattformelements der FlexPod-Konfiguration dar. Voraussetzung hierfür ist, dass die FlexPod Konfiguration gemäß den Anweisungen in den Rack-Einheiten mit Strom versorgt und verkabelt ist https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["FlexPod Datacenter with Fibre Channel Storage using VMware vSphere 6.5 Update 1, NetApp AFF A-Series and Cisco UCS Manager 3.2"^]CVD.
+
+
+
+== Konfiguration des Cisco Nexus Switches
+
+Für die Lösung wird ein fehlertolerantes Paar Ethernet Switches der Cisco Nexus 9300-Serie eingesetzt. Sie sollten diese Schalter wie im beschrieben verkabeln link:ehr-meditech-deploy_deployment_and_configuration_overview.html#cabling-diagram["Verkabelungsdiagramm"] Abschnitt. Durch die Cisco Nexus-Konfiguration wird sichergestellt, dass Ethernet-Traffic-Ströme für die MEDITECH-Anwendung optimiert werden.
+
+. Führen Sie nach Abschluss der Ersteinrichtung und Lizenzierung die folgenden Befehle aus, um die globalen Konfigurationsparameter auf beiden Switches festzulegen:
++
+....
+spanning-tree port type network default
+spanning-tree port type edge bpduguard default
+spanning-tree port type edge bpdufilter default
+port-channel load-balance src-dst l4port
+ntp server <global-ntp-server-ip> use-vrf management
+ntp master 3
+ip route 0.0.0.0/0 <ib-mgmt-vlan-gateway>
+copy run start
+....
+. Erstellen Sie auf jedem Switch mithilfe des globalen Konfigurationsmodus die VLANs für die Lösung:
++
+....
+vlan <ib-mgmt-vlan-id>
+name IB-MGMT-VLAN
+vlan <native-vlan-id>
+name Native-VLAN
+vlan <vmotion-vlan-id>
+name vMotion-VLAN
+vlan <vm-traffic-vlan-id>
+name VM-Traffic-VLAN
+vlan <infra-nfs-vlan-id>
+name Infra-NFS-VLAN
+exit
+copy run start
+....
+. Erstellen Sie die NTP-Verteilerschnittstelle (Network Time Protocol), Port-Kanäle, Port-Channel-Parameter und Port-Beschreibungen für die Fehlerbehebung per https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["FlexPod Datacenter with Fibre Channel Storage using VMware vSphere 6.5 Update 1, NetApp AFF A-Series and Cisco UCS Manager 3.2"^]CVD.
+
+
+
+
+== Konfiguration für Cisco MDS 9132T
+
+Die FC-Switches der Cisco MDS 9100 Serie bieten redundante 32-GB-FC-Konnektivität zwischen den NetApp AFF A200 oder AFF A300 Controllern und dem Cisco UCS Computing Fabric. Sie sollten die Kabel wie im beschrieben anschließen link:ehr-meditech-deploy_deployment_and_configuration_overview.html#cabling-diagram["Verkabelungsdiagramm"] Abschnitt.
+
+. Führen Sie auf den Konsolen auf jedem MDS-Switch die folgenden Befehle aus, um die für die Lösung erforderlichen Funktionen zu aktivieren:
++
+....
+configure terminal
+feature npiv
+feature fport-channel-trunk
+....
+. Konfigurieren einzelner Ports, Port-Kanäle und Beschreibungen gemäß dem FlexPod-Abschnitt zur Cisco MDS-Switch-Konfiguration in https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["FlexPod Datacenter mit FC Cisco Validated Design"^].
+. Um die erforderlichen virtuellen SANs (VSANs) für die Lösung zu erstellen, führen Sie im globalen Konfigurationsmodus die folgenden Schritte aus:
++
+.. Führen Sie für den Fabric-A MDS Switch die folgenden Befehle aus:
++
+....
+vsan database
+vsan <vsan-a-id>
+vsan <vsan-a-id> name Fabric-A
+exit
+zone smart-zoning enable vsan <vsan-a-id>
+vsan database
+vsan <vsan-a-id> interface fc1/1
+vsan <vsan-a-id> interface fc1/2
+vsan <vsan-a-id> interface port-channel110
+vsan <vsan-a-id> interface port-channel112
+....
++
+Die Port-Channel-Nummern in den letzten beiden Zeilen des Befehls wurden erstellt, wenn die einzelnen Ports, Port-Kanäle und Beschreibungen mithilfe des Referenzdokuments bereitgestellt wurden.
+
+.. Führen Sie für den Fabric-B MDS Switch die folgenden Befehle aus:
++
+....
+vsan database
+vsan <vsan-b-id>
+vsan <vsan-b-id> name Fabric-B
+exit
+zone smart-zoning enable vsan <vsan-b-id>
+vsan database
+vsan <vsan-b-id> interface fc1/1
+vsan <vsan-b-id> interface fc1/2
+vsan <vsan-b-id> interface port-channel111
+vsan <vsan-b-id> interface port-channel113
+....
++
+Die Port-Channel-Nummern in den letzten beiden Zeilen des Befehls wurden erstellt, wenn die einzelnen Ports, Port-Kanäle und Beschreibungen mithilfe des Referenzdokuments bereitgestellt wurden.
+
+
+
+. Erstellen Sie für jeden FC-Switch Geräte-Aliasnamen, die die Identifizierung jedes Geräts für laufende Vorgänge intuitiv machen, indem Sie die Details im Referenzdokument verwenden.
+. Erstellen Sie schließlich die FC-Zonen mithilfe der in Schritt 4 für jeden MDS-Switch erstellten Geräte-Aliasnamen wie folgt:
++
+.. Führen Sie für den Fabric-A MDS Switch die folgenden Befehle aus:
++
+....
+configure terminal
+zone name VM-Host-Infra-01-A vsan <vsan-a-id>
+member device-alias VM-Host-Infra-01-A init
+member device-alias Infra-SVM-fcp_lif01a target
+member device-alias Infra-SVM-fcp_lif02a target
+exit
+zone name VM-Host-Infra-02-A vsan <vsan-a-id>
+member device-alias VM-Host-Infra-02-A init
+member device-alias Infra-SVM-fcp_lif01a target
+member device-alias Infra-SVM-fcp_lif02a target
+exit
+zoneset name Fabric-A vsan <vsan-a-id>
+member VM-Host-Infra-01-A
+member VM-Host-Infra-02-A
+exit
+zoneset activate name Fabric-A vsan <vsan-a-id>
+exit
+show zoneset active vsan <vsan-a-id>
+....
+.. Führen Sie für den Fabric-B MDS Switch die folgenden Befehle aus:
++
+....
+configure terminal
+zone name VM-Host-Infra-01-B vsan <vsan-b-id>
+member device-alias VM-Host-Infra-01-B init
+member device-alias Infra-SVM-fcp_lif01b target
+member device-alias Infra-SVM-fcp_lif02b target
+exit
+zone name VM-Host-Infra-02-B vsan <vsan-b-id>
+member device-alias VM-Host-Infra-02-B init
+member device-alias Infra-SVM-fcp_lif01b target
+member device-alias Infra-SVM-fcp_lif02b target
+exit
+zoneset name Fabric-B vsan <vsan-b-id>
+member VM-Host-Infra-01-B
+member VM-Host-Infra-02-B
+exit
+zoneset activate name Fabric-B vsan <vsan-b-id>
+exit
+show zoneset active vsan <vsan-b-id>
+....
+
+
+
+
+
+
+== Anleitung zur Cisco UCS-Konfiguration
+
+Mit Cisco UCS können Sie als MEDITECH-Kunde Ihre Fachexperten für Netzwerk-, Speicher- und Computing-Ressourcen optimal nutzen, um Richtlinien und Vorlagen zu erstellen, die auf Ihre spezifischen Anforderungen abgestimmt sind. Nach ihrer Erstellung können diese Richtlinien und Vorlagen in Serviceprofilen zusammengefasst werden, die für konsistente, wiederholbare, zuverlässige und schnelle Implementierungen von Cisco Blade- und Rack-Servern sorgen.
+
+Cisco UCS bietet drei Methoden zum Managen eines Cisco UCS-Systems, einer sogenannten Domäne:
+
+* Cisco UCS Manager HTML5-GUI
+* Cisco UCS CLI
+* Cisco UCS Central für Umgebungen mit mehreren Domänen
+
+
+Die folgende Abbildung zeigt einen Beispiel-Screenshot des SAN Node im Cisco UCS Manager.
+
+image:ehr-meditech-deploy_image6.png["Fehler: Fehlendes Grafikbild"]
+
+In größeren Implementierungen können unabhängige Cisco UCS-Domänen auf der Ebene der großen MEDITECH-funktionalen Komponenten für eine höhere Fehlertoleranz ausgelegt werden.
+
+Bei hochfehlertoleranten Designs mit zwei oder mehr Rechenzentren spielt Cisco UCS Central eine zentrale Rolle bei der Festlegung globaler Richtlinien und globaler Serviceprofile, die für eine konsistente Konsistenz zwischen den Hosts im gesamten Unternehmen sorgen.
+
+Um die Cisco UCS Computing-Plattform einzurichten, gehen Sie die folgenden Verfahren vor. Führen Sie diese Verfahren durch, nachdem die Cisco UCS B200 M5 Blade Server im Cisco UCS 5108 AC Blade-Chassis installiert wurden. Zudem müssen Sie mit den Verkabelungsanforderungen konkurrieren, wie in beschrieben link:ehr-meditech-deploy_deployment_and_configuration_overview.html#cabling-diagram["Verkabelungsdiagramm"] Abschnitt.
+
+. Aktualisieren Sie die Cisco UCS Manager Firmware auf Version 3.2(2f) oder höher.
+. Konfigurieren Sie die Berichterstellung, die Cisco „Call Home“-Funktionen und die NTP-Einstellungen für die Domäne.
+. Konfigurieren Sie die Server- und Uplink-Ports auf jedem Fabric Interconnect.
+. Bearbeiten Sie die Richtlinie zur Chassis-Erkennung.
+. Erstellen Sie die Adresspools für Out-of-Band-Management, Universal Unique Identifier (UUIDs), MAC-Adresse, Server, den weltweiten Node-Namen (WWNN) und den weltweiten Port-Namen (WWPN).
+. Erstellen Sie die Ethernet- und FC-Uplink-Port-Kanäle und VSANs.
+. Erstellen von Richtlinien für SAN-Konnektivität, Netzwerkkontrolle, Server-Pool-Qualifizierung, Energiekontrolle, Server-BIOS, Und Standardwartung.
+. VNIC- und vHBA-Vorlagen erstellen.
+. VMedia- und FC-Boot-Richtlinien erstellen
+. Erstellen von Serviceprofilvorlagen und Serviceprofilen für jedes MEDITECH-Plattformelement.
+. Ordnen Sie die Service-Profile den entsprechenden Blade-Servern zu.
+
+
+Die detaillierten Schritte zur Konfiguration der einzelnen Schlüsselelemente der Cisco UCS-Serviceprofile für FlexPod finden Sie im https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["FlexPod Datacenter with Fibre Channel Storage using VMware vSphere 6.5 Update 1, NetApp AFF A-Series and Cisco UCS Manager 3.2"^]CVD-Dokument.
+
+link:ehr-meditech-deploy_esxi_configuration_best_practices.html["Als Nächstes: Best Practices für ESXi Konfiguration."]

@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: healthcare/flexpod-genomics-introduction.html 
+keywords: tr-4911, tr4911, 4911, genomics, healthcare, life sciences, medical imaging, pathology 
+summary: Mit der konvergenten Infrastrukturplattform von FlexPod können Gesundheitseinrichtungen einen oder mehrere Genomapplikationen und andere klinische und nicht klinische Applikationen im Gesundheitswesen hosten. Dieser technische Bericht verwendet ein Open-Source-Tool für die branchenübliche Genomik mit dem Namen GATK während der Plattformvalidierung von FlexPod. 
+---
+= TR-4911: FlexPod Genomics
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+JayaKishore Esanakula, NetApp
+
+In der Medizin gibt es nur wenige Gebiete, die für das Gesundheitswesen und die Biowissenschaften wichtiger sind als Genomik. Genomik wird für Ärzte und Krankenschwestern schnell zu einem wichtigen klinischen Werkzeug. Genomik hilft uns in Kombination mit medizinischer Bildgebung und digitaler Pathologie zu verstehen, wie die Gene eines Patienten durch Behandlungsprotokolle beeinflusst werden können. Der Erfolg von Genomik im Gesundheitswesen hängt zunehmend von Dateninteroperabilität nach Maß ab. Ziel ist es, die enormen Mengen an genetischen Daten zu erkennen und klinisch relevante Zusammenhänge und Varianten zu identifizieren, die die Diagnose verbessern und die Präzisionsmedizin zur Realität machen. Genomik hilft uns dabei zu verstehen, woher Krankheiten kommen, wie sich Krankheiten entwickeln und welche Behandlungen und Strategien effektiv sein können. Die Genomik bietet offensichtlich viele Vorteile, die nicht nur Prävention, sondern auch Diagnostik und Behandlung umfassen. Gesundheitseinrichtungen haben verschiedene Herausforderungen mit sich:
+
+* Bessere Versorgungsqualität
+* Wertbasierte Versorgung
+* Datenexplosion
+* Präzisionsmedizin
+* Pandemien
+* Wearables, Fernüberwachung und Pflege
+* Cyber-Sicherheit
+
+
+Standardisierte klinische Behandlungspfade und klinische Protokolle sind eine der kritischen Komponenten der modernen Medizin. Einer der wichtigsten Aspekte der Standardisierung ist die Interoperabilität zwischen Gesundheitsanbietern: Nicht nur bei medizinischen Unterlagen, sondern auch bei Genomdaten. Die große Frage lautet: Werden Gesundheitseinrichtungen sich anstelle der Patienteneigentum an ihren persönlichen Genomdaten und den damit verbundenen medizinischen Unterlagen auf Genomdaten verzichten?
+
+Interoperable Patientendaten sind der Schlüssel zu Präzisionsmedizin, eine der ausschlaggebenden Faktoren bei der kürzlich explosionsartigen Zunahme des Datenwachstums. Das Ziel der Präzisionsmedizin ist es, die Gesundheitsvorsorge, die Prävention, die Diagnose und die Behandlungslösungen effektiver und genauer zu gestalten.
+
+Das Datenwachstum war exponentiell. Anfang Februar 2021 wurden in den USA ca. 8,000 COVID-19 Stämme pro Woche sequenziert. Die Anzahl der sequenzierten Genome war bis April 2021 auf 29,000 pro Woche erhöht. Jedes vollständig sequenzierte menschliche Genom ist etwa 125GB groß. Daher würde die gesamte Genomspeicherung im Ruhezustand mit einer Rate von 29,000 Genomen pro Woche mehr als 180 Petabyte pro Jahr betragen. Verschiedene Länder haben sich für die Genomepidemiologie engagiert, um die genomische Überwachung zu verbessern und sich auf die nächste Welle globaler Herausforderungen im Gesundheitswesen vorzubereiten.
+
+Die reduzierten Kosten für die Genomforschung führen zu nie da gewesenen Gentests und Forschungen. Die drei PS befinden sich an einem Wendepunkt: Computerleistung, Datenschutz und Personalisierung der Medizin. Bis 2025 schätzen Forscher, dass 100 Millionen bis 2 Milliarden menschliche Genome sequenziert werden. Damit Genomik effektiv und wertvoll sein kann, müssen Genomik-Funktionen einen nahtlosen Teil der Pflegungsprozesse sein. Er sollte leicht zugänglich sein und bei einem Patientenbesuch umsetzbar sein. Ebenso wichtig ist es, dass Patientendaten der elektronischen Krankenakten in die Genomik-Daten des Patienten integriert werden. Mit der Einführung hochmoderner konvergenter Infrastrukturen wie FlexPod können Unternehmen ihre Genomfunktionen in die alltäglichen Workflows von Ärzten, Pflegepersonal und Klinikmanagern integrieren. Aktuelle Informationen zur FlexPod Plattform finden Sie in dieser https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/flex-pod-datacenter-ucs-intersight.html["FlexPod Datacenter with Cisco UCS X-Series Whitepaper"^].
+
+Der wahre Nutzen der Genomforschung besteht für Ärzte darin, Präzisionsmedizin zu bieten und personalisierte Behandlungspläne zu entwickeln, die auf den genomischen Daten eines Patienten basieren. In der Vergangenheit gab es noch nie derartige Synergien zwischen Klinikpersonal und Datenanalysten, und die Genomik profitiert von den technologischen Innovationen der jüngsten Vergangenheit sowie von echten Partnerschaften zwischen Einrichtungen im Gesundheitswesen und Technologieführern der Branche.
+
+Akademische medizinische Zentren und andere Organisationen im Gesundheitswesen und Life Science sind auf dem besten Weg, um in der Genomforschung das Kompetenzzentrum (COE) aufzubauen. Laut Dr. Charlie Gersbach, Dr. Greg Crawford und Dr. Tim E Reddy von der Duke University: „Wir wissen, dass Gene nicht durch einen einfachen binären Schalter ein- oder ausgeschaltet werden, sondern dass es ein Ergebnis mehrerer genregulatorischer Schalter ist, die zusammen arbeiten. Sie haben auch festgestellt, dass „keiner dieser Teile des Genoms isoliert arbeitet. Das Genom ist ein sehr kompliziertes Netz, das Evolution gewebt hat" ( https://genome.duke.edu/news/thu-09242020-1054/multimillion-dollar-nih-grant-creates-first-duke-center-excellence-genome["ref"^]).
+
+NetApp und Cisco arbeiten bereits seit über 10 Jahren intensiv an der Implementierung inkrementeller Verbesserungen in der FlexPod Plattform. Das gesamte Kundenfeedback wird gehört, bewertet und an die Value Streams und Funktionen von FlexPod gebunden. Es ist diese kontinuierliche Schleife, Zusammenarbeit, Verbesserungen und Feier, die FlexPod als vertrauenswürdige konvergente Infrastrukturplattform auf der ganzen Welt auszeichnet. Die Lösung wurde von Grund auf vereinfacht und als die zuverlässigste, robusteste, vielseitigste und agilste Plattform für Unternehmen im Gesundheitswesen konzipiert.
+
+
+
+== Umfang
+
+Mit der konvergenten Infrastrukturplattform von FlexPod können Gesundheitseinrichtungen einen oder mehrere Genomapplikationen und andere klinische und nicht klinische Applikationen im Gesundheitswesen hosten. Dieser technische Bericht verwendet ein Open-Source-Tool für die branchenübliche Genomik mit dem Namen GATK während der Plattformvalidierung von FlexPod. Eine umfassendere Diskussion über Genomik oder GATK ist jedoch nicht im Rahmen dieses Dokuments enthalten.
+
+
+
+== Zielgruppe
+
+Dieses Dokument richtet sich an technische Leiter im Gesundheitswesen sowie an Lösungstechniker von Cisco und NetApp Partnern und Professional Services-Mitarbeiter. NetApp geht davon aus, dass der Leser gute Kenntnisse der Konzepte zur Berechnung der Storage- und Computing-Größenbemessung sowie der technischen Vertrautheit mit Bedrohungen für das Gesundheitswesen, mit der Sicherheit im Gesundheitswesen, MIT IT-Systemen im Gesundheitswesen, mit Cisco UCS und NetApp Storage-Systemen hat.
+
+
+
+== Auf FlexPod implementierte Krankenhausfunktionen
+
+Ein typisches Krankenhaus verfügt über eine Reihe an IT-Systemen. Der Großteil solcher Systeme wird bei einem Anbieter gekauft, während nur sehr wenige von dem Krankenhaussystem im Haus gebaut werden. Aus diesem Grund muss das Kliniksystem eine diverse Infrastrukturumgebung in seinen Datacentern managen. Wenn Krankenhäuser ihre Systeme in einer konvergenten Infrastrukturplattform wie FlexPod zusammenführen, können Unternehmen ihren Datacenter-Betrieb standardisieren. Mit FlexPod können Gesundheitseinrichtungen klinische und nicht klinische Systeme auf derselben Plattform implementieren und so den Datacenter-Betrieb vereinheitlichen.
+
+image:flexpod-genomics-image2.png["Fehler: Fehlendes Grafikbild"]
+
+link:flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html["Der nächste Schritt: Vorteile der Implementierung genomischer Workloads auf FlexPod."]

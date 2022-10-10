@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-aff220-deploy_flexpod_express_cabling_information.html 
+keywords: cabling, information, validation, cisco, nexus, switches 
+summary: In diesem Abschnitt werden eine Referenz zur Verkabelung und Verkabelung der Cisco Nexus Switches 3172P A und B sowie der NetApp AFF A220 Storage Controller A und B erläutert 
+---
+= Informationen zur FlexPod Express Verkabelung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Die folgende Abbildung zeigt die Verkabelung zur Referenzvalidierung.
+
+image:express-c-series-aff220-deploy_image5.png["Fehler: Fehlendes Grafikbild"]
+
+Die folgende Tabelle zeigt die Verkabelungsinformationen für den Cisco Nexus Switch 3172P A
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+| Cisco Nexus-Switch 3172P A | Eth1/1 | NetApp AFF A220 Storage-Controller A | e0c 
+
+
+|  | Eth1/2 | NetApp AFF A220 Storage-Controller B | e0c 
+
+
+|  | Eth1/3 | Cisco UCS C220 C-Series Standalone Server A | MLOM1 mit CVR-QSFP-SFP10G Adapter 
+
+
+|  | Eth1/4 | Cisco UCS C220 C-Series Standalone Server B | MLOM1 mit CVR-QSFP-SFP10G Adapter 
+
+
+|  | Eth1/25 | Cisco Nexus Switch 3172P B | Eth1/25 
+
+
+|  | Eth1/26 | Cisco Nexus Switch 3172P B | Eth1/26 
+
+
+|  | Eth1/33 | NetApp AFF A220 Storage-Controller A | E0M 
+
+
+|  | Eth1/34 | Cisco UCS C220 C-Series Standalone Server A | CIMC 
+|===
+Die folgende Tabelle zeigt die Verkabelungsinformationen für den Cisco Nexus Switch 3172P B
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+| Cisco Nexus Switch 3172P B | Eth1/1 | NetApp AFF A220 Storage-Controller A | e0d 
+
+
+|  | Eth1/2 | NetApp AFF A220 Storage-Controller B | e0d 
+
+
+|  | Eth1/3 | Cisco UCS C220 C-Series Standalone Server A | MLOM2 mit CVR-QSFP-SFP10G Adapter 
+
+
+|  | Eth1/4 | Cisco UCS C220 C-Series Standalone Server B | MLOM2 mit CVR-QSFP-SFP10G Adapter 
+
+
+|  | Eth1/25 | Cisco Nexus-Switch 3172P A | Eth1/25 
+
+
+|  | Eth1/26 | Cisco Nexus-Switch 3172P A | Eth1/26 
+
+
+|  | Eth1/33 | NetApp AFF A220 Storage-Controller B | E0M 
+
+
+|  | Eth1/34 | Cisco UCS C220 C-Series Standalone Server B | CIMC 
+|===
+In der folgenden Tabelle sind die Verkabelungsinformationen für NetApp AFF A220 Storage Controller aufgeführt
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+| NetApp AFF A220 Storage-Controller A | e0a | NetApp AFF A220 Storage-Controller B | e0a 
+
+
+|  | e0b | NetApp AFF A220 Storage-Controller B | e0b 
+
+
+|  | e0c | Cisco Nexus-Switch 3172P A | Eth1/1 
+
+
+|  | e0d | Cisco Nexus Switch 3172P B | Eth1/1 
+
+
+|  | E0M | Cisco Nexus-Switch 3172P A | Eth1/33 
+|===
+Die folgende Tabelle zeigt die Verkabelungsinformationen für NetApp AFF A220 Storage Controller B.
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+| NetApp AFF A220 Storage-Controller B | e0a | NetApp AFF A220 Storage-Controller A | e0a 
+
+
+|  | e0b | NetApp AFF A220 Storage-Controller A | e0b 
+
+
+|  | e0c | Cisco Nexus-Switch 3172P A | Eth1/2 
+
+
+|  | e0d | Cisco Nexus Switch 3172P B | Eth1/2 
+
+
+|  | E0M | Cisco Nexus Switch 3172P B | Eth1/33 
+|===

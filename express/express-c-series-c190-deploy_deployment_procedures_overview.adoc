@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_deployment_procedures_overview.html 
+keywords: configure,  express, flexpod, cisco, series, c190, deployment, overview 
+summary: Dieses Dokument enthält Details zur Konfiguration eines vollständig redundanten, hochverfügbaren FlexPod Express-Systems. Um diese Redundanz Rechnung zu tragen, werden die in jedem Schritt konfigurierten Komponenten entweder als Komponente A oder Komponente B bezeichnet 
+---
+= Überblick
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Dieses Dokument enthält Details zur Konfiguration eines vollständig redundanten, hochverfügbaren FlexPod Express-Systems. Um diese Redundanz Rechnung zu tragen, werden die in jedem Schritt konfigurierten Komponenten entweder als Komponente A oder Komponente B bezeichnet Controller A und Controller B identifizieren beispielsweise die beiden NetApp Storage Controller, die in diesem Dokument bereitgestellt werden. Switch A und Switch B identifizieren ein Paar Cisco Nexus-Switches.
+
+Zusätzlich beschreibt dieses Dokument Schritte zur Bereitstellung mehrerer Cisco UCS-Hosts, die sequenziell als Server A, Server B usw. identifiziert werden können.
+
+Um anzugeben, dass Sie in einem Schritt Informationen zu Ihrer Umgebung angeben sollten, `\<<text>>` Wird als Teil der Befehlsstruktur angezeigt. Das folgende Beispiel enthält die `vlan create` Befehl:
+
+....
+Controller01> network port vlan create –node <<var_nodeA>> -vlan-name <<var_vlan-name>>
+....
+Mit diesem Dokument können Sie die FlexPod Express Umgebung vollständig konfigurieren. Bei diesem Prozess müssen Sie in verschiedenen Schritten kundenspezifische Namenskonventionen, IP-Adressen und VLAN-Schemata (Virtual Local Area Network) einfügen. Die folgende Tabelle beschreibt die für die Implementierung erforderlichen VLANs, wie in diesem Leitfaden beschrieben. Diese Tabelle kann anhand der spezifischen Standortvariablen abgeschlossen und zur Implementierung der Konfigurationsschritte des Dokuments verwendet werden.
+
+
+NOTE: Wenn Sie separate in-Band- und Out-of-Band-Management-VLANs verwenden, müssen Sie eine Layer-3-Route zwischen ihnen erstellen. Für diese Validierung wurde ein gemeinsames Management-VLAN genutzt.
+
+|===
+| VLAN-Name | VLAN-Zweck | VLAN-ID |  
+
+
+| Management-VLAN | VLAN für Management-Schnittstellen | 3437 | VSwitch0 
+
+
+| NFS-VLAN | VLAN für NFS-Verkehr | 3438 | VSwitch0 
+
+
+| VMware vMotion VLAN | VLAN, das für die Verschiebung von Virtual Machines (VMs) von einem physischen Host auf einen anderen festgelegt ist | 3441 | VSwitch0 
+
+
+| VM-Traffic-VLAN | VLAN für den Datenverkehr von VM-Applikationen | 3442 | VSwitch0 
+
+
+| ISCSI-A-VLAN | VLAN für iSCSI-Verkehr auf Fabric A | 3439 | IScsiBootvSwitch 
+
+
+| ISCSI-B-VLAN | VLAN für iSCSI-Datenverkehr auf Fabric B | 3440 | IScsiBootvSwitch 
+
+
+| Natives VLAN | VLAN, dem nicht getaggte Frames zugewiesen sind | 2 |  
+|===
+Die VLAN-Nummern sind in der gesamten Konfiguration von FlexPod Express erforderlich. Die VLANs werden als bezeichnet `\<<var_xxxx_vlan>>`, Wo `xxxx` Dient dem VLAN (z. B. iSCSI-A).
+
+In dieser Validierung wurden zwei vSwitches erstellt.
+
+In der folgenden Tabelle sind die vSwitches der Lösung aufgeführt.
+
+|===
+| VSwitch-Name | Aktive Adapter | Ports | MTU | Lastverteilung 
+
+
+| VSwitch0 | Vmnic2, vmnic4 | Standard (120) | 9000 | Route basierend auf IP-Hash 
+
+
+| IScsiBootvSwitch | Vmnic3, vmnic5 | Standard (120) | 9000 | Route basierend auf der ursprünglichen virtuellen Port-ID. 
+|===
+
+NOTE: Die IP-Hash-Methode zum Lastausgleich erfordert die richtige Konfiguration für den zugrunde liegenden physischen Switch mithilfe von SRC-DST-IP EtherChannel mit einem statischen (Modus ein) Port-Kanal. Sollte die Konnektivität wegen einer möglichen Switch-Fehlkonfiguration zeitweise unterbrochen werden, muss während der Fehlerbehebung der Port-Channel-Einstellungen eines der beiden zugehörigen Uplink-Ports am Cisco Switch vorübergehend heruntergefahren werden, um die Kommunikation zum ESXi Management vmKernel Port wiederherzustellen.
+
+In der folgenden Tabelle werden die erstellten VMware VMs aufgeführt.
+
+|===
+| VM-Beschreibung | Host-Name 
+
+
+| VMware vCenter Server | FlexPod-VCSA 
+
+
+| Virtual Storage Console | FlexPod-VSC 
+|===

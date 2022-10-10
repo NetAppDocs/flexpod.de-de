@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_add_a_cloud_tier_to_ontap.html 
+keywords: add, cloud, tier, ontap, aggregate, storage, fabricpool, flexpod, ontap, cli, oncommand, manager 
+summary: Bevor ein Objektspeicher an ein Aggregat angehängt werden kann, muss er zu ONTAP hinzugefügt und von ihm identifiziert werden. Dieser Vorgang kann mit OnCommand System Manager oder der ONTAP CLI abgeschlossen werden. 
+---
+= Hinzufügen einer Cloud-Tier zu ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Bevor ein Objektspeicher an ein Aggregat angehängt werden kann, muss er zu ONTAP hinzugefügt und von ihm identifiziert werden. Dieser Vorgang kann mit OnCommand System Manager oder der ONTAP CLI abgeschlossen werden.
+
+FabricPool unterstützt Amazon S3, IBM Object Cloud Storage und Microsoft Azure Blob Storage-Objektspeicher als Cloud-Tiers.
+
+Sie benötigen die folgenden Informationen:
+
+* Servername (FQDN), z. B. `s3.amazonaws.com`
+* Zugriffsschlüssel-ID
+* Geheimer Schlüssel
+* Container-Name (Bucket-Name)
+
+
+
+
+== OnCommand System Manager
+
+Um eine Cloud-Ebene mit OnCommand System Manager hinzuzufügen, gehen Sie wie folgt vor:
+
+. Starten Sie den OnCommand System Manager.
+. Klicken Sie Auf Storage.
+. Klicken Sie Auf Aggregate & Disks.
+. Klicken Sie Auf Cloud Tiers.
+. Wählen Sie einen Objektspeicheranbieter aus.
+. Füllen Sie die Textfelder aus, die für den Objektspeicheranbieter erforderlich sind.
++
+Geben Sie im Feld Container-Name den Bucket- oder Containernamen des Objektspeichers ein.
+
+. Klicken Sie auf Save and Attach Aggregates.
+
+
+image:cloud-fabricpool_image13.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== CLI VON ONTAP
+
+Geben Sie die folgenden Befehle ein, um mit der ONTAP CLI eine Cloud-Tier hinzuzufügen:
+
+....
+object-store config create
+-object-store-name <name>
+-provider-type <AWS>
+-port <443/8082> (AWS)
+-server <name>
+-container-name <bucket-name>
+-access-key <string>
+-secret-password <string>
+-ssl-enabled true
+-ipspace default
+....
+link:cloud-fabricpool_attach_a_cloud_tier_to_an_ontap_aggregate.html["Als Nächstes: Cloud-Tier an ein ONTAP Aggregat anschließen."]

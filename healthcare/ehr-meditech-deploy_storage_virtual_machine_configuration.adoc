@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_storage_virtual_machine_configuration.html 
+keywords: storage, virtual, machine, configuration, svm, meditech, host, luns, language, encoding 
+summary: Dieser Abschnitt bezieht sich auf die Implementierung auf ONTAP 8.3 und höher. 
+---
+= Konfiguration von Storage Virtual Machines
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Dieser Abschnitt bezieht sich auf die Implementierung auf ONTAP 8.3 und höher.
+
+
+NOTE: Storage Virtual Machine (SVM) wird auch als Vserver in der ONTAP API und in der ONTAP CLI bezeichnet.
+
+
+
+== SVM für MEDITECH-Host-LUNs
+
+Sie sollten eine dedizierte SVM pro ONTAP-Storage-Cluster erstellen, um die Aggregate zu besitzen und zu verwalten, die die LUNs für MEDITECH-Hosts enthalten.
+
+
+
+== Festlegung der Sprachcodierung für SVM
+
+NetApp empfiehlt, die Sprachkodierung für alle SVMs festzulegen. Wenn zum Zeitpunkt des Erstellens der SVM keine Sprachkodiereinstellung angegeben ist, wird die Standardeinstellung für die Sprachkodierung verwendet. Die Standardeinstellung für die Sprachkodierung ist C.UTF-8 für ONTAP. Nachdem die Sprachcodierung festgelegt wurde, können Sie die Sprache einer SVM mit Infinite Volume später nicht mehr ändern.
+
+Die Volumes, die der SVM zugeordnet sind, übernehmen die Einstellung für die SVM-Sprachkodierung, es sei denn, Sie geben bei der Erstellung der Volumes eine andere Einstellung an. Damit bestimmte Vorgänge funktionieren, sollten Sie die Einstellung für die Sprachkodierung in allen Volumes für Ihre Site konsistent verwenden. Beispielsweise muss bei SnapMirror die Quell- und Ziel-SVM über dieselbe Einstellung für die Sprachkodierung verfügen.
+
+link:ehr-meditech-deploy_volume_configuration.html["Weiter: Volume-Konfiguration."]

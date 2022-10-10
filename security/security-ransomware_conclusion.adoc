@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: security/security-ransomware_conclusion.html 
+keywords: ransomware, attack, data, backup, recovery, business, planning 
+summary: Die Autoren empfehlen, im Falle eines Angriffs kein Lösegeld zu zahlen, da dies den Glauben des Angreifers an ihr Geschäftsmodell stärkt. Backup- und Restore-Prozesse spielen bei der Ransomware-Recovery eine wichtige Rolle. Daher müssen sie als integraler Bestandteil der Geschäftsplanung einbezogen werden. 
+---
+= Schlussfolgerung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Ransomware ist ein Produkt der organisierten Kriminalität und die Angreifer arbeiten nicht mit ethischen Werten. Sie können den Schlüssel zur Entschlüsselung auch nach Erhalt des Lösegeld nicht zur Verfügung stellen. Die Opfer verlieren nicht nur ihre Daten, sondern sie gehen auch deutlich über die mit dem Verlust von Produktionsdaten verbundenen Konsequenzen nach.
+
+Laut A https://www.forbes.com/sites/leemathews/2018/03/09/why-you-should-never-pay-a-ransomware-ransom/["Forbes-Artikel"^], Nur 19% der Ransomware-Opfer bekommen ihre Daten nach dem Lösegeld zurück. Daher empfehlen die Autoren, im Falle eines Angriffs kein Lösegeld zu zahlen, weil dies den Glauben des Angreifers an ihr Geschäftsmodell stärkt.
+
+Backup- und Restore-Prozesse spielen bei der Ransomware-Recovery eine wichtige Rolle. Daher müssen sie als integraler Bestandteil der Geschäftsplanung einbezogen werden. Die Implementierung dieser Vorgänge sollte so geplant werden, dass die Recovery-Funktionen bei einem Angriff keine Kompromisse eingehen.
+
+Entscheidend ist dabei, den richtigen Technologiepartner auf diesem Weg zu wählen. FlexPod stellt die meisten erforderlichen Funktionen nativ und ohne zusätzliche Kosten in einem All-Flash FAS System zur Verfügung.

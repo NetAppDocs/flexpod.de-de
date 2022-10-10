@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: security/security-ransomware_what_is_ransomware.html 
+keywords: data, loss, ransomware, financial, risk, center, spread, solution 
+summary: Ransomware ist eine Art von Malware, die auf Kryptovirologie basiert, die die Verwendung von Kryptografie ist, um schädliche Software zu erstellen. Diese Malware kann sowohl symmetrische und asymmetrische Schlüssel Verschlüsselung zu machen, um ein Opfer Daten zu sperren und ein Lösegeld zu verlangen, um den Schlüssel zur Entschlüsselung der Daten des Opfers. 
+---
+= TR-4802: FlexPod, die Lösung gegen Ransomware
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Arvind Ramakrishnan, NetApp
+
+In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
+
+Um Ransomware zu verstehen, ist es notwendig, zunächst ein paar wichtige Punkte zur Kryptografie zu verstehen. Kryptografische Methoden ermöglichen die Verschlüsselung von Daten mit einem gemeinsamen geheimen Schlüssel (symmetrische Schlüsselverschlüsselung) oder einem Schlüsselpaar (asymmetrische Verschlüsselungsschlüsselverschlüsselung). Einer dieser Schlüssel ist ein weit verbreiteter öffentlicher Schlüssel und der andere ist ein nicht offenbarter privater Schlüssel.
+
+Ransomware ist eine Art von Malware, die auf Kryptovirologie basiert, die die Verwendung von Kryptografie ist, um schädliche Software zu erstellen. Diese Malware kann sowohl symmetrische und asymmetrische Schlüssel Verschlüsselung zu machen, um ein Opfer Daten zu sperren und ein Lösegeld zu verlangen, um den Schlüssel zur Entschlüsselung der Daten des Opfers.
+
+
+
+== Wie funktioniert Ransomware?
+
+In den folgenden Schritten wird beschrieben, wie Ransomware die Daten des Opfers mit Kryptografie verschlüsselt, ohne dabei Möglichkeiten zur Entschlüsselung oder Wiederherstellung des Opfers haben zu müssen:
+
+. Der Angreifer generiert ein Schlüsselpaar wie bei der asymmetrischen Schlüsselverschlüsselung. Der erzeugte öffentliche Schlüssel wird innerhalb der Malware abgelegt und anschließend die Malware freigegeben.
+. Nachdem die Malware den Computer oder das System des Opfers eingegeben hat, erzeugt sie einen zufällig symmetrischen Schlüssel, indem sie einen Pseudorandom Number Generator (PRNG) oder einen anderen praktikablen Zufallszahlengenerator verwendet.
+. Die Malware verwendet diesen symmetrischen Schlüssel, um die Daten des Opfers zu verschlüsseln. Es verschlüsselt schließlich den symmetrischen Schlüssel, indem der Angreifer den öffentlichen Schlüssel verwendet, der in die Malware eingebettet wurde. Die Ausgabe dieses Schritts ist ein asymmetrischer Chiffretext des verschlüsselten symmetrischen Schlüssels und des symmetrischen Chiffretextes der Daten des Opfers.
+. Die Malware zerosiert (löscht) die Daten des Opfers und den symmetrischen Schlüssel, der verwendet wurde, um die Daten zu verschlüsseln, so dass kein Spielraum für die Wiederherstellung.
+. Das Opfer zeigt nun den asymmetrischen Chiffretext des symmetrischen Schlüssels und einen Lösegeld-Wert, der bezahlt werden muss, um den symmetrischen Schlüssel zu erhalten, der verwendet wurde, um die Daten zu verschlüsseln.
+. Das Opfer zahlt das Lösegeld und teilt den asymmetrischen Chiffretext mit dem Angreifer. Der Angreifer entschlüsselt den Chiffretext mit seinem privaten Schlüssel, was zu dem symmetrischen Schlüssel führt.
+. Der Angreifer teilt diesen symmetrischen Schlüssel mit dem Opfer, der verwendet werden kann, um alle Daten zu entschlüsseln und somit vom Angriff zu erholen.
+
+
+
+
+== Herausforderungen
+
+Bei einem Ransomware-Angriff stehen Einzelpersonen und Unternehmen vor folgenden Herausforderungen:
+
+* Die wichtigste Herausforderung besteht darin, dass sie die Produktivität des Unternehmens oder der Person sofort belastet. Es braucht Zeit, in den Status der Normalität zurückzukehren, da alle wichtigen Dateien wieder gewonnen werden müssen und die Systeme gesichert werden müssen.
+* Sie könnten zu einer Verletzung der Daten führen, die vertrauliche und vertrauliche Informationen enthält, die Kunden oder Kunden gehören, und zu einer Krisensituation führen, die ein Unternehmen eindeutig vermeiden möchte.
+* Es besteht eine sehr gute Möglichkeit, dass Daten in die falschen Hände geraten oder vollständig gelöscht werden. Dies führt zu einem Punkt ohne Rückkehr, der für Unternehmen und Einzelpersonen verheerend sein könnte.
+* Nach der Bezahlung des Lösegeld gibt es keine Garantie, dass der Angreifer den Schlüssel zur Wiederherstellung der Daten zur Verfügung stellt.
+* Es besteht keine Gewissheit, dass der Angreifer die Übertragung sensibler Daten absieht, obwohl er das Lösegeld bezahlt.
+* In großen Unternehmen ist die Identifizierung von Schlupflöcher, die zu einem Ransomware-Angriff geführt haben, eine mühsame Aufgabe, und es ist mit großem Aufwand auch möglich, alle Systeme zu sichern.
+
+
+
+
+== Wer ist gefährdet?
+
+Jeder kann von Ransomware angegriffen werden, auch von Einzelpersonen und großen Unternehmen. Unternehmen, die keine klar definierten Sicherheitsmaßnahmen und -Praktiken implementieren, sind noch anfälliger für solche Angriffe. Die Auswirkungen des Angriffs auf ein großes Unternehmen können mehrere Male größer sein als das, was ein einzelner ertragen könnte.
+
+Ransomware macht ca. 28 % aller Malware-Angriffe aus. Mit anderen Worten: Mehr als jeder vierte Malware-Vorfall ist ein Ransomware-Angriff. Ransomware kann sich automatisch und wahllos über das Internet verbreiten, und, wenn es einen Sicherheitsverfall gibt, kann es in die Systeme des Opfers und weiter auf andere verbundene Systeme zu verbreiten. Angreifer neigen dazu, Personen oder Organisationen anzugreifen, die sehr viel File Sharing betreiben, sehr sensible und kritische Daten haben oder einen unzureichenden Schutz gegen Angriffe bieten.
+
+Angreifer neigen dazu, sich auf die folgenden potenziellen Ziele zu konzentrieren:
+
+* Universitäten und Studentengemeinden
+* Regierungsbehörden und Behörden um
+* Krankenhäuser
+* Banken
+
+
+Dies ist keine umfassende Liste von Zielen. Sie können sich nicht vor Angriffen schützen, wenn Sie außerhalb einer dieser Kategorien fallen.
+
+
+
+== Wie kommt Ransomware in ein System oder verteilt?
+
+Ransomware kann auf verschiedene Weise in ein System eintreten oder auf andere Systeme übergreifen. In der heutigen Welt sind fast alle Systeme über das Internet, LANs, WANs usw. miteinander verbunden. Die Menge der Daten, die zwischen diesen Systemen generiert und ausgetauscht werden, steigt nur.
+
+Ransomware kann sich am häufigsten mit vielen Methoden ausbreiten und auf die Daten zugreifen – wir nutzen sie täglich.
+
+* E-Mail
+* P2P-Netzwerke
+* Dateien werden heruntergeladen
+* Soziale Netzwerke
+* Mobilgeräte
+* Verbindung zu unsicheren öffentlichen Netzwerken herstellen
+* Zugriff auf Web-URLs
+
+
+
+
+== Konsequenzen eines Datenverlusts
+
+Die Folgen oder Auswirkungen von Datenverlusten können breiter ausfallen, als Unternehmen erwarten würden. Die Auswirkungen können variieren, je nach Dauer der Ausfallzeit oder Zeitraum, in dem ein Unternehmen keinen Zugriff auf seine Daten hat. Je länger der Angriff andauere, desto größer ist der Einfluss auf die Einnahmen, Marke und den Ruf der Organisation. Zudem kann sich ein Unternehmen mit rechtlichen Fragen und einem starken Produktivitätsrückgang konfrontiert sehen.
+
+Während diese Probleme im Laufe der Zeit weiter bestehen, beginnen sie zu vergrößern und könnten am Ende eine Kultur einer Organisation ändern, je nachdem, wie sie auf den Angriff reagiert. In der heutigen Welt verbreiten sich Informationen schnell, und negative Nachrichten über eine Organisation können ihren Ruf dauerhaft schädigen. Ein Unternehmen könnte hohe Einbußen bei Datenverlusten verzeichnen, die letztendlich zur Schließung eines Unternehmens führen können.
+
+
+
+== Finanzielle Auswirkungen
+
+Laut einer aktuellen https://www.mcafee.com/enterprise/en-us/assets/executive-summaries/es-economic-impact-cybercrime.pdf["McAfee-Bericht"^]Die durch Cyberkriminalität verursachten globalen Kosten belaufen sich auf rund 600 Milliarden US-Dollar, was etwa 0.8 % des weltweiten BIP entspricht. Wenn dieser Betrag mit der weltweit wachsenden Internetwirtschaft von 4.2 Billionen Dollar verglichen wird, entspricht dies einer Wachstumssteuer von 14 %.
+
+Ransomware ist einen bedeutenden Anteil dieser finanziellen Kosten. Die durch Ransomware-Angriffe verursachten Kosten im Jahr 2018 belaufen sich auf ca. 8 Milliarden US-Dollar―einem Betrag, der 2019 auf 11.5 Milliarden US-Dollar geschätzt wird.
+
+
+
+== Welche Lösung bietet sich an?
+
+Eine Wiederherstellung nach einem Ransomware-Angriff mit minimaler Downtime ist nur durch die Implementierung eines proaktiven Disaster-Recovery-Plans möglich. Die Fähigkeit, sich von einem Angriff zu erholen, ist gut, aber einen Angriff insgesamt zu verhindern ist ideal.
+
+Obwohl es verschiedene Fronten gibt, die Sie überprüfen und beheben müssen, um einen Angriff zu verhindern, ist die Kernkomponente, mit der Sie einen Angriff verhindern oder beheben können, das Rechenzentrum.
+
+Das Datacenter-Design und die Funktionen, die es zur Sicherung von Endpunkten in Netzwerk, Computing und Storage bietet, spielen eine entscheidende Rolle beim Aufbau einer sicheren Umgebung für den täglichen Betrieb. In diesem Dokument wird erläutert, wie die Funktionen einer Hybrid-Cloud-Infrastruktur von FlexPod bei einem Angriff eine schnelle Daten-Recovery ermöglichen und außerdem Angriffe komplett verhindern können.

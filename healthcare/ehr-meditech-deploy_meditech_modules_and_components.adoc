@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_meditech_modules_and_components.html 
+keywords: meditech, modules, components, application, function, type 
+summary: Die MEDITECH-Anwendung deckt mehrere Module und Komponenten ab. 
+---
+= MEDITECH Module und Komponenten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Die MEDITECH-Anwendung deckt mehrere Module und Komponenten ab. In der folgenden Tabelle sind die Funktionen aufgeführt, die von diesen Modulen abgedeckt werden. Weitere Informationen zum Einrichten und Bereitstellen dieser Module finden Sie in der MEDITECH-Dokumentation.
+
+|===
+| Funktion | Typ 
+
+
+| Konnektivität  a| 
+* Web-Server
+* Live-Anwendungsserver (WI – Web-Integration)
+* Anwendungsserver testen (WI)
+* SAML-Authentifizierungsserver (WI)
+* SAML-Proxy-Server (WI)
+* Datenbankserver
+
+
+
+
+| Infrastruktur  a| 
+* File Server
+* Job-Client Im Hintergrund
+* Verbindungsserver
+* Transaktionsserver
+
+
+
+
+| Scannen und Archivierung  a| 
+* Image Server
+
+
+
+
+| Daten-Repository  a| 
+* SQL Server geschult sind
+
+
+
+
+| Geschäftliche und klinische Analysen  a| 
+* Live Intelligence Server (BCA)
+* Test Intelligence Server (BCA)
+* Datenbankserver (BCA)
+
+
+
+
+| Häuslichen Pflege  a| 
+* Lösung für Remote-Standorte
+* Konnektivität
+* Infrastruktur
+* Drucken
+* Feldgeräte
+* Scannen
+* Anforderungen an den gehosteten Standort
+* Firewall-Konfiguration
+
+
+
+
+| Unterstützung  a| 
+* Job-Client im Hintergrund (CALs – Client Access License)
+
+
+
+
+| Benutzergeräte  a| 
+* Tablets
+* Feste Geräte
+
+
+
+
+| Drucken  a| 
+* Live-Netzwerk-Druckserver (erforderlich; möglicherweise bereits vorhanden)
+* Netzwerk-Druckserver testen (erforderlich; möglicherweise bereits vorhanden)
+
+
+
+
+| Anforderungen Dritter  a| 
+* First Databank (FDB) MedKnowledge Framework v4.3
+
+
+|===

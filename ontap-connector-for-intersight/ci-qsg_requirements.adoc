@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_requirements.html 
+keywords: netapp, ontap, cisco, intersight, hardware, software, licensing, requirements 
+summary: Stellen Sie sicher, dass die Hardware-, Software- und Lizenzierungsanforderungen für die Integration von NetApp ONTAP Storage mit Cisco Intersight erfüllt werden. 
+---
+= Anforderungen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+Stellen Sie sicher, dass die Hardware-, Software- und Lizenzierungsanforderungen für die Integration von NetApp ONTAP Storage mit Cisco Intersight erfüllt werden.
+
+
+
+== Hardware- und Softwareanforderungen
+
+Dies sind die Mindestanforderungen an Hardware und Software, die für die Implementierung der Lösung erforderlich sind. Je nach den Anforderungen des Kunden können die in einer konkreten Implementierung dieser Lösung verwendeten Komponenten variieren.
+
+|===
+| Komponente | Anforderungsdetails 
+
+
+| NetApp ONTAP | ONTAP 9.7P1 und höher 
+
+
+| NetApp Active IQ Unified Manager | Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9.11 GA). 
+
+
+| NetApp Storage Array | Alle ONTAP ASA-, AFF- und FAS-Storage-Arrays werden für ONTAP 9.7P1 und höher unterstützt 
+
+
+| Virtualisierungshypervisor | VSphere 6.7 und höher 
+|===
+
+NOTE: Siehe https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/flexpod/cisco-imm-for-flexpod.html["Cisco Intersight Managed Mode für FlexPod"^] Für die Mindestanforderungen von Cisco UCS Compute Komponenten und der UCSM Version
+
+
+
+== Cisco Intersight Lizenzierungsanforderungen
+
+Cisco Intersight ist auf Abonnementbasis lizenziert, wobei mehrere Lizenzeditionen zur Auswahl stehen. Die Funktionen werden mit den verschiedenen Lizenztypen erweitert. Sie können eine Abonnementdauer von einem, drei oder fünf Jahren erwerben und die erforderliche Cisco UCS Server Volume-Ebene für die ausgewählte Abonnementdauer auswählen. Jeder Cisco Endpunkt enthält automatisch eine Cisco Intersight Base ohne zusätzliche Kosten, wenn Sie auf das Cisco Intersight Portal zugreifen und ein Gerät anfordern.
+
+Mit dem Cisco Bestelltool können Sie eine der folgenden übergeordneten Intersight-Lizenzen erwerben:
+
+* *Cisco Intersight Essentials.* Essentials umfasst alle Funktionen des Basispakets mit den zusätzlichen Funktionen einschließlich Cisco UCS Central und Cisco IMC Supervisor Berechtigung, richtlinienbasierte Konfiguration mit Serviceprofilen, Firmware-Verwaltung und Bewertung der Kompatibilität mit der Hardware Compatibility List (HCL).
+* *Cisco Intersight Advantage.* Advantage bietet alle Funktionen und Merkmale der Stufen Base und Essentials. Das Plug-in umfasst Storage-Widgets, Storage-Inventar, Storage-Kapazität und Storage-Auslastung sowie domänenübergreifende Inventar-Korrelation zwischen physischem Computing, physischem Storage und virtuellen Umgebungen (VMware ESXi).
+* *Cisco Intersight Premier* Neben den Funktionen, die in der Advantage Tier zur Verfügung gestellt werden, bietet Cisco Intersight Premier eine Private Cloud Infrastructure-as-a-Service (IaaS)-Orchestrierung über Cisco UCS und Systeme von Drittanbietern, einschließlich Virtual Machines (VMs) (VMware vCenter) und physischem Storage (NetApp Storage).
+
+
+Weitere Informationen zu den Funktionen, die von verschiedenen Lizenzstufen abgedeckt werden, finden Sie unter https://intersight.com/help/getting_started#intersight_licensing["Cisco Lizenzierung"].

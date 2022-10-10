@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_netapp_aff_storage_deployment_procedure_@part_2@.html 
+keywords: aff, storage, deployment, procedure, create, iscsi, igroups, ontap, san, boot 
+summary: Führen Sie zum Erstellen von Initiatorgruppen die folgenden Befehle über die SSH-Verbindung des Cluster-Management-Node aus. 
+---
+= NetApp AFF Storage-Implementierung (Teil 2)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== ONTAP-SAN-Boot-Storage einrichten
+
+
+
+=== Erstellen von iSCSI-Initiatorgruppen
+
+
+NOTE: Für diesen Schritt benötigen Sie die iSCSI-Initiator-IQNs aus der Serverkonfiguration.
+
+Führen Sie zum Erstellen von Initiatorgruppen die folgenden Befehle über die SSH-Verbindung des Cluster-Management-Node aus. Um die drei in diesem Schritt erstellten Initiatorgruppen anzuzeigen, führen Sie den aus `igroup show` Befehl.
+
+....
+igroup create –vserver Infra-SVM –igroup VM-Host-Infra-A –protocol iscsi –ostype vmware –initiator <<var_vm_host_infra_a_iSCSI-A_vNIC_IQN>>,<<var_vm_host_infra_a_iSCSI-B_vNIC_IQN>>
+igroup create –vserver Infra-SVM –igroup VM-Host-Infra-B –protocol iscsi –ostype vmware –initiator <<var_vm_host_infra_b_iSCSI-A_vNIC_IQN>>,<<var_vm_host_infra_b_iSCSI-B_vNIC_IQN>>
+....
+
+NOTE: Dieser Schritt muss abgeschlossen sein, wenn zusätzliche Cisco UCS C-Series Server hinzugefügt werden.
+
+
+
+== Zuordnen von Boot-LUNs zu Initiatorgruppen
+
+....
+To map boot LUNs to igroups, run the following commands from the cluster management SSH connection:
+lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra-A –igroup VM-Host-Infra-A –lun-id 0
+lun map –vserver Infra-SVM –volume esxi_boot –lun VM-Host-Infra-B –igroup VM-Host-Infra-B –lun-id 0
+....
+
+NOTE: Dieser Schritt muss abgeschlossen sein, wenn zusätzliche Cisco UCS C-Series Server hinzugefügt werden.
+
+link:express-c-series-c190-design_vmware_vsphere_6.7u2_deployment_procedure.html["Weiter: Implementierungsverfahren für VMware vSphere 6.7U2"]

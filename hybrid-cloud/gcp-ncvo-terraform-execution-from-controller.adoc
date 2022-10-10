@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/gcp-ncvo-terraform-execution-from-controller.html 
+keywords: prerequisites, clone github repo, terraform execution, init, plan, apply, destroy 
+summary: Wir können den Terraform-Plan unter Verwendung eines Controllers ausführen. Wenn Sie Ihren Terraform-Plan bereits mithilfe eines ICO-Workflows ausgeführt haben, können Sie diesen Abschnitt überspringen. 
+---
+= Terraform-Ausführung vom Controller
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:gcp-ncvo-dr-workflow.html["Früher: DR-Workflow."]
+
+Wir können den Terraform-Plan unter Verwendung eines Controllers ausführen. Wenn Sie Ihren Terraform-Plan bereits mithilfe eines ICO-Workflows ausgeführt haben, können Sie diesen Abschnitt überspringen.
+
+
+
+== Voraussetzungen
+
+Die Einrichtung der Lösung beginnt mit einer Management-Workstation mit Zugang zum Internet und einer funktionierenden Installation von Terraform.
+
+Ein Leitfaden zur Installation von Terraform finden Sie unter https://learn.hashicorp.com/tutorials/terraform/install-cli["Hier"^].
+
+
+
+== GitHub-Repo klonen
+
+Der erste Schritt in diesem Prozess besteht darin, den GitHub Repo in einen neuen leeren Ordner auf der Management-Workstation zu klonen. Gehen Sie wie folgt vor, um das GitHub-Repository zu klonen:
+
+. Erstellen Sie auf der Management-Workstation einen neuen Ordner für das Projekt. Erstellen Sie einen neuen Ordner mit dem Namen `/root/snapmirror-cvo` Und den GitHub Repo hinein klonen.
+. Öffnen Sie eine Befehlszeilenschnittstelle oder Konsolenschnittstelle auf der Management-Workstation, und ändern Sie Verzeichnisse in den neuen Ordner, der gerade erstellt wurde.
+. Klonen Sie die GitHub-Sammlung mit dem folgenden Befehl:
+
+
+....
+Git clone https://github.com/NetApp-Automation/FlexPod-hybrid-cloud-for-GCP-with-Intersight-and-CVO
+....
+. Ändern Sie die Verzeichnisse in den neuen Ordner mit dem Namen `snapmirror-cvo`.
+
+
+*Terraform-Ausführung*
+
+image:gcp-ncvo-image77.png["Schematische Darstellung zur Terraform-Ausführung."]
+
+* *Init.* Initialisieren Sie die (lokale) Terraform Umgebung. In der Regel nur einmal pro Sitzung ausgeführt.
+* *Plan.* Vergleichen Sie den Terraform-Zustand mit dem AS-in-Zustand in der Cloud und erstellen und zeigen Sie einen Ausführungsplan an. Die Implementierung wird hierdurch nicht geändert (schreibgeschützt).
+* *Gilt.* wendet den Plan aus der Planungsphase an. Das kann die Bereitstellung (Lese- und Schreibvorgänge) verändern.
+* * Zerstöre.* Alle Ressourcen, die von dieser spezifischen Terraform Umgebung geregelt werden.
++
+Weitere Informationen finden Sie unter https://www.terraform.io/cli/commands["Hier"^].
+
+
+
+link:gcp-ncvo-solution-validation.html["Weiter: Lösungsvalidierung."]

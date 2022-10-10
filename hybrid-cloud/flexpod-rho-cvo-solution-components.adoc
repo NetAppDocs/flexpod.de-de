@@ -1,0 +1,294 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/flexpod-rho-cvo-solution-components.html 
+keywords: astra control, trident, storage backend, cloud central, cloud manager, Active IQ Unified Manager 
+summary: In diesem Abschnitt werden die verschiedenen Komponenten dieser Lösung beschrieben. 
+---
+= Lösungskomponenten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-rho-cvo-solution-overview.html["Zurück: Lösungsübersicht."]
+
+
+
+== FlexPod
+
+FlexPod ist eine definierte Gruppe von Hardware und Software und bildet eine integrierte Grundlage für virtualisierte und nicht virtualisierte Lösungen. FlexPod umfasst NetApp ONTAP Storage, Cisco Nexus Networking, Cisco MDS Storage Networking, Cisco Unified Computing System (Cisco UCS). Das Design ist flexibel genug, dass Netzwerk, Computing und Storage in ein Datacenter Rack passen oder nach dem Datacenter-Design des Kunden bereitgestellt werden können. Dank der Port-Dichte können die Netzwerkkomponenten mehrere Konfigurationen aufnehmen.
+
+
+
+== Astra Control
+
+Astra Control bietet applikationsgerechte Datensicherungsservices für Cloud-native Applikationen, die sowohl in Public Clouds als auch in On-Premises-Umgebungen gehostet werden. Astra Control bietet Funktionen für Datensicherung, Disaster Recovery und Migration für Ihre auf Kubernetes laufende Container-Applikation.
+
+
+
+=== Funktionen
+
+Astra Control bietet entscheidende Funktionen für das Lifecycle Management von Kubernetes-Applikationsdaten:
+
+* Automatisches Management von persistentem Storage
+* Applikationskonsistente On-Demand Snapshots und Backups
+* Automatisierte richtliniengesteuerte Snapshot- und Backup-Vorgänge
+* Migrieren Sie Applikationen und zugehörige Daten in einer Hybrid-Cloud-Einrichtung von einem Kubernetes-Cluster zu einem anderen
+* Eine Anwendung auf demselben K8s-Cluster oder einem anderen K8s-Cluster klonen
+* Der Datensicherungsstatus der Applikation wird visualisiert
+* Grafische Benutzeroberfläche und umfassende Rest-APIs zur Implementierung aller Sicherungs-Workflows über vorhandene interne Tools
+
+
+Astra Control bietet Ihnen eine zentrale Konsole für die Visualisierung Ihrer Container-Applikationen und gewährt Ihnen einen Einblick in die damit verbundenen Ressourcen, die auf dem Kubernetes Cluster erstellt werden. Über ein Portal können alle Cluster, alle Applikationen in allen Clouds oder in allen Datacentern angezeigt werden. Mit den Astra Control APIs können Sie Ihre Datenmanagement-Workflows über alle Umgebungen hinweg (lokal oder in Public Clouds) implementieren.
+
+Die folgende Abbildung zeigt die Astra Control-Funktionen.
+
+image:flexpod-rho-cvo-image4.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+=== Astra Control Nutzungsmodelle
+
+Astra Control ist in zwei Verbrauchsmodellen erhältlich:
+
+* *Astra Control Service.* ein vollständig gemanagter Service, der von NetApp gehostet wird und applikationsgerechtes Datenmanagement für Kubernetes Cluster in der Google Kubernetes Engine (GKE), Azure Kubernetes Service (AKS) ermöglicht.
+* *Astra Control Center.* selbst gemanagte Software für applikationsgerechtes Datenmanagement von Kubernetes Clustern, die in Ihrer lokalen und Hybrid-Cloud-Umgebung ausgeführt werden.
+
+
+Dieser technische Bericht nutzt das Astra Control Center für das Management von Cloud-nativen Applikationen, die auf Kubernetes ausgeführt werden.
+
+Das folgende Bild zeigt die Astra Control Architektur.
+
+image:flexpod-rho-cvo-image5.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== Astra Trident
+
+Astra Trident ist ein vollständig unterstützter Open-Source-Orchestrator für Container und Kubernetes-Distributionen. Es wurde von Anfang an entwickelt, um Ihnen zu helfen, die Persistenzanforderungen Ihrer containerisierten Anwendungen mit Industriestandard-Schnittstellen wie die zu erfüllen https://kubernetes-csi.github.io/docs/introduction.html["Container-Speicherschnittstelle (CSI)"^]. Mit Astra Trident können Microservices und containerisierte Applikationen von Storage-Services der Enterprise-Klasse profitieren, die über das NetApp Portfolio an Storage-Systemen bereitgestellt werden.
+
+Astra Trident wird als Pods auf Kubernetes Clustern implementiert und bietet dynamische Storage-Orchestrierungs-Services für Ihre Kubernetes-Workloads. Es ermöglicht Ihren Container-Applikationen, persistenten Storage schnell und einfach aus dem breiten Portfolio von NetApp zu nutzen, das NetApp ONTAP (NetApp AFF, NetApp FAS, NetApp ONTAP Select, Cloud, Dazu verwendet Amazon FSX für NetApp ONTAP), NetApp Element Software (NetApp SolidFire) und den Azure NetApp Files Service, Cloud Volume Service auf Google Cloud und den Cloud Volume Service auf AWS. In einer FlexPod Umgebung dient Astra Trident zur dynamischen Bereitstellung und zum Management persistenter Volumes für Container, die durch NetApp FlexVol Volumes und LUNs unterstützt werden, die auf einer ONTAP Storage-Plattform wie NetApp AFF, FAS Systeme und Cloud Volumes ONTAP gehostet werden. Trident spielt auch bei der Implementierung von Applikationsschutzschemata von Astra Control eine wichtige Rolle. Weitere Informationen zu Astra Trident finden Sie im https://docs.netapp.com/us-en/trident/index.html["Astra Trident-Dokumentation:"^]
+
+
+
+== Storage-Back-End
+
+Zur Verwendung von Astra Trident benötigen Sie ein unterstütztes Storage-Backend. Ein Trident Back-End definiert die Beziehung zwischen Trident und einem Storage-System. Er erzählt Trident, wie man mit diesem Storage-System kommuniziert und wie Trident Volumes daraus bereitstellen sollte. Trident bietet automatisch Storage-Pools aus Back-Ends an, die zusammen mit den von einer Storage-Klasse definierten Anforderungen übereinstimmen.
+
+* ONTAP AFF und FAS Storage Back-End ONTAP ist eine Storage-Software- und Hardware-Plattform und bietet wichtige Storage-Services, Unterstützung für mehrere Storage-Zugriffsprotokolle und Storage-Managementfunktionen, wie beispielsweise NetApp Snapshot Kopien und Spiegelung.
+* Cloud Volumes ONTAP Storage Back-End
+* https://docs.netapp.com/us-en/astra-data-store/index.html["Astra Data Store"^] Storage-Back-End
+
+
+
+
+== NetApp Cloud Volumes ONTAP
+
+NetApp Cloud Volumes ONTAP ist ein softwaredefiniertes Storage-Angebot, das erweitertes Datenmanagement für Datei- und Block-Workloads bietet. Mit Cloud Volumes ONTAP können Sie Ihre Cloud Storage-Kosten optimieren, die Applikations-Performance steigern und gleichzeitig den Schutz, die Sicherheit und die Compliance verbessern.
+
+Die wichtigsten Vorteile:
+
+* Nutzen Sie integrierte Datendeduplizierung, Datenkomprimierung, Thin Provisioning und Klonen und minimieren Sie so die Storage-Kosten.
+* Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in der Cloud-Umgebung sicherstellen.
+* Cloud Volumes ONTAP nutzt SnapMirror, die branchenführende NetApp Replizierungstechnologie, um Daten vor Ort in der Cloud zu replizieren und so sekundäre Kopien für unterschiedliche Anwendungsfälle verfügbar zu machen.
+* Die Integration von Cloud Volumes ONTAP in Cloud Backup Service bietet zudem Backup- und Restore-Funktionen zur Sicherung und zur Langzeitarchivierung Ihrer Cloud-Daten.
+* Wechseln Sie nach Bedarf zwischen hochperformanten Storage Pools, ohne Applikationen offline zu schalten.
+* Konsistenz von Snapshot-Kopien mit NetApp SnapCenter sicherstellen.
+* Cloud Volumes ONTAP unterstützt die Datenverschlüsselung und bietet Schutz vor Viren und Ransomware.
+* Integration in Cloud Data Sense unterstützt Sie dabei, den Datenkontext zu verstehen und sensible Daten zu identifizieren.
+
+
+
+
+== Cloud Central
+
+Cloud Central bietet einen zentralen Standort zum Zugriff auf NetApp Cloud-Datenservices und -Management. Mit diesen Services können Sie kritische Applikationen in der Cloud ausführen, automatisierte DR-Standorte erstellen, Ihre Daten sichern und Daten effektiv zwischen diversen Clouds migrieren und kontrollieren. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/occm35/concept_cloud_central.html["Cloud Central:"^]
+
+
+
+== Cloud Manager
+
+Cloud Manager ist eine SaaS-basierte Managementplattform der Enterprise-Klasse, mit der IT-Experten und Cloud-Architekten ihre Hybrid-Multi-Cloud-Infrastruktur mithilfe der Cloud-Lösungen von NetApp zentral managen können. Es stellt ein zentrales System für die Anzeige und das Management von lokalem und Cloud-Storage bereit und unterstützt Hybrid- und Cloud-Umgebungen mit unterschiedlichen Cloud-Providern und Konten. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/occm/index.html["Cloud Manager"^].
+
+
+
+== Stecker
+
+Dieser Connector ermöglicht Cloud Manager das Management von Ressourcen und Prozessen in einer Public Cloud-Umgebung. Um viele Funktionen von Cloud Manager nutzen zu können, ist ein Connector erforderlich. Ein Connector kann in der Cloud oder im On-Premises-Netzwerk bereitgestellt werden.
+
+Der Anschluss wird an folgenden Orten unterstützt:
+
+* AWS
+* Microsoft Azure
+* Google Cloud
+* Vor Ort
+
+
+Weitere Informationen zu Connector finden Sie unter https://docs.netapp.com/us-en/occm/concept_connectors.html["Dieser Link."^]
+
+
+
+== NetApp Cloud Insights
+
+Cloud Insights ist ein Cloud-Infrastruktur-Monitoring-Tool von NetApp und ermöglicht Ihnen, die Performance und Auslastung Ihrer Kubernetes Cluster zu überwachen und von Astra Control Center zu verwalten. Cloud Insights korreliert die Storage-Auslastung mit Workloads. Wenn Sie die Cloud Insights-Verbindung im Astra Control Center aktivieren, werden Telemetriedaten auf den UI-Seiten des Astra Control Center angezeigt.
+
+
+
+== NetApp Active IQ Unified Manager
+
+Mit NetApp Active IQ Unified Manager können Sie Ihre ONTAP Storage-Cluster über eine neu konzipierte und intuitive Benutzeroberfläche überwachen, die Ihnen wertvolle Informationen aus Community-Wissen und KI-Analysen bietet. Er ermöglicht einen umfassenden Einblick in den Betrieb, die Performance und den proaktiven Einblick in die Storage-Umgebung und die darauf ausgeführten Virtual Machines (VMs). Wenn bei der Storage-Infrastruktur ein Problem auftritt, gibt Ihnen Unified Manager Informationen über das Problem und hilft Ihnen bei der Ermittlung der Ursache des Problems. Das VM Dashboard gibt Ihnen einen Überblick über die Performance-Statistiken für die VM, sodass Sie den gesamten I/O-Pfad vom VMware vSphere Host über das Netzwerk und schließlich den Storage erfassen können. Einige Ereignisse bieten auch Abhilfemaßnahmen, die zur Behebung des Problems ergriffen werden können. Sie können benutzerdefinierte Alarme für Ereignisse konfigurieren, sodass bei Problemen per E-Mail und SNMP-Traps benachrichtigt werden. Mit Active IQ Unified Manager lassen sich die Storage-Anforderungen Ihrer Benutzer planen, indem Kapazität und Nutzungstrends proaktiv vor Problemen vorhergesagt werden. Reaktive, kurzfristige Entscheidungen, die langfristig zu weiteren Problemen führen können, werden vermieden.
+
+
+
+== Cisco Intersight
+
+Cisco Intersight ist eine SaaS-Plattform, die intelligente Automatisierung, Beobachtbarkeit und Optimierung für herkömmliche und Cloud-native Applikationen und Infrastrukturen bietet. Die Plattform fördert Veränderungen mit IT-Teams und bietet ein Betriebsmodell für Hybrid Clouds.
+
+Cisco Intersight bietet folgende Vorteile:
+
+* *Schnellere Lieferung.* als Service aus der Cloud oder im Rechenzentrum des Kunden mit häufigen Updates und fortgesetzten Innovationen durch ein agiles, auf Software basierendes Entwicklungsmodell geliefert. So kann sich der Kunde ganz einfach darauf konzentrieren, die Bereitstellung für den Geschäftsbereich zu beschleunigen.
+* *Vereinfachter Betrieb.* vereinfachter Betrieb durch den Einsatz eines einzigen sicheren SaaS-bereitgestellten Tools mit gemeinsamem Inventar, Authentifizierung und APIs für den gesamten Stack und alle Standorte. Silos in allen Teams sind damit nicht mehr erforderlich. Vom Management physischer Server und Hypervisoren vor Ort, zu VMs, K8s, serverlos, Automatisierung, Die Optimierung und Kostenkontrolle über On-Premises- und Public Clouds hinweg.
+* *Kontinuierliche Optimierung.* Optimieren Sie Ihre Umgebung mithilfe von Informationen, die von Cisco Intersight in allen Schichten bereitgestellt werden, sowie von Cisco TAC. Diese Informationen werden in empfohlene und automatisierbare Aktionen umgewandelt, mit denen Sie Echtzeit an jede Änderung anpassen können: Von der Verschiebung von Workloads und der Überwachung des Zustands von physischen Servern über die automatische Größenanpassung von K8s Clustern bis hin zu Kostenreduzierungsempfehlungen für die Public Clouds, mit denen Sie arbeiten.
+
+
+Cisco Intersight ermöglicht zwei verschiedene Managementmodi: UCSM Managed Mode (UMM) und Intersight Managed Mode (IMM). Sie können das native UMM- oder IMM-System für die Fabric-Attached Cisco UCS-Systeme während der ersten Einrichtung der Fabric Interconnects auswählen. In dieser Lösung wird die native UMM verwendet.
+
+Das folgende Bild zeigt das Cisco Intersight Dashboard.
+
+image:flexpod-rho-cvo-image6.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== Red hat OpenShift Container Platform
+
+Die Container-Applikationsplattform Red hat OpenShift ist eine Container-Applikationsplattform, die CRI-O und Kubernetes zusammenführt und eine API sowie eine Webschnittstelle zum Managen dieser Services bietet. CRI-O ist eine Implementierung der Kubernetes Container Runtime Interface (CRI), die die Verwendung von Offene Container Initiative (OCI)-kompatiblen Laufzeiten ermöglicht. Dabei handelt es sich um eine leichtgewichtige Alternative zur Verwendung von Docker als Laufzeit für Kubernetes.
+
+Mit OpenShift Container Platform können Kunden Container erstellen und managen. Container sind eigenständige Prozesse, die innerhalb der eigenen Umgebung ausgeführt werden können – unabhängig vom Betriebssystem und der zugrunde liegenden Infrastruktur. OpenShift Container Platform unterstützt die Entwicklung, Bereitstellung und das Management Container-basierter Applikationen. Es stellt eine Self-Service-Plattform zum bedarfsgerechten Erstellen, Ändern und Implementieren von Applikationen bereit, die eine schnellere Entwicklung und Verkürzung der Lebenszyklen ermöglicht. Die OpenShift Container Platform verfügt über eine auf Microservices basierende Architektur mit kleineren, entkoppelten Einheiten, die zusammen arbeiten. Es wird auf einem Kubernetes-Cluster ausgeführt, wobei Daten zu den in etc. Gespeicherten Objekten ein zuverlässiger Cluster-Schlüsselwertspeicher sind.
+
+Das folgende Bild bietet einen Überblick über die Container-Plattform Red hat OpenShift.
+
+image:flexpod-rho-cvo-image7.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+=== Kubernetes-Infrastruktur
+
+Innerhalb der OpenShift Container Platform managt Kubernetes containerisierte Applikationen über eine Reihe von CRI-O-Laufzeithosts hinweg und bietet Mechanismen für die Implementierung, Wartung und Applikationsskalierung. Die CRI-O-Servicepakete, instantiates und führen containerisierte Applikationen aus.
+
+Ein Kubernetes-Cluster besteht aus einem oder mehreren Master und einem Satz Worker-Nodes. Das Lösungsdesign umfasst Hochverfügbarkeit (HA) in der Hardware und dem Software Stack. Ein Kubernetes Cluster wurde zur Ausführung im HA-Modus mit drei Master Nodes und mindestens zwei Worker Nodes entwickelt, um sicherzustellen, dass keine Single Point of Failure für das Cluster vorhanden sind.
+
+
+
+=== Red hat Core OS
+
+OpenShift Container Platform nutzt Red hat Enterprise Linux CoreOS (RHCOS), ein containerorientiertes Betriebssystem, das einige der besten Funktionen von CoreOS und Red hat Atomic Host-Betriebssystemen vereint. RHCOS ist speziell für die Ausführung von Container-Anwendungen über die OpenShift Container Platform konzipiert und arbeitet mit neuen Tools zusammen, um eine schnelle Installation, eine rasche Verwaltung und vereinfachte Upgrades zu ermöglichen.
+
+RHCOS bietet die folgenden Funktionen:
+
+* Zündung, die OpenShift Container Platform als erste Bootsystemkonfiguration zum ersten Einschalten und Konfigurieren von Maschinen verwendet.
+* CRI-O, eine native Kubernetes-Laufzeitimplementierung für Container, die sich eng in das Betriebssystem integriert und so eine effiziente und optimierte Kubernetes-Erfahrung ermöglicht. CRI-O bietet Funktionen zum Ausführen, Stoppen und Neustarten von Containern. Es ersetzt vollständig die Docker Container Engine, die in OpenShift Container Platform 3 eingesetzt wurde.
+* Kubelet, der primäre Node-Agent für Kubernetes, ist für die Einführung und Überwachung von Containern verantwortlich.
+
+
+
+
+== VMware vSphere 7.0
+
+VMware vSphere ist eine Virtualisierungsplattform, mit der sich umfangreiche Sammlung von Infrastrukturen (Ressourcen wie CPUs, Storage und Netzwerk) vollständig als nahtlose, vielseitige und dynamische Betriebsumgebung managen lassen. Im Gegensatz zu herkömmlichen Betriebssystemen, die eine einzelne Machine managen, sammelt VMware vSphere die Infrastruktur eines gesamten Datacenters und erstellt so ein einzelnes Kraftpaket, mit Ressourcen, die den jeweiligen Applikationen schnell und dynamisch zugewiesen werden können.
+
+Weitere Informationen finden Sie unter https://www.vmware.com/products/vsphere.html["VMware vSphere"^].
+
+
+
+=== VMware vSphere vCenter
+
+VMware vCenter Server ermöglicht einheitliches Management aller Hosts und VMs über eine einzige Konsole und aggregiert die Performance-Überwachung von Clustern, Hosts und VMs. VMware vCenter Server bietet Administratoren einen detaillierten Einblick in Status und Konfiguration von Computing-Clustern, Hosts, VMs, Storage, Gastbetriebssystem Und anderen geschäftskritischen Komponenten einer virtuellen Infrastruktur. VMware vCenter verwaltet die umfassenden Funktionen, die in einer VMware vSphere Umgebung verfügbar sind.
+
+
+
+== Hardware- und Software-Versionen
+
+Diese Lösung kann auf jede FlexPod Umgebung erweitert werden, in der unterstützte Versionen von Software, Firmware und Hardware ausgeführt werden, wie in definiert http://support.netapp.com/matrix/["NetApp Interoperabilitäts-Matrix-Tool"^] Und https://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html["Cisco UCS Hardware Compatibility List:"^] Das OpenShift-Cluster ist sowohl auf FlexPod Bare Metal-Weise als auch auf VMware vSphere installiert.
+
+Für das Management mehrerer OpenShift-Cluster ist nur eine einzige Instanz von Astra Control Center erforderlich, während Trident CSI auf jedem OpenShift-Cluster installiert ist. Astra Control Center kann auf jedem dieser OpenShift-Cluster installiert werden. In dieser Lösung ist Astra Control Center auf dem Bare-Metal-Cluster OpenShift installiert.
+
+In der folgenden Tabelle sind die Versionen der Hardware und Software von FlexPod für OpenShift aufgeführt.
+
+|===
+| Komponente | Produkt | Version 
+
+
+| Computing | Cisco UCS Fabric Interconnects 6454 | 4.1(3c) 
+
+
+|  | Cisco UCS B200 M5 Server | 4.1(3c) 
+
+
+| Netzwerk | Cisco Nexus 9336C-FX2 NX-OS | 9.3 (8) 
+
+
+| Storage | NetApp AFF A700 | 9.11.1 
+
+
+|  | NetApp Astra Control Center | 22.04.0 
+
+
+|  | NetApp Astra Trident CSI-Plug-in | 22.04.0 
+
+
+|  | NetApp Active IQ Unified Manager | 9.11 
+
+
+| Software | VMware ESXi Nenic Ethernet-Treiber | 1.0.35.0 
+
+
+|  | VSphere ESXi | 7.0 (U2) 
+
+
+|  | VMware vCenter Appliance | 7.0 U2b 
+
+
+|  | Cisco Intersight Assist Virtual Appliance | 1.0.9-342 
+
+
+|  | OpenShift Container Platform | 4.9 
+
+
+|  | OpenShift Container Platform Master Node | RHCOS 4.9 
+
+
+|  | OpenShift Container Platform Worker-Node | RHCOS 4.9 
+|===
+In der folgenden Tabelle sind die Softwareversionen für OpenShift auf AWS aufgeführt.
+
+|===
+| Komponente | Produkt | Version 
+
+
+| Computing | Master Instance Typ: m5.xlarge | k. A. 
+
+
+|  | Worker-Instanz Typ: m5.large | k. A. 
+
+
+| Netzwerk | Virtual Private Cloud Transit Gateway | k. A. 
+
+
+| Storage | NetApp Cloud Volumes ONTAP | 9.11.1 
+
+
+|  | NetApp Astra Trident CSI-Plug-in | 22.04.0 
+
+
+| Software | OpenShift Container Platform | 4.9 
+
+
+|  | OpenShift Container Platform Master Node | RHCOS 4.9 
+
+
+|  | OpenShift Container Platform Worker-Node | RHCOS 4.9 
+|===
+link:flexpod-rho-cvo-flexpod-for-openshift-container-platform-4-bare-metal-installation.html["Weiter: FlexPod für OpenShift Container Platform 4 Bare-Metal-Installation."]

@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_videos_and_demos.html 
+keywords: videos, demos, cloud, insights, flexpod, express, video, demonstration 
+summary: Hier finden Sie eine Videovorführung über die Verwendung von NetApp Cloud Insights. 
+---
+= Videos und Demos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Hier sehen Sie eine Videovorführung zur Verwendung von NetApp Cloud Insights zur Bewertung von Ressourcen in einer On-Premises-Umgebung https://netapp.hubs.vidyard.com/watch/1ycNWx4hzFsaV1dQHFyxY2?["Hier"^].
+
+Hier wird eine Videovorführung zur Überwachung der Infrastruktur mithilfe von NetApp Cloud Insights angezeigt und es werden Warnungsschwellenwerte für die Infrastruktur festgelegt https://netapp.hubs.vidyard.com/watch/DgUxcxES3Ujdqe1JhhkfAW["Hier"^].
+
+Hier sehen Sie eine Videovorführung zur Verwendung von NetApp Cloud Insights zur bewerten einzelner Applikationen in der Umgebung https://netapp.hubs.vidyard.com/watch/vcC4RGoD54DPp8Th9hyhu3["Hier"^].

@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: infrastructure/nvme-vsphere-conclusion.html 
+keywords: conclusion, additional information, acknowledgements, interoperability matrixes 
+summary: Mit FlexPod haben Cisco und NetApp eine Plattform geschaffen, die sich flexibel und skalierbar für zahlreiche Anwendungsfälle und Applikationen ist. Mit FC-NVMe bietet FlexPod eine weitere Funktion, mit der Unternehmen geschäftskritische Applikationen effizient und effektiv gleichzeitig in derselben Shared IT-Infrastruktur unterstützen können. 
+---
+= Schlussfolgerung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./..media/
+
+
+link:nvme-vsphere-test-results.html["Zurück: Testergebnisse."]
+
+Der für diese Lösung beobachtete Durchsatz betrug 14 GB/s und 220.000 IOPS für einen sequenziellen Lese-Workload mit einer Latenz von unter 1 ms. Bei zufälligen Lese-Workloads erreichten wir einen Durchsatz von 9,5 GB/s und 1,25 Mio. IOPS. FlexPod kann diese Performance mit FC-NVMe bereitstellen und kann so die Anforderungen aller geschäftskritischen Applikationen erfüllen.
+
+FlexPod Datacenter mit VMware vSphere 7.0 U2 ist die optimale Grundlage für eine Shared-Infrastruktur für die Implementierung von FC-NVMe für verschiedene IT-Workloads. Auf diese Weise erhalten Applikationen, die ihn benötigen, hochperformanten Storage-Zugriff. Da FC-NVMe jedoch mit Hochverfügbarkeit, Multipathing und zusätzlichem Betriebssystem-Support weiter entwickelt wird, eignet sich FlexPod hervorragend als bevorzugte Plattform und bietet die Skalierbarkeit und Zuverlässigkeit, die zur Unterstützung dieser Funktionen erforderlich sind.
+
+Mit FlexPod haben Cisco und NetApp eine Plattform geschaffen, die sich flexibel und skalierbar für zahlreiche Anwendungsfälle und Applikationen ist. Mit FC-NVMe bietet FlexPod eine weitere Funktion, mit der Unternehmen geschäftskritische Applikationen effizient und effektiv gleichzeitig in derselben Shared IT-Infrastruktur unterstützen können. Dank der Flexibilität und Skalierbarkeit von FlexPod können Kunden mit einer geeigneten Infrastruktur beginnen, die mit den neuen Geschäftsanforderungen mitwächst.
+
+
+
+== Weitere Informationen
+
+Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die in diesem Dokument beschriebenen Informationen zu erfahren:
+
+* Cisco Unified Computing System (UCS)
++
+http://www.cisco.com/en/US/products/ps10265/index.html["http://www.cisco.com/en/US/products/ps10265/index.html"^]
+
+* Fabric Interconnects der Cisco UCS 6400-Serie – Datenblatt
++
+https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html["https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html"^]
+
+* Blade Server-Chassis der Cisco UCS 5100-Serie
++
+http://www.cisco.com/en/US/products/ps10279/index.html["http://www.cisco.com/en/US/products/ps10279/index.html"^]
+
+* Blade Server der Cisco UCS B-Serie
++
+http://www.cisco.com/en/US/partner/products/ps10280/index.html["http://www.cisco.com/en/US/partner/products/ps10280/index.html"^]
+
+* Cisco UCS C-Serie Rack Server
++
+http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/index.html["http://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-c-series-rack-servers/index.html"^]
+
+* Cisco Unified Computing System Adapter
++
+http://www.cisco.com/en/US/products/ps10277/prod_module_series_home.html["http://www.cisco.com/en/US/products/ps10277/prod_module_series_home.html"^]
+
+* Cisco UCS Manager
++
+http://www.cisco.com/en/US/products/ps10281/index.html["http://www.cisco.com/en/US/products/ps10281/index.html"^]
+
+* Switches Der Cisco Nexus 9000-Serie
++
+http://www.cisco.com/c/en/us/products/switches/nexus-9000-series-switches/index.html["http://www.cisco.com/c/en/us/products/switches/nexus-9000-series-switches/index.html"^]
+
+* Cisco MDS 9000 Multilayer Fabric Switches
++
+http://www.cisco.com/c/en/us/products/storage-networking/mds-9000-series-multilayer-switches/index.html["http://www.cisco.com/c/en/us/products/storage-networking/mds-9000-series-multilayer-switches/index.html"^]
+
+* Cisco MDS 9132T 32-Gbit/s-Fibre Channel Switch mit 32 Ports
++
+https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/datasheet-c78-739613.html["https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/datasheet-c78-739613.html"^]
+
+* NetApp ONTAP 9
++
+http://www.netapp.com/us/products/platform-os/ontap/index.aspx["http://www.netapp.com/us/products/platform-os/ontap/index.aspx"^]
+
+* NetApp AFF A-Series
++
+http://www.netapp.com/us/products/storage-systems/all-flash-array/aff-a-series.aspx["http://www.netapp.com/us/products/storage-systems/all-flash-array/aff-a-series.aspx"^]
+
+* VMware vSphere
++
+https://www.vmware.com/products/vsphere["https://www.vmware.com/products/vsphere"^]
+
+* VMware vCenter Server
++
+http://www.vmware.com/products/vcenter-server/overview.html["http://www.vmware.com/products/vcenter-server/overview.html"^]
+
+* Best Practices für ein modernes SAN
++
+https://www.netapp.com/us/media/tr-4080.pdf["https://www.netapp.com/us/media/tr-4080.pdf"^]
+
+* Einführung von End-to-End-NVMe für FlexPod
++
+https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html["https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html"^]
+
+
+
+
+
+== Interoperabilitätsmatrixe
+
+* NetApp Interoperabilitäts-Matrix-Tool
++
+http://support.netapp.com/matrix/["http://support.netapp.com/matrix/"^]
+
+* Cisco UCS Hardware Compatibility Matrix
++
+https://ucshcltool.cloudapps.cisco.com/public/["https://ucshcltool.cloudapps.cisco.com/public/"^]
+
+* VMware Compatibility Guide
++
+http://www.vmware.com/resources/compatibility["http://www.vmware.com/resources/compatibility"^]
+
+
+
+
+
+== Danksagungen
+
+Die Autoren bedanken sich herzlich bei John George von Cisco und Scott Lane und Bobby Oommen von NetApp für die Unterstützung und Anleitung, die bei der Projektdurchführung enthalten sind.

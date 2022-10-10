@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_lun_mappings.html 
+keywords: lun, mappings, meditech, host 
+summary: LUN-Zuordnungen für die MEDITECH-Hosts werden erstellt, wenn die LUNs erstellt sind. 
+---
+= LUN-Zuordnungen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+LUN-Zuordnungen für die MEDITECH-Hosts werden erstellt, wenn die LUNs erstellt sind.

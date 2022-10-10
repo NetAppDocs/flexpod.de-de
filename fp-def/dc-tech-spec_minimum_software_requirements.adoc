@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_minimum_software_requirements.html 
+keywords: software, requirements, minimum, flexpod, datacenter, techincal, specifications, cisco, ucs, manager 
+summary: In den folgenden Informationen werden die Mindestanforderungen für Software für eine FlexPod Konfiguration beschrieben. 
+---
+= Mindestanforderungen an Software
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Eine FlexPod-Konfiguration erfüllt die folgenden Mindestanforderungen für Software:
+
+* NetApp ONTAP:
++
+** Für die ONTAP Softwareversion ist ONTAP 9.1 oder höher erforderlich
+
+
+* Versionen von Cisco UCS Manager:
++
+** Fabric Interconnect der Cisco UCS 6200-Serie – 2.2(8a)
+** Fabric Interconnect der Cisco UCS 6300-Serie – 3.1(1e)
+** Fabric Interconnect der Cisco UCS 6400-Serie – 4.0(1)
+
+
+* Cisco Intersight Managed Mode:
++
+** Fabric Interconnect der Cisco UCS 6400-Serie – 4.1(2)
+
+
+* Für Switches der Cisco Nexus 5000-Serie, Cisco NX-OS-Softwareversion 5.0(3)N1(1c) oder höher, einschließlich NX-OS 5.1.x
+* Für Switches Der Cisco Nexus 7000 Serie:
++
+** Für das 4-Steckplatz-Chassis ist die Cisco NX-OS Software Version 6.1(2) oder höher erforderlich
+** Für das 9-Steckplatz-Chassis ist die Cisco NX-OS Software Version 5.2 oder höher erforderlich
+** Für das 10-Steckplatz-Chassis ist die Cisco NX-OS Software Version 4.0 oder höher erforderlich
+** Für das 18-Steckplatz-Chassis ist die Cisco NX-OS Software Version 4.1 oder höher erforderlich
+
+
+* Für Switches der Cisco Nexus 9000 Serie, Cisco NX-OS Software Version 6.1(2) oder höher
+
+
+
+NOTE: Die Software, die in einer FlexPod-Konfiguration verwendet wird, muss im NetApp aufgeführt und unterstützt werden http://mysupport.netapp.com/matrix["IMT"^]. Bei einigen Funktionen sind möglicherweise aktuellere Versionen der Software erforderlich als die aufgeführten.

@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_initiator_group_configuration.html 
+keywords: initiator, group, configuration, fc, data, network, protocol, igroups 
+summary: 'Wenn Sie FC als Datennetzwerkprotokoll verwenden, erstellen Sie zwei Initiatorgruppen auf jedem Storage Controller. Die erste Initiatorgruppe enthält die WWPNs der FC-Host-Schnittstellenkarten auf den VMware ESXi Servern, die die MEDITECH-Host-VMs (iGroup für MEDITECH) hosten.' 
+---
+= Konfiguration der Initiatorgruppe
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Wenn Sie FC als Datennetzwerkprotokoll verwenden, erstellen Sie zwei Initiatorgruppen auf jedem Storage Controller. Die erste Initiatorgruppe enthält die WWPNs der FC-Host-Schnittstellenkarten auf den VMware ESXi Servern, die die MEDITECH-Host-VMs (iGroup für MEDITECH) hosten.
+
+Sie müssen den Betriebssystemtyp der MEDITECH igroup entsprechend dem Umgebungseinstellungen festlegen. Beispiel:
+
+* Verwenden Sie den Betriebssystemtyp der Initiatorgruppe `Windows` Für Applikationen, die auf Bare-Metal-Server-Hardware in einer Windows Server-Umgebung installiert sind.
+* Verwenden Sie den Betriebssystemtyp der Initiatorgruppe `VMware` Für Applikationen, die mit dem VMware vSphere Hypervisor virtualisiert werden
+
+
+
+NOTE: Der Betriebssystemtyp für eine Initiatorgruppe unterscheidet sich möglicherweise vom Betriebssystem für eine LUN. Beispielsweise sollten Sie für virtualisierte MEDITECH-Hosts den Betriebssystemtyp der Initiatorgruppe auf festlegen `VMware`. Für die LUNs, die von den virtualisierten MEDITECH-Hosts verwendet werden, sollten Sie den Betriebssystemtyp auf einstellen `Windows 2008 or later`. Verwenden Sie diese Einstellung, da das MEDITECH-Host-Betriebssystem die Windows Server 2008 R2 64-Bit Enterprise Edition ist.
+
+Um den korrekten Wert für den Betriebssystemtyp zu ermitteln, finden Sie in den Abschnitten „LUN iGroup Create“ und „LUN Create“ im https://library.netapp.com/ecm/ecm_download_file/ECMP1366832["Befehle für Clustered Data ONTAP 8.2: Manuelle Seitenreferenz"^].
+
+link:ehr-meditech-deploy_lun_mappings.html["Danach LUN-Zuordnungen."]

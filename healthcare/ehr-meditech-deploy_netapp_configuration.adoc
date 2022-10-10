@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_netapp_configuration.html 
+keywords: configuration, storage, meditech, software, environments, controllers, hardware, takeover, licenses 
+summary: NetApp Storage, der für MEDITECH-Softwareumgebungen implementiert wird, verwendet Storage-Controller in einer hochverfügbaren Paarkonfiguration. Speicher muss von beiden Controllern über das FC-Protokoll an MEDITECH-Datenbankserver übertragen werden. Die Konfiguration stellt den Storage beider Controller bereit, um die Applikationslast im normalen Betrieb gleichmäßig zu verteilen. 
+---
+= NetApp Konfiguration
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Der NetApp Storage, der für MEDITECH-Softwareumgebungen implementiert wird, verwendet Storage-Controller in einer hochverfügbaren Paarkonfiguration. Speicher muss von beiden Controllern über das FC-Protokoll an MEDITECH-Datenbankserver übertragen werden. Die Konfiguration stellt den Storage beider Controller bereit, um die Applikationslast im normalen Betrieb gleichmäßig zu verteilen.
+
+
+
+== ONTAP-Konfiguration
+
+In diesem Abschnitt werden ein Beispiel für die Implementierung und die Bereitstellung beschrieben, die die entsprechenden ONTAP Befehle verwenden. Der Schwerpunkt liegt dabei auf der Nutzung von Storage für die Implementierung des von NetApp empfohlenen Storage Layouts, in dem ein hochverfügbares Controller-Paar verwendet wird. Einer der größten Vorteile von ONTAP ist die Möglichkeit zur horizontalen Skalierung ohne Beeinträchtigungen der vorhandenen Hochverfügbarkeitspaare.
+
+
+
+=== ONTAP-Lizenzen
+
+Nach der Einrichtung der Storage Controller wenden Sie Lizenzen an, um die von NetApp empfohlenen ONTAP Funktionen zu aktivieren. Die Lizenzen für MEDITECH Workloads sind FC, CIFS, und NetApp Snapshot, SnapRestore, FlexClone, Und SnapMirror Technologien.
+
+Zum Konfigurieren von Lizenzen öffnen Sie NetApp ONTAP System Manager, gehen Sie zu Configuration-Licenses und fügen dann die entsprechenden Lizenzen hinzu.
+
+Alternativ können Sie mit dem folgenden Befehl Lizenzen über die CLI hinzufügen:
+
+....
+license add -license-code <code>
+....
+
+
+=== AutoSupport-Konfiguration
+
+Das NetApp AutoSupport Tool sendet zusammenfassende Support-Informationen über HTTPS an NetApp. Führen Sie zum Konfigurieren von AutoSupport die folgenden ONTAP-Befehle aus:
+
+....
+autosupport modify -node * -state enable
+autosupport modify -node * -mail-hosts <mailhost.customer.com>
+autosupport modify -node prod1-01 -from prod1-01@customer.com
+autosupport modify -node prod1-02 -from prod1-02@customer.com
+autosupport modify -node * -to storageadmins@customer.com
+autosupport modify -node * -support enable
+autosupport modify -node * -transport https
+autosupport modify -node * -hostnamesubj true
+....
+
+
+=== Konfiguration für die Hardware-gestützte Übernahme
+
+Aktivieren Sie auf jedem Node die Hardware-gestützte Übernahme, um die für die Initiierung einer Übernahme benötigte Zeit im unwahrscheinlichen Fall eines Controller-Ausfalls zu minimieren. Gehen Sie wie folgt vor, um die Hardware-gestützte Übernahme zu konfigurieren:
+
+. Führen Sie den folgenden ONTAP-Befehl an xxx aus.
++
+Setzen Sie die Partneraddress-Option auf die IP-Adresse des Management-Ports für `prod1-01`.
+
++
+....
+MEDITECH::> storage failover modify -node prod1-01 -hwassist-partner-ip <prod1-02-mgmt-ip>
+....
+. Führen Sie den folgenden ONTAP-Befehl an xxx aus:
++
+Setzen Sie die Partneraddress-Option auf die IP-Adresse des Management-Ports für `cluster1-02`.
+
++
+....
+MEDITECH::> storage failover modify -node prod1-02 -hwassist-partner-ip <prod1-01-mgmt-ip>
+....
+. Führen Sie den folgenden ONTAP-Befehl aus, um die Hardware-gestützte Übernahme auf beiden zu aktivieren `prod1-01` Und das `prod1-02` HA-Controller-Paar.
++
+....
+MEDITECH::> storage failover modify -node prod1-01 -hwassist true
+MEDITECH::> storage failover modify -node prod1-02 -hwassist true
+....
+
+
+link:ehr-meditech-deploy_aggregate_configuration.html["Als Nächstes: Aggregat-Konfiguration."]

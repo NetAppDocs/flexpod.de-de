@@ -1,0 +1,21 @@
+---
+section: vdi
+title: Virtual Desktop Infrastructure
+entries:
+- title: FlexPod-Datacenter mit Citrix Virtual Apps Desktops 1912 LTSR und VMware
+    vSphere 7 für bis zu 6000 Arbeitsplätze
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/cisco_ucs_ctx1912esxi7u1_flexpodV2.html
+- title: FlexPod Datacenter mit NetApp ONTAP 9.6, VMware Horizon View 7.10 und VMware
+    vSphere 6.7 U2 mit Cisco UCS Manager 4.0 für bis zu 6700 Plätze
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_ontap96_vmware710_67_u2_ucs_40_6700_seats.html
+- title: FlexPod for 3D Graphics Visualization with VMware and NVIDIA (Whitepaper)
+  url: https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741654.pdf
+- title: FlexPod Datacenter mit Citrix XenDesktop/XenApp 7.15 und VMware vSphere 6.5
+    Update 1 für 6000 Arbeitsplätze
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/cisco_ucs_xd715esxi65u1_flexpod.html
+- title: FlexPod-Datacenter mit VMware Horizon View 7.3 und VMware vSphere 6.5 Update
+    1 mit Cisco UCS Manager 3.2 für 5000 Arbeitsplätze
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_vmware_horizon_n9k_aff_ucsm32.html
+- title: FlexPod Datacenter mit NetApp ONTAP 9.6, VMware Horizon View 7.10 und VMware
+    vSphere 6.7 U2 mit Cisco UCS Manager 4.0 für bis zu 6700 Plätze
+  url: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_ontap96_vmware710_67_u2_ucs_40_6700_seats.html

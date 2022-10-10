@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_monitor_netapp_storage_from_cisco_intersight.html 
+keywords: netapp, storage, cisco intersight, monitor, orchestrate, orchestration, storage inventory, storage widgets 
+summary: Nachdem die Ziele beansprucht wurden, stehen die Registerkarten für NetApp Storage, Storage-Inventar und Virtualisierung zur Verfügung, wenn Sie eine Advantage-Tier-Lizenz besitzen. Bei einer Premier Tier-Lizenz stehen Registerkarten zur Orchestrierung zur Verfügung. 
+---
+= Überwachen Sie NetApp Storage von Cisco Intersight
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+Nachdem die Ziele beansprucht wurden, stehen die Registerkarten für NetApp Storage, Storage-Inventar und Virtualisierung zur Verfügung, wenn Sie eine Advantage-Tier-Lizenz besitzen. Bei einer Premier Tier-Lizenz stehen Registerkarten zur Orchestrierung zur Verfügung.
+
+
+
+== Überblick über den Storage-Bestand
+
+Im folgenden Screenshot wird der Bildschirm *Bedienung > Speicher* angezeigt.
+
+image:ci-qsg_image9.png["Der Screenshot zeigt den Bildschirm „Betrieb > Storage“ an"]
+
+Der folgende Screenshot zeigt die Übersicht zum Storage Cluster.
+
+
+NOTE: Die folgenden Performancekennzahlen werden nur angezeigt, wenn das Speicher-Array über NetApp Active IQ Unified Manager 9.9 oder höher überwacht wird.
+
+image:ci-qsg_image10.png["Screenshot zeigt die Übersicht zum Storage-Cluster"]
+
+
+
+== Storage-Widgets
+
+Um Storage-Widgets anzuzeigen, navigieren Sie zu *Überwachung > Dashboards > NetApp Storage Widgets anzeigen*.
+
+* Der folgende Screenshot zeigt das Widget „Storage Version Summary“.
+
+
+image:ci-qsg_image11.jpg["Screenshot zeigt das Widget „Storage Version Summary“"]
+
+* Dieser Screenshot zeigt die Top 5 Storage Arrays nach Kapazitätsauslastung.
+
+
+image:ci-qsg_image12.png["Screenshot zeigt die Top 5 Storage Arrays nach Kapazitätsauslastung"]
+
+* Dieser Screenshot zeigt die Top 5 Storage Volumes nach Kapazitätsauslastung.
+
+
+image:ci-qsg_image13.png["Screenshot zeigt die Top 5 Storage Volumes nach Kapazitätsauslastung"]

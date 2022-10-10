@@ -1,0 +1,455 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_technical_specifications_and_references.html 
+keywords: cisco, ucs, b, series, vic, switches, nexus, fas, aff, series 
+summary: Technische Spezifikationen enthalten Details zu den Hardwarekomponenten einer FlexPod-Lösung, z. B. Chassis, FEXs, Server, Switches, Und Storage Controllern. 
+---
+= Technische Spezifikationen und Referenzen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Technische Spezifikationen enthalten Details zu den Hardwarekomponenten einer FlexPod-Lösung, z. B. Chassis, FEXs, Server, Switches, Und Storage Controllern.
+
+
+
+== Blade Server-Chassis der Cisco UCS B-Serie
+
+Die technischen Spezifikationen für das Blade Server-Chassis der Cisco UCS B-Serie, wie in der folgenden Tabelle dargestellt, umfassen die folgenden Komponenten:
+
+* Anzahl der Höheneinheiten
+* Maximale Anzahl an Blades
+* Unified Fabric Funktionalität
+* Midplane-I/O-Bandbreite pro Server
+* Anzahl der E/A-Schächte für FEXs
+
+
+|===
+| Komponente | Blade Server-Chassis der Cisco UCS 5100-Serie 
+
+
+| Höheneinheiten | 6 
+
+
+| Maximale Rotorblätter in voller Breite | 4 
+
+
+| Maximale Rotorblätter in halber Breite | 8 
+
+
+| Der sogenannten Unified Fabric | Ja. 
+
+
+| Midplane-I/O | Bis zu 80 GBit/s I/O-Bandbreite pro Server 
+
+
+| E/A-Schächte für FEXs | Zwei Einschübe für Cisco UCS 2104XP, 2204/8XP, 2408XP und 2304 FEXs 
+|===
+Weitere Informationen finden Sie im http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-5100-series-blade-server-chassis/data_sheet_c78-526830.html["Blade Server-Chassis der Cisco UCS 5100-Serie – Datenblatt"^].
+
+
+
+== Cisco UCS Blade Server der B-Serie
+
+Die technischen Spezifikationen für Cisco UCS Blade Server der B-Serie, wie in der nachfolgenden Tabelle dargestellt, umfassen die folgenden Komponenten:
+
+* Anzahl der Prozessorsockeln
+* Prozessorunterstützung
+* Speicherkapazität
+* Größe und Geschwindigkeit
+* SAN Boot-Unterstützung
+* Anzahl der Mezzanine-Adaptersteckplätze
+* Maximaler I/O-Durchsatz
+* Formfaktor
+* Maximale Anzahl an Servern pro Chassis
+
+
+|===
+| Komponente | Cisco UCS Datenblatt 
+
+
+| CISCO UCS B200 M6 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/datasheet-c78-2368888.html["Cisco UCS B200 M6 Blade Server"] 
+|===
+
+
+== Rack-Server der Cisco UCS C-Serie
+
+Die technischen Spezifikationen für die Rack-Server der Cisco UCS C-Serie umfassen Prozessorunterstützung, maximale Speicherkapazität, die Anzahl der PCIe-Steckplätze und die Größe des Formfaktors. Weitere Informationen zu kompatiblen UCS Servermodellen finden Sie im https://ucshcltool.cloudapps.cisco.com/public/["Cisco Hardware-Kompatibilität"^] Liste. In den folgenden Tabellen sind jeweils die Datenblätter für den C-Series Rack Server und die Gehäuseoption Cisco UCS C-Series dargestellt.
+
+|===
+| Komponente | Cisco UCS Datenblatt 
+
+
+| CISCO UCS C220 M6 | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c220m6-sff-specsheet.pdf["Cisco UCS C220 M6 Rack Server"] 
+
+
+| CISCO UCS C225 M6 | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c225-m6-sff-specsheet.pdf["Cisco UCS C225 M6 Rack Server"] 
+
+
+| CISCO UCS C240 M6 | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c240m6-sff-specsheet.pdf["Cisco UCS C240 M6 Rack Server"] 
+
+
+| CISCO UCS C245 M6 | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/c245m6-sff-specsheet.pdf["Cisco UCS C245 M6 Rack Server"] 
+|===
+
+
+== Gehäuse der Cisco UCS X-Serie
+
+Die technischen Spezifikationen für Gehäuse der Cisco UCS X-Serie, wie in der nachfolgenden Tabelle dargestellt, umfassen die folgenden Komponenten:
+
+* Anzahl der Höheneinheiten
+* Maximale Anzahl an Nodes
+* Unified Fabric Funktionalität
+* Anzahl der I/O-Einschübe für IFMS
+
+
+|===
+| Komponente | Cisco UCS 9508 Computing-Node-Chassis der X-Serie 
+
+
+| Höheneinheiten | 7 
+
+
+| Maximale Anzahl an Nodes | 8 
+
+
+| Der sogenannten Unified Fabric | Ja. 
+
+
+| I/O-Einschübe für IFMS | Zwei Einschübe für Cisco UCS 9108 Intelligent Fabric Module (IFMS) 
+|===
+Weitere Informationen finden Sie im link:https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2472574.html["Datenblatt zum Cisco UCS X9508 X-Series Gehäuse"^].
+
+
+
+== Computing-Node der Cisco UCS X-Serie
+
+Die technischen Spezifikationen für den Computing-Node der Cisco UCS X-Serie, wie in der folgenden Tabelle dargestellt, umfassen die folgenden Komponenten:
+
+* Anzahl der Prozessorsockeln
+* Prozessorunterstützung
+* Speicherkapazität
+* Größe und Geschwindigkeit
+* SAN Boot-Unterstützung
+* Anzahl der Mezzanine-Adaptersteckplätze
+* Maximaler I/O-Durchsatz
+* Formfaktor
+* Maximale Anzahl der Computing-Nodes pro Chassis
+
+
+|===
+
+
+| Komponente | Cisco UCS Datenblatt 
+
+
+| Cisco UCS X210c M6 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-x-series-modular-system/datasheet-c78-2465523.html?ccid=cc002456&oid=dstcsm026318["Cisco UCS X210c M6 Computing-Node"] 
+|===
+
+
+== GPU-Empfehlung für FlexPod AI, ML und DL
+
+Die in der nachstehenden Tabelle aufgeführten Cisco UCS C-Series Rack Server können in einer FlexPod-Architektur zum Hosten von KI-, ML- und DL-Workloads verwendet werden. Die Cisco UCS C480 ML M5 Server wurden speziell für KI-, ML- und DL-Workloads entwickelt und verwenden NVIDIA SXM2-basierte GPUs, während die anderen Server PCIe-basierte GPUs verwenden.
+
+In der folgenden Tabelle sind auch die empfohlenen GPUs aufgeführt, die mit diesen Servern verwendet werden können.
+
+|===
+| Server | GPUs 
+
+
+| CISCO UCS C220 M6 | NVIDIA T4 
+
+
+| CISCO UCS C225 M6 | NVIDIA T4 
+
+
+| CISCO UCS C240 M6 | NVIDIA TESLA A10, A100 
+
+
+| CISCO UCS C245 M6 | NVIDIA TESLA A10, A100 
+|===
+
+
+== Cisco UCS VIC Adapter für Cisco UCS B-Series Blade Server
+
+Die technischen Spezifikationen für die Cisco UCS Virtual Interface Card (VIC) Adapter für Cisco UCS B-Series Blade Server umfassen die folgenden Komponenten:
+
+* Anzahl der Uplink-Ports
+* Performance pro Port (IOPS)
+* Strom
+* Anzahl der Blade Ports
+* Hardware-Entlastung
+* Unterstützung für Virtualisierung der ein-/Ausgabe-Einzelroot-Eingabe (SR-IOV
+
+
+Alle derzeit validierten FlexPod Architekturen nutzen einen Cisco UCS VIC. Wenn diese im NetApp aufgeführt sind, werden auch andere Adapter unterstützt http://mysupport.netapp.com/matrix["IMT"^] Sie sind mit Ihrer Implementierung von FlexPod kompatibel, bieten jedoch möglicherweise nicht alle Funktionen, die in der entsprechenden Referenzarchitektur beschrieben werden. Die folgende Tabelle zeigt die Datenblätter zum Cisco UCS VIC Adapter.
+
+|===
+| Komponente | Cisco UCS Datenblatt 
+
+
+| Cisco UCS Virtual Interface Adapter | https://www.cisco.com/c/en/us/products/interfaces-modules/unified-computing-system-adapters/index.html["Cisco UCS VIC – Datenblätter"] 
+|===
+
+
+== Cisco UCS Fabric Interconnects
+
+Die technischen Spezifikationen für Cisco UCS Fabric Interconnects beinhalten Formfaktor Größe, Gesamtanzahl der Ports und Erweiterungssteckplätze sowie Durchsatzkapazität. Die folgende Tabelle zeigt die Cisco UCS Fabric Interconnect Datenblätter.
+
+|===
+| Komponente | Cisco UCS Datenblatt 
+
+
+| Cisco UCS 6248UP .2+| https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-6200-series-fabric-interconnects/index.html["Fabric Interconnects der Cisco UCS 6200-Serie"] 
+
+
+| Cisco UCS 6296UP 
+
+
+| Cisco UCS 6324 | http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-732207.html["Cisco UCS 6324 Fabric Interconnect"] 
+
+
+| Cisco UCS 6300 | http://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-6300-series-fabric-interconnects/datasheet-c78-736682.html["Fabric Interconnects der Cisco UCS 6300-Serie"] 
+
+
+| Cisco UCS 6454 | https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/datasheet-c78-741116.html["Fabric Interconnects der Cisco UCS 6400-Serie"] 
+|===
+
+
+== Switches der Cisco Nexus 5000 Serie
+
+Die technischen Spezifikationen für Switches der Cisco Nexus 5000 Serie, einschließlich Formfaktor-Größe, Gesamtanzahl der Ports und Unterstützung für Layer-3-Module und Tochterkarten, sind im Datenblatt für jede Modellfamilie enthalten. Diese Datenblätter sind in der folgenden Tabelle zu finden.
+
+|===
+| Komponente | Cisco Nexus Datenblatt 
+
+
+| Cisco Nexus 5548UP | http://www.cisco.com/en/US/products/ps11681/index.html["Cisco Nexus 5548UP Switch"] 
+
+
+| Cisco Nexus 5596UP (2 HE) | http://www.cisco.com/en/US/products/ps11577/index.html["Cisco Nexus 5596UP Switch"] 
+
+
+| Cisco Nexus 56128P | http://www.cisco.com/c/en/us/products/switches/nexus-56128p-switch/index.html["Cisco Nexus 56128P-Switch"] 
+
+
+| Cisco Nexus 5672UP | http://www.cisco.com/c/en/us/products/switches/nexus-5672up-switch/index.html["Cisco Nexus 5672UP Switch"] 
+|===
+
+
+== Switches der Cisco Nexus 7000 Serie
+
+Die technischen Spezifikationen für Switches der Cisco Nexus 7000 Serie, einschließlich der Formfaktor-Größe und maximale Anzahl der Ports, sind im Datenblatt für jede Modellfamilie enthalten. Diese Datenblätter sind in der folgenden Tabelle zu finden.
+
+|===
+| Komponente | Cisco Nexus Datenblatt 
+
+
+| Cisco Nexus 7004 .4+| http://www.cisco.com/en/US/prod/collateral/switches/ps9441/ps9402/ps9512/Data_Sheet_C78-437762.html["Switches Der Cisco Nexus 7000-Serie"] 
+
+
+| Cisco Nexus 7009 
+
+
+| Cisco Nexus 7010 
+
+
+| Cisco Nexus 7018 
+
+
+| Cisco Nexus 7702 .4+| http://www.cisco.com/en/US/prod/collateral/switches/ps9441/ps9402/data_sheet_c78-728187.html["Switches Der Cisco Nexus 7700-Serie"] 
+
+
+| Cisco Nexus 7706 
+
+
+| Cisco Nexus 7710 
+
+
+| Cisco Nexus 7718 
+|===
+
+
+== Switches der Cisco Nexus 9000 Serie
+
+Die technischen Spezifikationen für Switches der Cisco Nexus 9000 Serie sind bei jedem Modell im Datenblatt enthalten. Die Spezifikationen umfassen die Größe des Formfaktors, die Anzahl der Supervisoren, das Fabric-Modul und die Linienkartensteckplätze sowie die maximale Anzahl der Ports. Diese Datenblätter sind in der folgenden Tabelle zu finden.
+
+|===
+| Komponente | Cisco Nexus Datenblatt 
+
+
+| Cisco Nexus 9000 Serie | http://www.cisco.com/c/en/us/products/switches/nexus-9000-series-switches/index.html["Switches Der Cisco Nexus 9000-Serie"] 
+
+
+| Cisco Nexus 9500 Serie | http://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html["Switches Der Cisco Nexus 9500-Serie"] 
+
+
+| Cisco Nexus 9300 Serie | http://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729405.html["Switches Der Cisco Nexus 9300-Serie"] 
+
+
+| Cisco Nexus 9336PQ ACI Wirbelsäulenschalter | http://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-731792.html["Cisco Nexus 9336PQ ACI Wirbelsäulenschalter"] 
+
+
+| Cisco Nexus 9200 Serie | https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-735989.html["Switches Der Cisco Nexus 9200 Plattform"] 
+|===
+
+
+== Cisco Application Policy Infrastructure Controller
+
+Bei der Implementierung von Cisco ACI zusätzlich zu den Elementen im Abschnitt link:dc-tech-spec_technical_specifications_and_references.html#cisco-nexus-9000-series-switches["Switches Der Cisco Nexus 9000-Serie"], Sie müssen drei Cisco APICs konfigurieren. In der folgenden Tabelle ist das Cisco APIC Datenblatt aufgeführt.
+
+|===
+| Komponente | Cisco Application Policy Infrastructure – Datenblatt 
+
+
+| Cisco Application Policy Infrastructure Controller | https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/application-policy-infrastructure-controller-apic/datasheet-c78-739715.html["Datenblatt zu Cisco APIC"] 
+|===
+
+
+== Details des Cisco Nexus Fabric Extender
+
+Die technischen Spezifikationen für den Cisco Nexus FEX umfassen Geschwindigkeit, die Anzahl der festen Ports und Verbindungen sowie die Größe des Formfaktors.
+
+In der folgenden Tabelle ist das Datenblatt zur FEX-Serie Cisco Nexus 2000 aufgeführt.
+
+|===
+| Komponente | Cisco Nexus Fabric Extender Datenblatt 
+
+
+| Cisco Nexus 2000 Series Fabric Extender | https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html["FEX-Datenblatt für die Nexus 2000-Serie"] 
+|===
+
+
+== SFP-Module
+
+Weitere Informationen zu den SFP-Modulen finden Sie in den folgenden Ressourcen:
+
+* Weitere Informationen zum Cisco 10-Gbit-SFP finden Sie unter https://www.cisco.com/c/en/us/products/interfaces-modules/10-gigabit-modules/index.html["Cisco 10-Gigabit-Module"^].
+* Informationen zum Cisco 25GB SFP finden Sie unter https://www.cisco.com/c/en/us/products/interfaces-modules/25-gigabit-modules/index.html["Cisco 25-Gigabit-Module"^].
+* Informationen zum Cisco QSFP-Modul finden Sie im https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-660083.html["Datenblatt zu Cisco 40GBASE QSFP Modulen"^].
+* Informationen zum Cisco 100-GB-SFP finden Sie unter https://www.cisco.com/c/en/us/products/interfaces-modules/100-gigabit-modules/index.html["Cisco 100-Gigabit-Module"^].
+* Informationen zum Cisco FC SFP-Modul finden Sie im https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9000-series-multilayer-switches/product_data_sheet09186a00801bc698.html?dtid=osscdc000283["Datenblatt zu Cisco MDS 9000-Produktreihe Pluggable Transceivern"^].
+* Informationen zu allen unterstützten Cisco SFP- und Transceiver-Modulen finden Sie unter http://www.cisco.com/en/US/docs/interfaces_modules/transceiver_modules/installation/note/78_15160.html["Hinweise zur Installation des Cisco SFP- und SFP+-Transceivermoduls"^] Und http://www.cisco.com/en/US/products/hw/modules/ps5455/prod_module_series_home.html["Cisco Transceiver-Module"^].
+
+
+
+
+== NetApp Storage Controller
+
+Die technischen Spezifikationen für NetApp Storage Controller umfassen die folgenden Komponenten:
+
+* Chassis-Konfiguration
+* Anzahl der Höheneinheiten
+* Speichermenge
+* NetApp Flash Cache Caching
+* Aggregatgröße
+* Volume-Größe
+* Anzahl LUNs
+* Unterstützter Netzwerkspeicher
+* Maximale Anzahl an NetApp FlexVol-Volumes
+* Maximale Anzahl der unterstützten SAN-Hosts
+* Die maximale Anzahl von Snapshot Kopien
+
+
+
+
+=== FAS Serie
+
+Alle verfügbaren Modelle von FAS Storage Controllern werden zur Verwendung in einem FlexPod-Datacenter unterstützt. Detaillierte Spezifikationen für alle Storage Controller der FAS Serie finden Sie im https://hwu.netapp.com/["NetApp Hardware Universe"^]. Ausführliche Informationen zu einem bestimmten FAS-Modell finden Sie in der plattformspezifischen Dokumentation in der folgenden Tabelle.
+
+|===
+| Komponente | Dokumentation der Controller-Plattform der FAS Serie 
+
+
+| FAS9000 Serie | https://www.netapp.com/us/media/ds-3810.pdf["Datenblatt zur FAS9000 Serie"] 
+
+
+| FAS8700 Serie | https://www.netapp.com/us/media/ds-4020.pdf["Datenblatt zur FAS8700 Serie"] 
+
+
+| FAS8300 Serie | https://www.netapp.com/us/media/ds-4020.pdf["Datenblatt zur FAS8300 Serie"] 
+
+
+| FAS500f Serie | https://docs.netapp.com/us-en/ontap-systems/fas500f/index.html["Datenblatt zur FAS500f Serie"] 
+
+
+| FAS2700 Serie | https://www.netapp.com/us/media/ds-3929.pdf["Datenblatt: FAS2700 Serie"] 
+|===
+
+
+=== AFF A-Serie
+
+Alle aktuellen Modelle der NetApp AFF A-Series Storage Controller werden zur Verwendung in FlexPod unterstützt. Weitere Informationen finden Sie im https://www.netapp.com/us/media/ds-3582.pdf["Technische Spezifikationen der AFF"^] Datenblatt und im https://hwu.netapp.com/["NetApp Hardware Universe"^]. Ausführliche Informationen zu einem bestimmten AFF-Modell finden Sie in der in der folgenden Tabelle aufgeführten plattformspezifischen Dokumentation.
+
+|===
+| Komponente | Dokumentation der Controller-Plattform der AFF A-Series 
+
+
+| NetApp AFF A800 | https://docs.netapp.com/us-en/ontap-systems/a800/index.html["Dokumentation der AFF A800 Plattform"] 
+
+
+| NetApp AFF A700 | https://docs.netapp.com/us-en/ontap-systems/fas9000/index.html["Dokumentation der AFF A700 Plattform"] 
+
+
+| NetApp AFF A700s | https://docs.netapp.com/us-en/ontap-systems/a700s/index.html["AFF A700s Plattform-Dokumentation"] 
+
+
+| NetApp AFF A400 | https://docs.netapp.com/us-en/ontap-systems/a400/index.html["Dokumentation der AFF A400 Plattform"] 
+
+
+| NetApp AFF A250 | https://docs.netapp.com/us-en/ontap-systems/a250/index.html["Dokumentation der AFF A250-Plattform"] 
+|===
+
+
+=== AFF ASA A-SERIES
+
+Alle aktuellen Modelle der NetApp AFF ASA A-Series Storage Controller werden zur Verwendung in FlexPod unterstützt. Weitere Informationen finden Sie in der Dokumentation zu All-SAN-Arrays, im technischen Bericht zu ONTAP AFF All-SAN-Systemen und im NetApp Hardware Universe. Ausführliche Informationen zu einem bestimmten AFF-Modell finden Sie in der plattformspezifischen Dokumentation, die in der folgenden Tabelle aufgeführt ist.
+
+|===
+| Komponente | Dokumentation der Controller-Plattform der AFF A-Series 
+
+
+| NETAPP AFF ASA A800 | http://docs.netapp.com/allsan/index.jsp["Dokumentation der AFF ASA A800 Plattform"] 
+
+
+| NETAPP AFF ASA A700 | http://docs.netapp.com/allsan/index.jsp["Dokumentation der AFF ASA A700 Plattform"] 
+
+
+| NETAPP AFF ASA A400 | http://docs.netapp.com/allsan/index.jsp["Dokumentation der AFF ASA A400 Plattform"] 
+
+
+| NETAPP AFF ASA A250 | http://docs.netapp.com/allsan/index.jsp["Dokumentation der AFF ASA A250-Plattform"] 
+
+
+| NETAPP AFF ASA A220 | http://docs.netapp.com/allsan/index.jsp["Dokumentation der AFF ASA A220 Plattform"] 
+|===
+
+
+=== NetApp Platten-Shelves
+
+Die technischen Spezifikationen für NetApp Platten-Shelves umfassen die Größe des Formfaktor, die Anzahl der Laufwerke pro Gehäuse und die Shelf-I/O-Module. Diese Dokumentation finden Sie in der folgenden Tabelle. Weitere Informationen finden Sie im http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Technische Spezifikationen zu NetApp Platten-Shelfs und Storage-Medien"^] Und das https://hwu.netapp.com/["NetApp Hardware Universe"^].
+
+|===
+| Komponente | Dokumentation des NetApp FAS/AFF Festplatten-Shelf 
+
+
+| NetApp DS212C Festplatten-Shelf | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS212C Disk Shelf-Dokumentation"] 
+
+
+| NetApp DS224C Festplatten-Shelf | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS224C Festplatten-Shelf-Dokumentation"] 
+
+
+| NetApp DS460C Festplatten-Shelf | https://www.netapp.com/data-storage/disk-shelves-storage-media/["DS460C Festplatten-Shelf-Dokumentation"] 
+
+
+| NetApp NS224 NVMe-SSD Festplatten-Shelf | https://www.netapp.com/data-storage/disk-shelves-storage-media/["NS224 Disk Shelf-Dokumentation"] 
+|===
+
+
+=== NetApp Laufwerke
+
+Die technischen Spezifikationen für NetApp Laufwerke umfassen Formfaktor Größe, Festplattenkapazität, Festplatten-U/min, unterstützende Controller und ONTAP Versionsanforderungen. Diese Spezifikationen finden Sie im Abschnitt Laufwerke des http://hwu.netapp.com/Drives/Index?queryId=1581392["NetApp Hardware Universe"^].

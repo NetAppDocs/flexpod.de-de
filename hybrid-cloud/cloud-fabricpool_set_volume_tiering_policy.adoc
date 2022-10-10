@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_set_volume_tiering_policy.html 
+keywords: volume, tiering, policy, ontap, cli, oncommand, system, manager, cloud, fabricpool 
+summary:  
+---
+= Legen Sie eine Volume-Tiering-Richtlinie fest
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Standardmäßig verwenden Volumes die Tiering-Richtlinie „Keine Volumes“. Nach der Erstellung eines Volumes kann die Tiering-Richtlinie des Volumes mithilfe von OnCommand System Manager oder der ONTAP CLI geändert werden.
+
+In Verbindung mit FlexPod bietet FabricPool drei Volume Tiering-Richtlinien: Automatisch, nur Snapshot und keine.
+
+* *Auto*
++
+** Alle „kalten“ Blöcke im Volume werden in den Cloud-Tier verschoben. Angenommen, das Aggregat wird zu mehr als 50 % genutzt, es dauert etwa 31 Tage, bis inaktive Blöcke kalt werden. Die automatische Kühldauer kann mit dem zwischen 2 Tagen und 63 Tagen eingestellt werden `tiering-minimum-cooling-days` Einstellung.
+** Wenn selten genutzte, „kalte“ Blöcke in einem Volume mit einer auf „Auto“ eingestellten Tiering-Richtlinie zufällig gelesen werden, werden sie „heiß“ und in die Performance-Tier geschrieben.
+** Wenn selten genutzte, „kalte“ Blöcke in einem Volume mit einer auf „Auto“ festgelegten Tiering-Richtlinie sequenziell gelesen werden, bleiben sie „kalt“ und verbleiben auf der Cloud-Tier. Sie werden nicht in die Performance-Tier geschrieben.
+
+
+* *Nur Snapshot*
++
+** „Kalte“ Snapshot Blöcke im Volume, die nicht mit dem aktiven Filesystem gemeinsam genutzt werden, werden in die Cloud-Tier verschoben. Angenommen, dass das Aggregat zu mehr als 50 % genutzt wird, dauert es etwa 2 Tage, bis inaktive Snapshot-Blöcke kalt werden. Die reine Snapshot-Kühldauer kann mit dem von 2 bis 63 Tagen angepasst werden `tiering-minimum-cooling-days` Einstellung.
+** Wenn selten genutzte, „kalte“ Blöcke in einem Volume mit einer Snapshot-basierten Tiering-Richtlinie gelesen werden, werden sie „heiß“ und auf die Performance-Tier geschrieben.
+
+
+* *Keine (Standard)*
++
+** Volumes, die für die Verwendung von „Keine“ als Tiering-Richtlinie festgelegt sind, verlagern selten genutzte Daten nicht auf die Cloud-Tier.
+** Wenn Sie die Tiering-Richtlinie auf „Keine“ setzen, wird ein neues Tiering verhindert.
+** Daten, die zuvor in das Cloud-Tier verschoben wurden, verbleiben im Cloud-Tier, bis sie häufig verfügbar sind. Daten werden automatisch zurück in die Performance-Tier verschoben.
+
+
+
+
+
+
+== OnCommand System Manager
+
+Um die Tiering-Richtlinie eines Volumes mithilfe von OnCommand System Manager zu ändern, führen Sie die folgenden Schritte aus:
+
+. Starten Sie den OnCommand System Manager.
+. Wählen Sie ein Volume aus.
+. Klicken Sie auf Weitere Aktionen, und wählen Sie Tiering Policy ändern aus.
+. Wählen Sie die Tiering-Richtlinie aus, die auf das Volume angewendet werden soll.
+. Klicken Sie auf Speichern .
++
+image:cloud-fabricpool_image16.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+
+
+== CLI VON ONTAP
+
+Um die Tiering-Richtlinie eines Volumes mithilfe der ONTAP CLI zu ändern, führen Sie den folgenden Befehl aus:
+
+....
+volume modify -vserver <svm_name> -volume <volume_name>
+-tiering-policy <auto|snapshot-only|all|none>
+....
+link:cloud-fabricpool_set_volume_tiering_minimum_cooling_days.html["Weiter: Legen Sie die Mindestkühltage für das Volume Tiering fest."]

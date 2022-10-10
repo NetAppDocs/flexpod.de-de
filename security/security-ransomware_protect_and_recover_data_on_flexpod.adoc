@@ -1,0 +1,192 @@
+---
+sidebar: sidebar 
+permalink: security/security-ransomware_protect_and_recover_data_on_flexpod.html 
+keywords: testbed, ransomeware, attack, vm, snapshot, copy, wannacry, detection, remediation, cifs 
+summary: Dieser Abschnitt beschreibt, wie die Daten eines Endbenutzers im Falle eines Angriffs wiederhergestellt werden können und wie Angriffe durch die Verwendung eines FlexPod-Systems verhindert werden können. 
+---
+= Sichern Sie Ihre Daten und stellen Sie sie auf FlexPod wieder her
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Dieser Abschnitt beschreibt, wie die Daten eines Endbenutzers im Falle eines Angriffs wiederhergestellt werden können und wie Angriffe durch die Verwendung eines FlexPod-Systems verhindert werden können.
+
+
+
+== Testbed-Übersicht
+
+Zur Präsentation von FlexPod-Erkennung, -Korrektur und -Vorbeugung wurde ein Testbed auf Basis der Richtlinien erstellt, die in der neuesten CVD-Plattform angegeben sind, die zum Zeitpunkt der Erstellung dieses Dokuments verfügbar sind: https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html["FlexPod Datacenter mit VMware vSphere 6.7 U1, Cisco UCS der vierten Generation und NetApp AFF A-Series CVD"^].
+
+In der VMware vSphere Infrastruktur wurde eine Windows 2016 VM mit einer CIFS-Freigabe durch die NetApp ONTAP Software implementiert. Dann wurde NetApp FPolicy auf der CIFS-Freigabe konfiguriert, um die Ausführung von Dateien mit bestimmten Extension-Typen zu verhindern. Darüber hinaus wurde die NetApp SnapCenter Software implementiert, um die Snapshot Kopien der VMs in der Infrastruktur zu managen, um applikationskonsistente Snapshot Kopien zu ermöglichen.
+
+
+
+== Status der VM und ihrer Dateien vor einem Angriff
+
+In diesem Abschnitt werden der Status der Dateien vor einem Angriff auf die VM und die ihr zugewiesene CIFS-Freigabe angezeigt.
+
+Der Ordner Dokumente der VM hatte eine Reihe von PDF-Dateien, die noch nicht durch die WannaCry Malware verschlüsselt wurden.
+
+image:security-ransomware_image3.png["Fehler: Fehlendes Grafikbild"]
+
+Der folgende Screenshot zeigt die CIFS-Freigabe, die der VM zugeordnet war.
+
+image:security-ransomware_image4.png["Fehler: Fehlendes Grafikbild"]
+
+Der folgende Screenshot zeigt die Dateien auf der CIFS-Freigabe `fpolicy_share` Die noch nicht durch die WannaCry-Malware verschlüsselt wurden.
+
+image:security-ransomware_image5.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== Deduplizierung und Snapshot-Informationen vor einem Angriff
+
+Details zur Storage-Effizienz und die Größe der Snapshot-Kopie vor einem Angriff werden als Referenz während der Erkennungsphase angezeigt.
+
+Storage-Einsparungen von 19 % wurden durch Deduplizierung auf dem Volume, das die VM hostet, erzielt.
+
+image:security-ransomware_image6.png["Fehler: Fehlendes Grafikbild"]
+
+Durch Deduplizierung beim CIFS-Share wurden Storage-Einsparungen von 45 % erzielt `fpolicy_share`.
+
+image:security-ransomware_image7.png["Fehler: Fehlendes Grafikbild"]
+
+Für das Volume, das die VM hostet, wurde eine Snapshot-Kopie von 456 KB beobachtet.
+
+image:security-ransomware_image8.png["Fehler: Fehlendes Grafikbild"]
+
+Für den CIFS-Share wurde eine Snapshot Kopie von 160 KB beobachtet `fpolicy_share`.
+
+image:security-ransomware_image9.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== WannaCry-Infektion auf VM und CIFS-Share
+
+In diesem Abschnitt zeigen wir, wie die WannaCry-Malware in die FlexPod-Umgebung eingeführt wurde und welche Änderungen am System beobachtet wurden.
+
+Die folgenden Schritte zeigen, wie die WannaCry-Malware-Binärdatei in die VM eingeführt wurde:
+
+. Die gesicherte Malware wurde extrahiert.
++
+image:security-ransomware_image10.png["Fehler: Fehlendes Grafikbild"]
+
+. Die Binärdatei wurde ausgeführt.
++
+image:security-ransomware_image11.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+
+
+=== Fall 1: WannaCry verschlüsselt das Dateisystem innerhalb der VM und zugeordnete CIFS-Freigabe
+
+Das lokale Dateisystem und die zugeordnete CIFS-Share wurden durch den WannaCry Malware verschlüsselt.
+
+Malware beginnt, Dateien mit WNCRY-Erweiterungen zu verschlüsseln.
+
+image:security-ransomware_image12.png["Fehler: Fehlendes Grafikbild"]
+
+Die Malware verschlüsselt alle Dateien in der lokalen VM und der zugeordneten Freigabe.
+
+image:security-ransomware_image13.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+==== Erkennung
+
+Als die Malware mit der Verschlüsselung der Dateien begann, führte sie zu einem exponentiellen Anstieg der Größe der Snapshot-Kopien und einer deutlichen Verringerung der Storage-Effizienz in Prozent.
+
+Wir erkannten eine drastische Zunahme der Snapshot-Größe auf 820.98MB für das Volume, das während des Angriffs die CIFS-Freigabe hostet.
+
+image:security-ransomware_image14.png["Fehler: Fehlendes Grafikbild"]
+
+Wir erkannten eine Erhöhung der Snapshot-Kopie auf 404,3MB für den Volumen, der die VM hostet.
+
+image:security-ransomware_image15.png["Fehler: Fehlendes Grafikbild"]
+
+Die Storage-Effizienz für das Volume, auf dem der CIFS-Share gehostet wird, sank auf 34 %.
+
+image:security-ransomware_image16.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+==== Korrekturmaßnahmen
+
+Stellen Sie die VM wieder her und zugewiesenes CIFS Share, indem Sie vor dem Angriff eine saubere Snapshot Kopie erstellen.
+
+*VM wiederherstellen*
+
+Um die VM wiederherzustellen, führen Sie die folgenden Schritte aus:
+
+. Verwenden Sie die mit SnapCenter erstellte Snapshot Kopie zum Wiederherstellen der VM.
++
+image:security-ransomware_image17.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie die gewünschte VMware- konsistente Snapshot Kopie für die Wiederherstellung aus.
++
+image:security-ransomware_image18.png["Fehler: Fehlendes Grafikbild"]
+
+. Die gesamte VM wird wiederhergestellt und neu gestartet.
++
+image:security-ransomware_image19.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie auf Fertig stellen, um den Wiederherstellungsvorgang zu starten.
++
+image:security-ransomware_image20.png["Fehler: Fehlendes Grafikbild"]
+
+. Die VM und ihre Dateien sind wiederhergestellt.
++
+image:security-ransomware_image21.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+*CIFS-Freigabe wiederherstellen*
+
+Gehen Sie wie folgt vor, um die CIFS-Freigabe wiederherzustellen:
+
+. Verwenden Sie die Snapshot-Kopie des vor dem Angriff aufgenommene Volumes, um die Freigabe wiederherzustellen.
++
+image:security-ransomware_image22.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie auf OK, um den Wiederherstellungsvorgang zu starten.
++
+image:security-ransomware_image23.png["Fehler: Fehlendes Grafikbild"]
+
+. Zeigen Sie die CIFS-Freigabe nach der Wiederherstellung an.
++
+image:security-ransomware_image24.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+
+
+=== Fall 2: WannaCry verschlüsselt Dateisystem innerhalb der VM und versucht, die zugewiesene CIFS-Freigabe zu verschlüsseln, die durch FPolicy geschützt ist
+
+
+
+==== Prävention
+
+*FPolicy konfigurieren*
+
+Führen Sie die folgenden Befehle auf dem ONTAP-Cluster aus, um FPolicy auf der CIFS-Freigabe zu konfigurieren:
+
+....
+vserver fpolicy policy event create -vserver infra_svm -event-name Ransomware_event -protocol cifs -file-operations create,rename,write,open
+vserver fpolicy policy create -vserver infra_svm -policy-name Ransomware_policy -events Ransomware_event -engine native
+vserver fpolicy policy scope create -vserver infra_svm -policy-name Ransomware_policy -shares-to-include fpolicy_share -file-extensions-to-include WNCRY,Locky,ad4c
+vserver fpolicy enable -vserver infra_svm -policy-name Ransomware_policy -sequence-number 1
+....
+Mit dieser Richtlinie sind Dateien mit den Erweiterungen WNCRY, Locky und ad4c nicht berechtigt, die Dateivorgänge zum Erstellen, Umbenennen, Schreiben oder Öffnen auszuführen.
+
+Anzeigen des Status von Dateien vor dem Angriff – sie sind unverschlüsselt und in einem sauberen System.
+
+image:security-ransomware_image25.png["Fehler: Fehlendes Grafikbild"]
+
+Die Dateien auf der VM sind verschlüsselt. Die WannaCry Malware versucht, die Dateien in der CIFS-Share zu verschlüsseln, aber FPolicy verhindert, dass sie die Dateien zu beeinflussen.
+
+image:security-ransomware_image26.png["Fehler: Fehlendes Grafikbild"]

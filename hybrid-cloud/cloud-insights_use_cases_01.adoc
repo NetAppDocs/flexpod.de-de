@@ -1,0 +1,160 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_use_cases_01.html 
+keywords: use, cases, active, iq, integration, dashboards, troubleshooting, storage, optimization, custom, real, time 
+summary: Mit Cloud Insights für das Monitoring Ihrer FlexPod Datacenter Lösung eingerichtet und konfiguriert, können wir einige der Aufgaben untersuchen, die Sie auf dem Dashboard durchführen können, um Ihre Umgebung zu bewerten und zu überwachen. In diesem Abschnitt werden fünf primäre Anwendungsfälle für Cloud Insights vorgestellt. 
+---
+= Anwendungsfälle
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Mit Cloud Insights für das Monitoring Ihrer FlexPod Datacenter Lösung eingerichtet und konfiguriert, können wir einige der Aufgaben untersuchen, die Sie auf dem Dashboard durchführen können, um Ihre Umgebung zu bewerten und zu überwachen. In diesem Abschnitt werden fünf primäre Anwendungsfälle für Cloud Insights vorgestellt:
+
+* Active IQ Integration
+* Über Echtzeit-Dashboards entdecken
+* Erstellen benutzerdefinierter Dashboards
+* Erweiterte Fehlerbehebung
+* Storage-Optimierung
+
+
+
+
+== Active IQ Integration
+
+Cloud Insights ist vollständig in die Active IQ Storage-Monitoring-Plattform integriert. Ein ONTAP System, das als Teil einer FlexPod Datacenter Lösung implementiert wird, wird automatisch so konfiguriert, dass es Informationen über die in die einzelnen Systeme integrierte AutoSupport Funktion an NetApp zurücksendet. Diese Berichte werden planmäßig oder dynamisch erzeugt, wenn ein Fehler im System erkannt wird. Die über AutoSupport kommunizierten Daten werden aggregiert und in leicht zugänglichen Dashboards unter dem Active IQ-Menü in Cloud Insights angezeigt.
+
+
+
+=== Greifen Sie über das Cloud Insights Dashboard auf Active IQ-Informationen zu
+
+So greifen Sie über das Cloud Insights Dashboard auf Active IQ-Informationen zu:
+
+. Klicken Sie auf die Option Data Collector im Menü Admin auf der linken Seite.
++
+image:cloud-insights_image13.png["Fehler: Fehlendes Grafikbild"]
+
+. Filtern Sie nach dem bestimmten Data Collector in Ihrer Umgebung. In diesem Beispiel wurde der Begriff FlexPod nach dem Begriff gefiltert.
++
+image:cloud-insights_image23.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie auf den Data Collector, um eine Übersicht über die Umgebung und die Geräte zu erhalten, die von diesem Collector überwacht werden.
++
+image:cloud-insights_image24.png["Fehler: Fehlendes Grafikbild"]
+
++
+Klicken Sie unter der Geräteliste unten auf den Namen des überwachten ONTAP Storage-Systems. Auf diese Weise wird ein Dashboard mit Informationen angezeigt, die über das System erfasst wurden. Dazu gehören folgende Details:
+
++
+** Modell
+** Familie
+** ONTAP-Version
+** Bruttokapazität
+** IOPS-Durchschnitt
+** Durchschnittliche Latenz
+** Durchschnittlicher Durchsatz
++
+image:cloud-insights_image25.png["Fehler: Fehlendes Grafikbild"]
+
++
+Auf dieser Seite im Abschnitt Leistungsrichtlinien finden Sie außerdem einen Link zu NetApp Active IQ.
+
++
+image:cloud-insights_image26.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+. Zum Öffnen einer Registerkarte für einen neuen Browser gelangen Sie zur Seite zur Risikominimierung, die zeigt, welche Nodes betroffen sind, wie wichtig die Risiken sind und welche Maßnahmen zur Behebung der erkannten Probleme ergriffen werden müssen, klicken Sie auf den Link für Active IQ.
++
+image:cloud-insights_image27.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+
+
+=== Dashboards in Echtzeit
+
+Cloud Insights bietet Echtzeit-Dashboards mit Informationen, die von dem in einer FlexPod Datacenter-Lösung implementierten ONTAP Storage-System abgefragt wurden. Die Cloud Insights-Erfassungseinheit erfasst Daten in regelmäßigen Abständen und füllt das Standard-Storage-System-Dashboard mit den erfassten Informationen aus.
+
+
+
+==== Zugriff auf Echtzeitdiagramme über das Cloud Insights Dashboard
+
+Im Dashboard des Speichersystems wird angezeigt, wenn der Data Collector die Informationen zuletzt aktualisiert hat. Ein Beispiel hierfür ist in der Abbildung unten dargestellt.
+
+image:cloud-insights_image28.png["Fehler: Fehlendes Grafikbild"]
+
+Standardmäßig werden auf dem Storage-System-Dashboard mehrere interaktive Diagramme angezeigt, die systemweite Metriken vom zu beforschenden Storage-System oder von jedem einzelnen Node zeigen, darunter Latenz, IOPS und Durchsatz im Abschnitt Expert View. Beispiele für diese Standarddiagramme sind in der folgenden Abbildung dargestellt.
+
+image:cloud-insights_image29.png["Fehler: Fehlendes Grafikbild"]
+
+Standardmäßig werden in den Diagrammen Informationen der letzten drei Stunden angezeigt. Sie können diese jedoch in der Dropdown-Liste oben rechts im Dashboard des Storage-Systems auf eine Reihe verschiedener Werte oder einen benutzerdefinierten Wert festlegen. Dies ist in der Abbildung unten dargestellt.
+
+image:cloud-insights_image30.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+=== Erstellen benutzerdefinierter Dashboards
+
+Nutzen Sie nicht nur die Standard-Dashboards, die systemweite Informationen anzeigen, sondern erstellen Sie mithilfe von Cloud Insights vollständig angepasste Dashboards, mit denen Sie sich auf die Ressourcenauslastung für bestimmte Storage-Volumes in der FlexPod Datacenter Lösung konzentrieren können. Daher werden die in der konvergenten Infrastruktur implementierten Applikationen, die von diesen Volumes für eine effektive Ausführung abhängen. Auf diese Weise lässt sich eine bessere Visualisierung bestimmter Applikationen und der in der Datacenter-Umgebung genutzten Ressourcen erzielen.
+
+
+
+==== Erstellen Sie ein angepasstes Dashboard zur Bewertung von Storage-Ressourcen
+
+Gehen Sie wie folgt vor, um ein angepasstes Dashboard zur Bewertung von Storage-Ressourcen zu erstellen:
+
+. Wenn Sie ein angepasstes Dashboard erstellen möchten, bewegen Sie den Mauszeiger über Dashboards im Hauptmenü von Cloud Insights, und klicken Sie in der Dropdown-Liste auf + Neues Dashboard.
++
+image:cloud-insights_image31.png["Fehler: Fehlendes Grafikbild"]
+
++
+Das Fenster Neues Dashboard wird geöffnet.
+
+. Benennen Sie das Dashboard, und wählen Sie den Typ des Widgets aus, mit dem die Daten angezeigt werden. Sie können aus einer Reihe von Diagrammtypen oder sogar Notizen oder Tabellentypen auswählen, um die erfassten Daten anzuzeigen.
++
+image:cloud-insights_image32.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie im Menü Variable hinzufügen benutzerdefinierte Variablen aus.
++
+Dadurch können die präsentierten Daten fokussiert werden, um spezifische oder speziellere Faktoren anzuzeigen.
+
++
+image:cloud-insights_image33.png["Fehler: Fehlendes Grafikbild"]
+
+. Wenn Sie ein benutzerdefiniertes Dashboard erstellen möchten, wählen Sie den Widget-Typ aus, den Sie verwenden möchten, beispielsweise ein Kreisdiagramm zur Anzeige der Storage-Auslastung nach Volume:
++
+.. Wählen Sie das Widget „TIE-Diagramm“ aus der Dropdown-Liste „Widget hinzufügen“ aus.
+.. Benennen Sie das Widget mit einer beschreibenden Kennung, z. B. `Capacity Used`.
+.. Wählen Sie das anzuzeigende Objekt aus. Sie können beispielsweise nach dem Schlüsselwort Volume suchen und auswählen `volume.performance.capacity.used`.
+.. Um nach Storage-Systemen zu filtern, verwenden Sie den Filter, und geben Sie den Namen des Storage-Systems in der FlexPod Datacenter Lösung ein.
+.. Passen Sie die angezeigten Informationen an. Standardmäßig werden bei dieser Auswahl ONTAP-Daten-Volumes angezeigt und die Top 10 aufgelistet.
+.. Um das benutzerdefinierte Dashboard zu speichern, klicken Sie auf Speichern.
++
+image:cloud-insights_image34.png["Fehler: Fehlendes Grafikbild"]
+
++
+Nach dem Speichern des benutzerdefinierten Widgets kehrt der Browser zur Seite Neues Dashboard zurück, auf der das neu erstellte Widget angezeigt wird, und ermöglicht die Durchführung interaktiver Aktionen, wie z. B. das Ändern des Datenabfragungsperiode.
+
++
+image:cloud-insights_image35.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+
+
+
+
+=== Erweiterte Fehlerbehebung
+
+Mit Cloud Insights können erweiterte Methoden zur Fehlerbehebung auf alle Storage-Umgebungen in einer konvergenten FlexPod Datacenter Infrastruktur angewendet werden. Unter Verwendung der Komponenten der oben genannten Funktionen: Active IQ Integration, Standard-Dashboards mit Echtzeitstatistiken und angepasster Dashboards können Probleme frühzeitig erkannt und schnell gelöst werden. Mithilfe der Risikoliste in Active IQ können Kunden gemeldete Konfigurationsfehler finden, die zu Problemen führen können oder Fehler erkennen, die gemeldet wurden und in denen Codversionen gepatcht wurden, die sie beheben können. Wenn Sie die Echtzeit-Dashboards auf der Cloud Insights-Startseite aufrufen, können Sie Muster der System-Performance erkennen, die einen frühen Hinweis auf ein Problem darstellen können und die schnelle Lösung dieses Problems ermöglichen. Und schließlich können Kunden durch die Möglichkeit, individuelle Dashboards zu erstellen, können sich auf die wichtigsten Ressourcen ihrer Infrastruktur konzentrieren und diese direkt überwachen, sodass sie ihre Business Continuity-Ziele erreichen können.
+
+
+
+=== Storage-Optimierung
+
+Es besteht nicht nur die Möglichkeit, die durch Cloud Insights erfassten Daten zu nutzen, um das ONTAP Storage-System zu optimieren, das in einer konvergenten FlexPod Datacenter-Infrastrukturlösung implementiert ist. Wenn ein Volume eine hohe Latenz aufweist, werden die Informationen auf dem Cloud Insights Dashboard angezeigt, da mehrere VMs mit hohen Performance-Anforderungen gemeinsam denselben Datenspeicher nutzen. Anhand dieser Informationen kann ein Storage-Administrator eine oder mehrere VMs entweder auf andere Volumes migrieren, Storage-Volumes zwischen Aggregaten oder zwischen Nodes im ONTAP Storage-System migrieren und so eine Umgebung mit Performance-Optimierung erzielen. Die Informationen, die durch die Integration von Active IQ und Cloud Insights erzielt werden, können Konfigurationsprobleme herausstellen, die zu einer schlechteren Performance führen, und die empfohlenen Korrekturmaßnahmen ermöglichen, die bei Implementierung mögliche Probleme beheben und ein optimal abgestimmtes Storage-System sicherstellen können.

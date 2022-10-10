@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: ontap-connector-for-intersight/ci-qsg_claim_targets.html 
+keywords: cisco, intersight, netapp, ontap, connector, claim, targets, active iq unified manager, AIQ UM 
+summary: Nach der Installation von Cisco Intersight Assist können Sie Ihre NetApp Storage- und Virtualisierungsgeräte beanspruchen. 
+---
+= Ziele der Forderung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+Nach der Installation von Cisco Intersight Assist können Sie Ihre NetApp Storage- und Virtualisierungsgeräte beanspruchen. Kehren Sie zur Seite *Intersight Targets* zurück und fügen Sie Ihre vCenter- und NetApp Active IQ Unified Manager-Ziele hinzu. Weitere Informationen zum Antragsprozess finden Sie im Video https://tv.netapp.com/detail/video/6228080442001["Fordern Sie ein Ziel über den Cisco Intersight Assist an."^]
+
+
+NOTE: Stellen Sie sicher, dass das NetApp Active IQ Unified Manager (AIQ um) API-Gateway aktiviert ist.
+
+Navigieren Sie im NetApp IQ Unified Manager zu *Einstellungen > Allgemein > Funktionseinstellungen*.
+
+image:ci-qsg_image7.png["Screenshot von aktiviertem NetApp AIQ um API Gateway"]
+
+Das folgende Beispiel zeigt das Ziel NetApp AIQ um, das von Cisco Intersight in Anspruch genommen wird.
+
+
+NOTE: Wenn Sie ein NetApp AIQ um Ziel anfordern, werden alle von Active IQ Unified Manager gemanagten Cluster automatisch zu Intersight hinzugefügt.
+
+image:ci-qsg_image8.png["Screenshot aus dem NetApp AIQ um Ziel, das von Cisco Intersight angefordert wird"]

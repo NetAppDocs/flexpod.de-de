@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-insights_use_cases.html 
+keywords: target, cases, audience, cloud, insights, flexpod, ontap 
+summary: In diesem Abschnitt sind die Zielgruppe und die Fälle aufgeführt, für die diese Lösung gilt. 
+---
+= Anwendungsfälle
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Diese Lösung trifft auf folgende Anwendungsfälle zu:
+
+* Unternehmen, die verschiedene Ressourcen und Auslastung in ihrem ONTAP Storage-System überwachen möchten, werden als Teil einer FlexPod Lösung implementiert.
+* Unternehmen, die Probleme beheben und die Bearbeitungszeit für Vorfälle verkürzen möchten, die in ihrer FlexPod Lösung auf ihren AFF- oder FAS-Systemen auftreten.
+* Unternehmen, die an Kostenoptimierungen interessiert sind, darunter individuelle Dashboards, die detaillierte Informationen zu verschwendeten Ressourcen bereitstellen und in denen sich Kosteneinsparungen in ihrer FlexPod-Umgebung – einschließlich ONTAP – realisieren lassen.
+
+
+
+
+== Zielgruppe
+
+Die Zielgruppe für die Lösung umfasst die folgenden Gruppen:
+
+* IT-Führungskräfte und diejenigen, die mit Kostenoptimierung und Business Continuity zu tun haben.
+* Lösungsarchitekten, die für Datacenter- oder Hybrid-Cloud-Design und -Management interessieren
+* Technical Support Engineers, die für die Fehlersuche und die Problembehebung verantwortlich sind.
+
+
+Sie können Cloud Insights so konfigurieren, dass mehrere nützliche Datentypen zur Unterstützung von Planung, Fehlerbehebung, Wartung und Sicherstellung der Business Continuity verwendet werden können. Durch die Überwachung der FlexPod Datacenter-Lösung mit Cloud Insights und die Darstellung der aggregierten Daten in leicht verdaubaren angepassten Dashboards. Es ist nicht nur möglich, vorherzusagen, wann Ressourcen in einer Implementierung skaliert werden müssen, um den Anforderungen zu entsprechen, sondern auch, um spezielle Applikationen oder Storage Volumes zu identifizieren, die innerhalb des Systems Probleme verursachen. Dadurch wird sichergestellt, dass die zu überwachende Infrastruktur planbar ist und die Anforderungen erfüllt, sodass ein Unternehmen definierte SLAs einhalten und die Infrastruktur nach Bedarf skalieren kann. So werden Verschwendung und zusätzliche Kosten vermieden.

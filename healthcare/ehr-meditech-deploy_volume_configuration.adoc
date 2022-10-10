@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_volume_configuration.html 
+keywords: volume, provisioning, snapshot, copy, volume, default, aggregate, reallocate, schedule 
+summary: MEDITECH Volumes, die für MEDITECH-Hosts dediziert sind, können entweder über Thick Provisioning oder über Thin Provisioning bereitgestellt sein und über Snapshot-Kopien zugänglich sein. Die Neuzuordnung auf Volume-Ebene optimiert darüber hinaus das Layout der Daten auf der Festplatte, um Schreiblatenzen und sequenziellen Lesezugriff zu verbessern. 
+---
+= Konfiguration von Volumes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== Volume-Provisionierung
+
+MEDITECH-Volumes, die für MEDITECH-Hosts dediziert sind, können entweder dick sein oder über Thin Provisioning verfügen.
+
+
+
+== Standardmäßige Snapshot Kopien auf Volume-Ebene
+
+Snapshot Kopien werden im Rahmen des Backup-Workflows erstellt. Jede Snapshot-Kopie kann verwendet werden, um zu unterschiedlichen Zeiten auf die in den MEDITECH LUNs gespeicherten Daten zuzugreifen. Die MEDITECH- genehmigte Backuplösung erstellt auf Grundlage dieser Snapshot-Kopien Thin-Provisioning-FlexClone-Volumes, um zeitpunktgenaue Kopien der MEDITECH-LUNs zu erstellen. Die MEDITECH-Umgebung ist in eine geprüfte Backup-Softwarelösung integriert. Daher empfiehlt NetApp, den Zeitplan für die Snapshot-Kopie in jedem der NetApp-FlexVol-Volumes zu deaktivieren, aus denen die MEDITECH-Produktionsdatenbank-LUNs bestehen.
+
+*Wichtig:* FlexClone Volumes teilen sich den Platz des übergeordneten Datenträgers. Daher ist es wichtig, dass das Volume genügend Platz für die MEDITECH Daten-LUNs und die FlexClone Volumes hat, die die Backup-Server erstellen. FlexClone Volumes belegen in der Art und Weise, wie Daten-Volumes es tun, keinen zusätzlichen Speicherplatz. Wenn es jedoch in kurzer Zeit große Löschungen auf den MEDITECH LUNs gibt, könnten die Klon-Volumes wachsen.
+
+
+
+== Anzahl der Volumes pro Aggregat
+
+Bei einem NetApp FAS-System, das Flash Pool oder NetApp Flash Cache Caching nutzt, empfiehlt NetApp die Bereitstellung von drei oder mehr Volumes pro Aggregat, die speziell zum Speichern des MEDITECH-Programms, des Wörterbuchs und von Datendateien verwendet werden.
+
+Für AFF Systeme empfiehlt NetApp, vier oder mehr Volumes pro Aggregat zum Speichern des MEDITECH-Programms, des Wörterbuchs und der Datendateien einzurichten.
+
+
+
+== Umplanungszeitplan auf Volume-Ebene
+
+Das Datenlayout des Speichers wird im Laufe der Zeit weniger optimal, insbesondere wenn es von schreibintensiven Workloads wie den Plattformen MEDITECH Expanse, 6.x und C/S 5.x genutzt wird. Im Laufe der Zeit kann diese Situation die Latenz beim sequenziellen Lesen erhöhen, was zum Abschluss des Backups führt. Schlechtes Daten-Layout oder Fragmentierung kann auch die Schreiblatenz beeinträchtigen. Die Neuzuordnung auf Volume-Ebene optimiert das Layout von Daten auf der Festplatte, um Schreiblatenzen und sequenziellen Lesezugriff zu verbessern. Das verbesserte Storage-Layout ermöglicht das Abschließen des Backups innerhalb des zugewiesenen Zeitfensters von 8 Stunden.
+
+|===
+| Best Practices in sich 
+
+
+ a| 
+NetApp empfiehlt zumindest die Implementierung eines wöchentlichen Volume-Neuzuweisungsplans, um Neuzuweisungen während der zugewiesenen Wartungsausfälle oder außerhalb der Stoßzeiten an einem Produktionsstandort durchzuführen.
+
+
+NOTE: NetApp empfiehlt dringend, die Neuzuweisung-Aufgabe auf einem Volume gleichzeitig pro Controller auszuführen.
+
+|===
+Weitere Informationen zum Bestimmen eines geeigneten Zeitplans für die Neuzuordnung von Volumes für Ihren Produktionsdatenbank-Storage finden Sie in Abschnitt 3.12 in https://fieldportal.netapp.com/content/192896["NetApp TR-3929: Reallocate Best Practices Guide"^]. Dieser Abschnitt hilft Ihnen auch dabei, einen wöchentlichen Zeitplan für die Neuzuordnung einer überlasteten Site zu erstellen.
+
+link:ehr-meditech-deploy_lun_configuration.html["Weiter: LUN-Konfiguration."]

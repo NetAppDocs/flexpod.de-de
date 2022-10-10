@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_performance_considerations.html 
+keywords: performance, considerations, size, tier, cloud, fabricpool 
+summary: Bei der Planung der Dimensionierung sollten folgende Punkte bewertet werden. 
+---
+= Überlegungen zur Performance
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== Größe der Performance-Tier
+
+Beachten Sie bei der Planung der Dimensionierung, dass die Performance-Ebene in der Lage sein sollte, die folgenden Aufgaben zu erfüllen:
+
+* Unterstützung wichtiger Daten
+* „Kalte“ Daten werden unterstützt, bis die Tiering-Scans die Daten in die Cloud-Tier verschieben
+* Unterstützung von Cloud-Tiering-Daten, die heiß werden und in die Performance-Tier geschrieben werden
+* Unterstützung von WAFL Metadaten, die der angeschlossenen Cloud-Tier zugeordnet sind
+
+
+Für die meisten Umgebungen ist ein Performance-Verhältnis von 1:10 bei FabricPool-Aggregaten äußerst zurückhaltend und bietet gleichzeitig bedeutende Storage-Einsparungen. Wenn es beispielsweise Absicht ist, 200 TB auf Cloud-Tier zu verlagern, dann sollte das Performance-Tier-Aggregat mindestens 20 TB betragen.
+
+
+NOTE: Schreibvorgänge vom Cloud-Tier auf die Performance-Tier werden deaktiviert, wenn die Kapazität der Performance-Tier größer als 70 % ist. In diesem Fall werden Blöcke direkt aus der Cloud-Tier gelesen.
+
+
+
+== Größe des Cloud-Tiers
+
+Bei der Planung der Dimensionierung sollte der als Cloud-Tier wirkende Objektspeicher in der Lage sein, die folgenden Aufgaben zu erfüllen:
+
+* Unterstützung von Lesevorgängen vorhandener kalter Daten
+* Unterstützung von Schreibvorgängen neuer kalter Daten
+* Unterstützt das Löschen und Defragmentierung von Objekten
+

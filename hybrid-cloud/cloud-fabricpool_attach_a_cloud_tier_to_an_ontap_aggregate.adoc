@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_attach_a_cloud_tier_to_an_ontap_aggregate.html 
+keywords: attach, cloud, tier, ontap, aggregate, fabricpool, flexpod, ontap, cli, oncommand, system, manager 
+summary: Nachdem ein Objektspeicher von ONTAP hinzugefügt und von ihm identifiziert wurde, muss er an ein Aggregat angehängt werden, um eine FabricPool zu erstellen. Dieser Schritt kann entweder mit OnCommand System Manager oder mit der ONTAP CLI abgeschlossen werden. 
+---
+= Cloud-Tier mit einem ONTAP Aggregat verbinden
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Nachdem ein Objektspeicher von ONTAP hinzugefügt und von ihm identifiziert wurde, muss er an ein Aggregat angehängt werden, um eine FabricPool zu erstellen. Dieser Schritt kann entweder mit OnCommand System Manager oder mit der ONTAP CLI abgeschlossen werden.
+
+Mit einem Cluster kann mehrere Objektspeichertypen verbunden werden. Mit jedem Aggregat kann jedoch nur ein Objektspeichertyp verbunden werden. So kann beispielsweise ein Aggregat Google Cloud verwenden, ein anderes Aggregat Amazon S3 verwenden, aber an beide kann kein Aggregat angeschlossen werden.
+
+
+NOTE: Das Hinzufügen eines Cloud Tier zu einem Aggregat ist eine dauerhafte Aktion. Eine Cloud-Ebene kann nicht von einem Aggregat, an das sie angeschlossen wurde, aufgehoben werden.
+
+
+
+== OnCommand System Manager
+
+Gehen Sie wie folgt vor, um ein Cloud-Tier mit OnCommand System Manager an ein Aggregat anzuhängen:
+
+. Starten Sie den OnCommand System Manager.
+. Klicken Sie Auf Applikationen Und Tiers.
++
+image:cloud-fabricpool_image14.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie Auf Storage Tiers.
+. Klicken Sie auf ein Aggregat.
+. Klicken Sie auf Aktionen und wählen Sie Cloud Tier anhängen.
++
+image:cloud-fabricpool_image15.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie eine Cloud-Tier.
+. Anzeigen und Aktualisieren der Tiering-Richtlinien für die Volumes im Aggregat (optional) Standardmäßig wird die Tiering-Richtlinie für Volumes nur als Snapshot festgelegt.
+. Klicken Sie auf Speichern .
+
+
+
+
+== CLI VON ONTAP
+
+Führen Sie die folgenden Befehle aus, um ein Cloud-Tier mit einem Aggregat über die ONTAP-CLI anzuhängen:
+
+....
+storage aggregate object-store attach
+-aggregate <name>
+-object-store-name <name>
+....
+Beispiel:
+
+....
+storage aggregate object-store attach -aggregate aggr1 -object-store-name - aws_infra_fp_bk_1
+....
+link:cloud-fabricpool_set_volume_tiering_policy.html["Weiter: Legen Sie eine Volume-Tiering-Richtlinie fest."]

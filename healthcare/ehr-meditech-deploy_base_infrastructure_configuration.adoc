@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_base_infrastructure_configuration.html 
+keywords: base, infrastructure, configuration, network, storage, connections, software, host 
+summary: Zur Konfiguration der Infrastruktur müssen folgende Netzwerkverbindungen, Storage-Verbindungen und Software vorhanden sein. 
+---
+= Basiskonfiguration
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== Netzwerk-Konnektivität
+
+Vor der Konfiguration der Infrastruktur müssen die folgenden Netzwerkverbindungen vorhanden sein:
+
+* Die Link-Aggregation, die Port-Kanäle und virtuelle Port-Kanäle (vPCs) nutzt, wird durchgehend verwendet, wodurch das Design für eine höhere Bandbreite und hohe Verfügbarkeit ermöglicht wird:
++
+** VPC wird zwischen Cisco FI und Cisco Nexus Switches verwendet.
+** Jeder Server verfügt über virtuelle Netzwerk-Schnittstellenkarten (vNICs) mit redundanter Konnektivität zur Unified Fabric. Aus Gründen der Redundanz wird zwischen FIS ein NIC-Failover verwendet.
+** Jeder Server verfügt über virtuelle Host Bus Adapter (vHBAs) mit redundanter Konnektivität zum Unified Fabric.
+
+
+* Das Cisco UCS-FI-SYSTEM ist wie empfohlen im End-Host-Modus konfiguriert und ermöglicht das dynamische Pinning von vNICs an Uplink-Switches.
+
+
+
+
+== Storage-Konnektivität
+
+Vor der Konfiguration der Infrastruktur müssen die folgenden Speicherverbindungen vorhanden sein:
+
+* Storage Port Interface Groups (ifgroups, vPC)
+* 10-GB-Link zum Switch N9K-A
+* 10-GB-Link zum Switch N9K-B
+* In-Band-Management (aktiv-Passiv-Bond):
++
+** 1-GB-Link zum Management-Switch N9K-A
+** 1-GB-Link zum Management-Switch N9K-B
+
+
+* 32-GB-FC-End-to-End-Konnektivität über Cisco MDS-Switches; Konfiguration von Einzel-Initiator-Zoning
+* FC SAN-Boot für eine vollständige Statusfreies Computing; Server werden über LUNs im Boot-Volume gestartet, das auf dem AFF Storage-Cluster gehostet wird
+* Alle MEDITECH-Workloads werden auf FC-LUNs gehostet, die sich über die Speicher-Controller-Knoten verteilen
+
+
+
+
+== Host-Software
+
+Die folgende Software muss installiert sein:
+
+* ESXi wurde auf den Cisco UCS Blades installiert
+* Installation und Konfiguration von VMware vCenter (für alle in vCenter registrierten Hosts)
+* VSC wird in VMware vCenter installiert und registriert
+* NetApp Cluster konfiguriert
+
+
+link:ehr-meditech-deploy_cisco_ucs_blade_server_and_switch_configuration.html["Weiter: Cisco UCS Blade-Server- und Switch-Konfiguration."]

@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_conclusion.html 
+keywords: cloud, fabricpool, flexpod, conclusion 
+summary: Der Weg in die Cloud unterscheidet sich zwischen Unternehmen, verschiedenen Geschäftsbereichen oder sogar zwischen den Geschäftsbereichen innerhalb eines Unternehmens. 
+---
+= Schlussfolgerung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Der Weg in die Cloud unterscheidet sich zwischen Unternehmen, verschiedenen Geschäftsbereichen oder sogar zwischen den Geschäftsbereichen innerhalb eines Unternehmens. Einige entscheiden sich für eine schnelle Einführung, andere hingegen eher zurückhaltend. FabricPool wird unabhängig von ihrer Größe und unabhängig von der schnellen Einführung der Cloud in die Cloud-Strategie von Unternehmen integriert und demonstriert somit die Effizienz- und Skalierungsvorteile einer FlexPod Infrastruktur.

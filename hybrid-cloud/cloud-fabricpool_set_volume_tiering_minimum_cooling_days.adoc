@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_set_volume_tiering_minimum_cooling_days.html 
+keywords: volume, tiering, minimum, cooling, days, set, auto, ontap, cli, snapshot 
+summary: Die Tiering-Einstellung für minimale Kühltage bestimmt, wie viele Tage vor inaktiven Daten auf einem Volume mithilfe der Richtlinie „Auto“ oder „nur Snapshot“ übergeben werden müssen, und ist für das Tiering geeignet. 
+---
+= Legen Sie für das Volume Tiering mindestens die Kühltage fest
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Der `tiering-minimum-cooling-days` Die Einstellung legt fest, wie viele Tage vor dem Verlegen inaktiver Daten auf einem Volume mithilfe der Richtlinie „Auto“ oder „nur Snapshots“ als „kalt“ eingestuft werden müssen und für das Tiering geeignet sind.
+
+
+
+== Automatisch
+
+Der Standardwert `tiering-minimum-cooling-days` Die Einstellung für die Auto-Tiering-Richtlinie beträgt 31 Tage.
+
+Da die Blocktemperaturen durch Lesevorgänge heiß bleiben, kann eine Erhöhung dieses Werts die Menge der Daten reduzieren, die für Tiers geeignet sind, und die in der Performance-Tier aufzubewahren sind.
+
+Wenn Sie diesen Wert ab den Standardwerten von 31 Tagen verringern möchten, beachten Sie, dass die Daten nicht mehr aktiv sein sollten, bevor Sie als „kalt“ markiert werden. Zum Beispiel, wenn eine mehrtägige Arbeitsbelastung erwartet wird, um eine erhebliche Anzahl von Schreibvorgängen am Tag 7, das Volumen durchzuführen `tiering-minimum-cooling-days` Die Einstellung sollte nicht niedriger als 8 Tage sein.
+
+
+NOTE: Objekt-Storage ist kein transaktionsorientierter ähnlicher Datei- oder Block-Storage. Änderungen an Dateien, die als Objekte in Volumes mit übermäßig aggressiven Mindestkühltagen gespeichert werden, können zur Erstellung neuer Objekte, zur Fragmentierung vorhandener Objekte und zur Ergänzung von Storage-Ineffizienzen führen.
+
+
+
+== Nur Snapshot
+
+Der Standardwert `tiering-minimum-cooling-days` Die Einstellung für die reine Snapshot Tiering-Richtlinie beträgt 2 Tage. Ein Minimum von zwei Tagen gibt zusätzliche Zeit für Hintergrundprozesse, um maximale Storage-Effizienz zu gewährleisten und verhindert, dass tägliche Datensicherungsprozesse vom Cloud-Tier aus die Daten lesen müssen.
+
+
+
+== CLI VON ONTAP
+
+Um die eines Volumens zu ändern `tiering-minimum-cooling-days` Führen Sie den folgenden Befehl aus, indem Sie die ONTAP-CLI verwenden:
+
+....
+volume modify -vserver <svm_name> -volume <volume_name> -tiering-minimum-cooling-days <2-63>
+....
+Die erweiterte Berechtigungsebene wird erforderlich.
+
+
+NOTE: Durch Ändern der Tiering-Richtlinie zwischen „Auto“ und „nur Snapshot“ (oder umgekehrt) wird die Inaktivitätsdauer von Blöcken auf der Performance-Tier zurückgesetzt. Bei einem Volume, das die Auto-Volume-Tiering-Richtlinie verwendet und Daten auf der Performance-Tier, die 20 Tage inaktiv war, wird die Performance-Tier-Dateninaktivität auf 0 Tage zurückgesetzt, wenn die Tiering-Richtlinie nur Snapshot lautet.

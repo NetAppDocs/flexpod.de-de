@@ -1,0 +1,206 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-sizing_technical_specifications_for_small,_medium_and_large_architectures.html 
+keywords: technical, specifications, small, medium, large, architectures, bill, material 
+summary: In diesem Abschnitt wird eine Beispielliste der Materialien für Storage-Architekturen unterschiedlicher Größe vorgestellt. 
+---
+= Technische Spezifikationen für kleine, mittlere und große Architekturen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+In diesem Abschnitt wird eine Beispielliste der Materialien für Storage-Architekturen unterschiedlicher Größe vorgestellt.
+
+
+
+== Stückliste für kleine, mittlere und große Architekturen
+
+Das FlexPod Design ist eine flexible Infrastruktur, die viele verschiedene Komponenten und Softwareversionen umfasst. Nutzung https://fieldportal.netapp.com/content/443847["TR-4036: FlexPod Technische Spezifikationen"^] Als Leitfaden zur Montage einer gültigen FlexPod-Konfiguration. Die Konfigurationen in der folgenden Tabelle sind die Mindestanforderungen für FlexPod und sind nur ein Beispiel. Je nach Bedarf können die Konfigurationen für jede Produktfamilie in verschiedenen Umgebungen und Anwendungsfällen erweitert werden.
+
+Für diese Größenbemessung entspricht klein einer MEDITECH-Umgebung der Kategorie 3, mittel bis Kategorie 5 und groß bis Kategorie 6.
+
+|===
+|  | Klein | Mittel | Groß 
+
+
+| Plattform | Ein NetApp AFF A220 HA-Paar für All-Flash-Storage-Systeme | Ein NetApp AFF A220 HA-Paar | Ein HA-Paar der NetApp AFF A300 All-Flash-Storage-Systeme 
+
+
+| Platten-Shelfs | 9 TB x 3,8 TB | 13 TB x 3,8 TB | 19 TB x 3,8 TB 
+
+
+| Größe der MEDITECH-Datenbank | 3 TB BIS 12 TB | 17 TB | >30 TB 
+
+
+| MEDITECH IOPS | <22,000 IOPS | >25,000 IOPS | >32,000 IOPS 
+
+
+| IOPS insgesamt | 22000 | 27000 | 35000 
+
+
+| Raw | 34,2 TB | 44 TB | 68,4 TB 
+
+
+| Nutzbare Kapazität | 18,53 tib | 27,96 tib | 33,8 2 tib 
+
+
+| Effektive Kapazität (2:1 Storage-Effizienz) | 55.6 tib | 83,89 tib | 101,47 tib 
+|===
+
+NOTE: In einigen Kundenumgebungen können mehrere MEDITECH-Produktions-Workloads gleichzeitig ausgeführt werden oder es bestehen höhere IOPS-Anforderungen. In solchen Fällen sollte die Größe der Storage-Systeme zusammen mit dem NetApp Account Team den erforderlichen IOPS und die nötige Kapazität entsprechen. Sie sollten in der Lage sein, die richtige Plattform für die Workloads zu bestimmen. So betreiben Kunden beispielsweise erfolgreich mehrere MEDITECH-Umgebungen auf einem NetApp AFF A700 All-Flash-Storage-System HA-Paar.
+
+Die folgende Tabelle zeigt die für MEDITECH-Konfigurationen erforderliche Standardsoftware.
+
+|===
+| Software | Produktfamilie | Version/Release | Details 
+
+
+| Storage | ONTAP | Allgemeine Verfügbarkeit mit ONTAP 9.4 (GA) |  
+
+
+.3+| Netzwerk | Cisco UCS Fabric Interconnects | Cisco UCSM 4.x | Aktuelle empfohlene Version 
+
+
+| Cisco Nexus Ethernet Switches | 7.0(3)I7(6) | Aktuelle empfohlene Version 
+
+
+| Cisco FC: Cisco MDS 9132T | 8.3 (2) | Aktuelle empfohlene Version 
+
+
+| Hypervisor | Hypervisor | VMware vSphere ESXi 6.7 |  
+
+
+|  | Virtual Machines (VMs) | Windows 2016 |  
+
+
+.4+| Vereinfachtes | Hypervisor-Managementsystem | VMware vCenter Server 6.7 U1 (VCSA) |  
+
+
+| NetApp Virtual Storage Console (VSC) | VSC 7.0P1 |  
+
+
+| NetApp SnapCenter | SnapCenter 4.0 |  
+
+
+| Cisco UCS Manager | 4.x |  
+|===
+Die folgende Tabelle zeigt eine kleine (Kategorie 3) Beispielkonfiguration – Infrastrukturkomponenten.
+
+|===
+| Schicht | Produktfamilie | Menge und Modell | Details 
+
+
+.5+| Computing | Cisco UCS 5108-Gehäuse | 1 | Unterstützt bis zu acht Blades mit halber oder vier Vollbreiten-Blades. Fügen Sie Gehäuse hinzu, wenn der Serverbedarf wächst. 
+
+
+| Cisco-Gehäuse-I/O-Module | 2 x 2208 | 8 GB x 10-GB-Uplink-Ports 
+
+
+| Cisco UCS Blade Server | 4 x B200 M5 | Jeweils mit 2 x 14 Kernen, 2,6 GHz oder höhere Taktrate und 384 GB BIOS 3.2(3#) 
+
+
+| Cisco UCS Virtual Interface-Karten | 4 x UCS 1440 | VMware ESXi fNIC FC-Treiber: 1.6.0.47 VMware ESXi ELNIC Ethernet-Treiber: 1.0.27.0 (siehe Interoperabilitätsmatrix: https://ucshcltool.cloudapps.cisco.com/public/)[] 
+
+
+| 2 Cisco UCS Fabric Interconnects (FI) | 2x UCS 6454 FI | Fabric Interconnects der vierten Generation mit Unterstützung für 10/25 GB Ethernet und 32 GB FC 
+
+
+| Netzwerk | Cisco Ethernet Switches | 2 x Nexus 9336c-FX2 | 1 GB, 10 GB, 25 GB, 40 GB, 100 GB 
+
+
+.2+| Datennetzwerk Storage-Netzwerk | IP Network Nexus 9k für BLOB Storage |  | FI- und UCS-Gehäuse 
+
+
+| FC – CISCO MDS 9132T |  | Zwei Cisco 9132T-Switches 
+
+
+.3+| Storage | NetApp AFF A300 All-Flash-Storage-System | 1 HA-Paar | 2-Node-Cluster für alle MEDITECH-Workloads (File Server, Image Server, SQL Server, VMware usw.) 
+
+
+| DS224C Festplatten-Shelf | 1 DS224C Festplatten-Shelf |  
+
+
+| Solid State Drive (SSD) | 9 x 3,8 TB |  
+|===
+Die folgende Tabelle zeigt eine mittlere (Kategorie 5) Beispielkonfiguration – Infrastrukturkomponenten
+
+|===
+| Schicht | Produktfamilie | Menge und Modell | Details 
+
+
+.5+| Computing | Cisco UCS 5108 Chassis | 1 | Unterstützt bis zu acht Blades mit halber oder vier Vollbreiten-Blades. Fügen Sie Gehäuse hinzu, wenn der Serverbedarf wächst. 
+
+
+| Cisco-Gehäuse-I/O-Module | 2 x 2208 | 8 GB x 10-GB-Uplink-Ports 
+
+
+| Cisco UCS Blade Server | 6 x B200 M5 | Jeweils mit 2 x 16 Kernen, 2,5 GHz/oder höherer Taktfrequenz und 384 GB oder mehr Speicher-BIOS 3.2 (3#) 
+
+
+| Virtuelle Cisco UCS Schnittstellenkarte (VIC) | 6 UCS 1440 VIC | VMware ESXi fNIC FC driver: 1.6.0.47 VMware ESXi ELNIC Ethernet driver: 1.0.27.0 (siehe Interoperabilitäts-Matrix: ) 
+
+
+| 2 Cisco UCS Fabric Interconnects (FI) | 2x UCS 6454 FI | Fabric Interconnects der vierten Generation mit Unterstützung für 10 GB/25 GB/100 GB Ethernet und 32 GB FC 
+
+
+| Netzwerk | Cisco Ethernet Switches | 2 x Nexus 9336c-FX2 | 1 GB, 10 GB, 25 GB, 40 GB, 100 GB 
+
+
+.2+| Datennetzwerk Storage-Netzwerk | IP Network Nexus 9k für BLOB Storage |  |  
+
+
+| FC – CISCO MDS 9132T |  | Zwei Cisco 9132T-Switches 
+
+
+.3+| Storage | NetApp AFF A220 All-Flash-Storage-System | 2 HA-Paar | 2-Node-Cluster für alle MEDITECH-Workloads (File Server, Image Server, SQL Server, VMware usw.) 
+
+
+| DS224C Festplatten-Shelf | 1 x DS224C Festplatten-Shelf |  
+
+
+| SSD | 13 x 3,8 TB |  
+|===
+Die folgende Tabelle zeigt eine große (Kategorie 6) Beispielkonfiguration – Infrastrukturkomponenten.
+
+|===
+| Schicht | Produktfamilie | Menge und Modell | Details 
+
+
+.5+| Computing | Cisco UCS 5108 Chassis | 1 |  
+
+
+| Cisco-Gehäuse-I/O-Module | 2 x 2208 | 8 x 10-GB-Uplink-Ports 
+
+
+| Cisco UCS Blade Server | 8 x B200 M5 | Jeweils mit 2 x 24 Cores, 2,7 GHz und 768 GB BIOS 3.2 (3#) 
+
+
+| Virtuelle Cisco UCS Schnittstellenkarte (VIC) | 8 UCS 1440 VIC | VMware ESXi fNIC FC driver: 1.6.0.47 VMware ESXi ELNIC Ethernet Treiber: 1.0.27.0 (Interoperabilitätsmatrix überprüfen: https://ucshcltool.cloudapps.cisco.com/public/)[] 
+
+
+| 2 Cisco UCS Fabric Interconnects (FI) | 2x UCS 6454 FI | Fabric Interconnects der vierten Generation mit Unterstützung für 10 GB/25 GB/100 GB Ethernet und 32 GB FC 
+
+
+| Netzwerk | Cisco Ethernet Switches | 2 x Nexus 9336c-FX2 | 2 x Cisco Nexus 9332PQ1, 10 GB, 25 GB, 40 GB, 100 GB 
+
+
+.2+| Datennetzwerk Storage-Netzwerk | IP Network N9k für BLOB Storage |  |  
+
+
+| FC – CISCO MDS 9132T |  | Zwei Cisco 9132T-Switches 
+
+
+.3+| Storage | AFF A300 | 1 HA-Paar | 2-Node-Cluster für alle MEDITECH-Workloads (File Server, Image Server, SQL Server, VMware usw.) 
+
+
+| DS224C Festplatten-Shelf | 1 x DS224C Festplatten-Shelfs |  
+
+
+| SSD | 19 x 3,8 TB |  
+|===
+
+NOTE: Diese Konfigurationen bieten einen Ausgangspunkt für Hinweise zum Sizing. In einigen Kundenumgebungen können mehrere MEDITECH-Produktions- und nicht-MEDITECH-Workloads gleichzeitig ausgeführt werden, oder es kann zu höheren IOP-Anforderungen kommen. Legen Sie gemeinsam mit dem NetApp Account Team die Größe der Storage-Systeme basierend auf den erforderlichen IOPS, Workloads und Kapazität fest, um die richtige Plattform für die Workloads zu ermitteln.

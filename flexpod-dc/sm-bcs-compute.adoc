@@ -1,0 +1,148 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/sm-bcs-compute.html 
+keywords: compute, connectivity, service profiles, san boot 
+summary: Die Computing-Konfiguration für die FlexPod SM-BC-Lösung folgt den typischen Best Practices der FlexPod Lösung. In den folgenden Abschnitten werden einige der für die Validierung verwendeten Konnektivität und Konfigurationen vorgestellt. Einige Punkte, die im Zusammenhang mit SM-BC zu berücksichtigen sind, geben auch Implementierungsreferenzen und -Anleitungen an. 
+---
+= Lösungsvalidierung – Computing
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:sm-bcs-solution-validation_overview.html["Preiiwous: Lösungsvalidierung – Überblick."]
+
+Die Computing-Konfiguration für die FlexPod SM-BC-Lösung folgt den typischen Best Practices der FlexPod Lösung. In den folgenden Abschnitten werden einige der für die Validierung verwendeten Konnektivität und Konfigurationen vorgestellt. Einige Punkte, die im Zusammenhang mit SM-BC zu berücksichtigen sind, geben auch Implementierungsreferenzen und -Anleitungen an.
+
+
+
+== Konnektivität
+
+Die Konnektivität zwischen den UCS B200 Blade Servern und den IOMs wird durch die UCS VIC-Karte über die UCS 5108 Gehäuse-Backplane-Verbindungen bereitgestellt. Die für die Validierung verwendeten UCS 2204XP Fabric Extender verfügen über sechzehn 10G-Ports, um sich mit den acht Blade Servern mit halber Breite zu verbinden, z. B. zwei für jeden Server. Zur Erhöhung der Server-Konnektivitätsbandbreite kann ein zusätzlicher Mezzanine-basierter VIC hinzugefügt werden, um den Server mit dem alternativen UCS 2408 IOM zu verbinden, das vier 10G-Verbindungen zu jedem Server bietet.
+
+image:sm-bcs-image17.png["Fehler: Fehlendes Grafikbild"]
+
+Die Konnektivität zwischen dem UCS 5108 Gehäuse und dem für die Validierung verwendeten UCS 6454 FIS wird durch das IOM 2204XP bereitgestellt, welches vier 10G-Verbindungen verwendet. Die FI-Ports 1 bis 4 sind als Serveranschlüsse für diese Verbindungen konfiguriert. Die FI-Ports 25 bis 28 sind als Netzwerk-Uplink-Ports zum Nexus-Switch A und B am lokalen Standort konfiguriert. Die folgende Abbildung und Tabelle enthalten das Konnektivitätsdiagramm und die Details zur Port-Verbindung, mit denen UCS 6454 FIS eine Verbindung zum UCS 5108-Chassis und den Nexus-Switches herstellen kann.
+
+image:sm-bcs-image18.png["Fehler: Fehlendes Grafikbild"]
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+| UCS 6454 FI A | 1 | IOM A | 1 
+
+
+|  | 2 |  | 2 
+
+
+|  | 3 |  | 3 
+
+
+|  | 4 |  | 4 
+
+
+|  | 25 | Nexus A | 1/13/1 
+
+
+|  | 26 |  | 1/13/2 
+
+
+|  | 27 | Nexus B | 1/13/3 
+
+
+|  | 28 |  | 1/13/4 
+
+
+|  | L1 | UCS 6454 FI B | L1 
+
+
+|  | L2 |  | L2 
+
+
+| UCS 6454 FI B | 1 | IOM B | 1 
+
+
+|  | 2 |  | 2 
+
+
+|  | 3 |  | 3 
+
+
+|  | 4 |  | 4 
+
+
+|  | 25 | Nexus A | 1/13/3 
+
+
+|  | 26 |  | 1/13/4 
+
+
+|  | 27 | Nexus B | 1/13/1 
+
+
+|  | 28 |  | 1/13/2 
+
+
+|  | L1 | UCS 6454 FI A | L1 
+
+
+|  | L2 |  | L2 
+|===
+
+NOTE: Die obigen Verbindungen sind für beide Standorte A und B ähnlich, trotz Standort A mit Nexus 9336C-FX2Switches und Standort B mit Nexus 3232C-Switches. Breakout-Kabel von 40G bis 4X10G werden für den Nexus für FI-Verbindungen verwendet. Die FI-Verbindungen zu Nexus nutzen Port-Channel und virtuelle Port-Kanäle sind auf den Nexus-Switches konfiguriert, um die Verbindungen zu jedem FI aggregieren.
+
+
+NOTE: Wenn Sie eine andere Kombination aus IOM, FI und Nexus Switch-Komponenten verwenden, achten Sie bei der Kombination der Umgebung auf die entsprechenden Kabel und die Port-Geschwindigkeit.
+
+
+NOTE: Zusätzliche Bandbreite lässt sich durch Komponenten erreichen, die Verbindungen mit höherer Geschwindigkeit oder mehr Verbindungen unterstützen. Zusätzliche Redundanz lässt sich durch Hinzufügen weiterer Verbindungen mit Komponenten erreichen, die diese unterstützen.
+
+
+
+== Serviceprofile
+
+Ein Blade Server Chassis mit Fabric Interconnects, das von UCS Manager (UCSM) oder Cisco Intersight gemanagt wird, kann die Server durch Nutzung von Service-Profilen abstrahieren, die in UCSM und Server-Profilen in Intersight verfügbar sind. Diese Validierung nutzt UCSM und Serviceprofile, um das Server Management zu vereinfachen. Mithilfe von Serviceprofilen können Sie einen Server einfach durch die Verknüpfung des ursprünglichen Serviceprofils mit der neuen Hardware ersetzen oder aktualisieren.
+
+Die erstellten Serviceprofile unterstützen für VMware ESXi Hosts Folgendes:
+
+* SAN startet über den AFF A250-Storage an beiden Standorten mit iSCSI-Protokoll.
+* Sechs vNICs werden für die Server erstellt, in denen:
++
+** Zwei redundante vNICs (vSwitch0-A und vSwitch0-B) tragen den in-Band-Management-Traffic. Optional können diese vNICs auch mit NFS-Protokolldaten verwendet werden, die nicht durch SM-BC geschützt sind.
+** Zwei redundante vNICs (VdS-A und VdS-B) werden vom vSphere Distributed Switch verwendet, um VMware vMotion und anderen Applikationsdatenverkehr zu transportieren.
+** ISCSI-A vNIC verwendet von iSCSI-A vSwitch, um Zugriff auf iSCSI-A-Pfad zu bieten.
+** ISCSI-B vNIC, die von iSCSI-B vSwitch verwendet wird, um Zugriff auf den iSCSI-B-Pfad zu ermöglichen.
+
+
+
+
+
+
+== SAN Booting
+
+Für die iSCSI-SAN-Startkonfiguration sind die iSCSI-Startparameter so eingestellt, dass iSCSI von beiden iSCSI-Fabrics aus gestartet werden kann. Um das SM-BC Failover-Szenario unterzubringen, in dem ein iSCSI SAN Boot LUN vom sekundären Cluster bereitgestellt wird, wenn das primäre Cluster nicht verfügbar ist, sollte die statische iSCSI-Zielkonfiguration Ziele sowohl von Standort A als auch von Standort B umfassen Um die Boot-LUN-Verfügbarkeit zu maximieren, konfigurieren Sie darüber hinaus die iSCSI-Boot-Parameter-Einstellungen, damit sie von allen Storage Controllern gebootet werden können.
+
+Das statische iSCSI-Ziel kann in der Boot-Policy der Service-Profile-Vorlagen unter dem Dialogfeld Set iSCSI Boot Parameter konfiguriert werden, wie in der folgenden Abbildung dargestellt. Die empfohlene Konfiguration für den iSCSI-Boot-Parameter ist in der folgenden Tabelle dargestellt, welche die oben beschriebene Boot-Strategie implementiert, um eine hohe Verfügbarkeit zu erreichen.
+
+image:sm-bcs-image19.png["Fehler: Fehlendes Grafikbild"]
+
+|===
+| ISCSI Fabric | Priorität | ISCSI-Ziel | ISCSI LIF 
+
+
+| ISCSI A | 1 | ISCSI-Ziel Standort A | Standort A Controller 1 iSCSI A LIF 
+
+
+|  | 2 | ISCSI-Ziel Standort B | Standort B Controller 2 iSCSI A LIF 
+
+
+| ISCSI B | 1 | ISCSI-Ziel Standort B | Standort B Controller 1 iSCSI B LIF 
+
+
+|  | 2 | ISCSI-Ziel Standort A | Standort A Controller 2 iSCSI B LIF 
+|===
+link:sm-bcs-network.html["Weiter: Lösungsvalidierung – Netzwerk."]

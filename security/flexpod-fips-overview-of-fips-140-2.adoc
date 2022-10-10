@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: security/flexpod-fips-overview-of-fips-140-2.html 
+keywords: fips 120-2, cryptographic module, security level, 
+summary: FIPS 140-2 legt die Sicherheitsanforderungen für ein kryptografisches Modul fest, das in einem Sicherheitssystem verwendet wird, das vertrauliche Informationen in Computer- und Telekommunikationssystemen schützt. 
+---
+= Überblick über FIPS 140-2
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-fips-cybersecurity-threats-in-healthcare.html["Früher: Cybersicherheitsbedrohungen im Gesundheitswesen."]
+
+https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf["FIPS 140-2"^] Gibt die Sicherheitsanforderungen für ein kryptografisches Modul an, das in einem Sicherheitssystem verwendet wird, das vertrauliche Informationen in Computer- und Telekommunikationssystemen schützt. Ein kryptografisches Modul sollte aus Hardware, Software, Firmware oder einer Kombination verschiedener Komponenten besteht. FIPS gilt für die kryptografischen Algorithmen, die Schlüsselgenerierung und den Schlüsselmanager, die sich innerhalb einer kryptografischen Grenze befinden. Es ist wichtig zu wissen, dass sich FIPS 140-2 speziell auf das kryptografische Modul bezieht, nicht auf das Produkt, die Architektur, die Daten oder das Ecosystem. Das kryptografische Modul, das in den Schlüsselbegriffen später in diesem Dokument definiert wird, ist die spezifische Komponente (ob Hardware, Software und/oder Firmware), die zugelassene Sicherheitsfunktionen implementiert. Zudem gibt FIPS 140-2 vier Level an. Genehmigte kryptografische Algorithmen sind auf allen Ebenen gemeinsam. Zu den wichtigsten Elementen und Anforderungen der einzelnen Sicherheitsstufen gehören:
+
+* *Sicherheitsstufe 1*
++
+** Legt grundlegende Sicherheitsanforderungen für ein kryptografisches Modul fest (mindestens ein genehmigter Algorithmus oder eine Sicherheitsfunktion ist erforderlich).
+** Für Stufe 1 über die grundlegenden Anforderungen für produktionsbereite Komponenten hinaus sind keine festgelegten physischen Sicherheitsmechanismen erforderlich.
+
+
+* *Sicherheitsstufe 2*
++
+** Erweitert die physikalischen Sicherheitsmechanismen durch Hinzufügen der Notwendigkeit für Manipulationsbeweise durch die Verwendung von manipulationssicheren Lösungen wie Beschichtungen oder Dichtungen, Verriegelungen an abnehmbaren Abdeckungen oder Türen der kryptografischen Module.
+** Erfordert mindestens die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC), bei der das kryptografische Modul die Autorisierung eines Bedieners oder Administrators authentifiziert, eine bestimmte Rolle anzunehmen und entsprechende Funktionen auszuführen.
+
+
+* *Sicherheitsstufe 3*
++
+** Baut auf den manipulationssicheren Anforderungen der Stufe 2 auf und versucht, einen weiteren Zugriff auf kritische Sicherheitsparameter (CSPs) innerhalb des kryptografischen Moduls zu verhindern.
+** Physische Sicherheitsmechanismen, die auf Ebene 3 erforderlich sind, sollen eine hohe Wahrscheinlichkeit haben, Versuche auf physischen Zugriff zu erkennen und darauf zu reagieren, oder jede Verwendung oder Änderung des kryptografischen Moduls. Beispiele dafür sind starke Gehäuse, Sabotagedetektion und Reaktionsschaltungen, die alle Klartext-CSPs aufzählen, wenn eine abnehmbare Abdeckung auf dem kryptografischen Modul geöffnet wird.
+** Erfordert identitätsbasierte Authentifizierungsmechanismen zur Verbesserung der Sicherheit der in Level 2 angegebenen RBAC-Mechanismen. Ein kryptografisches Modul authentifiziert die Identität eines Operators und stellt sicher, dass der Operator berechtigt ist, eine Rolle zu verwenden und die Funktionen der Rolle auszuführen.
+
+
+* *Sicherheitsstufe 4*
++
+** Höchster Sicherheitsgrad in FIPS 140-2.
+** Die nützlichste Stufe für Vorgänge in physisch ungeschützten Umgebungen
+** Auf dieser Ebene sollen die physischen Sicherheitsmechanismen einen vollständigen Schutz um das kryptografische Modul gewährleisten, der dafür verantwortlich ist, unbefugte physische Zugriffsversuche zu erkennen und darauf zu reagieren.
+** Das Eindringen oder Eindringen des kryptografischen Moduls sollte eine hohe Erkennungswahrscheinlichkeit haben und zur sofortigen Zeroisierung aller unsicheren oder plaintext CSPs führen.
+
+
+
+
+link:flexpod-fips-control-plane-versus-data-plane.html["Nächster: Kontrollebene oder Datenebene."]

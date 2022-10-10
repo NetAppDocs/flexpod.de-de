@@ -1,0 +1,131 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_flexpod_express_cabling_information.html 
+keywords: flexpod, express, cabling, information, storage, controller, switch, cisco, nexus 
+summary: Diese Referenzvalidierung ist verkabelt, wie in den folgenden Abbildungen und Tabellen gezeigt. 
+---
+= Informationen zur FlexPod Express Verkabelung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Diese Referenzvalidierung ist verkabelt, wie in den folgenden Abbildungen und Tabellen gezeigt.
+
+Diese Abbildung zeigt die Verkabelung zur Referenzvalidierung.
+
+image:express-c-series-c190-deploy_image3.png["Fehler: Fehlendes Grafikbild"]
+
+In der folgenden Tabelle sind die Verkabelungsinformationen für den Cisco Nexus Switch 31108PC-V-A aufgeführt
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+.10+| Cisco Nexus Switch 31108PC-V A | Eth1/1 | NetApp AFF C190 Storage-Controller A | e0c 
+
+
+| Eth1/2 | NetApp AFF C190 Storage-Controller B | e0c 
+
+
+| Eth1/3 | Cisco UCS C220 C-Series Standalone Server A | MLOM0 
+
+
+| Eth1/4 | Cisco UCS C220 C-Series Standalone Server B | MLOM0 
+
+
+| Eth1/5 | Cisco UCS C220 C-Series Standalone Server A | MLOM1 
+
+
+| Eth1/6 | Cisco UCS C220 C-Series Standalone Server B | MLOM1 
+
+
+| Eth1/25 | Cisco Nexus Switch 31108PC-V B | Eth1/25 
+
+
+| Eth1/26 | Cisco Nexus Switch 31108PC-V B | Eth1/26 
+
+
+| Eth1/33 | NetApp AFF C190 Storage-Controller A | E0M 
+
+
+| Eth1/34 | Cisco UCS C220 C-Series Standalone Server A | CIMC (FEX135/1/25) 
+|===
+In dieser Tabelle sind die Verkabelungsinformationen für den Cisco Nexus Switch 31108PC-V- B. aufgeführt
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+.10+| Cisco Nexus Switch 31108PC-V B | Eth1/1 | NetApp AFF C190 Storage-Controller A | e0d 
+
+
+| Eth1/2 | NetApp AFF C190 Storage-Controller B | e0d 
+
+
+| Eth1/3 | Cisco UCS C220 C-Series Standalone Server A | MLOM2 
+
+
+| Eth1/4 | Cisco UCS C220 C-Series Standalone Server B | MLOM2 
+
+
+| Eth1/5 | Cisco UCS C220 C-Series Standalone Server A | MLOM3 
+
+
+| Eth1/6 | Cisco UCS C220 C-Series Standalone Server B | MLOM3 
+
+
+| Eth1/25 | Cisco Nexus Switch 31108 A | Eth1/25 
+
+
+| Eth1/26 | Cisco Nexus Switch 31108 A | Eth1/26 
+
+
+| Eth1/33 | NetApp AFF C190 Storage-Controller B | E0M 
+
+
+| Eth1/34 | Cisco UCS C220 C-Series Standalone Server B | CIMC (FEX135/1/26) 
+|===
+In dieser Tabelle sind die Verkabelungsinformationen für NetApp AFF C190 Storage Controller aufgeführt
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+.5+| NetApp AFF C190 Storage-Controller A | e0a | NetApp AFF C190 Storage-Controller B | e0a 
+
+
+| e0b | NetApp AFF C190 Storage-Controller B | e0b 
+
+
+| e0c | Cisco Nexus Switch 31108PC-V A | Eth1/1 
+
+
+| e0d | Cisco Nexus Switch 31108PC-V B | Eth1/1 
+
+
+| E0M | Cisco Nexus Switch 31108PC-V A | Eth1/33 
+|===
+In dieser Tabelle sind die Verkabelungsinformationen für NetApp AFF C190 Storage Controller B aufgeführt
+
+|===
+| Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
+
+
+.5+| NetApp AFF C190 Storage-Controller B | e0a | NetApp AFF C190 Storage-Controller A | e0a 
+
+
+| e0b | NetApp AFF C190 Storage-Controller A | e0b 
+
+
+| e0c | Cisco Nexus Switch 31108PC-V A | Eth1/2 
+
+
+| e0d | Cisco Nexus Switch 31108PC-V B | Eth1/2 
+
+
+| E0M | Cisco Nexus Switch 31108PC-V B | Eth1/33 
+|===

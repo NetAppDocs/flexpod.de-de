@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/flexpod-rho-cvo-netapp-cloud-volumes-ontap.html 
+keywords: cvo, astra, connector, cloud manager, storage backend, snapshot 
+summary: In diesem Abschnitt wird die Implementierung von Cloud Volumes ONTAP und Astra Trident auf AWS beschrieben. 
+---
+= NetApp Cloud Volumes ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-rho-cvo-red-hat-openshift-on-aws.html["Früher: Red hat OpenShift auf AWS."]
+
+Die NetApp Cloud Volumes ONTAP Instanz ist auf AWS implementiert und dient als Backend-Storage für Astra Trident. Bevor Sie eine Cloud Volumes ONTAP Arbeitsumgebung hinzufügen, muss ein Connector bereitgestellt werden. Der Cloud-Manager fordert Sie auf, wenn Sie versuchen, die erste Cloud Volumes ONTAP-Arbeitsumgebung ohne entsprechenden Connector zu erstellen. Informationen zur Implementierung eines Connectors in AWS finden Sie unter https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Einen Konnektor erstellen"^].
+
+Informationen zur Implementierung von Cloud Volumes ONTAP auf AWS finden Sie unter https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["Schnellstart für AWS"^].
+
+Nach der Implementierung von Cloud Volumes ONTAP können Sie Astra Trident installieren und das Storage-Back-End und die Snapshot-Klasse auf dem OpenShift Container Platform Cluster konfigurieren.
+
+link:flexpod-rho-cvo-astra-control-center-installation-on-openshift-container-platform.html["Als Nächstes: Astra Control Center-Installation auf OpenShift Container Platform."]

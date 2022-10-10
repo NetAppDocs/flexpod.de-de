@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_design.html 
+keywords: architecture, storage, layout, aggregates, database, disk, type, control, failover, hardware, aff 
+summary: Die Architektur von FlexPod für MEDITECH basiert auf Guidance von MEDITECH, Cisco und NetApp und auf Erfahrungen unserer Partner in der Zusammenarbeit mit MEDITECH Kunden aller Größen. Die Architektur ist anpassungsfähig und wendet Best Practices für MEDITECH an, je nachdem, welche Datacenter-Strategie Sie haben, wie groß Ihr Unternehmen ist und ob Ihr System zentralisiert, verteilt oder mandantenfähig ist. 
+---
+= Konzipieren
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Die Architektur von FlexPod für MEDITECH basiert auf Guidance von MEDITECH, Cisco und NetApp und auf Erfahrungen unserer Partner in der Zusammenarbeit mit MEDITECH Kunden aller Größen. Die Architektur ist anpassungsfähig und wendet Best Practices für MEDITECH an, je nachdem, welche Datacenter-Strategie Sie haben, wie groß Ihr Unternehmen ist und ob Ihr System zentralisiert, verteilt oder mandantenfähig ist.
+
+Die richtige Storage-Architektur kann durch die Gesamtgröße mit den IOPS-insgesamt bestimmt werden. Performance allein ist nicht der einzige Faktor. Basierend auf zusätzlichen Kundenanforderungen können Sie sich entscheiden, eine größere Anzahl Nodes zu verwenden. Der Vorteil von NetApp Storage besteht darin, dass Sie den Cluster bei sich ändernden Anforderungen einfach und unterbrechungsfrei vertikal skalieren können. Zudem lassen sich Nodes unterbrechungsfrei aus dem Cluster entfernen, um Geräte anderen Zwecken zuzuweisen oder während Geräteaktualisierungen einzuführen.
+
+Dies sind einige der Vorteile der NetApp ONTAP Storage-Architektur:
+
+* *Einfaches, unterbrechungsfreies Scale-up und Scale-out.* Dank des unterbrechungsfreien Betriebs von ONTAP können Sie Festplatten und Nodes aktualisieren, hinzufügen oder entfernen. Beginnen Sie mit vier Nodes und verschieben Sie auf sechs Nodes oder aktualisieren Sie unterbrechungsfrei auf größere Controller.
+* *Storage-Effizienz* Reduzierung Ihrer Kapazitätsanforderungen mit Deduplizierung, NetApp FlexClone, Inline-Komprimierung, Inline-Data-Compaction, Thin Replication Thin Provisioning und Deduplizierung von Aggregaten Die FlexClone Funktion ermöglicht nahezu unmittelbare Klonerstellung zur Unterstützung von Aktualisierungen der Backup- und Testumgebung. Diese Klone verbrauchen nur bei Änderungen mehr Storage.
+* *Disaster Recovery Schattendatenbankserver.* der Disaster Recovery Schattendatenbankserver ist Teil Ihrer Business Continuity-Strategie (wird zur Unterstützung von Read-Only Storage-Funktionen verwendet und möglicherweise als Storage-Lese-/Schreibinstanz konfiguriert). Daher haben die Platzierung und Größenbemessung des dritten Storage-Systems in der Regel dasselbe wie im Storage-System Ihrer Produktionsdatenbank.
+* *Datenbankkonsistenz (einige Überlegungen erforderlich).* Wenn Sie NetApp SnapMirror Backup-Kopien in Bezug auf Business Continuity verwenden, siehe http://media.netapp.com/documents/tr-3446.pdf["TR-3446: SnapMirror Async Overview and Best Practices Guide"^].
+
+
+
+
+== Storage-Layout
+
+
+
+=== Dedizierte Aggregate für MEDITECH-Hosts
+
+Der erste Schritt zur Erfüllung der hohen Performance- und Hochverfügbarkeitsanforderungen von MEDITECH besteht darin, das Speicherlayout für die MEDITECH-Umgebung richtig zu gestalten, um die MEDITECH-Host-Produktionskosten auf einen dedizierten, hochperformanten Speicher zu isolieren.
+
+Auf jedem Speichercontroller sollte ein dediziertes Aggregat bereitgestellt werden, um das Programm, das Wörterbuch und die Datendateien der MEDITECH-Hosts zu speichern. Um das Risiko zu beseitigen, dass andere Workloads dieselben Festplatten verwenden und die Performance beeinträchtigen, wird kein anderer Storage über diese Aggregate bereitgestellt.
+
+
+NOTE: Speicherung, die Sie für die anderen MEDITECH-Server bereitstellen, sollte nicht auf das dedizierte Aggregat für die LUNs platziert werden, die von den MEDITECH-Hosts verwendet werden. Sie sollten den Speicher für andere MEDITECH-Server auf einem separaten Aggregat platzieren. Speicheranforderungen für andere MEDITECH-Server sind in den Dokumenten „Hardware Configuration Proposal“ (für neue Bereitstellungen) und „Hardware Evaluation Task“ (für bestehende Bereitstellungen) verfügbar. Diese Dokumente erhalten Sie von MEDITECH über den MEDITECH-Systemintegrator oder von Ihrem MEDITECH Technical Account Manager (TAM). NetApp Solution Engineers haben eventuell einen Rat an das NetApp MEDITECH Independent Software Vendor (ISV) Team, um eine ordnungsgemäße und vollständige Konfiguration des NetApp Storage-Größenbemessung zu ermöglichen.
+
+
+
+=== Verteilen Sie den MEDITECH-Host-Workload gleichmäßig auf alle Storage-Controller
+
+NetApp FAS und AFF Systeme werden als ein oder mehrere Hochverfügbarkeitspaare implementiert. NetApp empfiehlt, die MEDITECH Erweiterung und 6.x Workloads gleichmäßig auf alle Storage Controller zu verteilen, um die Computing-, Netzwerk- und Caching-Ressourcen auf jedem Storage Controller anzuwenden.
+
+Verwenden Sie die folgenden Richtlinien, um die MEDITECH-Workloads gleichmäßig auf jeden Storage-Controller zu verteilen:
+
+* Wenn Sie die IOPS für jeden MEDITECH-Host kennen, können Sie die MEDITECH-Erweiterung und 6.x-Workloads gleichmäßig auf alle Storage-Controller verteilen, indem Sie bestätigen, dass jeder Controller eine ähnliche Anzahl von IOPS von den MEDITECH-Hosts unterstützt.
+* Wenn Sie die IOPS für jeden MEDITECH-Host nicht kennen, können Sie die MEDITECH-Expense und 6.x-Workloads immer noch gleichmäßig auf alle Storage-Controller verteilen. Füllen Sie diese Aufgabe aus, indem Sie bestätigen, dass die Kapazität der Aggregate für die MEDITECH-Hosts gleichmäßig auf alle Speicher-Controller verteilt ist. Auf diese Weise ist die Anzahl der Disketten über alle Datenaggregate hinweg identisch, die den MEDITECH-Hosts gewidmet sind.
+* Verwenden Sie ähnliche Festplattentypen und identische RAID-Gruppen, um die Storage-Aggregate beider Controller zu erstellen, sodass die Workloads gleichmäßig verteilt werden. Wenden Sie sich an einen NetApp Certified Integrator, bevor Sie das Storage-Aggregat erstellen.
+
+
+
+NOTE: Laut MEDITECH generieren zwei Hosts im MEDITECH-System höhere IOPS als die restlichen Hosts. Die LUNs für diese beiden Hosts sollten auf separaten Storage Controllern platziert werden. Sie sollten diese beiden Gastgeber mit Unterstützung des MEDITECH-Teams identifizieren, bevor Sie Ihr System bereitstellen.
+
+
+
+== Storage-Platzierung
+
+
+
+=== Datenbank-Storage für MEDITECH-Hosts
+
+Der Datenbank-Storage für einen MEDITECH-Host wird als Block-Gerät (das ist eine LUN) aus dem NetApp FAS oder AFF System dargestellt. Die LUN wird normalerweise als E-Laufwerk auf das Windows Betriebssystem eingebunden.
+
+
+
+=== Anderer Storage
+
+Das MEDITECH-Host-Betriebssystem und die Datenbankapplikation erzeugen normalerweise eine erhebliche Menge von IOPS auf dem Speicher. Die Speicherbereitstellung für die MEDITECH-Host-VMs und deren VMDK-Dateien gilt, falls erforderlich, als unabhängig von dem Speicher, der zur Erfüllung der MEDITECH-Leistungsschwellenwerte erforderlich ist.
+
+Speicher, die für die anderen MEDITECH-Server bereitgestellt werden, sollten nicht auf das dedizierte Aggregat für die LUNs platziert werden, die die MEDITECH-Hosts verwenden. Platzieren Sie den Speicher für andere MEDITECH-Server auf einem separaten Aggregat.
+
+
+
+== Konfiguration von Storage Controllern
+
+
+
+=== Hochverfügbarkeit
+
+Um die Auswirkungen eines Controller-Ausfalls zu verringern und unterbrechungsfreie Upgrades des Storage-Systems zu ermöglichen, sollten Sie Ihr Storage-System im Hochverfügbarkeits-Modus mit Controllern in einem Hochverfügbarkeitspaar konfigurieren.
+
+Bei der hochverfügbaren Controller-Paar-Konfiguration sollten Festplatten-Shelfs über mehrere Pfade mit Controllern verbunden werden. Diese Verbindung verbessert die Storage Resiliency, indem sie vor einem Single Path-Ausfall schützt. Darüber hinaus wird bei einem Controller-Failover die Performance-Konsistenz verbessert.
+
+
+
+=== Storage Performance bei Storage Controller Failover
+
+Bei Storage-Systemen, die mit Controllern in einem Hochverfügbarkeitspaar konfiguriert sind, übernimmt der Partner-Controller in dem unwahrscheinlichen Fall eines Controller-Ausfalls die Storage-Ressourcen und Workloads des ausgefallenen Controllers. Wenden Sie sich unbedingt an den Kunden, um die Performance-Anforderungen zu ermitteln, die bei einem Controller-Ausfall erfüllt werden müssen und die Systemgröße entsprechend zu bestimmen.
+
+
+
+=== Hardware-gestützte Übernahme
+
+NetApp empfiehlt die Hardware-gestützte Übernahme auf beiden Storage Controllern.
+
+Durch die Hardware-gestützte Übernahme minimieren Sie die Storage Controller Failover-Zeit. Es ermöglicht es einem Controller Remote LAN Modul oder Service Processor Modul, seinen Partner über einen Controller-Ausfall schneller als ein Herzschlag Timeout-Trigger informieren kann, die Zeit, die es dauert, um Failover. Die Hardware-gestützte Übernahme ist standardmäßig für Storage-Controller in einer Hochverfügbarkeitskonfiguration aktiviert.
+
+Weitere Informationen über die Hardware-gestützte Übernahme finden Sie im http://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 Dokumentationszentrum"^].
+
+
+
+=== Festplattentyp
+
+Um die Anforderung von MEDITECH-Workloads durch niedrige Leseverzögerungsanforderungen zu unterstützen, empfiehlt NetApp, für Aggregate in AFF-Systemen, die speziell für die MEDITECH-Hosts geeignet sind, eine hochperformante SSD zu verwenden.
+
+
+
+=== NetApp AFF
+
+NetApp bietet hochperformante AFF-Arrays zur Bewältigung von MEDITECH-Workloads, die einen hohen Durchsatz erfordern und über zufällige Datenzugriffsmuster und Anforderungen an niedrige Latenz verfügen. Für MEDITECH-Workloads bieten AFF-Arrays Leistungsvorteile gegenüber auf HDDs basierenden Systemen. Die Kombination aus Flash-Technologie und Enterprise-Datenmanagement bietet Vorteile in drei wichtigen Bereichen: Performance, Verfügbarkeit und Storage-Effizienz.
+
+
+
+=== NetApp Support Tools und Services
+
+NetApp bietet ein umfassendes Set an Support Tools und Services. Das NetApp AutoSupport Tool sollte auf NetApp All Flash FAS/FAS Systemen aktiviert und konfiguriert werden, um den Startaufruf zu melden, falls ein Hardwarefehler oder eine Fehlkonfiguration des Systems auftritt. Benachrichtigung des NetApp Support-Teams bei Home-Benachrichtigungen zur zeitnahen Behebung von Fehlern. NetApp Active IQ ist eine webbasierte Applikation, die auf AutoSupport Informationen Ihrer NetApp Systeme basiert und vorausschauend Informationen liefert, um Verfügbarkeit, Effizienz und Performance zu verbessern.

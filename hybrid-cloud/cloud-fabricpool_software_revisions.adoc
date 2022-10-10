@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_software_revisions.html 
+keywords: software, revision, hardware, versions, basic, requirements, cloud, fabricpool 
+summary: Die folgende Tabelle zeigt validierte Hardware- und Softwareversionen. Auf dieser Seite finden Sie entsprechende Schritte, um die grundlegenden Anforderungen zu erfüllen. 
+---
+= Software-Versionen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Die folgende Tabelle zeigt validierte Hardware- und Software-Versionen.
+
+|===
+| Schicht | Gerät | Bild | Kommentare 
+
+
+| Storage | NetApp AFF A300 | ONTAP 9.6P2 |  
+
+
+| Computing | Cisco UCS B200 M5 Blade Server mit Cisco UCS VIC 1340 | Version 4.0(4b) |  
+
+
+.2+| Netzwerk | Cisco Nexus 6332-16UP Fabric Interconnect | Version 4.0(4b) |  
+
+
+| Cisco Nexus 93180YC-EX Switch im Standalone-Modus mit NX-OS | Version 7.0(3)I7(6) |  
+
+
+| Datennetzwerk Storage-Netzwerk | Cisco MDS 9148S | Version 8.3(2) |  
+
+
+.2+| Hypervisor .2+|  | VMware vSphere ESXi 6.7U2 | ESXi 6.7.0,13006603 
+
+
+| VMware vCenter Server | VCenter Server 6.7.0.30000, Build 13639309 
+
+
+| Cloud-Provider |  | Amazon AWS S3 | Standard-S3-Bucket mit Standardoptionen 
+|===
+Die grundlegenden Anforderungen für FabricPool sind in beschrieben link:cloud-fabricpool_fabricpool_requirements.html["FabricPool-Anforderungen erfüllt"]. Nachdem alle grundlegenden Anforderungen erfüllt sind, gehen Sie zur Konfiguration von FabricPool wie folgt vor:
+
+. Installieren Sie eine FabricPool Lizenz.
+. Erstellen eines AWS S3-Objektspeicher-Buckets
+. Hinzufügen einer Cloud-Tier zu ONTAP
+. Verbinden Sie die Cloud-Tier mit einem Aggregat.
+. Legen Sie die Tiering-Richtlinie für Volumes fest.
+
+
+link:cloud-fabricpool_install_fabricpool_license.html["Als Nächstes: Lizenz für FabricPool installieren."]

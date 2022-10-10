@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/flexpod-rho-cvo-flexpod-for-openshift-container-platform-4-bare-metal-installation.html 
+keywords: platform 4, openshift, bare-metal, vmware, installation 
+summary: Diese Seite beschreibt die logische Topologie und Installation für FlexPod für OpenShift Container Platform 4 Bare-Metal. 
+---
+= FlexPod für OpenShift Container Platform 4 Bare-Metal-Installation
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:flexpod-rho-cvo-solution-components.html["Früher: Lösungskomponenten."]
+
+Weitere Informationen zum Bare-Metal-Design, den Implementierungsdetails und der Installation und Konfiguration von NetApp Astra Trident finden Sie unter FlexPod for OpenShift Container Platform 4 https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_iac_redhat_openshift.html["FlexPod mit OpenShift Cisco Validated Design and Deployment Guide (CVD)"^]. Dieses CVD deckt die Implementierung der FlexPod- und OpenShift-Container-Plattform mit Ansible ab. Das CVD bietet auch detaillierte Informationen zum Vorbereiten von Worker-Nodes, zur Astra Trident-Installation, zum Storage-Backend und zu Storage-Klassenkonfigurationen. Diese sind die wenigen Voraussetzungen für die Implementierung und Konfiguration des Astra Control Center.
+
+Die folgende Abbildung zeigt OpenShift Container Platform 4 Bare Metal auf FlexPod.
+
+image:flexpod-rho-cvo-image8.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== FlexPod for OpenShift Container Platform 4 auf VMware-Installation
+
+Weitere Informationen zur Bereitstellung der Red hat OpenShift-Container-Plattform 4 auf FlexPod mit VMware vSphere finden Sie unter https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_openshift_platform_4.html["FlexPod-Datacenter für OpenShift-Container-Plattform 4"^].
+
+Die folgende Abbildung zeigt FlexPod für OpenShift Container Platform 4 auf vSphere.
+
+image:flexpod-rho-cvo-image9.png["Fehler: Fehlendes Grafikbild"]
+
+link:flexpod-rho-cvo-red-hat-openshift-on-aws.html["Nächste Frage: Red hat OpenShift auf AWS"]

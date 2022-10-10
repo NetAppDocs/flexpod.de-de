@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/cloud-fabricpool_cost_of_ownership.html 
+keywords: cost, ownership, evaluator, group, savings, fabricpool, cloud 
+summary: 'Der FabricPool Economic Calculator ist über das unabhängige IT-Marktforschungsunternehmen Evaluator Group verfügbar, das die Kosteneinsparungen zwischen lokalen Ressourcen und der Cloud für Storage (kalte Daten) projizieren kann.' 
+---
+= Betriebskosten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Der https://www.evaluatorgroup.com/FabricPool/["FabricPool-Wirtschaftsrechner"^] Das unabhängige Unternehmen Evaluator Group kann die Kosteneinsparungen für Cold-Data-Storage vor Ort und in der Cloud projizieren. Der Rechner bietet eine einfache Schnittstelle, mit der Sie die Kosten für das Speichern von selten genutzten Daten auf einer Performance-Tier ermitteln können, statt sie für den verbleibenden Lebenszyklus der Daten an ein Cloud-Tier zu senden. Die Berechnung basiert auf einer 5-Jahres-Berechnung und ermittelt die Storage-Kosten über den Zeitraum mit den vier zentralen Faktoren wie Quellkapazität, Datenwachstum, Snapshot-Kapazität und Prozentsatz kalter Daten.

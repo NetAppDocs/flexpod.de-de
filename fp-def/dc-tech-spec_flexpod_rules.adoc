@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_flexpod_rules.html 
+keywords: flexpod, rules, flexible, infrastructure, components, software, versions 
+summary: Das FlexPod Design ermöglicht eine flexible Infrastruktur, die viele verschiedene Komponenten und Softwareversionen umfasst. 
+---
+= FlexPod Regeln
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Das FlexPod Design ermöglicht eine flexible Infrastruktur, die viele verschiedene Komponenten und Softwareversionen umfasst.
+
+Verwenden Sie die Regelsätze als Leitfaden zum Erstellen oder Zusammenbauen einer gültigen FlexPod-Konfiguration. Die in diesem Dokument aufgeführten Zahlen und Regeln stellen die Mindestanforderungen für eine FlexPod-Konfiguration dar. Sie können je nach Bedarf in verschiedenen Umgebungen und Anwendungsfällen in den enthaltenen Produktfamilien erweitert werden.

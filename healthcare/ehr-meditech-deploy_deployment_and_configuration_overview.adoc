@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: healthcare/ehr-meditech-deploy_deployment_and_configuration_overview.html 
+keywords: ontap, cisco, blade, ucs, rack, mount, server, cabling, diagram 
+summary: Dieser Abschnitt enthält ausführliche Storage-Hinweise zur Implementierung von FlexPod in Umgebungen, in denen Blade- und Rack-montierte Server von ONTAP oder Cisco UCS verwendet werden. 
+---
+= Überblick
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+In diesem Dokument werden die in diesem Dokument angegebenen Richtlinien zum NetApp Storage für die Implementierung von FlexPod behandelt:
+
+* Umgebungen, die ONTAP nutzen
+* Umgebungen, die Cisco UCS Blade- und Rack-montierte Server verwenden
+
+
+Dieses Dokument deckt nicht ab:
+
+* Detaillierte Implementierung der FlexPod Datacenter-Umgebung
++
+Weitere Informationen finden Sie unter https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["FlexPod Datacenter mit FC Cisco Validated Design"^] (CVD).
+
+* Ein Überblick über die MEDITECH-Softwareumgebungen, Referenzarchitekturen und die Best Practices für die Integration.
++
+Weitere Informationen finden Sie unter https://fieldportal.netapp.com/content/310932["TR-4300i: NetApp FAS and All-Flash-Storage-Systeme for MEDITECH Environments Best Practices Guide"^] (NetApp Login erforderlich).
+
+* Quantitative Performance-Anforderungen und Hinweise zur Dimensionierung
++
+Weitere Informationen finden Sie unter https://fieldportal.netapp.com/content/198446["TR-4190: NetApp Sizing Guidelines for MEDITECH Environments"^].
+
+* Einsatz von NetApp SnapMirror Technologien für die Einhaltung von Backup- und Disaster-Recovery-Anforderungen
+* Allgemeine Hinweise zur Implementierung von NetApp Storage.
+
+
+In diesem Abschnitt wird eine Beispielkonfiguration mit Best Practices für die Infrastrukturbereitstellung erläutert sowie die verschiedenen Hardware- und Softwarekomponenten für die Infrastruktur und die Versionen, die Sie verwenden können, aufgeführt.
+
+
+
+== Verkabelungsdiagramm
+
+Die folgende Abbildung zeigt das 32-GB-FC/40-GbE-Topologiediagramm für eine MEDITECH-Bereitstellung.
+
+image:ehr-meditech-deploy_image5.png["Fehler: Fehlendes Grafikbild"]
+
+Verwenden Sie immer das http://mysupport.netapp.com/matrix/["Interoperabilitäts-Matrix-Tool (IMT)"^] So überprüfen Sie, ob alle Versionen von Software und Firmware unterstützt werden. Die Tabelle in Abschnitt link:ehr-meditech-deploy_meditech_modules_and_components.html["MEDITECH Module und Komponenten"] Führt die Hardware- und Softwarekomponenten der Infrastruktur auf, die bei den Tests verwendet wurden.
+
+link:ehr-meditech-deploy_base_infrastructure_configuration.html["Als Nächstes: Infrastrukturgrundlage"]

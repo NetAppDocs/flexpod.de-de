@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: express/express-c-series-c190-deploy_vmware_vcenter_server_6.7u2_and_vsphere_clustering_configuration.html 
+keywords: vmware, vcenter, server, vsphere, clustering, configuration, esxi, host, coredump 
+summary: Führen Sie die auf dieser Seite beschriebenen Schritte aus, um VMware vCenter Server 6.7- und vSphere-Clustering zu konfigurieren. 
+---
+= Clustering-Konfiguration für VMware vCenter Server 6.7U2 und vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+Gehen Sie wie folgt vor, um VMware vCenter Server 6.7- und vSphere-Clustering zu konfigurieren:
+
+. Navigieren Sie zu `\https://\<<FQDN or IP of vCenter>>/vsphere-client/`.
+. Klicken Sie auf vSphere Client starten.
+. Melden Sie sich mit dem Benutzernamen mailto:administrator@vspehre.local[Administrator^]@vsphere.local und dem SSO-Passwort an, das Sie während des VCSA-Setups eingegeben haben.
+. Klicken Sie mit der rechten Maustaste auf den vCenter-Namen, und wählen Sie New Datacenter aus.
+. Geben Sie einen Namen für das Datacenter ein, und klicken Sie auf OK.
+
+
+
+
+== Erstellen eines vSphere Clusters
+
+Gehen Sie zum Erstellen eines vSphere-Clusters wie folgt vor:
+
+. Klicken Sie mit der rechten Maustaste auf das neu erstellte Datacenter, und wählen Sie Neuer Cluster aus.
+. Geben Sie einen Namen für das Cluster ein.
+. Aktivieren Sie DR und vSphere HA, indem Sie die Kontrollkästchen auswählen.
+. Klicken Sie auf OK.
++
+image:express-c-series-c190-deploy_image45.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+
+
+== Fügen Sie die ESXi-Hosts dem Cluster hinzu
+
+Führen Sie die folgenden Schritte aus, um dem Cluster die ESXi-Hosts hinzuzufügen:
+
+. Klicken Sie mit der rechten Maustaste auf das Cluster, und wählen Sie Host hinzufügen aus.
++
+image:express-c-series-c190-deploy_image46.png["Fehler: Fehlendes Grafikbild"]
+
+. Gehen Sie wie folgt vor, um dem Cluster einen ESXi-Host hinzuzufügen:
++
+.. Geben Sie die IP oder den FQDN des Hosts ein. Klicken Sie Auf Weiter.
+.. Geben Sie den Benutzernamen und das Kennwort für den Root-Benutzer ein. Klicken Sie Auf Weiter.
+.. Klicken Sie auf Ja, um das Host-Zertifikat durch ein vom VMware-Zertifikatsserver signiertes Zertifikat zu ersetzen.
+.. Klicken Sie auf der Seite Host Summary auf Next.
+.. Klicken Sie auf das grüne Symbol +, um dem vSphere-Host eine Lizenz hinzuzufügen.
+
+
+. Dieser Schritt kann auf Wunsch später abgeschlossen werden.
++
+.. Klicken Sie auf Weiter, um den Sperrmodus deaktiviert zu lassen.
+.. Klicken Sie auf der Seite VM-Speicherort auf Weiter.
+.. Überprüfen Sie die Seite „bereit für Fertigstellung“. Verwenden Sie die Zurück-Taste, um Änderungen vorzunehmen, oder wählen Sie Fertig stellen.
+
+
+. Wiederholen Sie die Schritte 1 und 2 für Cisco UCS Host B.
++
+
+NOTE: Dieser Prozess muss für alle zusätzlichen Hosts abgeschlossen werden, die zur Konfiguration von FlexPod Express hinzugefügt werden.
+
+
+
+
+
+== Konfigurieren Sie coredump auf den ESXi-Hosts
+
+Führen Sie die folgenden Schritte aus, um coredump auf den ESXi-Hosts zu konfigurieren:
+
+. Melden Sie sich bei HTTPS an:// https://172.21.181.105:5480/ui/services["VCenter"^] IP:5480/, geben Sie Root für den Benutzernamen ein, und geben Sie das Root-Passwort ein.
+. Klicken Sie auf Services und wählen Sie VMware vSphere ESXI Dump Collector.
+. Starten Sie den VMware vSphere ESXI Dump Collector Service.
++
+image:express-c-series-c190-deploy_image47.png["Fehler: Fehlendes Grafikbild"]
+
+. Stellen Sie mithilfe von SSH eine Verbindung zum Management-IP-ESXi-Host her, geben Sie Root für den Benutzernamen ein und geben Sie das Root-Passwort ein.
+. Führen Sie folgende Befehle aus:
++
+....
+esxcli system coredump network set -i ip_address_of_core_dump_collector -v vmk0 -o 6500
+esxcli system coredump network set --enable=true
+esxcli system coredump network check
+....
+. Die Nachricht `Verified the configured netdump server is running` Wird angezeigt, nachdem Sie den letzten Befehl eingegeben haben.
++
+image:express-c-series-c190-deploy_image48.png["Fehler: Fehlendes Grafikbild"]
+
++
+
+NOTE: Dieser Prozess muss für alle zusätzlichen, FlexPod Express hinzugefügten Hosts abgeschlossen sein.
+
++
+
+NOTE: `ip_address_of_core_dump_collector` In dieser Validierung befindet sich die vCenter IP.
+
+
+
+link:express-c-series-c190-design_netapp_virtual_storage_console_9.6_deployment_procedures.html["Als Nächstes: Implementierungsverfahren für NetApp Virtual Storage Console 9.6"]

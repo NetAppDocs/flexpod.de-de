@@ -1,0 +1,227 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/gcp-ncvo-solution-components.html 
+keywords: flexpod, cisco intersight, licensing, Terraform Cloud Integration, ICO, NetApp Cloud Volumes ONTAP, Cloud Central, Connector, Active IQ Unified Manager, Hardware, software 
+summary: In diesem Abschnitt werden alle Lösungskomponenten beschrieben, die für die Implementierung dieser Lösung erforderlich sind. 
+---
+= Lösungskomponenten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:gcp-ncvo-solution-overview.html["Zurück: Lösungsübersicht."]
+
+
+
+== FlexPod
+
+FlexPod besteht aus vordefinierter Hardware und Software und bietet eine integrierte Grundlage für virtualisierte und nicht virtualisierte Lösungen. FlexPod umfasst NetApp ONTAP Storage, Cisco Nexus Networking, Cisco MDS Storage Networking und Cisco Unified Computing System (Cisco UCS). Das Design ist flexibel genug, dass Netzwerk, Computing und Storage in ein Datacenter Rack passen oder nach dem Datacenter-Design des Kunden bereitgestellt werden können. Dank der Port-Dichte können die Netzwerkkomponenten mehrere Konfigurationen aufnehmen.
+
+
+
+== Cisco Intersight
+
+Cisco Intersight ist eine SaaS-Plattform, die intelligente Automatisierung, Beobachtbarkeit und Optimierung für herkömmliche und Cloud-native Applikationen und Infrastrukturen bietet. Die Plattform fördert den Wandel mit IT-Teams und bietet ein Betriebsmodell für Hybrid Clouds. Cisco Intersight bietet folgende Vorteile:
+
+* *Schnellere Lieferung.* als Service aus der Cloud oder im Rechenzentrum des Kunden mit häufigen Updates und fortgesetzten Innovationen durch ein agiles, auf Software basierendes Entwicklungsmodell geliefert. So kann sich der Kunde auf eine schnellere Bereitstellung von Geschäftsbereichen konzentrieren.
+* * Vereinfachter Betrieb.* vereinfachter Betrieb durch den Einsatz eines einzigen sicheren SaaS-bereitgestellten Tools mit gemeinsamem Inventar, Authentifizierung und APIs für die Zusammenarbeit im gesamten Stack und an allen Standorten, sodass Silos in allen Teams vermieden werden. Vom Management physischer Server und Hypervisoren vor Ort, zu VMs, K8s, serverlos, Automatisierung, Die Optimierung und Kostenkontrolle über On-Premises- und Public Clouds hinweg.
+* *Kontinuierliche Optimierung.* Optimieren Sie Ihre Umgebung mithilfe von Informationen, die von Cisco Intersight in allen Schichten bereitgestellt werden, sowie von Cisco TAC. Diese Informationen werden in empfohlene und automatisierbare Aktionen umgewandelt, mit denen Sie Echtzeit an jede Änderung anpassen können: Von dem Verschieben von Workloads und der Überwachung des Zustands von physischen Servern bis hin zu Kostenreduzierungsempfehlungen für die Public Clouds, mit denen Sie arbeiten.
+
+
+Cisco Intersight ermöglicht zwei verschiedene Managementmodi: UCSM Managed Mode (UMM) und Intersight Managed Mode (IMM). Bei der erstmaligen Einrichtung von Fabric Interconnects können Sie natives UMM oder IMM für Fabric-Attached Cisco UCS-Systeme auswählen. In dieser Lösung wird natives IMM verwendet.
+
+
+
+=== Cisco Intersight-Lizenzierung
+
+Cisco Intersight verwendet eine abonnementbasierte Lizenz mit mehreren Ebenen.
+
+Cisco Intersight Lizenz-Tiers sind wie folgt:
+
+* *Cisco Intersight Essentials.* enthält alle Basisfunktionen sowie die folgenden Funktionen:
++
+** Cisco UCS Central
+** Cisco IMC Supervisor-Berechtigung
+** Richtlinienbasierte Konfiguration mit Server-Profilen
+** Firmware-Management
+** Bewertung der Kompatibilität mit der Hardware Compatibility List (HCL)
+
+
+* *Cisco Intersight Advantage.* umfasst die Merkmale und Funktionen des Essentials-Tier sowie die folgenden Funktionen:
++
+** Widgets, Inventar, Kapazität, Auslastungsfunktionen und domänenübergreifende Korrelation zwischen physischem Computing, Netzwerk, Storage, VMware Virtualisierung und AWS Public Cloud
+** Der Cisco Security Advisory Service, bei dem Kunden wichtige Sicherheitswarnungen und Hinweise zu betroffenen Endgeräten erhalten können.
+
+
+* *Cisco Intersight Premier.* Zusätzlich zu den in der Advantage-Stufe angebotenen Funktionen bietet Cisco Intersight Premier Folgendes:
++
+** Intersight Cloud Orchestrator (ICO) für Computing, Netzwerk, Storage, integrierte Systeme, Virtualisierung, Container und Public-Cloud-Plattformen
+** Uneingeschränkte Abonnementberechtigung für Cisco UCS Director ohne zusätzliche Kosten.
+
+
+
+
+Weitere Informationen zu Intersight Licensing und den in jeder Lizenz unterstützten Funktionen finden Sie hier https://intersight.com/help/saas/getting_started/licensing_requirements["Hier"^].
+
+
+NOTE: In dieser Lösung verwenden wir Intersight Cloud Orchestrator und Intersight Service für HashiCorp Terraform. Diese Funktionen stehen Benutzern mit der Intersight Premier-Lizenz zur Verfügung, sodass diese Lizenzstufe aktiviert werden muss.
+
+
+
+=== Terraform Cloud-Integration mit ICO
+
+Mithilfe von Cisco Intersight Cloud Orchestrator (ICO) können Workflows erstellt und ausgeführt werden, die Terraform Cloud (TFC)-APIs genannt werden. Die Aufgabe Web-API-Anfrage aufrufen unterstützt Terraform Cloud als Ziel und kann mithilfe von HTTP-Methoden mit Terraform Cloud-APIs konfiguriert werden. Der Workflow kann somit über eine Kombination von Aufgaben verfügen, die unter Verwendung generischer API-Aufgaben und anderer Operationen mehrere Terraform Cloud-APIs aufrufen. Für die Nutzung der ICO-Funktion benötigen Sie eine Premier-Lizenz.
+
+
+
+=== Cisco Intersight Assist
+
+Cisco Intersight Assist unterstützt Sie beim Hinzufügen von Endpunktgeräten zu Cisco Intersight. Ein Rechenzentrum kann mehrere Geräte haben, die nicht direkt mit Cisco Intersight verbunden sind. Jedes von Cisco Intersight unterstützte Gerät, das jedoch keine direkte Verbindung zu diesem Gerät herstellt, erfordert einen Verbindungsmechanismus. Der Cisco Intersight Assist bietet diesen Verbindungsmechanismus und hilft Ihnen beim Hinzufügen von Geräten zu Cisco Intersight.
+
+Der Cisco Intersight Assist ist innerhalb der Cisco Intersight Virtual Appliance erhältlich, die als zur Verfügung stehende Virtual Machine verteilt wird, die sich in einem OVA-Dateiformat (Open Virtual Appliance) befindet. Sie können das Gerät auf einem ESXi-Server installieren. Weitere Informationen finden Sie im https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-installation-guides-list.html["Cisco Intersight Virtual Appliance – Erste Schritte"^].
+
+Nach der Inanspruchnahme des Intersight Assist bei Intersight können Sie Endgeräte mithilfe der Option Claim through Intersight Assist anfordern. Weitere Informationen finden Sie unter https://intersight.com/help/getting_started["Erste Schritte"^].
+
+
+
+== NetApp Cloud Volumes ONTAP
+
+* Nutzen Sie integrierte Datendeduplizierung, Datenkomprimierung, Thin Provisioning und Klonen und minimieren Sie so die Storage-Kosten.
+* Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in der Cloud-Umgebung.
+* Cloud Volumes ONTAP nutzt die branchenführende Replizierungstechnologie NetApp SnapMirror bei der Replizierung von Daten vor Ort in der Cloud, sodass sekundäre Kopien für unterschiedliche Anwendungsfälle verfügbar sind.
+* Cloud Volumes ONTAP ist auch in Cloud Backup Service integriert und bietet Backup- und Restore-Funktionen zur Sicherung und Langzeitarchivierung Ihrer Cloud-Daten.
+* Wechsel zwischen hochperformanten Storage-Pools nach Bedarf, ohne Applikationen offline zu schalten
+* Konsistenz von Snapshot Kopien mit NetApp SnapCenter.
+* Cloud Volumes ONTAP unterstützt die Datenverschlüsselung und bietet Schutz vor Viren und Ransomware.
+* Integration in Cloud Data Sense unterstützt Sie dabei, den Datenkontext zu verstehen und sensible Daten zu identifizieren.
+
+
+
+
+== Cloud Central
+
+Cloud Central bietet einen zentralen Standort zum Zugriff auf NetApp Cloud-Datenservices und -Management. Mit diesen Services können Sie kritische Applikationen in der Cloud ausführen, automatisierte DR-Standorte erstellen, Ihre SaaS-Daten sichern und Daten effektiv über mehrere Clouds hinweg migrieren und steuern. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/occm35/concept_cloud_central.html["Cloud Central"^].
+
+
+
+== Cloud Manager
+
+Cloud Manager ist eine SaaS-basierte Managementplattform der Enterprise-Klasse, mit der IT-Experten und Cloud-Architekten ihre Hybrid-Multi-Cloud-Infrastruktur mithilfe von NetApp Cloud-Lösungen zentral managen können. Das zentralisierte System zur Anzeige und zum Management von lokalem und Cloud-Storage ermöglicht die Unterstützung diverser Hybrid-Cloud-Provider und -Konten. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/occm/index.html["Cloud Manager"^].
+
+
+
+== Stecker
+
+Mithilfe von Connector kann Cloud Manager Ressourcen und Prozesse in einer Public-Cloud-Umgebung managen. Um viele Funktionen von Cloud Manager nutzen zu können, muss eine Connector-Instanz eingesetzt werden, die in der Cloud oder im On-Premises-Netzwerk eingesetzt werden kann. Der Anschluss wird an folgenden Orten unterstützt:
+
+* AWS
+* Microsoft Azure
+* Google Cloud
+* On-Premises
+
+
+
+
+== NetApp Active IQ Unified Manager
+
+Mit NetApp Active IQ Unified Manager überwachen Sie Ihre ONTAP Storage-Cluster über eine einzelne, neu gestaltete, intuitive Oberfläche, die wertvolle Informationen aus dem Wissen der Community und aus KI-Analysen liefert. Er bietet umfassenden Einblick in die Storage-Umgebung und die darauf ausgeführten Virtual Machines. Wenn bei der Storage-Infrastruktur ein Problem auftritt, informiert Sie Unified Manager über die Fehlerdetails, um die Ursache des Problems zu identifizieren. Das Dashboard der Virtual Machine bietet einen Überblick über die Performance-Statistiken der VM, sodass Sie den gesamten I/O-Pfad vom vSphere Host über das Netzwerk und schließlich den Storage ermitteln können.
+
+Einige Ereignisse bieten auch Korrekturmaßnahmen, die Sie zur Behebung des Problems ergreifen können. Sie können benutzerdefinierte Warnmeldungen für Ereignisse konfigurieren, sodass Sie bei Auftreten von Problemen über E-Mail und SNMP-Traps benachrichtigt werden. Mit Active IQ Unified Manager lassen sich die Storage-Anforderungen Ihrer Benutzer planen, indem Kapazität und Nutzungstrends proaktiv vor Problemen vorhergesagt werden. Reaktive, kurzfristige Entscheidungen, die langfristig zu weiteren Problemen führen können, werden vermieden.
+
+
+
+== VMware vSphere
+
+VMware vSphere ist eine Virtualisierungsplattform, mit der sich umfangreiche Sammlung von Infrastrukturen (Ressourcen wie CPUs, Storage und Netzwerk) vollständig als nahtlose, vielseitige und dynamische Betriebsumgebung managen lassen. Im Gegensatz zu herkömmlichen Betriebssystemen, die eine einzelne Machine managen, sammelt VMware vSphere die Infrastruktur eines gesamten Datacenters und erstellt so ein einzelnes Kraftpaket, mit Ressourcen, die den jeweiligen Applikationen schnell und dynamisch zugewiesen werden können.
+
+Weitere Informationen zu VMware vSphere finden Sie im folgenden https://www.vmware.com/products/vsphere.html["Dieser Link"^].
+
+
+
+== VMware vSphere vCenter
+
+VMware vCenter Server ermöglicht einheitliches Management aller Hosts und VMs über eine einzige Konsole und aggregiert die Performance-Überwachung von Clustern, Hosts und VMs. VMware vCenter Server bietet Administratoren einen detaillierten Einblick in Status und Konfiguration von Computing-Clustern, Hosts, VMs, Storage, Gastbetriebssystem Und anderen geschäftskritischen Komponenten einer virtuellen Infrastruktur. VMware vCenter verwaltet die umfassenden Funktionen, die in einer VMware vSphere Umgebung verfügbar sind.
+
+
+
+== Hardware- und Softwareversionen
+
+Diese Hybrid Cloud-Lösung kann auf alle FlexPod Umgebungen erweitert werden, auf denen unterstützte Versionen von Software, Firmware und Hardware ausgeführt werden. Diese Versionen sind im NetApp Interoperabilitäts-Matrix-Tool und der Cisco UCS Hardware Compatibility List definiert.
+
+Die FlexPod Lösung, die als Basisplattform in unserer On-Premises-Umgebung verwendet wird, wurde entsprechend den beschriebenen Richtlinien und Spezifikationen implementiert https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_vmware_7u2.html["Hier"^].
+
+Das Netzwerk in dieser Umgebung ist auf ACI basiert. Weitere Informationen finden Sie unter https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9k_aci.html["Hier"^].
+
+* Weitere Informationen finden Sie unter den folgenden Links:
+* http://support.netapp.com/matrix/["NetApp Interoperabilitäts-Matrix-Tool"^]
+* http://www.vmware.com/resources/compatibility/search.php["VMware Compatibility Guide"^]
+* https://www.cisco.com/web/techdoc/ucs/interoperability/matrix/matrix.html["Cisco UCS Hardware and Software Interoperability Tool"^]
+
+
+In der folgenden Tabelle werden die Versionen von FlexPod Hardware und Software aufgeführt.
+
+|===
+| Komponente | Produkt | Version 
+
+
+| Computing | CISCO UCS X210C-M6 | 5.0(1b) 
+
+
+|  | Cisco UCS Fabric Interconnects 6454 | 4.2(2a) 
+
+
+| Netzwerk | Cisco Nexus 9332C (Spine) | 14.2(7 s) 
+
+
+|  | Cisco Nexus 9336C-FX2 (Blatt) | 14.2(7 s) 
+
+
+|  | Cisco ACI | 4.2(7 s) 
+
+
+| Storage | NetApp AFF A220 | 9.11.1 
+
+
+|  | NetApp ONTAP Tools für VMware vSphere | 9.10 
+
+
+|  | NetApp NFS Plug-in für VMware VAAI | 2.0-15 
+
+
+|  | Active IQ Unified Manager | 9.11 
+
+
+| Software | VSphere ESXi | 7.0 (U3) 
+
+
+|  | VMware vCenter Appliance | 7.0.3 
+
+
+|  | Cisco Intersight Assist Virtual Appliance | 1.0.11-306 
+|===
+Die Ausführung von Terraform-Konfigurationen findet auf dem Terraform Cloud for Business Account statt. Die Terraform-Konfiguration verwendet den Terraform-Provider für NetApp Cloud Manager.
+
+In der folgenden Tabelle sind die Anbieter, Produkte und Versionen aufgeführt.
+
+|===
+| Komponente | Produkt | Version 
+
+
+| HashiCorp | Terraform | 1.2.7 
+|===
+Folgende Tabelle zeigt die Versionen des Cloud Manager und Cloud Volumes ONTAP.
+
+|===
+| Komponente | Produkt | Version 
+
+
+| NetApp | Cloud Volumes ONTAP | 9.11 
+
+
+|  | Cloud Manager | 3.9.21 
+|===
+link:gcp-ncvo-deploy-flexpod.html["Als Nächstes: Installation und Konfiguration – Deploy FlexPod."]

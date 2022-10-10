@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: infrastructure/nvme-vsphere-test-results.html 
+keywords: test, results, iops, latency 
+summary:  
+---
+= Testergebnisse
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:nvme-vsphere-testing-approach.html["Früher: Testansatz."]
+
+Die Tests bestanden aus der Ausführung der FIO-Workloads, um die FC-NVMe-Performance in Bezug auf IOPS und Latenz zu messen.
+
+Das folgende Diagramm zeigt unsere Ergebnisse bei der Ausführung eines Workloads mit 100 % zufälligen Lesevorgängen mit 8-KB-Blockgrößen.
+
+image:nvme-vsphere-image3.png["Fehler: Fehlendes Grafikbild"]
+
+In unseren Tests stellten wir fest, dass das System bei einer Latenz von weniger als 0,35 ms durch eine serverseitige Latenz über 1,2 Millionen IOPS erreicht hat.
+
+Das folgende Diagramm zeigt unsere Ergebnisse bei der Ausführung eines Workloads mit 100 % zufälligen Schreibvorgängen mit 8-KB-Blockgrößen.
+
+image:nvme-vsphere-image4.png["Fehler: Fehlendes Grafikbild"]
+
+In unseren Tests stellten wir fest, dass das System fast bis 300.000 IOPS erreicht hat und dabei eine serverseitige Latenz von nur weniger als 1 ms erzielt hat.
+
+Bei 8 KB Blockgröße mit 80 % zufälligen Lesevorgängen und 20 % Schreibvorgängen beobachteten wir die folgenden Ergebnisse:
+
+image:nvme-vsphere-image5.png["Fehler: Fehlendes Grafikbild"]
+
+In unseren Tests stellten wir fest, dass das System über 1 Mio. IOPS erreichte und dabei eine Latenz von nur knapp unter 1 ms bei serverseitiger Latenz erreichte.
+
+Bei 64 KB Blockgröße und 100 % sequenziellen Lesevorgängen haben wir die folgenden Ergebnisse beobachtet:
+
+image:nvme-vsphere-image6.png["Fehler: Fehlendes Grafikbild"]
+
+In unseren Tests stellten wir fest, dass das System ungefähr 250.000 IOPS erreichte und dabei eine Latenz von nur knapp unter 1 ms bei serverseitiger Latenz erreichte.
+
+Bei 64 KB Blockgröße und 100 % sequenziellen Schreibvorgängen haben wir die folgenden Ergebnisse beobachtet:
+
+image:nvme-vsphere-image7.png["Fehler: Fehlendes Grafikbild"]
+
+In unseren Tests stellten wir fest, dass das System ungefähr 120.000 IOPS erreichte und dabei eine Latenz von unter 1 ms bei serverseitiger Latenz erreichte.
+
+link:nvme-vsphere-conclusion.html["Weiter: Fazit."]

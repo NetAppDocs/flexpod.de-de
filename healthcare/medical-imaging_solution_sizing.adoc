@@ -1,0 +1,149 @@
+---
+sidebar: sidebar 
+permalink: healthcare/medical-imaging_solution_sizing.html 
+keywords: solution, sizing, storage, comput, network, cisco, ucs, infrastructure 
+summary: In diesem Abschnitt werden die Anzahl der Studien und die entsprechenden Infrastrukturanforderungen beschrieben. 
+---
+= Dimensionierung der Lösung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+
+
+== Storage-Dimensionierung
+
+In diesem Abschnitt werden die Anzahl der Studien und die entsprechenden Infrastrukturanforderungen beschrieben.
+
+Die in der folgenden Tabelle aufgeführten Speicheranforderungen gehen davon aus, dass die bestehenden Daten einen Wert von 1 Jahr haben und ein prognostiziertes Wachstum für ein Studienjahr im Primärsystem (Tier 1, 2) prognostiziert wird. Zusätzlicher Storage-Bedarf für das prognostizierte Wachstum von 3 Jahren über die ersten zwei Jahre hinaus wird separat aufgeführt.
+
+|===
+|  | Klein | Mittel | Groß 
+
+
+| Jährliche Studien | <250.000 Studien | 250.000 bis 500.000 Studien | 500.000–1 Million Studien 
+
+
+4+| Tier-1-Storage 
+
+
+| IOPS (durchschnittlich) | 1.5.000 BIS 5.000 | 5.000 BIS 15.000 U/MIN | 15.000–40.000 
+
+
+| IOPS (Spitzenauslastung) | 5.000 | 20K | 65.000 
+
+
+| Durchsatz | 50 bis 100 Mbit/s | 50 bis 150 Mbit/s | 100 bis 300 Mbit/s 
+
+
+| Capacity Datacenter 1 (1 Jahr alte Daten und 1 Jahr neue Studie) | 70 TB | 140 TB | 250 TB 
+
+
+| Capacity Datacenter 1 (zusätzlicher Bedarf für 4 Jahre für neue Studie) | 25 TB | 45 TB | 80 TB 
+
+
+| Capacity Datacenter 2 (1 Jahr alte Daten und 1 Jahr neue Studie) | 45 TB | 110 TB | 165 TB 
+
+
+| Capacity Datacenter 2 (zusätzlicher Bedarf für 4 Jahre für neue Studie) | 25 TB | 45 TB | 80 TB 
+
+
+4+| Tier-2-Storage 
+
+
+| IOPS (durchschnittlich) | 1K | 2 K | 3K 
+
+
+| Kapazität Datacenter 1 | 320 TB | 800 TB | 2000 TB 
+|===
+
+
+== Dimensionierung von Computing
+
+In der folgenden Tabelle sind die Computing-Anforderungen für kleine, mittlere und große medizinische Bildgebungssysteme aufgeführt.
+
+|===
+|  | Klein | Mittel | Groß 
+
+
+| Jährliche Studien | <250.000 Studien | 250.000 bis 500.000 Studien | 500.000–1 Million Studien 
+
+
+4+| Datacenter 1 
+
+
+| Anzahl der VMs | 21 | 27 | 35 
+
+
+| Gesamtzahl der virtuellen CPUs (vCPU | 56 | 124 | 220 
+
+
+| Gesamtspeicherbedarf | 22GB | 450 GB | 900 GB 
+
+
+| Spezifikationen für physischen Server (Blades) (vorausgesetzt 1 vCPU - = 1 Core) | 4 x Server mit jeweils 20 Kernen und 192 GB RAM | 8 x Server mit 20 Cores und jeweils 128 GB RAM | 14 x Server mit 20 Cores und jeweils 128 GB RAM 
+
+
+4+| Datacenter 2 
+
+
+| Anzahl der VMs | 15 | 17 | 22 
+
+
+| Gesamtzahl der vCPUs | 42 | 72 | 140 
+
+
+| Gesamtspeicherbedarf | 179 GB | 243 GB | 513 GB 
+
+
+| Spezifikationen für physischen Server (Blades) (vorausgesetzt 1 vCPU = 1 Kern) | 3 x Server mit 20 Kernen und 168 GB RAM | 6 x Server mit 20 Cores und jeweils 128 GB RAM | 8 x Server mit 24 Cores und jeweils 128 GB RAM 
+|===
+
+
+== Dimensionierung der Netzwerk- und Cisco UCS-Infrastruktur
+
+In der folgenden Tabelle sind die Netzwerkanforderungen und die Anforderungen an die Cisco UCS Infrastruktur für kleine, mittlere und große medizinische Bildgebungssysteme aufgeführt.
+
+|===
+|  | Klein | Mittel | Groß 
+
+
+4+| Datacenter 1 
+
+
+| Anzahl der Storage-Node-Ports | 2 konvergierte Netzwerkadapter (CNAs); 2 FCS | 2 CNAs; 2 FCS | 2 CNAs; 2 FCS 
+
+
+| IP-Netzwerk-Switch-Ports (Cisco Nexus 9000) | Switch mit 48 Ports | Switch mit 48 Ports | Switch mit 48 Ports 
+
+
+| FC-Switch (Cisco MDS) | Switch mit 32 Ports | Switch mit 32 Ports | Switch mit 48 Ports 
+
+
+| Anzahl der Cisco UCS Gehäuse | 1 x 5108 | 1 x 5108 | 2 x 5108 
+
+
+| Cisco UCS Fabric Interconnect | 2 x 6332 | 2 x 6332 | 2 x 6332 
+
+
+4+| Datacenter 2 
+
+
+| Anzahl der Cisco UCS Gehäuse | 1 x 5108 | 1 x 5108 | 1 x 5108 
+
+
+| Cisco UCS Fabric Interconnect | 2 x 6332 | 2 x 6332 | 2 x 6332 
+
+
+| Anzahl der Storage-Node-Ports | 2 CNAs; 2 FCS | 2 CNAs; 2 FCS | 2 CNAs; 2 FCS 
+
+
+| IP-Netzwerk-Switch-Ports (Cisco Nexus 9000) | Switch mit 48 Ports | Switch mit 48 Ports | Switch mit 48 Ports 
+
+
+| FC-Switch (Cisco MDS) | Switch mit 32 Ports | Switch mit 32 Ports | Switch mit 48 Ports 
+|===

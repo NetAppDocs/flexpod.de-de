@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/sm-bcs-conclusion.html 
+keywords: conclusion 
+summary: Das FlexPod Datacenter mit SM-BC beruht auf einem aktiv/aktiv-Datacenter-Design, das Business Continuity und Disaster Recovery für geschäftskritische Workloads bietet. Mit der Lösung sind normalerweise zwei Datacenter verknüpft, die an separaten, geografisch verteilten Standorten in einem Großraumgebiet bereitgestellt werden. Die NetApp SM-BC Lösung verwendet synchrone Replizierung, um geschäftskritische Datenservices gegen einen Standortausfall zu schützen. Voraussetzung für die Lösung ist, dass die beiden FlexPod-Bereitstellungsstandorte eine Netzwerklatenz von weniger als 10 Millisekunden pro Jahr nutzen. 
+---
+= Schlussfolgerung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:sm-bcs-validated-scenarios.html["Zurück: Lösungsvalidierung - validierte Szenarien."]
+
+Das FlexPod Datacenter mit SM-BC beruht auf einem aktiv/aktiv-Datacenter-Design, das Business Continuity und Disaster Recovery für geschäftskritische Workloads bietet. Mit der Lösung sind normalerweise zwei Datacenter verknüpft, die an separaten, geografisch verteilten Standorten in einem Großraumgebiet bereitgestellt werden. Die NetApp SM-BC Lösung verwendet synchrone Replizierung, um geschäftskritische Datenservices gegen einen Standortausfall zu schützen. Voraussetzung für die Lösung ist, dass die beiden FlexPod-Bereitstellungsstandorte eine Netzwerklatenz von weniger als 10 Millisekunden pro Jahr nutzen.
+
+Der NetApp ONTAP Mediator, der an einem dritten Standort implementiert wird, überwacht die SM-BC-Lösung und ermöglicht ein automatisiertes Failover bei einem Standortausfall. VMware vCenter mit VMware HA und Stretched VMware vSphere Metro Storage Cluster Konfiguration funktionieren nahtlos mit NetApp SM-BC, damit die Lösung die gewünschten RPO von null und RTO von fast null erfüllt.
+
+Die FlexPod SM-BC Lösung kann auch in vorhandenen FlexPod Infrastrukturen implementiert werden, wenn sie die Anforderungen erfüllen, oder wenn eine zusätzliche FlexPod Lösung zu einem vorhandenen FlexPod hinzugefügt wird, um die Business Continuity-Ziele zu erreichen. Zusätzliche Management-, Monitoring- und Automatisierungs-Tools wie Cisco Intersight, Ansible und HashiCorp Terraform- basierte Automatisierung stehen von NetApp und Cisco zur Verfügung, damit Sie die Lösung einfach überwachen, Einblicke in ihren Betrieb erhalten und die Implementierung und den Betrieb automatisieren können.
+
+Aus Sicht einer geschäftskritischen Applikation wie Microsoft SQL Server ist eine Datenbank, die sich auf einem VMware Datastore befindet und durch eine ONTAP SM-BC CG-Beziehung geschützt ist, trotz eines Standort-Storage-Ausfalls weiterhin verfügbar. Wie während der Validierungstests verifiziert, wird nach einem Stromausfall im Storage Cluster, in dem sich die Datenbank befindet, ein Failover der SM-BC CG-Beziehung durchgeführt und die Microsoft SQL Server Transaktionen ohne Applikationsunterbrechung fortgesetzt.
+
+Dank der granularen Datensicherung für Applikationen können ONTAP SM-BC CG-Beziehungen für geschäftskritische Applikationen erstellt werden, um RPO-Anforderungen von null und RTO von nahezu null zu erfüllen. Damit das VMware Cluster, auf dem die Microsoft SQL Server Applikation ausgeführt wird, einen Storage-Ausfall vor Ort überleben kann, sind die Boot-LUNs der ESXi Hosts an jedem Standort ebenfalls durch eine SM-BC CG-Beziehung geschützt.
+
+Dank der Flexibilität und Skalierbarkeit von FlexPod können Sie mit einer geeigneten Infrastruktur beginnen, die sich Ihren wachsenden Geschäftsanforderungen anpassen lässt. Dieses validierte Design ermöglicht es Ihnen, zuverlässig eine auf VMware vSphere basierende Private Cloud in einer verteilten und integrierten Infrastruktur zu implementieren. Dadurch erhalten Sie eine Lösung, die sich gegen viele Single-Point-of-Failure-Szenarien sowie einen Standortausfall schützen kann, sodass wichtige Business-Datenservices geschützt sind.
+
+link:sm-bcs-where-to-find-additional-information-and-version-history.html["Weiter: Wo finden Sie zusätzliche Informationen und Versionsverlauf."]
