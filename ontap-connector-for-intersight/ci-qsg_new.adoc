@@ -20,7 +20,7 @@ In diesem Abschnitt werden die neuen Funktionen aufgeführt, die für Cisco Inte
 == August 2022
 
 
-NOTE: Ein Upgrade auf NetApp Active IQ Unified Manager 9.11 GA ist erforderlich, um Kompatibilität und vollständigen Funktionalität der aktuellen Version zu gewährleisten. Eine Liste bekannter Probleme in Bezug auf diese Version finden Sie unter  Issues.
+NOTE: Ein Upgrade auf NetApp Active IQ Unified Manager 9.11 GA ist erforderlich, um Kompatibilität und vollständigen Funktionalität der aktuellen Version zu gewährleisten. Eine Liste bekannter Probleme in Bezug auf diese Version finden Sie unter <<Bekannte Probleme>>.
 
 * Aktualisierte Berechnung der verfügbaren Cluster-Kapazität, die dem System Manager entspricht
 * Aktualisierte Cluster General Seite, um die Zusammenfassung der Performance-Metriken auszublenden, bis Performance-Daten gefüllt sind
