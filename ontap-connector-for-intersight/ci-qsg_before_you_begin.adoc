@@ -20,7 +20,7 @@ Für die Überwachung und Orchestrierung von NetApp Storage von Cisco Intersight
 
 == Installation oder Upgrade von NetApp Active IQ Unified Manager
 
-Installieren oder aktualisieren Sie auf Active IQ Unified Manager (aktuelle Version ist erforderlich, derzeit 9.11 GA), sofern Sie dies nicht getan haben. Weitere Anweisungen finden Sie im link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager Dokumentation"].
+Installieren oder aktualisieren Sie auf Active IQ Unified Manager (aktuelle Version ist erforderlich, derzeit 9.12 GA), sofern Sie dies nicht getan haben. Weitere Anweisungen finden Sie im link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager Dokumentation"].
 
 
 
@@ -36,21 +36,21 @@ Stellen Sie sicher, dass Sie die erfüllen https://www.cisco.com/c/en/us/td/docs
 +
 .. Konfigurieren Sie DNS mit A/PTR- und CNAME-Alias-Datensätzen, bevor Sie die OVA bereitstellen. Siehe das folgende Beispiel.
 +
-image:ci-qsg_image1.png["Beispiel für einen Hostnamen, der für A/PTR-Datensätze verwendet wird"]
+image::ci-qsg_image1.png[Beispiel für einen Hostnamen, der für A/PTR-Datensätze verwendet wird]
 
 .. Wählen Sie die geeignete Konfigurationsgröße (klein, klein oder mittel) basierend auf Ihren OVA-Bereitstellungsanforderungen für die Intersight Virtual Appliance aus.
 +
 *TIPP:* für ein ONTAP Cluster mit zwei Nodes und einer großen Anzahl an Speicherobjekten empfiehlt NetApp, die kleine Option (16 vCPU, 32 Gi RAM) zu verwenden.
 
 +
-image:ci-qsg_image2.png["Screenshot der OVF-Vorlage für Schritt 5-Konfiguration bereitstellen"]
+image::ci-qsg_image2.png[Screenshot der OVF-Vorlage für Schritt 5-Konfiguration bereitstellen]
 
 .. Passen Sie auf der Seite *Vorlage anpassen* die Bereitstellungseigenschaften der OVF-Vorlage an. Das Administratorpasswort wird für die lokalen Benutzer verwendet: Admin(`webUI/cli/ssh`).
 +
-image:ci-qsg_image3.png["Fehler: Fehlendes Grafikbild"]
+image::ci-qsg_image3.png[Fehler: Fehlendes Grafikbild]
 
 +
-image:ci-qsg_image4.png["Fehler: Fehlendes Grafikbild"]
+image::ci-qsg_image4.png[Fehler: Fehlendes Grafikbild]
 
 .. Klicken Sie Auf *Weiter*.
 
@@ -69,7 +69,7 @@ Die Installation wird automatisch gestartet. Die Installation kann je nach Bandb
 NOTE: Wenn Sie Intersight Assist auswählen, notieren Sie sich die Geräte-ID und den Antragscode, bevor Sie fortfahren.
 
 +
-image:ci-qsg_image5.png["Screenshot der Bereitstellungsoptionen von Intersight"]
+image::ci-qsg_image5.png[Screenshot der Bereitstellungsoptionen von Intersight]
 
 
 
@@ -80,7 +80,7 @@ image:ci-qsg_image5.png["Screenshot der Bereitstellungsoptionen von Intersight"]
 ... Klicken Sie auf *Ziele*, *Cisco Intersight Assist* und dann auf *Start*.
 ... Fordern Sie das Gerät *Cisco Intersight Assist* an, indem Sie die Geräte-ID und den Forderungscode von Ihrem neu eingesetzten virtuellen Intersight Assist-Gerät kopieren und einfügen.
 +
-image:ci-qsg_image6.png["Abbildung von Select Target Type mit der Markierung Cisco Intersight Assist"]
+image::ci-qsg_image6.png[Abbildung von Select Target Type mit der Markierung Cisco Intersight Assist]
 
 ... Kehren Sie zum *Cisco Intersight Assist*-Gerät zurück und klicken Sie auf *Weiter.* möglicherweise müssen Sie den Browser aktualisieren.
 +

@@ -17,6 +17,17 @@ In diesem Abschnitt werden die neuen Funktionen aufgeführt, die für Cisco Inte
 
 
 
+== Januar 2023
+
+
+NOTE: Ein Upgrade auf NetApp Active IQ Unified Manager 9.12 GA ist erforderlich, um Kompatibilität und vollständigen Funktionalität der aktuellen Version zu gewährleisten. Eine Liste bekannter Probleme in Bezug auf diese Version finden Sie unter <<Bekannte Probleme>>.
+
+* Intersight Interoperabilitätsprüfungen können jetzt bei Kompatibilitätsprüfungen zwischen den Firmware-Modi UCSM und IMM unterscheiden.
+* Schutzbeziehungen werden für ONTAP 9.7 nicht in Intersight angezeigt. Dieses Problem wurde in ONTAP 9.8RC1 behoben.
+
+
+
+
 == August 2022
 
 
@@ -109,9 +120,11 @@ NOTE: Die oben genannten Performance-Kennzahlen stehen nur für Storage Arrays z
 
 
 
-= Bekannte Probleme
+== Bekannte Probleme
 
-* Damit die Intersight-Speicherbestandsdaten während des Datenerfassungsprozesses nicht beeinflusst werden, müssen alle nicht unterstützten ONTAP-Cluster (z. B. ONTAP 9.7P1) aus dem Active IQ Unified Manager (AIQUM) entfernt werden.
+* Wenn Sie eine AIQUM-Version 9.11 oder eine frühere Version verwenden, tritt eine Diskrepanz zwischen den angezeigten Werten auf der Seite „Speicherliste“ und dem Balken „Kapazität“ auf der Seite „Allgemein speichern“ auf. Um dieses Problem zu lösen, sollten Sie auf AIQUM 9.12 oder höher aktualisieren, um die Genauigkeit der angezeigten Kapazitätswerte zu gewährleisten.
+* Wenn Sie AIQUM 9.11 oder eine frühere Version nutzen, können alle Überprüfungen, die auf der Registerkarte „Interoperabilität“ auf der Seite „integrierte Systeme“ durchgeführt werden, IMM und UCSM Cisco Komponenten nicht genau unterscheiden. Um dieses Problem zu beheben, sollten Sie auf AIQUM 9.12 aktualisieren, um sicherzustellen, dass alle Komponenten ordnungsgemäß identifiziert werden.
+* Damit die Intersight-Speicherbestandsdaten während des Datenerfassungsprozesses nicht beeinflusst werden, müssen alle nicht unterstützten ONTAP-Cluster (z. B. Versionen unter ONTAP 9.7P1) aus dem Active IQ Unified Manager (AIQUM) entfernt werden.
 * Für alle beanspruchten Ziele ist eine AIQUM-Version von 9.11 erforderlich, um eine erfolgreiche Durchführung von FlexPod Integrated System Interoperability Abfragen zu ermöglichen.
 * Die Seite Speicherinventarprüfungen wird nicht ausgefüllt, wenn das ONTAP-Cluster mit einem FQDN zu AIQ-um hinzugefügt wird. Benutzer müssen ONTAP-Cluster über eine IP-Adresse zu AIQ-um hinzufügen.
 

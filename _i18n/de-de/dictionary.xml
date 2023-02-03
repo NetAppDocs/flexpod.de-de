@@ -8334,7 +8334,6 @@
   <block id="69d7ba5974ce4e202ff6a3283926751f" category="paragraph">Weitere Informationen finden Sie unter<block ref="7233dd15fab01808b5955c7429b5aebc" category="inline-link-rx"></block>.</block>
   <block id="b77014effa68d8bd1b8a5868123a2a63" category="summary">AIQ um mit Proxy-Server-Konfigurationen müssen über die CLI eingerichtet werden, um den IMT-Service zu nutzen.</block>
   <block id="e814e5396b09bd235085ad390f6ea986" category="doc">Konfigurieren Sie AIQ um Proxy-Server für den IMT-Dienst</block>
-  <block id="5a66f19b0ec8be9c2e0a7c58787ea9b1" category="paragraph">Wenn Sie einen Proxy-Server mit AIQ um für Cisco Intersight mit NetApp ONTAP Storage verwenden, müssen Sie das Setup über die Befehlszeilenschnittstelle (CLI) konfigurieren, um den Interoperabilitäts-Matrix-Tool-Service (IMT) zu nutzen. Sie müssen die Einstellungen für den AIQ um-Proxyserver über die Active IQ Unified Manager-Diag-Shell (Virtual Machine) konfigurieren.</block>
   <block id="80b32c2ac8f5fd5845a3ccaf583c8c8b" category="inline-link">So greifen Sie auf die Active IQ Unified Manager Virtual Machine (OVA) DIAG Shell zu</block>
   <block id="baf8ab71191c15b45a74e4bc93f0b0cf" category="admonition">Informationen zum Zugriff auf die Shell von AIQ um Diag finden Sie unter<block ref="6b434b6393786ea1d3dba8a708c6486d" category="inline-link-rx"></block></block>
   <block id="4839d2f25cc35b249d5db15efa1afd75" category="paragraph">*Schritte*</block>
@@ -8436,7 +8435,6 @@
   <block id="b475ee88bad1c3a8e0c02734aa611a21" category="list-text">Spalten zu Latenz, IOPS und Durchsatz, die unter Durchschnittliche Volume-Statistiken, Durchschnittliche LUN-Statistiken, Durchschnittliche Aggregatstatistiken, Durchschnittliche Storage VM-Statistiken und Durchschnittliche Node-Statistiken hinzugefügt werden</block>
   <block id="5c90847404629f1a208160217f5678bb" category="admonition">Die oben genannten Performance-Kennzahlen stehen nur für Storage Arrays zur Verfügung, die über NetApp Active IQ Unified Manager 9.9 oder höher überwacht werden.</block>
   <block id="558ab0bef1894a7a726109d36632d09d" category="section-title">Bekannte Probleme</block>
-  <block id="fe9b57b6a58a76519ec48d5a08f3c9b0" category="list-text">Damit die Intersight-Speicherbestandsdaten während des Datenerfassungsprozesses nicht beeinflusst werden, müssen alle nicht unterstützten ONTAP-Cluster (z. B. ONTAP 9.7P1) aus dem Active IQ Unified Manager (AIQUM) entfernt werden.</block>
   <block id="e8c4ec43528d3a582dd7b32616a88eb9" category="list-text">Für alle beanspruchten Ziele ist eine AIQUM-Version von 9.11 erforderlich, um eine erfolgreiche Durchführung von FlexPod Integrated System Interoperability Abfragen zu ermöglichen.</block>
   <block id="b1b25033ea7463aca79f95ef822af033" category="list-text">Die Seite Speicherinventarprüfungen wird nicht ausgefüllt, wenn das ONTAP-Cluster mit einem FQDN zu AIQ-um hinzugefügt wird. Benutzer müssen ONTAP-Cluster über eine IP-Adresse zu AIQ-um hinzufügen.</block>
   <block id="e7114cd6ec011855ffed323eb8d029e1" category="summary">Stellen Sie sicher, dass die Hardware-, Software- und Lizenzierungsanforderungen für die Integration von NetApp ONTAP Storage mit Cisco Intersight erfüllt werden.</block>
@@ -8444,7 +8442,6 @@
   <block id="ddaa10f367f08c048c3fc03da8eaf89e" category="paragraph">Dies sind die Mindestanforderungen an Hardware und Software, die für die Implementierung der Lösung erforderlich sind. Je nach den Anforderungen des Kunden können die in einer konkreten Implementierung dieser Lösung verwendeten Komponenten variieren.</block>
   <block id="8f7052d0c9b4ba227843ecc0873ab47c" category="cell">Anforderungsdetails</block>
   <block id="29d1db03b55072fc401d11d7d0750f61" category="cell">ONTAP 9.7P1 und höher</block>
-  <block id="ad180dc1b01f328b8c0230d111d11d5d" category="cell">Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9.11 GA).</block>
   <block id="5dc8e3707996259deb52abdfee00eac9" category="cell">NetApp Storage Array</block>
   <block id="00b515e766e1cba805399ff9eb813a8f" category="cell">Alle ONTAP ASA-, AFF- und FAS-Storage-Arrays werden für ONTAP 9.7P1 und höher unterstützt</block>
   <block id="1f8e8bd6bc1c4895f936485882fbdf9d" category="cell">Virtualisierungshypervisor</block>
@@ -8538,7 +8535,6 @@
   <block id="881413045c8af6a58c42bcc219b2ba2d" category="paragraph">Für die Überwachung und Orchestrierung von NetApp Storage von Cisco Intersight benötigen Sie NetApp Active IQ Unified Manager und Cisco Intersight Assist Virtual Appliance in der vCenter Umgebung.</block>
   <block id="535c7b50cee98be8fc0e8e0894346790" category="section-title">Installation oder Upgrade von NetApp Active IQ Unified Manager</block>
   <block id="d3723866fd8ed566ec4269ff8a1cde80" category="inline-link-macro">NetApp Active IQ Unified Manager Dokumentation</block>
-  <block id="8c8498202f001fd26ea4173271ec8a24" category="paragraph">Installieren oder aktualisieren Sie auf Active IQ Unified Manager (aktuelle Version ist erforderlich, derzeit 9.11 GA), sofern Sie dies nicht getan haben. Weitere Anweisungen finden Sie im <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>.</block>
   <block id="916e11edd7302abcc99270b63af50410" category="section-title">Installieren Sie Die Cisco Intersight Assist Virtual Appliance</block>
   <block id="6d6948b0a48e475952bf18dc3895f7a3" category="inline-link">Cisco Intersight Virtual Appliance Licensing-, System- und Netzwerkanforderungen</block>
   <block id="dd2e3bcd8cbadfd776b8fdcd3811c9e8" category="paragraph">Stellen Sie sicher, dass Sie die erfüllen<block ref="7800eff9d9526a65a7a22ce932db0f9b" category="inline-link-rx"></block>.</block>
@@ -8549,14 +8545,10 @@
   <block id="2b70343738f7a785cf3d0064f0a39b32" category="list-text">OVA bereitstellen. Zur Bereitstellung der OVA sind DNS und NTP erforderlich.</block>
   <block id="b46368b8756e258c478ad0209aafb836" category="list-text">Konfigurieren Sie DNS mit A/PTR- und CNAME-Alias-Datensätzen, bevor Sie die OVA bereitstellen. Siehe das folgende Beispiel.</block>
   <block id="9d6318b0d30a534802e63b46fbc2f7c1" category="inline-image-macro">Beispiel für einen Hostnamen, der für A/PTR-Datensätze verwendet wird</block>
-  <block id="045ce1f853ba95eeb06d41946cbbe014" category="paragraph"><block ref="045ce1f853ba95eeb06d41946cbbe014" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c1d2c46420fb0fb59479d35168ae1900" category="list-text">Wählen Sie die geeignete Konfigurationsgröße (klein, klein oder mittel) basierend auf Ihren OVA-Bereitstellungsanforderungen für die Intersight Virtual Appliance aus.</block>
   <block id="4d612f1b1c407dc59d8ad3e83f7b76ea" category="paragraph">*TIPP:* für ein ONTAP Cluster mit zwei Nodes und einer großen Anzahl an Speicherobjekten empfiehlt NetApp, die kleine Option (16 vCPU, 32 Gi RAM) zu verwenden.</block>
   <block id="6a63e53ddbe218be4bb2034c0305e630" category="inline-image-macro">Screenshot der OVF-Vorlage für Schritt 5-Konfiguration bereitstellen</block>
-  <block id="163d67d440d02b8ef7547f4bfe8166de" category="paragraph"><block ref="163d67d440d02b8ef7547f4bfe8166de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3ee38327895dc648b6f1f999e57babca" category="list-text">Passen Sie auf der Seite *Vorlage anpassen* die Bereitstellungseigenschaften der OVF-Vorlage an. Das Administratorpasswort wird für die lokalen Benutzer verwendet: Admin<block ref="6ba4e6b0617e48ea6684baf161a47a80" prefix="(" category="inline-code"></block>).</block>
-  <block id="318871c35022cd02bcd1bd5839f0d3a8" category="paragraph"><block ref="318871c35022cd02bcd1bd5839f0d3a8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f52c8224a9f4defa0e18839412fe673b" category="paragraph"><block ref="f52c8224a9f4defa0e18839412fe673b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">Klicken Sie Auf *Weiter*.</block>
   <block id="88ade68952e1a8d9f1c49b5ed85b5af5" category="list-text">Nach der Bereitstellung der Intersight Assist-Appliance.</block>
   <block id="dba06e35ee25a3095d873c4534514037" category="list-text">Navigieren Sie zu<block ref="f9e0ea639036dbfc655ff5cf553db753" category="inline-link-rx"></block> So schließen Sie die Einrichtung Ihrer Appliance nach der Installation ab.</block>
@@ -8565,7 +8557,6 @@
   <block id="3920eddb38a93c54b93b962bbdea7c26" category="list-text">*Intersight Assist.* mit dieser Bereitstellung kann das SaaS-Modell eine Verbindung zu Cisco Intersight herstellen.</block>
   <block id="05b3bc98db36aa487224a23de09ab3be" category="admonition">Wenn Sie Intersight Assist auswählen, notieren Sie sich die Geräte-ID und den Antragscode, bevor Sie fortfahren.</block>
   <block id="32f55ec9f00aee8539ca16e146d53713" category="inline-image-macro">Screenshot der Bereitstellungsoptionen von Intersight</block>
-  <block id="df2ced2f2ca7e12619f0e054224c6230" category="paragraph"><block ref="df2ced2f2ca7e12619f0e054224c6230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2f88e5cbd35ab951b0bce5a96b06bb36" category="list-text">Klicken Sie Auf *Weiter*.</block>
   <block id="fd7b91f0228fe4adf25f7fca76314e8d" category="list-text">Wählen Sie *Intersight Assist* aus, und führen Sie die folgenden Schritte aus:</block>
   <block id="6f6002ff113b47d720b948fdbd799d5c" category="inline-link"><block ref="6f6002ff113b47d720b948fdbd799d5c" category="inline-link-rx"></block></block>
@@ -8573,7 +8564,6 @@
   <block id="66b6809a917e6f7acac28f8accbdedc3" category="list-text">Klicken Sie auf *Ziele*, *Cisco Intersight Assist* und dann auf *Start*.</block>
   <block id="53e0ae9e421ccd8017c4eeb818859f12" category="list-text">Fordern Sie das Gerät *Cisco Intersight Assist* an, indem Sie die Geräte-ID und den Forderungscode von Ihrem neu eingesetzten virtuellen Intersight Assist-Gerät kopieren und einfügen.</block>
   <block id="aa934cad8ef62fbb6a89fb41491c988e" category="inline-image-macro">Abbildung von Select Target Type mit der Markierung Cisco Intersight Assist</block>
-  <block id="e7934022378c77a43b6c1f0ba4528fa0" category="paragraph"><block ref="e7934022378c77a43b6c1f0ba4528fa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4fc4b024772b963c5f5f7aac44f2918" category="list-text">Kehren Sie zum *Cisco Intersight Assist*-Gerät zurück und klicken Sie auf *Weiter.* möglicherweise müssen Sie den Browser aktualisieren.</block>
   <block id="ebd1193b80c5bb1e5a3c2f4ca7d1ad9f" category="paragraph">Der Download- und Installationsprozess beginnt. Die Binärdateien werden von Intersight Cloud auf Ihre On-Prem-Appliance übertragen. Die Zeit für die Fertigstellung hängt von der Bandbreite der Intersight Cloud ab.</block>
   <block id="72ebab8e55af1921046b579c24e2b91b" category="summary">Die Autoren empfehlen, im Falle eines Angriffs kein Lösegeld zu zahlen, da dies den Glauben des Angreifers an ihr Geschäftsmodell stärkt. Backup- und Restore-Prozesse spielen bei der Ransomware-Recovery eine wichtige Rolle. Daher müssen sie als integraler Bestandteil der Geschäftsplanung einbezogen werden.</block>
@@ -9198,4 +9188,14 @@
   <block id="309d921b4e477874006fde9b0223cc7c" category="sidebar">Führen Sie Den Geschäftsbetrieb Ohne Lösegeld Aus</block>
   <block id="a64ea5c83794c25dba68d85f36d78edd" category="sidebar">FIPS 140-2 Security-konforme FlexPod Lösung für das Gesundheitswesen</block>
   <block id="a33897f6d38339813891960e4bb3db40" category="sidebar">Kenntnisse, Versionsgeschichte, und wo finden Sie zusätzliche Informationen</block>
+  <block id="4174da9caea2fe6cfb47e03b760a26b4" category="cell">Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9.12 GA).</block>
+  <block id="1ad9d53c3fc2062cfb8cd9f962f46df0" category="paragraph">Installieren oder aktualisieren Sie auf Active IQ Unified Manager (aktuelle Version ist erforderlich, derzeit 9.12 GA), sofern Sie dies nicht getan haben. Weitere Anweisungen finden Sie im <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>.</block>
+  <block id="30afe0cd8c37f4391553d8fb227f8dd4" category="paragraph">Wenn Sie einen Proxy-Server mit AIQ um für Cisco Intersight mit NetApp ONTAP Storage verwenden, müssen Sie das Setup über die Befehlszeilenschnittstelle (CLI) konfigurieren, um den Interoperabilitäts-Matrix-Tool-Service (IMT) zu nutzen. Der IMT-Service ist auf der Seite * Integrated Systems* auf der Registerkarte *Interoperabilität* verfügbar. Sie müssen die Einstellungen für den AIQ um-Proxyserver über die Active IQ Unified Manager-Diag-Shell (Virtual Machine) konfigurieren.</block>
+  <block id="abb14d21829ba186172f6e1d0b64b55b" category="section-title">Januar 2023</block>
+  <block id="f58686065d77527c1d5e19130ba1ee62" category="admonition">Ein Upgrade auf NetApp Active IQ Unified Manager 9.12 GA ist erforderlich, um Kompatibilität und vollständigen Funktionalität der aktuellen Version zu gewährleisten. Eine Liste bekannter Probleme in Bezug auf diese Version finden Sie unter <block ref="1e93e2dfe5ecbece98249e8c1a59713c" category="inline-xref-macro-rx"></block>.</block>
+  <block id="bcd1997c23df8e33e5754b435a84db65" category="list-text">Intersight Interoperabilitätsprüfungen können jetzt bei Kompatibilitätsprüfungen zwischen den Firmware-Modi UCSM und IMM unterscheiden.</block>
+  <block id="6479629d372a87dcf6f7058a3b415313" category="list-text">Schutzbeziehungen werden für ONTAP 9.7 nicht in Intersight angezeigt. Dieses Problem wurde in ONTAP 9.8RC1 behoben.</block>
+  <block id="481eaf6f556ec962ffcf3a6e3c11049d" category="list-text">Wenn Sie eine AIQUM-Version 9.11 oder eine frühere Version verwenden, tritt eine Diskrepanz zwischen den angezeigten Werten auf der Seite „Speicherliste“ und dem Balken „Kapazität“ auf der Seite „Allgemein speichern“ auf. Um dieses Problem zu lösen, sollten Sie auf AIQUM 9.12 oder höher aktualisieren, um die Genauigkeit der angezeigten Kapazitätswerte zu gewährleisten.</block>
+  <block id="dd6bef8a9fbb7862bfad4c41ccf7f03d" category="list-text">Wenn Sie AIQUM 9.11 oder eine frühere Version nutzen, können alle Überprüfungen, die auf der Registerkarte „Interoperabilität“ auf der Seite „integrierte Systeme“ durchgeführt werden, IMM und UCSM Cisco Komponenten nicht genau unterscheiden. Um dieses Problem zu beheben, sollten Sie auf AIQUM 9.12 aktualisieren, um sicherzustellen, dass alle Komponenten ordnungsgemäß identifiziert werden.</block>
+  <block id="215f19e5d79256f2e6c09a431d1ee7d7" category="list-text">Damit die Intersight-Speicherbestandsdaten während des Datenerfassungsprozesses nicht beeinflusst werden, müssen alle nicht unterstützten ONTAP-Cluster (z. B. Versionen unter ONTAP 9.7P1) aus dem Active IQ Unified Manager (AIQUM) entfernt werden.</block>
 </blocks>

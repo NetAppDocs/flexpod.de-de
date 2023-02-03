@@ -14,7 +14,7 @@ summary: AIQ um mit Proxy-Server-Konfigurationen müssen über die CLI eingerich
 
 
 [role="lead"]
-Wenn Sie einen Proxy-Server mit AIQ um für Cisco Intersight mit NetApp ONTAP Storage verwenden, müssen Sie das Setup über die Befehlszeilenschnittstelle (CLI) konfigurieren, um den Interoperabilitäts-Matrix-Tool-Service (IMT) zu nutzen. Sie müssen die Einstellungen für den AIQ um-Proxyserver über die Active IQ Unified Manager-Diag-Shell (Virtual Machine) konfigurieren.
+Wenn Sie einen Proxy-Server mit AIQ um für Cisco Intersight mit NetApp ONTAP Storage verwenden, müssen Sie das Setup über die Befehlszeilenschnittstelle (CLI) konfigurieren, um den Interoperabilitäts-Matrix-Tool-Service (IMT) zu nutzen. Der IMT-Service ist auf der Seite * Integrated Systems* auf der Registerkarte *Interoperabilität* verfügbar. Sie müssen die Einstellungen für den AIQ um-Proxyserver über die Active IQ Unified Manager-Diag-Shell (Virtual Machine) konfigurieren.
 
 
 NOTE: Informationen zum Zugriff auf die Shell von AIQ um Diag finden Sie unter https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/Active_IQ_Unified_Manager/How_to_access_Active_IQ_Unified_Manager_Virtual_Machine_OVA_DIAG_shell["So greifen Sie auf die Active IQ Unified Manager Virtual Machine (OVA) DIAG Shell zu"]
