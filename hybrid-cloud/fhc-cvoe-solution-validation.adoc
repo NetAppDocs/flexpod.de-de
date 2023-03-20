@@ -1,0 +1,313 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fhc-cvoe-solution-validation.html 
+keywords: application, development, testing, disaster recovery, dr, verification 
+summary: In diesem Abschnitt wird die Validierung der Lösung anhand verschiedener Anwendungsfälle beschrieben. 
+---
+= Lösungsvalidierung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:fhc-cvoe-san-configuration.html["Zurück: SAN-Konfiguration."]
+
+[role="lead"]
+In diesem Abschnitt werden einige Anwendungsfälle für Lösungen vorgestellt.
+
+* Ein primärer Anwendungsfall für SnapMirror ist das Daten-Backup. SnapMirror kann als primäres Backup Tool genutzt werden, indem Daten innerhalb desselben Clusters oder zu Remote-Zielen repliziert werden.
+* Verwendung der DR-Umgebung für Applikationsentwicklung (Entwicklung/Test)
+* DR im Falle eines Disasters in der Produktion.
+* Datenverteilung und Remote-Datenzugriff:
+
+
+Bemerkenswert ist, dass die in dieser Lösung validierten relativ wenigen Anwendungsfälle nicht die gesamte Funktionalität der SnapMirror Replizierung darstellen.
+
+
+
+== Applikationsentwicklung und -Tests (Entw./Test)
+
+Zur Beschleunigung der Applikationsentwicklung können replizierte Daten am DR-Standort geklont und zum entwickeln und Testen von Applikationen genutzt werden. Durch das Zusammenführen von DR- und Entwicklungs-/Testumgebungen lässt sich die Auslastung von Backup- oder DR-Einrichtungen immens verbessern. Zudem stehen durch Klone für Test und Entwicklung so viele Datenkopien wie nötig zur Verfügung, um die Produktion zu beschleunigen.
+
+Mit der NetApp FlexClone Technologie kann schnell eine Lese-/Schreibkopie eines SnapMirror Ziel-FlexVol-Volumes erstellt werden, falls Sie einen Lese-/Schreibzugriff auf die sekundäre Kopie haben möchten, um zu bestätigen, ob alle Produktionsdaten verfügbar sind.
+
+Gehen Sie wie folgt vor, um die DR-Umgebung für die Entwicklung/den Test von Applikationen zu nutzen:
+
+. Erstellen einer Kopie der Produktionsdaten Führen Sie dazu einen Anwendungs-Snapshot eines On-Premises-Volumes aus. Das Erstellen eines Applikations-Snapshots besteht aus drei Schritten: `Lock`, `Snap`, und `Unlock`.
++
+.. Legen Sie das Filesystem still, damit der I/O ausgesetzt wird und die Anwendungen konsistent bleiben. Alle Anwendungen, die auf das Dateisystem schreiben, bleiben in einem Wartezustand, bis der Befehl zum unstilllegen in Schritt c ausgegeben wird Die Schritte a, b und c werden über einen transparenten Prozess oder einen transparenten Workflow ausgeführt, der die SLA für Applikationen nicht beeinträchtigt.
++
+....
+[root@hc-cloud-secure-1 ~]# fsfreeze -f /file1
+....
++
+Diese Option fordert das angegebene Dateisystem auf, von neuen Änderungen eingefroren zu werden. Jeder Prozess, der versucht, in das eingefrorene Dateisystem zu schreiben, wird blockiert, bis das Dateisystem nicht eingefroren ist.
+
+.. Erstellen Sie einen Snapshot des On-Premises-Volumes.
++
+....
+A400-G0312::> snapshot create -vserver Healthcare_SVM -volume hc_iscsi_vol -snapshot kamini
+....
+.. Heben Sie die Stilllegung des Dateisystems auf, um I/O neu zu starten
++
+....
+[root@hc-cloud-secure-1 ~]# fsfreeze -u /file1
+....
++
+Diese Option wird verwendet, um das Dateisystem aufzufrieren und den Betrieb fortzusetzen. Alle Dateisystemänderungen, die durch das Einfrieren blockiert wurden, werden entsperrt und können abgeschlossen werden.
+
++
+Applikationskonsistente Snapshots können darüber hinaus mithilfe von NetApp SnapCenter erstellt werden, mit der der oben beschriebene Workflow im Rahmen von SnapCenter vollständig orchestriert wird. Ausführliche Informationen finden Sie unter https://docs.netapp.com/us-en/snapcenter/["Hier"^].
+
+
+
+. Führen Sie einen SnapMirror Update-Vorgang durch, um die Produktions- und DR-Systeme synchron zu halten.
++
+....
+singlecvoaws::> snapmirror update -destination-path svm_singlecvoaws:hc_iscsi_vol_copy -source-path Healthcare_SVM:hc_iscsi_vol
+
+Operation is queued: snapmirror update of destination “svm_singlecvoaws:hc_iscsi_vol_copy”.
+....
++
+Ein SnapMirror Update kann auch über die BlueXP GUI unter der Registerkarte *Replication* durchgeführt werden.
+
+. Erstellen Sie auf Basis des bereits zuvor erstellten Applikations-Snapshots eine FlexClone Instanz.
++
+....
+singlecvoaws::> volume clone create -flexclone kamini_clone -type RW -parent-vserver svm_singlecvoaws -parent-volume hc_iscsi_vol_copy -junction-active true -foreground true -parent-snapshot kamini
+
+[Job 996] Job succeeded: Successful
+....
++
+Für die vorherige Aufgabe kann auch ein neuer Snapshot erstellt werden, Sie müssen jedoch die gleichen Schritte wie oben ausführen, um die Anwendungskonsistenz zu gewährleisten.
+
+. Aktivieren Sie ein FlexClone Volume, um die EHR-Instanz in der Cloud zu erstellen.
++
+....
+singlecvoaws::> lun mapping create –vserver svm_singlecvoaws –path /vol/kamini_clone/iscsi_lun1 -igroup ehr-igroup –lun-id 0
+
+singlecvoaws::> lun mapping show
+Vserver     Path                                  Igroup    LUN ID  Protocol
+---------- -------------- --------------- -----  --------   ------ ---------
+svm_singlecvoaws
+                 /vol/kamini_clone/iscsi_lun1    ehr-igroup   0    iscsi
+....
+. Führen Sie die folgenden Befehle für die EHR-Instanz in der Cloud aus, um auf die Daten oder das Dateisystem zuzugreifen.
++
+.. ONTAP Storage entdecken. Überprüfen Sie den Multipathing-Status.
++
+....
+sudo rescan-scsi-bus.sh
+sudo iscsiadm -m discovery -t sendtargets -p <iscsi-lif-ip>
+sudo iscsiadm -m node -L all
+sudo sanlun lun show
+
+Output:
+controller(7mode/E-Series)/         device    host             lun
+vserver(cDOT/FlashRay) lun-pathname filename  adapter protocol size   product
+-----------------------------------------------------------------------------
+svm_singlecvoaws                    /dev/sda  host2   iSCSI    200g    cDOT
+                    /vol/kamini_clone/iscsi_lun1
+sudo multipath -ll
+
+Output:
+3600a09806631755a452b543041313053 dm-0 NETAPP,LUN C-Mode
+size=200G features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 alua' wp=rw
+`-+- policy='service-time 0' prio=50 status=active
+`- 2:0:0:0 sda 8:0 active ready running
+....
+.. Aktivieren Sie die Volume-Gruppe.
++
+....
+sudo vgchange -ay datavg
+Output:
+1 logical volume(s) in volume group "datavg" now active
+....
+.. Mounten Sie das Dateisystem und zeigen Sie die Zusammenfassung der Dateisysteminformationen an.
++
+....
+sudo mount -t xfs /dev/datavg/datalv /file1
+
+cd /file1
+df -k .
+Output:
+Filesystem                 1K-blocks  Used     Available  Use%  Mounted on
+/dev/mapper/datavg-datalv  209608708 183987096  25621612  88%    /file1
+....
++
+So wird überprüft, ob Sie die DR-Umgebung für Entwicklung und Tests von Applikationen verwenden können. Mithilfe der Entwicklungs- und Testverfahren für Applikationen auf Ihrem DR-Storage nutzen Sie Ressourcen besser, die andernfalls möglicherweise die meiste Zeit ungenutzt bleiben.
+
+
+
+
+
+
+
+== Disaster Recovery
+
+SnapMirror Technologie wird auch als Teil von DR-Plänen eingesetzt. Wenn kritische Daten an einen anderen physischen Standort repliziert werden, muss ein schwerwiegender Ausfall nicht zu längeren Datenperioden für geschäftskritische Applikationen führen. Clients können bis zur Wiederherstellung des Produktionsstandorts vor Beschädigung, versehentlichem Löschen, Naturkatastrophen usw. über das Netzwerk auf replizierte Daten zugreifen.
+
+Im Falle eines Failback zum primären Standort bietet SnapMirror eine effiziente Möglichkeit, den DR-Standort am primären Standort neu zu synchronisieren. Dabei werden nur geänderte oder neue Daten vom DR-Standort aus zurück zum primären Standort übertragen, indem die SnapMirror Beziehung einfach umgekehrt wird. Nachdem der primäre Produktionsstandort den normalen Applikationsbetrieb wiederaufgenommen hat, setzt SnapMirror die Übertragung zum DR-Standort fort, ohne dass ein weiterer Basistransfer erforderlich ist.
+
+Gehen Sie wie folgt vor, um ein erfolgreiches DR-Szenario zu validieren:
+
+. Simulieren Sie einen Notfall auf der Quell- (Produktions-) Seite, indem Sie die SVM, die das lokale ONTAP Volume hostet, anhalten (`hc_iscsi_vol`).
++
+image:fhc-cvoe-image21.png["In diesem Screenshot wird die Stopp-Option im Dropdown-Menü Storage VM angezeigt."]
+
++
+Vergewissern Sie sich, dass die SnapMirror Replizierung bereits zwischen der On-Premises-ONTAP in der FlexPod-Instanz und Cloud Volumes ONTAP in AWS eingerichtet ist, sodass Sie häufige Applikations-Snapshots erstellen können.
+
++
+Nachdem die SVM angehalten wurde, führt der `hc_iscsi_vol` Volume ist in BlueXP nicht sichtbar.
+
++
+image:fhc-cvoe-image22.png["Das Volumen wird nun in der Volumenübersicht angezeigt."]
+
+. DR in CVO aktivieren.
++
+.. Die SnapMirror Replizierungsbeziehung zwischen On-Premises-ONTAP und Cloud Volumes ONTAP wird unterbrochen, und das CVO-Zielvolume wird heraufgestuft (`hc_iscsi_vol_copy`) Bis zur Produktion.
++
+image:fhc-cvoe-image23.png["Der Bildschirm für die Option „Beziehung unterbrechen“ wird angezeigt."]
+
++
+Nachdem die SnapMirror Beziehung beschädigt wurde, ändert sich der Typ des Ziel-Volume von Datensicherung (DP) in Lesen/Schreiben (RW).
+
++
+....
+singlecvoaws::> volume show -volume hc_iscsi_vol_copy -fields typev
+server          volume            type
+---------------- ----------------- ----
+svm_singlecvoaws hc_iscsi_vol_copy RW
+....
+.. Aktivieren Sie das Ziel-Volume in Cloud Volumes ONTAP, um die EHR-Instanz auf einer EC2-Instanz in der Cloud zu öffnen.
++
+....
+singlecvoaws::> lun mapping create –vserver svm_singlecvoaws –path /vol/hc_iscsi_vol_copy/iscsi_lun1 -igroup ehr-igroup –lun-id 0
+
+singlecvoaws::> lun mapping show
+Vserver     Path                                Igroup   LUN ID  Protocol
+---------- ----------------------------------  --------  ------ ---------
+svm_singlecvoaws
+            /vol/hc_iscsi_vol_copy/iscsi_lun1  ehr-igroup  0    iscsi
+....
+.. Um auf die Daten und das Dateisystem auf der EHR-Instanz in der Cloud zuzugreifen, ermitteln Sie zuerst den ONTAP-Speicher und überprüfen Sie den Multipathing-Status.
++
+....
+sudo rescan-scsi-bus.sh
+sudo iscsiadm -m discovery -t sendtargets -p <iscsi-lif-ip>
+sudo iscsiadm -m node -L all
+sudo sanlun lun show
+Output:
+controller(7mode/E-Series)/         device    host             lun
+vserver(cDOT/FlashRay) lun-pathname filename  adapter protocol size   product
+-----------------------------------------------------------------------------
+svm_singlecvoaws                    /dev/sda  host2   iSCSI    200g    cDOT
+                  /vol/hc_iscsi_vol_copy/iscsi_lun1
+sudo multipath -ll
+Output:
+3600a09806631755a452b543041313051 dm-0 NETAPP,LUN C-Mode
+size=200G features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 alua' wp=rw
+`-+- policy='service-time 0' prio=50 status=active
+`- 2:0:0:0 sda 8:0 active ready running
+....
+.. Aktivieren Sie dann die Volume-Gruppe.
++
+....
+sudo vgchange -ay datavg
+Output:
+1 logical volume(s) in volume group "datavg" now active
+....
+.. Schließlich mounten Sie das Dateisystem und zeigen die Dateisysteminformationen an.
++
+....
+sudo mount -t xfs /dev/datavg/datalv /file1
+
+cd /file1
+df -k .
+Output:
+Filesystem                 1K-blocks  Used      Available  Use%  Mounted on
+/dev/mapper/datavg-datalv  209608708  183987096  25621612  88%   /file1
+....
++
+Diese Ausgabe zeigt, dass Benutzer auf replizierte Daten im gesamten Netzwerk zugreifen können, bis die Recovery des Produktionsstandorts nach einem Ausfall erfolgt.
+
+.. Rückgängig machen der SnapMirror Beziehung Dieser Vorgang kehrt die Rollen der Quell- und Ziel-Volumes um.
++
+image:fhc-cvoe-image24.png["In diesem Screenshot wird das Optionsfeld „Umkehren der Beziehung“ angezeigt."]
+
++
+Bei diesem Vorgang werden die Inhalte des ursprünglichen Quell-Volume durch den Inhalt des Ziel-Volume überschrieben. Dies ist hilfreich, wenn Sie ein Quell-Volume, das offline gegangen ist, reaktivieren möchten.
+
++
+Jetzt das CVO Volumen (`hc_iscsi_vol_copy`) Wird zum Quell-Volume und zum On-Premises-Volume (`hc_iscsi_vol`) Wird zum Zielvolume.
+
++
+image:fhc-cvoe-image25.png["Dieser Screenshot zeigt die in BlueXP erstellte Volume-Replizierungsbeziehung."]
+
++
+Alle Daten, die zwischen der letzten Datenreplizierung und dem Zeitpunkt, zu dem das Quell-Volume deaktiviert wurde, auf das ursprüngliche Quell-Volume geschrieben wurden, bleiben nicht erhalten.
+
+.. Erstellen Sie eine neue Datei auf der EHR-Instanz in der Cloud, um den Schreibzugriff auf das CVO-Volume zu überprüfen.
++
+....
+cd /file1/
+sudo touch newfile
+....
+
+
+
+
+Wenn der Produktionsstandort ausfällt, können Clients weiterhin auf die Daten zugreifen und auch Schreibvorgänge auf das Cloud Volumes ONTAP Volume ausführen, das jetzt das Quell-Volume ist.
+
+Im Falle eines Failback zum primären Standort bietet SnapMirror eine effiziente Möglichkeit, den DR-Standort am primären Standort neu zu synchronisieren. Dabei werden nur geänderte oder neue Daten vom DR-Standort aus zurück zum primären Standort übertragen, indem die SnapMirror Beziehung einfach umgekehrt wird. Nachdem der primäre Produktionsstandort den normalen Applikationsbetrieb wiederaufgenommen hat, setzt SnapMirror die Übertragung zum DR-Standort fort, ohne dass ein weiterer Basistransfer erforderlich ist.
+
+Dieser Abschnitt veranschaulicht die erfolgreiche Lösung eines DR-Szenarios, wenn der Produktionsstandort durch einen Notfall betroffen ist. Daten können jetzt sicher von Applikationen genutzt werden, die jetzt die Clients bedienen können, während der Quellstandort die Wiederherstellung durchläuft.
+
+
+
+== Verifizierung der Daten am Produktionsstandort
+
+Nach der Wiederherstellung des Produktionsstandorts müssen Sie sicherstellen, dass die ursprüngliche Konfiguration wiederhergestellt ist und Clients vom Quellstandort aus auf die Daten zugreifen können.
+
+In diesem Abschnitt sprechen wir über die Einrichtung der Quellsite, die Wiederherstellung der SnapMirror-Beziehung zwischen On-Premises ONTAP und Cloud Volumes ONTAP und haben schließlich am Quellende eine Datenintegritätsprüfung durchgeführt
+
+Für die Verifizierung der Daten am Produktionsstandort kann folgendes Verfahren verwendet werden:
+
+. Stellen Sie sicher, dass der Quellstandort jetzt verfügbar ist. Starten Sie dazu die SVM, die das lokale ONTAP Volume hostet (`hc_iscsi_vol`).
++
+image:fhc-cvoe-image26.png["In diesem Screenshot wird gezeigt, wie eine bestimmte VM mithilfe eines Dropdown-Menüs auf der Seite Storage VM gestartet wird."]
+
+. Die SnapMirror Replizierungsbeziehung zwischen Cloud Volumes ONTAP und On-Premises-ONTAP wird unterbrochen und das On-Premises-Volume hochgestuft (`hc_iscsi_vol`) Zurück zur Produktion.
++
+image:fhc-cvoe-image27.png["Dieser Screenshot zeigt, wie eine Beziehung unterbrochen wird."]
+
++
+Nachdem die SnapMirror Beziehung beschädigt wurde, ändert sich der Typ des lokalen Volumes von Datensicherung (DP) in Lesen/Schreiben (RW).
+
++
+....
+A400-G0312::> volume show -volume hc_iscsi_vol -fields type
+vserver        volume       type
+-------------- ------------ ----
+Healthcare_SVM hc_iscsi_vol RW
+....
+. Rückgängig machen der SnapMirror Beziehung Jetzt das lokale ONTAP Volume (`hc_iscsi_vol`) Wird das Quell-Volume, wie es früher war, und das Cloud Volumes ONTAP-Volume (`hc_iscsi_vol_copy`) Wird zum Zielvolume.
++
+image:fhc-cvoe-image28.png["Dieser Screenshot zeigt, wie eine Beziehung umkehren kann."]
+
++
+Durch Befolgen dieser Schritte haben wir die ursprüngliche Konfiguration erfolgreich wiederhergestellt.
+
+. Starten Sie die lokale EHR-Instanz neu. Mounten Sie das Dateisystem und überprüfen Sie, ob das `newfile` Die Sie bei einem Produktionsstart auf der EHR-Instanz in der Cloud erstellt haben, existiert jetzt auch hier.
++
+image:fhc-cvoe-image29.png["In diesem Screenshot wird gezeigt, wie Sie die neue Datei in der lokalen EHR-Instanz finden."]
+
+
+
+Wir können daraus schließen, dass die Datenreplikation von der Quelle zum Ziel erfolgreich abgeschlossen wurde und dass die Datenintegrität gewahrt bleibt. Damit ist die Überprüfung der Daten am Produktionsstandort abgeschlossen.
+
+link:fhc-cvoe-conclusion.html["Weiter: Fazit."]

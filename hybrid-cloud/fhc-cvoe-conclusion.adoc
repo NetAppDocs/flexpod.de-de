@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fhc-cvoe-conclusion.html 
+keywords: conclusion 
+summary: Der Aufbau einer Hybrid Cloud hat für die meisten Organisationen im Gesundheitswesen das Ziel, jederzeit für Verfügbarkeit der Daten zu sorgen. In dieser Lösung haben wir mit Cloud Volumes ONTAP eine FlexPod Hybrid-Cloud-Lösung implementiert und mithilfe der NetApp SnapMirror Replizierungstechnologie einige Anwendungsfälle für das Backup und Recovery von Applikationen und Workloads des Gesundheitswesens validiert. 
+---
+= Schlussfolgerung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+link:fhc-cvoe-solution-validation.html["Zurück: Lösungsvalidierung."]
+
+[role="lead"]
+Der Aufbau einer Hybrid Cloud hat für die meisten Organisationen im Gesundheitswesen das Ziel, jederzeit für Verfügbarkeit der Daten zu sorgen. In dieser Lösung haben wir mit Cloud Volumes ONTAP eine FlexPod Hybrid-Cloud-Lösung implementiert und mithilfe der NetApp SnapMirror Replizierungstechnologie einige Anwendungsfälle für das Backup und Recovery von Applikationen und Workloads des Gesundheitswesens validiert.
+
+FlexPod ist eine umfassend getestete und validierte konvergente Infrastruktur aus der strategischen Partnerschaft von Cisco und NetApp. Das Ziel ist es, vorhersehbare System-Performance mit niedriger Latenz und hohe Verfügbarkeit zu bieten. Dieser Ansatz führt zu einem hohen EHR-Komfort und letztendlich zu der besten Reaktionszeit für Benutzer des EHR-Systems.
+
+Mit NetApp können Sie EHR-Produktion, Disaster Recovery, Backup oder Tiering in der Cloud genauso ausführen wie NetApp Storage-Funktionen in einem lokalen Datacenter. Mit NetApp Cloud Volumes ONTAP bietet NetApp die Funktionen der Enterprise-Klasse und die Performance, die für eine effiziente Ausführung von EHR in der Cloud erforderlich sind. Cloud-Optionen von NetApp bieten Block-über-iSCSI und File-über-NFS oder SMB.
+
+Diese Lösung ist auf die Anforderungen von medizinischen Einrichtungen zugeschnitten und ermöglicht ihnen einen Schritt auf dem Weg hin zur digitalen Transformation. Außerdem kann sie ihre Applikationen und Workloads auf effiziente Weise managen.
+
+link:fhc-cvoe-where-to-find-additional-information.html["Weiter: Wo finden Sie zusätzliche Informationen."]
