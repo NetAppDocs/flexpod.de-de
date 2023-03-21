@@ -32,9 +32,9 @@ FlexPod ist die ideale Plattform für die Workload-Anforderungen im Gesundheitsw
 
 
 
-== Epic
+== EHR
 
-Epic Electronic Health Records (EHRs) stellt Software für mittelgroße und große medizinische Gruppen, Krankenhäuser und integrierte Organisationen im Gesundheitswesen bereit. Zu den Kunden zählen auch kommunale Krankenhäuser, akademische Einrichtungen, Kinderorganisationen, Sicherheitsnetzbetreiber und Systeme mit mehreren Krankenhäusern. Die in die EHR integrierte Software umfasst klinische Funktionen sowie Zugriffs- und Umsatzfunktionen und kann auch zu Hause genutzt werden.
+Electronic Health Records (EHRs) stellt Software für mittelgroße und große medizinische Gruppen, Krankenhäuser und integrierte Organisationen im Gesundheitswesen her. Zu den Kunden zählen auch kommunale Krankenhäuser, akademische Einrichtungen, Kinderorganisationen, Sicherheitsnetzbetreiber und Systeme mit mehreren Krankenhäusern. Die in die EHR integrierte Software umfasst klinische Funktionen sowie Zugriffs- und Umsatzfunktionen und kann auch zu Hause genutzt werden.
 
 Unternehmen aus dem Gesundheitswesen stehen weiterhin unter dem Druck, den Nutzen aus ihren umfangreichen Investitionen in branchenführende EHRs zu maximieren. Wenn Kunden ihre Datacenter auf EHR-Lösungen und geschäftskritische Applikationen ausrichten, werden häufig die folgenden Ziele für die Datacenter-Architektur identifiziert:
 
@@ -47,7 +47,7 @@ Unternehmen aus dem Gesundheitswesen stehen weiterhin unter dem Druck, den Nutze
 * Robuste Datensicherung, Backup, Recovery und Business Continuance
 
 
-FlexPod ist EHR-zertifiziert und unterstützt eine Plattform mit Cisco UCS mit Intel Xeon Prozessoren, Red hat Enterprise Linux (RHEL) und Virtualisierung mit VMware ESXi. Diese Plattform kombiniert mit dem High Comfort Level Ranking von EHR für NetApp Storage mit ONTAP. Kunden können ihre Applikationen im Gesundheitswesen über FlexPod in einer vollständig gemanagten Private Cloud ausführen, die auch mit jedem der Public Cloud-Provider verbunden werden kann.
+FlexPod ist EHR-validiert und unterstützt eine Plattform mit Cisco UCS mit Intel Xeon Prozessoren, Red hat Enterprise Linux (RHEL) und Virtualisierung mit VMware ESXi. Diese Plattform kombiniert mit dem High Comfort Level Ranking von EHR für NetApp Storage mit ONTAP. Kunden können ihre Applikationen im Gesundheitswesen über FlexPod in einer vollständig gemanagten Private Cloud ausführen, die auch mit jedem der Public Cloud-Provider verbunden werden kann.
 
 
 
