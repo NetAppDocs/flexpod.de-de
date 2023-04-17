@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/vmware-vsphere-70-ontap-97.html 
+keywords:  
+summary: 'Cisco Validated Designs (CVDs) umfassen Systeme und Lösungen, die entwickelt, getestet und dokumentiert wurden, um Kundenimplementierungen zu vereinfachen und zu verbessern.' 
+---
+= FlexPod Datacenter with VMware vSphere 7.0 and NetApp ONTAP 9.7
+:allow-uri-read: 
+
+
+John George, Cisco Sree Lakshmi Lanka, NetApp
+
+Cisco Validated Designs (CVDs) umfassen Systeme und Lösungen, die entwickelt, getestet und dokumentiert wurden, um Kundenimplementierungen zu vereinfachen und zu verbessern. Bei diesen Designs wird ein breites Spektrum an Technologien und Produkten in ein Portfolio von Lösungen integriert, das speziell für die Geschäftsanforderungen der Kunden entwickelt wurde. Gemeinsam entwickeln Cisco und NetApp FlexPod®, das als Grundlage für eine Vielzahl an Workloads dient und effiziente Architekturdesigns ermöglicht, die auf den Kundenanforderungen basieren. Eine FlexPod Lösung ist ein validierter Ansatz für die Implementierung von Technologien von Cisco und NetApp als Shared Cloud-Infrastruktur.
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html"^]

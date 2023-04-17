@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: hybrid-cloud/fpd-hc-storage-design.html 
+keywords: flexpod, cisco, hybrid, cloud, storage, private 
+summary: 'Cisco Validated Designs (CVDs) bieten Systeme und Lösungen, die entwickelt, getestet und dokumentiert sind, um Kundenimplementierungen zu vereinfachen und zu verbessern.' 
+---
+= FlexPod Datacenter for Hybrid Cloud with Cisco CloudCenter and NetApp Private Storage – Design
+:allow-uri-read: 
+
+
+Haseb Niazi, Cisco David Arnette, NetApp
+
+Cisco Validated Designs (CVDs) bieten Systeme und Lösungen, die entwickelt, getestet und dokumentiert sind, um Kundenimplementierungen zu vereinfachen und zu verbessern. Diese Designs umfassen eine breite Palette von Technologien und Produkten in ein Portfolio von Lösungen, die entwickelt wurden, um die geschäftlichen Anforderungen der Kunden zu erfüllen und sie vom Design bis zur Implementierung zu begleiten.
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_hybridcloud_design.html["FlexPod Datacenter for Hybrid Cloud with Cisco CloudCenter and NetApp Private Storage – Design"^]

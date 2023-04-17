@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/fpd-cisco-vsphere-design.html 
+keywords: flexpod, cisco, data, center, vmware, vsphere, 
+summary: Dieses Dokument beschreibt die FlexPod Lösung von Cisco und NetApp, einen validierten Ansatz zur Implementierung von Technologien von Cisco und NetApp als Shared Cloud-Infrastruktur. 
+---
+= FlexPod Datacenter with VMware vSphere 6.7 U1, Cisco UCS Fabric der vierten Generation und NetApp AFF A-Series – Design
+:allow-uri-read: 
+
+
+John George, Cisco Sree Lakshmi Lanka, NetApp
+
+Dieses Dokument beschreibt die FlexPod Lösung von Cisco und NetApp, einen validierten Ansatz zur Implementierung von Technologien von Cisco und NetApp als Shared Cloud-Infrastruktur. Das validierte Design liefert die Rahmenbedingungen für die Implementierung von VMware vSphere, der beliebtesten Virtualisierungsplattform der Enterprise-Klasse von Datacentern auf FlexPod.
+
+FlexPod ist eine führende integrierte Infrastruktur, die eine Vielzahl von Enterprise-Workloads und Anwendungsfällen unterstützt. Mit dieser Lösung können Kunden eine auf VMware vSphere basierende Private Cloud schnell und zuverlässig in einer integrierten Infrastruktur implementieren.
+
+Die empfohlene Lösungsarchitektur basiert auf Cisco Unified Computing System (Cisco UCS) und verwendet die einheitliche Softwareversion zur Unterstützung der Cisco UCS Hardware-Plattformen, einschließlich Cisco UCS B-Series Blade- und C-Series Rack-Servern, Cisco UCS 6454 Fabric Interconnects, Switches der Cisco Nexus 9000 Serie, Cisco MDS Fibre Channel Switches, NetApp All-Flash-Storage-Arrays vorgestellt. Darüber hinaus enthält es VMware vSphere 6.7 Update 1, das eine Reihe neuer Funktionen zur Optimierung der Storage-Auslastung und zur Einrichtung einer privaten Cloud bietet.
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa_design.html["FlexPod Datacenter with VMware vSphere 6.7 U1, Cisco UCS Fabric der vierten Generation und NetApp AFF A-Series – Design"^]

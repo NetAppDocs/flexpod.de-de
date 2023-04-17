@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-sap-ucs-aff.html 
+keywords: flexpod, cisco, data, center, sap, ucs, aff, a-series, tdi, tailored, design 
+summary: 'Dieses Dokument beschreibt die FlexPod Lösung von Cisco und NetApp, bei der es sich um einen validierten Ansatz für die Implementierung von SAP HANA Tailored Datacenter Integration (TDI) Umgebungen handelt.' 
+---
+= FlexPod Datacenter for SAP Solution with Cisco UCS Manager 4.0 and NetApp AFF A-Series – Design
+:allow-uri-read: 
+
+
+Pramod Ramamurthy, Cisco Marco Schoen, NetApp
+
+Dieses Dokument beschreibt die FlexPod Lösung von Cisco und NetApp, bei der es sich um einen validierten Ansatz für die Implementierung von SAP HANA Tailored Datacenter Integration (TDI) Umgebungen handelt. Dieses validierte Design enthält Richtlinien und ein Framework zur Implementierung von SAP HANA mit Best Practices von Cisco und NetApp.
+
+FlexPod ist eine führende integrierte Infrastruktur, die eine Vielzahl von Enterprise-Workloads und Anwendungsfällen unterstützt. Diese Lösung ermöglicht Ihnen die schnelle und zuverlässige Implementierung von SAP HANA mit einem Modell eines maßgeschneiderten Datacenter-Integrationsmodus.
+
+Die empfohlene Lösungsarchitektur basiert auf dem Cisco Unified Computing System (Cisco UCS) und verwendet eine einheitliche Softwareversion zur Unterstützung von Cisco UCS Hardwareplattformen, die folgende Komponenten umfassen:
+
+* Cisco UCS Blade-Server der B-Serie und Cisco UCS Rack-Server der C-Serie, konfigurierbar mit der Option Intel Optane Data Center Persistent Memory Module (DCPMM)
+* Fabric Interconnects der Cisco UCS 6300 Serie
+* Switches der Cisco Nexus 9000 Serie
+* NetApp All-Flash-Storage-Arrays
+
+
+Darüber hinaus bietet dieses Dokument Validierungen sowohl für Red hat Enterprise Linux als auch für SUSE Linux Enterprise Server for SAP HANA.
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_sap_netappaffa_design.html["FlexPod Datacenter for SAP Solution with Cisco UCS Manager 4.0 and NetApp AFF A-Series – Design"^]

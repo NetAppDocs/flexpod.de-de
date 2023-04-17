@@ -1,0 +1,13 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-sap-sql-deploy.html 
+keywords: flexpod, cisco, sap, sql, servers, data, bases 
+summary: FlexPod ist eine vorab validierte und entwickelte Datacenter-Lösung, die auf die sich schnell ändernden Anforderungen VON IT-Abteilungen zugeschnitten ist. 
+---
+= SAP Applikations-Server auf FlexPod mit SQL implementieren
+:allow-uri-read: 
+
+
+FlexPod ist eine vorab validierte und entwickelte Datacenter-Lösung, die auf die sich schnell ändernden Anforderungen VON IT-Abteilungen zugeschnitten ist. Cisco und NetApp arbeiten gemeinsam an der Bereitstellung von FlexPod, die als Grundlage für eine Vielzahl von Enterprise Workloads erstklassige Computing-, Netzwerk- und Storage-Komponenten verwendet. Hierzu zählen Datenbanken, Enterprise Resource Planning (ERP), Customer Relationship Management (CRM) und Web-Applikationen. Die Konsolidierung VON IT-Anwendungen, insbesondere Datenbanken, hat in den letzten Jahren großes Interesse hervorgerufen. Die am weitesten verbreitete Datenbankplattform der letzten Jahre ist Microsoft SQL Server. SQL Server-Datenbanken unterliegen häufig der unkontrollierten Zunahme von Datenbanken. Dies bringt IT-Herausforderungen wie nicht ausgelastete Server, falsche Lizenzierungen, Sicherheitsbedenken, Managementprobleme und hohe Betriebskosten mit sich. Daher eignen sich SQL Server Datenbanken gut für die Konsolidierung auf einer robusteren, flexibleren und stabileren Plattform. Dieses Dokument beschreibt eine FlexPod Referenzarchitektur für die Implementierung und Konsolidierung von SQL Server Datenbanken.
+
+link:https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/sap-appservers-flexpod-with-sql.pdf["SAP Applikations-Server auf FlexPod mit SQL implementieren"^]

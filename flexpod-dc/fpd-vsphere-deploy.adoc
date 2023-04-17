@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: flexpod-dc/fpd-vsphere-deploy.html 
+keywords: cisco, flexpod, data, center, vmware, vsphere, ontap, deployment 
+summary: 'Dieses Dokument beschreibt das Cisco und NetApp FlexPod-Datacenter mit NetApp ONTAP 9.7 auf NetApp AFF A400 All-Flash-Storage-System, die Unified Software-Version 4.1(2) von Cisco UCS Manager mit skalierbaren Intel Xeon Prozessoren der zweiten Generation und VMware vSphere 7.0.' 
+---
+= FlexPod Datacenter mit VMware vSphere 7.0 und NetApp ONTAP 9.7 – Bereitstellung
+:allow-uri-read: 
+
+
+John George, Cisco Sree Lakshmi Lanka, NetApp
+
+Dieses Dokument beschreibt das Cisco und NetApp FlexPod-Datacenter mit NetApp ONTAP 9.7 auf NetApp AFF A400 All-Flash-Storage-System, die Unified Software-Version 4.1(2) von Cisco UCS Manager mit skalierbaren Intel Xeon Prozessoren der zweiten Generation und VMware vSphere 7.0. Cisco UCS Manager (UCSM) 4.1(2) bietet konsolidierten Support für Folgendes:
+
+* Alle aktuellen Cisco UCS Fabric Interconnect-Modelle: 6200, 6300, 6324 (Cisco UCS Mini)
+* 6400
+* IOM der Serie 2200/2300/2400
+* Cisco UCS B-Serie
+* Cisco UCS C-Serie
+
+
+Darüber hinaus sind die Cisco Intersight- und NetApp Active IQ-SaaS-Managementplattformen enthalten.
+
+FlexPod-Datacenter mit NetApp ONTAP 9.7, Cisco UCS Unified Software Release 4.1(2) und VMware vSphere 7.0 umfassen eine vorab entwickelte Best-Practice Datacenter-Architektur auf Basis des Cisco Unified Computing System (Cisco UCS), der Cisco Nexus 9000 Switches, MDS 9000 Multilayer Fabric Switches, Und den NetApp Storage-Arrays der AFF A-Serie mit der Datenmanagement-Software ONTAP 9.7.
+
+link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_vmware_vsphere_7_0_ontap_9_7.html["FlexPod Datacenter mit VMware vSphere 7.0 und NetApp ONTAP 9.7 – Bereitstellung"^]

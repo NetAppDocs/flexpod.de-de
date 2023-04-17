@@ -1,0 +1,15 @@
+---
+sidebar: sidebar 
+permalink: ent-db/fpd-sap-sql.html 
+keywords: flexpod, cisco, white, paper,sap, non-hana, sql 
+summary: In der aktuellen IT-Branche erlebt eine drastische Transformation bei Datacenter-Lösungen. 
+---
+= SAP Non-HANA with SQL Whitepaper – Design
+:allow-uri-read: 
+
+
+In der aktuellen IT-Branche erlebt eine drastische Transformation bei Datacenter-Lösungen. In den letzten Jahren war das Interesse an vorab validierten und ausgereiften Datacenter-Lösungen groß. Die Einführung der Virtualisierungstechnologie in kritische Bereiche hat große Auswirkungen auf die Designprinzipien und die Architektur dieser Lösungen. Viele Applikationen, die auf Bare-Metal-Systemen ausgeführt werden, können nun zu neuen virtualisierten, integrierten Lösungen migriert werden. FlexPod ist eine solche vorab validierte und entwickelte Datacenter-Lösung, die auf die sich schnell ändernden Anforderungen VON IT-Abteilungen zugeschnitten ist. Cisco und NetApp stellen gemeinsam FlexPod bereit, die auf erstklassigen Computing-, Netzwerk- und Storage-Komponenten als Grundlage für eine Vielzahl von Enterprise Workloads wie Datenbanken, Enterprise Resource Planning (ERP), Customer Relationship Management (CRM) und Web-Applikationen basiert.
+
+Die Konsolidierung VON IT-Anwendungen, insbesondere Datenbanken, hat in den letzten Jahren großes Interesse hervorgerufen. Die am weitesten verbreitete Datenbankplattform der letzten Jahre ist Microsoft SQL Server. SQL Server-Datenbanken unterliegen häufig der unkontrollierten Zunahme von Datenbanken. Dies bringt IT-Herausforderungen wie nicht ausgelastete Server, falsche Lizenzierungen, Sicherheitsbedenken, Managementprobleme und hohe Betriebskosten mit sich. Daher eignen sich SQL Server Datenbanken gut für die Konsolidierung auf einer robusteren, flexibleren und stabileren Plattform. Dieses Dokument beschreibt eine FlexPod Referenzarchitektur für die Implementierung und Konsolidierung von SQL Server Datenbanken.
+
+link:https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/sap-appservers-flexpod-with-sql.pdf["SAP Non-HANA with SQL Whitepaper – Design"^]
