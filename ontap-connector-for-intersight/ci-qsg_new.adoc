@@ -17,6 +17,18 @@ In diesem Abschnitt werden die neuen Funktionen aufgeführt, die für Cisco Inte
 
 
 
+== April 2023
+
+* Die Registerkarten Protection Policies (SnapMirror) und Snapshot Policies wurden im Abschnitt Inventar der Benutzeroberfläche auf der Seite Policies hinzugefügt.
+* Die Seite NFS-Clients wurde im Abschnitt „Inventar“ der Benutzeroberfläche hinzugefügt.
+* Geschützte Spalte auf der Seite Speicher-VMs im Abschnitt Inventar der Benutzeroberfläche hinzugefügt.
+* Geändert, wie Informationen zur Datenreduzierung gemeldet und angezeigt werden.
+* Die Registerkarten „Lokale Ebene“ und „Cloud-Ebene“ wurden auf der Seite „Tiers“ im Abschnitt „Inventar“ der Benutzeroberfläche hinzugefügt.
+* Die Spalte Knoten wird nun nach der Spalte Name auf der Seite Ports im Abschnitt Inventar der Benutzeroberfläche angezeigt.
+
+
+
+
 == Januar 2023
 
 
@@ -126,5 +138,5 @@ NOTE: Die oben genannten Performance-Kennzahlen stehen nur für Storage Arrays z
 * Wenn Sie AIQUM 9.11 oder eine frühere Version nutzen, können alle Überprüfungen, die auf der Registerkarte „Interoperabilität“ auf der Seite „integrierte Systeme“ durchgeführt werden, IMM und UCSM Cisco Komponenten nicht genau unterscheiden. Um dieses Problem zu beheben, sollten Sie auf AIQUM 9.12 aktualisieren, um sicherzustellen, dass alle Komponenten ordnungsgemäß identifiziert werden.
 * Damit die Intersight-Speicherbestandsdaten während des Datenerfassungsprozesses nicht beeinflusst werden, müssen alle nicht unterstützten ONTAP-Cluster (z. B. Versionen unter ONTAP 9.7P1) aus dem Active IQ Unified Manager (AIQUM) entfernt werden.
 * Für alle beanspruchten Ziele ist eine AIQUM-Version von 9.11 erforderlich, um eine erfolgreiche Durchführung von FlexPod Integrated System Interoperability Abfragen zu ermöglichen.
-* Die Seite Speicherinventarprüfungen wird nicht ausgefüllt, wenn das ONTAP-Cluster mit einem FQDN zu AIQ-um hinzugefügt wird. Benutzer müssen ONTAP-Cluster über eine IP-Adresse zu AIQ-um hinzufügen.
+* Die Seite Speicherbestandsprüfungen wird nicht ausgefüllt, wenn der ONTAP-Cluster mit einem FQDN zu AIQUM hinzugefügt wird. Benutzer müssen AIQUM ONTAP-Cluster mithilfe einer IP-Adresse hinzufügen.
 
