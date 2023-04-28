@@ -13,6 +13,7 @@ summary: Cisco Intersight stellt neue Versionen vor, die Ihnen neue Funktionen, 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden die neuen Funktionen aufgeführt, die für Cisco Intersight mit NetApp ONTAP Storage verfügbar sind.
 
 

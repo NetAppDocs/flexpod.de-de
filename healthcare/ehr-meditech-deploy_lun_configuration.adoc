@@ -13,6 +13,7 @@ summary: Die Anzahl der MEDITECH-Hosts in Ihrer Umgebung bestimmt die Anzahl der
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die Anzahl der MEDITECH-Hosts in Ihrer Umgebung bestimmt die Anzahl der LUNs, die innerhalb des NetApp FAS oder AFF-Systems erstellt wurden. Das Angebot für die Hardwarekonfiguration gibt die Größe jeder LUN an.
 
 

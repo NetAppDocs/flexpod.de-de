@@ -13,6 +13,7 @@ summary: Die FlexPod Datacenter Lösung ist eine von Cisco und NetApp entwickelt
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die FlexPod Datacenter Lösung ist eine von Cisco und NetApp entwickelte konvergente Infrastruktur, die eine dynamische, hochverfügbare und skalierbare Datacenter-Umgebung für die Ausführung von Enterprise Workloads bietet. Computing- und Netzwerkressourcen in der Lösung werden von den Produkten Cisco UCS und Nexus bereitgestellt, und die Storage-Ressourcen werden vom ONTAP Storage-System bereitgestellt. Das Lösungsdesign wird regelmäßig erweitert, wenn aktualisierte Hardware- oder Software- und Firmware-Versionen verfügbar sind. Diese Details sowie Best Practices für Lösungsdesign und -Implementierung werden in Dokumenten mit Cisco Validated Design (CVD) oder NetApp Verified Architecture (NVA) festgehalten und regelmäßig veröffentlicht.
 
 Das aktuelle CVD-Dokument mit Details zum Design der FlexPod Datacenter Lösung ist verfügbar https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_vmware_vs_7_design.html["Hier"^].

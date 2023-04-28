@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden eine Referenz zur Verkabelung und Verkabelun
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die folgende Abbildung zeigt die Verkabelung zur Referenzvalidierung.
 
 image:express-c-series-aff220-deploy_image5.png["Fehler: Fehlendes Grafikbild"]

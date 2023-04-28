@@ -13,6 +13,7 @@ summary: Bevor ein Objektspeicher an ein Aggregat angehängt werden kann, muss e
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Bevor ein Objektspeicher an ein Aggregat angehängt werden kann, muss er zu ONTAP hinzugefügt und von ihm identifiziert werden. Dieser Vorgang kann mit OnCommand System Manager oder der ONTAP CLI abgeschlossen werden.
 
 FabricPool unterstützt Amazon S3, IBM Object Cloud Storage und Microsoft Azure Blob Storage-Objektspeicher als Cloud-Tiers.

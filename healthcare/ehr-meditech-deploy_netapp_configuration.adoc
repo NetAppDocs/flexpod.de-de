@@ -13,6 +13,7 @@ summary: NetApp Storage, der für MEDITECH-Softwareumgebungen implementiert wird
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Der NetApp Storage, der für MEDITECH-Softwareumgebungen implementiert wird, verwendet Storage-Controller in einer hochverfügbaren Paarkonfiguration. Speicher muss von beiden Controllern über das FC-Protokoll an MEDITECH-Datenbankserver übertragen werden. Die Konfiguration stellt den Storage beider Controller bereit, um die Applikationslast im normalen Betrieb gleichmäßig zu verteilen.
 
 

@@ -13,6 +13,7 @@ summary: In diesem Abschnitt wird eine Beispielliste der Materialien für Storag
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt wird eine Beispielliste der Materialien für Storage-Architekturen unterschiedlicher Größe vorgestellt.
 
 

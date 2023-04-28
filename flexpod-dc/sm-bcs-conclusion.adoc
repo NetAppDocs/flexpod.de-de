@@ -15,6 +15,7 @@ summary: Das FlexPod Datacenter mit SM-BC beruht auf einem aktiv/aktiv-Datacente
 
 link:sm-bcs-validated-scenarios.html["Zurück: Lösungsvalidierung - validierte Szenarien."]
 
+[role="lead"]
 Das FlexPod Datacenter mit SM-BC beruht auf einem aktiv/aktiv-Datacenter-Design, das Business Continuity und Disaster Recovery für geschäftskritische Workloads bietet. Mit der Lösung sind normalerweise zwei Datacenter verknüpft, die an separaten, geografisch verteilten Standorten in einem Großraumgebiet bereitgestellt werden. Die NetApp SM-BC Lösung verwendet synchrone Replizierung, um geschäftskritische Datenservices gegen einen Standortausfall zu schützen. Voraussetzung für die Lösung ist, dass die beiden FlexPod-Bereitstellungsstandorte eine Netzwerklatenz von weniger als 10 Millisekunden pro Jahr nutzen.
 
 Der NetApp ONTAP Mediator, der an einem dritten Standort implementiert wird, überwacht die SM-BC-Lösung und ermöglicht ein automatisiertes Failover bei einem Standortausfall. VMware vCenter mit VMware HA und Stretched VMware vSphere Metro Storage Cluster Konfiguration funktionieren nahtlos mit NetApp SM-BC, damit die Lösung die gewünschten RPO von null und RTO von fast null erfüllt.

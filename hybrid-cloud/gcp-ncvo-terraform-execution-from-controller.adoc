@@ -15,6 +15,7 @@ summary: Wir können den Terraform-Plan unter Verwendung eines Controllers ausf�
 
 link:gcp-ncvo-dr-workflow.html["Früher: DR-Workflow."]
 
+[role="lead"]
 Wir können den Terraform-Plan unter Verwendung eines Controllers ausführen. Wenn Sie Ihren Terraform-Plan bereits mithilfe eines ICO-Workflows ausgeführt haben, können Sie diesen Abschnitt überspringen.
 
 

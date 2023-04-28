@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden Optionen für das alte NetApp Festplatten-Sh
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In der folgenden Tabelle werden die Optionen für ältere Storage Controller von NetApp aufgeführt.
 
 |===

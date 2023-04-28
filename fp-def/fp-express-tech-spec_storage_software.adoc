@@ -13,6 +13,7 @@ summary: Die in diesem Abschnitt aufgeführten Storage-Betriebssysteme werden vo
 :imagesdir: ./../media/
 
 
+[role="lead"]
 FlexPod Express unterstützt Storage-Systeme mit NetApp ONTAP oder SANtricity Betriebssystemen.
 
 

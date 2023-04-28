@@ -8,6 +8,7 @@ summary:
 :allow-uri-read: 
 
 
+[role="lead"]
 Weitere Informationen zu den in diesem Dokument beschriebenen Daten finden Sie in den folgenden Dokumenten und auf den folgenden Websites:
 
 * NetApp Dokumentation

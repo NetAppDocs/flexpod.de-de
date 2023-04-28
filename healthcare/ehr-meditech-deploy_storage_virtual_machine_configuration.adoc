@@ -13,6 +13,7 @@ summary: Dieser Abschnitt bezieht sich auf die Implementierung auf ONTAP 8.3 und
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Dieser Abschnitt bezieht sich auf die Implementierung auf ONTAP 8.3 und höher.
 
 

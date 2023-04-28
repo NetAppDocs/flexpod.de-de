@@ -13,6 +13,7 @@ summary: 'Dieser Abschnitt beschreibt die Implementierungsverfahren für die Net
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Dieser Abschnitt beschreibt die Implementierungsverfahren für die NetApp Virtual Storage Console (VSC).
 
 

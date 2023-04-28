@@ -13,6 +13,7 @@ summary: Auf den folgenden Websites erfahren Sie mehr über die in diesem Dokume
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Auf den folgenden Websites finden Sie weitere Informationen zu den in diesem Dokument beschriebenen Daten:
 
 * Cisco Produktdokumentation

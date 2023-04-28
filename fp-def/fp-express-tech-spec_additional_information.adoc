@@ -13,6 +13,7 @@ summary: Weitere Informationen zu den in diesem Dokument beschriebenen Daten fin
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Weitere Informationen zu den in diesem Dokument beschriebenen Daten finden Sie in den folgenden Dokumenten und auf den folgenden Websites:
 
 * AFF und FAS System Documentation Center

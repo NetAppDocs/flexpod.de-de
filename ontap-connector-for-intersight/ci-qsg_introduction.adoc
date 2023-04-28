@@ -13,6 +13,7 @@ summary: NetApp und Cisco bieten gemeinsam Cisco Intersight, eine Komplettansich
 :imagesdir: ./../media/
 
 
+[role="lead"]
 NetApp und Cisco bieten gemeinsam Cisco Intersight, eine Komplettansicht des FlexPod Ecosystems. Durch diese vereinfachte Integration entsteht eine einheitliche Management-Plattform für alle Komponenten in der FlexPod-Infrastruktur und der FlexPod-Lösung. Cisco Intersight ermöglicht Ihnen die Überwachung von NetApp Storage, Cisco Computing und VMware Inventar. Außerdem können Sie Workflows orchestrieren oder automatisieren, um Storage- und Virtualisierungsaufgaben gemeinsam durchzuführen.
 
 Weitere Informationen finden Sie unter https://www.netapp.com/pdf.html?item=/media/25001-tr-4883.pdf["TR 4883: FlexPod Datacenter with ONTAP 9.8, ONTAP Storage Connector for Cisco Intersight und Cisco Intersight Managed Mode"^].

@@ -13,6 +13,7 @@ summary: Diese FlexPod Express Lösung ist Bestandteil des konvergenten Infrastr
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Diese FlexPod Express Lösung ist Bestandteil des konvergenten Infrastrukturprogramms von FlexPod.
 
 

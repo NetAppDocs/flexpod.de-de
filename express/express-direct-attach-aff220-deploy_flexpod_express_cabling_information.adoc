@@ -13,6 +13,7 @@ summary: Die Verkabelung zur Referenzvalidierung ist in den folgenden Tabellen d
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die Verkabelung zur Referenzvalidierung ist in den folgenden Tabellen dokumentiert.
 
 In der folgenden Tabelle sind die Verkabelungsinformationen für den Cisco Nexus Switch 31108PCV A. aufgeführt

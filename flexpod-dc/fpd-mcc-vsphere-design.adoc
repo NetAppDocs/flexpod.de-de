@@ -10,6 +10,7 @@ summary: Dieses Dokument beschreibt die Integration der Cisco ACI Multi-Pod und 
 
 Haseeb Niazi, Cisco Arvind Ramakrishnan, NetApp
 
+[role="lead"]
 Dieses Dokument beschreibt die Integration der Cisco ACI Multi-Pod und NetApp MetroCluster IP Lösung in das FlexPod Datacenter, um eine hochverfügbare Multi-Datacenter-Lösung anzubieten. Die Multi-Datacenter-Architektur bietet die Möglichkeit, Workloads zwischen zwei Datacentern auszubalancieren, indem unterbrechungsfreie Workload-Mobilität genutzt wird. Auf diese Weise können Services ohne Unterbrechung eines Ausfalls zwischen den Standorten migriert werden.
 
 Die FlexPod mit ACI Multi-Pod und NetApp MetroCluster IP Lösung bietet folgende Vorteile:

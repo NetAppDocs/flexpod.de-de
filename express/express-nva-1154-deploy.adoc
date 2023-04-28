@@ -10,6 +10,7 @@ summary: Die FlexPod Express für VMware vSphere 7.0 mit Cisco UCS Mini und NetA
 
 Jyh-shing Chen, NetApp
 
+[role="lead"]
 Die FlexPod Express für VMware vSphere 7.0 mit Cisco UCS Mini und NetApp AFF/FAS Lösung nutzt Cisco UCS Mini mit B200 M5 Blade Servern, Cisco UCS 6324 in-Chassis Fabric Interconnects, Cisco Nexus 31108PC-V Switches oder andere konforme Switches, NetApp AFF A220, C190 oder das Controller-HA-Paar der FAS2700 Serie Mit der NetApp ONTAP 9.7 Datenmanagement-Software ausgeführt wird. Dieses Dokument zur Implementierung der NetApp Verified Architecture (NVA) enthält die detaillierten Schritte, die zur Konfiguration der Infrastrukturkomponenten und zur Implementierung von VMware vSphere 7.0 und den zugehörigen Tools erforderlich sind, um eine äußerst zuverlässige und hochverfügbare virtuelle FlexPod Express-Infrastruktur zu erstellen.
 
 link:https://www.netapp.com/pdf.html?item=/media/21938-nva-1154-DEPLOY.pdf["FlexPod Express für VMware vSphere 7.0 mit Cisco UCS Mini und NetApp AFF/FAS – NVA – Implementierung"^]

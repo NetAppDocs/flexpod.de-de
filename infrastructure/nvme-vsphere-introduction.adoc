@@ -17,6 +17,7 @@ Chris Schmitt und Kamini Singh, NetApp
 
 In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
 
+[role="lead"]
 Der NVMe-Storage-Standard, eine moderne Kerntechnologie, verändert den Zugriff und die Datenübertragung zu Enterprise-Storage durch sehr hohe Bandbreite und den Storage-Zugriff mit sehr niedriger Latenz für aktuelle und zukünftige Speichertechnologien. NVMe ersetzt den SCSI-Befehlssatz durch den NVMe-Befehlssatz.
 
 NVMe wurde für die Verwendung mit nicht-flüchtigen Flash-Laufwerken, Multi-Core-CPUs und Gigabyte an Speicher konzipiert. Darüber hinaus profitiert es von den deutlichen Fortschritten in der Informatik seit den 1970er Jahren und ermöglicht optimierte Befehlssätze, die Daten effizienter analysieren und bearbeiten. Eine vollständige NVMe Architektur ermöglicht es Datacenter-Administratoren zudem, das Ausmaß zu überdenken, in dem sie ihre virtualisierten und Container-Umgebungen verschieben können, und das Ausmaß der Skalierbarkeit, die ihre transaktionsorientierten Datenbanken unterstützen können.

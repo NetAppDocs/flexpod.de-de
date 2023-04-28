@@ -13,6 +13,7 @@ summary: Die Autoren möchten bestimmte Personen für ihre Unterstützung und ih
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die Autoren möchten die folgenden Personen für ihre Unterstützung und ihren Beitrag zu diesem Design anerkennen:
 
 * Paul Onofrietti Onotracy

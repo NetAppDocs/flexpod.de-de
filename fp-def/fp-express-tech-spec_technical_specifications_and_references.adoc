@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden zusätzliche, wichtige technische Spezifikat
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden zusätzliche, wichtige technische Spezifikationen für jede der FlexPod Express Komponenten beschrieben.
 
 

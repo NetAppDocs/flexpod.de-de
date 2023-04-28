@@ -13,6 +13,7 @@ summary: Eine FlexPod Architektur verfügt über die folgenden zusätzlichen Anf
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Eine FlexPod Architektur verfügt über die folgenden zusätzlichen Anforderungen bezüglich Interoperabilität und Support:
 
 * Alle Hardware- und Software-Komponenten müssen auf der NetApp aufgeführt und unterstützt werden http://mysupport.netapp.com/matrix["IMT"^], Das https://ucshcltool.cloudapps.cisco.com/public/["Cisco UCS Hardware- und Software-Kompatibilitätsliste"^]Und das Cisco UCS Hardware and Software Interoperability Matrix Tool.

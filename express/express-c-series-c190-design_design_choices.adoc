@@ -8,6 +8,7 @@ summary: Die in diesem Abschnitt aufgeführten Technologien wurden während der 
 :allow-uri-read: 
 
 
+[role="lead"]
 Die in diesem Abschnitt aufgeführten Technologien wurden während der Designphase ausgewählt. Jede Technologie erfüllt einen bestimmten Zweck in der FlexPod Express Infrastrukturlösung.
 
 

@@ -13,4 +13,5 @@ summary: LUN-Zuordnungen für die MEDITECH-Hosts werden erstellt, wenn die LUNs 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 LUN-Zuordnungen für die MEDITECH-Hosts werden erstellt, wenn die LUNs erstellt sind.

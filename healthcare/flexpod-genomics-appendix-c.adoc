@@ -15,6 +15,7 @@ summary: Dieser Abschnitt zeigt die Ausgabe nach der Ausführung des GATK mit de
 
 
 
+[role="lead"]
 Die Ausführung von GATK mit der Cromwell-Engine hat die folgende Probenausgabe erzeugt.
 
 ....

@@ -13,6 +13,7 @@ summary: Der Autor möchte den folgenden Personen für ihre Beiträge zur Erstel
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Der Autor dankt den folgenden Personen für ihre Unterstützung bei der Erstellung dieses Dokuments:
 
 * Jorge Gomez Navarrete, NetApp

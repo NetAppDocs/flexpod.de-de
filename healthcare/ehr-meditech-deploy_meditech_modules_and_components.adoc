@@ -13,6 +13,7 @@ summary: Die MEDITECH-Anwendung deckt mehrere Module und Komponenten ab.
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die MEDITECH-Anwendung deckt mehrere Module und Komponenten ab. In der folgenden Tabelle sind die Funktionen aufgeführt, die von diesen Modulen abgedeckt werden. Weitere Informationen zum Einrichten und Bereitstellen dieser Module finden Sie in der MEDITECH-Dokumentation.
 
 |===

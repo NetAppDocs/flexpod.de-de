@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden die Arten von Computing- und Speicher-Worklo
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden die Arten von Computing- und Speicher-Workloads beschrieben, die in MEDITECH-Umgebungen zu finden sind.
 
 

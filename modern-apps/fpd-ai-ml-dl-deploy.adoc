@@ -10,6 +10,7 @@ summary: Dieses Dokument enthält Einzelheiten zur Implementierung und Anleitung
 
 Haseeb Niazi, Cisco Arvind Ramakrishnan, NetApp
 
+[role="lead"]
 Dieses Dokument enthält Einzelheiten zur Implementierung und Anleitungen bezüglich der Integration der Cisco UCS C480 ML M5 Plattform in die FlexPod Datacenter-Lösung. So wird ein einheitlicher Ansatz für die Bereitstellung von KI- und ML-Funktionen innerhalb der konvergenten Infrastruktur bereitgestellt. In diesem Dokument wird auch die Konfiguration der NVIDIA-GPUs auf Cisco UCS C220- und C240-Plattformen erläutert. Eine ausführliche Designdiskussion zu den in dieser Lösung verwendeten Plattformen und Technologien finden Sie im link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_c480m5l_aiml_design.html["FlexPod Datacenter für Kombination von KI und ML mit Cisco UCS 480 ML für Deep Learning-Design"^].
 
 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_480ml_aiml_deployment.html["FlexPod-Datacenter für kombinierte KI- und ML-Technologien mit Cisco UCS 480 ML für Deep Learning – Bereitstellung"^]

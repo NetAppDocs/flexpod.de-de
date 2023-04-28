@@ -8,6 +8,7 @@ summary: Informieren Sie sich über die Performance von Citrix XenDesktop auf Ci
 :allow-uri-read: 
 
 
+[role="lead"]
 In diesem Dokument wird die Performance von Citrix XenDesktop auf Citrix XenServer mit NVIDIA Tesla P4, P6 und P40 Karten auf Cisco UCS C240 M5 und B200 M5 Servern mit SPECviewperf 13 beschrieben.
 
 link:https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/whitepaper-c11-741586.pdf["3D-Grafikvisualisierung mit Citrix und NVIDIA - Whitepaper"^]

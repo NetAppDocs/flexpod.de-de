@@ -13,6 +13,7 @@ summary: In den folgenden Tabellen sind die Hardware- bzw. Softwarekomponenten d
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In den folgenden Tabellen sind die Hardware- bzw. Softwarekomponenten der FlexPod-Infrastruktur für das medizinische Bildgebungssystem aufgeführt.
 
 |===

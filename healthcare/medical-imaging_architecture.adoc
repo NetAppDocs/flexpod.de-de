@@ -13,6 +13,7 @@ summary: Die FlexPod-Architektur bietet Hochverfügbarkeit, wenn eine Komponente
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die FlexPod-Architektur bietet Hochverfügbarkeit, wenn eine Komponente oder ein Link im gesamten Computing-, Netzwerk- und Storage Stack ausfällt. Mehrere Netzwerkpfade für Client-Zugriff und Storage-Zugriff ermöglichen Lastausgleich und eine optimale Ressourcenauslastung.
 
 Die folgende Abbildung zeigt die 16-GB-FC-/40-GB-Ethernet-Topologie (40 GbE) für den Einsatz der Lösung für medizinische Bildgebsysteme.

@@ -15,6 +15,7 @@ summary: Mit der konvergenten Infrastrukturplattform von FlexPod können Gesundh
 
 JayaKishore Esanakula, NetApp
 
+[role="lead"]
 In der Medizin gibt es nur wenige Gebiete, die für das Gesundheitswesen und die Biowissenschaften wichtiger sind als Genomik. Genomik wird für Ärzte und Krankenschwestern schnell zu einem wichtigen klinischen Werkzeug. Genomik hilft uns in Kombination mit medizinischer Bildgebung und digitaler Pathologie zu verstehen, wie die Gene eines Patienten durch Behandlungsprotokolle beeinflusst werden können. Der Erfolg von Genomik im Gesundheitswesen hängt zunehmend von Dateninteroperabilität nach Maß ab. Ziel ist es, die enormen Mengen an genetischen Daten zu erkennen und klinisch relevante Zusammenhänge und Varianten zu identifizieren, die die Diagnose verbessern und die Präzisionsmedizin zur Realität machen. Genomik hilft uns dabei zu verstehen, woher Krankheiten kommen, wie sich Krankheiten entwickeln und welche Behandlungen und Strategien effektiv sein können. Die Genomik bietet offensichtlich viele Vorteile, die nicht nur Prävention, sondern auch Diagnostik und Behandlung umfassen. Gesundheitseinrichtungen haben verschiedene Herausforderungen mit sich:
 
 * Bessere Versorgungsqualität

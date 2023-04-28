@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden die Konnektivitätsanforderungen für die ve
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden die Konnektivitätsanforderungen für die verschiedenen Versionen von FlexPod Express beschrieben.
 
 

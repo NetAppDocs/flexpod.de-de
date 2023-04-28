@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden die Strom- und Mindestanforderungen für die
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden die Strom- und Mindestanforderungen für die Verkabelung bei einem FlexPod Express Design beschrieben.
 
 

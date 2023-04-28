@@ -13,6 +13,7 @@ summary: Durch die Ausführung einer medizinischen Bildgebungsumgebung mit FlexP
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Durch die Ausführung einer medizinischen Bildgebungsumgebung mit FlexPod kann Ihre Gesundheitseinrichtung eine Verbesserung der Mitarbeiterproduktivität und niedrigere Kapital- und Betriebsausgaben erwarten. FlexPod bietet eine vorab validierte, umfassend getestete konvergente Infrastruktur aus der strategischen Partnerschaft von Cisco und NetApp. Sie wurde speziell für vorhersehbare System-Performance mit niedriger Latenz und Hochverfügbarkeit konzipiert. Dieser Ansatz führt zu einer optimalen Benutzererfahrung und einer optimalen Reaktionszeit für die Benutzer des medizinischen Bildgebungssystems.
 
 Verschiedene Komponenten eines Bildgebungssystems für den medizinischen Bereich erfordern einen Datenspeicher in den Dateisystemen SMB/CIFS, NFS, Ext4 und NTFS. Daher muss Ihre Infrastruktur den Datenzugriff über NFS-, SMB/CIFS- und SAN-Protokolle gewährleisten. NetApp Storage-Systeme unterstützen diese Protokolle über ein einziges Storage Array.

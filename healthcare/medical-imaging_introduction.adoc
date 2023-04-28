@@ -15,6 +15,7 @@ summary: FlexPod bietet eine einzige Plattform, die FC, FCoE, iSCSI, NFS/pNFS, S
 
 Jaya Kishore Esanakula und Atul Bhalodia, NetApp
 
+[role="lead"]
 Medizinische Bildverarbeitung macht 70 % aller Daten aus, die von Unternehmen im Gesundheitswesen generiert werden. Da die digitalen Modalitäten weiter vorankommen und neue Modalitäten entstehen, wird die Datenmenge weiter zunehmen. Beispielsweise erhöht der Übergang von analoger zu digitaler Pathologie die Bildgröße drastisch, und zwar mit einer Geschwindigkeit, die alle aktuell vorhandenen Strategien zur Datenverwaltung in Frage stellt.
 
 COVID-19 hat die digitale Transformation klar umgestaltet, so eine jüngste https://www.cfo.com/the-cloud/2020/06/three-ways-covid-19-is-accelerating-digital-transformation-in-professional-services/["Bericht"^], COVID-19 hat den digitalen Handel um 5 Jahre beschleunigt. Die technologische Innovation, die durch Problemlöser angetrieben wird, verändert grundlegend die Art und Weise, wie wir unseren Alltag umsetzen. Dieser technologische Wandel wird viele wichtige Aspekte unseres Lebens, einschließlich des Gesundheitswesens, überholt.

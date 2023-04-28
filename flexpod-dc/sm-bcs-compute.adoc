@@ -15,6 +15,7 @@ summary: Die Computing-Konfiguration für die FlexPod SM-BC-Lösung folgt den ty
 
 link:sm-bcs-solution-validation_overview.html["Preiiwous: Lösungsvalidierung – Überblick."]
 
+[role="lead"]
 Die Computing-Konfiguration für die FlexPod SM-BC-Lösung folgt den typischen Best Practices der FlexPod Lösung. In den folgenden Abschnitten werden einige der für die Validierung verwendeten Konnektivität und Konfigurationen vorgestellt. Einige Punkte, die im Zusammenhang mit SM-BC zu berücksichtigen sind, geben auch Implementierungsreferenzen und -Anleitungen an.
 
 

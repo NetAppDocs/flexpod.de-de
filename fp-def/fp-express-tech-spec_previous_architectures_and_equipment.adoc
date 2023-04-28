@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden die vorherigen in ihnen verwendeten FlexPod 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 FlexPod ist eine flexible Lösung, mit der Kunden sowohl vorhandene als auch neue Geräte, die derzeit von Cisco und NetApp verkauft werden, einsetzen können. Gelegentlich werden bestimmte Ausrüstung von Cisco und NetApp als Ende des Lebenszyklus bezeichnet.
 
 Auch wenn diese Modelle nicht mehr verfügbar sind, können Kunden, die vor dem Verkaufsende eines dieser Modelle gekauft haben, dieses System in einer FlexPod Konfiguration verwenden.

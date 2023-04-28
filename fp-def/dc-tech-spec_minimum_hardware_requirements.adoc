@@ -13,6 +13,7 @@ summary: Eine FlexPod Datacenter Konfiguration verfügt über ein Minimum an Har
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Eine FlexPod Datacenter Konfiguration verfügt über ein Minimum an Hardware-Anforderungen, einschließlich Switches, Fabric Interconnects, Servern und NetApp Storage Controllern.
 
 Sie müssen Cisco UCS Server verwenden. Sowohl C-Series als auch B-Series Server wurden in den validierten Designs zum Einsatz kommen. Cisco Nexus Fabric Extender (FEXs) sind optional mit Servern der C-Serie erhältlich.

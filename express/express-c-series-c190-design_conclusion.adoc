@@ -8,6 +8,7 @@ summary: Das validierte Design von FlexPod Express ist eine einfache und effekti
 :allow-uri-read: 
 
 
+[role="lead"]
 Das validierte Design von FlexPod Express ist eine einfache und effektive Lösung, die branchenführende Komponenten verwendet. Durch die Skalierung und die Bereitstellung von Optionen für die Hypervisor-Plattform kann FlexPod Express auf spezifische Geschäftsanforderungen zugeschnitten werden. FlexPod Express wurde für kleine bis mittelständische Unternehmen, Remote-Standorte und externe Niederlassungen sowie andere Unternehmen entwickelt, die dedizierte Lösungen benötigen.
 
 link:express-c-series-c190-design_where_to_find_additional_information.html["Weiter: Wo finden Sie zusätzliche Informationen."]

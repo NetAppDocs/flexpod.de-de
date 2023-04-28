@@ -13,6 +13,7 @@ summary: Cisco leistet einen erheblichen Beitrag zum Design und der Architektur 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Cisco leistet einen erheblichen Beitrag zum Design und der Architektur von FlexPod Express und steuert die Computing- und Networking-Schichten der Lösung. In diesem Abschnitt werden die Cisco Komponenten UCS und Cisco Nexus beschrieben, die für FlexPod Express verfügbar sind.
 
 

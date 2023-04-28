@@ -10,6 +10,7 @@ summary: 'Dieses Dokument stellt eine Referenzarchitektur für ein Virtual Deskt
 
 Vadim Lebedev, Cisco Chris Rodriguez, NetApp
 
+[role="lead"]
 Dieses Dokument stellt eine Referenzarchitektur für ein Virtual Desktop- und Applikationsdesign bereit. Dazu wird Citrix XenApp/XenDesktop 7.15 auf Basis von Cisco UCS mit NetApp All Flash FAS (AFF) A300 Storage und der Hypervisor-Plattform VMware vSphere ESXi 6.5 verwendet.
 
 Die Virtualisierung von Desktops und Applikationen unterliegt einem ständigen Wandel. Die neuen M5 hochperformanten Cisco UCS Blade Server und Cisco UCS Unified Fabric in Kombination als Teil der FlexPod Proven Infrastructure mit NetApp AFF Storage der neuesten Generation ergeben eine kompaktere, leistungsstärkere, zuverlässigere und effizientere Plattform.

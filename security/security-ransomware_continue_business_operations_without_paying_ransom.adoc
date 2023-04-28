@@ -13,6 +13,7 @@ summary: Die in diesem Dokument beschriebenen NetApp Funktionen helfen Ihnen, Da
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die in diesem Dokument beschriebenen NetApp Funktionen helfen Ihnen, Daten innerhalb weniger Minuten nach einem Angriff wiederherzustellen und Angriffe an erster Stelle zu vermeiden, sodass der Geschäftsbetrieb ungehindert weitergeführt werden kann.
 
 Sie können einen Zeitplan für Snapshot Kopien festlegen, um die gewünschte Recovery-Zeitvorgabe (Recovery Point Objective, RPO) zu erfüllen. Auf Snapshot Kopien basierende Wiederherstellungsvorgänge sind sehr schnell. Somit kann ein sehr geringes Recovery Time Objective (RTO) erreicht werden.

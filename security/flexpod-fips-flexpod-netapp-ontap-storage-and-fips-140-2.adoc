@@ -15,6 +15,7 @@ summary: NetApp bietet verschiedene Hardware, Software und Services, die verschi
 
 link:flexpod-fips-flexpod-cisco-networking-and-fips-140-2.html["Früher: FlexPod Networking mit Cisco und FIPS 140-2."]
 
+[role="lead"]
 NetApp bietet verschiedene Hardware, Software und Services, die verschiedene Komponenten der im Rahmen des Standards validierten kryptografischen Module umfassen können. Daher verwendet NetApp verschiedene Ansätze zur Einhaltung von FIPS 140-2 für die Kontrollebene und Datenebene:
 
 * NetApp umfasst kryptografische Module, die eine Level-1-Validierung für die Verschlüsselung von Daten während der Übertragung und Daten im Ruhezustand erzielt haben.

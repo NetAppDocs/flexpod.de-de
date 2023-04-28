@@ -13,6 +13,7 @@ summary: Technische Spezifikationen enthalten Details zu den Hardwarekomponenten
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Technische Spezifikationen enthalten Details zu den Hardwarekomponenten einer FlexPod-Lösung, z. B. Chassis, FEXs, Server, Switches, Und Storage Controllern.
 
 

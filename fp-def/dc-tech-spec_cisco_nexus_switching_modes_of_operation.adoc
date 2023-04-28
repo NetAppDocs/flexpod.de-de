@@ -13,6 +13,7 @@ summary: Als Switching-Komponente bei einer bestimmten FlexPod Implementierung k
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Als Switching-Komponente bei einer bestimmten FlexPod Implementierung können mehrere Cisco Nexus Produkte verwendet werden. Die meisten dieser Optionen nutzen das herkömmliche Cisco Nexus Betriebssystem oder die NX-OS Software. Die Cisco Nexus Switches bieten in ihren Produktlinien unterschiedliche Funktionen. Diese Funktionen werden im weiteren Verlauf dieses Dokuments genauer beschrieben.
 
 Das Angebot von Cisco im Bereich der softwaredefinierten Netzwerke heißt Application Centric Infrastructure (ACI). Die Cisco Nexus Produktreihe, die den ACI Modus unterstützt, auch als Fabric-Modus bezeichnet, ist die Cisco Nexus 9300 Serie. Diese Switches können auch im NX-OS- oder Standalone-Modus implementiert werden.

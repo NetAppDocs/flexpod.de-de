@@ -17,6 +17,7 @@ Alan Cowles, NetApp
 
 In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
 
+[role="lead"]
 Die in diesem technischen Bericht detaillierte Lösung ist die Konfiguration des NetApp Cloud Insights Service zur Überwachung des NetApp AFF A800 Storage-Systems mit NetApp ONTAP, das als Teil einer FlexPod Datacenter-Lösung implementiert wird.
 
 

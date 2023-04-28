@@ -13,6 +13,7 @@ summary: Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr ü
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die in diesem Dokument beschriebenen Informationen zu erfahren:
 
 * NVA- 1130-DESIGN: FlexPod Express mit VMware vSphere 6.7U1 und NetApp AFF A220 mit Direct-Attached IP=basiertem Storage NVA-Design

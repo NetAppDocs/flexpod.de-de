@@ -15,6 +15,7 @@ summary: Viele Gesundheitseinrichtungen auf der ganzen Welt haben FlexPod als ge
 
 link:flexpod-genomics-appendix-d-gpu-setup.html["Zurück: GPU-Setup."]
 
+[role="lead"]
 Viele Gesundheitseinrichtungen auf der ganzen Welt haben FlexPod als gemeinsame Plattform standardisiert. Mit FlexPod können Sie Funktionen im Gesundheitswesen zuverlässig implementieren. FlexPod mit NetApp ONTAP wird standardmäßig mit der Möglichkeit geliefert, eine sofort einsatzbereite Reihe branchenführender Protokolle zu implementieren. Unabhängig vom Ursprung der Anforderung, Genomik eines Patienten zu betreiben, verfügen Interoperabilität, Zugänglichkeit, Verfügbarkeit und Skalierbarkeit standardmäßig über eine FlexPod-Plattform. Wenn sie auf einer FlexPod-Plattform standardisiert ist, wird die Innovationskultur ansteckend.
 
 

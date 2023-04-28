@@ -10,6 +10,7 @@ summary: Red hat OpenShift ist eine Kubernetes-Container-Plattform für den Unte
 
 Haseb Niazi, Cisco Alan Cowles, NetApp
 
+[role="lead"]
 Red hat OpenShift ist eine Kubernetes-Container-Plattform für den Unternehmenseinsatz zur Verwaltung von Hybrid-Cloud- und Multi-Cloud-Implementierungen. Die Container-Plattform Red hat OpenShift umfasst alles, was für die Entwicklung und Implementierung von Hybrid Clouds, Enterprise-Containern sowie Kubernetes erforderlich ist. Es umfasst ein Linux-Betriebssystem der Enterprise-Klasse, Container-Laufzeit, Netzwerk, Monitoring, Container-Registrierung, Authentifizierungs- und Autorisierungslösungen.
 
 Durch die Kombination von Red hat OpenShift mit der FlexPod Datacenter-Lösung können die Bereitstellung und das Management der Container-Infrastruktur vereinfacht werden. Kunden profitieren von höherer Effizienz, besserer Datensicherung, geringerem Risiko und der Flexibilität, diese hochverfügbare Infrastruktur der Enterprise-Klasse entsprechend den neuen geschäftlichen Anforderungen zu skalieren. Der vorab validierte konvergente Lösungsansatz ermöglicht Unternehmen die Geschwindigkeit, Flexibilität und Skalierbarkeit, die für alle Initiativen zur Applikationsmodernisierung und zur digitalen Transformation erforderlich sind.

@@ -15,6 +15,7 @@ summary: Mit Astra können Sie ein vollständiges und applikationskonsistentes B
 
 link:flexpod-rho-cvo-solution-validation_overview.html["Zurück: Übersicht zur Lösungsvalidierung"]
 
+[role="lead"]
 Mit Astra können Sie ein vollständiges und applikationskonsistentes Backup erstellen, mit dem Ihre Applikation ihre Daten auf einem anderen Kubernetes-Cluster wiederherstellen kann, der in einem On-Premises-Datacenter oder in einer Public Cloud ausgeführt wird.
 
 Um die erfolgreiche Wiederherstellung von Applikationen zu validieren, simulieren Sie einen lokalen Ausfall einer Applikation, die im FlexPod System ausgeführt wird, und stellen Sie die Applikation mithilfe eines Remote-Backups in einem K8s Cluster in der Cloud wieder her.

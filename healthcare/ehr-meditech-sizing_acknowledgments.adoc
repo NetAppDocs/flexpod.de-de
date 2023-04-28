@@ -13,6 +13,7 @@ summary: Die folgenden Personen haben zur Erstellung und Erstellung dieses Leitf
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die folgenden Personen haben zur Erstellung und Erstellung dieses Leitfadens beigetragen.
 
 * Brandon Agee, Technical Marketing Engineer, NetApp

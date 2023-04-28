@@ -17,6 +17,7 @@ Brandon Agee, John Duignan, NetApp Mike Brennan, Jon Ebmeir, Cisco
 
 In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
 
+[role="lead"]
 Dieser Bericht enthält Hinweise zur Größenbestimmung von FlexPod für eine MEDITECH EHR-Applikationsumgebung.
 
 

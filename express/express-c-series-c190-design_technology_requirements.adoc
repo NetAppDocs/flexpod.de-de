@@ -8,6 +8,7 @@ summary: Für FlexPod Express sind eine Kombination aus Hardware- und Softwareko
 :allow-uri-read: 
 
 
+[role="lead"]
 Für FlexPod Express sind eine Kombination aus Hardware- und Softwarekomponenten erforderlich, die vom ausgewählten Hypervisor und von der Netzwerkgeschwindigkeit abhängig sind. Darüber hinaus enthält FlexPod Express die Hardwarekomponenten, die erforderlich sind, um dem System in Einheiten von zwei Hypervisor-Nodes hinzuzufügen.
 
 

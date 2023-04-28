@@ -13,6 +13,7 @@ summary: In den folgenden Informationen werden die Mindestanforderungen für Sof
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Eine FlexPod-Konfiguration erfüllt die folgenden Mindestanforderungen für Software:
 
 * NetApp ONTAP:

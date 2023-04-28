@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden die Mindestanforderungen an die Hardware fü
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden die Mindestanforderungen an die Hardware für die verschiedenen Versionen von FlexPod Express beschrieben.
 
 

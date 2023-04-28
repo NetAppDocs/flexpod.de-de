@@ -15,6 +15,7 @@ summary: In dieser Lösung wurden der NetApp Cloud Data Service, die Cloud Volum
 
 link:gcp-ncvo-solution-validation.html["Zurück: Lösungsvalidierung."]
 
+[role="lead"]
 In dieser Lösung wurden der NetApp Cloud Data Service, die Cloud Volumes ONTAP und die FlexPod Datacenter Infrastruktur verwendet, um eine DR-Lösung mit einer Public Cloud zu erstellen, die auf Cisco Intersight Cloud Orchestrator basiert. Die FlexPod Lösung wurde ständig weiterentwickelt, um Kunden die Modernisierung ihrer Applikationen und Geschäftsprozesse zu ermöglichen. Mit dieser Lösung können Sie einen BCDR-Plan mit der Public Cloud als Einsatzort für einen transienten oder Vollzeit-DR-Plan erstellen und gleichzeitig die Kosten der DR-Lösung gering halten.
 
 Die Datenreplizierung zwischen On-Premises-FlexPod und NetApp Cloud Volumes ONTAP wird durch eine bewährte SnapMirror Technologie gehandhabt. Allerdings können Sie für Ihre Anforderungen an die Datenmobilität auch andere NetApp Übertragungs- und Synchronisierungstools wie Cloud Sync auswählen. Sicherheit der aktiven Daten durch integrierte Verschlüsselungstechnologien auf Basis von TLS/AES.

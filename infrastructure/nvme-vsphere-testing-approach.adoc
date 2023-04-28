@@ -15,6 +15,7 @@ summary: Dieser Abschnitt bietet einen allgemeinen Überblick über die Validier
 
 link:nvme-vsphere-introduction.html["Zurück: Einführung."]
 
+[role="lead"]
 Dieser Abschnitt bietet einen allgemeinen Überblick über die Validierungstests für FC-NVMe auf FlexPod. Sie enthält sowohl die Testumgebung/Konfiguration als auch den angenommenen Testplan für die Durchführung der Workload-Tests im Hinblick auf FC-NVMe für FlexPod mit VMware vSphere 7.
 
 

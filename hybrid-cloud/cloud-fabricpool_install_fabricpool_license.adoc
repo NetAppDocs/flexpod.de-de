@@ -13,6 +13,7 @@ summary: Nachdem Sie eine NetApp Lizenzdatei erworben haben, können Sie sie mit
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Nachdem Sie eine NetApp Lizenzdatei erworben haben, können Sie sie mit dem OnCommand System Manager installieren. Gehen Sie wie folgt vor, um die Lizenzdatei zu installieren:
 
 . Klicken Sie Auf Konfigurationen.

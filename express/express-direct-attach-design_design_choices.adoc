@@ -8,6 +8,7 @@ summary: Die auf dieser Seite aufgeführten Technologien wurden während der Arc
 :allow-uri-read: 
 
 
+[role="lead"]
 Während der Architektur dieses Designs wurden folgende Technologien ausgewählt. Jede Technologie erfüllt einen bestimmten Zweck in der FlexPod Express Infrastrukturlösung.
 
 

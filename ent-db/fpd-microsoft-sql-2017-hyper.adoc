@@ -10,6 +10,7 @@ summary: Dieses Dokument erläutert eine FlexPod Referenzarchitektur mit den neu
 
 Gopu Narasimha Reddy, Cisco Sanjeev Naldurgkar, Cisco Atul Bhalodia, NetApp
 
+[role="lead"]
 Dieses Dokument erläutert eine FlexPod Referenzarchitektur mit den neuesten Hardware- und Softwareprodukten und enthält Implementierungsempfehlungen für das Hosting von Microsoft SQL Server Datenbanken in virtualisierten VMware ESXi- und Microsoft Windows Hyper-V-Umgebungen mit Linux-Unterstützung von Microsoft für SQL Server-Implementierungen.
 
 Die empfohlene Lösungsarchitektur basiert auf Cisco Unified Computing System (Cisco UCS) und verwendet die einheitliche Software-Version 4.0.1c zur Unterstützung der Cisco UCS Hardware-Plattformen, einschließlich Cisco UCS B-Serie Blade Server, Cisco UCS 6300 Fabric Interconnects, Switches der Cisco Nexus 9000 Serie und NetApp Storage-Arrays der AFF Serie.

@@ -13,6 +13,7 @@ summary: NetApp unterstützt mehrere optionale Komponenten, um FlexPod Datacente
 :imagesdir: ./../media/
 
 
+[role="lead"]
 NetApp unterstützt mehrere optionale Komponenten, um FlexPod Datacenter-Architekturen noch weiter zu verbessern. Optionale Komponenten werden in den folgenden Abschnitten beschrieben.
 
 

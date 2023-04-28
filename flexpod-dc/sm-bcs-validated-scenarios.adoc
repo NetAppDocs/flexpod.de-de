@@ -15,6 +15,7 @@ summary: Die FlexPod Lösung für SM-BC von Datacenter schützt Datenservices f�
 
 link:sm-bcs-virtualization.html["Zurück: Lösungsvalidierung – Virtualisierung."]
 
+[role="lead"]
 Die FlexPod Lösung für SM-BC von Datacenter schützt Datenservices für verschiedene Single-Point-of-Failure-Szenarien und für einen Standortausfall. Das an jedem Standort implementierte redundante Design sorgt für Hochverfügbarkeit. Die SM-BC Implementierung mit synchroner Datenreplizierung an allen Standorten schützt Datenservices vor einem standortweiten Ausfall. Die implementierte Lösung wurde für die gewünschte Funktionalität der Lösung sowie für verschiedene Ausfallszenarien validiert, bei denen die Lösung zum Schutz entwickelt wurde.
 
 

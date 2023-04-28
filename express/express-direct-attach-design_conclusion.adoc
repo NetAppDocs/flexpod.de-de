@@ -8,6 +8,7 @@ summary:
 :allow-uri-read: 
 
 
+[role="lead"]
 FlexPod Express ist eine einfache und effiziente Lösung und bietet ein validiertes Design mit branchenführenden Komponenten. Durch die Skalierung und die Bereitstellung von Optionen für eine Hypervisor-Plattform kann FlexPod Express auf spezifische Geschäftsanforderungen zugeschnitten werden. FlexPod Express wurde für kleine und mittelständische Unternehmen, für Großunternehmen und andere Unternehmen entwickelt, die dedizierte Lösungen benötigen.
 
 link:express-direct-attach-design_where_to_find_additional_information.html["Weiter: Wo finden Sie zusätzliche Informationen."]

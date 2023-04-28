@@ -8,6 +8,7 @@ summary: 'Dieses Dokument enthält schrittweise Anleitungen zur Implementierung 
 :allow-uri-read: 
 
 
+[role="lead"]
 Dieses Dokument enthält schrittweise Anleitungen zur Implementierung des NetApp Trident CSI-Plug-ins (Container Storage Interface) auf einem Kubernetes-Mandanten-Cluster der Cisco Container-Plattform in einer FlexPod-Lösung.
 
 link:https://www.cisco.com/c/dam/en/us/solutions/collateral/data-center-virtualization/unified-computing/trident-on-container-platform-with-flexpod.pdf["Implementierung des Plug-ins NetApp Trident CSI auf der Cisco Container-Plattform mit FlexPod"^]

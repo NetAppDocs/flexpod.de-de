@@ -15,6 +15,7 @@ summary: Dieser Abschnitt beschreibt die Ausführung der ./gatk-Ausgabe.
 
 link:flexpod-genomics-appendix-a.html["Zurück: Ausgabe für die Ausführung von GATK mit der JAR-Datei."]
 
+[role="lead"]
 Die Ausführung des GATK unter Verwendung des `./gatk` Skript hat die folgende Musterausgabe erzeugt.
 
 ....

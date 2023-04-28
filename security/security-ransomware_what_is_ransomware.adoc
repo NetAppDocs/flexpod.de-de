@@ -17,6 +17,7 @@ Arvind Ramakrishnan, NetApp
 
 In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
 
+[role="lead"]
 Um Ransomware zu verstehen, ist es notwendig, zunächst ein paar wichtige Punkte zur Kryptografie zu verstehen. Kryptografische Methoden ermöglichen die Verschlüsselung von Daten mit einem gemeinsamen geheimen Schlüssel (symmetrische Schlüsselverschlüsselung) oder einem Schlüsselpaar (asymmetrische Verschlüsselungsschlüsselverschlüsselung). Einer dieser Schlüssel ist ein weit verbreiteter öffentlicher Schlüssel und der andere ist ein nicht offenbarter privater Schlüssel.
 
 Ransomware ist eine Art von Malware, die auf Kryptovirologie basiert, die die Verwendung von Kryptografie ist, um schädliche Software zu erstellen. Diese Malware kann sowohl symmetrische und asymmetrische Schlüssel Verschlüsselung zu machen, um ein Opfer Daten zu sperren und ein Lösegeld zu verlangen, um den Schlüssel zur Entschlüsselung der Daten des Opfers.

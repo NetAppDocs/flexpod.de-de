@@ -13,6 +13,7 @@ summary: Die Tiering-Einstellung für minimale Kühltage bestimmt, wie viele Tag
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Der `tiering-minimum-cooling-days` Die Einstellung legt fest, wie viele Tage vor dem Verlegen inaktiver Daten auf einem Volume mithilfe der Richtlinie „Auto“ oder „nur Snapshots“ als „kalt“ eingestuft werden müssen und für das Tiering geeignet sind.
 
 

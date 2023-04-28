@@ -13,6 +13,7 @@ summary: Mit Cloud Insights für das Monitoring Ihrer FlexPod Datacenter Lösung
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Mit Cloud Insights für das Monitoring Ihrer FlexPod Datacenter Lösung eingerichtet und konfiguriert, können wir einige der Aufgaben untersuchen, die Sie auf dem Dashboard durchführen können, um Ihre Umgebung zu bewerten und zu überwachen. In diesem Abschnitt werden fünf primäre Anwendungsfälle für Cloud Insights vorgestellt:
 
 * Active IQ Integration

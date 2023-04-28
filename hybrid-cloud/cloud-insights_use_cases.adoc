@@ -13,6 +13,7 @@ summary: In diesem Abschnitt sind die Zielgruppe und die Fälle aufgeführt, fü
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Diese Lösung trifft auf folgende Anwendungsfälle zu:
 
 * Unternehmen, die verschiedene Ressourcen und Auslastung in ihrem ONTAP Storage-System überwachen möchten, werden als Teil einer FlexPod Lösung implementiert.

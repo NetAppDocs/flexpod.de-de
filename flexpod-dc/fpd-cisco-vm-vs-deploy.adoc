@@ -10,6 +10,7 @@ summary: Der aktuelle Trend in der Datacenter-Branche geht hin zu Shared IT Infr
 
 John George, Cisco Scott Kovacs, NetApp
 
+[role="lead"]
 Der aktuelle Trend in der Datacenter-Branche geht hin zu Shared IT Infrastructures. Durch die Virtualisierung und vorab validierte IT-Plattformen begeben sich Enterprise-Kunden auf den Weg zur Cloud. Sie verlassen sich dabei auf Applikationssilos und nutzen eine schnell implementierbare Shared IT-Infrastruktur, wodurch sich die Flexibilität erhöht und die Kosten sinken. Cisco und NetApp haben gemeinsam FlexPod entwickelt. Diese Technologie verwendet branchenführende Storage-, Server- und Netzwerkkomponenten, um als Grundlage für eine Vielzahl von Workloads zu dienen. So können effiziente Architekturdesigns bereitgestellt werden, die schnell und sicher implementiert werden können.
 
 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/fp_dc_ontap_97_ucs_4_vmw_vs_67_U3.html["FlexPod-Datacenter mit Cisco Intersight und NetApp ONTAP 9.7 – Deployment"^]

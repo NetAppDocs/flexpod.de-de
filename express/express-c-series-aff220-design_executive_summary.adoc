@@ -19,6 +19,7 @@ summary:
 
 Savita Kumari, NetApp in Partnerschaft mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
 
+[role="lead"]
 Aktuell stellen immer mehr Unternehmen ihre Rechenzentren auf eine Shared IT Infrastructure und Cloud Computing um. Außerdem wünschen sich Unternehmen eine einfache und effektive Lösung für Remote-Standorte und Zweigstellen, die ihnen die Technologie nutzt, die sie mit ihrem Datacenter vertraut sind.
 
 FlexPod Express ist eine vorkonfigurierte Datacenter-Architektur mit Best Practices, die auf Cisco Unified Computing System (Cisco UCS), der Cisco Nexus Switch-Produktfamilie und NetApp AFF basiert. Die Komponenten von FlexPod Express sind wie ihre Kollegen aus dem FlexPod Datacenter, die Managementsynergien über die komplette IT-Infrastrukturumgebung hinweg in geringerem Umfang ermöglichen. FlexPod Datacenter und FlexPod Express sind optimale Plattformen für die Virtualisierung sowie für Bare-Metal-Betriebssysteme und Enterprise Workloads.

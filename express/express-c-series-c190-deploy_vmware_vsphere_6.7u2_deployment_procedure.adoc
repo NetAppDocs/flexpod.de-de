@@ -13,6 +13,7 @@ summary: Dieser Abschnitt enthält ausführliche Verfahren zur Installation von 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Dieser Abschnitt enthält ausführliche Verfahren zur Installation von VMware ESXi 6.7U2 in einer FlexPod Express-Konfiguration. Die folgenden Implementierungsverfahren werden so angepasst, dass sie die in vorherigen Abschnitten beschriebenen Umgebungsvariablen enthalten.
 
 Für die Installation von VMware ESXi in einer solchen Umgebung sind mehrere Methoden vorhanden. Dieses Verfahren verwendet die virtuelle KVM-Konsole und die virtuellen Medienfunktionen der CIMC-Schnittstelle für Server der Cisco UCS C-Serie, um Remote-Installationsmedien jedem einzelnen Server zuzuordnen.

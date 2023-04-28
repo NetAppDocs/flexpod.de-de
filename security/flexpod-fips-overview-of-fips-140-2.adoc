@@ -15,6 +15,7 @@ summary: FIPS 140-2 legt die Sicherheitsanforderungen für ein kryptografisches 
 
 link:flexpod-fips-cybersecurity-threats-in-healthcare.html["Früher: Cybersicherheitsbedrohungen im Gesundheitswesen."]
 
+[role="lead"]
 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf["FIPS 140-2"^] Gibt die Sicherheitsanforderungen für ein kryptografisches Modul an, das in einem Sicherheitssystem verwendet wird, das vertrauliche Informationen in Computer- und Telekommunikationssystemen schützt. Ein kryptografisches Modul sollte aus Hardware, Software, Firmware oder einer Kombination verschiedener Komponenten besteht. FIPS gilt für die kryptografischen Algorithmen, die Schlüsselgenerierung und den Schlüsselmanager, die sich innerhalb einer kryptografischen Grenze befinden. Es ist wichtig zu wissen, dass sich FIPS 140-2 speziell auf das kryptografische Modul bezieht, nicht auf das Produkt, die Architektur, die Daten oder das Ecosystem. Das kryptografische Modul, das in den Schlüsselbegriffen später in diesem Dokument definiert wird, ist die spezifische Komponente (ob Hardware, Software und/oder Firmware), die zugelassene Sicherheitsfunktionen implementiert. Zudem gibt FIPS 140-2 vier Level an. Genehmigte kryptografische Algorithmen sind auf allen Ebenen gemeinsam. Zu den wichtigsten Elementen und Anforderungen der einzelnen Sicherheitsstufen gehören:
 
 * *Sicherheitsstufe 1*

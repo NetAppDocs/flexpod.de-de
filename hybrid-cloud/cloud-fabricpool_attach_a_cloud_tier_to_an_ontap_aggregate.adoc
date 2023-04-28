@@ -13,6 +13,7 @@ summary: Nachdem ein Objektspeicher von ONTAP hinzugefügt und von ihm identifiz
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Nachdem ein Objektspeicher von ONTAP hinzugefügt und von ihm identifiziert wurde, muss er an ein Aggregat angehängt werden, um eine FabricPool zu erstellen. Dieser Schritt kann entweder mit OnCommand System Manager oder mit der ONTAP CLI abgeschlossen werden.
 
 Mit einem Cluster kann mehrere Objektspeichertypen verbunden werden. Mit jedem Aggregat kann jedoch nur ein Objektspeichertyp verbunden werden. So kann beispielsweise ein Aggregat Google Cloud verwenden, ein anderes Aggregat Amazon S3 verwenden, aber an beide kann kein Aggregat angeschlossen werden.

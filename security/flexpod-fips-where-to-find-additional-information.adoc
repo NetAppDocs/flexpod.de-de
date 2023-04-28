@@ -15,6 +15,7 @@ summary:
 
 link:flexpod-fips-conclusion.html["Zurück: Schlussfolgerung."]
 
+[role="lead"]
 Sehen Sie sich die folgenden Dokumente und Websites an, um mehr über die in diesem Dokument beschriebenen Daten zu erfahren:
 
 * Cisco MDS 9000-Produktreihe NX-OS Security Configuration Guide

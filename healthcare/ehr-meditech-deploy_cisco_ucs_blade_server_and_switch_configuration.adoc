@@ -13,6 +13,7 @@ summary: Dieses Dokument bietet allgemeine Hinweise zur Grundkonfiguration einer
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Die Software FlexPod for MEDITECH ist auf jeder Stufe mit Fehlertoleranz ausgelegt. Es gibt keinen Single Point of Failure im System. Für eine optimale Performance empfiehlt Cisco den Einsatz von Hot-Spare Blade-Servern.
 
 Dieses Dokument bietet allgemeine Hinweise zur Grundkonfiguration einer FlexPod-Umgebung für MEDITECH-Software. In diesem Abschnitt stellen wir grundlegende Schritte mit einigen Beispielen für die Vorbereitung des Cisco UCS Computing-Plattformelements der FlexPod-Konfiguration dar. Voraussetzung hierfür ist, dass die FlexPod Konfiguration gemäß den Anweisungen in den Rack-Einheiten mit Strom versorgt und verkabelt ist https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_esxi65u1_n9fc.html["FlexPod Datacenter with Fibre Channel Storage using VMware vSphere 6.5 Update 1, NetApp AFF A-Series and Cisco UCS Manager 3.2"^]CVD.

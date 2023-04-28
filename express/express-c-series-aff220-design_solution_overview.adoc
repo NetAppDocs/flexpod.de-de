@@ -8,6 +8,7 @@ summary: FlexPod Express wurde für gemischte Virtualisierungs-Workloads entwick
 :allow-uri-read: 
 
 
+[role="lead"]
 FlexPod Express wurde für gemischte Virtualisierungs-Workloads entwickelt. Sie richtet sich an Remote-Standorte und Zweigniederlassungen sowie an kleine und mittelständische Unternehmen. Für größere Unternehmen, die eine dedizierte Lösung für einen bestimmten Zweck implementieren möchten, ist dies optimal. Diese neue Lösung für FlexPod Express fügt neue Technologien wie NetApp ONTAP 9.4, NetApp AFF A220 und VMware vSphere 6.7 hinzu.
 
 In der folgenden Abbildung sind die Hardwarekomponenten aufgeführt, die in der FlexPod Express Lösung enthalten sind.

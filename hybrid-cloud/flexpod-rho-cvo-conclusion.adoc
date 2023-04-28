@@ -15,6 +15,7 @@ summary: Bei dieser Lösung haben wir mit dem NetApp Astra Portfolio einen Siche
 
 link:flexpod-rho-cvo-application-recovery-with-remote-backups.html["Früher: Applikations-Recovery mit Remote Backups."]
 
+[role="lead"]
 Bei dieser Lösung haben wir mit dem NetApp Astra Portfolio einen Sicherungsplan für Container-Applikationen implementiert, die auf FlexPod und AWS ausgeführt werden. Die Kernkomponenten dieser Lösung bildeten das NetApp Astra Control Center, Astra Trident und die Cloud Volumes ONTAP, Red hat OpenShift und die FlexPod Infrastruktur.
 
 Wir demonstrierten den Schutz von Applikationen, indem wir Snapshots erfassen, und wir haben komplette Kopien erstellt, um Applikationen über verschiedene K8s Cluster wiederherzustellen, die in Cloud- und lokalen Umgebungen ausgeführt werden.

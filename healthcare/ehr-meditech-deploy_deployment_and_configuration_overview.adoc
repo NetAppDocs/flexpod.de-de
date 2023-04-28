@@ -13,6 +13,7 @@ summary: Dieser Abschnitt enthält ausführliche Storage-Hinweise zur Implementi
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Dokument werden die in diesem Dokument angegebenen Richtlinien zum NetApp Storage für die Implementierung von FlexPod behandelt:
 
 * Umgebungen, die ONTAP nutzen

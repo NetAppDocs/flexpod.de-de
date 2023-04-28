@@ -13,4 +13,5 @@ summary: FlexPod Express ist eine einfache und effiziente Lösung und bietet ein
 :imagesdir: ./../media/
 
 
+[role="lead"]
 FlexPod Express ist eine einfache und effiziente Lösung und bietet ein validiertes Design mit branchenführenden Komponenten. Durch die Skalierung bis hin zum Hinzufügen von Komponenten kann FlexPod Express gezielt auf spezifische Unternehmensanforderungen zugeschnitten werden. FlexPod Express wurde für kleine bis mittelständische Unternehmen, ROBOs und andere Unternehmen entwickelt, die dedizierte Lösungen benötigen.

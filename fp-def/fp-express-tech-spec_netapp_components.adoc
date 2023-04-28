@@ -13,6 +13,7 @@ summary: NetApp Storage-Controller bilden die Storage-Grundlage in der FlexPod E
 :imagesdir: ./../media/
 
 
+[role="lead"]
 NetApp Storage-Controller bilden die Storage-Grundlage in der FlexPod Express Architektur für Boot- und Applikationsdaten. In diesem Abschnitt werden die verschiedenen NetApp Optionen in der Architektur von FlexPod Express aufgeführt.
 
 

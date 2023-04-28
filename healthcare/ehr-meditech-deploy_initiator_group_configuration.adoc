@@ -13,6 +13,7 @@ summary: 'Wenn Sie FC als Datennetzwerkprotokoll verwenden, erstellen Sie zwei I
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Wenn Sie FC als Datennetzwerkprotokoll verwenden, erstellen Sie zwei Initiatorgruppen auf jedem Storage Controller. Die erste Initiatorgruppe enthält die WWPNs der FC-Host-Schnittstellenkarten auf den VMware ESXi Servern, die die MEDITECH-Host-VMs (iGroup für MEDITECH) hosten.
 
 Sie müssen den Betriebssystemtyp der MEDITECH igroup entsprechend dem Umgebungseinstellungen festlegen. Beispiel:

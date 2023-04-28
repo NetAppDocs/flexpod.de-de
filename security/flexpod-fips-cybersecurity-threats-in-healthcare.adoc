@@ -15,6 +15,7 @@ summary: Bedrohungen für die Gesundheit sind multidimensional in der Natur und 
 
 link:flexpod-fips-introduction.html["Zurück: Einführung."]
 
+[role="lead"]
 Jedes Problem stellt eine neue Chance dar – ein Beispiel für eine solche Chance wird von der COVID-Pandemie präsentiert. Laut A https://www.hhs.gov/sites/default/files/2020-hph-cybersecurty-retrospective-tlpwhite.pdf["Bericht"^] Durch das Department of Health and Human Services (HHS) Cybersecurity Program hat die COVID-Antwort zu einer erhöhten Anzahl von Ransomware-Angriffen geführt. In der dritten Märzwoche 2020 wurden 6,000 neue Internet-Domains registriert. Mehr als 50 % der Domänen haben Malware gehostet. Ransomware-Angriffe verliefen 2020 fast 50 % aller Datenschutzverstöße im Gesundheitswesen mit Auswirkungen auf mehr als 630 Organisationen im Gesundheitswesen und rund 29 Millionen Datensätze im Gesundheitswesen. 19 Leaker/Sites verdoppelten die Erpressung. Mit 24.5 % Sicherheitsverletzungen hat sich die Branche im Jahr 2020 die höchste Anzahl von Datenverletzungen festgestellt.
 
 Böswillige Mitarbeiter versuchten, die Sicherheit und den Datenschutz von geschützten Gesundheitsdaten (PHI) zu verletzen, indem sie die Informationen verkaufen oder sie bedrohen, sie zu zerstören oder auszusetzen. Es werden häufig gezielte und Massenübertragungsversuche unternommen, um sich unbefugten Zugriff auf ePHI zu verschaffen. Rund 75 % der exponierten Patientenakten im zweiten Halbjahr 2020 waren auf kompromittierte Geschäftspartner zurückzuführen.

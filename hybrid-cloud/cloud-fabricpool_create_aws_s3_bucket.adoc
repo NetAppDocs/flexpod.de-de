@@ -13,6 +13,7 @@ summary: Buckets sind Objektspeicher-Container, in denen Daten gespeichert sind.
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Buckets sind Objektspeicher-Container, in denen Daten gespeichert sind. Name und Speicherort des Buckets, in dem Daten gespeichert werden, müssen angegeben werden, bevor sie zu einem Aggregat als Cloud-Tier hinzugefügt werden können.
 
 

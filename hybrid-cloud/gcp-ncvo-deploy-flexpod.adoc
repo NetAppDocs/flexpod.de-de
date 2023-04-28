@@ -15,6 +15,7 @@ summary: Auf dieser Seite werden die Ressourcen aufgeführt, die zur Bereitstell
 
 link:gcp-ncvo-solution-components.html["Früher: Lösungskomponenten."]
 
+[role="lead"]
 Um die Details zu FlexPod Design und Implementierung, einschließlich der Konfiguration verschiedener Design-Elemente und der zugehörigen Best Practices, zu verstehen, finden Sie unter https://www.cisco.com/c/en/us/solutions/design-zone/data-center-design-guides/flexpod-design-guides.html["Cisco Validated Designs für FlexPod"^].
 
 FlexPod kann sowohl im UCS Managed Mode als auch im Cisco Intersight Managed Mode implementiert werden. Wenn Sie FlexPod im UCS Managed Mode implementieren, finden Sie das neueste Cisco Validated Design https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m6_esxi7u2_design.html["Hier"^].

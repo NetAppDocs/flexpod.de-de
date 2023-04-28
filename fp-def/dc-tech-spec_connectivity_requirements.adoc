@@ -13,6 +13,7 @@ summary: Nachfolgend sind die Konnektivitätsanforderungen für die FlexPod-Konf
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Eine FlexPod-Konfiguration erfüllt die folgenden Konnektivitätsanforderungen:
 
 * Für alle Komponenten ist ein separates Ethernet-/1 GB/s-Ethernet-Out-of-Band-Managementnetzwerk erforderlich.

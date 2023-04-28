@@ -13,6 +13,7 @@ summary: Sehen Sie sich die folgenden Dokumente oder Websites an, um mehr über 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Sehen Sie sich die folgenden Dokumente oder Websites an, um mehr über die in diesem Dokument beschriebenen Daten zu erfahren:
 
 

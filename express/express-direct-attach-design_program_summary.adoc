@@ -8,6 +8,7 @@ summary: FlexPod Referenzarchitekturen werden als Cisco Validated Designs oder N
 :allow-uri-read: 
 
 
+[role="lead"]
 Diese FlexPod Express Lösung ist Bestandteil des konvergenten Infrastrukturprogramms von FlexPod.
 
 

@@ -8,6 +8,7 @@ summary: Von Redundanz und Verfügbarkeit bis hin zu jedem einzelnen Feature –
 :allow-uri-read: 
 
 
+[role="lead"]
 Cisco und NetApp haben FlexPod Express als eine der führenden Infrastrukturplattformen für ihre Kunden konzipiert und entwickelt. Da die Lösung mit branchenführenden Komponenten entwickelt wurde, können Kunden darauf vertrauen, dass FlexPod Express als Infrastrukturgrundlage dient. Die FlexPod Express Architektur wurde den grundlegenden Prinzipien des FlexPod Portfolios gerecht und von Cisco und NetApp Datacenter-Architekten und Ingenieuren umfassend getestet. Von Redundanz und Verfügbarkeit bis hin zu jedem einzelnen Feature – die gesamte FlexPod Express Architektur wurde validiert, um das Vertrauen unserer Kunden zu stärken und das Vertrauen in den Entwicklungsprozess zu stärken.
 
 VMware vSphere 6.7 wurde auf den Komponenten der FlexPod Express Infrastruktur verifiziert. Bei dieser Validierung wurden 10-GbE-Uplink-Konnektivitätsoptionen für den Hypervisor berücksichtigt.

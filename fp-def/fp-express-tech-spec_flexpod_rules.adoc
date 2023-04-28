@@ -13,6 +13,7 @@ summary: Das FlexPod Design ermöglicht eine flexible Infrastruktur, die viele v
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Das FlexPod Design ermöglicht eine flexible Infrastruktur, die viele verschiedene Komponenten und Softwareversionen umfasst.
 
 Verwenden Sie die Regelsätze als Leitfaden zum Erstellen oder Zusammenbauen einer gültigen FlexPod-Konfiguration. Die in diesem Dokument aufgeführten Zahlen und Regeln stellen die Mindestanforderungen für FlexPod dar und können in den enthaltenen Produktfamilien erweitert werden, so wie es für unterschiedliche Umgebungen und Anwendungsfälle erforderlich ist.

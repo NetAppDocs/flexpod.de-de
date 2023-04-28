@@ -15,6 +15,7 @@ summary: Auf dieser Seite werden 11 Verfahren aufgeführt, die für die Implemen
 
 link:gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html["Früher: Automatisierte Implementierung von Hybrid Cloud NetApp Storage."]
 
+[role="lead"]
 Die Reihenfolge der Schritte ist wie folgt:
 
 . Definieren Sie den Workflow.

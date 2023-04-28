@@ -13,6 +13,7 @@ summary: Weitere Anforderungen für FlexPod Express sind unten aufgeführt.
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Zusätzliche Anforderungen für FlexPod Express sind:
 
 * Für alle Geräte sind gültige Support-Verträge erforderlich, darunter:

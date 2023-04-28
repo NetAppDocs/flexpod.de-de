@@ -15,6 +15,7 @@ summary: In diesem Abschnitt werden die Einrichtung von FlexPod und GATK sowie d
 
 link:flexpod-genomics-solution-infrastructure-hardware-and-software-components.html["Früher: Hardware- und Softwarekomponenten der Lösungsinfrastruktur."]
 
+[role="lead"]
 Laut dem National Human Genome Research Institute ( https://www.genome.gov/about-genomics/fact-sheets/A-Brief-Guide-to-Genomics["NHGRI"^]„Genomics ist die Untersuchung aller Gene einer Person (das Genom), einschließlich der Wechselwirkungen dieser Gene miteinander und mit der Umwelt einer Person. „
 
 Laut dem https://www.genome.gov/about-genomics/fact-sheets/A-Brief-Guide-to-Genomics["NHGRI"^], "Deoxyribonukleinsäure (DNA) ist die chemische Verbindung, die die notwendigen Anweisungen enthält, um die Aktivitäten von fast allen lebenden Organismen zu entwickeln und zu leiten. DNA-Moleküle bestehen aus zwei verdrehenden, paarweise angeordneten Strängen, die oft als Doppelhelix bezeichnet werden.“ „Der gesamte DNA-Satz eines Organismus wird sein Genom genannt.“

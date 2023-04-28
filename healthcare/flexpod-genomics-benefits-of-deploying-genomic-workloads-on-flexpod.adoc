@@ -15,6 +15,7 @@ summary: Dieser Abschnitt bietet eine kurze Übersicht über die Vorteile, die z
 
 link:flexpod-genomics-introduction.html["Zurück: Einführung."]
 
+[role="lead"]
 Dieser Abschnitt bietet eine kurze Übersicht über die Vorteile, die zum Ausführen eines Genomik-Workloads auf einer konvergenten FlexPod Infrastrukturplattform erzielt werden können. Lassen Sie uns kurz die Möglichkeiten eines Krankenhauses beschreiben. Die folgende Ansicht der Unternehmensarchitektur zeigt die Funktionen eines Krankenhauses, die auf einer konvergenten, Hybrid-Cloud-fähigen FlexPod Infrastrukturplattform bereitgestellt werden.
 
 * *Vermeiden von Silos im Gesundheitswesen.* Silos im Gesundheitswesen sind ein sehr echtes Anliegen. Abteilungen sind häufig Silos in ihrer eigenen Hardware und Software, nicht nach ihrer Wahl, sondern organisch. Beispielsweise Radiologie, Kardiologie, EHR, Genomik analysen, Umsatzzyklen und andere Abteilungen enthalten jeweils einen individuellen Satz an dedizierter Software und Hardware. Einrichtungen im Gesundheitswesen haben nur wenige IT-Fachkräfte für das Management ihrer Hardware- und Software-Ressourcen. Der Wendepunkt folgt, wenn zu erwarten ist, dass diese Gruppe von Einzelpersonen ein sehr vielseitiges Spektrum an Hardware und Software managen wird. Die Heterogenität wird durch eine unkongruente Reihe von Prozessen, die von Anbietern in die Gesundheitsorganisation eingebracht werden, noch verschlimmert.

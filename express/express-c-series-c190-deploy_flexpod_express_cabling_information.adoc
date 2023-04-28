@@ -13,6 +13,7 @@ summary: Diese Referenzvalidierung ist verkabelt, wie in den folgenden Abbildung
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Diese Referenzvalidierung ist verkabelt, wie in den folgenden Abbildungen und Tabellen gezeigt.
 
 Diese Abbildung zeigt die Verkabelung zur Referenzvalidierung.

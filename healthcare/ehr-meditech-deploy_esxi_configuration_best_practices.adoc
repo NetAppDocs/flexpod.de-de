@@ -13,6 +13,7 @@ summary: Konfigurieren Sie für die ESXi Host-seitige Konfiguration die VMware-H
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Konfigurieren Sie für die ESXi Host-seitige Konfiguration die VMware-Hosts so, wie es bei jedem Enterprise-Datenbank-Workload ausgeführt wird:
 
 * VSC für VMware vSphere überprüft und legt die Einstellungen für das Multipathing des ESXi Hosts und die HBA-Zeitüberschreitungseinstellungen fest, die für NetApp Storage-Systeme am besten geeignet sind. Die VSC-Werte basieren auf strengen internen Tests von NetApp.

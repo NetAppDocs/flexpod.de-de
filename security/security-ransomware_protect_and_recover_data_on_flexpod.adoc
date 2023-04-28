@@ -13,6 +13,7 @@ summary: Dieser Abschnitt beschreibt, wie die Daten eines Endbenutzers im Falle 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Dieser Abschnitt beschreibt, wie die Daten eines Endbenutzers im Falle eines Angriffs wiederhergestellt werden können und wie Angriffe durch die Verwendung eines FlexPod-Systems verhindert werden können.
 
 

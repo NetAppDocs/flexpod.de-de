@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden die optionalen Funktionen von FlexPod Expres
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden die optionalen Funktionen von FlexPod Express beschrieben.
 
 

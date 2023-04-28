@@ -10,6 +10,7 @@ summary: Dieses Dokument enthält eine Referenzarchitektur und einen Designleitf
 
 Vadim Lebedev, Cisco Suresh Thoppay, NetApp
 
+[role="lead"]
 Dieses Dokument enthält eine Referenzarchitektur und einen Designleitfaden für eine Desktop-Workload mit 5000 Plätzen und 6000 Plätzen bei einer Endbenutzer-Computing-Umgebung auf FlexPod Datacenter mit Cisco UCS und der NetApp AFF A300 sowie der Datenmanagement-Software NetApp ONTAP. Die Lösung umfasst serverbasierte VMware Horizon RDS Windows Server 2019-Sitzungen, VMware Horizon persistente Full-Clone-Microsoft Windows 10 Virtual Desktops und VMware Horizon nichtpersistente, sofortige Clone-Microsoft Windows 10 Virtual Desktops auf VMware vSphere 6.7U2
 
 link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_ontap96_vmware710_67_u2_ucs_40_6700_seats.html["FlexPod-Datacenter mit VMware Horizon View 7.10, VMware vSphere 6.7 U2, Cisco UCS Manager 4.0 und NetApp ONTAP 9.6 für bis zu 6700 Arbeitsplätze"^]

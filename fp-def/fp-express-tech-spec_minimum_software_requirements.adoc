@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden die Mindestanforderungen für Software für 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden die Mindestanforderungen für Software für die verschiedenen Versionen von FlexPod Express beschrieben.
 
 

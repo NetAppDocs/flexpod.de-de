@@ -13,6 +13,7 @@ summary: Führen Sie die folgenden Schritte aus, um das Implementierungsverfahre
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt wird das NetApp AFF Storage-Implementierungsverfahren beschrieben.
 
 

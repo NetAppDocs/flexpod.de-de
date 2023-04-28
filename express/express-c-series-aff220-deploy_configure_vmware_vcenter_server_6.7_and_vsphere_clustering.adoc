@@ -13,6 +13,7 @@ summary: Sie können VMware vCenter Server 6.7- und vSphere-Clustering konfiguri
 :imagesdir: ./../media/
 
 
+[role="lead"]
 Gehen Sie wie folgt vor, um VMware vCenter Server 6.7- und vSphere-Clustering zu konfigurieren:
 
 . Navigieren Sie zu \https://\<<FQDN oder IP von vCenter>>/vsphere-Client/.

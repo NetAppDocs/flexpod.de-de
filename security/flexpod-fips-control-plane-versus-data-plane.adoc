@@ -15,6 +15,7 @@ summary: 'Bei der Implementierung einer FIPS 140-2-2-Strategie ist es wichtig zu
 
 link:flexpod-fips-overview-of-fips-140-2.html["Zurück: Übersicht von FIPS 140-2."]
 
+[role="lead"]
 Bei der Implementierung einer FIPS 140-2-2-Strategie ist es wichtig zu verstehen, welche Daten geschützt werden. Diese kann leicht in zwei Bereiche unterteilt werden: Kontrollebene und Datenebene. Eine Kontrollebene bezieht sich auf die Aspekte, die Einfluss auf die Kontrolle und den Betrieb der Komponenten im FlexPod System haben, z. B. Administratorzugriff auf die NetApp Storage Controller, Cisco Nexus Switches und Cisco UCS Server. Der Schutz auf dieser Ebene wird durch die Einschränkung der Protokolle und kryptografischen Cypher ermöglicht, mit denen Administratoren Geräte verbinden und Änderungen vornehmen können. In einer Datenebene werden die tatsächlichen Informationen, wie zum Beispiel PHI, innerhalb des FlexPod-Systems bezeichnet. Diese wird durch Verschlüsselung von Daten im Ruhezustand und bei FIPS geschützt, sodass die verwendeten kryptografischen Module die Standards erfüllen.
 
 link:flexpod-fips-flexpod-cisco-ucs-compute-and-fips-140-2.html["Als Nächstes: FlexPod Cisco UCS Computing und FIPS 140"]

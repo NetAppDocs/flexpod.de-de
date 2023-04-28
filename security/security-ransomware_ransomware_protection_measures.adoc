@@ -13,6 +13,7 @@ summary: In diesem Abschnitt werden die wichtigsten Funktionen der NetApp ONTAP 
 :imagesdir: ./../media/
 
 
+[role="lead"]
 In diesem Abschnitt werden die wichtigsten Funktionen der NetApp ONTAP Datenmanagement-Software sowie die Tools für Cisco UCS und Cisco Nexus erläutert, mit denen Sie gegen Ransomware-Angriffe sichern und wiederherstellen können.
 
 
