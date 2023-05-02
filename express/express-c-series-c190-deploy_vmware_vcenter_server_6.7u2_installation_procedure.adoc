@@ -110,4 +110,4 @@ Es wird eine Meldung angezeigt, die angibt, dass das Setup erfolgreich war.
 . Die Links, die der Installer zum Zugriff auf vCenter Server bereitstellt, sind anklickbar.
 
 
-link:express-c-series-c190-design_vmware_vcenter_server_6.7u2_and_vsphere_clustering_configuration.html["Als Nächstes: Clustering-Konfiguration für VMware vCenter Server 6.7U2 und vSphere"]
+link:express-c-series-c190-deploy_vmware_vcenter_server_6.7u2_and_vsphere_clustering_configuration.html["Als Nächstes: VMware vCenter Server 6.7U2 und vSphere Clustering-Konfiguration."]

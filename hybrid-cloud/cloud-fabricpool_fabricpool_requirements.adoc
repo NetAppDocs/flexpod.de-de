@@ -134,4 +134,4 @@ Eine kostenlose 10-TB-Kapazität, die term-basierte FabricPool Lizenz ist beim K
 Eine FabricPool Lizenz kann nur aus einem Cluster gelöscht werden, das keine FabricPool-Aggregate enthält.
 
 
-NOTE: FabricPool Lizenzen sind für das gesamte Cluster verfügbar. Beim Erwerb einer Lizenz sollten Sie die UUID zur Verfügung haben (`cluster identify show`). Weitere Informationen zur Lizenzierung finden Sie im https://kb.netapp.com/support/s/article/ka21A0000008qb3QAA/ONTAP-FabricPool-FP-Licensing-Overview["NetApp Knowledge Base"^].
+NOTE: FabricPool Lizenzen gelten für das gesamte Cluster. Beim Erwerb einer Lizenz sollten Sie die UUID zur Verfügung haben (`cluster identify show`). Weitere Informationen zur Lizenzierung finden Sie im https://kb.netapp.com/onprem/ontap/dm/FabricPool/ONTAP_FabricPool_(FP)_Licensing_Overview["NetApp Knowledge Base"^].

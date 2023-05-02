@@ -226,7 +226,7 @@ In der folgenden Tabelle sind die NetApp Support-Lizenzoptionen für NetApp FAS 
 | Lizenzierung des NetApp Supports | Teilenummer | Technische Spezifikationen 
 
 
-| SupportEdge Premium4 Stunden vor Ort; Monate: 36 | CS-O2-4HR | link:www.netapp.com/us/support/supportedge.html["http://www.netapp.com/us/support/supportedge.html"] 
+| SupportEdge Premium4 Stunden vor Ort; Monate: 36 | CS-O2-4HR | link:https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf["https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf"] 
 |===
 
 
@@ -238,7 +238,7 @@ In der folgenden Tabelle sind die NetApp Support-Lizenzoptionen für E-Series St
 | Lizenzierung des NetApp Supports | Teilenummer | Technische Spezifikationen 
 
 
-| Hardware-Support Premium 4 Stunden vor Ort; Monate: 36 | SVC-O2-4HR-E .3+| link:www.netapp.com/us/support/supportedge.html["http://www.netapp.com/us/support/supportedge.html"] 
+| Hardware-Support Premium 4 Stunden vor Ort; Monate: 36 | SVC-O2-4HR-E .3+| link:https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf["https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf"] 
 
 
 | Softwaresupport | SW-SSP-O2-4HR-E 

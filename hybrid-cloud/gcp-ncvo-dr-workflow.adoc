@@ -443,8 +443,8 @@ image:gcp-ncvo-image56.png["Screenshot"]
 
 . Geben Sie die folgenden GitHub Repository-Details an:
 +
-.. Geben Sie unter *Repository-Name* den Namen des Repositorys ein, der im Abschnitt aufgeführt ist link:p-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["„Voraussetzungen für die Umgebung einrichten“"].
-.. Geben Sie die OAuth Token-ID wie im Abschnitt beschrieben an link:p-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["„Voraussetzungen für die Umgebung einrichten“"].
+.. Geben Sie unter *Repository-Name* den Namen des Repositorys ein, der im Abschnitt aufgeführt ist link:gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["„Voraussetzungen für die Umgebung einrichten“"].
+.. Geben Sie die OAuth Token-ID wie im Abschnitt beschrieben an link:gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["„Voraussetzungen für die Umgebung einrichten“"].
 .. Wählen Sie die Option *Automatisches Ausführen-Triggering* aus.
 +
 image:gcp-ncvo-image57.png["Screenshot"]
@@ -624,7 +624,7 @@ image:gcp-ncvo-image66.png["Screenshot"]
 ** *Beschreibung.* Token aktualisieren.
 +
 
-NOTE: Weitere Informationen zum Abrufen eines Aktualisierungstoken für den Betrieb der NetApp Cloud Manager API finden Sie im Abschnitt link:p-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["„Voraussetzungen für die Umgebung einrichten.“"]
+NOTE: Weitere Informationen zum Abrufen eines Aktualisierungstoken für den Betrieb der NetApp Cloud Manager API finden Sie im Abschnitt link:gcp-ncvo-automated-deployment-of-hybrid-cloud-netapp-storage.html#google-cloud#set-up-environment-prerequisites["„Voraussetzungen für die Umgebung einrichten.“"]
 
 +
 image:gcp-ncvo-image67.png["Screenshot"]
