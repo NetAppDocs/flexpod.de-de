@@ -104,7 +104,7 @@ Die folgende Tabelle zeigt eine kleine (Kategorie 3) Beispielkonfiguration – I
 | Cisco UCS Blade Server | 4 x B200 M5 | Jeweils mit 2 x 14 Kernen, 2,6 GHz oder höhere Taktrate und 384 GB BIOS 3.2(3#) 
 
 
-| Cisco UCS Virtual Interface-Karten | 4 x UCS 1440 | VMware ESXi fNIC FC-Treiber: 1.6.0.47 VMware ESXi ELNIC Ethernet-Treiber: 1.0.27.0 (siehe Interoperabilitätsmatrix: https://ucshcltool.cloudapps.cisco.com/public/)[] 
+| Cisco UCS Virtual Interface-Karten | 4 x UCS 1440 | VMware ESXi fNIC FC-Treiber: 1.6.0.47 VMware ESXi ELNIC Ethernet-Treiber: 1.0.27.0 (siehe Interoperabilitätsmatrix: 
 
 
 | 2 Cisco UCS Fabric Interconnects (FI) | 2x UCS 6454 FI | Fabric Interconnects der vierten Generation mit Unterstützung für 10/25 GB Ethernet und 32 GB FC 
@@ -180,7 +180,7 @@ Die folgende Tabelle zeigt eine große (Kategorie 6) Beispielkonfiguration – I
 | Cisco UCS Blade Server | 8 x B200 M5 | Jeweils mit 2 x 24 Cores, 2,7 GHz und 768 GB BIOS 3.2 (3#) 
 
 
-| Virtuelle Cisco UCS Schnittstellenkarte (VIC) | 8 UCS 1440 VIC | VMware ESXi fNIC FC driver: 1.6.0.47 VMware ESXi ELNIC Ethernet Treiber: 1.0.27.0 (Interoperabilitätsmatrix überprüfen: https://ucshcltool.cloudapps.cisco.com/public/)[] 
+| Virtuelle Cisco UCS Schnittstellenkarte (VIC) | 8 UCS 1440 VIC | VMware ESXi fNIC FC driver: 1.6.0.47 VMware ESXi ELNIC Ethernet Treiber: 1.0.27.0 (Interoperabilitätsmatrix überprüfen: 
 
 
 | 2 Cisco UCS Fabric Interconnects (FI) | 2x UCS 6454 FI | Fabric Interconnects der vierten Generation mit Unterstützung für 10 GB/25 GB/100 GB Ethernet und 32 GB FC 
