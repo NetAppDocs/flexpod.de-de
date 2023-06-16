@@ -29,7 +29,7 @@ Dies sind die Mindestanforderungen an Hardware und Software, die für die Implem
 | NetApp ONTAP | ONTAP 9.7P1 und höher 
 
 
-| NetApp Active IQ Unified Manager | Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9.12 GA). 
+| NetApp Active IQ Unified Manager | Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9.13RC1). 
 
 
 | NetApp Storage Array | Alle ONTAP ASA-, AFF- und FAS-Storage-Arrays werden für ONTAP 9.7P1 und höher unterstützt 

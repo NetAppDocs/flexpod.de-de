@@ -20,7 +20,7 @@ Für die Überwachung und Orchestrierung von NetApp Storage von Cisco Intersight
 
 == Installation oder Upgrade von NetApp Active IQ Unified Manager
 
-Installieren oder aktualisieren Sie auf Active IQ Unified Manager (aktuelle Version ist erforderlich, derzeit 9.12 GA), sofern Sie dies nicht getan haben. Weitere Anweisungen finden Sie im link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager Dokumentation"].
+Installation oder Upgrade auf Active IQ Unified Manager (aktuellste Version erforderlich, derzeit 9.13RC1), falls nicht. Weitere Anweisungen finden Sie im link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager Dokumentation"].
 
 
 

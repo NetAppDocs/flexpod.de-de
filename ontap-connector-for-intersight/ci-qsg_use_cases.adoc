@@ -79,52 +79,51 @@ Wenn die NetApp Storage- und vCenter-Umgebungen in Cisco Intersight verfügbar s
 Im Folgenden sind die NetApp Storage-Aufgaben aufgeführt, die bei Cisco Intersight verfügbar sind:
 
 +
-** Storage Export Policy zu Volume hinzufügen
-** Verbinden Sie Initiatoren mit dem Storage-Host
-** Storage Export Policy Vom Volume Trennen
-** Bearbeiten Sie Aggregate für Storage Virtual Machine
-** Regel Für Speicherexport Bearbeiten
-** Storage Snapshot-Richtlinie Bearbeiten
-** Den Zeitplan Für Die Snapshot-Speicherrichtlinie Bearbeiten
-** Erweitern Sie die Speicher-LUN
-** Erweitern Sie Storage Volume
-** Suche nach der NetApp igroup LUN Map
-** Storage LUN nach ID suchen
-** Storage Volume nach ID suchen
-** Neue Richtlinie Für Den Storage-Export
-** Neue Richtlinie Für Den Storage-Export
-** Neue Fibre Channel-Schnittstelle von NetApp
-** Neuer Speicherhost
-** Neue Storage IP Schnittstelle
-** Neue Storage-LUN
-** Neue Storage-LUN-ID
-** Neues NetApp Storage NAS Smart Volume
-** Neue NetApp Storage Smart LUN
-** Neue Storage Snapshot-Richtlinie
-** Neuer Zeitplan Für Die Snapshot-Speicherrichtlinie
-** Neue Storage Virtual Machine
-** Neues Storage Volume
-** Neuer Snapshot Des Storage Volume
-** Storage Export Policy entfernen
-** Policy Für Den Speicherexport Entfernen
-** Storage FC Interface entfernen
-** Speicherhost entfernen
-** Storage IP Interface entfernen
-** Storage-LUN entfernen
-** Storage-LUN-ID entfernen
-** Entfernen Sie die NetApp Storage Smart LUN
-** Storage Snapshot-Richtlinie Entfernen
-** Entfernen Sie Den Zeitplan Für Die Snapshot-Speicherrichtlinie
-** Storage Virtual Machine Entfernen
-** Storage Volume entfernen
-** Storage Volume Snapshot Entfernen
-** Benennen Sie Den Snapshot Für Das Speichervolumen Um
+** Exportrichtlinie zum NetApp-Volume hinzufügen
+** Initiatoren zu NetApp-Initiatorgruppe hinzufügen
+** Regel zur NetApp-Exportrichtlinie hinzufügen
+** Fügen Sie der NetApp-Snapshot-Richtlinie einen Zeitplan hinzu
+** Bearbeiten Sie NetApp Aggregate für Storage Virtual Machine
+** NetApp-Exportrichtlinienregel bearbeiten
+** Bearbeiten Sie die NetApp-Snapshot-Richtlinie
+** NetApp-Snapshot-Richtlinienzeitplan bearbeiten
+** Erweitern Sie die NetApp-LUN
+** Finden Sie die LUN-Zuordnung der NetApp-Initiatorgruppe
+** Suchen Sie NetApp-LUN nach ID
+** Suchen Sie NetApp-Volumes nach ID
+** Neue NetApp-Exportrichtlinie
+** Neue NetApp FC-Datenschnittstelle
+** Neue NetApp-Initiatorgruppe
+** Neue NetApp iSCSI-Datenschnittstelle
+** Neue NetApp-LUN
+** Neue NetApp-LUN-Zuordnung
+** Neue NetApp NAS-Datenschnittstelle
+** Neues NetApp NAS Smart Volume
+** Neue intelligente NetApp-LUN
+** Neue NetApp Snapshot-Richtlinie
+** Die neue NetApp Storage Virtual Machine
+** Neues NetApp-Volume
+** Neuer NetApp-Volume-Snapshot
+** Exportrichtlinie aus NetApp-Volume entfernen
+** Entfernen Sie die NetApp-Exportrichtlinie
+** Entfernen Sie die NetApp FC-Datenschnittstelle
+** NetApp Initiatorgruppe entfernen
+** Entfernen Sie die NetApp IP-Schnittstelle
+** Entfernen Sie die NetApp-LUN
+** Entfernen Sie die NetApp-LUN-Zuordnung
+** Entfernen Sie das NetApp NAS Smart Volume
+** Entfernen Sie die NetApp Smart LUN
+** Entfernen Sie die NetApp-Snapshot-Richtlinie
+** Entfernen Sie die virtuelle Speichermaschine von NetApp
+** Entfernen Sie das NetApp-Volume
+** Entfernen Sie den NetApp-VolumeSnapshot
+** Regel aus NetApp-Exportrichtlinie entfernen
+** Entfernen Sie die Planung aus der NetApp-Snapshot-Richtlinie
+** Benennen Sie NetApp-VolumeSnapshot um
+** Aktualisieren Sie die NetApp-Volume-Kapazität
 +
-
-NOTE: Die Aufgaben „Neues Speicher-NAS-Smart-Volume“ und „Neues Speicher-Smart-LUN“ funktionieren nur mit ONTAP 9.8 und höher. ONTAP 9.7P1 ist derzeit die unterstützte Mindestversion.
-
-
-
-
-
 Weitere Informationen über die Anpassung von Workflows an NetApp Storage- und Virtualisierungsaufgaben finden Sie im Video https://tv.netapp.com/detail/video/6228095945001["NetApp ONTAP Storage-Orchestrierung in Cisco Intersight"^].
+
+
+
+

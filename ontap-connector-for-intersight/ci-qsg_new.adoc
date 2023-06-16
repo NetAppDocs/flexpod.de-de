@@ -18,6 +18,16 @@ In diesem Abschnitt werden die neuen Funktionen aufgeführt, die für Cisco Inte
 
 
 
+== Juni 2023
+
+
+NOTE: Ein Upgrade auf NetApp Active IQ Unified Manager 9.13RC1 ist erforderlich, um die Kompatibilität und vollständige Funktionalität der aktuellen Version sicherzustellen.
+
+* Aktualisierte Namen für NetApp-Storage-Aufgaben. Siehe link:ci-qsg_use_cases.html["Anwendungsfall 3: Benutzerdefinierte Workflows mit Designer-freiem Formular"^] Für die vollständige Liste der umbenannten Aufgaben.
+
+
+
+
 == April 2023
 
 * Die Registerkarten Protection Policies (SnapMirror) und Snapshot Policies wurden im Abschnitt Inventar der Benutzeroberfläche auf der Seite Policies hinzugefügt.
@@ -90,7 +100,7 @@ NOTE: Um die Kompatibilität und vollständige Funktionalität zukünftiger Vers
 * AutoSupport zu Cluster Inventory hinzugefügt
 * Hinzugefügt `cdpd.enable` Node-Option
 * Objekt für CDP-Nachbar hinzugefügt
-* NetApp Workflow-Storage-Aufgaben wurden innerhalb von Cisco Intersight hinzugefügt. Siehe link:ci-qsg_use_cases.html["Anwendungsfall 3: Benutzerdefinierte Workflows mit Designer-freiem Formular"] Eine vollständige Liste aller NetApp Storage-Aufgaben.
+* NetApp Workflow-Storage-Aufgaben wurden innerhalb von Cisco Intersight hinzugefügt. Siehe link:ci-qsg_use_cases.html["Anwendungsfall 3: Benutzerdefinierte Workflows mit Designer-freiem Formular"^] Eine vollständige Liste aller NetApp Storage-Aufgaben.
 
 
 
@@ -117,7 +127,7 @@ NOTE: Um die Kompatibilität und vollständige Funktionalität zukünftiger Vers
 
 == Oktober 2021
 
-* Aktualisierte Liste der NetApp Storage-Aufgaben, die innerhalb von Cisco Intersight verfügbar sind Siehe link:ci-qsg_use_cases.html["Anwendungsfall 3: Benutzerdefinierte Workflows mit Designer-freiem Formular"] Eine vollständige Liste aller NetApp Storage-Aufgaben.
+* Aktualisierte Liste der NetApp Storage-Aufgaben, die innerhalb von Cisco Intersight verfügbar sind Siehe link:ci-qsg_use_cases.html["Anwendungsfall 3: Benutzerdefinierte Workflows mit Designer-freiem Formular"^] Eine vollständige Liste aller NetApp Storage-Aufgaben.
 * „Systemzustand“ wurde auf der Seite „Cluster-Liste“ hinzugefügt.
 * Erweiterte Details jetzt auf der Seite Allgemein für ein ausgewähltes Cluster verfügbar.
 * Auf die NTP-Server-Tabelle kann jetzt über das Navigationsbereich zugegriffen werden.
