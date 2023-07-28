@@ -18,6 +18,32 @@ In diesem Abschnitt werden die neuen Funktionen aufgeführt, die für Cisco Inte
 
 
 
+== Juli 2023
+
+
+NOTE: Ein Upgrade auf NetApp Active IQ Unified Manager 9.13GA ist erforderlich, um Kompatibilität und volle Funktionalität mit der aktuellen Version sicherzustellen.
+
+* Aktualisierte Namen für NetApp-Storage-Aufgaben. Unter Use Case 3 Benutzerdefinierte Workflows mit Designer-freiem Formular finden Sie eine vollständige Liste der umbenannten Aufgaben.
+* Die IP-Adresse der NFS-Schnittstelle wurde als Ausgabe des Tasks „Neues NetApp-NAS-Smart-Volume“ hinzugefügt.
+* Der Registerkarte „Checks“ wurde eine Überprüfung hinzugefügt, ob es sich bei der ASUP Übertragung um eine HTTPS-Übertragung handelt.
+* Der richtige Tier-Typ für alle Tiers wird nun ordnungsgemäß unter der Benutzeroberfläche „Tiers“ angezeigt.
+* Alle kompatiblen Lizenzen werden jetzt ordnungsgemäß auf der Seite Lizenzen angezeigt.
+* Der genaue Wert für CIFS-Freigaben ohne oder ohne Home-Verzeichnis wird jetzt auf der Seite Freigaben angezeigt.
+* Sortierung und Filterung sind jetzt für die zugeordnete Spalte auf der SEITE LUNS aktiviert.
+* Sortieren und Filtern aktiviert nun die Spalte Authentifizierung aktiviert auf der Seite NTP-Server.
+* Neue Prüfungen und die folgenden entsprechenden Kategorien wurden der Registerkarte Prüfungen hinzugefügt.
++
+** Sicherheit
+** Anti-Ransomware
+** Gesteigerte
+** Andere
+
+
+* In der Detailansicht „Bestand“ wird jetzt ein Bericht anstelle der physisch genutzten Kapazität verwendet.
+
+
+
+
 == Juni 2023
 
 

@@ -9735,7 +9735,6 @@
   <block id="c5278a5ee46f3950c6449cea7119ca37" category="cell"><block ref="c5278a5ee46f3950c6449cea7119ca37" category="inline-link-macro-rx"></block></block>
   <block id="040d804b2c70516766d21ab594bc39bb" category="cell"><block ref="040d804b2c70516766d21ab594bc39bb" category="inline-link-rx"></block></block>
   <block id="0d9b0b32a4432dbeaa0425b3a43bf813" category="list-text">*Innovation und Agilität.* FlexPod wird als ideale Plattform von EHRs wie Epic, Cerner, Meditech und Imaging Systemen wie Agfa, GE, Philips empfohlen. Finden Sie weitere Informationen zu<block ref="e3215a4a4d4097ca1d3d2b989f46a542" category="inline-link-rx"></block> Und Zielplattform-Architektur finden Sie im Epic userweb. Genomik auf Basis<block ref="24f2c347deb06bba4de59a5266702e7d" category="inline-link-rx"></block> Ermöglicht es Organisationen im Gesundheitswesen, den Weg der Innovationen flexibel fortzusetzen. Mit FlexPod kommt es auf die natürliche Weise, Veränderungen im Unternehmen umzusetzen. Wenn Unternehmen eine FlexPod-Plattform nutzen, können IT-Experten im Gesundheitswesen Zeit, Aufwand und Ressourcen für Innovationen bereitstellen und so agil sein wie die Anforderungen des Ökosystems.</block>
-  <block id="32c88669445a60f20d5c4768cafb4635" category="paragraph">Installation oder Upgrade auf Active IQ Unified Manager (aktuellste Version erforderlich, derzeit 9.13RC1), falls nicht. Weitere Anweisungen finden Sie im <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>.</block>
   <block id="9944591da8cbd48d8dd6e6366955da50" category="list-text">Exportrichtlinie zum NetApp-Volume hinzufügen</block>
   <block id="39fcfcb06d577fe28a1681ec59bd8813" category="list-text">Initiatoren zu NetApp-Initiatorgruppe hinzufügen</block>
   <block id="316ae23c10623d9e2fd5c26d0162e4e1" category="list-text">Regel zur NetApp-Exportrichtlinie hinzufügen</block>
@@ -9778,10 +9777,50 @@
   <block id="7d9b1145d4ddecd2b63b6017eb559a79" category="list-text">Entfernen Sie die Planung aus der NetApp-Snapshot-Richtlinie</block>
   <block id="fcfa83f92e088a38cb0b8b964782a825" category="list-text">Benennen Sie NetApp-VolumeSnapshot um</block>
   <block id="cf1b3d281850307ef3dfced3bacedd94" category="list-text">Aktualisieren Sie die NetApp-Volume-Kapazität</block>
-  <block id="76d2b8dc750167185cbc6e1c83deac4f" category="cell">Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9.13RC1).</block>
   <block id="411d690288852abddc39378b2989bfda" category="section-title">Juni 2023</block>
   <block id="b4099ff97cb0b64945972224373faec4" category="admonition">Ein Upgrade auf NetApp Active IQ Unified Manager 9.13RC1 ist erforderlich, um die Kompatibilität und vollständige Funktionalität der aktuellen Version sicherzustellen.</block>
   <block id="4afd182647adde3ae53ba9636f8ecd85" category="list-text">Aktualisierte Namen für NetApp-Storage-Aufgaben. Siehe <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> Für die vollständige Liste der umbenannten Aufgaben.</block>
   <block id="2d24bfd4ad96e334ad70f500b56563c3" category="list-text">NetApp Workflow-Storage-Aufgaben wurden innerhalb von Cisco Intersight hinzugefügt. Siehe <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> Eine vollständige Liste aller NetApp Storage-Aufgaben.</block>
   <block id="c0d6fe9e8f745815653bfbc202c74e93" category="list-text">Aktualisierte Liste der NetApp Storage-Aufgaben, die innerhalb von Cisco Intersight verfügbar sind Siehe <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> Eine vollständige Liste aller NetApp Storage-Aufgaben.</block>
+  <block id="cef4011c89ea914920838c57c1277b96" category="cell">Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9,13 GA).</block>
+  <block id="fb5978407d362c06c4a1c8ab72f464f1" category="section-title">Juli 2023</block>
+  <block id="f6134ed465dbb55c3531c607933bd957" category="admonition">Ein Upgrade auf NetApp Active IQ Unified Manager 9.13GA ist erforderlich, um Kompatibilität und volle Funktionalität mit der aktuellen Version sicherzustellen.</block>
+  <block id="4a743225a883b79a064e0fe794bed4bc" category="list-text">Aktualisierte Namen für NetApp-Storage-Aufgaben. Unter Use Case 3 Benutzerdefinierte Workflows mit Designer-freiem Formular finden Sie eine vollständige Liste der umbenannten Aufgaben.</block>
+  <block id="ee3ed84cc0530093ff0cafb58fa20c87" category="list-text">Die IP-Adresse der NFS-Schnittstelle wurde als Ausgabe des Tasks „Neues NetApp-NAS-Smart-Volume“ hinzugefügt.</block>
+  <block id="9dda9b1a19688571959dbba112145ceb" category="list-text">Der Registerkarte „Checks“ wurde eine Überprüfung hinzugefügt, ob es sich bei der ASUP Übertragung um eine HTTPS-Übertragung handelt.</block>
+  <block id="71d5edf744a368462afa22987d57ce39" category="list-text">Der richtige Tier-Typ für alle Tiers wird nun ordnungsgemäß unter der Benutzeroberfläche „Tiers“ angezeigt.</block>
+  <block id="254d491c7abffdd56f4bbf1a450d16bd" category="list-text">Alle kompatiblen Lizenzen werden jetzt ordnungsgemäß auf der Seite Lizenzen angezeigt.</block>
+  <block id="1ac60a3870a02f53c35001a558aa411b" category="list-text">Der genaue Wert für CIFS-Freigaben ohne oder ohne Home-Verzeichnis wird jetzt auf der Seite Freigaben angezeigt.</block>
+  <block id="db6a99019304bf55663227604fa38d88" category="list-text">Sortierung und Filterung sind jetzt für die zugeordnete Spalte auf der SEITE LUNS aktiviert.</block>
+  <block id="bf8347272101ad3e5a1f5a7d4a1e1c3d" category="list-text">Sortieren und Filtern aktiviert nun die Spalte Authentifizierung aktiviert auf der Seite NTP-Server.</block>
+  <block id="dd7a106f5abebdf1130d273be23edf53" category="list-text">Neue Prüfungen und die folgenden entsprechenden Kategorien wurden der Registerkarte Prüfungen hinzugefügt.</block>
+  <block id="e6593966d8e9ac936d00c88ec980ca67" category="list-text">Anti-Ransomware</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">Gesteigerte</block>
+  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="list-text">Andere</block>
+  <block id="ccc2c146b1c8e887b8cb561649b51add" category="list-text">In der Detailansicht „Bestand“ wird jetzt ein Bericht anstelle der physisch genutzten Kapazität verwendet.</block>
+  <block id="a45b01faef5c490c90c647f2428032f0" category="paragraph">Installation oder Upgrade auf Active IQ Unified Manager (aktuellste Version erforderlich, derzeit 9.13 GA), falls nicht Weitere Anweisungen finden Sie im <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>.</block>
+  <block id="d3b7d0dfd7a4c0712106720b7a263dcc" category="list-text">ACL zu NetApp-CIFS-Freigabe hinzufügen</block>
+  <block id="e38df0ad25eaed709eb4fc30b431f674" category="list-text">Client-Match zu NetApp-Exportrichtlinienregel hinzufügen</block>
+  <block id="c8750c2c8ef4365e348e3f2d6f7e0a60" category="list-text">Bestätigen Sie den NetApp-Lizenzstatus</block>
+  <block id="ce2e9853e33335f3e809f3c2fbd4e78e" category="list-text">Bestätigen Sie den FCP-Protokollstatus der NetApp Storage Virtual Machine</block>
+  <block id="d3e8f4c6bd53e8eacce2b51f384bcbd5" category="list-text">Bearbeiten Sie die Richtlinie für asynchronen NetApp SnapMirror</block>
+  <block id="c1aa3662728ce7708fedccdcb4affbf7" category="list-text">Bearbeiten Sie die ACL-Berechtigung für die NetApp-CIFS-Freigabe</block>
+  <block id="24d1f1e8d23b508ab9bf5d7afcf636f7" category="list-text">NetApp-Volume-Sicherheitstyp bearbeiten</block>
+  <block id="614b87abecdd3f70114678982ebbbb9f" category="list-text">Bearbeiten Sie die Snapshot-Richtlinie des NetApp-Volumes</block>
+  <block id="c6898dbc38b65e6a09c4b5997d317aeb" category="list-text">Aktivieren Sie NetApp CIFS-Dienste</block>
+  <block id="50b2cba14f218a621d87273c301bbde0" category="list-text">Neue Richtlinie für asynchronen NetApp SnapMirror</block>
+  <block id="35e279bd6fe2769eca059a8faedc6f43" category="list-text">Neuer NetApp CIFS-Server</block>
+  <block id="d1d30c3a3d93e98e502928eaaca114bc" category="list-text">Neue NetApp CIFS-Freigabe</block>
+  <block id="bda45d06eebbcdeab16a923fd8fdd01d" category="list-text">Neue NetApp-Spiegelungen zur Lastverteilung für das SVM-Root-Volume</block>
+  <block id="6fc90f6f641bcbf5f0e70c9bba86b0a9" category="list-text">Neue NetApp SnapMirror Beziehung für Volumes</block>
+  <block id="28c1a1abaac15f55ead6b402d02df1c8" category="list-text">Registrieren Sie DNS für NetApp Storage Virtual Machine</block>
+  <block id="8ad01dcf4f5fb308079c8c54b8393fac" category="list-text">Entfernen Sie die ACL aus der NetApp-CIFS-Freigabe</block>
+  <block id="f58fa9ccd1ffe4112c82ac2f86a775bc" category="list-text">Entfernen Sie die Clientübereinstimmung aus der NetApp-Exportrichtlinienregel</block>
+  <block id="baed5857e762ed3ffc693f7c65215f5c" category="list-text">Initiator aus NetApp-Initiatorgruppe entfernen</block>
+  <block id="7fd0848e19c01ad760f8c9f13445e04a" category="list-text">Entfernen Sie den NetApp CIFS-Server</block>
+  <block id="ab79cf9b18a0947935193e49992783ea" category="list-text">Entfernen Sie die NetApp-CIFS-Freigabe</block>
+  <block id="4a61f0238ebd321bf19f499a028504d8" category="list-text">Entfernen Sie NetApp-Spiegelungen zur Lastverteilung für das SVM-Root-Volume</block>
+  <block id="6436adc56d37fa0f43192638e893196c" category="list-text">Entfernen Sie die NetApp SnapMirror Beziehung für Volume</block>
+  <block id="26d4a176845d0e66ac5ee3e91c2d833e" category="list-text">Entfernen Sie die NetApp SnapMirror Richtlinie</block>
+  <block id="55b6a7c6b2794c0f9cf3d79716818187" category="list-text">Aktualisieren Sie NetApp-Spiegelungen zur Lastverteilung für das SVM-Root-Volume</block>
 </blocks>

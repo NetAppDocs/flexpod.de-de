@@ -79,15 +79,27 @@ Wenn die NetApp Storage- und vCenter-Umgebungen in Cisco Intersight verfügbar s
 Im Folgenden sind die NetApp Storage-Aufgaben aufgeführt, die bei Cisco Intersight verfügbar sind:
 
 +
+** ACL zu NetApp-CIFS-Freigabe hinzufügen
+** Client-Match zu NetApp-Exportrichtlinienregel hinzufügen
 ** Exportrichtlinie zum NetApp-Volume hinzufügen
 ** Initiatoren zu NetApp-Initiatorgruppe hinzufügen
 ** Regel zur NetApp-Exportrichtlinie hinzufügen
 ** Fügen Sie der NetApp-Snapshot-Richtlinie einen Zeitplan hinzu
+** Bestätigen Sie den NetApp-Lizenzstatus
+** Bestätigen Sie den FCP-Protokollstatus der NetApp Storage Virtual Machine
 ** Bearbeiten Sie NetApp Aggregate für Storage Virtual Machine
+** Bearbeiten Sie die Richtlinie für asynchronen NetApp SnapMirror
+** Bearbeiten Sie die ACL-Berechtigung für die NetApp-CIFS-Freigabe
 ** NetApp-Exportrichtlinienregel bearbeiten
 ** Bearbeiten Sie die NetApp-Snapshot-Richtlinie
 ** NetApp-Snapshot-Richtlinienzeitplan bearbeiten
+** NetApp-Volume-Sicherheitstyp bearbeiten
+** Bearbeiten Sie die Snapshot-Richtlinie des NetApp-Volumes
+** Aktivieren Sie NetApp CIFS-Dienste
 ** Erweitern Sie die NetApp-LUN
+** Neue Richtlinie für asynchronen NetApp SnapMirror
+** Neuer NetApp CIFS-Server
+** Neue NetApp CIFS-Freigabe
 ** Finden Sie die LUN-Zuordnung der NetApp-Initiatorgruppe
 ** Suchen Sie NetApp-LUN nach ID
 ** Suchen Sie NetApp-Volumes nach ID
@@ -95,24 +107,35 @@ Im Folgenden sind die NetApp Storage-Aufgaben aufgeführt, die bei Cisco Intersi
 ** Neue NetApp FC-Datenschnittstelle
 ** Neue NetApp-Initiatorgruppe
 ** Neue NetApp iSCSI-Datenschnittstelle
+** Neue NetApp-Spiegelungen zur Lastverteilung für das SVM-Root-Volume
 ** Neue NetApp-LUN
 ** Neue NetApp-LUN-Zuordnung
 ** Neue NetApp NAS-Datenschnittstelle
 ** Neues NetApp NAS Smart Volume
 ** Neue intelligente NetApp-LUN
+** Neue NetApp SnapMirror Beziehung für Volumes
 ** Neue NetApp Snapshot-Richtlinie
 ** Die neue NetApp Storage Virtual Machine
 ** Neues NetApp-Volume
 ** Neuer NetApp-Volume-Snapshot
+** Registrieren Sie DNS für NetApp Storage Virtual Machine
+** Entfernen Sie die ACL aus der NetApp-CIFS-Freigabe
+** Entfernen Sie die Clientübereinstimmung aus der NetApp-Exportrichtlinienregel
 ** Exportrichtlinie aus NetApp-Volume entfernen
+** Initiator aus NetApp-Initiatorgruppe entfernen
+** Entfernen Sie den NetApp CIFS-Server
+** Entfernen Sie die NetApp-CIFS-Freigabe
 ** Entfernen Sie die NetApp-Exportrichtlinie
 ** Entfernen Sie die NetApp FC-Datenschnittstelle
 ** NetApp Initiatorgruppe entfernen
 ** Entfernen Sie die NetApp IP-Schnittstelle
+** Entfernen Sie NetApp-Spiegelungen zur Lastverteilung für das SVM-Root-Volume
 ** Entfernen Sie die NetApp-LUN
 ** Entfernen Sie die NetApp-LUN-Zuordnung
 ** Entfernen Sie das NetApp NAS Smart Volume
 ** Entfernen Sie die NetApp Smart LUN
+** Entfernen Sie die NetApp SnapMirror Beziehung für Volume
+** Entfernen Sie die NetApp SnapMirror Richtlinie
 ** Entfernen Sie die NetApp-Snapshot-Richtlinie
 ** Entfernen Sie die virtuelle Speichermaschine von NetApp
 ** Entfernen Sie das NetApp-Volume
@@ -120,6 +143,7 @@ Im Folgenden sind die NetApp Storage-Aufgaben aufgeführt, die bei Cisco Intersi
 ** Regel aus NetApp-Exportrichtlinie entfernen
 ** Entfernen Sie die Planung aus der NetApp-Snapshot-Richtlinie
 ** Benennen Sie NetApp-VolumeSnapshot um
+** Aktualisieren Sie NetApp-Spiegelungen zur Lastverteilung für das SVM-Root-Volume
 ** Aktualisieren Sie die NetApp-Volume-Kapazität
 +
 Weitere Informationen über die Anpassung von Workflows an NetApp Storage- und Virtualisierungsaufgaben finden Sie im Video https://tv.netapp.com/detail/video/6228095945001["NetApp ONTAP Storage-Orchestrierung in Cisco Intersight"^].
