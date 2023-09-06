@@ -18,6 +18,18 @@ In diesem Abschnitt werden die neuen Funktionen aufgeführt, die für Cisco Inte
 
 
 
+== August 2023
+
+
+NOTE: Ein Upgrade auf NetApp Active IQ Unified Manager 9.13GA ist erforderlich, um Kompatibilität und volle Funktionalität mit der aktuellen Version sicherzustellen.
+
+* Verbesserung des Tasks Neue intelligente NetApp-LUN, um deutlich die Verfügbarkeit von Auswahloptionen für das Erstellen einer neuen Initiatorgruppe oder das Auswählen einer vorhandenen Initiatorgruppe anzuzeigen. Wenn Benutzer jetzt das Kontrollkästchen aktivieren, um eine neue Initiatorgruppe zu erstellen, ist der Parameter zur Auswahl einer vorhandenen Initiatorgruppe nicht mehr verfügbar. Wenn Benutzer das Kontrollkästchen deaktivieren, um eine neue Initiatorgruppe zu erstellen, wird der vorhandene Parameter für die Initiatorgruppe dann verfügbar.
+* Erweitert die Aufgaben Neue NetApp-LUN-Zuordnung und NetApp-LUN-Zuordnung entfernen. Die neue Beziehung zwischen der LUN und der Initiatorgruppe wird jetzt aktualisiert. Die UI-Bestandsaufnahme wird bei der Ausführung der Aufgabe sofort sowohl für die LUN als auch für die Initiatorgruppe aktualisiert.
+* Die Seite „Prüfungen“ wird jetzt ordnungsgemäß geladen, wenn sich die Benutzer zum ersten Mal anmelden, und es ist keine Aktualisierung mehr erforderlich.
+
+
+
+
 == Juli 2023
 
 
