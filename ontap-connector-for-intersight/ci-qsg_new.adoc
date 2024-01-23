@@ -18,6 +18,16 @@ In diesem Abschnitt werden die neuen Funktionen aufgeführt, die für Cisco Inte
 
 
 
+== November 2023
+
+
+NOTE: Ein Upgrade auf NetApp Active IQ Unified Manager 9.14RC1 ist erforderlich, um Kompatibilität und volle Funktionalität mit der aktuellen Version sicherzustellen.
+
+* Die Seite NVMe-Namespaces im Abschnitt Inventar der Benutzeroberfläche wurde hinzugefügt.
+
+
+
+
 == August 2023
 
 

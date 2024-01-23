@@ -20,7 +20,7 @@ Für die Überwachung und Orchestrierung von NetApp Storage von Cisco Intersight
 
 == Installation oder Upgrade von NetApp Active IQ Unified Manager
 
-Installation oder Upgrade auf Active IQ Unified Manager (aktuellste Version erforderlich, derzeit 9.13 GA), falls nicht Weitere Anweisungen finden Sie im link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager Dokumentation"].
+Installation oder Upgrade auf Active IQ Unified Manager (aktuelle Version erforderlich, derzeit 9.14RC1), falls nicht. Weitere Anweisungen finden Sie im link:https://docs.netapp.com/us-en/active-iq-unified-manager/["NetApp Active IQ Unified Manager Dokumentation"].
 
 
 
@@ -47,10 +47,10 @@ image::ci-qsg_image2.png[Screenshot der OVF-Vorlage für Schritt 5-Konfiguration
 
 .. Passen Sie auf der Seite *Vorlage anpassen* die Bereitstellungseigenschaften der OVF-Vorlage an. Das Administratorpasswort wird für die lokalen Benutzer verwendet: Admin(`webUI/cli/ssh`).
 +
-image::ci-qsg_image3.png[Fehler: Fehlendes Grafikbild]
+image::ci-qsg_image3.png[Screenshot des Bildschirms „OVF-Vorlage bereitstellen“]
 
 +
-image::ci-qsg_image4.png[Fehler: Fehlendes Grafikbild]
+image::ci-qsg_image4.png[Screenshot des Bildschirms „OVF-Vorlage bereitstellen“]
 
 .. Klicken Sie Auf *Weiter*.
 

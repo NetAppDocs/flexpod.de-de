@@ -8909,15 +8909,6 @@
   <block id="d8c24aa3566987a400d13ef04fd0fefd" category="list-text">*Sichere Mandantenfähigkeit*. Dies ist auch in der Lage, die erhöhten Anforderungen virtualisierter Server- und Storage-Infrastrukturen zu erfüllen. Dies ermöglicht eine sichere Mandantenfähigkeit für applikationsspezifische Informationen, insbesondere zum Hosten mehrerer Instanzen von Datenbanken und Software.</block>
   <block id="cffa78cf6f1f0f5eb29bb04c932c4f48" category="paragraph"><block ref="cffa78cf6f1f0f5eb29bb04c932c4f48" category="inline-link-macro-rx"></block></block>
   <block id="17cfc2f2b50e58c93aaf0a477ff54037" category="sidebar">Dokumentation von FlexPod-Lösungen</block>
-  <block id="af0963a66759af7047416c9d85f32efe" category="sidebar">FlexPod - Hier geht's</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Was ist neu</block>
-  <block id="17c3771ed0b6c1ae15740eff715e9922" category="sidebar">Videos und Demos</block>
-  <block id="d6b9ea32b921a9f56de32062ba4b94f3" category="sidebar">Blogs</block>
-  <block id="cfa345d8fdba7b2e9598cce9c0e3c744" category="sidebar">KI und moderne Datenanalysen mit FlexPod</block>
-  <block id="7d15915b1c0d83b2d07ba91bb371d99c" category="sidebar">FlexPod Business-Applikationen und Enterprise-Datenbanken</block>
-  <block id="9651c3a3b7cbc999c2c50c39dbf61c04" category="sidebar">Hybrid Cloud mit FlexPod</block>
-  <block id="7cb27dbb321a2dda7b1a59417ac87d24" category="sidebar">FlexPod für VDI</block>
-  <block id="e24bc29daa40702c050f7f3b61476c6f" category="sidebar">Gesundheitswesen mit FlexPod</block>
   <block id="b1b5d8cebde8af104d3749c7d984f391" category="sidebar">FlexPod-Definition</block>
   <block id="1f1a6514305e31e63aa9ce9e1338aa48" category="sidebar">Technische Spezifikationen zu FlexPod Express</block>
   <block id="985a4a270fc5521f74f971f639acb4ba" category="sidebar">FlexPod-Plattformen</block>
@@ -9688,7 +9679,6 @@
   <block id="4afd182647adde3ae53ba9636f8ecd85" category="list-text">Aktualisierte Namen für NetApp-Storage-Aufgaben. Siehe <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> Für die vollständige Liste der umbenannten Aufgaben.</block>
   <block id="2d24bfd4ad96e334ad70f500b56563c3" category="list-text">NetApp Workflow-Storage-Aufgaben wurden innerhalb von Cisco Intersight hinzugefügt. Siehe <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> Eine vollständige Liste aller NetApp Storage-Aufgaben.</block>
   <block id="c0d6fe9e8f745815653bfbc202c74e93" category="list-text">Aktualisierte Liste der NetApp Storage-Aufgaben, die innerhalb von Cisco Intersight verfügbar sind Siehe <block ref="7cee7c950e5c408827f960772194d4bb" category="inline-link-macro-rx"></block> Eine vollständige Liste aller NetApp Storage-Aufgaben.</block>
-  <block id="cef4011c89ea914920838c57c1277b96" category="cell">Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9,13 GA).</block>
   <block id="fb5978407d362c06c4a1c8ab72f464f1" category="section-title">Juli 2023</block>
   <block id="f6134ed465dbb55c3531c607933bd957" category="admonition">Ein Upgrade auf NetApp Active IQ Unified Manager 9.13GA ist erforderlich, um Kompatibilität und volle Funktionalität mit der aktuellen Version sicherzustellen.</block>
   <block id="4a743225a883b79a064e0fe794bed4bc" category="list-text">Aktualisierte Namen für NetApp-Storage-Aufgaben. Unter Use Case 3 Benutzerdefinierte Workflows mit Designer-freiem Formular finden Sie eine vollständige Liste der umbenannten Aufgaben.</block>
@@ -9704,7 +9694,6 @@
   <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">Gesteigerte</block>
   <block id="6311ae17c1ee52b36e68aaf4ad066387" category="list-text">Andere</block>
   <block id="ccc2c146b1c8e887b8cb561649b51add" category="list-text">In der Detailansicht „Bestand“ wird jetzt ein Bericht anstelle der physisch genutzten Kapazität verwendet.</block>
-  <block id="a45b01faef5c490c90c647f2428032f0" category="paragraph">Installation oder Upgrade auf Active IQ Unified Manager (aktuellste Version erforderlich, derzeit 9.13 GA), falls nicht Weitere Anweisungen finden Sie im <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>.</block>
   <block id="d3b7d0dfd7a4c0712106720b7a263dcc" category="list-text">ACL zu NetApp-CIFS-Freigabe hinzufügen</block>
   <block id="e38df0ad25eaed709eb4fc30b431f674" category="list-text">Client-Match zu NetApp-Exportrichtlinienregel hinzufügen</block>
   <block id="c8750c2c8ef4365e348e3f2d6f7e0a60" category="list-text">Bestätigen Sie den NetApp-Lizenzstatus</block>
@@ -9733,4 +9722,10 @@
   <block id="ee1a60bf8afd48f5c57ef8a62da497e2" category="list-text">Verbesserung des Tasks Neue intelligente NetApp-LUN, um deutlich die Verfügbarkeit von Auswahloptionen für das Erstellen einer neuen Initiatorgruppe oder das Auswählen einer vorhandenen Initiatorgruppe anzuzeigen. Wenn Benutzer jetzt das Kontrollkästchen aktivieren, um eine neue Initiatorgruppe zu erstellen, ist der Parameter zur Auswahl einer vorhandenen Initiatorgruppe nicht mehr verfügbar. Wenn Benutzer das Kontrollkästchen deaktivieren, um eine neue Initiatorgruppe zu erstellen, wird der vorhandene Parameter für die Initiatorgruppe dann verfügbar.</block>
   <block id="1223b61ead710c697d121bc4c8df6a60" category="list-text">Erweitert die Aufgaben Neue NetApp-LUN-Zuordnung und NetApp-LUN-Zuordnung entfernen. Die neue Beziehung zwischen der LUN und der Initiatorgruppe wird jetzt aktualisiert. Die UI-Bestandsaufnahme wird bei der Ausführung der Aufgabe sofort sowohl für die LUN als auch für die Initiatorgruppe aktualisiert.</block>
   <block id="cda91d963199f150b4c27541606d0790" category="list-text">Die Seite „Prüfungen“ wird jetzt ordnungsgemäß geladen, wenn sich die Benutzer zum ersten Mal anmelden, und es ist keine Aktualisierung mehr erforderlich.</block>
+  <block id="b58b1adee5f08a2f37b40ee17c3097e8" category="cell">Die neueste Version von NetApp Active IQ Unified Manager ist erforderlich (derzeit 9.14RC1).</block>
+  <block id="b225002f4ba131c321e0dc8d89d5a8ad" category="paragraph">Installation oder Upgrade auf Active IQ Unified Manager (aktuelle Version erforderlich, derzeit 9.14RC1), falls nicht. Weitere Anweisungen finden Sie im <block ref="b713007c96ed5cceca9ab6b5776ab58a" category="inline-link-macro-rx"></block>.</block>
+  <block id="e245b121672965eb5c120373beb6ebe2" category="image-alt">Screenshot des Bildschirms „OVF-Vorlage bereitstellen“</block>
+  <block id="fb784db76f57bc935639ba5340089d77" category="section-title">November 2023</block>
+  <block id="0860efb25683aa716ffcd95186cf7353" category="admonition">Ein Upgrade auf NetApp Active IQ Unified Manager 9.14RC1 ist erforderlich, um Kompatibilität und volle Funktionalität mit der aktuellen Version sicherzustellen.</block>
+  <block id="5c49c1696b71ecb277e29a00e385c986" category="list-text">Die Seite NVMe-Namespaces im Abschnitt Inventar der Benutzeroberfläche wurde hinzugefügt.</block>
 </blocks>
