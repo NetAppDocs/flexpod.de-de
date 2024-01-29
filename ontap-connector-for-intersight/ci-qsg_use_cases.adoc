@@ -33,34 +33,45 @@ Hier ist eine https://tv.netapp.com/detail/video/6228096841001["Verlinken"^] Zei
 
 
 
-== Anwendungsfall 2: NetApp Storage-Orchestrierung anhand von Referenz-Workflows
+== Anwendungsfall 2: NetApp Storage-Orchestrierung mithilfe von Referenz-Workflows
 
-Wenn NetApp Storage- und vCenter-Umgebungen in Cisco Intersight verfügbar sind, können Sie Out-to-End-Referenz-Workflows ausführen, darunter Storage- und Virtualisierungsaufgaben.
+Wenn NetApp Storage- und vCenter-Umgebungen in Cisco Intersight zur Verfügung stehen, können Sie End-to-End-Referenz-Workflows verwenden, die in GitHub über die verfügbar sind https://github.com/ucs-compute-solutions/FlexPod-Intersight-Workflow["FlexPod Intersight Workflow-Repository"^].
+
+Die Referenz-Workflows umfassen Storage- und Virtualisierungsaufgaben. Die README-Datei für das Repository bietet die Voraussetzungen für die Ausführung von Workflows, Links zu hilfreichen Ressourcen (einschließlich Dokumentation zum Importieren eines Workflows) und Dokumentationslinks für jeden Referenz-Workflow.
+
+Jeder Workflow hat einen Ordner im Repository, der zwei Dateien enthält:
+
+* Die JSON-Datei zum Herunterladen und Importieren in Intersight,
+* Eine Dokumentationsdatei, die eine Ansicht der Aufgaben im Workflow, Workflow-Eingaben und eine Beispielausführung des Workflows bietet.
+
+
+Führen Sie folgende Schritte aus, um einen Referenz-Workflow zu importieren und zu verwenden:
 
 . Implementieren Sie Intersight Assist OVA (OnPrem Task in vCenter Umgebung).
 . Fügen Sie NetApp AIQ um Geräte in Intersight Assist hinzu.
 . Fügen Sie das vCenter-Ziel über Intersight Assist zu Intersight hinzu.
-. Ausführen von sofort verfügbaren Referenz-Workflows
-+
-Referenz-Workflows:
-
-+
-** Neuer NAS-Datenspeicher
-** Neue Richtlinie Für Den Storage-Export
-** Neuer Speicherhost
-** Neue Storage-Schnittstelle
-** Neue Storage Virtual Machine
-** Neue Virtual Machine
-** Neuer VMFS-Datenspeicher
-** Entfernen Sie den NAS-Datenspeicher
-** Storage Export Policy Entfernen
-** Entfernen Sie Den Speicher-Host
-** Entfernen Sie den VMFS-Datenspeicher
-** NAS-Datenspeicher aktualisieren
-** Speicherhost Aktualisieren
-** Aktualisieren des VMFS-Datenspeichers
+. Laden Sie die JSON-Datei für einen Referenz-Workflow aus dem FlexPod-Intersight-Workflow-Repository herunter.
+. Importieren Sie den Workflow in Intersight, und führen Sie den Workflow aus.
 
 
+Hier eine Liste der Workflows, die im GitHub FlexPod-Intersight-Workflow-Repository zur Verfügung stehen:
+
+* Initiatoren zu NetApp-Initiatorgruppe hinzufügen
+* Neue Exportrichtlinie für NetApp-Volumen
+* Neuer NAS-Datenspeicher mit NetApp Smart Volume
+* Neue NetApp FC-Datenschnittstelle
+* Neue NetApp-Initiatorgruppe
+* Neue NetApp iSCSI-Datenschnittstelle
+* Neue NetApp NAS-Datenschnittstelle
+* Die neue NetApp Storage Virtual Machine
+* Neuer VMFS-Datenspeicher mit NetApp Smart LUN
+* Initiatoren aus NetApp-Initiatorgruppe entfernen
+* Entfernen Sie den NAS-Datenspeicher mithilfe des NetApp-Smart-Volumes
+* Entfernen Sie die NetApp-Exportrichtlinie
+* NetApp Initiatorgruppe entfernen
+* Entfernen Sie den VMFS-Datenspeicher mithilfe der intelligenten NetApp-LUN
+* Aktualisieren Sie den NAS-Datenspeicher mit dem NetApp Smart Volume
+* Aktualisieren Sie den VMFS-Datenspeicher mit der intelligenten NetApp-LUN
 
 
 
