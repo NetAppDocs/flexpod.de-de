@@ -8202,13 +8202,10 @@
   <block id="9c2514843c0b4f1c1909f153eafcb883" category="paragraph">Um die Tiering-Richtlinie eines Volumes mithilfe der ONTAP CLI zu ändern, führen Sie den folgenden Befehl aus:</block>
   <block id="c901a03753b4e05288bd4325b907fa34" category="inline-link-macro">Weiter: Legen Sie die Mindestkühltage für das Volume Tiering fest.</block>
   <block id="2334ddd2544286434ec621908ded23b5" category="paragraph"><block ref="2334ddd2544286434ec621908ded23b5" category="inline-link-macro-rx"></block></block>
-  <block id="fa776a6d8035e935e3ca744e1a9a7d09" category="summary">Weitere Informationen finden Sie in den Referenzdokumenten und auf den Websites.</block>
   <block id="d95867deadfe690e40f42068d6b59df8" category="doc">Quellen</block>
   <block id="937072d3e0f7b646b7f3f24a312489f8" category="paragraph">Weitere Informationen finden Sie in den folgenden Dokumenten und auf den folgenden Websites:</block>
   <block id="3a45f44b03660232082dc152068990fd" category="inline-link">TR 4883: FlexPod Datacenter with ONTAP 9.8, ONTAP Storage Connector for Cisco Intersight und Cisco Intersight Managed Mode</block>
   <block id="4c797a8e70e93514000fabd2051b5ddb" category="paragraph"><block ref="4c797a8e70e93514000fabd2051b5ddb" category="inline-link-rx"></block></block>
-  <block id="7b3308b95aec192d46bc92dd7fb02cb2" category="inline-link">Cisco Intersight Managed Mode für FlexPod</block>
-  <block id="2155a8941fd728202c18dade730100d6" category="paragraph"><block ref="2155a8941fd728202c18dade730100d6" category="inline-link-rx"></block></block>
   <block id="0580772620331f949057ed6afbb098ea" category="inline-link">Cisco Intersight – Erste Schritte – Übersicht</block>
   <block id="40ad3b682c80f313282c440b74ef7360" category="paragraph"><block ref="40ad3b682c80f313282c440b74ef7360" category="inline-link-rx"></block></block>
   <block id="4d49c14c4afe96eb88aaef6d6588599b" category="inline-link">Intersight Appliance Install and Upgrade Guide</block>
@@ -8325,18 +8322,8 @@
   <block id="8f7052d0c9b4ba227843ecc0873ab47c" category="cell">Anforderungsdetails</block>
   <block id="29d1db03b55072fc401d11d7d0750f61" category="cell">ONTAP 9.7P1 und höher</block>
   <block id="5dc8e3707996259deb52abdfee00eac9" category="cell">NetApp Storage Array</block>
-  <block id="00b515e766e1cba805399ff9eb813a8f" category="cell">Alle ONTAP ASA-, AFF- und FAS-Storage-Arrays werden für ONTAP 9.7P1 und höher unterstützt</block>
   <block id="1f8e8bd6bc1c4895f936485882fbdf9d" category="cell">Virtualisierungshypervisor</block>
-  <block id="4ca6768d140e70826f7716d07807dc17" category="cell">VSphere 6.7 und höher</block>
-  <block id="72070c9ef3f94bc3718c44ba73d4ccc3" category="admonition">Siehe<block ref="2c43cbcc5ede8fefeab295a68acd4cdb" category="inline-link-rx"></block> Für die Mindestanforderungen von Cisco UCS Compute Komponenten und der UCSM Version</block>
   <block id="4aa6cd6038c4fecb0c308ca4d3dcdea0" category="section-title">Cisco Intersight Lizenzierungsanforderungen</block>
-  <block id="679eff4aa4d3a357123f3400b7f819f4" category="paragraph">Cisco Intersight ist auf Abonnementbasis lizenziert, wobei mehrere Lizenzeditionen zur Auswahl stehen. Die Funktionen werden mit den verschiedenen Lizenztypen erweitert. Sie können eine Abonnementdauer von einem, drei oder fünf Jahren erwerben und die erforderliche Cisco UCS Server Volume-Ebene für die ausgewählte Abonnementdauer auswählen. Jeder Cisco Endpunkt enthält automatisch eine Cisco Intersight Base ohne zusätzliche Kosten, wenn Sie auf das Cisco Intersight Portal zugreifen und ein Gerät anfordern.</block>
-  <block id="c4c01460eb0fd0e7d30ef65622dc7cb2" category="paragraph">Mit dem Cisco Bestelltool können Sie eine der folgenden übergeordneten Intersight-Lizenzen erwerben:</block>
-  <block id="fbd64fb1c56050f38cf0c2d9441004af" category="list-text">*Cisco Intersight Essentials.* Essentials umfasst alle Funktionen des Basispakets mit den zusätzlichen Funktionen einschließlich Cisco UCS Central und Cisco IMC Supervisor Berechtigung, richtlinienbasierte Konfiguration mit Serviceprofilen, Firmware-Verwaltung und Bewertung der Kompatibilität mit der Hardware Compatibility List (HCL).</block>
-  <block id="8a30fe4ae6d8d0310e0d329493bc21c3" category="list-text">*Cisco Intersight Advantage.* Advantage bietet alle Funktionen und Merkmale der Stufen Base und Essentials. Das Plug-in umfasst Storage-Widgets, Storage-Inventar, Storage-Kapazität und Storage-Auslastung sowie domänenübergreifende Inventar-Korrelation zwischen physischem Computing, physischem Storage und virtuellen Umgebungen (VMware ESXi).</block>
-  <block id="97f9beafe8a267c8b35e2fb7235394ab" category="list-text">*Cisco Intersight Premier* Neben den Funktionen, die in der Advantage Tier zur Verfügung gestellt werden, bietet Cisco Intersight Premier eine Private Cloud Infrastructure-as-a-Service (IaaS)-Orchestrierung über Cisco UCS und Systeme von Drittanbietern, einschließlich Virtual Machines (VMs) (VMware vCenter) und physischem Storage (NetApp Storage).</block>
-  <block id="d4780504a816544f6e2645b57ea78a79" category="inline-link">Cisco Lizenzierung</block>
-  <block id="926dfe010cd806b1815f2e2e910d07ee" category="paragraph">Weitere Informationen zu den Funktionen, die von verschiedenen Lizenzstufen abgedeckt werden, finden Sie unter<block ref="8697cd039441f6238fc2562e0fa792ae" category="inline-link-rx"></block>.</block>
   <block id="10e151868abb588914d621ebe3019558" category="summary">Dies sind einige Anwendungsbeispiele für die Überwachung und Orchestrierung von NetApp Storage von Cisco Intersight.</block>
   <block id="5ff30c7527c7407eb3c515338ef1560f" category="section-title">Anwendungsfall 1: Monitoring des NetApp Storage-Bestands und der Widgets</block>
   <block id="0508c857cd2f8cba0c9d45eaf4737843" category="paragraph">Wenn die NetApp Storage-Umgebung in Cisco Intersight verfügbar ist, können Sie NetApp Storage-Objekte aus dem Storage-Inventar im Detail überwachen und erhalten einen Überblick über die Storage Widgets.</block>
@@ -9731,4 +9718,19 @@
   <block id="eade77a2815c8954887e241cc8a7cdbd" category="list-text">Aktualisieren Sie den VMFS-Datenspeicher mit der intelligenten NetApp-LUN</block>
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">Januar 2024</block>
   <block id="1dbf0a61b61f004514eb71c762bdda23" category="list-text">NetApp Storage-Orchestrierung mit Referenz-Workflows, die jetzt über die in GitHub zum Download zur Verfügung stehen<block ref="dbef3ce40b045312da2d2a3590390d56" category="inline-link-rx"></block>. Weitere Informationen zu den neuen Referenz-Workflows in GitHub finden Sie unter <block ref="603c2ccdc54cec25fe66c69c148f7dcb" category="inline-link-macro-rx"></block>.</block>
+  <block id="21fdbbe30d03ba60217ad219e4a43475" category="paragraph">Überprüfen Sie, ob Sie die Hardware-, Software- und Lizenzierungsanforderungen für die NetApp ONTAP-Storage-Integration mit Cisco Intersight erfüllen.</block>
+  <block id="cf37c5cba207938e4c97f3bcf9ffabc9" category="cell">Alle ONTAP ASA-, AFF- und FAS-Storage-Arrays werden für ONTAP 9.7P1 und höher unterstützt</block>
+  <block id="de19bc9421b3493cb471fb68d644f614" category="cell">VSphere 7.0 und höher</block>
+  <block id="2bab0c7a59bda4a6cf8bb732310f19d1" category="inline-link">Von Cisco Intersight unterstützte Systeme</block>
+  <block id="4583b551e49cf84018c42a34fc90472b" category="admonition">Siehe<block ref="c301da257433e3b44d89736f9cb32482" category="inline-link-rx"></block> Für die Mindestanforderungen von Cisco UCS Compute Komponenten und der UCSM Version</block>
+  <block id="c6992d015712de0f9935c930f87d1e24" category="paragraph">Cisco Intersight bietet Services wie Infrastrukturservice und Cloud Orchestrator Service zum Managen, Automatisieren und Optimieren von physischem Storage (NetApp-Storage). Mit diesen Services können Sie Cisco UCS-Server und Cisco HyperFlex-System verwalten. Beim Infrastructure Service und Cloud Orchestrator Service kommt ein abonnementbasiertes Lizenzmodell mit mehreren Tiers zum Einsatz. Sie können die erforderliche Cisco UCS Server Volume-Tier für die ausgewählte Abonnementlaufzeit auswählen.</block>
+  <block id="73940e6c81db7305c6108d57163a6bd9" category="paragraph-title">Lizenzmodell</block>
+  <block id="0eeef496e6954ad0d16a059fafdc5e38" category="paragraph">Das Lizenzmodell von Cisco Intersight Infrastructure Services wurde vereinfacht und bietet nun die folgenden zwei Ebenen:</block>
+  <block id="cebf91fe773dd5685c20ef3bff0017f3" category="list-text">*Cisco Intersight Infrastructure Services Essentials* - die Lizenzstufe Essentials bietet Serververwaltung einschließlich globaler Statusüberwachungsfunktionen, Inventarisierung, proaktiven Support durch Cisco TAC-Integration, Multi-Faktor-Authentifizierung sowie SDK- und API-Zugriff.</block>
+  <block id="0ef1beaa09215da1b27e26da9c01b73b" category="list-text">* Cisco Intersight Infrastructure Services Advantage* - die Advantage-Lizenz-Tier bietet fortschrittliches Servermanagement mit erweiterter Transparenz, Integration in die Systeme anderer Anbieter, Automatisierung von Hardware und Software von Cisco und Drittanbietern sowie Multi-Domain-Lösungen.</block>
+  <block id="f5e1db835ff4b10b4a6531770f9643e9" category="inline-link">Infrastructure Services Lizenz</block>
+  <block id="2c355e53fd6c41fd8e75d57ff3e446e3" category="paragraph">Weitere Informationen zu den Funktionen, die von verschiedenen Lizenzstufen abgedeckt werden, finden Sie unter<block ref="b733a46c0b54e4d9837584b6621e33e9" category="inline-link-rx"></block>.</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">Verwandte Informationen</block>
+  <block id="cb2f26cdcb58be1d59a4186132027351" category="inline-link">Cisco Intersight-Hilfe-Center</block>
+  <block id="cbdd42cc134bfbfb08861472ec705bb4" category="paragraph"><block ref="cbdd42cc134bfbfb08861472ec705bb4" category="inline-link-rx"></block></block>
 </blocks>
