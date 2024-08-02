@@ -26,9 +26,6 @@ Wenn die NetApp Storage-Umgebung in Cisco Intersight verfügbar ist, können Sie
 . Fügen Sie NetApp AIQ um Geräte in Intersight Assist hinzu.
 . Gehen Sie zu *Storage* und navigieren Sie durch den NetApp Storage-Bestand.
 . Fügen Sie *Widgets* für NetApp Storage zu Ihrem *Monitor Dashboard* hinzu.
-+
-Hier ist eine https://tv.netapp.com/detail/video/6228096841001["Verlinken"^] Zeigen Sie das Video die NetApp ONTAP Storage Monitoring-Funktionen von Cisco Intersight an.
-
 
 
 
@@ -156,9 +153,6 @@ Im Folgenden sind die NetApp Storage-Aufgaben aufgeführt, die bei Cisco Intersi
 ** Benennen Sie NetApp-VolumeSnapshot um
 ** Aktualisieren Sie NetApp-Spiegelungen zur Lastverteilung für das SVM-Root-Volume
 ** Aktualisieren Sie die NetApp-Volume-Kapazität
-+
-Weitere Informationen über die Anpassung von Workflows an NetApp Storage- und Virtualisierungsaufgaben finden Sie im Video https://tv.netapp.com/detail/video/6228095945001["NetApp ONTAP Storage-Orchestrierung in Cisco Intersight"^].
-
 
 
 
