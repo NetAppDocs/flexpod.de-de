@@ -206,6 +206,6 @@ Beachten Sie die folgenden Best Practices und einige Anforderungen eines typisch
 * Stellen Sie sicher, dass die VM-BS-VMDKs in schnellem Tier-1-Storage gehostet werden.
 * Ermitteln Sie gemeinsam mit dem Anbieter medizinischer Bildgebungssysteme den besten Ansatz zur Vorbereitung von VM-Vorlagen für eine schnelle Implementierung und Wartung.
 * Für Management-, Storage- und Produktionsnetzwerke ist für die Datenbank LAN-Trennung erforderlich und das bei isoliertem VLANs für VMware vMotion.
-* Verwenden Sie die auf Storage-Array basierende Replizierungstechnologie von NetApp https://www.netapp.com/us/media/tr-4015.pdf["SnapMirror"^] Statt vSphere-basierter Replizierung.
+* Verwenden Sie die auf dem NetApp Storage-Array basierende Replizierungstechnologie https://www.netapp.com/pdf.html?item=/media/17229-tr4015pdf.pdf["SnapMirror"^] anstelle der vSphere-basierten Replizierung.
 * Einsatz von Backup-Technologien, die VMware APIs nutzen; Backup-Fenster sollten sich außerhalb der normalen Geschäftszeiten befinden.
 

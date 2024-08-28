@@ -366,25 +366,25 @@ Alle verfügbaren Modelle von FAS Storage Controllern werden zur Verwendung in e
 | Komponente | Dokumentation der Controller-Plattform der FAS Serie 
 
 
-| FAS9000 Serie | https://www.netapp.com/us/media/ds-3810.pdf["Datenblatt zur FAS9000 Serie"] 
+| FAS9000 Serie | https://www.netapp.com/pdf.html?item=/media/8939-ds-3810.pdf["Datenblatt zur FAS9000 Serie"^] 
 
 
-| FAS8700 Serie | https://www.netapp.com/us/media/ds-4020.pdf["Datenblatt zur FAS8700 Serie"] 
+| FAS8700 Serie | https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["Datenblatt zur FAS8700 Serie"^] 
 
 
-| FAS8300 Serie | https://www.netapp.com/us/media/ds-4020.pdf["Datenblatt zur FAS8300 Serie"] 
+| FAS8300 Serie | https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["Datenblatt zur FAS8300 Serie"^] 
 
 
 | FAS500f Serie | https://docs.netapp.com/us-en/ontap-systems/fas500f/index.html["Datenblatt zur FAS500f Serie"] 
 
 
-| FAS2700 Serie | https://www.netapp.com/us/media/ds-3929.pdf["Datenblatt: FAS2700 Serie"] 
+| FAS2700 Serie | https://www.netapp.com/pdf.html?item=/media/8937-ds-3929.pdf["Datenblatt: FAS2700 Serie"^] 
 |===
 
 
 === AFF A-Serie
 
-Alle aktuellen Modelle der NetApp AFF A-Series Storage Controller werden zur Verwendung in FlexPod unterstützt. Weitere Informationen finden Sie im https://www.netapp.com/us/media/ds-3582.pdf["Technische Spezifikationen der AFF"^] Datenblatt und im https://hwu.netapp.com/["NetApp Hardware Universe"^]. Ausführliche Informationen zu einem bestimmten AFF-Modell finden Sie in der in der folgenden Tabelle aufgeführten plattformspezifischen Dokumentation.
+Alle aktuellen Modelle der NetApp AFF A-Series Storage Controller werden zur Verwendung in FlexPod unterstützt. Weitere Informationen finden Sie im https://www.netapp.com/media/7828-DS-3582-AFF-A-Series.pdf["Technische Spezifikationen der AFF"^] Datenblatt und im https://hwu.netapp.com/["NetApp Hardware Universe"^] . Ausführliche Informationen zu einem bestimmten AFF-Modell finden Sie in der in der folgenden Tabelle aufgeführten plattformspezifischen Dokumentation.
 
 |===
 | Komponente | Dokumentation der Controller-Plattform der AFF A-Series 

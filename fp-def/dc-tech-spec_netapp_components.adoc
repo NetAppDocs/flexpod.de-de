@@ -108,5 +108,5 @@ Für die FlexPod Architektur sind NetApp SupportEdge Premium Lizenzen erforderli
 | NetApp Support-Lizenzierung | Teilenummer | Technische Spezifikationen 
 
 
-| SupportEdge Premium 4 Stunden vor Ort – Monate: 36 | CS-O2-4HR | https://www.netapp.com/us/media/supportedge-premium-product-description.pdf["NetApp SupportEdge Premium"] 
+| SupportEdge Premium 4 Stunden vor Ort – Monate: 36 | CS-O2-4HR | https://www.netapp.com/pdf.html?item=/media/8745-supportedge-premium-product-description.pdf["NetApp SupportEdge Premium"^] 
 |===

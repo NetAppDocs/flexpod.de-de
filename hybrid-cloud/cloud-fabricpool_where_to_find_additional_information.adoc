@@ -18,7 +18,7 @@ Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die i
 
 * FabricPool Best Practices in sich vereint
 +
-http://www.netapp.com/us/media/tr-4598.pdf["www.netapp.com/us/media/tr-4598.pdf"^]
+https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["www.netapp.com/us/media/tr-4598.pdf"^]
 
 * NetApp Produktdokumentation
 +
@@ -26,6 +26,6 @@ https://docs.netapp.com["https://docs.netapp.com"^]
 
 * TR-4036: Technische Spezifikation für das FlexPod Datacenter
 +
-https://www.netapp.com/us/media/tr-4036.pdf["https://www.netapp.com/us/media/tr-4036.pdf"^]
+https://docs.netapp.com/us-en/flexpod/fp-def/dc-tech-spec_solution_overview.html["https://www.netapp.com/us/media/tr-4036.pdf"^]
 
 

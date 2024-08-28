@@ -31,7 +31,7 @@ Durch den Aufbau einer MEDITECH-Umgebung auf dem Architekturfundament von FlexPo
 * *Sichere Mandantenfähigkeit.* Unterstützung der gestiegenen Anforderungen an eine virtualisierte Shared IT-Infrastruktur für Server und Storage, die eine sichere Mandantenfähigkeit von kundenspezifischen Informationen ermöglicht, insbesondere wenn Ihr System mehrere Instanzen von Datenbanken und Software hostet.
 * *Ressourcenoptimierung in Pools* Reduzierung der Anzahl physischer Server und Storage Controller, Load-Balancing der Workload-Anforderungen, Steigerung der Auslastung bei gleichzeitiger Performance-Verbesserung
 * * Quality of Service (QoS).* FlexPod bietet QoS auf dem gesamten Stack. Branchenführende QoS-Netzwerk-, Computing- und Storage-Richtlinien ermöglichen differenzierte Service-Level in einer gemeinsam genutzten Umgebung. Diese Richtlinien ermöglichen optimale Performance für Workloads und helfen, unkontrollierte Applikationen zu isolieren und zu kontrollieren.
-* *Storage-Effizienz* Storage-Kosten senken mit dem http://www.netapp.com/us/media/netapp-aff-efficiency-guarantee.pdf["NetApp „7:1 Storage-Effizienz“-Garantie"^].
+* *Storage-Effizienz.* Senken Sie die Storage-Kosten mit dem https://www.netapp.com/media/79014-ng-937-Efficiency-Guarantee-Customer-Flyer.pdf["NetApp „7:1 Storage-Effizienz“-Garantie"^].
 * *Agilität.* mit den branchenführenden Tools für Workflow-Automatisierung, Orchestrierung und Management von FlexPod Systemen kann Ihr IT-Team viel schneller auf geschäftliche Anforderungen reagieren. Diese Geschäftsanforderungen können von MEDITECH-Backups und Bereitstellungen von mehr Test- und Schulungsumgebungen bis zu Analysedatenbanken-Replikationen für Population Health Management-Initiativen reichen.
 * * Höhere Produktivität.* Schnelle Bereitstellung und Skalierung dieser Lösung für ein optimales Anwendererlebnis im Klinikpersonal.
 * *NetApp Data Fabric.* mit der NetApp Data-Fabric-Architektur werden Daten über Standorte, physische Grenzen und Applikationen hinweg zusammengeführt. NetApp Data Fabric wurde für Unternehmen in einer datenorientierten Welt entwickelt. Daten werden an diversen Orten erstellt und verwendet. Häufig sind eine Nutzung und die gemeinsame Nutzung an anderen Orten, Applikationen und Infrastrukturen erforderlich. Daher benötigen Sie eine Möglichkeit, Ihre Daten konsistent und integriert zu managen. Die Data-Fabric-Strategie bietet ein Datenmanagement, mit dem DIE IT-ABTEILUNGEN die Kontrolle behalten. Gleichzeitig wird die ständig zunehmende Komplexität IM IT-BEREICH verringert.
@@ -220,7 +220,7 @@ Das I/O-Merkmal jedes MEDITECH-Hosts und des gesamten Systems hängt von der MED
 
 Die MEDITECH Expse-Plattform erzeugt den anspruchsvollsten Workload, da sie den höchsten Prozentsatz der Schreibvorgänge und die IOPS pro Host insgesamt hat, gefolgt von 6.x, C/S 5.x und DEN MAGIC-Plattformen.
 
-Weitere Informationen zu den Workload-Beschreibungen von MEDITECH finden Sie unter https://www.netapp.com/us/media/tr-4190.pdf["TR-4190: NetApp Sizing Guidelines for MEDITECH Environments"^].
+Weitere Informationen zu den MEDITECH-Arbeitslastbeschreibungen finden Sie unter https://www.netapp.com/pdf.html?item=/media/19872-tr-4190.pdf["TR-4190: NetApp Sizing Guidelines for MEDITECH Environments"^].
 
 
 

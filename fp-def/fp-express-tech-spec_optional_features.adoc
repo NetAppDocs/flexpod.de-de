@@ -51,4 +51,4 @@ Die folgende Abbildung zeigt die von Cisco UCS gemanagte Konfiguration von FlexP
 
 image:fp-express-tech-spec_image3.png["Fehler: Fehlendes Grafikbild"]
 
-Weitere Informationen zu dieser Konfiguration finden Sie unter https://www.netapp.com/us/media/nva-1131-deploy.pdf["FlexPod Express mit VMware vSphere 6.7U1 und NetApp AFF A220 mit Direct - Attached IP - basiertem Storage"^].
+Weitere Informationen zu dieser Konfiguration finden Sie unter https://docs.netapp.com/us-en/flexpod/express/express-direct-attach-aff220-deploy_program_summary.html["FlexPod Express mit VMware vSphere 6.7U1 und NetApp AFF A220 mit Direct - Attached IP - basiertem Storage"^].

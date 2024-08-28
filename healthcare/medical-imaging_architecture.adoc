@@ -49,7 +49,7 @@ NetApp SnapMirror bietet branchenführende Datenreplizierungsfunktionen, um medi
 * Zusätzliche Inline-Effizienz mit Netzwerkkomprimierung
 
 
-Weitere Informationen finden Sie hier https://www.netapp.com/us/media/ds-3820.pdf["Hier"^].
+Weitere Informationen finden Sie https://www.netapp.com/pdf.html?item=/media/8327-ds-3820.pdf["Hier"^].
 
 Die folgende Tabelle führt die einzelnen Tiers auf, die für ein typisches Bildgebungssystem benötigt werden, um eine bestimmte Latenz und Durchsatzleistung zu liefern.
 
@@ -224,7 +224,7 @@ Ein typisches Bildgebungssystem verwendet eine N- Tiered Architecture. Die Kernk
 
 Ein typisches medizinisches Bildgebungssystem bietet Zugriff auf Bilder für zwei unterschiedliche Benutzer: Diagnostischer Benutzer/Radiologe oder Arzt, der die Bildgebung bestellt hat.
 
-Radiologen nutzen normalerweise High-End-, Grafikprogramme, die auf High-End-Computing- und Grafikworkstationen ausgeführt werden, die entweder physisch oder als Teil einer virtuellen Desktop-Infrastruktur ausgeführt werden. Wenn es kurz ist, den Weg zu einer virtuellen Desktop-Infrastruktur zu gehen, finden Sie weitere Informationen https://www.netapp.com/us/media/na-flexpod-vdi.pdf["Hier"^].
+Radiologen nutzen normalerweise High-End-, Grafikprogramme, die auf High-End-Computing- und Grafikworkstationen ausgeführt werden, die entweder physisch oder als Teil einer virtuellen Desktop-Infrastruktur ausgeführt werden. Wenn Sie den Weg hin zu einer Virtual Desktop Infrastructure antreten möchten, finden Sie weitere Informationen https://www.netapp.com/pdf.html?item=/media/19872-tr-4190.pdf["Hier"^].
 
 Als der Hurrikan Katrina zwei der größten Lehrkrankenhäuser Louisianas zerstörte, kamen führende Persönlichkeiten zusammen und bauten ein stabiles elektronisches Krankenakten-System mit mehr als 3000 virtuellen Desktops in Rekordzeit auf. Weitere Informationen zur Referenzarchitektur für Anwendungsfälle und zu FlexPod Referenzpaketen finden Sie https://blog.netapp.com/virtual-desktop-infrastructure-bundles["Hier"^].
 
@@ -238,7 +238,7 @@ Das medizinische Bildgebungssystem kann einen Bildzugriff auf eine Ärztegemeins
 
 Medizinische Bildgebungssysteme können auch akademische medizinische Zentren unterstützen, die PACS- oder Bildgebungssysteme für den Einsatz in einem Klassenzimmer benötigen. Zur Unterstützung akademischer Aktivitäten kann ein typisches System für medizinische Bildgebung die Funktionen eines PACS-Systems in einem kleineren System oder einer nur für Lehre bestimmten Bildgebungsumgebung nutzen. Typische anbieterunabhängige Archivierungssysteme und einige medizinische Bildgebungssysteme der Enterprise-Klasse bieten Funktionen zum Morphing von DICOM-Bildern, um die für Lehrzwecke verwendeten Bilder zu anonymisieren. Durch Tag Morphing können medizinische Einrichtungen DICOM-Bilder anbieterunabhängig zwischen medizinischen Bildgebungssystemen verschiedener Anbieter austauschen. Durch Tag Morphing können medizinische Bildgebungssysteme eine unternehmensweite, anbieterneutrale Archivierungsfunktion für medizinische Bilder implementieren.
 
-Medizinische Bildgebungssysteme sind bereits in Betrieb https://www.netapp.com/us/media/sb-flexpod-datacenter-ai.pdf["GPU-basierte Computing-Funktionen"^] Verbesserung menschlicher Workflows durch Vorverarbeitung der Bilder und damit Steigerung der Effizienz. Typische medizinische Bildgebungssysteme der Enterprise-Klasse nutzen die branchenführenden NetApp Storage-Effizienzfunktionen. Medizinische Bildgebungssysteme der Enterprise-Klasse verwenden RMAN für Backup-, Recovery- und Wiederherstellungsvorgänge. Um die Performance zu verbessern und die für das Backup benötigte Zeit zu verkürzen, ist die Snapshot Technologie für Backup-Vorgänge verfügbar. Zudem ist die SnapMirror Technologie für die Replizierung verfügbar.
+Medizinische Bildgebungssysteme werden https://www.netapp.com/pdf.html?item=/media/7398-sb-flexpod-datacenter-aipdf.pdf["GPU-basierte Computing-Funktionen"^] allmählich zur Verbesserung menschlicher Workflows genutzt, indem sie die Bilder vorverarbeiten und so die Effizienz erhöhen. Typische medizinische Bildgebungssysteme der Enterprise-Klasse nutzen die branchenführenden NetApp Storage-Effizienzfunktionen. Medizinische Bildgebungssysteme der Enterprise-Klasse verwenden RMAN für Backup-, Recovery- und Wiederherstellungsvorgänge. Um die Performance zu verbessern und die für das Backup benötigte Zeit zu verkürzen, ist die Snapshot Technologie für Backup-Vorgänge verfügbar. Zudem ist die SnapMirror Technologie für die Replizierung verfügbar.
 
 Die Abbildung unten zeigt die logischen Applikationskomponenten in einer vielschichtigen Architekturansicht.
 
