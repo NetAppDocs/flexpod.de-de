@@ -36,7 +36,7 @@ entries:
     - title: Implementierung von Cisco Nexus 31108PC-V
       url: "/express/express-c-series-c190-deploy_deploy_cisco_nexus_31108pc-v.html"
     - title: Verfahren zur NetApp Storage-Implementierung (Teil 1)
-      url: "/express/express-c-series-c190-deploy_netapp_storage_deployment_procedure_@part_1@.html"
+      url: "/express/express-c-series-c190-deploy_netapp_storage_deployment_procedure_part_1.html"
     - title: Bereitstellung von Rack-Server der Cisco UCS C-Serie
       url: "/express/express-c-series-c190-deploy_deploy_cisco_ucs_c-series_rack_server.html"
     - title: NetApp AFF Storage-Implementierung (Teil 2)
@@ -95,7 +95,7 @@ entries:
     - title: Cisco Nexus 3172P-Implementierungsverfahren
       url: "/express/express-c-series-aff220-deploy_cisco_nexus_3172p_deployment_procedure.html"
     - title: Verfahren zur NetApp Storage-Implementierung (Teil 1)
-      url: "/express/express-c-series-aff220-deploy_netapp_storage_deployment_procedure_@part_1@.html"
+      url: "/express/express-c-series-aff220-deploy_netapp_storage_deployment_procedure_part_1.html"
     - title: Cisco UCS C-Serie Rack-Server-Implementierung Verfahren
       url: "/express/express-c-series-aff220-deploy_cisco_ucs_c-series_rack_server_deployment_procedure.html"
     - title: NetApp Verfahren zur Implementierung von AFF-Storage (Teil 2)
