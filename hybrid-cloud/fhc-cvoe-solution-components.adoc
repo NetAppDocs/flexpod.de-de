@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: hybrid-cloud/fhc-cvoe-solution-components.html 
-keywords: flexpod, epic, bluexp, connector, cvo, active iq, unified manager, cisco, intersight, vsphere, vcenter 
+keywords: flexpod, epic, netapp console, connector, cvo, active iq, unified manager, cisco, intersight, vsphere, vcenter 
 summary: Dieser Abschnitt bietet einen Überblick über die verschiedenen Komponenten, die für diese Lösung erforderlich sind. 
 ---
 = Lösungskomponenten
@@ -47,21 +47,21 @@ Unternehmen aus dem Gesundheitswesen stehen weiterhin unter dem Druck, den Nutze
 * Robuste Datensicherung, Backup, Recovery und Business Continuance
 
 
-FlexPod ist EHR-validiert und unterstützt eine Plattform mit Cisco UCS mit Intel Xeon Prozessoren, Red hat Enterprise Linux (RHEL) und Virtualisierung mit VMware ESXi. Diese Plattform kombiniert mit dem High Comfort Level Ranking von EHR für NetApp Storage mit ONTAP. Kunden können ihre Applikationen im Gesundheitswesen über FlexPod in einer vollständig gemanagten Private Cloud ausführen, die auch mit jedem der Public Cloud-Provider verbunden werden kann.
+FlexPod ist EHR-zertifiziert und unterstützt eine Plattform mit Cisco UCS mit Intel Xeon-Prozessoren, Red Hat Enterprise Linux (RHEL ) und Virtualisierung mit VMware ESXi.  Diese Plattform, kombiniert mit dem hohen Komfortniveau von EHR für NetApp -Speicher mit ONTAP, ermöglicht es Ihnen, Ihre Anwendungen im Gesundheitswesen in einer vollständig verwalteten privaten Cloud über FlexPod auszuführen, die auch mit jedem beliebigen öffentlichen Cloud-Anbieter verbunden werden kann.
 
 
 
-== NetApp BlueXP
+== NetApp Console
 
-BlueXP (ehemals NetApp Cloud Manager) ist eine SaaS-basierte Managementplattform der Enterprise-Klasse, mit der IT-Experten und Cloud-Architekten ihre Hybrid-Multi-Cloud-Infrastruktur mithilfe von NetApp Cloud-Lösungen zentral managen können. Es stellt ein zentrales System für die Anzeige und das Management von lokalem und Cloud-Storage bereit und unterstützt Hybrid- und Cloud-Umgebungen mit unterschiedlichen Cloud-Providern und Konten. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-family/index.html["BlueXP"^].
+NetApp Console ist eine SaaS-basierte Managementplattform der Enterprise-Klasse, die es IT-Experten und Cloud-Architekten ermöglicht, ihre hybride Multi-Cloud-Infrastruktur mithilfe von NetApp Cloud-Lösungen zentral zu verwalten.  Es bietet ein zentralisiertes System zur Anzeige und Verwaltung Ihres lokalen und Cloud-Speichers und unterstützt Hybrid-Cloud-Umgebungen sowie mehrere Cloud-Anbieter und -Konten. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/console-family/index.html["Dokumentation zur NetApp Console"^].
 
 
 
-== Stecker
+== Konsolenagent
 
-Mithilfe einer Connector-Instanz kann BlueXP Ressourcen und Prozesse in einer Public Cloud-Umgebung managen. Connector ist für viele der Funktionen von BlueXP erforderlich und kann in der Cloud oder im On-Premises-Netzwerk implementiert werden.
+Eine Console-Agent-Instanz ermöglicht es der Console, Ressourcen und Prozesse innerhalb einer öffentlichen Cloud-Umgebung zu verwalten.  Für viele der von der Konsole bereitgestellten Funktionen wird ein Konsolenagent benötigt, der in der Cloud oder im lokalen Netzwerk bereitgestellt werden kann.
 
-Der Anschluss wird an folgenden Orten unterstützt:
+Ein Konsolenagent wird an folgenden Standorten unterstützt:
 
 * Amazon Web Services
 * Microsoft Azure
@@ -69,7 +69,7 @@ Der Anschluss wird an folgenden Orten unterstützt:
 * On-Premises
 
 
-Weitere Informationen zu Connector finden Sie im https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Anschlussseite"^].
+link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Erfahren Sie mehr über Konsolenagenten"^].
 
 
 
@@ -88,7 +88,7 @@ Die wichtigsten Vorteile:
 * *Datenschutz-Compliance-Kontrollen.* die Integration mit Cloud Data Sense hilft Ihnen, Datenkontext zu verstehen und sensible Daten zu identifizieren.
 
 
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/["Cloud Volumes ONTAP"^].
+Für detailliertere Informationen siehelink:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/["Cloud Volumes ONTAP"^] Die
 
 
 
@@ -98,7 +98,7 @@ Mit NetApp Active IQ Unified Manager können Sie Ihre ONTAP Storage-Cluster übe
 
 Einige Ereignisse bieten auch Abhilfemaßnahmen, die zur Behebung des Problems ergriffen werden können. Sie können benutzerdefinierte Warnmeldungen für Ereignisse konfigurieren, sodass Sie bei Auftreten von Problemen über E-Mail und SNMP-Traps benachrichtigt werden. Mit Active IQ Unified Manager können Sie die Storage-Anforderungen Ihrer Anwender planen, indem Sie Kapazitäten und Nutzungstrends prognostizieren, um aktuelle Probleme zu vermeiden und so kurzfristige Entscheidungen zu vermeiden, die langfristig zu zusätzlichen Problemen führen können.
 
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^].
 
 
 
@@ -121,7 +121,7 @@ image:fhc-cvoe-image3.png["Dieser Screenshot zeigt die Server-Seite des Cisco In
 
 VMware vSphere ist eine Virtualisierungsplattform, mit der sich große Mengen an Infrastrukturen (einschließlich CPUs, Storage und Netzwerke) als eine nahtlose, vielseitige und dynamische Betriebsumgebung verwalten lassen. Im Gegensatz zu herkömmlichen Betriebssystemen, die eine einzelne Maschine verwalten, aggregiert VMware vSphere die Infrastruktur eines gesamten Rechenzentrums zu einem einzigen Kraftpaket mit Ressourcen, die schnell und dynamisch jeder benötigten Anwendung zugewiesen werden können.
 
-Weitere Informationen über VMware vSphere und seine Komponenten finden Sie unter https://www.vmware.com/products/vsphere.html["VMware vSphere"^].
+Weitere Informationen zu VMware vSphere und seinen Komponenten finden Sie unterlink:https://www.vmware.com/products/vsphere.html["VMware vSphere"^] Die
 
 
 
@@ -129,13 +129,13 @@ Weitere Informationen über VMware vSphere und seine Komponenten finden Sie unte
 
 VMware vCenter Server ermöglicht einheitliches Management aller Hosts und VMs über eine einzige Konsole und aggregiert die Performance-Überwachung von Clustern, Hosts und VMs. VMware vCenter Server bietet Administratoren einen detaillierten Einblick in Status und Konfiguration von Computing-Clustern, Hosts, VMs, Storage, Gastbetriebssystem Und anderen geschäftskritischen Komponenten einer virtuellen Infrastruktur. VMware vCenter verwaltet die umfassenden Funktionen, die in einer VMware vSphere Umgebung verfügbar sind.
 
-Ausführliche Informationen finden Sie unter https://www.vmware.com/products/vcenter.html["VMware vCenter"^].
+Für detaillierte Informationen siehelink:https://www.vmware.com/products/vcenter.html["VMware vCenter"^] Die
 
 
 
 == Hardware- und Software-Versionen
 
-Diese Hybrid Cloud-Lösung kann auf jede FlexPod Umgebung erweitert werden, auf der unterstützte Versionen von Software, Firmware und Hardware ausgeführt werden, wie in definiert http://support.netapp.com/matrix/["NetApp Interoperabilitäts-Matrix-Tool"^], https://ucshcltool.cloudapps.cisco.com/public/["UCS Hardware- und Softwarekompatibilität"^], und https://www.vmware.com/resources/compatibility/search.php["VMware Compatibility Guide"^].
+Diese Hybrid-Cloud-Lösung kann auf jede FlexPod -Umgebung erweitert werden, die unterstützte Versionen von Software, Firmware und Hardware gemäß der Definition in derlink:http://support.netapp.com/matrix/["NetApp Interoperabilitäts-Matrix-Tool"^] ,link:https://ucshcltool.cloudapps.cisco.com/public/["UCS Hardware- und Softwarekompatibilität"^] , Undlink:https://www.vmware.com/resources/compatibility/search.php["VMware Compatibility Guide"^] Die
 
 In der folgenden Tabelle sind die lokalen FlexPod Hardware- und Softwareversionen aufgeführt.
 
@@ -175,13 +175,13 @@ In der folgenden Tabelle sind die lokalen FlexPod Hardware- und Softwareversione
 
 |  | Cisco Intersight Assist Virtual Appliance | 1.0.9-342 
 |===
-In der folgenden Tabelle sind die Versionen von NetApp BlueXP und Cloud Volumes ONTAP aufgeführt.
+Die folgende Tabelle zeigt die Versionen von Console und Cloud Volumes ONTAP .
 
 |===
 | Anbieter | Produkt | Version 
 
 
-| NetApp | BlueXP | 3.9.24 
+| NetApp | Konsole | 3.9.24 
 
 
 |  | Cloud Volumes ONTAP | ONTAP 9.11 

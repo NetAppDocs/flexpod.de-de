@@ -23,6 +23,12 @@ Eine FlexPod Architektur verfügt über die folgenden zusätzlichen Anforderunge
 ** SupportEdge Advisor oder SupportEdge Premium Support für NetApp Systeme
 
 
+* Relevante Verkaufsmerkmale des Verkaufsauftrags zur Unterstützung:
++
+** FlexPod Berechtigungen
+** FlexPod Lösungs-Supportberechtigungen
+
+
 
 
 Weitere Informationen finden Sie im NetApp http://mysupport.netapp.com/matrix["IMT"^].
