@@ -56,7 +56,7 @@ Mit einem umfassenden FC-NVMe wird die vorhandene SAN-Infrastruktur eines Kunden
 
 Eine vorhandene 32-Gbit-FC-SAN-Übertragung kann zur gleichzeitigen Übertragung von NVMe und SCSI-Workloads verwendet werden.
 
-Die folgende Abbildung zeigt das FlexPod Datacenter für FC mit Cisco MDS.
+Die folgende Abbildung veranschaulicht das FlexPod Datacenter für FC mit Cisco MDS.
 
 Weitere Informationen über die FlexPod Konfigurationen und Performance-Vorteile finden Sie unter https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html["Whitepaper: End-to-End-NVMe für FlexPod"^]
 
