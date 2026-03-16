@@ -102,7 +102,7 @@ In der folgenden Tabelle sind die pro Gerät erforderlichen Stromanschlüsse auf
 | DS224C | 2 x C13/C14 
 
 
-| DS460C | 2 x C13/C14 
+| DS460C | 2 x C19/C20 oder 2 x C14/C19 
 
 
 | DS2246 | 2 x C13/C14 
@@ -114,7 +114,7 @@ In der folgenden Tabelle sind die pro Gerät erforderlichen Stromanschlüsse auf
 | E-Series Platten-Shelves | Stromanschlüsse erforderlich 
 
 
-| DE460C | 2 x C14/C20 
+| DE460C | 2 x C19/C20 oder 2 x C14/C19 
 
 
 | DE224C | 2 x C14/C20 
