@@ -13,9 +13,9 @@ summary: NetApp bietet eine zentrale Datenmanagement-Lösung für Enterprise-App
 :imagesdir: ./../media/
 
 
-In Zusammenarbeit mit:image:cisco logo.png["cisco Logo"]
-
 Kamini Singh, NetApp
+
+In Zusammenarbeit mit:image:cisco logo.png["cisco Logo"]
 
 [role="lead"]
 Der Schlüssel zu einer digitalen Transformation liegt darin, einfach mehr Daten zu nutzen. Krankenhäuser generieren große Datenmengen, um ihr Unternehmen zu betreiben und ihre Patienten effektiv zu versorgen. Die Daten werden bei der Behandlung von Patienten und bei der Verwaltung von Terminplänen und medizinischen Ressourcen des Personals erfasst und verarbeitet.
