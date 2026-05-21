@@ -8353,142 +8353,152 @@
   <block id="9c731b980c2b703bfdb439c7056b1bfd" category="admonition">Bitte beachten Sie die <block ref="c4dd6ba7b5ae102345b7377110dc849b" category="inline-link-rx"></block> für die neuesten Informationen zu unterstützten Plattformen mit FabricPool.</block>
   <block id="00ae925249b1dcd734cdb679b48bf8f7" category="list-text">NetApp ONTAP Select</block>
   <block id="9044f591b913b8cf0cc25f90afe3223c" category="admonition">NetApp empfiehlt die Verwendung von All-SSD-FabricPool-lokalen Tiers.</block>
-  <block id="0e658e993dc6099a0da46bca02ad983c" category="paragraph">NetApp ONTAP Software ist auf allen NetApp FAS, AFF und ASA Systemen installiert. FlexPod ist mit ONTAP Software validiert und bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreien Betrieb, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht.</block>
-  <block id="b08cac487db6961f4830fe1f50d9a631" category="section-title">Cisco UCS X-Series Direct</block>
-  <block id="ab2c83112d1106959a02c067da964635" category="paragraph">Cisco UCS X-Series Direct ist eine neue Architektur, die ein Paar Cisco UCS Fabric Interconnect 9108 100G mit Cisco UCS X9508 Chassis und Cisco UCS X-Series Compute nodes integriert, um die UCS X-Series Direct Lösung bereitzustellen.</block>
-  <block id="4e5bfcd6b58f1477e32ceb617ea2e6a2" category="paragraph">Cisco UCS X-Series Direct besteht aus den folgenden Komponenten:</block>
-  <block id="33d22df2af89abdeaab64f6e62aa4d2a" category="list-text">Cisco UCS 9108 100G Fabric Interconnect</block>
-  <block id="9a983605bcc1b03c274722ab5b4fceb7" category="list-text">Cisco UCS X9508 Chassis</block>
-  <block id="7297a8a246f4107073155eb7adf8aad6" category="list-text">Cisco UCS X-Series Compute-Knoten</block>
-  <block id="171463d07e5f804b6e4a5d00f05a9948" category="list-text">Optionale Komponenten: PCIe-Knoten und X-Fabric-Modul</block>
-  <block id="fa54d292263dba156a82cbe5d7634e25" category="inline-link">Cisco UCS X-Series Direkt-Datenblatt</block>
-  <block id="7bd2db3d7d274705cd97bce1a15ba083" category="admonition">Unter diesem Link finden Sie die vollständigen technischen Spezifikationen für UCS X-Direct:<block ref="c6d158517f0137b0ee0fc81034309271" category="inline-link-rx"></block>.</block>
-  <block id="52812d5e9f7f85a41759657770889b4b" category="paragraph">Die technischen Spezifikationen der Komponenten der X-Series Direct entnehmen Sie bitte den nachfolgenden Tabellen.</block>
-  <block id="5108f9823153bf86d424465411769c7e" category="cell">UCS 9108 100G Fabric Interconnect</block>
-  <block id="6667cc003527f70428fbb3f46d896e10" category="cell">UCSX-S9108-100G</block>
-  <block id="c78a25b3d391b3eabe5a4f6e3a159d89" category="inline-link">Cisco UCS 9108 Fabric Interconnect</block>
-  <block id="55941e76508015eb43dd9b6db66a8de4" category="cell"><block ref="55941e76508015eb43dd9b6db66a8de4" category="inline-link-rx"></block></block>
-  <block id="3fbecaa187bec4c0133ee458cb18648e" category="cell">Cisco UCS X-Series Chassis</block>
-  <block id="c42738d7d96a10ba2e13752c497fe352" category="cell"><block ref="d2f7a165d8728317906bc29daa2c85b4" category="inline-link-rx"></block></block>
-  <block id="85a845d3a2419a09e5bc3078a0e2c402" category="cell">Cisco UCS X210c M7</block>
-  <block id="542ae9366fc15c0eac09d9ca0b343ff2" category="cell">UCSX-210C-M7</block>
-  <block id="c80b1ea5b264dcbe01ea1ca703f6ff74" category="inline-link">Cisco UCS X210c M7 Compute-Knoten</block>
-  <block id="54705fac3253e295c3859b5ee543daf0" category="cell"><block ref="54705fac3253e295c3859b5ee543daf0" category="inline-link-rx"></block></block>
-  <block id="aa868f34642b235e56aa100dd29911a6" category="cell">Cisco UCS X210c M8</block>
-  <block id="a6d64f93d7c6293dd77985bd9b59413b" category="cell">UCSX-210C-M8</block>
-  <block id="e735a8b9647bb22edf3884aab9bab721" category="inline-link">Cisco UCS X210c M8 Compute-Knoten</block>
-  <block id="87a2bf74f615f8df54eaed3038c2180f" category="cell"><block ref="87a2bf74f615f8df54eaed3038c2180f" category="inline-link-rx"></block></block>
-  <block id="1fa094101a30dc8d5c01d55ec4e0b2c3" category="cell">Cisco UCS X215c M8</block>
-  <block id="79ee6ae5e350f7d2d17d88640b427dea" category="cell">UCSX-215C-M8</block>
-  <block id="ebcf4fed81a8ec58e9fa2bb56b56655e" category="inline-link">Cisco UCS X215c M8 Compute-Knoten</block>
-  <block id="213d905938651850e0700aec995d4f25" category="cell"><block ref="213d905938651850e0700aec995d4f25" category="inline-link-rx"></block></block>
-  <block id="7d6476a168f796512cd343dbf6647c45" category="cell">Cisco UCS X410c M7</block>
-  <block id="f15000df0fa439ce16f3435962ac49e5" category="cell">UCSX-410C-M7</block>
-  <block id="12951cf21eec347ba4258854c54626b0" category="inline-link">Cisco UCS X410c M7 Compute-Knoten</block>
-  <block id="eb3c277cb9640d4d78fda6eb48405ca2" category="cell"><block ref="eb3c277cb9640d4d78fda6eb48405ca2" category="inline-link-rx"></block></block>
-  <block id="db8fcd946f3ea3ecbb5f6df26d108975" category="cell">Cisco UCS X410c M8</block>
-  <block id="be22b28321184ab2c1fab5ff51ab7621" category="cell">UCSX-410C-M8</block>
-  <block id="fec8623d55f39e0df72c4d65c9a8a88c" category="inline-link">Cisco UCS X410c M8 Compute Node</block>
-  <block id="d534d9e405380c188e8251558dc9a224" category="cell"><block ref="d534d9e405380c188e8251558dc9a224" category="inline-link-rx"></block></block>
-  <block id="03bd80ec3d64c289030b272008786311" category="cell">Cisco UCS X-Series Module</block>
-  <block id="e1aac65c2b6e24c8e8adc95e43ed62ee" category="cell">Cisco UCS 9108 Intelligent Fabric Module</block>
-  <block id="fcfe8e82e41744adc21a0e98c9d0fb10" category="cell">UCSX-I-9108-100G</block>
-  <block id="ccd4443b7fa96e36677438df98acd96a" category="cell"><block ref="ccd4443b7fa96e36677438df98acd96a" category="inline-link-rx"></block></block>
-  <block id="033b7fd69c0efbd849f830986d5a238a" category="cell">Cisco UCS X9516 X-Fabric-Modul</block>
-  <block id="93f609c9836071de030ad98eb9986168" category="cell">UCSX-FS-9516</block>
-  <block id="093c482cedd34b9160b239bf45baa595" category="cell"><block ref="093c482cedd34b9160b239bf45baa595" category="inline-link-rx"></block></block>
-  <block id="134a2787cf332fffd37a3606fe4f65f6" category="cell">Cisco UCS X9416 X-Fabric-Modul</block>
-  <block id="6d746fe8059da3c9368ddffe8db53eff" category="cell">UCSX-FS-9416</block>
-  <block id="ef67dfcf39e97948851ebbffb6b5749d" category="cell"><block ref="dd8de1fc1eca8661d0b04dfdd09619f7" category="inline-link-rx"></block></block>
-  <block id="d4a1f2b08ae3c30faec4f877f6be7b6b" category="paragraph">Cisco UCS C-Series Rack-Server sind in ein- und zwei-HE-Varianten (Rack Units) mit verschiedenen CPU-, Speicher- und I/O-Optionen erhältlich. Die in der folgenden Tabelle aufgeführten Teilenummern beziehen sich auf die Basisserver. Sie beinhalten keine CPUs, Speicher, Festplatten oder Peripheral Component Interconnect Express (PCIe)-Karten. Mehrere Konfigurationsoptionen sind verfügbar und werden in der FlexPod-Architektur unterstützt.</block>
-  <block id="08f285120864063a3664f0b981e85974" category="cell">Cisco UCS C220 M7</block>
-  <block id="185f87b891565a026a599afc6ccf6509" category="cell">UCSC-C220-M7</block>
-  <block id="59bb7a4168ca0727f0e8657c561faece" category="inline-link">Cisco UCS C220 M7 Rack Server</block>
-  <block id="bcff2c86efe0c36653739dbee8dcf43d" category="cell"><block ref="bcff2c86efe0c36653739dbee8dcf43d" category="inline-link-rx"></block></block>
-  <block id="0d88de12c1b3aba2b9ffac63dc85d4af" category="cell">Cisco UCS C220 M8</block>
-  <block id="f5ccd1d71c2ed21d0f2d220921fb6e39" category="cell">UCSC-C220-M8</block>
-  <block id="79c949339648467243f2664b108888d1" category="inline-link">Cisco UCS C220 M8 Rack-Server</block>
-  <block id="0e0837a63f73d1416f17f871c1d92529" category="cell"><block ref="0e0837a63f73d1416f17f871c1d92529" category="inline-link-rx"></block></block>
-  <block id="08f90c3f9daaa88b26f047dc5d0cf3b2" category="cell"><block ref="08f90c3f9daaa88b26f047dc5d0cf3b2" category="inline-link-rx"></block></block>
-  <block id="c49cf51806c8304f47ef0af1cc3583b1" category="cell">Cisco UCS C225 M8</block>
-  <block id="5eb4b81081e3e747c520c2d5f4dc8ccf" category="cell">UCSC-C225-M8</block>
-  <block id="32de8c4c7d70c5cef467c42019e17abb" category="inline-link">Cisco UCS C225 M8 Rack-Server</block>
-  <block id="a15976f50db7ffc9d0598d204824066c" category="cell"><block ref="a15976f50db7ffc9d0598d204824066c" category="inline-link-rx"></block></block>
-  <block id="d08f7047cb41d3f3eb07a1d246224cc8" category="cell">Cisco UCS C240 M7</block>
-  <block id="0ba1dc11236b9c5fb6ffb144afc496e4" category="cell">UCSC-C240-M7</block>
-  <block id="d9a53386c52a3a8c8f311cc1dd2f9a89" category="inline-link">Cisco UCS C240 M7 Rack Server</block>
-  <block id="c61bd2b7a38a51c0719fb6de44c82b54" category="cell"><block ref="c61bd2b7a38a51c0719fb6de44c82b54" category="inline-link-rx"></block></block>
-  <block id="98b8f38cb9a13ca8642e515e19c5bcae" category="cell">Cisco UCS C240 M8</block>
-  <block id="5d9fc3ec46a458610c3b12248cb0d9a9" category="cell">UCSC-C240-M8</block>
-  <block id="4480a773cf291aad9f12830614e6a55c" category="inline-link">Cisco UCS C240 M8 Rack Server</block>
-  <block id="540548b7de484075cad2e648e62b24d4" category="cell"><block ref="540548b7de484075cad2e648e62b24d4" category="inline-link-rx"></block></block>
-  <block id="fbf3f8d4623d9c4266b5e270ab5a0ee9" category="cell"><block ref="fbf3f8d4623d9c4266b5e270ab5a0ee9" category="inline-link-rx"></block></block>
-  <block id="1088a815c23b6f882393e6097af48661" category="cell">Cisco UCS C245 M8</block>
-  <block id="2c29504598d658ae397498e3692de0bb" category="cell">UCSC-C245-M8</block>
-  <block id="2e53148601f2552843e772c481eceb95" category="inline-link">Cisco UCS C245 M8 Rack Server</block>
-  <block id="efa98f10731ee80849f96960caa9f2dc" category="cell"><block ref="efa98f10731ee80849f96960caa9f2dc" category="inline-link-rx"></block></block>
-  <block id="39a715608f33f16328cd082d89f0295b" category="section-title">Cisco Nexus Switches</block>
-  <block id="e07fa2542b3d02c0ddf222a6690071dc" category="paragraph">Redundante Cisco Nexus Switches sind in der FlexPod-Architektur erforderlich.</block>
-  <block id="e887ad7f00d6c8bf280bc10e3fee2f52" category="cell">Cisco Nexus Switch</block>
-  <block id="a0159b12a4e3470c15426cabb652f158" category="cell">Cisco Nexus 9200 Series Switch</block>
-  <block id="c805c717b2ff719e7f051f990444a02e" category="cell"><block ref="c805c717b2ff719e7f051f990444a02e" category="inline-link-rx"></block></block>
-  <block id="a388b76dc45ac18e52a3b75efb35834a" category="cell">Cisco Nexus 9300-Serien-Switch</block>
-  <block id="db7c6a8cf8fb1bedef955b74c1d48458" category="cell"><block ref="db7c6a8cf8fb1bedef955b74c1d48458" category="inline-link-rx"></block></block>
-  <block id="05529d9f87f535089b136d6e6c79152a" category="paragraph">Für alle Cisco Geräte in der FlexPod Express-Architektur sind gültige TSANet-Supportverträge erforderlich.</block>
-  <block id="c03e321ec861308530b2664bf76c15c5" category="admonition">Die benötigten Lizenzen und zugehörigen Teilenummern können je nach Produkt und Konfiguration variieren. Es wird empfohlen, die Lizenzanforderungen vor der Bestellung mit Ihrem Cisco- oder NetApp-Vertriebsmitarbeiter abzuklären.</block>
-  <block id="b7f43873760e77ea41c49202022ab227" category="cell">TSANet</block>
-  <block id="3ea0d3685f27390f9fe371eab129dce9" category="cell"><block ref="3ea0d3685f27390f9fe371eab129dce9" category="inline-link-rx"></block></block>
-  <block id="0d23eba7274fadde661e961150cfe90c" category="section-title">Konnektivitätsanforderungen für FlexPod Express mit NetApp AFF/ ASA/ FAS</block>
-  <block id="9d2250f706e841221ec2094f92705927" category="paragraph">Die Konnektivitätsanforderungen für FlexPod Express mit NetApp AFF/ ASA/ FAS umfassen:</block>
-  <block id="ed36393f337de9358b449ee681cedeee" category="list-text">NetApp Speichercontroller müssen direkt mit den Cisco Nexus Switches verbunden werden.</block>
-  <block id="13aa4a26afcbbdb8ccf34184d272233a" category="list-text">Für UCS X-series Direct-Bereitstellungen können die NetApp Speichercontroller direkt mit den eingebetteten Fabric Interconnects verbunden werden.</block>
-  <block id="708c875b65201b1171582654c9785698" category="list-text">Virtuelle Portkanäle (vPCs) werden benötigt, um die Cisco Nexus 9000-Serie Switches mit den NetApp Speichercontrollern zu verbinden.</block>
-  <block id="3aff03b52067b9fd44f45fb876653a9c" category="list-text">*FlexPod Datacenter.* Diese Plattform ist eine hochskalierbare virtuelle Rechenzentrumsinfrastruktur, die für Workload-Unternehmensanwendungen, Virtualisierung, VDI und öffentliche und private Cloud geeignet ist. FlexPod Datacenter hat seine eigenen Spezifikationen, die in<block ref="0bb629a24a99e06d4ec011831def694a" category="inline-link-rx"></block> dokumentiert sind.</block>
-  <block id="1fd1ccb51d4008bf4d6e7734454719d8" category="section-title">FlexPod Express mit NetApp AFF/ ASA/ FAS</block>
-  <block id="07fabd6fde589c0dfb293502119057ad" category="paragraph">Die Hardwareanforderungen für FlexPod Express-Lösungen, die NetApp AFF, ASA oder FAS Controller als zugrunde liegenden Speicher verwenden, umfassen die in diesem Abschnitt beschriebenen Konfigurationen.</block>
-  <block id="75b256e594cf5a8ba03273e8a68f2c27" category="paragraph">Die Mindesthardwareanforderungen für FlexPod Express sind unten aufgeführt:</block>
-  <block id="7013f56669c02dbe795614370d0c956e" category="list-text">Zwei 10Gbps Standard-Ethernet-Switches in redundanter Konfiguration (Cisco Nexus 9200 und 9300 Modelle)</block>
-  <block id="737ae7047a573165eadb480d2b9b3a7e" category="list-text">Cisco UCS C-Series Standalone-Rackserver mit CIMC-basierter Standalone-Rackserverkonfiguration oder Intersight-verwalteter Konfiguration (IMM) oder Cisco UCS X-Series Direct mit Cisco IMM-Konfiguration</block>
-  <block id="0c31792ebf62debf53351a3c946658a4" category="list-text">Zwei Einstiegs-Controller der Serien NetApp AFF (A20, A30 oder C30), NetApp ASA (A20, A30 oder C30) oder NetApp FAS (2750 oder 2820) in einer Hochverfügbarkeits-(HA)-Paarkonfiguration, die als Zwei-Node-Cluster bereitgestellt wird</block>
-  <block id="518388d8bf47fef25a51b033351e90c6" category="section-title">Softwarevoraussetzungen für FlexPod Express mit NetApp AFF/ ASA/ FAS</block>
-  <block id="c73c43926cb72083a2e88ddeea8dfb6e" category="paragraph">Die Softwarevoraussetzungen für die FlexPod Express mit NetApp AFF/ ASA/ FAS umfassen:</block>
-  <block id="fa39e3184058dc78c3eadf7b10e6ffa9" category="list-text">ONTAP 9.16 oder höher</block>
-  <block id="cfa57e5262733289daf4a15d534d7a2e" category="list-text">Cisco NX-OS Version 10.4(6)M oder höher</block>
-  <block id="4e6a4646d756c190e8091d8c86e93232" category="admonition">Alle in diesem Abschnitt aufgeführten Softwareversionen stellen die Mindestanforderungen für die Hardwarekomponenten (NetApp und Cisco-Komponenten) dar, die in den nachfolgenden Abschnitten des Dokuments aufgeführt sind.</block>
-  <block id="a05525388d2fadefda4af92395d016ea" category="summary">NetApp Speichercontroller bilden die Speichergrundlage in der FlexPod Express-Architektur für die Speicherung von System- und Anwendungsdaten. Dieser Abschnitt listet die verschiedenen NetApp Speicheroptionen in der FlexPod Express-Architektur auf.</block>
-  <block id="8cf756e67e6fe3a58a1405610ba75ad9" category="paragraph">Redundante Controller der Serien AFF, ASA oder FAS sind in der FlexPod Express-Architektur erforderlich. Die Controller führen die ONTAP-Software aus. Bei der Bestellung der Speichercontroller kann die bevorzugte Softwareversion auf den Controllern vorinstalliert werden. Für ONTAP kann das Cluster entweder mit einem Paar Cluster-Interconnect-Switches oder in einer Cluster-ohne-Switches-Konfiguration bereitgestellt werden.</block>
-  <block id="d5c565b8a9c9c59fa0b692c9cbf65edd" category="admonition">Eine Cluster ohne Switches-Konfiguration wird nur für eine Zwei-Node-Konfiguration unterstützt. Cluster-Interconnect-Switches sind für Konfigurationen mit mehr als 4 Knoten erforderlich und für eine Zwei-Node-Konfiguration optional.</block>
-  <block id="230b6be042c6a9e09ceea70fd8e2f108" category="paragraph">Je nach gewählter Speicherplattform stehen verschiedene Optionen und Konfigurationen zur Verfügung. Für Details zu diesen zusätzlichen Komponenten wenden Sie sich bitte an Ihren Vertriebsmitarbeiter.</block>
-  <block id="ee65a1f1b80c1d59eba7dc665cc831bc" category="paragraph">Die in der folgenden Tabelle aufgeführten Controller-Familien eignen sich für den Einsatz in einer FlexPod-Lösung, da ihre Anbindung an die Cisco Nexus Switches nahtlos erfolgt. Siehe die<block ref="0012c2b4de81607ee8d0f71acdd6c9ab" category="inline-link-rx"></block>für spezifische Kompatibilitätsdetails zu den einzelnen Controller-Modellen.</block>
-  <block id="b77cf317a6bb3b0806632ae61052e3ed" category="cell">NetApp Einstiegs-Speicherfamilie für FlexPod Express</block>
-  <block id="ae80ae2c7480651e65f11ec1f29d6ede" category="cell">A20</block>
-  <block id="a0ab09bcd71cc8c8e831f022615b28a4" category="cell"><block ref="a0ab09bcd71cc8c8e831f022615b28a4" category="inline-link-rx"></block></block>
-  <block id="1d54842ba417c6ef95e35c602a80d5ac" category="cell">A30</block>
-  <block id="71642a8ed4161123d0530fb7e39a80f1" category="cell">AFF C-Series</block>
-  <block id="9c5fd388a2ee6ceb65d30336d2fec257" category="cell">C30</block>
-  <block id="6488de7d247a06b442a5018b0d91bfc6" category="inline-link">AFF C-Series Dokumentation</block>
-  <block id="369fac7daa2f8b7e7c135f15db1bd0ed" category="cell"><block ref="369fac7daa2f8b7e7c135f15db1bd0ed" category="inline-link-rx"></block></block>
-  <block id="e74e816dd7cc6f70a065fed35442bdba" category="cell">ASA A-Series</block>
-  <block id="f19fecfa4cd02d0595de1ba8660070b8" category="inline-link">ASA A-Series Dokumentation</block>
-  <block id="411495c9b6bc6c820abb1fe113fdc63d" category="cell"><block ref="411495c9b6bc6c820abb1fe113fdc63d" category="inline-link-rx"></block></block>
-  <block id="eab12603d471c1206ae118fe245f03eb" category="cell">ASA C-Series</block>
-  <block id="06ebd0c9afc2e42f48a4879187f7162c" category="inline-link">ASA C-Series-Dokumentation</block>
-  <block id="6ccb8264c017c1314bf9d314e2d2275c" category="cell"><block ref="6ccb8264c017c1314bf9d314e2d2275c" category="inline-link-rx"></block></block>
-  <block id="149f0ea389848f479bd80af6375b383b" category="cell">FAS</block>
-  <block id="82d9aaf29409f2b1321f31e9bf87f742" category="cell">FAS 2750</block>
-  <block id="b547a5d94845d9471423356c66873bd5" category="inline-link">FAS-Dokumentation</block>
-  <block id="3948a9d911a4ab4fca76092210e66452" category="cell"><block ref="3948a9d911a4ab4fca76092210e66452" category="inline-link-rx"></block></block>
-  <block id="7ec34d91a495121e75b876eb6b33c2ae" category="cell">FAS 2820</block>
-  <block id="c7dd26489686f8b76f6a64795f0045f8" category="paragraph">Für die Speicherkontroller wird mindestens ein NetApp Festplattengehäuse benötigt.</block>
-  <block id="228f628b17255facbba7695d9af12a80" category="cell"><block ref="228f628b17255facbba7695d9af12a80" category="inline-link-rx"></block></block>
-  <block id="c740766e109ecd59d174dc2f65176922" category="cell">NS224 mit NSM100B</block>
-  <block id="2a5e4b862dd1bf5a3b1fa887c48e6ea0" category="paragraph">Die folgende Tabelle listet die NetApp Softwarelizenzierungsoptionen auf.</block>
-  <block id="a2a63972aa167453b51ce7c5db322251" category="cell">ONTAP One oder ONTAP base für AFF und FAS</block>
-  <block id="bb6c553e84ebdbce5d573cf1afb7fecb" category="cell">ONTAP One für SAN für ASA</block>
-  <block id="9bbe0d8f02cd9da80ec2e9b5e267d5d9" category="paragraph">Die folgende Tabelle listet die NetApp Support-Lizenzierungsoptionen für NetApp AFF, ASA und FAS Storage-Systeme auf.</block>
-  <block id="794dd8ccd88e23abed65ea05ccfbfe66" category="summary">FlexPod Express ist eine vordefinierte, nach Best Practices entwickelte Architektur, die auf dem Cisco Unified Computing System (Cisco UCS) und der Cisco Nexus-Familie von Switches aufbaut, und die Speicherschicht wird mit den NetApp AFF-, ASA- oder FAS-Speichersystemen realisiert.</block>
-  <block id="52303a3cfdeba922a67c70e8c2711113" category="paragraph">FlexPod Express ist eine vorkonfigurierte, bewährte Architektur, die auf dem Cisco Unified Computing System (Cisco UCS) und der Cisco Nexus-Familie von Switches basiert, und die Speicherschicht wird mit den NetApp AFF-, ASA- oder FAS-Einstiegsspeichersystemen aufgebaut. FlexPod Express ist eine geeignete Plattform für den Betrieb verschiedener Virtualisierungshypervisoren und Bare-Metal-Betriebssysteme (OSs) sowie Unternehmens-Workloads.</block>
-  <block id="068b348153ec2cbed13b621268bdd199" category="paragraph">FlexPod Express bietet nicht nur eine Basiskonfiguration, sondern auch die Flexibilität, an unterschiedliche Anwendungsfälle und Anforderungen angepasst und optimiert zu werden.</block>
-  <block id="2a409f1fa2a150f2253ac127248488e4" category="paragraph">FlexPod Express unterstützt Speichersysteme, auf denen das NetApp ONTAP Betriebssystem läuft.</block>
-  <block id="7cd01b7a129748a09b50303734dbf37d" category="paragraph">Die NetApp ONTAP Software ist das Betriebssystem, das auf AFF, ASA und FAS-Speichersystemen läuft. ONTAP bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreie Betriebsabläufe, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht.</block>
+  <block id="cc910127c1a0f3009d24973fab296857" category="paragraph">NetApp ONTAP Software ist auf allen NetApp FAS, AFF und AFF All SAN Array (ASA) Systemen installiert. FlexPod ist mit ONTAP Software validiert und bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreie Betriebsabläufe, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht.</block>
+  <block id="161416633732939174f0084bee4e12dd" category="paragraph">Cisco UCS B-Series Blades, die derzeit auf der Cisco UCS Mini-Plattform unterstützt werden, sind B200 M5 und B420 M4. Weitere Blades werden in der folgenden Tabelle aufgeführt, sobald sie auf der Cisco UCS Mini-Plattform unterstützt werden.</block>
+  <block id="f38b8b587e9f14b9e73f43bca53aaca6" category="cell">Cisco UCS B-Series Server</block>
+  <block id="3f39eebc8fd17c2feb641e92c34d12c0" category="cell">UCSB-B200-M5</block>
+  <block id="0c62844a851844dee772ec980d29820f" category="cell"><block ref="0c62844a851844dee772ec980d29820f" category="inline-link-rx"></block></block>
+  <block id="9c08b0397caf8f25e294bcbc2a0e51e0" category="cell">UCSB-B200-M4</block>
+  <block id="ac1175516123e986fbebc9c380c91cb2" category="cell"><block ref="ac1175516123e986fbebc9c380c91cb2" category="inline-link-rx"></block></block>
+  <block id="1bb38dda39bfc4b450ad1fa6b1f2f10f" category="cell">UCSB-B420-M4</block>
+  <block id="5d83ae1d88bf36bed0b1d2449b04f153" category="cell"><block ref="5d83ae1d88bf36bed0b1d2449b04f153" category="inline-link-rx"></block></block>
+  <block id="5cc6fea3917960a74b91b7c9e2facb0e" category="paragraph">Cisco UCS C-Series Blades sind als 1-HE- und 2-HE-Varianten mit verschiedenen CPU-, Speicher- und E/A-Optionen erhältlich. Die in der folgenden Tabelle aufgeführten Teilenummern beziehen sich auf den Basis-Server; sie beinhalten keine CPUs, Speicher, Festplatten, PCIe-Karten oder den Cisco FEX. Es stehen zahlreiche Konfigurationsoptionen zur Verfügung und werden in FlexPod unterstützt.</block>
+  <block id="efb31487552780cc76e9a29d20184693" category="cell">UCSC-C220-M4S</block>
+  <block id="5f3ecc5f801e8e8bb5df99c057b684fa" category="cell">UCSC-C240-M4S</block>
+  <block id="1ba4695c60f2d279f93eed3eb2152ba9" category="cell"><block ref="1ba4695c60f2d279f93eed3eb2152ba9" category="inline-link-rx"></block></block>
+  <block id="1ca9137ed7dc87266aed4d3e04a87f0d" category="cell">UCSC-C460-M4</block>
+  <block id="4135b1f88de8126a1b6c689f2a5518c9" category="cell"><block ref="4135b1f88de8126a1b6c689f2a5518c9" category="inline-link-rx"></block></block>
+  <block id="f43aaff2468c45d0f90ab6e5ed1b9cf5" category="paragraph">Für alle FlexPod Express-Architekturen werden redundante Switches benötigt.</block>
+  <block id="52915eb93f26eeee40e30d06f695984e" category="paragraph">Die FlexPod Express mit NetApp AFF oder FAS-Architektur basiert auf dem Cisco Nexus 31108 Switch. FlexPod Express mit der Cisco UCS Mini (Cisco UCS-managed) Architektur wird mit dem Cisco Nexus 3524 Switch validiert. Diese Konfiguration kann auch mit einem Standard-Switch bereitgestellt werden.</block>
+  <block id="fc9e9a0b578a9b8d829c2cb6bd084c68" category="paragraph">Das FlexPod Express mit E-Series kann mit einem Standard-Switch bereitgestellt werden.</block>
+  <block id="4f96a991d5f91ae3be3cc9021d2c6e2b" category="paragraph">Die folgende Tabelle listet die Teilenummern für das Cisco Nexus Series-Chassis auf; zusätzliche SFP- oder Erweiterungsmodule sind nicht enthalten.</block>
+  <block id="2bbe88f083e6858cdfe374ccaf6be275" category="cell">Cisco Nexus Series Switch</block>
+  <block id="5ad9a3010c89c80bb3aa7a0affd03857" category="cell">N3K-C3048TP-1GE</block>
+  <block id="bca15c4c99e7cd3f6ddc54c4b4612d5d" category="cell"><block ref="bca15c4c99e7cd3f6ddc54c4b4612d5d" category="inline-link-rx"></block></block>
+  <block id="f9be542096d7b1ab5d2d93607faeda17" category="cell">N3K-C31108PC-V</block>
+  <block id="3707cb9d69f6ca356e13d71259590dd3" category="cell">N9K-C9396PX</block>
+  <block id="3b73c0ec0414b0e1e64751a894762753" category="cell"><block ref="3b73c0ec0414b0e1e64751a894762753" category="inline-link-rx"></block></block>
+  <block id="c7e9fa4b09131bf2dca41fb8fb160730" category="cell">Cisco Nexus 3172</block>
+  <block id="8c04dff9e93fca86fc136c09b31a6a42" category="cell">N3K-C3172</block>
+  <block id="603af49aa411100c77de6e505d0b6801" category="cell"><block ref="603af49aa411100c77de6e505d0b6801" category="inline-link-rx"></block></block>
+  <block id="11651dc58d0730f5034b8d0eb347e9a6" category="paragraph">Für alle Cisco-Geräte in der FlexPod Express-Architektur sind gültige SMARTnet-Supportverträge erforderlich.</block>
+  <block id="41ff4d4c2bfb1ad6625676e61801ba88" category="admonition">Die erforderlichen Lizenzen und die Teilenummern für diese Lizenzen sollten von Ihrem Vertriebsmitarbeiter überprüft werden, da sie je nach Produkt unterschiedlich sein können.</block>
+  <block id="8f16724e5369868d6e34483257829468" category="cell">SMARTnet 24x7x4</block>
+  <block id="f312eeb62002bbf3617b218baf8ae4da" category="cell"><block ref="f312eeb62002bbf3617b218baf8ae4da" category="inline-link-rx"></block></block>
+  <block id="28a658c09df622f2d6f953483678d3a2" category="section-title">Konnektivitätsanforderungen für FlexPod Express mit NetApp FAS</block>
+  <block id="2467c21b33489260420ee026bba07a71" category="paragraph">Die Konnektivitätsanforderungen für FlexPod Express mit NetApp FAS umfassen:</block>
+  <block id="e8a8ee9f387175a38ab3cd7ab8c9c450" category="list-text">NetApp FAS-Speichercontroller müssen direkt mit den Cisco Nexus Switches verbunden werden, außer in der Cisco UCS-verwalteten Konfiguration, in der die Speichercontroller mit den Fabric Interconnects verbunden sind.</block>
+  <block id="20f5c05d802f86a9dc5a71123dcf7f90" category="list-text">Virtuelle Portkanäle (vPCs) werden benötigt, um die Cisco Nexus 3000/9000-Serie Switches mit den NetApp Speichercontrollern zu verbinden.</block>
+  <block id="e504d8cf4401a55e1b0165ee1b3e65c1" category="section-title">Konnektivitätsanforderungen für FlexPod Express mit NetApp E-Series</block>
+  <block id="828aa04bde11fb714ecad3836974965c" category="paragraph">Die Konnektivitätsanforderungen für FlexPod Express mit E-Series umfassen:</block>
+  <block id="78f7b3e86fb75185493f675cd8008b43" category="list-text">Die Speichercontroller der E-Series müssen direkt mit den Fabric Interconnects verbunden werden.</block>
+  <block id="5b364171b0c8793377902d6d0651c2ca" category="list-text">Zwischen den Kernkomponenten von FlexPod sollten keine zusätzlichen Geräte geschaltet werden.</block>
+  <block id="e8f973aa66dd486a45698bd79073f3a3" category="list-text">Zwischen den Fabric Interconnects und den Ethernet-Switches sind vPCs erforderlich.</block>
+  <block id="a11b95a855c1b54b057581b64e849672" category="section-title">Konnektivitätsanforderungen für FlexPod Express mit NetApp AFF</block>
+  <block id="16badd8a3ee31de86136a03964051924" category="paragraph">Die Verbindungsanforderungen für FlexPod Express mit NetApp AFF umfassen:</block>
+  <block id="20a982ddbb8534dcddbeb2403b3aa48b" category="list-text">NetApp AFF-Speichercontroller müssen direkt mit den Cisco Nexus-Switches verbunden werden, außer in der Cisco UCS–verwalteten Konfiguration, in der die Speichercontroller mit den Fabric Interconnects verbunden sind.</block>
+  <block id="929267c420e3d3c55cf94c77cb6278ff" category="paragraph">Es gibt drei FlexPod Plattformen:</block>
+  <block id="b751a075630ee799e9ae603044754240" category="list-text">*FlexPod Datacenter.* Diese Plattform ist eine hochskalierbare virtuelle Rechenzentrumsinfrastruktur, die für Workload-Unternehmensanwendungen, Virtualisierung, VDI und öffentliche und private Cloud geeignet ist. FlexPod Datacenter hat seine eigenen Spezifikationen, die in<block ref="c74831bb1a85ac0f8575eb8eeac86329" category="inline-link-rx"></block> dokumentiert sind.</block>
+  <block id="003f30db243c2dbde6df76f3c72b3ee0" category="section-title">FlexPod Express mit NetApp FAS</block>
+  <block id="84daec59b75a10e0cd013d1db7a434f5" category="paragraph">Die Hardwareanforderungen für FlexPod Express-Lösungen, die NetApp FAS Controller für den zugrunde liegenden Speicher verwenden, umfassen die in diesem Abschnitt beschriebenen Konfigurationen.</block>
+  <block id="d889bada95a4507597263f4085f7eb35" category="section-title">CIMC-basierte Konfiguration (eigenständige Rack-Server)</block>
+  <block id="dbf88aea6907acd1a2ddf8af6778500b" category="paragraph">Die Konfiguration des Cisco Integrated Management Controller (CIMC) umfasst die folgenden Hardwarekomponenten:</block>
+  <block id="77adde3767ae2cc82097445aa8b15e86" category="list-text">Zwei 10-Gbit/s-Standard-Ethernet-Switches in redundanter Konfiguration (Cisco Nexus 31108 wird empfohlen, mit Unterstützung für Cisco Nexus 3000 und 9000 Modelle)</block>
+  <block id="98b00d8d43ad07f702f22f5c8b541ca2" category="list-text">Cisco UCS C-Series Standalone-Rackserver</block>
+  <block id="e5974ac049da72bf0d9c2228215d373b" category="list-text">Zwei AFF C190, AFF A250, FAS2600 oder FAS 2700 Controller in einer Hochverfügbarkeits-(HA)-Paarkonfiguration, die als Zwei-Node-Cluster bereitgestellt wird</block>
+  <block id="1bd4b426108264f2676dc78d9d2018da" category="section-title">Cisco UCS-verwaltete Konfiguration</block>
+  <block id="b2d15a256201c5ef01bc4171f55f63a5" category="paragraph">Die Cisco UCS-verwaltete Bestätigung umfasst die folgenden Hardwarekomponenten:</block>
+  <block id="ff7cdf168363b590d56a466baa3afde4" category="list-text">Zwei 10-Gbit/s-Standard-Ethernet-Switches in redundanter Konfiguration (Cisco Nexus 3524 wird empfohlen)</block>
+  <block id="406d169fa8f2549e3ad818dfcdb19b11" category="list-text">Ein Cisco UCS 5108 Wechselstrom-Blade-Server-Chassis</block>
+  <block id="086baf60c6e72c66b3d26f73749806e4" category="list-text">Zwei Cisco UCS 6324 Fabric Interconnects</block>
+  <block id="441c43a56d0619fd5ae52f04a07feaf6" category="list-text">Cisco UCS B-Series Server (mindestens vier Cisco UCS B200 M5 Blade-Server)</block>
+  <block id="6e1c422f8099cdf6eb51d54a7f387fc7" category="list-text">Zwei AFF C190, AFF A250, FAS2750 oder FAS2720 Controller in einer HA-Paarkonfiguration (erfordert zwei verfügbare Zieladapter 2 [UTA2] Ports pro Controller)</block>
+  <block id="0a83f68af275e8c4353563c551c8994b" category="section-title">FlexPod Express mit E-Serie</block>
+  <block id="b0a4ddda393f203e4b071531f5a7f619" category="paragraph">Die Hardwarevoraussetzungen für die FlexPod Express-Konfiguration mit E-Series-Starter umfassen:</block>
+  <block id="5b0208ade6c01d9081b5843bdfb89e40" category="list-text">Ein Cisco UCS Mini-Chassis 5108 AC2 oder DC2 (die Cisco UCS 6324 fabric interconnects werden nur im AC2- und DC2-Chassis unterstützt)</block>
+  <block id="6b83128e0bebf22e449e2c64d1d04814" category="list-text">Cisco UCS B-Series Server (mindestens zwei Cisco UCS B200 M4 Blade-Server)</block>
+  <block id="78b8483558b26cd46fee2865b0cd79f8" category="list-text">Eine HA-Paarkonfiguration eines E-Series E2824-Speichersystems mit mindestens 12 Festplattenlaufwerken</block>
+  <block id="a280fbd318da098dcb3ca49ce43a800a" category="list-text">Zwei 10-Gbit/s-Standard-Ethernet-Switches in redundanter Konfiguration (vorhandene Switches im Rechenzentrum können verwendet werden)</block>
+  <block id="de4db249ee3e2be867ce1546536f4ab0" category="paragraph">Diese Hardwarekomponenten werden für die Einrichtung einer Starterkonfiguration der Lösung benötigt; zusätzliche Blade-Server und Festplatten können bei Bedarf hinzugefügt werden. Das Speichersystem E-Series E2824 kann durch eine höhere Plattform ersetzt und auch als All-Flash-System betrieben werden.</block>
+  <block id="986180b457f622bd099ee2687cd8378d" category="section-title">Softwarevoraussetzungen für FlexPod Express mit NetApp AFF oder FAS</block>
+  <block id="be062f8ed4a46c02546491540d98e022" category="paragraph">Die Softwarevoraussetzungen für die FlexPod Express mit NetApp FAS umfassen:</block>
+  <block id="d3426be49616eaf1b7e70f69c8de7848" category="list-text">ONTAP 9.1 oder höher</block>
+  <block id="224933be9d4d10a0fbff60cbd71f2cb1" category="list-text">Cisco NX-OS Version 7.0(3)I6(1) oder höher</block>
+  <block id="e076f9c04b344d5f8b351379153e417e" category="list-text">In der von Cisco UCS verwalteten Konfiguration, Cisco UCS Manager UCS 4.0(1b)</block>
+  <block id="86617f86b30dd24f1bd4725a98b449f5" category="section-title">Softwarevoraussetzungen für FlexPod Express mit E-Series</block>
+  <block id="aa9021c3475dd0f007a2c8fdeee731ce" category="paragraph">Die Softwarevoraussetzungen für den FlexPod Express mit E-Series umfassen:</block>
+  <block id="5de9fd80c68cb9370e0ae8e8dd120d07" category="list-text">E-Series SANtricity Software 11.30 oder höher</block>
+  <block id="2bb7ee63b402ba30890b4940ed00ca62" category="list-text">Cisco UCS Manager 4.0(1b).</block>
+  <block id="0674dd6b190b5769ec2b28d3d5cf0da3" category="paragraph">Alle Software muss in der <block ref="542750ff2ff69f0b5f9f0ab1166bb952" category="inline-link-rx"></block> aufgeführt und unterstützt sein.</block>
+  <block id="4ba8114dd624dc2130553b7742f70d88" category="section-title">NetApp FAS</block>
+  <block id="6f4427b59f55f6827f3d3145a95ee28d" category="paragraph">Redundante Controller der Serien AFF C190, AFF A220 oder FAS2750 sind in der FlexPod Express-Architektur erforderlich. Die Controller führen die ONTAP-Software aus. Bei der Bestellung der Speichercontroller kann die bevorzugte Softwareversion auf den Controllern vorinstalliert werden. Für ONTAP kann das Cluster entweder mit einem Paar Cluster-Interconnect-Switches oder in einer Cluster ohne Switches-Konfiguration bereitgestellt werden.</block>
+  <block id="791ddb7a7ddefe9ef8c91c03bbd4fd71" category="paragraph">Die in der folgenden Tabelle aufgeführten Teilenummern beziehen sich auf einen leeren Controller. Je nach gewählter Speicherplattform stehen verschiedene Optionen und Konfigurationen zur Verfügung. Für Details zu diesen zusätzlichen Komponenten wenden Sie sich bitte an Ihren Vertriebsmitarbeiter.</block>
+  <block id="3eab1bbd4a3f05ea0803f3bcf5fac9e5" category="cell">FAS2750</block>
+  <block id="a95aa28d4b3530db8d3db453e8c20ab5" category="cell"><block ref="a95aa28d4b3530db8d3db453e8c20ab5" category="inline-link-rx"></block></block>
+  <block id="16327cd02ebd080bd4ab1439ff960ddc" category="cell">FAS2720</block>
+  <block id="b6000f9eed7f8ea9ee4632bd2f77961a" category="cell">AFF C190</block>
+  <block id="cbea754cca3463101f74bfb7d1bc03d6" category="cell"><block ref="cbea754cca3463101f74bfb7d1bc03d6" category="inline-link-rx"></block></block>
+  <block id="8fd3ca5f66dff5be16e79560dd28171e" category="cell">AFF A220</block>
+  <block id="3781cddbae6140211cb434f6417882ce" category="section-title">Speicher der E-Series</block>
+  <block id="4902aa44336408dddd38c0479fe504ef" category="paragraph">Ein HA-Paar von NetApp E2800 Series Controllern ist in der FlexPod Express-Architektur erforderlich. Die Controller führen das SANtricity OS aus.</block>
+  <block id="53c263cd06df58fafb10fa135e0f2e44" category="cell"><block ref="53c263cd06df58fafb10fa135e0f2e44" category="inline-link-rx"></block></block>
+  <block id="de2be91fbb0de06f0b2732c5a99e11c3" category="section-title">NetApp Ethernet-Erweiterungsmodule</block>
+  <block id="8dfa7ec1924d6836cd846ce203c23dc5" category="paragraph">Die folgende Tabelle listet die NetApp FAS10GbE-Adapteroptionen auf.</block>
+  <block id="7f3028ae831db8dc789fcaf5083b67a1" category="cell">NetApp X1117A</block>
+  <block id="7ebf4cf225b0039554b11ba9739e96f6" category="cell"><block ref="7ebf4cf225b0039554b11ba9739e96f6" category="inline-link-rx"></block></block>
+  <block id="032ae7705e1b64f4c8f06ff0e9b7e2c3" category="paragraph">Die Speichersysteme der Serien FAS2500 und 2600 verfügen über integrierte 10GbE-Ports.</block>
+  <block id="e23d7f86a0278da7e86ce88ca3098b9f" category="paragraph">Der NetApp X1117A Adapter ist für FAS8020-Speichersysteme vorgesehen.</block>
+  <block id="f54e4b7933ef38204949d3a83481962e" category="paragraph">Die folgende Tabelle listet die Optionen des E-Series 10GbE-Adapters auf.</block>
+  <block id="989d8b1efd9728a1f4403d859cfafa07" category="cell">10GbE iSCSI/16Gb FC 4-Port</block>
+  <block id="8deedaecaf3bd8a376053c8fe5b36120" category="cell">10GbE iSCSI/16Gb FC 2-Port</block>
+  <block id="1bc638deca35e86ccf9d6865333e96a6" category="paragraph">Die Speichersysteme der Serie E2824 verfügen über integrierte 10GbE-Ports.</block>
+  <block id="97b5213b54614d160f129b298de19346" category="paragraph">Die 10GbE iSCSI/16Gb FC 4-Port-Host-Schnittstellenkarte (HIC) kann für eine höhere Portdichte verwendet werden.</block>
+  <block id="aff526161ed70a6f9d6b85b6800e12d8" category="paragraph">Die Onboard-Ports und der HIC können je nach aktivierter Funktion in SANtricity OS als iSCSI-Adapter oder FC-Adapter fungieren.</block>
+  <block id="8dc2a05b711e433f817d77bc37b8e318" category="paragraph">Weitere Informationen zu den unterstützten Adapteroptionen finden Sie im Abschnitt „Adapter“ von <block ref="ad8f1191d953a17400c53bce24cbde3e" category="inline-link-rx"></block>.</block>
+  <block id="e587981e2cc19bde7c343adbd392b487" category="paragraph">Für Speicherkontroller wird mindestens ein NetApp Festplattengehäuse benötigt. Der ausgewählte NetApp Gehäusetyp bestimmt, welche Laufwerkstypen in diesem Gehäuse verfügbar sind.</block>
+  <block id="aa2619dafbcb6dd49712ffa15d6e70ca" category="paragraph">Die Controller der Serien FAS2700 und FAS2600 werden als Konfiguration mit zwei Speichercontrollern sowie im selben Gehäuse untergebrachten Festplatten angeboten. Diese Konfiguration ist mit SATA- oder SAS-Laufwerken verfügbar; daher sind zusätzliche externe Festplattengehäuse nur dann erforderlich, wenn Leistungs- oder Kapazitätsanforderungen mehr Festplatten erfordern.</block>
+  <block id="01c732ddbe5cf9a405604940095bb567" category="paragraph">Alle Teilenummern für Festplattengehäuse beziehen sich auf das leere Gehäuse mit zwei AC-Netzteilen. Weitere Teilenummern erhalten Sie von Ihrem Vertriebsmitarbeiter.</block>
+  <block id="2ccff5b6fc2b318863489fe23166a10f" category="paragraph">Die Teilenummern für Festplattenlaufwerke variieren je nach Größe und Formfaktor der Festplatte, die Sie kaufen möchten. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um weitere Teilenummern zu erhalten.</block>
+  <block id="44f1e702e4381b727b9b467e6deb1457" category="cell">DS212C-0-12</block>
+  <block id="e19c8e25dcabb60416fbaf4aa1df046b" category="inline-link-macro">Technische Spezifikationen für Festplattengehäuse und Speichermedien Unterstützte Laufwerke im NetApp Hardware Universe</block>
+  <block id="2bec892ce742e8c73332c7bc09f14b12" category="cell"><block ref="2bec892ce742e8c73332c7bc09f14b12" category="inline-link-macro-rx"></block></block>
+  <block id="633f96f7409deb7e8f37e73fd09d0b49" category="cell">DS224C-0-24</block>
+  <block id="8420e25ff187188cdf1350dea3e0da50" category="cell">DS460C-0-60</block>
+  <block id="947b2a122e29ff37898607afe1982ac4" category="inline-link-macro">Technische Spezifikationen für Festplattengehäuse und Speichermedien Unterstützte Laufwerke im NetApp Hardware Universe</block>
+  <block id="5ff0f5fdd5ee93de0b72179921b632c7" category="cell"><block ref="5ff0f5fdd5ee93de0b72179921b632c7" category="inline-link-macro-rx"></block></block>
+  <block id="5c8ec48c5b82542591c0713df834204e" category="cell">X559A-R6</block>
+  <block id="be38be39f95912dc5d7540b6eab3675b" category="cell">X24M-R6</block>
+  <block id="a35582cda1497b785cabaa95e67fda6e" category="cell">DS4486</block>
+  <block id="dd80b8e252131fa8d01cd79345fa248a" category="cell">DS4486-144TB-R5-C</block>
+  <block id="78377b1fee9a1d92a41f9a862331f66a" category="paragraph">Für Storage-Controller, die keine Laufwerke in ihrem Gehäuse unterbringen, ist mindestens ein NetApp Festplattengehäuse erforderlich. Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shelf verfügbar sind.</block>
+  <block id="6a70b0dc6f4898b15d42b97a834778d0" category="paragraph">Die Controller der E2800-Serie werden als Konfiguration angeboten, die zwei Speichercontroller plus Festplatten umfasst, die in einem unterstützten Festplattengehäuse untergebracht sind. Diese Konfiguration ist mit SSD- oder SAS-Laufwerken verfügbar.</block>
+  <block id="f69937b358d3964065cdd4699ed6cc71" category="paragraph">Die folgende Tabelle listet die NetApp Festplattengehäuseoptionen und die für jeden Gehäusetyp unterstützten Laufwerke auf, die Sie im NetApp Hardware Universe finden. Folgen Sie dem Hardware Universe-Link, wählen Sie die Version von ONTAP, die Sie verwenden, und wählen Sie dann den Gehäusetyp aus. Klicken Sie unter dem Gehäusebild auf „Unterstützte Laufwerke“, um die für bestimmte Versionen von ONTAP und die Festplattengehäuse unterstützten Laufwerke anzuzeigen.</block>
+  <block id="57bbc77af8a105b9a809e104576e41f3" category="cell">E-X5730A-DM-0E-C</block>
+  <block id="b6392f00acb980e1e1e3a8d82c32aa0a" category="cell">E-X5721A-DM-0E-C</block>
+  <block id="1968845ff3f8eb770c5023b2b97452ca" category="cell">E-X5723A-DM-0E-C</block>
+  <block id="0af8a804b712d0825208533faf65cb71" category="cell"><block ref="0af8a804b712d0825208533faf65cb71" category="inline-link-macro-rx"></block></block>
+  <block id="e9cdd46337310a645aec0a674a365f9c" category="paragraph">Die folgende Tabelle listet die NetApp FAS-Softwarelizenzierungsoptionen auf.</block>
+  <block id="fa222d7270c823d42a7aa65b759f6af1" category="cell">Basis-Clusterlizenz</block>
+  <block id="b3a478327ab835bf2518a6dcd305aca6" category="paragraph">Die folgende Tabelle listet die Softwarelizenzierungsoptionen der E-Series auf.</block>
+  <block id="5a020197814e93aa70dec9cef71cbea2" category="cell">Standardfunktionen</block>
+  <block id="ad28f33b7e604cc3e6f9e3bdbb376b87" category="cell">Premium-Funktionen</block>
+  <block id="1d6cb8d880e983c90f1b5fe9f10dec29" category="paragraph">Die folgende Tabelle listet die NetApp Support-Lizenzierungsoptionen für NetApp FAS.</block>
+  <block id="813e53e7bb54b15e72348ce9fe93dbdc" category="paragraph">Die folgende Tabelle listet die NetApp Support-Lizenzierungsoptionen für E-Series-Speicher auf.</block>
+  <block id="ef63debe35aa2ea907cf5d6ba93bbca3" category="cell">Premium-Hardware-Support 4 Stunden vor Ort; Monate: 36</block>
+  <block id="3700267a6a1c84c57290ba35d60b6065" category="cell">SVC-O2-4HR-E</block>
+  <block id="9f65492afee4fdfba75618fed6d0f9dd" category="cell">Softwareunterstützung</block>
+  <block id="35650dfddfa3359e3aa85c6716443b52" category="cell">SW-SSP-O2-4HR-E</block>
+  <block id="6fa548f2ea82ea7bbec17cd526290147" category="cell">Erstinstallation</block>
+  <block id="bb0003710f860d01ecd5e29fd0d58e46" category="cell">SVC-INST-O2-4HR-E</block>
+  <block id="cbd798af29c6d6c7309a2099d7629d42" category="summary">FlexPod Express ist eine vordefinierte, nach Best Practices entwickelte Architektur, die auf dem Cisco Unified Computing System (Cisco UCS) und der Cisco Nexus Familie von Switches aufbaut, und die Speicherschicht wird mithilfe des NetApp FAS oder des NetApp E-Series Storage realisiert.</block>
+  <block id="835c125660e1b86697ee2951435a5d2d" category="doc">TR-4293: FlexPod Express-Technische Spezifikationen</block>
+  <block id="59dad7986b7e1d4c7d25feadecf54af7" category="paragraph">Karthick Radhakrishnan, Arvind Ramakrishnan, Lindsey Street, Savita Kumari, NetApp</block>
+  <block id="01b5eb7de901fc377f6709faad98f27e" category="paragraph">FlexPod Express ist eine vorkonfigurierte, bewährte Architektur, die auf dem Cisco Unified Computing System (Cisco UCS) und der Cisco Nexus-Familie von Switches basiert, und die Speicherschicht wird mit NetApp FAS oder NetApp E-Series Storage realisiert. FlexPod Express eignet sich als Plattform für den Betrieb verschiedener Virtualisierungshypervisoren und Bare-Metal-Betriebssysteme (OSs) sowie Enterprise-Workloads.</block>
+  <block id="b57f077428dce4df34f2d8532f2648c5" category="paragraph">FlexPod Express bietet nicht nur eine Basiskonfiguration, sondern auch die Flexibilität, an unterschiedliche Anwendungsfälle und Anforderungen angepasst und optimiert zu werden. Dieses Dokument kategorisiert die FlexPod Express-Konfigurationen anhand des verwendeten Speichersystems, FlexPod Express mit NetApp FAS und FlexPod Express mit E-Series.</block>
+  <block id="5906d6dbdea0ad13566afd9cead9fc2c" category="paragraph">FlexPod Express unterstützt Speichersysteme, die NetApp ONTAP oder SANtricity Betriebssysteme ausführen.</block>
+  <block id="07bb9fea02eb345871ff44646d8ceb97" category="paragraph">Die NetApp ONTAP Software ist das Betriebssystem, das auf AFF und FAS Storage-Systemen läuft. ONTAP bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreie Betriebsabläufe, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht.</block>
+  <block id="02a5537e181da938c0f5cb453ba3d4a7" category="section-title">E-Series SANtricity Software</block>
+  <block id="0ba0549652aeb08deee908e7e20e4817" category="paragraph">Die E-Series SANtricity Software ist das Betriebssystem, das auf E-Series-Speichersystemen läuft. SANtricity bietet ein hochflexibles System, das unterschiedlichen Anwendungsanforderungen gerecht wird und integriert hohe Verfügbarkeit sowie eine Vielzahl von Datenschutzfunktionen.</block>
+  <block id="54ea526e0f7043f1dc938cd7369a4327" category="inline-link">SANtricity-Produktseite</block>
+  <block id="6b5301ce1cf7e0e48684f0dfb047d000" category="paragraph">Weitere Informationen finden Sie unter<block ref="886f8cec6f6fad388084013f5ad16d82" category="inline-link-rx"></block>.</block>
 </blocks>

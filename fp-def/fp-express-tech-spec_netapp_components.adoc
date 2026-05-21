@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec__netapp_components.html 
-keywords: storage, controller, options, fas, aff, asa, disk, shelves, licensing, software 
-summary: NetApp Speichercontroller bilden die Speichergrundlage in der FlexPod Express-Architektur für die Speicherung von System- und Anwendungsdaten. Dieser Abschnitt listet die verschiedenen NetApp Speicheroptionen in der FlexPod Express-Architektur auf. 
+keywords: storage, controller, options, fas, e, series, disk, shelves, licensing, software 
+summary: NetApp Storage-Controller bilden die Storage-Grundlage in der FlexPod Express Architektur für Boot- und Applikationsdaten. In diesem Abschnitt werden die verschiedenen NetApp Optionen in der Architektur von FlexPod Express aufgeführt. 
 ---
 = Komponenten von NetApp
 :hardbreaks:
@@ -20,89 +20,195 @@ NetApp Storage-Controller bilden die Storage-Grundlage in der FlexPod Express Ar
 
 == Optionen für NetApp Storage Controller
 
-Redundante Controller der Serien AFF, ASA oder FAS sind in der FlexPod Express-Architektur erforderlich. Die Controller führen die ONTAP-Software aus. Bei der Bestellung der Speichercontroller kann die bevorzugte Softwareversion auf den Controllern vorinstalliert werden. Für ONTAP kann das Cluster entweder mit einem Paar Cluster-Interconnect-Switches oder in einer Cluster-ohne-Switches-Konfiguration bereitgestellt werden.
 
 
-NOTE: Eine Cluster ohne Switches-Konfiguration wird nur für eine Zwei-Node-Konfiguration unterstützt. Cluster-Interconnect-Switches sind für Konfigurationen mit mehr als 4 Knoten erforderlich und für eine Zwei-Node-Konfiguration optional.
+== NetApp FAS
 
-Je nach gewählter Speicherplattform stehen verschiedene Optionen und Konfigurationen zur Verfügung. Für Details zu diesen zusätzlichen Komponenten wenden Sie sich bitte an Ihren Vertriebsmitarbeiter.
+Redundante Controller der Serien AFF C190, AFF A220 oder FAS2750 sind in der FlexPod Express-Architektur erforderlich. Die Controller führen die ONTAP-Software aus. Bei der Bestellung der Speichercontroller kann die bevorzugte Softwareversion auf den Controllern vorinstalliert werden. Für ONTAP kann das Cluster entweder mit einem Paar Cluster-Interconnect-Switches oder in einer Cluster ohne Switches-Konfiguration bereitgestellt werden.
 
-Die in der folgenden Tabelle aufgeführten Controller-Familien eignen sich für den Einsatz in einer FlexPod-Lösung, da ihre Anbindung an die Cisco Nexus Switches nahtlos erfolgt. Siehe die http://hwu.netapp.com/["NetApp Hardware Universe"^]für spezifische Kompatibilitätsdetails zu den einzelnen Controller-Modellen.
+Die in der folgenden Tabelle aufgeführten Teilenummern beziehen sich auf einen leeren Controller. Je nach gewählter Speicherplattform stehen verschiedene Optionen und Konfigurationen zur Verfügung. Für Details zu diesen zusätzlichen Komponenten wenden Sie sich bitte an Ihren Vertriebsmitarbeiter.
 
 |===
-| NetApp Einstiegs-Speicherfamilie für FlexPod Express | Modell | Technische Spezifikationen 
+| Storage Controller | FAS Teilenummer | Technische Spezifikationen 
 
 
-.2+| AFF A-Serie | A20 .2+| https://www.netapp.com/pdf.html?item=/media/7828-ds-3582-aff-a-series-ai-era.pdf["AFF A-Series - Dokumentation"] 
+| FAS2750 | Basierend auf den ausgewählten Optionen | https://www.netapp.com/us/products/storage-systems/hybrid-flash-array/fas2700.aspx[] 
 
 
-| A30 
+| FAS2720 | Basierend auf den ausgewählten Optionen | https://www.netapp.com/us/products/storage-systems/hybrid-flash-array/fas2700.aspx[] 
 
 
-| AFF C-Series | C30 | https://www.netapp.com/pdf.html?item=/media/81583-ds-4240-aff-c-series.pdf["AFF C-Series Dokumentation"] 
+| AFF C190 | Basierend auf den ausgewählten Optionen | https://www.netapp.com/us/products/entry-level-aff.aspx[] 
 
 
-.2+| ASA A-Series | A20 .2+| https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["ASA A-Series Dokumentation"] 
+| AFF A220 | Basierend auf den ausgewählten Optionen | https://www.netapp.com/us/documentation/all-flash-fas.aspx[] 
 
 
-| A30 
+| FAS2620 | Basierend auf den ausgewählten Optionen | http://www.netapp.com/us/products/storage-systems/fas2600/fas2600-tech-specs.aspx[] 
 
 
-| ASA C-Series | C30 | https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["ASA C-Series-Dokumentation"] 
-
-
-.2+| FAS | FAS 2750 .2+| https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS-Dokumentation"] 
-
-
-| FAS 2820 
+| FAS2650 | Basierend auf den ausgewählten Optionen | http://www.netapp.com/us/products/storage-systems/fas2600/fas2600-tech-specs.aspx[] 
 |===
+
+
+=== Speicher der E-Series
+
+Ein HA-Paar von NetApp E2800 Series Controllern ist in der FlexPod Express-Architektur erforderlich. Die Controller führen das SANtricity OS aus.
+
+Die in der folgenden Tabelle aufgeführten Teilenummern beziehen sich auf einen leeren Controller. Je nach gewählter Speicherplattform stehen verschiedene Optionen und Konfigurationen zur Verfügung. Für Details zu diesen zusätzlichen Komponenten wenden Sie sich bitte an Ihren Vertriebsmitarbeiter.
+
+|===
+| Storage Controller | Teilenummer | Technische Spezifikationen 
+
+
+| E2800 | Basierend auf den ausgewählten Optionen | http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx[] 
+|===
+
+
+== NetApp Ethernet-Erweiterungsmodule
+
+
+
+=== NetApp FAS
+
+Die folgende Tabelle listet die NetApp FAS10GbE-Adapteroptionen auf.
+
+|===
+| Komponente | Teilenummer | Technische Spezifikationen 
+
+
+| NetApp X1117A | X1117A-R6 | https://library.netapp.com/ecm/ecm_download_file/ECMM1280307[] 
+|===
+[NOTE]
+====
+Die Speichersysteme der Serien FAS2500 und 2600 verfügen über integrierte 10GbE-Ports.
+
+Der NetApp X1117A Adapter ist für FAS8020-Speichersysteme vorgesehen.
+
+====
+
+
+=== Speicher der E-Series
+
+Die folgende Tabelle listet die Optionen des E-Series 10GbE-Adapters auf.
+
+|===
+| Komponente | Teilenummer 
+
+
+| 10GbE iSCSI/16Gb FC 4-Port | X-56025-00-0E-C 
+
+
+| 10GbE iSCSI/16Gb FC 2-Port | X-56024-00-0E-C 
+|===
+[NOTE]
+====
+Die Speichersysteme der Serie E2824 verfügen über integrierte 10GbE-Ports.
+
+Die 10GbE iSCSI/16Gb FC 4-Port-Host-Schnittstellenkarte (HIC) kann für eine höhere Portdichte verwendet werden.
+
+====
+Die Onboard-Ports und der HIC können je nach aktivierter Funktion in SANtricity OS als iSCSI-Adapter oder FC-Adapter fungieren.
+
+Weitere Informationen zu den unterstützten Adapteroptionen finden Sie im Abschnitt „Adapter“ von  https://hwu.netapp.com/Adapter/Index["NetApp Hardware Universe"^].
+
 
 
 == NetApp Platten-Shelves und Festplatten
 
-Für die Speicherkontroller wird mindestens ein NetApp Festplattengehäuse benötigt.
-
-Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shelf verfügbar sind.
 
 
-NOTE: Alle Festplatten-Shelfs und Festplatten-Teilenummern können bei Ihrem Vertriebsmitarbeiter angegeben werden.
+== NetApp FAS
 
-Weitere Informationen zu den unterstützten Laufwerken erhalten Sie über den Link NetApp Hardware Universe in der folgenden Tabelle, und wählen Sie dann unterstützte Laufwerke aus.
+Für Speicherkontroller wird mindestens ein NetApp Festplattengehäuse benötigt. Der ausgewählte NetApp Gehäusetyp bestimmt, welche Laufwerkstypen in diesem Gehäuse verfügbar sind.
 
+Die Controller der Serien FAS2700 und FAS2600 werden als Konfiguration mit zwei Speichercontrollern sowie im selben Gehäuse untergebrachten Festplatten angeboten. Diese Konfiguration ist mit SATA- oder SAS-Laufwerken verfügbar; daher sind zusätzliche externe Festplattengehäuse nur dann erforderlich, wenn Leistungs- oder Kapazitätsanforderungen mehr Festplatten erfordern.
+
+[NOTE]
+====
+Alle Teilenummern für Festplattengehäuse beziehen sich auf das leere Gehäuse mit zwei AC-Netzteilen. Weitere Teilenummern erhalten Sie von Ihrem Vertriebsmitarbeiter.
+
+Die Teilenummern für Festplattenlaufwerke variieren je nach Größe und Formfaktor der Festplatte, die Sie kaufen möchten. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um weitere Teilenummern zu erhalten.
+
+====
 In der folgenden Tabelle sind die NetApp Platten-Shelf-Optionen sowie die unterstützt Laufwerke für jeden Shelf-Typ, die auf NetApp Hardware Universe zu finden sind, aufgeführt. Folgen Sie dem Link Hardware Universe, wählen Sie die Version der von Ihnen verwendeten ONTAP aus und wählen Sie den Shelf-Typ aus. Klicken Sie unter dem Shelf-Image auf Unterstützte Laufwerke, um die Laufwerke anzuzeigen, die für bestimmte Versionen von ONTAP und die Platten-Shelfs unterstützt werden.
 
 |===
-| Festplatten-Shelf | Technische Spezifikationen 
+| Festplatten-Shelf | Teilenummer | Technische Spezifikationen 
 
 
-| DS212C .5+| https://hwu.netapp.com/DetailViews/Home.aspx["Festplatten-Shelfs und unterstützte Storage-Medien auf NetApp Hardware Universe"] 
+| DS212C | DS212C-0-12 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Technische Spezifikationen für Festplattengehäuse und Speichermedien Unterstützte Laufwerke im NetApp Hardware Universe"] 
 
 
-| DS224C 
+| DS224C | DS224C-0-24 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Technische Spezifikationen für Festplattengehäuse und Speichermedien Unterstützte Laufwerke im NetApp Hardware Universe"] 
 
 
-| DS460C 
+| DS460C | DS460C-0-60 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Technische Spezifikationen für Festplattengehäuse und Speichermedien Unterstützte Laufwerke im NetApp Hardware Universe"] 
 
 
-| NS224 
+| DS2246 | X559A-R6 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Technische Spezifikationen für Festplattengehäuse und Speichermedien Unterstützte Laufwerke im NetApp Hardware Universe"] 
 
 
-| NS224 mit NSM100B 
+| DS4246 | X24M-R6 | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Technische Spezifikationen für Festplattengehäuse und Speichermedien Unterstützte Laufwerke im NetApp Hardware Universe"] 
+
+
+| DS4486 | DS4486-144TB-R5-C | link:http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Technische Spezifikationen für Festplattengehäuse und Speichermedien Unterstützte Laufwerke im NetApp Hardware Universe"] 
+|===
+
+
+=== Speicher der E-Series
+
+Für Storage-Controller, die keine Laufwerke in ihrem Gehäuse unterbringen, ist mindestens ein NetApp Festplattengehäuse erforderlich. Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shelf verfügbar sind.
+
+Die Controller der E2800-Serie werden als Konfiguration angeboten, die zwei Speichercontroller plus Festplatten umfasst, die in einem unterstützten Festplattengehäuse untergebracht sind. Diese Konfiguration ist mit SSD- oder SAS-Laufwerken verfügbar.
+
+
+NOTE: Die Teilenummern für Festplattenlaufwerke variieren je nach Größe und Formfaktor der Festplatte, die Sie kaufen möchten. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um weitere Teilenummern zu erhalten.
+
+Die folgende Tabelle listet die NetApp Festplattengehäuseoptionen und die für jeden Gehäusetyp unterstützten Laufwerke auf, die Sie im NetApp Hardware Universe finden. Folgen Sie dem Hardware Universe-Link, wählen Sie die Version von ONTAP, die Sie verwenden, und wählen Sie dann den Gehäusetyp aus. Klicken Sie unter dem Gehäusebild auf „Unterstützte Laufwerke“, um die für bestimmte Versionen von ONTAP und die Festplattengehäuse unterstützten Laufwerke anzuzeigen.
+
+|===
+| Festplatten-Shelf | Teilenummer | Technische Spezifikationen 
+
+
+| DE460C | E-X5730A-DM-0E-C | link:http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx["Technische Spezifikationen zu Festplatten-Shelfs auf NetApp Hardware Universe"] 
+
+
+| DE224C | E-X5721A-DM-0E-C | link:http://www.netapp.com/us/products/storage-systems/e2800/e2800-tech-specs.aspx["Technische Spezifikationen zu Festplatten-Shelfs auf NetApp Hardware Universe"] 
+
+
+| DE212C | E-X5723A-DM-0E-C | link:https://hwu.netapp.com/Shelves/Index?osTypeId=2357027["Technische Spezifikationen zu Festplatten-Shelfs auf NetApp Hardware Universe"] 
 |===
 
 
 == NetApp Software-Lizenzoptionen
 
-Die folgende Tabelle listet die NetApp Softwarelizenzierungsoptionen auf.
+
+
+=== NetApp FAS
+
+Die folgende Tabelle listet die NetApp FAS-Softwarelizenzierungsoptionen auf.
 
 |===
-| NetApp Softwarelizenzierung | Technische Spezifikationen 
+| NetApp Softwarelizenzierung | Teilenummer | Technische Spezifikationen 
 
 
-| ONTAP One oder ONTAP base für AFF und FAS .2+| Wenden Sie sich an Ihr NetApp Vertriebsteam, um weitere Lizenzierungsinformationen zu erhalten. 
+| Basis-Clusterlizenz 2+| Wenden Sie sich an Ihr NetApp Vertriebsteam, um weitere Lizenzierungsinformationen zu erhalten. 
+|===
 
 
-| ONTAP One für SAN für ASA 
+=== Speicher der E-Series
+
+Die folgende Tabelle listet die Softwarelizenzierungsoptionen der E-Series auf.
+
+|===
+| NetApp Softwarelizenzen | Teilenummer | Technische Spezifikationen 
+
+
+| Standardfunktionen 2.2+| Wenden Sie sich an Ihr NetApp Vertriebsteam, um weitere Lizenzierungsinformationen zu erhalten. 
+
+
+| Premium-Funktionen 
 |===
 
 
@@ -110,11 +216,33 @@ Die folgende Tabelle listet die NetApp Softwarelizenzierungsoptionen auf.
 
 Die SupportEdge Premium Lizenzen sind erforderlich. Die Teilenummern dieser Lizenzen variieren je nach den im FlexPod Express Design ausgewählten Optionen.
 
-Die folgende Tabelle listet die NetApp Support-Lizenzierungsoptionen für NetApp AFF, ASA und FAS Storage-Systeme auf.
+
+
+=== NetApp FAS
+
+Die folgende Tabelle listet die NetApp Support-Lizenzierungsoptionen für NetApp FAS.
 
 |===
 | Lizenzierung des NetApp Supports | Teilenummer | Technische Spezifikationen 
 
 
 | SupportEdge Premium4 Stunden vor Ort; Monate: 36 | CS-O2-4HR | link:https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf["https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf"] 
+|===
+
+
+=== Speicher der E-Series
+
+Die folgende Tabelle listet die NetApp Support-Lizenzierungsoptionen für E-Series-Speicher auf.
+
+|===
+| Lizenzierung des NetApp Supports | Teilenummer | Technische Spezifikationen 
+
+
+| Premium-Hardware-Support 4 Stunden vor Ort; Monate: 36 | SVC-O2-4HR-E .3+| link:https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf["https://www.netapp.com/pdf.html?item=/media/19784-ds-3873.pdf"] 
+
+
+| Softwareunterstützung | SW-SSP-O2-4HR-E 
+
+
+| Erstinstallation | SVC-INST-O2-4HR-E 
 |===

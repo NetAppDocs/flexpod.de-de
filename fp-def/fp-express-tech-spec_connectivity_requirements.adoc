@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec_connectivity_requirements.html 
-keywords: connectivity, requirements, flexpod, express, aff, fas, asa 
+keywords: connectivity, requirements, flexpod, express, aff, fas, e, series 
 summary: In diesem Abschnitt werden die Konnektivitätsanforderungen für die verschiedenen Versionen von FlexPod Express beschrieben. 
 ---
 = Konnektivitätsanforderungen erfüllen
@@ -18,13 +18,35 @@ In diesem Abschnitt werden die Konnektivitätsanforderungen für die verschieden
 
 
 
-== Konnektivitätsanforderungen für FlexPod Express mit NetApp AFF/ ASA/ FAS
+== Konnektivitätsanforderungen für FlexPod Express mit NetApp FAS
 
-Die Konnektivitätsanforderungen für FlexPod Express mit NetApp AFF/ ASA/ FAS umfassen:
+Die Konnektivitätsanforderungen für FlexPod Express mit NetApp FAS umfassen:
 
-* NetApp Speichercontroller müssen direkt mit den Cisco Nexus Switches verbunden werden.
-* Für UCS X-series Direct-Bereitstellungen können die NetApp Speichercontroller direkt mit den eingebetteten Fabric Interconnects verbunden werden.
+* NetApp FAS-Speichercontroller müssen direkt mit den Cisco Nexus Switches verbunden werden, außer in der Cisco UCS-verwalteten Konfiguration, in der die Speichercontroller mit den Fabric Interconnects verbunden sind.
 * Es können keine zusätzlichen Geräte zwischen den Kern-FlexPod-Komponenten inline platziert werden.
-* Virtuelle Portkanäle (vPCs) werden benötigt, um die Cisco Nexus 9000-Serie Switches mit den NetApp Speichercontrollern zu verbinden.
+* Virtuelle Portkanäle (vPCs) werden benötigt, um die Cisco Nexus 3000/9000-Serie Switches mit den NetApp Speichercontrollern zu verbinden.
+* Dies ist zwar nicht erforderlich, jedoch wird die Unterstützung für Jumbo Frames in der gesamten Umgebung empfohlen.
+
+
+
+
+== Konnektivitätsanforderungen für FlexPod Express mit NetApp E-Series
+
+Die Konnektivitätsanforderungen für FlexPod Express mit E-Series umfassen:
+
+* Die Speichercontroller der E-Series müssen direkt mit den Fabric Interconnects verbunden werden.
+* Zwischen den Kernkomponenten von FlexPod sollten keine zusätzlichen Geräte geschaltet werden.
+* Zwischen den Fabric Interconnects und den Ethernet-Switches sind vPCs erforderlich.
+
+
+
+
+== Konnektivitätsanforderungen für FlexPod Express mit NetApp AFF
+
+Die Verbindungsanforderungen für FlexPod Express mit NetApp AFF umfassen:
+
+* NetApp AFF-Speichercontroller müssen direkt mit den Cisco Nexus-Switches verbunden werden, außer in der Cisco UCS–verwalteten Konfiguration, in der die Speichercontroller mit den Fabric Interconnects verbunden sind.
+* Es können keine zusätzlichen Geräte zwischen den Kern-FlexPod-Komponenten inline platziert werden.
+* Virtuelle Portkanäle (vPCs) werden benötigt, um die Cisco Nexus 3000/9000-Serie Switches mit den NetApp Speichercontrollern zu verbinden.
 * Dies ist zwar nicht erforderlich, jedoch wird die Unterstützung für Jumbo Frames in der gesamten Umgebung empfohlen.
 
