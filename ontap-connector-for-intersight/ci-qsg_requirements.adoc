@@ -38,7 +38,7 @@ Dies sind die Mindestanforderungen an Hardware und Software, die für die Implem
 | Virtualisierungshypervisor | VSphere 7.0 und höher 
 |===
 
-NOTE: Siehe https://intersight.com/help/saas/supported_systems["Von Cisco Intersight unterstützte Systeme"^] Für die Mindestanforderungen von Cisco UCS Compute Komponenten und der UCSM Version
+NOTE: Informationen zu den Mindestanforderungen für Cisco UCS Compute Components und die UCSM-Version sind in  https://intersight.com/help/saas/supported_systems/overview["Von Cisco Intersight unterstützte Systeme"^] zu finden.
 
 
 
@@ -53,4 +53,4 @@ Das Lizenzmodell von Cisco Intersight Infrastructure Services wurde vereinfacht 
 * * Cisco Intersight Infrastructure Services Advantage* - die Advantage-Lizenz-Tier bietet fortschrittliches Servermanagement mit erweiterter Transparenz, Integration in die Systeme anderer Anbieter, Automatisierung von Hardware und Software von Cisco und Drittanbietern sowie Multi-Domain-Lösungen.
 
 
-Weitere Informationen zu den Funktionen, die von verschiedenen Lizenzstufen abgedeckt werden, finden Sie unter https://intersight.com/help/saas/getting_started/licensing_requirements/lic_infra#licensing_model["Infrastructure Services Lizenz"^].
+Weitere Informationen zu den in den verschiedenen Lizenzstufen enthaltenen Funktionen sind unter  https://intersight.com/help/saas/getting_started/licensing_requirements/lic_infra["Infrastructure Services Lizenz"^] verfügbar.

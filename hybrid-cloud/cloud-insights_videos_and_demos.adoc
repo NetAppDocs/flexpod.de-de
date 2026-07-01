@@ -14,8 +14,8 @@ summary: Hier finden Sie eine Videovorführung über die Verwendung von NetApp C
 
 
 [role="lead"]
-Hier sehen Sie eine Videovorführung zur Verwendung von NetApp Cloud Insights zur Bewertung von Ressourcen in einer On-Premises-Umgebung https://netapp.hubs.vidyard.com/watch/1ycNWx4hzFsaV1dQHFyxY2?["Hier"^].
+Eine Videodemonstration zur Verwendung von NetApp Cloud Insights zur Bewertung der Ressourcen in einer On-Premises-Umgebung ist verfügbar https://www.netapp.com/video/fxujqwwhoqg/complete-observability-with-cloud-insights/["Hier"^].
 
-Hier wird eine Videovorführung zur Überwachung der Infrastruktur mithilfe von NetApp Cloud Insights angezeigt und es werden Warnungsschwellenwerte für die Infrastruktur festgelegt https://netapp.hubs.vidyard.com/watch/DgUxcxES3Ujdqe1JhhkfAW["Hier"^].
+Eine Videodemonstration zur Verwendung von NetApp Cloud Insights zur Überwachung der Infrastruktur und zur Festlegung von Alarmschwellenwerten für die Infrastruktur ist verfügbar https://www.youtube.com/watch?v=TdMpXR_-U0M["Hier"^].
 
-Hier sehen Sie eine Videovorführung zur Verwendung von NetApp Cloud Insights zur bewerten einzelner Applikationen in der Umgebung https://netapp.hubs.vidyard.com/watch/vcC4RGoD54DPp8Th9hyhu3["Hier"^].
+Eine Videodemonstration zur Verwendung von NetApp Cloud Insights zur Bewertung einzelner Anwendungen in der Umgebung ist verfügbar https://www.youtube.com/watch?v=AVQ-a-du664["Hier"^].

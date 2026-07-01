@@ -22,7 +22,7 @@ Zusätzliche Anforderungen für FlexPod Express sind:
 ** SupportEdge Advisor oder SupportEdge Premium Support für NetApp Systeme
 
 
-* Alle Softwarekomponenten müssen in aufgeführt und unterstützt werden http://support.netapp.com/matrix/["NetApp IMT"^].
+* Alle Softwarekomponenten müssen in der  http://mysupport.netapp.com/matrix["NetApp IMT"^] aufgeführt und unterstützt sein.
 * Alle Hardwarekomponenten von NetApp müssen auf aufgeführt und unterstützt werden https://hwu.netapp.com/Home/Index["NetApp Hardware Universe"^].
 * Alle Hardwarekomponenten von Cisco müssen auf aufgeführt und unterstützt werden https://ucshcltool.cloudapps.cisco.com/public/["Cisco HCL"^].
 

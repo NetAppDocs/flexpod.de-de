@@ -699,19 +699,14 @@
   <block id="99d338f252ec9d84ad8431a31de3a262" category="cell">Dokumentation der Controller-Plattform der AFF A-Series</block>
   <block id="a6d988e2bc1676553a68b4bd3414e350" category="cell">NetApp AFF A800</block>
   <block id="4d9751fc3b79bdb88b990f65afd7c6d4" category="inline-link">Dokumentation der AFF A800 Plattform</block>
-  <block id="a65bc179cb3e5725fe6126fd001c8afe" category="cell"><block ref="a65bc179cb3e5725fe6126fd001c8afe" category="inline-link-rx"></block></block>
   <block id="9fd776d575e784a04bf5628e0db4f43c" category="cell">NetApp AFF A700</block>
   <block id="cc959946765e8b246923e4ef7f1bf3be" category="inline-link">Dokumentation der AFF A700 Plattform</block>
-  <block id="376c9339140cac7719692f574b0d8949" category="cell"><block ref="376c9339140cac7719692f574b0d8949" category="inline-link-rx"></block></block>
   <block id="4c888568e86a3e3bc15e53b2a91a4ca2" category="cell">NetApp AFF A700s</block>
   <block id="049e978eaf17ad2f7d9e7561d653c22f" category="inline-link">AFF A700s Plattform-Dokumentation</block>
-  <block id="73e154a912a6da332d5666ef47db16e0" category="cell"><block ref="73e154a912a6da332d5666ef47db16e0" category="inline-link-rx"></block></block>
   <block id="6b1a2fb636318f0f5c51b7506abc53ad" category="cell">NetApp AFF A400</block>
   <block id="b9866313cde2044a8dd77a6b0e794e61" category="inline-link">Dokumentation der AFF A400 Plattform</block>
-  <block id="fba10836ef83cfe0730ad0e55e0ce8a0" category="cell"><block ref="fba10836ef83cfe0730ad0e55e0ce8a0" category="inline-link-rx"></block></block>
   <block id="25297dbc8df2aecff2fa2e9e47638d35" category="cell">NetApp AFF A250</block>
   <block id="3ac00041ac1bd123acdee59cdfc05a50" category="inline-link">Dokumentation der AFF A250-Plattform</block>
-  <block id="5936e0c2771ef74069a005d2fb9355a5" category="cell"><block ref="5936e0c2771ef74069a005d2fb9355a5" category="inline-link-rx"></block></block>
   <block id="dbb86a37ca706fad417eb540ecf9bff8" category="paragraph">Alle aktuellen Modelle der NetApp AFF ASA A-Series Storage Controller werden zur Verwendung in FlexPod unterstützt. Weitere Informationen finden Sie in der Dokumentation zu All-SAN-Arrays, im technischen Bericht zu ONTAP AFF All-SAN-Systemen und im NetApp Hardware Universe. Ausführliche Informationen zu einem bestimmten AFF-Modell finden Sie in der plattformspezifischen Dokumentation, die in der folgenden Tabelle aufgeführt ist.</block>
   <block id="8edae448eb4c721effbdf809fd185881" category="cell">NETAPP AFF ASA A800</block>
   <block id="4a7b86ad78c8ba8757536489d20f9502" category="inline-link">Dokumentation der AFF ASA A800 Plattform</block>
@@ -861,7 +856,6 @@
   <block id="e6426bd86d0d3af225952b63c263f83d" category="summary">Weitere Anforderungen für FlexPod Express sind unten aufgeführt.</block>
   <block id="99850d99c802817315214eb8be6522a3" category="paragraph">Zusätzliche Anforderungen für FlexPod Express sind:</block>
   <block id="67e78efd215ff62dd9c56a052712f4b3" category="list-text">SMARTnet-Support für Cisco-Geräte</block>
-  <block id="975553b14d65150985ded5e645ea34a3" category="list-text">Alle Softwarekomponenten müssen in aufgeführt und unterstützt werden<block ref="542750ff2ff69f0b5f9f0ab1166bb952" category="inline-link-rx"></block>.</block>
   <block id="aa0f4a94fdeef146af0a597f526d5c88" category="list-text">Alle Hardwarekomponenten von NetApp müssen auf aufgeführt und unterstützt werden<block ref="6a8cef5b71adde6301ea0984592ea5c1" category="inline-link-rx"></block>.</block>
   <block id="37dca77319b34332b146930ec37563f5" category="inline-link">Cisco HCL</block>
   <block id="66b98d07c85cd975d27be516745403c1" category="list-text">Alle Hardwarekomponenten von Cisco müssen auf aufgeführt und unterstützt werden<block ref="243ee419838ead03039b3c014c885e78" category="inline-link-rx"></block>.</block>
@@ -909,7 +903,6 @@
   <block id="4751485bb758a4c3a478dcfdc8a7c2d3" category="paragraph">Beispielsweise werden zusätzliche Storage-Controller oder Cisco UCS Server hinzugefügt und Software-Upgrades auf neuere Versionen durchgeführt, wenn die Software, Hardware und Konfigurationen den in diesem Dokument definierten Richtlinien entsprechen.</block>
   <block id="d160bac159341d29786704d75c654a94" category="summary">In diesem Abschnitt werden die Mindestanforderungen für Software für die verschiedenen Versionen von FlexPod Express beschrieben.</block>
   <block id="5d3fc3ec55d4860715dad56a4cecaf8c" category="doc">Mindestanforderungen An Die Software</block>
-  <block id="b01f33018dd67adc34ac91d2b1bb8acf" category="paragraph">Alle Software muss in aufgeführt und unterstützt sein<block ref="542750ff2ff69f0b5f9f0ab1166bb952" category="inline-link-rx"></block>. Bestimmte Softwarefunktionen erfordern möglicherweise mehr aktuelle Code-Versionen als die in vorherigen Architekturen aufgeführten Mindestwerte.</block>
   <block id="160f9594439a5c252e567ca5fa56f9aa" category="summary">Die FlexPod Plattform ist eine vorkonfigurierte, Best Practice Datacenter-Architektur, die auf Cisco Unified Computing System (Cisco UCS), der Cisco Nexus Switch-Produktfamilie und NetApp Storage Controllern (NetApp AFF oder FAS Systeme) basiert.</block>
   <block id="ed4bde4fa0721113bfb61cca4c8d0b99" category="paragraph">Arvind Ramakrishnan und Jyh-Sing Chen, NetApp</block>
   <block id="aa2f8bc486f5931602b4fd5aa1b0bde8" category="paragraph">Die FlexPod Plattform ist eine vorkonfigurierte, Best Practice Datacenter-Architektur, die auf Cisco Unified Computing System (Cisco UCS), der Cisco Nexus Switch-Produktfamilie und NetApp Storage Controllern (AFF, ASA oder FAS Systeme) basiert.</block>
@@ -1049,8 +1042,6 @@
   <block id="d031ad489c1827b287842edadd860f15" category="cell">Adaptertyp</block>
   <block id="8af9795e6697653dfee633cd279cd456" category="cell">SFP+ mit Glasfaser</block>
   <block id="79b1697033c0e2b83758b0b66609d603" category="paragraph">Der X1117A-R6 SFP+ Adapter wird auf Controllern der FAS8000 Serie unterstützt.</block>
-  <block id="39e0a90cfd87242281414555409ad7af" category="inline-link">NetApp 10-GbE-Adapter Datenblatt</block>
-  <block id="617af44da02df2a13554583efd13fba8" category="paragraph">Die Storage-Systeme der FAS2600 und FAS2500 Serie verfügen über integrierte 10-GbE-Ports. Weitere Informationen finden Sie im<block ref="ed2ddcebc6b23bc265d3bd1106f3c06b" category="inline-link-rx"></block>.</block>
   <block id="8e97e7d2e56e43626a61b257691677ac" category="inline-link">Adapterabschnitt</block>
   <block id="42cd3646ffe893ecce3ea5bc19a2027d" category="admonition">Weitere Informationen zu Adaptern auf der Grundlage des AFF- oder FAS-Modells finden Sie im<block ref="2780838f83b72e7bfe589b803df5684f" category="inline-link-rx"></block> Im Hardware Universe.</block>
   <block id="7ba62199c2bd520e6d19e1dc62b35f56" category="paragraph">In der folgenden Tabelle werden die aktuellen NetApp FAS Platten-Shelf-Optionen aufgeführt.</block>
@@ -1807,7 +1798,6 @@
   <block id="28d0edd045e05cf5af64e35ae0c4c6ef" category="cell">Niedrig</block>
   <block id="f53274f881c8f0dae30e4f0c238256c0" category="paragraph">Die folgende Abbildung zeigt die SnapCenter Architektur.</block>
   <block id="92585118fc5e0d58f5a951b5c873b949" category="paragraph"><block ref="92585118fc5e0d58f5a951b5c873b949" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3b6e79f039ad52fd0bc1fba926cffa9b" category="paragraph">Weltweit werden NetApp MetroCluster Konfigurationen von Tausenden Unternehmen für Hochverfügbarkeit (HA), Vermeidung von Datenverlusten und unterbrechungsfreien Betrieb innerhalb und außerhalb des Datacenters eingesetzt. MetroCluster ist eine kostenlose Funktion der ONTAP Software, die Daten und Konfigurationen zwischen zwei ONTAP Clustern an separaten Standorten oder Ausfall-Domains synchron spiegelt. MetroCluster bietet kontinuierlich verfügbaren Storage für Applikationen, indem es automatisch zwei Ziele bewältigt: Recovery Point Objective (RPO) von null durch synchrones Spiegeln von Daten, die auf das Cluster geschrieben werden. Recovery Time Objective (RTO) von nahezu null durch Spiegelung der Konfiguration und automatisierten Zugriff auf Daten am zweiten Standort MetroCluster sorgt für Einfachheit durch automatische Spiegelung von Daten und Konfigurationen zwischen den beiden unabhängigen Clustern an den beiden Standorten. Wenn Storage innerhalb eines Clusters bereitgestellt wird, wird dieser automatisch auf das zweite Cluster am zweiten Standort gespiegelt. Die NetApp SyncMirror-Technologie sorgt für eine komplette Kopie aller Daten mit einem RPO von null. , So können Workloads von einem Standort aus jederzeit auf den anderen Standort umschalten und weiterhin Daten ohne Datenverlust bereitstellen. Weitere Informationen finden Sie hier<block ref="f798c4eaf45d4350820daeae4e62718a" category="inline-link-rx"></block>.</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">Netzwerkbetrieb</block>
   <block id="b384503e4e17e110125d290ec3005c96" category="paragraph">Ein Cisco Nexus Switch-Paar stellt redundante Pfade für den IP-Datenverkehr vom Computing zum Storage und für externe Clients der Image-Viewer des medizinischen Bildgebungssystems bereit:</block>
   <block id="48ad68303902eb083297472047da1473" category="list-text">Die Link-Aggregation, die Port-Kanäle und vPCs nutzt, wird durchgehend verwendet, was das Design für eine höhere Bandbreite und hohe Verfügbarkeit ermöglicht:</block>
@@ -1919,10 +1909,6 @@
   <block id="99074e2be4a23f8c72f4dbbb9f7713cd" category="list-text">FlexPod für Microsoft SQL Server</block>
   <block id="4bfd12a70dc5aca25050ffed66a69baf" category="inline-link"><block ref="4bfd12a70dc5aca25050ffed66a69baf" category="inline-link-rx"></block></block>
   <block id="944191196c4e08e68a0f4392568f098e" category="paragraph"><block ref="944191196c4e08e68a0f4392568f098e" category="inline-link-rx"></block></block>
-  <block id="9ea4420c6a4382725394398cf4bb0e52" category="inline-link">NetApp Lösungen für MongoDB</block>
-  <block id="f6cf7b1078d73eee729899396fc643d0" category="list-text"><block ref="47f53740b83d5f4a49541b7dd8b86749" category="inline-link-rx"></block> Lösungsüberblick (NetApp Login erforderlich)</block>
-  <block id="16e2ddfe693bba6f5871847f602f4b91" category="inline-link"><block ref="16e2ddfe693bba6f5871847f602f4b91" category="inline-link-rx"></block></block>
-  <block id="cd1f731b891717ba30c52133b163f1a1" category="paragraph"><block ref="cd1f731b891717ba30c52133b163f1a1" category="inline-link-rx"></block></block>
   <block id="550ff411af842971b5bef45c5d9d1a59" category="list-text">TR-4700: SnapCenter Plug-in für Oracle Database</block>
   <block id="43522657c8f1a5c2e1329e74dea52592" category="inline-link"><block ref="43522657c8f1a5c2e1329e74dea52592" category="inline-link-rx"></block></block>
   <block id="c9617ae303d0bce89d13bebecca2ea1b" category="inline-link"><block ref="c9617ae303d0bce89d13bebecca2ea1b" category="inline-link-rx"></block></block>
@@ -1939,7 +1925,6 @@
   <block id="c058cf7314b3fcfed2a8983544102202" category="paragraph">Das Gesundheitswesen wird sich in den kommenden Jahren noch weiter verändern. COVID beschleunigt Innovationen im Gesundheitswesen, die die Branche mindestens mehrere Jahre voranbringen. Im Mittelpunkt dieser Veränderung steht die Notwendigkeit, die Gesundheitsversorgung flexibler im Umgang mit Pandemien zu gestalten, indem sie erschwinglicher, verfügbarer und zugänglicher ist, ohne die Zuverlässigkeit zu beeinträchtigen.</block>
   <block id="5b7f30b6157536e3e2c1a4a3bee59b7e" category="paragraph">Die Grundlage dieses Wandels im Gesundheitswesen ist eine gut konzipierte Plattform. Eines der wichtigsten Messgrößen für die Plattform ist die einfache Implementierung von Plattformänderungen. Die Geschwindigkeit ist die neue Größenordnung und die Datensicherung kann nicht gefährdet werden. Einige der weltweit wichtigsten Daten werden von den klinischen Systemen erstellt und genutzt, die das Klinikteam unterstützen. NetApp hat kritische Daten in der Patientenversorgung vor Ort, vor Ort, in der Cloud oder in einem hybriden Umfeld zur Verfügung gestellt. Hybride Multi-Cloud-Umgebungen sind der derzeitige Stand der TECHNIK in BEZUG AUF IT-Architekturen.</block>
   <block id="b6b5fbb5ab8b9105dff1687fdb37a1ef" category="inline-link">Rechenschaftspflichtige Versorgungsorganisationen</block>
-  <block id="7f9823ef457373961bfb662960d75a5a" category="paragraph">Das Gesundheitswesen dreht sich, wie wir wissen, um Anbieter (Ärzte, Krankenschwestern, Radiologen, Techniker für medizinische Geräte usw.) und Patienten. Während wir Patienten und Anbieter enger zusammenbringen und der geografische Standort lediglich zu einem Datenpunkt wird, ist es für die zugrunde liegende Plattform noch wichtiger, verfügbar zu sein, wenn Anbieter und Patienten ihn benötigen. Die Plattform muss langfristig effizient und kostengünstig sein. Bei ihren Bemühungen, die Kosten für die Patientenversorgung noch weiter zu senken,<block ref="3e6f845ddcd345f0fc57064c50c40bc6" category="inline-link-rx"></block> (ACOS) würde durch eine effiziente Plattform ermöglicht.</block>
   <block id="07cea192166797fb4b3569a4f4c53113" category="paragraph">Bei Gesundheitsinformationssystemen, die von Gesundheitseinrichtungen genutzt werden, gibt es in der Frage des Build- oder Kaufs häufig eine einzige Antwort: Den Kauf. Das könnte aus vielen subjektiven Gründen sein. Über viele Jahre getroffene Kaufentscheidungen können heterogene Informationssysteme verursachen. Jedes System verfügt über bestimmte Anforderungen für die Plattform, auf der sie implementiert werden. Das größte Problem ist die große Vielfalt an Storage-Protokollen und Leistungsstufen, die Informationssysteme benötigen. Deshalb stellt die Plattformstandardisierung und eine optimale betriebliche Effizienz eine große Herausforderung dar. Gesundheitseinrichtungen können sich nicht auf geschäftskritische Fragen konzentrieren, weil ihre Aufmerksamkeit durch triviale betriebliche Bedürfnisse wie die großen Plattformen, die ein vielfältiges Spektrum an Fähigkeiten und damit KMU-Bindung erfordern, noch viel zu hoch verteilt wird.</block>
   <block id="a4d0489efeffd856044329f6139a2347" category="paragraph">Die Herausforderungen lassen sich in folgende Kategorien einteilen:</block>
   <block id="57ebf82b2ccccff7e8a311234b6a032d" category="list-text">Heterogene Storage-Anforderungen</block>
@@ -2436,8 +2421,6 @@
   <block id="de8402faa342fc9625bdaa3961573a1b" category="inline-link"><block ref="de8402faa342fc9625bdaa3961573a1b" category="inline-link-rx"></block></block>
   <block id="eda0ad9ec468bbcaad6eca5eb6ef6925" category="paragraph"><block ref="eda0ad9ec468bbcaad6eca5eb6ef6925" category="inline-link-rx"></block></block>
   <block id="d50e63b9f70efedde8dc093be8ec12b2" category="list-text">Empfohlene Practices für VMware vSphere Metro Storage-Cluster</block>
-  <block id="9e211a0ec0ebb7c473ed61cbc37819a8" category="inline-link"><block ref="9e211a0ec0ebb7c473ed61cbc37819a8" category="inline-link-rx"></block></block>
-  <block id="734feebed99ef4959e1522728f6dbd8a" category="paragraph"><block ref="734feebed99ef4959e1522728f6dbd8a" category="inline-link-rx"></block></block>
   <block id="c912dc73def9e5758eb6e130fd3b21ee" category="list-text">NetApp ONTAP mit NetApp SnapMirror Business Continuity (SM-BC) mit VMware vSphere Metro Storage Cluster (vMSC). (83370)</block>
   <block id="e42e1f7327a67ae6a4439a303fc9c81d" category="inline-link"><block ref="e42e1f7327a67ae6a4439a303fc9c81d" category="inline-link-rx"></block></block>
   <block id="077317c6b779e004e75e33d28168bab8" category="paragraph"><block ref="077317c6b779e004e75e33d28168bab8" category="inline-link-rx"></block></block>
@@ -2609,8 +2592,6 @@
   <block id="24a78c21308239818de1b915e881a401" category="paragraph"><block ref="24a78c21308239818de1b915e881a401" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4aedd7feb44df1595d3db438ed0cb551" category="section-title">Hardware- und Software-Suite von NetApp</block>
   <block id="fec970de22ce00287e2503c38bda96b7" category="paragraph">In der folgenden Tabelle sind die für die Lösungsvalidierung verwendete Hardware und Software aufgeführt. Es ist wichtig zu beachten, dass Cisco, NetApp und VMware über Interoperabilitätsmatrixe verfügen, die zur Bestimmung des Supports für jede spezifische Implementierung von FlexPod eingesetzt werden:</block>
-  <block id="0919916303e590e1fc82d7bf4eecfa6b" category="inline-link"><block ref="0919916303e590e1fc82d7bf4eecfa6b" category="inline-link-rx"></block></block>
-  <block id="85974e66cddabad7238a4eec399c793e" category="list-text"><block ref="85974e66cddabad7238a4eec399c793e" category="inline-link-rx"></block></block>
   <block id="45304a3fc78b38f4236bba1dd02f945a" category="inline-link">Cisco UCS Hardware and Software Interoperability Tool</block>
   <block id="592b2496cc4352ed1aeae5591919a086" category="list-text"><block ref="592b2496cc4352ed1aeae5591919a086" category="inline-link-rx"></block></block>
   <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">Kategorie</block>
@@ -3022,9 +3003,6 @@
   <block id="a46d2b28851dd7bedf26b965d1d401d1" category="list-text">Wählen Sie das Menü Power (aus) und dann Power Cycle System (Kaltstart). Klicken Sie Auf Ja.</block>
   <block id="5c5147ee287a8bea25c4cbc696589e80" category="section-title">VMware ESXi installieren</block>
   <block id="df0929e946eab42404a156a77c4eb79a" category="paragraph">In den folgenden Schritten wird die Installation von VMware ESXi auf jedem Host beschrieben.</block>
-  <block id="e17f48eb4f849d5130a82b114de7f8b8" category="section-title">Laden Sie DAS benutzerdefinierte ESXI 6.7U2 Cisco Image herunter</block>
-  <block id="52db27afcb53934ed886b0950cc92cde" category="inline-link">Download-Seite für VMware vSphere</block>
-  <block id="74e2c5d4910788ca1349bc371eb9484c" category="list-text">Navigieren Sie zum<block ref="4d81386dd31f204a9bca765338af0e7f" category="inline-link-rx"></block> Für benutzerdefinierte ISOs.</block>
   <block id="dff0d9cbf5f3d1cec8baffaf266adffd" category="list-text">Klicken Sie auf „Go to Downloads“ neben dem benutzerdefinierten Cisco Image für die ESXi 6.7U2-Installations-CD.</block>
   <block id="7c3ef44b40aee14d33a275014ca0cce9" category="list-text">Laden Sie das benutzerdefinierte Cisco Image für die ESXi 6.7U2 Installations-CD (ISO) herunter.</block>
   <block id="46b1c014f33288e347814f755917f656" category="list-text">Beim Systemstart erkennt die Maschine die VMware ESXi Installationsmedien.</block>
@@ -3269,7 +3247,6 @@
   <block id="3e8d85b1842f74dda9130eb897661286" category="paragraph">Dieser Abschnitt enthält ausführliche Verfahren zur Installation von VMware ESXi 6.7 in einer FlexPod Express-Konfiguration. Die folgenden Implementierungsverfahren werden so angepasst, dass sie die in vorherigen Abschnitten beschriebenen Umgebungsvariablen enthalten.</block>
   <block id="537b3e181c0f585a4d369cc60d1e577b" category="paragraph"><block ref="537b3e181c0f585a4d369cc60d1e577b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f35aa2cfbeab622070f17bb38207967" category="list-text">Rufen Sie die ISO-Image-Datei des VMware ESXi 6.7-Installationsprogramms auf, und klicken Sie auf Öffnen. Klicken Sie Auf Kartengerät.</block>
-  <block id="e13fb3bcc23e4c7beb8f98c4f3751ac8" category="section-title">Laden Sie das benutzerdefinierte ESXI 6.7 Cisco Image herunter</block>
   <block id="2da9cbe6bb2e798743f8e88b57db0bed" category="list-text">Klicken Sie neben der Cisco Custom Image for ESXi 6.7 GA Install-CD auf Go to Downloads.</block>
   <block id="804d2c2420f547067ef592c59260ffae" category="list-text">Laden Sie die Cisco Custom Image for ESXi 6.7 GA Install CD (ISO) herunter.</block>
   <block id="0b102a154b0f56c5ef397859572a43d3" category="list-text">Wählen Sie das VMware ESXi-Installationsprogramm aus dem angezeigten Menü aus.</block>
@@ -3355,7 +3332,6 @@
   <block id="5d7f9156f70734a70d089a6126b120fe" category="summary">Führen Sie die auf dieser Seite beschriebenen Schritte aus, um VMware vCenter Server 6.7- und vSphere-Clustering zu konfigurieren.</block>
   <block id="cb087a13cbb839a16f79d2e04d726f0e" category="doc">Clustering-Konfiguration für VMware vCenter Server 6.7U2 und vSphere</block>
   <block id="59f735b7abbe69ddb802491a9d816f21" category="paragraph">Gehen Sie wie folgt vor, um VMware vCenter Server 6.7- und vSphere-Clustering zu konfigurieren:</block>
-  <block id="6c4d37fc356ba2d14eabd3231002618f" category="list-text">Navigieren Sie zu<block ref="e9ac2ce978d84bc2d15f74951b1c3d71" prefix=" " category="inline-code"></block>.</block>
   <block id="05bab1beb96b039b8dfdac9d3682c925" category="list-text">Klicken Sie auf vSphere Client starten.</block>
   <block id="6b72dbdc289bad21059099fb962088fd" category="list-text">Melden Sie sich mit dem Benutzernamen mailto:administrator@vspehre.local[Administrator^]@vsphere.local und dem SSO-Passwort an, das Sie während des VCSA-Setups eingegeben haben.</block>
   <block id="8a2315c983a1579dfbd57448054d66f9" category="list-text">Klicken Sie mit der rechten Maustaste auf den vCenter-Namen, und wählen Sie New Datacenter aus.</block>
@@ -3384,8 +3360,6 @@
   <block id="768011e5357b1bc62e37652d0c2ace30" category="admonition">Dieser Prozess muss für alle zusätzlichen Hosts abgeschlossen werden, die zur Konfiguration von FlexPod Express hinzugefügt werden.</block>
   <block id="e48ebcd0f26cb8ecf274a184dfe0aa9a" category="section-title">Konfigurieren Sie coredump auf den ESXi-Hosts</block>
   <block id="08a3053580c96492e9ca9f9a0fb9e085" category="paragraph">Führen Sie die folgenden Schritte aus, um coredump auf den ESXi-Hosts zu konfigurieren:</block>
-  <block id="e10ca1adb349a5228f7573a244805247" category="inline-link">VCenter</block>
-  <block id="03302d337e74e97b2fc9d2e59de878b1" category="list-text">Melden Sie sich bei HTTPS an://<block ref="3ee5cda4b1a6e60c69e4c78d80c9a202" category="inline-link-rx"></block> IP:5480/, geben Sie Root für den Benutzernamen ein, und geben Sie das Root-Passwort ein.</block>
   <block id="4b05eace4eba9420f8625d70c90207aa" category="list-text">Klicken Sie auf Services und wählen Sie VMware vSphere ESXI Dump Collector.</block>
   <block id="fae193f3d012fe7c498bfc14c25cccc2" category="list-text">Starten Sie den VMware vSphere ESXI Dump Collector Service.</block>
   <block id="e1fe825d50948b1de80f51051945d8d6" category="paragraph"><block ref="e1fe825d50948b1de80f51051945d8d6" category="inline-image-macro-rx" type="image"></block></block>
@@ -3479,8 +3453,6 @@
   <block id="40a15e6807b47955e7b7a9b1bd330b01" category="inline-link-macro">Weiter: Wo finden Sie zusätzliche Informationen.</block>
   <block id="019dc6de8e76037cb2c701eebcc7885a" category="summary">Weitere Informationen zu den in diesem Dokument beschriebenen Daten finden Sie in den folgenden Dokumenten bzw. auf den folgenden Websites.</block>
   <block id="345245c83d2b2c4c2a5eb9f2887da627" category="paragraph">Weitere Informationen zu den in diesem Dokument beschriebenen Daten finden Sie in den folgenden Dokumenten bzw. auf den folgenden Websites:</block>
-  <block id="16dfba14481ba8b67fd1c1d9e0f32d2a" category="inline-link">netapp</block>
-  <block id="bfa7a16f47eedd5d989ebf2d0428b576" category="paragraph"><block ref="92ecca9733c1884030999a9bb401e205" category="inline-link-rx"></block>.<block ref="50abdc2ca21ff2b3aebf336064078561" category="inline-link-rx"></block>.Com</block>
   <block id="e2d855673271d9c17e5213d3631ed572" category="paragraph">FlexPod Express with Guide</block>
   <block id="c8235b9debd0aaa01b224142a782734b" category="paragraph">NVA-1139-DESIGN: FlexPod Express mit Cisco UCS C-Serie und NetApp AFF C190 Serie</block>
   <block id="51eba3131729aa4891b7befebe35372c" category="inline-link"><block ref="51eba3131729aa4891b7befebe35372c" category="inline-link-rx"></block></block>
@@ -4225,7 +4197,6 @@
   <block id="dc85bed302b4a50d5caee37432fb1e00" category="paragraph">Der<block ref="6a8cef5b71adde6301ea0984592ea5c1" category="inline-link-rx"></block> Die HWU Applikation bietet unterstützte Hardware- und Softwarekomponenten für jede spezifische ONTAP Version. Das Tool liefert Konfigurationsinformationen für alle NetApp Storage Appliances, die derzeit von der ONTAP Software unterstützt werden. Zudem bietet er eine Tabelle mit den Kompatibilitäten der Komponenten.</block>
   <block id="c17a25eff42ef9d63993d885c03e2828" category="list-text">Auf das zugreifen<block ref="ecf2d5292dff1a4ddc8acd79e65bb97b" category="inline-link-rx"></block> Anwendung zum Anzeigen der Systemkonfigurationsleitfäden. Wählen Sie die Registerkarte „Vergleichen“ Storage-Systeme aus. Hier sehen Sie die Kompatibilität zwischen verschiedenen Versionen der ONTAP Software und den NetApp Storage Appliances mit den gewünschten Spezifikationen.</block>
   <block id="dcc192ee7aed2a831bb0d6fafe725ef2" category="cell">Zur Planung des physischen Standorts der Storage-Systeme finden Sie in den folgenden Abschnitten: Unterstützte elektrische Netzstromkabel Onboard-Ports und Kabel</block>
-  <block id="02f4c139149d7f6083cbd0a67d25405c" category="paragraph">Befolgen Sie die Anweisungen zur physischen Installation der Controller im<block ref="a4401f1ea395e59960342bc517a0d1f3" category="inline-link-rx"></block>.</block>
   <block id="2250c54f5c304c93069c82c99f4ca884" category="section-title">NetApp ONTAP 9.5</block>
   <block id="51f86e32047159bc776651e8bcbe118a" category="inline-link">ONTAP 9.5 – Leitfaden für die Software-Einrichtung</block>
   <block id="ae0f5264db03162b363c77ab5f079a5c" category="paragraph">Bevor Sie das Setup-Skript ausführen, füllen Sie das Konfigurationsarbeitsblatt aus der Produktanleitung aus. Das Konfigurationsarbeitsblatt ist im verfügbar<block ref="6e68d56524a77de08773f98a40261ce9" category="inline-link-rx"></block> (Verfügbar im<block ref="acaccc868f6222e64c0f11237becafd9" category="inline-link-rx"></block>). Die folgende Tabelle enthält Informationen zur Installation und Konfiguration von ONTAP 9.5.</block>
@@ -4733,8 +4704,6 @@
   <block id="42517a4412c6bae63573e134c857ea68" category="list-text">Geben Sie die IP-Adresse des Webservers ein.</block>
   <block id="a6591ad3c8c50eee0e146461730ffe27" category="admonition">Die DNS-Server-IPs wurden früher nicht in die KVM-IP eingegeben, daher ist es notwendig, die IP des Webservers anstelle des Hostnamens einzugeben.</block>
   <block id="48f9052b3e96f2cf416eabc2133d7b5c" category="list-text">Eingabe<block ref="df45ae69822bed399f5bb600ed9a7bbb" prefix=" " category="inline-code"></block> Als Name der Remote-Datei.</block>
-  <block id="50603cae16b0f4df56f5033198e74879" category="inline-link">VMware-Downloads</block>
-  <block id="24048bf1fc307de2f6129d54a9b9a2ca" category="paragraph">Dieser VMware ESXi 6.7U1 ISO kann von heruntergeladen werden<block ref="0dd2cf12af65deb6e27700b3adfd193a" category="inline-link-rx"></block>.</block>
   <block id="014b60c254c89d337d7bb35d4c29036c" category="list-text">Geben Sie im Feld Remote Path den Pfad des Webservers zur ISO-Datei ein.</block>
   <block id="d4a0d23fcb0f3ba5491888bf2cca00fc" category="list-text">Klicken Sie auf OK, um den vMedia Mount zu erstellen.</block>
   <block id="f5c2a16ddc7d17bce242e425cde03905" category="list-text">Klicken Sie erneut auf OK und anschließend auf OK, um die Erstellung der vMedia Policy abzuschließen.</block>
@@ -4868,10 +4837,6 @@
   <block id="53aba6c5db3aafce3826c8a3afbc5607" category="paragraph">Für die Installation von ESXi in einer VMware-Umgebung sind mehrere Methoden vorhanden. Diese Verfahren konzentrieren sich darauf, wie die integrierte KVM-Konsole und die Funktionen für virtuelle Medien im Cisco UCS Manager verwendet werden, um Remote-Installationsmedien einzelnen Servern zuzuordnen und eine Verbindung zu ihren Boot-LUNs herzustellen.</block>
   <block id="ca81e21e704a07428405d79362c25e04" category="section-title">Laden Sie das individuelle Cisco Image für ESXi 6.7U1 herunter</block>
   <block id="d0ef05145a9f76bec8d3d9892283c756" category="paragraph">Wenn das benutzerdefinierte VMware ESXi Image nicht heruntergeladen wurde, führen Sie die folgenden Schritte aus, um den Download abzuschließen:</block>
-  <block id="d9d9b70ad08b8aadced6f1980ebe1fd6" category="list-text">Klicken Sie auf den folgenden Link: https://my.vmware.com/group/vmware/details?downloadGroup=OEM-ESXI67U1-CISCO&amp;productId=742[VMware vSphere Hypervisor (ESXi) 6.7U1.^]</block>
-  <block id="db4fee8311bc338a43457019cfa66d87" category="inline-link">VMware.com</block>
-  <block id="a42bc8c1cb14a781652f8e1c0567e1a1" category="list-text">Sie benötigen eine Benutzer-ID und ein Passwort für<block ref="42426f5809ddbc214c08e25917addf90" category="inline-link-rx"></block> Um diese Software herunterzuladen.</block>
-  <block id="1fe98aa66849b4692ae12d07b96f3993" category="list-text">Laden Sie die herunter <block ref="e906ec779ab4ac6cbfdf30db5cbb3f1c" prefix="." category="inline-code"></block> Datei:</block>
   <block id="d15c82447138e3da9b9afa86d9110e1b" category="paragraph">Das Cisco UCS IP KVM ermöglicht es dem Administrator, die Installation des Betriebssystems über Remote-Medien zu starten. Es ist erforderlich, sich in der Cisco UCS-Umgebung anzumelden, um IP KVM auszuführen.</block>
   <block id="251dfccc86f6feef5115d7b27c8b1fe4" category="paragraph">So melden Sie sich in der Cisco UCS-Umgebung an:</block>
   <block id="21920fd2a626e4134de91fddffc3c34d" category="list-text">Öffnen Sie einen Webbrowser, und geben Sie die IP-Adresse für die Cisco UCS-Cluster-Adresse ein. In diesem Schritt wird die Cisco UCS Manager-Applikation gestartet.</block>
@@ -5428,15 +5393,11 @@
   <block id="45151779d60c25e99023c85fb7e5f70e" category="paragraph">FlexPod Datacenter mit VMware vSphere 7.0 U2 ist die optimale Grundlage für eine Shared-Infrastruktur für die Implementierung von FC-NVMe für verschiedene IT-Workloads. Auf diese Weise erhalten Applikationen, die ihn benötigen, hochperformanten Storage-Zugriff. Da FC-NVMe jedoch mit Hochverfügbarkeit, Multipathing und zusätzlichem Betriebssystem-Support weiter entwickelt wird, eignet sich FlexPod hervorragend als bevorzugte Plattform und bietet die Skalierbarkeit und Zuverlässigkeit, die zur Unterstützung dieser Funktionen erforderlich sind.</block>
   <block id="2e9b438bb0a923f9a4cfd56c7eb47eba" category="paragraph">Mit FlexPod haben Cisco und NetApp eine Plattform geschaffen, die sich flexibel und skalierbar für zahlreiche Anwendungsfälle und Applikationen ist. Mit FC-NVMe bietet FlexPod eine weitere Funktion, mit der Unternehmen geschäftskritische Applikationen effizient und effektiv gleichzeitig in derselben Shared IT-Infrastruktur unterstützen können. Dank der Flexibilität und Skalierbarkeit von FlexPod können Kunden mit einer geeigneten Infrastruktur beginnen, die mit den neuen Geschäftsanforderungen mitwächst.</block>
   <block id="21b8b4e69eb4bcd7890b3ce6dff80e12" category="list-text">Cisco Unified Computing System (UCS)</block>
-  <block id="584b12a2ac3f6fd3e0e7049156fdd91c" category="inline-link"><block ref="584b12a2ac3f6fd3e0e7049156fdd91c" category="inline-link-rx"></block></block>
-  <block id="3c65018c18cf8ce78db5681a338977ae" category="paragraph"><block ref="3c65018c18cf8ce78db5681a338977ae" category="inline-link-rx"></block></block>
   <block id="a9bc4af6dc522e2b661cd4b6503061e4" category="list-text">Fabric Interconnects der Cisco UCS 6400-Serie – Datenblatt</block>
   <block id="71a8d27297a8ea56627190298acb7a23" category="inline-link"><block ref="71a8d27297a8ea56627190298acb7a23" category="inline-link-rx"></block></block>
   <block id="ae0111867c908af61ab7655ef25c16fb" category="paragraph"><block ref="ae0111867c908af61ab7655ef25c16fb" category="inline-link-rx"></block></block>
   <block id="a3dbaa31ff645cd7a47a13288a226f5d" category="inline-link"><block ref="a3dbaa31ff645cd7a47a13288a226f5d" category="inline-link-rx"></block></block>
   <block id="a34348cc0f49f6f3fb873c621819ae6a" category="paragraph"><block ref="a34348cc0f49f6f3fb873c621819ae6a" category="inline-link-rx"></block></block>
-  <block id="aa03af91e97e3a7938de166d258e0470" category="inline-link"><block ref="aa03af91e97e3a7938de166d258e0470" category="inline-link-rx"></block></block>
-  <block id="6020fe19150345d99b481804bbc989d5" category="paragraph"><block ref="6020fe19150345d99b481804bbc989d5" category="inline-link-rx"></block></block>
   <block id="cd2d76930423ad7cca8537acf2a3068d" category="inline-link"><block ref="cd2d76930423ad7cca8537acf2a3068d" category="inline-link-rx"></block></block>
   <block id="6cd4f16d8b1f703abed74c85ee281843" category="paragraph"><block ref="6cd4f16d8b1f703abed74c85ee281843" category="inline-link-rx"></block></block>
   <block id="3e18b63e5077aa1deedf66c411dc8962" category="list-text">Cisco Unified Computing System Adapter</block>
@@ -5458,18 +5419,12 @@
   <block id="30d37924aae959f5f8be738ca035502f" category="list-text">NetApp AFF A-Series</block>
   <block id="c6a079892f1cff76919834401bb28e4c" category="inline-link"><block ref="c6a079892f1cff76919834401bb28e4c" category="inline-link-rx"></block></block>
   <block id="91fbc750242e3f6e73b7346d7de4255d" category="paragraph"><block ref="91fbc750242e3f6e73b7346d7de4255d" category="inline-link-rx"></block></block>
-  <block id="0efcb78d6dd86f734d5f4bc64ccf8c30" category="inline-link"><block ref="0efcb78d6dd86f734d5f4bc64ccf8c30" category="inline-link-rx"></block></block>
-  <block id="08b9bce1e64e2ff433f4a5d4ab2d177f" category="paragraph"><block ref="08b9bce1e64e2ff433f4a5d4ab2d177f" category="inline-link-rx"></block></block>
-  <block id="1437b8b2e8fc7321b26cb3260b2497de" category="inline-link"><block ref="1437b8b2e8fc7321b26cb3260b2497de" category="inline-link-rx"></block></block>
-  <block id="3d6f191554274501ba88fe69ea6ba807" category="paragraph"><block ref="3d6f191554274501ba88fe69ea6ba807" category="inline-link-rx"></block></block>
   <block id="581a5130c89459868713aba87d5ddef8" category="list-text">Best Practices für ein modernes SAN</block>
   <block id="28cf8118bed6bfff2d8c5e8b980c1d1d" category="inline-link"><block ref="28cf8118bed6bfff2d8c5e8b980c1d1d" category="inline-link-rx"></block></block>
   <block id="0d226f32134d70adc638b78bc53393a8" category="list-text">Einführung von End-to-End-NVMe für FlexPod</block>
   <block id="651d79725508fd0119e3f81dd49cf222" category="inline-link"><block ref="651d79725508fd0119e3f81dd49cf222" category="inline-link-rx"></block></block>
   <block id="7b00214f336cfd8e3b6c48d0df0025a3" category="paragraph"><block ref="7b00214f336cfd8e3b6c48d0df0025a3" category="inline-link-rx"></block></block>
   <block id="7aaf95441fd5c24881cd267924f4466b" category="section-title">Interoperabilitätsmatrixe</block>
-  <block id="33a5856b62b0795c60374ac94b38ff05" category="inline-link"><block ref="33a5856b62b0795c60374ac94b38ff05" category="inline-link-rx"></block></block>
-  <block id="d6ac65bf36b9bb86fd269d9f52d82cf3" category="paragraph"><block ref="d6ac65bf36b9bb86fd269d9f52d82cf3" category="inline-link-rx"></block></block>
   <block id="0407c27180c9b019e644e8ad4c6a9324" category="section-title">Danksagungen</block>
   <block id="0b761cfbb2be11fcc3bd9c4447e089c4" category="paragraph">Die Autoren bedanken sich herzlich bei John George von Cisco und Scott Lane und Bobby Oommen von NetApp für die Unterstützung und Anleitung, die bei der Projektdurchführung enthalten sind.</block>
   <block id="3274a50ba9f0d3c0adefdfa11c5094be" category="doc">Testergebnisse</block>
@@ -5546,9 +5501,6 @@
   <block id="678501a3f6fca7f30ea2a2c56bded3e5" category="paragraph"><block ref="678501a3f6fca7f30ea2a2c56bded3e5" category="inline-link-macro-rx"></block></block>
   <block id="15c3cfaed853a426f1875bde46231c4a" category="summary">Hier finden Sie eine Videovorführung über die Verwendung von NetApp Cloud Insights.</block>
   <block id="de42653a3a04e4aefa258105632011d4" category="doc">Videos und Demos</block>
-  <block id="f0e69e5af144a617a479b790fcd74805" category="paragraph">Hier sehen Sie eine Videovorführung zur Verwendung von NetApp Cloud Insights zur Bewertung von Ressourcen in einer On-Premises-Umgebung<block ref="37a1d5c7c8f40a676418c3dba0f819a2" category="inline-link-rx"></block>.</block>
-  <block id="046a323c45865786ada3564c7973c727" category="paragraph">Hier wird eine Videovorführung zur Überwachung der Infrastruktur mithilfe von NetApp Cloud Insights angezeigt und es werden Warnungsschwellenwerte für die Infrastruktur festgelegt<block ref="05a01b9079dd58e5716d177b918b2e8f" category="inline-link-rx"></block>.</block>
-  <block id="24b6310384eda7515a0019b7fafe21e4" category="paragraph">Hier sehen Sie eine Videovorführung zur Verwendung von NetApp Cloud Insights zur bewerten einzelner Applikationen in der Umgebung<block ref="05ff47242997e6489455533d5b1e4fca" category="inline-link-rx"></block>.</block>
   <block id="f6254d887d725b43315c83f25aa43480" category="summary">In diesem Abschnitt sind die Zielgruppe und die Fälle aufgeführt, für die diese Lösung gilt.</block>
   <block id="2a3b399798aa16ecfbc1425cc560bfad" category="doc">Anwendungsfälle</block>
   <block id="976894dcc596e37094668684315ccac4" category="paragraph">Diese Lösung trifft auf folgende Anwendungsfälle zu:</block>
@@ -5738,10 +5690,7 @@
   <block id="296905c924222c83eef2d46cfc06670c" category="doc">Konfigurieren Sie den Public Cloud-Service-Provider</block>
   <block id="a93bd8fac0274b3d8a9a725b02a7006e" category="inline-link-macro">Früher: Terraform Cloud Integration mit ICO-Voraussetzung.</block>
   <block id="14f746f4385eed664c63e7c2ceb0c33f" category="paragraph"><block ref="14f746f4385eed664c63e7c2ceb0c33f" category="inline-link-macro-rx"></block></block>
-  <block id="60d1ed6349be5d3bad11d86129f158ce" category="section-title">Verfahren 1: Zugriff auf NetApp Cloud Manager</block>
   <block id="49fc376ed35249f3841846ede4dab884" category="inline-link">NetApp Cloud Central</block>
-  <block id="881118b4505a907203f96d7d4bb2464b" category="paragraph">Um Zugriff auf NetApp Cloud Manager und andere Cloud-Services zu erhalten, müssen Sie sich anmelden<block ref="25c9ce3f64e912d3750c233c5edfffad" category="inline-link-rx"></block>.</block>
-  <block id="4f39c070d98fb8261f08a9f4af4bfcea" category="admonition">Klicken Sie zum Einrichten von Workspaces und Benutzern im Cloud Central Konto auf<block ref="8db968382215ca64c3ec159bc6512f38" category="inline-link-rx"></block>.</block>
   <block id="2e4179358198d20865e3e24968e6d2d5" category="section-title">Verfahren 2: Anschluss Einsetzen</block>
   <block id="2a304a1348456ccd2234cd71a81bd338" category="inline-link">Verlinken</block>
   <block id="4d12f9411baea75a585912a995cd84b2" category="paragraph">Informationen zum Bereitstellen von Connector in Google Cloud finden Sie hier<block ref="7d420e21b1b4b492131970b38e3c7184" category="inline-link-rx"></block>.</block>
@@ -6099,10 +6048,6 @@
   <block id="aa7206c393519866735d718a745db075" category="paragraph">Eine JSON-Datei für die Workflow-Komponente ist in verfügbar<block ref="f9ca7c1dbbbd005395883eb34560fa1c" category="inline-link-rx"></block>.</block>
   <block id="b2f3408c9d01ee65202784c85e804e29" category="inline-link-macro">Weiter: Terraform-Ausführung vom Controller.</block>
   <block id="b676b4f0a7c70c0b6b427d2d63263495" category="paragraph"><block ref="b676b4f0a7c70c0b6b427d2d63263495" category="inline-link-macro-rx"></block></block>
-  <block id="9b477d427eec353b19e985f723c091e3" category="summary">Der FabricPool Economic Calculator ist über das unabhängige IT-Marktforschungsunternehmen Evaluator Group verfügbar, das die Kosteneinsparungen zwischen lokalen Ressourcen und der Cloud für Storage (kalte Daten) projizieren kann.</block>
-  <block id="6f48d1fb7c7073c6f1c817cb15e915a2" category="doc">Betriebskosten</block>
-  <block id="93787b18aa3cb5e7c602c81ff4a5cab7" category="inline-link">FabricPool-Wirtschaftsrechner</block>
-  <block id="acc6194529c3fe7386d1070f9bc6721b" category="paragraph">Der<block ref="cb1d7d9c15c6943bf40cdba6418a7b94" category="inline-link-rx"></block> Das unabhängige Unternehmen Evaluator Group kann die Kosteneinsparungen für Cold-Data-Storage vor Ort und in der Cloud projizieren. Der Rechner bietet eine einfache Schnittstelle, mit der Sie die Kosten für das Speichern von selten genutzten Daten auf einer Performance-Tier ermitteln können, statt sie für den verbleibenden Lebenszyklus der Daten an ein Cloud-Tier zu senden. Die Berechnung basiert auf einer 5-Jahres-Berechnung und ermittelt die Storage-Kosten über den Zeitraum mit den vier zentralen Faktoren wie Quellkapazität, Datenwachstum, Snapshot-Kapazität und Prozentsatz kalter Daten.</block>
   <block id="8d051a62e2d203f6829d7d7282bfaad2" category="list-text">FabricPool Best Practices in sich vereint</block>
   <block id="9c04b089839cc58f31e0928e4f6828e2" category="inline-link">www.netapp.com/us/media/tr-4598.pdf</block>
   <block id="365ebbe96b44c66c99650ba3962dc94c" category="list-text">TR-4036: Technische Spezifikation für das FlexPod Datacenter</block>
@@ -6132,8 +6077,6 @@
   <block id="d543fe011b5ca59d76b0601285d35c3a" category="paragraph">Diese Lösung ermöglicht das einfache und komfortable Management von FlexPod On-Premises und Datenreplizierung in einer Hybrid Cloud dank Automatisierung und Orchestrierung durch Cisco Intersight Cloud Orchestrator.</block>
   <block id="d3b7c913cd04ebfec0e9ec32cb6fd58c" category="section-title">GitHub</block>
   <block id="6ccd6e595c753175e7ea6b9c3c00feb9" category="list-text">Alle Terraform-Konfigurationen werden verwendet</block>
-  <block id="c179b6fa575bc7fa32dfb7610146c685" category="inline-link"><block ref="c179b6fa575bc7fa32dfb7610146c685" category="inline-link-rx"></block></block>
-  <block id="68e15b733420e402fbbb000ebeca5961" category="paragraph"><block ref="68e15b733420e402fbbb000ebeca5961" category="inline-link-rx"></block></block>
   <block id="f8ea35d5f1082c0d4ebadcaeb5c4ce9b" category="list-text">JSON-Dateien für den Import von Workflows</block>
   <block id="d36eb67bdeda5d26432b94d3b21665aa" category="inline-link"><block ref="d36eb67bdeda5d26432b94d3b21665aa" category="inline-link-rx"></block></block>
   <block id="7ee1c41b1421d2dc52ff2a6c0ca34454" category="paragraph"><block ref="7ee1c41b1421d2dc52ff2a6c0ca34454" category="inline-link-rx"></block></block>
@@ -6142,11 +6085,7 @@
   <block id="c56152678911fb0d557c41fdcf1d3213" category="inline-link"><block ref="c56152678911fb0d557c41fdcf1d3213" category="inline-link-rx"></block></block>
   <block id="c96bb6046b6069eb7298cd0b0b6b70fd" category="paragraph"><block ref="c96bb6046b6069eb7298cd0b0b6b70fd" category="inline-link-rx"></block></block>
   <block id="325ef16488c41cabfb77587d00f90537" category="list-text">Dokumentation Von Cisco Intersight Cloud Orchestrator:</block>
-  <block id="fa212deb4193a2682a5adc2e636644bd" category="inline-link"><block ref="fa212deb4193a2682a5adc2e636644bd" category="inline-link-rx"></block></block>
-  <block id="99839072ce01f98f3b6cf15b8382c597" category="paragraph"><block ref="99839072ce01f98f3b6cf15b8382c597" category="inline-link-rx"></block></block>
   <block id="30de9c74ca24ef6c8bab1b4a84f1fde5" category="list-text">Cisco Intersight Service for HashiCorp Terraform Documentation</block>
-  <block id="3eb9b36a3168b0f6da765e2ada88617d" category="inline-link"><block ref="3eb9b36a3168b0f6da765e2ada88617d" category="inline-link-rx"></block></block>
-  <block id="fd09af68db9c0dfd650f7c4e78a460f8" category="paragraph"><block ref="fd09af68db9c0dfd650f7c4e78a460f8" category="inline-link-rx"></block></block>
   <block id="0fe3c69c48bc9700b5dd37f69ca26199" category="list-text">Cisco Intersight – Datenblatt</block>
   <block id="3060910bb320ad2fd34d07464c85725f" category="inline-link"><block ref="3060910bb320ad2fd34d07464c85725f" category="inline-link-rx"></block></block>
   <block id="6fbda78dbf9544421ca94656af2d60d0" category="paragraph"><block ref="6fbda78dbf9544421ca94656af2d60d0" category="inline-link-rx"></block></block>
@@ -6162,26 +6101,12 @@
   <block id="8e8fc0e7e19023c0232fec039b6df961" category="inline-link"><block ref="8e8fc0e7e19023c0232fec039b6df961" category="inline-link-rx"></block></block>
   <block id="1f735b42d50924526fea1c1512159c8c" category="paragraph"><block ref="1f735b42d50924526fea1c1512159c8c" category="inline-link-rx"></block></block>
   <block id="f58e06fa88f4c2a1b6785754a9e0a782" category="section-title">Referenzdokumente zu NetApp Cloud Volumes ONTAP</block>
-  <block id="bbd2995f138fe5b371240b2cc17190c1" category="list-text">NetApp Cloud Manager</block>
-  <block id="bd7b6098f4f7dbe0051346d24f5d0f68" category="inline-link"><block ref="bd7b6098f4f7dbe0051346d24f5d0f68" category="inline-link-rx"></block></block>
-  <block id="197ee6c8d2fbb82b68e7c9367a5d827f" category="paragraph"><block ref="197ee6c8d2fbb82b68e7c9367a5d827f" category="inline-link-rx"></block></block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="9fdeec9ecb7581b5b8e2d2a5fcc66adc" category="paragraph"><block ref="9fdeec9ecb7581b5b8e2d2a5fcc66adc" category="inline-link-rx"></block></block>
-  <block id="384f18164b60938c5ad89d5effb32d7b" category="list-text">Cloud Volumes ONTAP TCO-Rechner</block>
-  <block id="1464cfd03ef9221a5c46576dbb5acaaf" category="paragraph"><block ref="1464cfd03ef9221a5c46576dbb5acaaf" category="inline-link-rx"></block></block>
-  <block id="89a8336752fe296450613297e4b900cf" category="list-text">Cloud Volumes ONTAP Sizer</block>
-  <block id="60bd11ea0e09744eaeccf06ad57d256f" category="inline-link"><block ref="60bd11ea0e09744eaeccf06ad57d256f" category="inline-link-rx"></block></block>
-  <block id="a86cb95749eab7bd0c6a482d4da0d720" category="paragraph"><block ref="a86cb95749eab7bd0c6a482d4da0d720" category="inline-link-rx"></block></block>
-  <block id="77484b50042596806200eb9ad8a1034b" category="list-text">Cloud Assessment Tool</block>
-  <block id="1069773ac12400966d826141fdef9d8b" category="paragraph"><block ref="1069773ac12400966d826141fdef9d8b" category="inline-link-rx"></block></block>
-  <block id="e2616fc1fdb50365b35d1d5473ed3dce" category="list-text">NetApp Hybrid Cloud</block>
-  <block id="9fcffeb3a73be8377997a3dbce512929" category="paragraph"><block ref="9fcffeb3a73be8377997a3dbce512929" category="inline-link-rx"></block></block>
   <block id="23efdbe8862f0b39feb5fee8ba6a9555" category="list-text">Dokumentation der Cloud Manager-API</block>
   <block id="3fa5dc240c6c9a67734c097894aad63a" category="inline-link"><block ref="3fa5dc240c6c9a67734c097894aad63a" category="inline-link-rx"></block></block>
   <block id="c832101e61c0299f840aa2fb0dc54a5f" category="paragraph"><block ref="c832101e61c0299f840aa2fb0dc54a5f" category="inline-link-rx"></block></block>
   <block id="b9a6d65bed31fdf5f2527866fa0dfd9d" category="section-title">Fehlerbehebung</block>
-  <block id="868df23d9e8dc922a264062fa79c2241" category="inline-link"><block ref="868df23d9e8dc922a264062fa79c2241" category="inline-link-rx"></block></block>
-  <block id="3f6b4966cbc4a579bb0f9bef161c8fa5" category="paragraph"><block ref="3f6b4966cbc4a579bb0f9bef161c8fa5" category="inline-link-rx"></block></block>
   <block id="303e96f80576360d0c7b07ae7528fa4b" category="section-title">Terraform</block>
   <block id="2286ccbf59b9435994947e88725c76e8" category="list-text">Terraform Cloud</block>
   <block id="e07006e711ecd6f73bd7048090b7e2ab" category="inline-link"><block ref="e07006e711ecd6f73bd7048090b7e2ab" category="inline-link-rx"></block></block>
@@ -6194,8 +6119,6 @@
   <block id="99bdab1ba48d99c6b9acd194ae1eb5df" category="paragraph"><block ref="99bdab1ba48d99c6b9acd194ae1eb5df" category="inline-link-rx"></block></block>
   <block id="c731f72e1d22a7c5e01a7cb789a8885e" category="section-title">GCP</block>
   <block id="369e0f23a1a6dd50bf713d3771a63ab4" category="list-text">ONTAP Hochverfügbarkeit für GCP</block>
-  <block id="ad697fee8b8edd1e753ec60060dd1394" category="inline-link"><block ref="ad697fee8b8edd1e753ec60060dd1394" category="inline-link-rx"></block></block>
-  <block id="abfe0d8c399de2e80383ac64ea642a0f" category="paragraph"><block ref="abfe0d8c399de2e80383ac64ea642a0f" category="inline-link-rx"></block></block>
   <block id="08c7c6c7a0eaf45b1812976fa5f40a08" category="list-text">GCP pereprofür</block>
   <block id="07cd340ee20e09fd5ad828c27798a62c" category="inline-link"><block ref="07cd340ee20e09fd5ad828c27798a62c" category="inline-link-rx"></block></block>
   <block id="fe6eee3642045f58dd18597ab300a43a" category="paragraph"><block ref="fe6eee3642045f58dd18597ab300a43a" category="inline-link-rx"></block></block>
@@ -6281,7 +6204,6 @@
   <block id="2380402e21335066ce7f825004be024d" category="paragraph">Für diese Automatisierungs- und Orchestrierungsaufgaben sind einige Anforderungen und Daten erforderlich, wie in den folgenden Abschnitten beschrieben.</block>
   <block id="6e44f8632722e86d98fe7e921e8cddd3" category="paragraph">Sie benötigen ein GitHub-Konto, um Ihren Terraform-Code zu hosten. Intersight Orchestrator erstellt im Terraform Cloud for Business-Konto einen neuen Arbeitsbereich. Dieser Arbeitsbereich ist mit einem Workflow zur Versionskontrolle konfiguriert. Dazu müssen Sie die Terraform-Konfiguration in einem GitHub-Repository belassen und bei der Erstellung des Arbeitsbereichs als Input bereitstellen.</block>
   <block id="f36238daba7154b059d99557a05d4b86" category="inline-link">Dieser GitHub-Link</block>
-  <block id="2a1ab138896d11febbe935a77aa86ff3" category="paragraph"><block ref="187a40dfe1da2425129f8bce9ad2adb6" category="inline-link-rx"></block> Stellt die Terraform-Konfiguration mit verschiedenen Ressourcen zur Verfügung Sie können dieses Repository anstellen und eine Kopie in Ihrem GitHub-Konto erstellen.</block>
   <block id="58d1c40a160c26ce9b569468f46bf446" category="paragraph">In diesem Repository<block ref="287ceef1c7d8c808d423429d21ab9c8b" prefix=" " category="inline-code"></block> Hat die Definition für den erforderlichen Terraform-Provider definiert. Terraform-Provider für NetApp Cloud Manager wird verwendet.</block>
   <block id="17762b2242b4236a9aa2db59ff7bbe61" category="paragraph"><block ref="c9ac8098c5ea9d3e6a9a596ff0c512a4" prefix="" category="inline-code"></block> Enthält alle variablen Erklärungen. Der Wert für diese Variablen wird als Workflow-Eingabe des Intersight Cloud Orchestrator eingegeben. So können Werte bequem an einen Arbeitsbereich übergeben und die Terraform-Konfiguration ausgeführt werden.</block>
   <block id="6d6e98862becc20ef7c3d6a7a2551efe" category="paragraph"><block ref="c61b7d5c64f454bb3c361470a899fc2c" prefix="" category="inline-code"></block> Definition der verschiedenen Ressourcen, die erforderlich sind, um eine lokale ONTAP der Arbeitsumgebung hinzuzufügen, ein Cloud Volumes ONTAP Cluster mit einzelnen Nodes in Google Cloud zu erstellen, eine SnapMirror Beziehung zwischen On-Premises und Cloud Volumes ONTAP herzustellen, ein Cloud Volume in Cloud Volumes ONTAP zu erstellen usw.</block>
@@ -6439,8 +6361,6 @@
   <block id="0dc0144aa6c9a3c94cb0eb7a02fcb4f2" category="list-text">Fügen Sie das überwachte Storage-System vom FlexPod Datacenter zu Cloud Insights hinzu.</block>
   <block id="8dab6e8cb99bebf3621cea67b2b9011b" category="section-title">Melden Sie sich für den NetApp Cloud Insights Service an</block>
   <block id="a4af0f5a7ab2b6a0d9f4f6066aa00846" category="paragraph">So melden Sie sich für den NetApp Cloud Insights Service an:</block>
-  <block id="b0e3f3a6b584be5c18e0f8ba47b65374" category="inline-link"><block ref="b0e3f3a6b584be5c18e0f8ba47b65374" category="inline-link-rx"></block></block>
-  <block id="31cdabbfe370365043de159c5b831a64" category="list-text">Gehen Sie zu<block ref="cffd9e1d3e11f7611ea9a17e06c7b890" category="inline-link-rx"></block></block>
   <block id="1a049e3beaafc2cdafaa2cde6e968b36" category="list-text">Klicken Sie auf die Schaltfläche in der Mitte des Bildschirms, um die 14-Tage-Testversion zu starten. Oder melden Sie sich über den Link oben rechts an, um sich bei einem bestehenden NetApp Cloud Central Konto anzumelden.</block>
   <block id="877aa14e13209fc6f38eee6e04d200f3" category="section-title">Erstellen Sie eine virtuelle VMware-Maschine, die als Erfassungseinheit konfiguriert werden soll</block>
   <block id="6578aa89884716e49971cec53e1f2bdb" category="paragraph">Gehen Sie wie folgt vor, um eine VMware VM zu erstellen, die als Erfassungseinheit konfiguriert werden soll:</block>
@@ -6610,7 +6530,6 @@
   <block id="a6988e0328985acf7d14b582d5555880" category="section-title">Prozedur 1: Cisco Intersight und Terraform Cloud verbinden</block>
   <block id="ee8cc5791df61140cfb2aea76b83f8bf" category="list-text">Mit den relevanten Terraform Cloud-Kontodetails können Sie ein Terraform-Cloud-Ziel anfordern oder erstellen.</block>
   <block id="2d3d08c3c299f80b1db3e3ab39bd5e9d" category="list-text">Erstellen eines Terraform Cloud-Agent-Ziels für Private Clouds, damit Kunden den Agent im Datacenter installieren und die Kommunikation mit Terraform Cloud ermöglichen können</block>
-  <block id="e795699f1e20cc25510953719622f9d5" category="paragraph">Weitere Informationen finden Sie unter<block ref="b0ae32ca311a918c6584fdf584508f49" category="inline-link-rx"></block>.</block>
   <block id="3c8df17370cf0099f92c862dacb4d915" category="section-title">Verfahren 2: Benutzer-Token generieren</block>
   <block id="50ee5c7def2aa3f096824e3771b588e8" category="paragraph">Beim Hinzufügen eines Ziels für Terraform Cloud müssen Sie auf der Terraform Cloud-Einstellungsseite den Benutzernamen und das API-Token bereitstellen.</block>
   <block id="f0748d5a29db5c42275c71bacbf7b318" category="inline-link"><block ref="f0748d5a29db5c42275c71bacbf7b318" category="inline-link-rx"></block></block>
@@ -6671,7 +6590,6 @@
   <block id="32085592ea7375e22d4e50fb250ab93b" category="list-text">*Cisco Intersight Premier.* Zusätzlich zu den in der Advantage-Stufe angebotenen Funktionen bietet Cisco Intersight Premier Folgendes:</block>
   <block id="8689723938ad68dca4800a06de385d61" category="list-text">Intersight Cloud Orchestrator (ICO) für Computing, Netzwerk, Storage, integrierte Systeme, Virtualisierung, Container und Public-Cloud-Plattformen</block>
   <block id="7c7cb6774a222f136c322cbd6271909f" category="list-text">Uneingeschränkte Abonnementberechtigung für Cisco UCS Director ohne zusätzliche Kosten.</block>
-  <block id="c138302b39330092178afca4d6a1b99d" category="paragraph">Weitere Informationen zu Intersight Licensing und den in jeder Lizenz unterstützten Funktionen finden Sie hier<block ref="7eb168891f5d1b0113edfcdbba242d25" category="inline-link-rx"></block>.</block>
   <block id="635a4cf8fefd5a9d753528bc767bfc5f" category="admonition">In dieser Lösung verwenden wir Intersight Cloud Orchestrator und Intersight Service für HashiCorp Terraform. Diese Funktionen stehen Benutzern mit der Intersight Premier-Lizenz zur Verfügung, sodass diese Lizenzstufe aktiviert werden muss.</block>
   <block id="c4111b747373051b5b95ba533ab26cda" category="section-title">Terraform Cloud-Integration mit ICO</block>
   <block id="c905a15b564036aed889ec79a12b2b42" category="paragraph">Mithilfe von Cisco Intersight Cloud Orchestrator (ICO) können Workflows erstellt und ausgeführt werden, die Terraform Cloud (TFC)-APIs genannt werden. Die Aufgabe Web-API-Anfrage aufrufen unterstützt Terraform Cloud als Ziel und kann mithilfe von HTTP-Methoden mit Terraform Cloud-APIs konfiguriert werden. Der Workflow kann somit über eine Kombination von Aufgaben verfügen, die unter Verwendung generischer API-Aufgaben und anderer Operationen mehrere Terraform Cloud-APIs aufrufen. Für die Nutzung der ICO-Funktion benötigen Sie eine Premier-Lizenz.</block>
@@ -6680,7 +6598,6 @@
   <block id="8b83e74c5234b94ef4aa50c7e8355cf7" category="inline-link">Cisco Intersight Virtual Appliance – Erste Schritte</block>
   <block id="30f75ac7800191b38f765a03e95e4e92" category="paragraph">Der Cisco Intersight Assist ist innerhalb der Cisco Intersight Virtual Appliance erhältlich, die als zur Verfügung stehende Virtual Machine verteilt wird, die sich in einem OVA-Dateiformat (Open Virtual Appliance) befindet. Sie können das Gerät auf einem ESXi-Server installieren. Weitere Informationen finden Sie im<block ref="9ec2007768c9abd4b84d3e74335f0c5f" category="inline-link-rx"></block>.</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="inline-link">Erste Schritte</block>
-  <block id="ec0f396f2d3d02970c125145260fcc38" category="paragraph">Nach der Inanspruchnahme des Intersight Assist bei Intersight können Sie Endgeräte mithilfe der Option Claim through Intersight Assist anfordern. Weitere Informationen finden Sie unter<block ref="5c61a46cbaf3644182eeea7ed23b0ac8" category="inline-link-rx"></block>.</block>
   <block id="4bd50825ba17a2acb595707efca60c74" category="list-text">Nutzen Sie integrierte Datendeduplizierung, Datenkomprimierung, Thin Provisioning und Klonen und minimieren Sie so die Storage-Kosten.</block>
   <block id="5b22d57ae20a13353e0800be8fda5c50" category="list-text">Zuverlässigkeit der Enterprise-Klasse und unterbrechungsfreien Betrieb bei Ausfällen in der Cloud-Umgebung.</block>
   <block id="d14748164dcd7407330b974fba978880" category="list-text">Cloud Volumes ONTAP nutzt die branchenführende Replizierungstechnologie NetApp SnapMirror bei der Replizierung von Daten vor Ort in der Cloud, sodass sekundäre Kopien für unterschiedliche Anwendungsfälle verfügbar sind.</block>
@@ -6699,7 +6616,6 @@
   <block id="2c6e4ca4692997fe4d11c99c80dfbb47" category="paragraph">Die FlexPod Lösung, die als Basisplattform in unserer On-Premises-Umgebung verwendet wird, wurde entsprechend den beschriebenen Richtlinien und Spezifikationen implementiert<block ref="f10eda6a1028e8f651dae68f5081fe48" category="inline-link-rx"></block>.</block>
   <block id="7dc4cb6e5cc764021edf603ee8086766" category="paragraph">Das Netzwerk in dieser Umgebung ist auf ACI basiert. Weitere Informationen finden Sie unter<block ref="52978bee2b81a5e001ad2371304c6c3c" category="inline-link-rx"></block>.</block>
   <block id="0de80610a4cf8c45d9737ee7c93ff699" category="list-text">Weitere Informationen finden Sie unter den folgenden Links:</block>
-  <block id="78bb864de2f3628a86c0e8e70bb5087d" category="list-text"><block ref="78bb864de2f3628a86c0e8e70bb5087d" category="inline-link-rx"></block></block>
   <block id="0d87b9270aecd2565c2b1c531fbb959b" category="list-text"><block ref="0d87b9270aecd2565c2b1c531fbb959b" category="inline-link-rx"></block></block>
   <block id="071525c85bdb987cadd64553952b977b" category="list-text"><block ref="071525c85bdb987cadd64553952b977b" category="inline-link-rx"></block></block>
   <block id="b9ac0f5a408543b25267c7b18f92a793" category="paragraph">In der folgenden Tabelle werden die Versionen von FlexPod Hardware und Software aufgeführt.</block>
@@ -6732,7 +6648,6 @@
   <block id="d8503abad9eb8d89688958e5f240cfac" category="inline-link"><block ref="d8503abad9eb8d89688958e5f240cfac" category="inline-link-rx"></block></block>
   <block id="21bdff56ca1bedbfb61b0c6e5a9c080a" category="paragraph"><block ref="21bdff56ca1bedbfb61b0c6e5a9c080a" category="inline-link-rx"></block></block>
   <block id="90f8ca19c6152ca52fee6f7cd2c2bcd7" category="list-text">FlexPod Datacenter</block>
-  <block id="e7973c4bdef412fe59814d5057bed220" category="paragraph"><block ref="e7973c4bdef412fe59814d5057bed220" category="inline-link-rx"></block></block>
   <block id="1239758b4b5d8a2f1a65b5c8a5a4ebff" category="summary">Nachdem Sie eine NetApp Lizenzdatei erworben haben, können Sie sie mit dem OnCommand System Manager installieren. Führen Sie zum Installieren der Lizenzdatei die folgenden Schritte aus.</block>
   <block id="972561d3a20092f53a807ed87b43e416" category="doc">Installieren Sie die FabricPool Lizenz</block>
   <block id="8f57b98828cbea9c7bbe513727a71dcb" category="paragraph">Nachdem Sie eine NetApp Lizenzdatei erworben haben, können Sie sie mit dem OnCommand System Manager installieren. Gehen Sie wie folgt vor, um die Lizenzdatei zu installieren:</block>
@@ -6935,7 +6850,6 @@
   <block id="aa25073241475f2c4563ce55f18ce420" category="inline-link"><block ref="aa25073241475f2c4563ce55f18ce420" category="inline-link-rx"></block></block>
   <block id="90326a7760e456c0211e27abf75c60ad" category="list-text">Erstellen Sie ein Cisco Intersight-Konto. Besuchen Sie<block ref="bc7923bba70b3cb9cf6e98b34e2d7948" category="inline-link-rx"></block> So erstellen Sie Ihr Intersight-Konto. Sie müssen über eine gültige Cisco ID verfügen, um ein Cisco Intersight-Konto zu erstellen.</block>
   <block id="3c8df105fd752bbf269c1ad99181994c" category="inline-link">software.cisco.com</block>
-  <block id="5dafc61db3f99b3325eb07a53fdadf5a" category="list-text">Laden Sie die Intersight Virtual Appliance unter herunter<block ref="c3f4b1532ffc2bbf067c9bed78c127ee" category="inline-link-rx"></block>. Weitere Informationen finden Sie im<block ref="615894daff458d913cb094922f7eec37" category="inline-link-rx"></block>.</block>
   <block id="2b70343738f7a785cf3d0064f0a39b32" category="list-text">OVA bereitstellen. Zur Bereitstellung der OVA sind DNS und NTP erforderlich.</block>
   <block id="b46368b8756e258c478ad0209aafb836" category="list-text">Konfigurieren Sie DNS mit A/PTR- und CNAME-Alias-Datensätzen, bevor Sie die OVA bereitstellen. Siehe das folgende Beispiel.</block>
   <block id="9d6318b0d30a534802e63b46fbc2f7c1" category="inline-image-macro">Beispiel für einen Hostnamen, der für A/PTR-Datensätze verwendet wird</block>
@@ -6945,7 +6859,6 @@
   <block id="3ee38327895dc648b6f1f999e57babca" category="list-text">Passen Sie auf der Seite *Vorlage anpassen* die Bereitstellungseigenschaften der OVF-Vorlage an. Das Administratorpasswort wird für die lokalen Benutzer verwendet: Admin<block ref="6ba4e6b0617e48ea6684baf161a47a80" prefix="(" category="inline-code"></block>).</block>
   <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">Klicken Sie Auf *Weiter*.</block>
   <block id="88ade68952e1a8d9f1c49b5ed85b5af5" category="list-text">Nach der Bereitstellung der Intersight Assist-Appliance.</block>
-  <block id="dba06e35ee25a3095d873c4534514037" category="list-text">Navigieren Sie zu<block ref="f9e0ea639036dbfc655ff5cf553db753" category="inline-link-rx"></block> So schließen Sie die Einrichtung Ihrer Appliance nach der Installation ab.</block>
   <block id="bca0d681ab79310b7d18a7976928af12" category="paragraph">Die Installation wird automatisch gestartet. Die Installation kann je nach Bandbreite bis zu Intersight.com bis zu einer Stunde in Anspruch nehmen. Es kann auch einige Sekunden dauern, bis der sichere Standort betriebsbereit ist, nachdem die VM eingeschaltet wurde.</block>
   <block id="b8a3a6101b5ada36c1e5927fd398157d" category="list-text">Wählen Sie während des Prozesses nach der Implementierung die folgende Option aus:</block>
   <block id="3920eddb38a93c54b93b962bbdea7c26" category="list-text">*Intersight Assist.* mit dieser Bereitstellung kann das SaaS-Modell eine Verbindung zu Cisco Intersight herstellen.</block>
@@ -7210,7 +7123,6 @@
   <block id="5aeaa6d8ef03bc5f49185431ec147dcc" category="paragraph"><block ref="5aeaa6d8ef03bc5f49185431ec147dcc" category="inline-link-rx"></block></block>
   <block id="20038822e4002375d07dbbaa2f842177" category="list-text">NetApp and Federal Information Processing Standard (FIPS) Veröffentlichung 140-2</block>
   <block id="01ad4c25dc606d42af63966d1d192007" category="paragraph"><block ref="01ad4c25dc606d42af63966d1d192007" category="inline-link-rx"></block></block>
-  <block id="381d74f2d7dbcffad4ff739176b2ab91" category="paragraph"><block ref="381d74f2d7dbcffad4ff739176b2ab91" category="inline-link-rx"></block></block>
   <block id="b142182673eaef19aa257c978e64bdf6" category="list-text">NetApp Leitfaden zur Härtung von ONTAP 9</block>
   <block id="32a205a6c059cf9285d47b38c93cfe7e" category="paragraph"><block ref="32a205a6c059cf9285d47b38c93cfe7e" category="inline-link-rx"></block></block>
   <block id="8976b0d9a3096c54654d952ae6a99888" category="list-text">Datenblatt zu NVE und NAE</block>
@@ -7220,9 +7132,6 @@
   <block id="6770ff13f95abd8619a19519877aedf9" category="list-text">NetApp Cryptographic Security Module</block>
   <block id="02817beae9581784d8cd2f39ddda543b" category="paragraph"><block ref="02817beae9581784d8cd2f39ddda543b" category="inline-link-rx"></block></block>
   <block id="bf7fa6fb49dfa01515f774f7a86c6270" category="list-text">Cyber-Sicherheitsverfahren für mittelgroße und große Organisationen im Gesundheitswesen</block>
-  <block id="d1bf3cb27e5807caa3600fcdce477355" category="paragraph"><block ref="d1bf3cb27e5807caa3600fcdce477355" category="inline-link-rx"></block></block>
-  <block id="3f6b1e7f286b82aada2164eae419754f" category="list-text">Cisco und Cryptographic Module Validation Program (CMVP)</block>
-  <block id="2035d7965b0d9306904545b7f1299daf" category="paragraph"><block ref="1f6cf078065ad92d550c7f8fc06953cd" category="inline-link-rx"></block></block>
   <block id="8f8e7f38245f5c357d275915df1fb3d6" category="list-text">NetApp Storage Encryption, NVMe Self-Encrypting Drives, NetApp Volume Encryption und NetApp Aggregate Encryption</block>
   <block id="617326e2119d8781b2c939871e7a5f48" category="paragraph"><block ref="617326e2119d8781b2c939871e7a5f48" category="inline-link-rx"></block></block>
   <block id="64f1ff1b6f99d34e2d1a43f8332c7947" category="list-text">NetApp Volume Encryption und NetApp Aggregate Encryption</block>
@@ -7237,12 +7146,6 @@
   <block id="55281df24e22fc716f53cc920cd0aec7" category="paragraph"><block ref="55281df24e22fc716f53cc920cd0aec7" category="inline-link-rx"></block></block>
   <block id="f4bb968e88fa8aec8a3ffd847dc271cd" category="list-text">FlexPod Datacenter for Epic EHR Deployment Guide</block>
   <block id="60f9956fcc06affd8fe2e969cb45d71c" category="paragraph"><block ref="60f9956fcc06affd8fe2e969cb45d71c" category="inline-link-rx"></block></block>
-  <block id="79a4caf33538b199d14af02115050e0a" category="list-text">FlexPod-Datacenter-Infrastruktur für MEDITECH-Software</block>
-  <block id="ffa60417e05d983180333283807f72ae" category="paragraph"><block ref="ffa60417e05d983180333283807f72ae" category="inline-link-rx"></block></block>
-  <block id="a6fa8ad627834c7f49f4a12b4702211f" category="list-text">Der FlexPod-Standard gilt auch für MEDITECH Software</block>
-  <block id="54e915e9182cbe8568777d8c06952ce7" category="paragraph"><block ref="54e915e9182cbe8568777d8c06952ce7" category="inline-link-rx"></block></block>
-  <block id="a82a8aeb527fe34165f76582a421e44d" category="list-text">FlexPod for MEDITECH Directional Sizing Guide</block>
-  <block id="fd7e77eecd78dc94c6676881733fcd14" category="paragraph"><block ref="fd7e77eecd78dc94c6676881733fcd14" category="inline-link-rx"></block></block>
   <block id="a63e6ef2bab4a03e7407c66118723fd7" category="list-text">FlexPod für medizinische Bildverarbeitung</block>
   <block id="e997ca20dd931bcae1a9cc1d32eeeca7" category="paragraph"><block ref="e997ca20dd931bcae1a9cc1d32eeeca7" category="inline-link-rx"></block></block>
   <block id="2af4f6ea027bdaba1ccaa895b5f614b0" category="list-text">KI im Gesundheitswesen</block>
@@ -7311,8 +7214,6 @@
   <block id="a5043e3ef490045b45671ca3a56a694f" category="paragraph">Die Abbildung unten zeigt die FlexPod Architektur und hebt die Hochverfügbarkeit auf allen Ebenen des Stacks deutlich hervor. Die Infrastrukturkomponenten von Storage, Netzwerk und Computing sind so konfiguriert, dass bei einem Ausfall einer Komponente sofort ein Failover zum verbleibenden Partner möglich ist.</block>
   <block id="c4d1af1300de238be1f57c88bf98ea46" category="paragraph"><block ref="c4d1af1300de238be1f57c88bf98ea46" category="inline-image-macro-rx" type="image"></block></block>
   <block id="26164d712a996eabd187b84bc3703995" category="paragraph">Ein großer Vorteil für ein FlexPod System ist, dass es vorab integriert und für mehrere Workloads validiert wurde. Für jede Lösungsvalidierung werden detaillierte Design- und Implementierungsleitfäden veröffentlicht. In diesen Dokumenten finden Sie Best Practices, die Sie für Workloads einsetzen müssen, damit sie nahtlos auf FlexPod ausgeführt werden können. Diese Lösungen basieren auf erstklassigen Computing-, Netzwerk- und Storage-Produkten sowie einer Vielzahl von Funktionen, die auf Sicherheit und Härtung der gesamten Infrastruktur liegen.</block>
-  <block id="b60718454d2068090cd0bd43b946c32c" category="inline-link">IBM X-Force Threat Intelligence Index</block>
-  <block id="594eff6f972f5982ad1c591479a4b561" category="paragraph"><block ref="2ff3259942eacfea766f37cf75b410ba" category="inline-link-rx"></block> staaten, „menschliche Fehler, die für zwei Drittel der kompromittierten Aufzeichnungen verantwortlich sind, einschließlich historischer 424 % Sprung in die falsch konfigurierte Cloud-Infrastruktur.“</block>
   <block id="fafd09285dab7fa844f5addddf50c37b" category="paragraph">Mit einem FlexPod-System vermeiden Sie Fehlkonfiguration Ihrer Infrastruktur, indem Sie Automatisierung durch Ansible-Playbooks verwenden, die ein lückenloses Setup der Infrastruktur gemäß den Best Practices in Cisco Validated Designs (CVDs) und NetApp Verified Architectures (NVAs) durchführen.</block>
   <block id="036fb9e2e96860a580ec607703d702d9" category="summary">NetApp bietet verschiedene Hardware, Software und Services, die verschiedene Komponenten der im Rahmen des Standards validierten kryptografischen Module umfassen können. Daher verwendet NetApp verschiedene Ansätze zur Einhaltung von FIPS 140-2 für die Kontrollebene und Datenebene.</block>
   <block id="88a22e01bcb2a32a771985c67f2fdfd8" category="doc">FlexPod NetApp ONTAP Storage und FIPS 140-2</block>
@@ -7583,7 +7484,6 @@
   <block id="6494739090e31c91779d5b1ae056881c" category="section-title">Lokale FlexPod-Implementierung</block>
   <block id="73a3588eac7abd3bbe0602fc71d7322a" category="paragraph">Informationen über die Designdetails von FlexPod with UCS X-Series, VMware and NetApp ONTAP finden Sie im<block ref="35e9ae622703e5e9f707c46a163e0a74" category="inline-link-rx"></block> Designleitfaden Dieses Dokument enthält Anleitungen zum Design, wie Sie die von Cisco Intersight gemanagte Plattform der UCS X-Serie in die FlexPod Datacenter-Infrastruktur integrieren können.</block>
   <block id="af2e955267eb0fc88e73f50acfba1bb8" category="inline-link">Implementierungsleitfaden</block>
-  <block id="323eb6e2b16a1d67b853a4abb140333a" category="paragraph">Informationen zur Bereitstellung der lokalen FlexPod-Instanz finden Sie unter<block ref="97bc661be69e16506c7b7d98e48c6bf7" category="inline-link-rx"></block>.</block>
   <block id="21002c93598b066c39c08e307cebb549" category="paragraph">Dieses Dokument enthält Anleitungen zur Implementierung, wie Sie die von Cisco Intersight gemanagte Plattform der UCS X-Serie in eine FlexPod Datacenter-Infrastruktur integrieren können. Das Dokument behandelt sowohl Konfigurationen als auch Best Practices für eine erfolgreiche Implementierung.</block>
   <block id="21b6d1b90774505daa15a9be831436a9" category="inline-link">Designleitfaden</block>
   <block id="9c47a213311911c0334417506858d557" category="inline-link">Implementierungsleitfaden</block>
@@ -8213,17 +8113,13 @@
   <block id="cf37c5cba207938e4c97f3bcf9ffabc9" category="cell">Alle ONTAP ASA-, AFF- und FAS-Storage-Arrays werden für ONTAP 9.7P1 und höher unterstützt</block>
   <block id="de19bc9421b3493cb471fb68d644f614" category="cell">VSphere 7.0 und höher</block>
   <block id="2bab0c7a59bda4a6cf8bb732310f19d1" category="inline-link">Von Cisco Intersight unterstützte Systeme</block>
-  <block id="4583b551e49cf84018c42a34fc90472b" category="admonition">Siehe<block ref="c301da257433e3b44d89736f9cb32482" category="inline-link-rx"></block> Für die Mindestanforderungen von Cisco UCS Compute Komponenten und der UCSM Version</block>
   <block id="c6992d015712de0f9935c930f87d1e24" category="paragraph">Cisco Intersight bietet Services wie Infrastrukturservice und Cloud Orchestrator Service zum Managen, Automatisieren und Optimieren von physischem Storage (NetApp-Storage). Mit diesen Services können Sie Cisco UCS-Server und Cisco HyperFlex-System verwalten. Beim Infrastructure Service und Cloud Orchestrator Service kommt ein abonnementbasiertes Lizenzmodell mit mehreren Tiers zum Einsatz. Sie können die erforderliche Cisco UCS Server Volume-Tier für die ausgewählte Abonnementlaufzeit auswählen.</block>
   <block id="73940e6c81db7305c6108d57163a6bd9" category="paragraph-title">Lizenzmodell</block>
   <block id="0eeef496e6954ad0d16a059fafdc5e38" category="paragraph">Das Lizenzmodell von Cisco Intersight Infrastructure Services wurde vereinfacht und bietet nun die folgenden zwei Ebenen:</block>
   <block id="cebf91fe773dd5685c20ef3bff0017f3" category="list-text">*Cisco Intersight Infrastructure Services Essentials* - die Lizenzstufe Essentials bietet Serververwaltung einschließlich globaler Statusüberwachungsfunktionen, Inventarisierung, proaktiven Support durch Cisco TAC-Integration, Multi-Faktor-Authentifizierung sowie SDK- und API-Zugriff.</block>
   <block id="0ef1beaa09215da1b27e26da9c01b73b" category="list-text">* Cisco Intersight Infrastructure Services Advantage* - die Advantage-Lizenz-Tier bietet fortschrittliches Servermanagement mit erweiterter Transparenz, Integration in die Systeme anderer Anbieter, Automatisierung von Hardware und Software von Cisco und Drittanbietern sowie Multi-Domain-Lösungen.</block>
   <block id="f5e1db835ff4b10b4a6531770f9643e9" category="inline-link">Infrastructure Services Lizenz</block>
-  <block id="2c355e53fd6c41fd8e75d57ff3e446e3" category="paragraph">Weitere Informationen zu den Funktionen, die von verschiedenen Lizenzstufen abgedeckt werden, finden Sie unter<block ref="b733a46c0b54e4d9837584b6621e33e9" category="inline-link-rx"></block>.</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">Verwandte Informationen</block>
-  <block id="cb2f26cdcb58be1d59a4186132027351" category="inline-link">Cisco Intersight-Hilfe-Center</block>
-  <block id="cbdd42cc134bfbfb08861472ec705bb4" category="paragraph"><block ref="cbdd42cc134bfbfb08861472ec705bb4" category="inline-link-rx"></block></block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Rechtliche Hinweise</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Urheberrecht</block>
@@ -8323,7 +8219,6 @@
   <block id="824ae54596b9693994b0149193fdad01" category="paragraph">Weitere Informationen finden Sie unter <block ref="72c51d15f00a20805275a2725e33f916" category="inline-link-macro-rx"></block>.</block>
   <block id="c65f23ce2d02c64e04c3c7376ef78b2e" category="paragraph">Weitere Informationen zu VMware vSphere und seinen Komponenten finden Sie unter<block ref="1f73295bb656325bbd336b162a02c12d" category="inline-link-macro-rx"></block> Die</block>
   <block id="9279f26780ded18d0540905e2f4c2443" category="paragraph">Für detaillierte Informationen siehe<block ref="fc0491c933cd37e813a120bdaa5242bb" category="inline-link-macro-rx"></block> Die</block>
-  <block id="a000b140fe824ced4237ae63f1c6e298" category="paragraph">Diese Hybrid-Cloud-Lösung kann auf jede FlexPod -Umgebung erweitert werden, die unterstützte Versionen von Software, Firmware und Hardware gemäß der Definition in der<block ref="d81b4b28c891206234cb1654e6016fc1" category="inline-link-macro-rx"></block> ,<block ref="a20168bfee610ed2009269dc61511d00" category="inline-link-macro-rx"></block> , Und<block ref="cbb6475bbf94049e4e0384caf6c1ee3e" category="inline-link-macro-rx"></block> Die</block>
   <block id="e560e67994c1662218988a427804df78" category="paragraph">Die folgende Tabelle zeigt die Versionen von Console und Cloud Volumes ONTAP .</block>
   <block id="bccaa4aa80831b76c11240a16447975f" category="cell">Konsole</block>
   <block id="1e4a345000c59774abe93a846772304d" category="list-text">*Schutz vor Ransomware.*  Der Ransomware-Schutz der NetApp Console scannt Datenquellen in lokalen und Cloud-Umgebungen, erkennt Sicherheitslücken und gibt deren aktuellen Sicherheitsstatus und Risikobewertung an.  Anschließend werden konkrete Handlungsempfehlungen gegeben, die Sie weiter untersuchen und befolgen können, um Abhilfe zu schaffen.  Dies ermöglicht es Ihnen, Ihre kritischen Gesundheitsdaten vor Ransomware-Angriffen zu schützen.</block>
@@ -8425,11 +8320,6 @@
   <block id="d3426be49616eaf1b7e70f69c8de7848" category="list-text">ONTAP 9.1 oder höher</block>
   <block id="224933be9d4d10a0fbff60cbd71f2cb1" category="list-text">Cisco NX-OS Version 7.0(3)I6(1) oder höher</block>
   <block id="e076f9c04b344d5f8b351379153e417e" category="list-text">In der von Cisco UCS verwalteten Konfiguration, Cisco UCS Manager UCS 4.0(1b)</block>
-  <block id="86617f86b30dd24f1bd4725a98b449f5" category="section-title">Softwarevoraussetzungen für FlexPod Express mit E-Series</block>
-  <block id="aa9021c3475dd0f007a2c8fdeee731ce" category="paragraph">Die Softwarevoraussetzungen für den FlexPod Express mit E-Series umfassen:</block>
-  <block id="5de9fd80c68cb9370e0ae8e8dd120d07" category="list-text">E-Series SANtricity Software 11.30 oder höher</block>
-  <block id="2bb7ee63b402ba30890b4940ed00ca62" category="list-text">Cisco UCS Manager 4.0(1b).</block>
-  <block id="0674dd6b190b5769ec2b28d3d5cf0da3" category="paragraph">Alle Software muss in der <block ref="542750ff2ff69f0b5f9f0ab1166bb952" category="inline-link-rx"></block> aufgeführt und unterstützt sein.</block>
   <block id="4ba8114dd624dc2130553b7742f70d88" category="section-title">NetApp FAS</block>
   <block id="6f4427b59f55f6827f3d3145a95ee28d" category="paragraph">Redundante Controller der Serien AFF C190, AFF A220 oder FAS2750 sind in der FlexPod Express-Architektur erforderlich. Die Controller führen die ONTAP-Software aus. Bei der Bestellung der Speichercontroller kann die bevorzugte Softwareversion auf den Controllern vorinstalliert werden. Für ONTAP kann das Cluster entweder mit einem Paar Cluster-Interconnect-Switches oder in einer Cluster ohne Switches-Konfiguration bereitgestellt werden.</block>
   <block id="791ddb7a7ddefe9ef8c91c03bbd4fd71" category="paragraph">Die in der folgenden Tabelle aufgeführten Teilenummern beziehen sich auf einen leeren Controller. Je nach gewählter Speicherplattform stehen verschiedene Optionen und Konfigurationen zur Verfügung. Für Details zu diesen zusätzlichen Komponenten wenden Sie sich bitte an Ihren Vertriebsmitarbeiter.</block>
@@ -8501,4 +8391,96 @@
   <block id="0ba0549652aeb08deee908e7e20e4817" category="paragraph">Die E-Series SANtricity Software ist das Betriebssystem, das auf E-Series-Speichersystemen läuft. SANtricity bietet ein hochflexibles System, das unterschiedlichen Anwendungsanforderungen gerecht wird und integriert hohe Verfügbarkeit sowie eine Vielzahl von Datenschutzfunktionen.</block>
   <block id="54ea526e0f7043f1dc938cd7369a4327" category="inline-link">SANtricity-Produktseite</block>
   <block id="6b5301ce1cf7e0e48684f0dfb047d000" category="paragraph">Weitere Informationen finden Sie unter<block ref="886f8cec6f6fad388084013f5ad16d82" category="inline-link-rx"></block>.</block>
+  <block id="54a9695c1cd20fe3c1b3de7d2d0849da" category="section-title">ESXi 6.7 Cisco Custom Image herunterladen</block>
+  <block id="a6b0b2988c5db0d3f9904da3baa7fb5d" category="inline-link">Downloadseite des Broadcom Supportportals</block>
+  <block id="322c1bf6212e7c54c320d39396d4813e" category="list-text">Navigieren Sie zum <block ref="5d4583965b99d38471744b638e2c1be9" category="inline-link-rx"></block>für benutzerdefinierte ISOs.</block>
+  <block id="5dfe98d918fd68be7991890eae196c52" category="list-text">Navigieren Sie zu <block ref="bac24f0712f47dd060823c6839812795" prefix=" " category="inline-code"></block>.</block>
+  <block id="a4bb6a234ad5eb67804c313bb9a8b3db" category="list-text">Melden Sie sich bei <block ref="3a2c98d485b24d204e43f97cb6f53439" prefix=" " category="inline-code"></block> an, geben Sie root als Benutzernamen ein und geben Sie das Root-Passwort ein.</block>
+  <block id="9155aed337ee7c7997d16763eddc06ed" category="section-title">ESXi 6.7U2 Cisco Custom Image herunterladen</block>
+  <block id="fcee695f2f7ba8610259081393553d28" category="paragraph">Befolgen Sie die physischen Installationsverfahren für die Controller im<block ref="55c19dfac75c3e1e113dbbd2306df844" category="inline-link-rx"></block>.</block>
+  <block id="40d02a779b2450667ba336919cc7e091" category="inline-link">Broadcom Supportportal</block>
+  <block id="44980665d39eb3ec10ac74979c971f75" category="paragraph">Dieses VMware ESXi 6.7U1 ISO kann von <block ref="62d63f643136def6e65f14623c41490c" category="inline-link-rx"></block> heruntergeladen werden.</block>
+  <block id="9d83aeccf8d8debf48e5f4fd74b3d3cf" category="inline-link"><block ref="9d83aeccf8d8debf48e5f4fd74b3d3cf" category="inline-link-rx"></block></block>
+  <block id="743c0a3df47aac48f177d62ceb7f336d" category="list-text">Melden Sie sich auf der Downloadseite des Broadcom Supportportals an:<block ref="e87d8afd489832c9d1fd6eec5d27241b" category="inline-link-rx"></block>.</block>
+  <block id="f7156768144eb78e823d0ea5e26d3d42" category="list-text">Sie benötigen eine Broadcom-Benutzerkennung und ein Passwort. Suchen Sie nach VMware vSphere Hypervisor (ESXi) Custom ISOs.</block>
+  <block id="6506f4046660ce0a9578499159b36cf4" category="list-text">Laden Sie das Cisco Custom Image für die ESXi 6.7U1 Installations-CD herunter.</block>
+  <block id="902f3bc4fd17fe0c7c7b29b3a9e8b8fb" category="inline-link"><block ref="902f3bc4fd17fe0c7c7b29b3a9e8b8fb" category="inline-link-rx"></block></block>
+  <block id="479ab8e92c9bac02359037d3bcc3b88b" category="list-text"><block ref="479ab8e92c9bac02359037d3bcc3b88b" category="inline-link-rx"></block></block>
+  <block id="77792692000223d564fe9c4202e6912a" category="inline-link"><block ref="77792692000223d564fe9c4202e6912a" category="inline-link-rx"></block></block>
+  <block id="637d31c7df418f03993d74ecc50deacf" category="paragraph"><block ref="637d31c7df418f03993d74ecc50deacf" category="inline-link-rx"></block></block>
+  <block id="739cf53af4853827057722abde32c3cf" category="cell"><block ref="739cf53af4853827057722abde32c3cf" category="inline-link-rx"></block></block>
+  <block id="ced9b756e7f783d951a40abd247b9d8b" category="cell"><block ref="ced9b756e7f783d951a40abd247b9d8b" category="inline-link-rx"></block></block>
+  <block id="8ee7373db859b7cc6585ca3318999cc0" category="cell"><block ref="8ee7373db859b7cc6585ca3318999cc0" category="inline-link-rx"></block></block>
+  <block id="1ac623e46f5ff04e5081a3242f25e551" category="cell"><block ref="1ac623e46f5ff04e5081a3242f25e551" category="inline-link-rx"></block></block>
+  <block id="6ae41a6d5ab9be50ac1fd70e15a3605b" category="cell"><block ref="6ae41a6d5ab9be50ac1fd70e15a3605b" category="inline-link-rx"></block></block>
+  <block id="4f57ab945a6e1a3245b614a26defc06b" category="paragraph">Sämtliche Software muss in der <block ref="c096c26abcc89f6d566b79687074dc7b" category="inline-link-rx"></block> aufgeführt und unterstützt sein. Bestimmte Softwarefunktionen erfordern möglicherweise neuere Codeversionen als die in früheren Architekturen aufgeführten Mindestanforderungen.</block>
+  <block id="a05525388d2fadefda4af92395d016ea" category="summary">NetApp Speichercontroller bilden die Speichergrundlage in der FlexPod Express-Architektur für die Speicherung von System- und Anwendungsdaten. Dieser Abschnitt listet die verschiedenen NetApp Speicheroptionen in der FlexPod Express-Architektur auf.</block>
+  <block id="71af4499971f2d160ae892ec655fadf6" category="list-text">Alle Softwarekomponenten müssen in der <block ref="c096c26abcc89f6d566b79687074dc7b" category="inline-link-rx"></block> aufgeführt und unterstützt sein.</block>
+  <block id="bcf39a73b92a800a77b3a63b0bf1937c" category="paragraph">Die Speichersysteme der Serien FAS2600 und FAS2500 verfügen über integrierte 10GbE-Ports.</block>
+  <block id="af112978bf9cee28fb168e71aab3d4ae" category="list-text">NetApp Lösungen für MongoDB Solution Brief (NetApp login erforderlich)</block>
+  <block id="a8bddb0790f3d82f5935ad877c2c8f3d" category="inline-link"><block ref="a8bddb0790f3d82f5935ad877c2c8f3d" category="inline-link-rx"></block></block>
+  <block id="594630526d34281f26c3bf5187f5e3d8" category="paragraph"><block ref="594630526d34281f26c3bf5187f5e3d8" category="inline-link-rx"></block></block>
+  <block id="9072e73f90a3122db465943dc5f6d767" category="paragraph">NetApp MetroCluster Konfigurationen werden von Tausenden von Unternehmen weltweit für Hochverfügbarkeit (HA), null Datenverlust und unterbrechungsfreie Abläufe innerhalb und außerhalb des Rechenzentrums eingesetzt. MetroCluster ist eine kostenlose Funktion der ONTAP Software, die Daten und Konfigurationen zwischen zwei ONTAP Clustern an verschiedenen Standorten oder Ausfalldomänen synchron spiegelt. MetroCluster bietet kontinuierlich verfügbaren Speicher für Anwendungen, indem zwei Ziele automatisch erfüllt werden: Null Recovery Point Objective (RPO) durch synchrones Spiegeln der in den Cluster geschriebenen Daten. Nahezu Null Recovery Time Objective (RTO) durch Spiegeln der Konfiguration und automatisierten Zugriff auf Daten am zweiten Standort. MetroCluster bietet Einfachheit durch die automatische Spiegelung von Daten und Konfigurationen zwischen den beiden unabhängigen Clustern an den beiden Standorten. Wenn Speicher in einem Cluster bereitgestellt wird, wird er automatisch auf den zweiten Cluster am zweiten Standort gespiegelt. NetApp SyncMirror Technologie erstellt eine vollständige Kopie aller Daten mit einem RPO von Null. Daher können Workloads von einem Standort jederzeit auf den anderen Standort umgeschaltet werden und die Datenbereitstellung erfolgt ohne Datenverlust. Weitere Informationen sind verfügbar<block ref="252ef593d9bf7568715463e2b3001bf8" category="inline-link-rx"></block>.</block>
+  <block id="f6ffd6bf62da0ce01cbe488ec1418d21" category="paragraph">Das Gesundheitswesen, wie wir es kennen, basiert auf Leistungserbringern (Ärzten, Pflegekräften, Radiologen, Medizintechnikern usw.) und Patienten. Da Patienten und Leistungserbringer immer enger zusammenrücken und der geografische Standort nur noch ein Datenpunkt ist, wird es umso wichtiger, dass die zugrundeliegende Plattform verfügbar ist, wenn Leistungserbringer und Patienten sie benötigen. Die Plattform muss sowohl effizient als auch kostengünstig auf lange Sicht sein. In ihren Bemühungen, die Kosten der Patientenversorgung weiter zu senken, würden <block ref="ab98a32d34bc836c52b92cfa7414def8" category="inline-link-rx"></block> (ACOs) durch eine effiziente Plattform unterstützt.</block>
+  <block id="eac92879caa54910e9169210a18a9d55" category="inline-link"><block ref="eac92879caa54910e9169210a18a9d55" category="inline-link-rx"></block></block>
+  <block id="8dc3cc0536a8251a95cbfb9dd2145b04" category="paragraph"><block ref="8dc3cc0536a8251a95cbfb9dd2145b04" category="inline-link-rx"></block></block>
+  <block id="45c6f93bf9f8120226b783ad681fec82" category="list-text">Wechseln Sie zu<block ref="1a6ddf831e19d017e65c54311bc584aa" category="inline-link-rx"></block></block>
+  <block id="3913141072581612ae2bfd91092b484e" category="paragraph">Eine Videodemonstration zur Verwendung von NetApp Cloud Insights zur Bewertung der Ressourcen in einer On-Premises-Umgebung ist verfügbar<block ref="b2bb736e53b4c001a8a17d1e11b4d1bf" category="inline-link-rx"></block>.</block>
+  <block id="52a79d4479bf84a37e89c5b8ec6b4c7f" category="paragraph">Eine Videodemonstration zur Verwendung von NetApp Cloud Insights zur Überwachung der Infrastruktur und zur Festlegung von Alarmschwellenwerten für die Infrastruktur ist verfügbar<block ref="7bc8151d4d6167d26ea25f36941d767a" category="inline-link-rx"></block>.</block>
+  <block id="c890cbf91870285dfdd5a206c2fb76d6" category="paragraph">Eine Videodemonstration zur Verwendung von NetApp Cloud Insights zur Bewertung einzelner Anwendungen in der Umgebung ist verfügbar<block ref="9bb4f23901e78efb446e662a5ae34659" category="inline-link-rx"></block>.</block>
+  <block id="7eb93c97191aa85a3e31ed480f203263" category="paragraph">Informationen zur Bereitstellung der lokalen FlexPod Instanz finden Sie unter <block ref="bae411419211640056aad5f544f480c8" category="inline-link-rx"></block>.</block>
+  <block id="b1d4a5bda603212c4fc59416f18bc0d2" category="paragraph">Diese Hybrid-Cloud-Lösung kann auf jede FlexPod-Umgebung erweitert werden, in der unterstützte Versionen von Software, Firmware und Hardware ausgeführt werden, wie in <block ref="7c51cb770ac84a1429ed1cfe6c686aed" category="inline-link-macro-rx"></block>, <block ref="a20168bfee610ed2009269dc61511d00" category="inline-link-macro-rx"></block> und <block ref="cbb6475bbf94049e4e0384caf6c1ee3e" category="inline-link-macro-rx"></block> definiert.</block>
+  <block id="222d8e5a0fdec5985578ded88a4e4d85" category="paragraph"><block ref="249cb40fa7ed87208513fa23cd46ae4c" category="inline-link-rx"></block>Stellt die Terraform-Konfiguration mit verschiedenen Ressourcen bereit. Dieses Repository kann geforkt und eine Kopie im eigenen GitHub Konto erstellt werden.</block>
+  <block id="0f3bf8a9ffdd4619fcc663464541d59d" category="inline-link"><block ref="0f3bf8a9ffdd4619fcc663464541d59d" category="inline-link-rx"></block></block>
+  <block id="c92914690511779fbf2503e8fcd3f2c7" category="paragraph"><block ref="c92914690511779fbf2503e8fcd3f2c7" category="inline-link-rx"></block></block>
+  <block id="680572ba4dc720705a61e764d220b1f5" category="inline-link"><block ref="680572ba4dc720705a61e764d220b1f5" category="inline-link-rx"></block></block>
+  <block id="3f4cc33bf5f3a1764b92423b02b234d9" category="paragraph"><block ref="3f4cc33bf5f3a1764b92423b02b234d9" category="inline-link-rx"></block></block>
+  <block id="0f2060dca00d162a310b2e9b2ee6a228" category="inline-link"><block ref="0f2060dca00d162a310b2e9b2ee6a228" category="inline-link-rx"></block></block>
+  <block id="73627b62b6a728236bfefb959cf1c235" category="paragraph"><block ref="73627b62b6a728236bfefb959cf1c235" category="inline-link-rx"></block></block>
+  <block id="f59de4cd614cd1a5960d3d22777ffe33" category="list-text">NetApp Console-Dokumentation:</block>
+  <block id="32559fe6e51036691cb42e3da18251e9" category="inline-link"><block ref="32559fe6e51036691cb42e3da18251e9" category="inline-link-rx"></block></block>
+  <block id="b4cb3c46a9e9ff5f25134751246405aa" category="paragraph"><block ref="b4cb3c46a9e9ff5f25134751246405aa" category="inline-link-rx"></block></block>
+  <block id="e46e22ef8a2b00306ce9c649021cdc4b" category="list-text">Google Cloud TCO Calculator mit NetApp Cloud Volumes ONTAP</block>
+  <block id="24744d54d7c99fece20fa2ff1120effa" category="paragraph"><block ref="24744d54d7c99fece20fa2ff1120effa" category="inline-link-rx"></block></block>
+  <block id="3c72c5293c7d6ed3bda09c8b51058ef3" category="list-text">Cloud Volumes ONTAP Dimensionierung und Kostenschätzung:</block>
+  <block id="5464f7e2ca3ff7aa9678e86317d0b0fb" category="inline-link"><block ref="5464f7e2ca3ff7aa9678e86317d0b0fb" category="inline-link-rx"></block></block>
+  <block id="74806931bf05a1a68e7aef23d309c7cb" category="paragraph"><block ref="74806931bf05a1a68e7aef23d309c7cb" category="inline-link-rx"></block></block>
+  <block id="8c3a80132003147785efcf214e7631b9" category="list-text">Cloud Assessment und Infrastrukturanalyse:</block>
+  <block id="76cf7e9e0100c3eb1457ea1056a8b147" category="paragraph"><block ref="76cf7e9e0100c3eb1457ea1056a8b147" category="inline-link-rx"></block></block>
+  <block id="fbb0fa1820ca1e3b967b638efefd672e" category="list-text">NetApp Hybrid Cloud-Lösungen:</block>
+  <block id="e8272f4112948f3f5ddc64ddf367012d" category="paragraph"><block ref="e8272f4112948f3f5ddc64ddf367012d" category="inline-link-rx"></block></block>
+  <block id="31869323f4b0f35832c7bc2e618d40c4" category="inline-link"><block ref="31869323f4b0f35832c7bc2e618d40c4" category="inline-link-rx"></block></block>
+  <block id="e268063468b59d945b6a60feb3cd1b5a" category="paragraph"><block ref="e268063468b59d945b6a60feb3cd1b5a" category="inline-link-rx"></block></block>
+  <block id="8dbe2c8a4fcad36ec86570dae008ae81" category="inline-link"><block ref="8dbe2c8a4fcad36ec86570dae008ae81" category="inline-link-rx"></block></block>
+  <block id="56a35c8ac97d1a860866ac6c618547b5" category="paragraph"><block ref="56a35c8ac97d1a860866ac6c618547b5" category="inline-link-rx"></block></block>
+  <block id="da1dceee99e65c289c26e3c1f156af22" category="section-title">Vorgehensweise 1: Zugriff auf die NetApp Console</block>
+  <block id="03cceb640d7d424485e2f4bf06eed018" category="paragraph">Um auf NetApp Cloud-Dienste zuzugreifen, ist eine Registrierung und Anmeldung mit dem <block ref="9fa63571706fcef6edc9d423212e6d10" category="inline-link-rx"></block> erforderlich.</block>
+  <block id="d4a899579b6853e163300951004b1398" category="admonition">Zum Einrichten von Arbeitsbereichen und Benutzern im NetApp Console-Konto auf <block ref="8db968382215ca64c3ec159bc6512f38" category="inline-link-rx"></block> klicken.</block>
+  <block id="631df54d299fac62e8619d987f899f79" category="paragraph">Weitere Informationen zur Intersight-Lizenzierung und den in den einzelnen Lizenzen enthaltenen Funktionen sind hier zu finden<block ref="554fbb4e00c01e04bb1090698fc7fb9e" category="inline-link-rx"></block>.</block>
+  <block id="2978d65906424975a611d6cdc7809c52" category="paragraph">Nachdem Intersight Assist in Intersight eingebunden wurde, können Endgeräte über die Option „Claim Through Intersight Assist“ eingebunden werden. Weitere Informationen finden sich unter <block ref="b4b0ec369f4031cd6c31c3a8574d1e94" category="inline-link-rx"></block>.</block>
+  <block id="b1540a3ec25c7d8277b499a1cc1d920b" category="list-text"><block ref="b1540a3ec25c7d8277b499a1cc1d920b" category="inline-link-rx"></block></block>
+  <block id="8b7f5e75850c8e24596cdb72a54b27b4" category="paragraph">Weitere Informationen finden Sie unter <block ref="76d1d4d493c32804475e771815c49791" category="inline-link-rx"></block>.</block>
+  <block id="35e4a9978e683cd211b5a5ba48d0dfa2" category="inline-link"><block ref="35e4a9978e683cd211b5a5ba48d0dfa2" category="inline-link-rx"></block></block>
+  <block id="a9ff4d14a90b319ee78034d83481f4cc" category="paragraph"><block ref="a9ff4d14a90b319ee78034d83481f4cc" category="inline-link-rx"></block></block>
+  <block id="5561d7f69d67b69992d0635627f24798" category="inline-link"><block ref="5561d7f69d67b69992d0635627f24798" category="inline-link-rx"></block></block>
+  <block id="f732bf18d99eee83401aee19562b2315" category="paragraph"><block ref="f732bf18d99eee83401aee19562b2315" category="inline-link-rx"></block></block>
+  <block id="a0caaf8cd1166bac894ef6d959888518" category="inline-link"><block ref="a0caaf8cd1166bac894ef6d959888518" category="inline-link-rx"></block></block>
+  <block id="5c778aeb4f5b52e2318c8eac3cadcd24" category="paragraph"><block ref="5c778aeb4f5b52e2318c8eac3cadcd24" category="inline-link-rx"></block></block>
+  <block id="485235e5177a461d564dcd468e96afd7" category="inline-link"><block ref="485235e5177a461d564dcd468e96afd7" category="inline-link-rx"></block></block>
+  <block id="2a4aae2008e93ad78dfcadf65463f015" category="paragraph"><block ref="2a4aae2008e93ad78dfcadf65463f015" category="inline-link-rx"></block></block>
+  <block id="4a8ba7de37bb1595fe75580ba3bc84a0" category="list-text">VMware by Broadcom Kompatibilitätsleitfaden</block>
+  <block id="4e868d7f3498fd4dc9bbe8132010721a" category="inline-link"><block ref="4e868d7f3498fd4dc9bbe8132010721a" category="inline-link-rx"></block></block>
+  <block id="9dd8f644913713ee9b6bdbd9e7e03af3" category="paragraph"><block ref="9dd8f644913713ee9b6bdbd9e7e03af3" category="inline-link-rx"></block></block>
+  <block id="41048e193d64c3af1328380b825fed4f" category="list-text">Laden Sie die Cisco Intersight Virtual Appliance unter <block ref="b3630449269c76740e4291e621f6febd" category="inline-link-rx"></block> herunter. Weitere Informationen sind unter <block ref="615894daff458d913cb094922f7eec37" category="inline-link-rx"></block> verfügbar.</block>
+  <block id="7f2ce29845910147648bf27ce6c85361" category="list-text">Navigieren Sie zu <block ref="257227cb65acf3b2172014ee0ada9206" prefix=" " category="inline-code"></block>, um die Post-Installations-Einrichtung Ihres Geräts abzuschließen.</block>
+  <block id="8f32ab8f3ff903aac651b0b5d64a537d" category="admonition">Informationen zu den Mindestanforderungen für Cisco UCS Compute Components und die UCSM-Version sind in <block ref="3d6e5156f379efad227592659beca5ef" category="inline-link-rx"></block> zu finden.</block>
+  <block id="1f0959472c490db731aef4df43c76bcf" category="paragraph">Weitere Informationen zu den in den verschiedenen Lizenzstufen enthaltenen Funktionen sind unter <block ref="84da4971ea1dce018cc4c538da0b57e0" category="inline-link-rx"></block> verfügbar.</block>
+  <block id="8f72166809bd14273400709b3f6cfcd9" category="inline-link">Cisco Intersight SaaS-Hilfe-Center</block>
+  <block id="e8ac26e3a0e8241a8797e926a8dee395" category="paragraph"><block ref="e8ac26e3a0e8241a8797e926a8dee395" category="inline-link-rx"></block></block>
+  <block id="31a8bd5b6513f4b28a49b0f4fa593ea1" category="paragraph"><block ref="31a8bd5b6513f4b28a49b0f4fa593ea1" category="inline-link-rx"></block></block>
+  <block id="dbcf0c0af59248a26baac52cf95548ba" category="paragraph"><block ref="dbcf0c0af59248a26baac52cf95548ba" category="inline-link-rx"></block></block>
+  <block id="bf0fa264ebff0a1dd06b44917432af6c" category="list-text">Validierungsprogramm für kryptografische Module (CMVP). NIST CMVP Datenbank für validierte kryptografische Module, einschließlich Cisco Angeboten.</block>
+  <block id="68f4b2a68639107f1b9c2abd797f0fdd" category="paragraph"><block ref="68f4b2a68639107f1b9c2abd797f0fdd" category="inline-link-rx"></block></block>
+  <block id="01746a889bf1ac1270477dda1b827f3b" category="inline-link">2026 IBM X-Force Threat Intelligence Index</block>
+  <block id="a4c3cafba2f5af9c423c8bbff3746437" category="paragraph">Laut <block ref="fc482ff1efeaa57e047ef3bbed9c0c66" category="inline-link-rx"></block>ist die Ausnutzung von Schwachstellen zur Hauptursache von Cybervorfällen geworden, wobei KI es Angreifern ermöglicht, Sicherheitslücken schnell zu entdecken und auszunutzen.</block>
 </blocks>

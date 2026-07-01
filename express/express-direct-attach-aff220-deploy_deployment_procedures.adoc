@@ -450,7 +450,7 @@ Vergewissern Sie sich, dass die Hardware- und Softwarekomponenten, die Sie verwe
 
 ==== Storage Controller
 
-Befolgen Sie die Anweisungen zur physischen Installation der Controller im https://library-clnt.dmz.netapp.com/documentation/docweb/index.html?productID=62331&language=en-US["AFF A220: Dokumentation"^].
+Befolgen Sie die physischen Installationsverfahren für die Controller im https://docs.netapp.com/us-en/ontap-systems/a220/install-setup.html["AFF A220: Dokumentation"^].
 
 
 
@@ -2392,7 +2392,7 @@ NOTE: Die DNS-Server-IPs wurden früher nicht in die KVM-IP eingegeben, daher is
 
 . Eingabe `VMware-VMvisor-Installer-6.7.0.update01-10302608.x86_64.iso` Als Name der Remote-Datei.
 +
-Dieser VMware ESXi 6.7U1 ISO kann von heruntergeladen werden https://my.vmware.com/group/vmware/details?downloadGroup=ESXI650A&productId=614["VMware-Downloads"^].
+Dieses VMware ESXi 6.7U1 ISO kann von  https://support.broadcom.com/group/ecx/downloads["Broadcom Supportportal"^] heruntergeladen werden.
 
 . Geben Sie im Feld Remote Path den Pfad des Webservers zur ISO-Datei ein.
 . Klicken Sie auf OK, um den vMedia Mount zu erstellen.
@@ -2726,9 +2726,9 @@ Für die Installation von ESXi in einer VMware-Umgebung sind mehrere Methoden vo
 
 Wenn das benutzerdefinierte VMware ESXi Image nicht heruntergeladen wurde, führen Sie die folgenden Schritte aus, um den Download abzuschließen:
 
-. Klicken Sie auf den folgenden Link: https://my.vmware.com/group/vmware/details?downloadGroup=OEM-ESXI67U1-CISCO&productId=742[VMware vSphere Hypervisor (ESXi) 6.7U1.^]
-. Sie benötigen eine Benutzer-ID und ein Passwort für https://www.vmware.com/["VMware.com"^] Um diese Software herunterzuladen.
-. Laden Sie die herunter .`iso` Datei:
+. Melden Sie sich auf der Downloadseite des Broadcom Supportportals an: https://support.broadcom.com/group/ecx/downloads["https://support.broadcom.com/group/ecx/downloads"^].
+. Sie benötigen eine Broadcom-Benutzerkennung und ein Passwort. Suchen Sie nach VMware vSphere Hypervisor (ESXi) Custom ISOs.
+. Laden Sie das Cisco Custom Image für die ESXi 6.7U1 Installations-CD herunter.
 
 
 

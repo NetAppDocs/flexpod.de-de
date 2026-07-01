@@ -22,7 +22,7 @@ link:gcp-ncvo-cisco-intersight-configuration.html["Früher: Konfiguration von Ci
 . Mit den relevanten Terraform Cloud-Kontodetails können Sie ein Terraform-Cloud-Ziel anfordern oder erstellen.
 . Erstellen eines Terraform Cloud-Agent-Ziels für Private Clouds, damit Kunden den Agent im Datacenter installieren und die Kommunikation mit Terraform Cloud ermöglichen können
 +
-Weitere Informationen finden Sie unter https://intersight.com/help/saas/features/terraform_cloud/admin["Dieser Link"^].
+Weitere Informationen finden Sie unter  https://community.cisco.com/t5/data-center-and-cloud-knowledge-base/intersight-service-for-terraform/ta-p/4301093["Dieser Link"^].
 
 
 

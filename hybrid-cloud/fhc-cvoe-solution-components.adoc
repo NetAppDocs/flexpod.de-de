@@ -135,7 +135,7 @@ Für detaillierte Informationen siehelink:https://www.vmware.com/products/vcente
 
 == Hardware- und Software-Versionen
 
-Diese Hybrid-Cloud-Lösung kann auf jede FlexPod -Umgebung erweitert werden, die unterstützte Versionen von Software, Firmware und Hardware gemäß der Definition in derlink:http://support.netapp.com/matrix/["NetApp Interoperabilitäts-Matrix-Tool"^] ,link:https://ucshcltool.cloudapps.cisco.com/public/["UCS Hardware- und Softwarekompatibilität"^] , Undlink:https://www.vmware.com/resources/compatibility/search.php["VMware Compatibility Guide"^] Die
+Diese Hybrid-Cloud-Lösung kann auf jede FlexPod-Umgebung erweitert werden, in der unterstützte Versionen von Software, Firmware und Hardware ausgeführt werden, wie in link:http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^], link:https://ucshcltool.cloudapps.cisco.com/public/["UCS Hardware- und Softwarekompatibilität"^] und link:https://www.vmware.com/resources/compatibility/search.php["VMware Compatibility Guide"^] definiert.
 
 In der folgenden Tabelle sind die lokalen FlexPod Hardware- und Softwareversionen aufgeführt.
 

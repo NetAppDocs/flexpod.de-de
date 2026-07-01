@@ -31,7 +31,7 @@ Stellen Sie sicher, dass Sie die erfüllen https://www.cisco.com/c/en/us/td/docs
 *Schritte*
 
 . Erstellen Sie ein Cisco Intersight-Konto. Besuchen Sie https://intersight.com/["https://intersight.com/"^] So erstellen Sie Ihr Intersight-Konto. Sie müssen über eine gültige Cisco ID verfügen, um ein Cisco Intersight-Konto zu erstellen.
-. Laden Sie die Intersight Virtual Appliance unter herunter https://software.cisco.com/download/home/286319499/type/286323047/release/1.0.9-148["software.cisco.com"^]. Weitere Informationen finden Sie im https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html["Intersight Appliance Install and Upgrade Guide"^].
+. Laden Sie die Cisco Intersight Virtual Appliance unter  https://software.cisco.com/download/home/286319499/type/286323047/release/1.1.7-0.a["software.cisco.com"^] herunter. Weitere Informationen sind unter  https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/b_Cisco_Intersight_Appliance_Install_and_Upgrade_Guide_chapter_00.html["Intersight Appliance Install and Upgrade Guide"^] verfügbar.
 . OVA bereitstellen. Zur Bereitstellung der OVA sind DNS und NTP erforderlich.
 +
 .. Konfigurieren Sie DNS mit A/PTR- und CNAME-Alias-Datensätzen, bevor Sie die OVA bereitstellen. Siehe das folgende Beispiel.
@@ -57,7 +57,7 @@ image::ci-qsg_image4.png[Screenshot des Bildschirms „OVF-Vorlage bereitstellen
 
 . Nach der Bereitstellung der Intersight Assist-Appliance.
 +
-.. Navigieren Sie zu https://FQDN-of-your-appliance[] So schließen Sie die Einrichtung Ihrer Appliance nach der Installation ab.
+.. Navigieren Sie zu  `https://<FQDN-of-your-appliance>`, um die Post-Installations-Einrichtung Ihres Geräts abzuschließen.
 +
 Die Installation wird automatisch gestartet. Die Installation kann je nach Bandbreite bis zu Intersight.com bis zu einer Stunde in Anspruch nehmen. Es kann auch einige Sekunden dauern, bis der sichere Standort betriebsbereit ist, nachdem die VM eingeschaltet wurde.
 

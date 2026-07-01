@@ -29,7 +29,7 @@ Zum Bereitstellen der Lösung müssen Sie die folgenden Aufgaben ausführen:
 
 So melden Sie sich für den NetApp Cloud Insights Service an:
 
-. Gehen Sie zu https://cloud.netapp.com/cloud-insights["https://cloud.netapp.com/cloud-insights"^]
+. Wechseln Sie zu https://www.netapp.com/data-infrastructure-insights/["https://www.netapp.com/data-infrastructure-insights/"^]
 . Klicken Sie auf die Schaltfläche in der Mitte des Bildschirms, um die 14-Tage-Testversion zu starten. Oder melden Sie sich über den Link oben rechts an, um sich bei einem bestehenden NetApp Cloud Central Konto anzumelden.
 
 

@@ -55,7 +55,7 @@ Bei dieser Lösung haben wir ein Cloud Volumes ONTAP System mit einem einzigen K
 
 Informationen über die Designdetails von FlexPod with UCS X-Series, VMware and NetApp ONTAP finden Sie im https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_esxi7u2_design.html["FlexPod Datacenter mit Cisco UCS X-Serie"^] Designleitfaden Dieses Dokument enthält Anleitungen zum Design, wie Sie die von Cisco Intersight gemanagte Plattform der UCS X-Serie in die FlexPod Datacenter-Infrastruktur integrieren können.
 
-Informationen zur Bereitstellung der lokalen FlexPod-Instanz finden Sie unter https://netapp-https:/www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_vmware_7u2.htmlmy.sharepoint.com/personal/dorianh_netapp_com/Documents/Projects/Github%20Conversions/FlexPod/TR-4960/TR-4960%20FlexPod%20hybrid%20cloud%20with%20CVO%20for%20Epic%20latest-Feb14.docx["Implementierungsleitfaden"^].
+Informationen zur Bereitstellung der lokalen FlexPod Instanz finden Sie unter  https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_vmware_7u2.html["Implementierungsleitfaden"^].
 
 Dieses Dokument enthält Anleitungen zur Implementierung, wie Sie die von Cisco Intersight gemanagte Plattform der UCS X-Serie in eine FlexPod Datacenter-Infrastruktur integrieren können. Das Dokument behandelt sowohl Konfigurationen als auch Best Practices für eine erfolgreiche Implementierung.
 

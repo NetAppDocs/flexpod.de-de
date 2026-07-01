@@ -16,7 +16,7 @@ summary: Führen Sie die auf dieser Seite beschriebenen Schritte aus, um VMware 
 [role="lead"]
 Gehen Sie wie folgt vor, um VMware vCenter Server 6.7- und vSphere-Clustering zu konfigurieren:
 
-. Navigieren Sie zu `\https://\<<FQDN or IP of vCenter>>/vsphere-client/`.
+. Navigieren Sie zu  `https://<<FQDN or IP of vCenter>>/vsphere-client/`.
 . Klicken Sie auf vSphere Client starten.
 . Melden Sie sich mit dem Benutzernamen mailto:administrator@vspehre.local[Administrator^]@vsphere.local und dem SSO-Passwort an, das Sie während des VCSA-Setups eingegeben haben.
 . Klicken Sie mit der rechten Maustaste auf den vCenter-Namen, und wählen Sie New Datacenter aus.
@@ -77,7 +77,7 @@ NOTE: Dieser Prozess muss für alle zusätzlichen Hosts abgeschlossen werden, di
 
 Führen Sie die folgenden Schritte aus, um coredump auf den ESXi-Hosts zu konfigurieren:
 
-. Melden Sie sich bei HTTPS an:// https://172.21.181.105:5480/ui/services["VCenter"^] IP:5480/, geben Sie Root für den Benutzernamen ein, und geben Sie das Root-Passwort ein.
+. Melden Sie sich bei  `https://<vCenter IP>:5480` an, geben Sie root als Benutzernamen ein und geben Sie das Root-Passwort ein.
 . Klicken Sie auf Services und wählen Sie VMware vSphere ESXI Dump Collector.
 . Starten Sie den VMware vSphere ESXI Dump Collector Service.
 +
