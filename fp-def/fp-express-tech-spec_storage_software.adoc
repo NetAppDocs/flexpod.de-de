@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/fp-express-tech-spec_storage_software.html 
-keywords: storage, software, flexpod, express, ontap, e, series, santricity 
+keywords: storage, software, flexpod, express, ontap, aff, asa, fas 
 summary: Die in diesem Abschnitt aufgeführten Storage-Betriebssysteme werden von der FlexPod Express Plattform unterstützt. 
 ---
 = Storage Software
@@ -14,20 +14,12 @@ summary: Die in diesem Abschnitt aufgeführten Storage-Betriebssysteme werden vo
 
 
 [role="lead"]
-FlexPod Express unterstützt Speichersysteme, die NetApp ONTAP oder SANtricity Betriebssysteme ausführen.
+FlexPod Express unterstützt Speichersysteme, auf denen das NetApp ONTAP Betriebssystem läuft.
 
 
 
 == NetApp ONTAP
 
-Die NetApp ONTAP Software ist das Betriebssystem, das auf AFF und FAS Storage-Systemen läuft. ONTAP bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreie Betriebsabläufe, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht.
+Die NetApp ONTAP Software ist das Betriebssystem, das auf AFF, ASA und FAS Speichersystemen läuft. ONTAP bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreie Betriebsabläufe, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht. Mit dem ONTAP One Lizenzmodell sind alle Enterprise-Datendienste in einem einzigen Paket enthalten, was die Bereitstellung und Verwaltung vereinfacht und gleichzeitig vollen Zugriff auf erweiterte Funktionen bietet. ONTAP bietet robusten Datenschutz durch Technologien wie SnapMirror für Replikation und Disaster Recovery sowie SnapCenter für applikationskonsistente Datensicherung und -wiederherstellung. Es sind außerdem integrierte Sicherheitsfunktionen enthalten, darunter Autonomous Ransomware Protection und Verschlüsselung, um Daten vor modernen Bedrohungen zu schützen. Zusätzlich ermöglicht ONTAP eine nahtlose Integration in Hybrid Cloud Umgebungen mit Funktionen wie SnapMirror Cloud und S3-basierter Replikation, sodass Datenmobilität zwischen On-Premises- und Cloud-Umgebungen bei gleichzeitiger Wahrung von Konsistenz und Kontrolle möglich ist.
 
-Weitere Informationen zu ONTAP finden Sie im http://www.netapp.com/us/products/platform-os/ontap/index.aspx["ONTAP Produktseite"^].
-
-
-
-== E-Series SANtricity Software
-
-Die E-Series SANtricity Software ist das Betriebssystem, das auf E-Series-Speichersystemen läuft. SANtricity bietet ein hochflexibles System, das unterschiedlichen Anwendungsanforderungen gerecht wird und integriert hohe Verfügbarkeit sowie eine Vielzahl von Datenschutzfunktionen.
-
-Weitere Informationen finden Sie unter http://www.netapp.com/us/products/platform-os/santricity/index.aspx["SANtricity-Produktseite"^].
+Weitere Informationen zu ONTAP sind unter  https://www.netapp.com/ontap-data-management-software/["ONTAP Produktseite"^] zu finden.

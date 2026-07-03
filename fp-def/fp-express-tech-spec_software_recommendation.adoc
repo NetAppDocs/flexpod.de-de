@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_software_recommendation.html 
+keywords: software, requirements, flexpod, express, aff, fas, asa, cisco, nx-os, ontap 
+summary: In diesem Abschnitt werden die empfohlenen Softwarevoraussetzungen für die verschiedenen Versionen von FlexPod Express erläutert. 
+---
+= Empfehlungen zur Softwareversion
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+Dieser Abschnitt beschreibt die Softwareversionsempfehlungen für FlexPod Express.
+
+* ONTAP Version: Für alle FlexPod Express Konfigurationen wird die neueste ONTAP Version empfohlen. Siehe link:https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAP Versionshinweise"^] für die neueste ONTAP Version.
+* Cisco NX-OS-Version: Für allgemeine Empfehlungen zur Cisco NX-OS-Version für die Cisco 9000 Series Switches siehe link:https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/recommended_release/b_Minimum_and_Recommended_Cisco_NX-OS_Releases_for_Cisco_Nexus_9000_Series_Switches.html["Empfohlene Cisco NX-OS Releases für Cisco Nexus 9000 Series Switches"^]
+* Cisco UCS Firmware-Version:
++
+** Unter diesem Link sind die neuesten Versionen für link:https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html["Cisco Intersight Managed Mode Infrastruktur und Server-Firmware, Chassis-Firmware und PCIe-Knoten-Firmware"^] verfügbar.
+** Unter diesem Link sind die neuesten Versionen für link:https://intersight.com/help/saas/supported_systems/Intersight_Standalone_Mode["Cisco Intersight Standalone Mode und CIMC Firmware"^] verfügbar.
+
+
+
+
+
+NOTE: Alle Softwarekomponenten müssen im  http://support.netapp.com/matrix/["NetApp IMT"^] aufgeführt und unterstützt sein, alle NetApp Hardwarekomponenten und ONTAP Versionen müssen im  https://hwu.netapp.com/Home/Index["NetApp Hardware Universe"^] aufgeführt und unterstützt sein und alle Cisco Hardwarekomponenten müssen im  https://ucshcltool.cloudapps.cisco.com/public/["Cisco HCL"^] aufgeführt und unterstützt sein.

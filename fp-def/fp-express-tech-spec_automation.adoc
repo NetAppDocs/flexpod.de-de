@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: fp-def/fp-express-tech-spec_automation.html 
+keywords: flexpod express, automation, IaC, GitHub repository, Ansible 
+summary: Die automatisierte Bereitstellung für FlexPod Express ist über ein GitHub Repository möglich, das Ansible Playbooks und zugehörige Infrastructure as Code Assets enthält. 
+---
+= FlexPod Express Automatisierte Bereitstellung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+Die automatisierte Bereitstellung von FlexPod Express ist über die FlexPod Express GitHub Repositories verfügbar. Diese Repositories enthalten Ansible Playbooks und zugehörige Dateien, um die Bereitstellung der FlexPod Express Infrastruktur als Code (IaC) zu erleichtern.
+
+Die GitHub Repositories bieten einen strukturierten Ansatz für die Bereitstellung von FlexPod Express-Konfigurationen, sodass Benutzer die Einrichtung und Verwaltung ihrer Infrastruktur automatisieren können. Dazu gehören Playbooks für verschiedene Komponenten des FlexPod Express-Designs, wodurch eine effiziente, konsistente und zuverlässige Bereitstellung und Wartung der Umgebungen ermöglicht wird.
+
+Für die automatisierte Bereitstellung von FlexPod Express mit Cisco UCS C-Series Servern, Cisco Nexus Switches und ONTAP siehe link:https://github.com/ucs-compute-solutions/FlexPod-Express-Intersight["dieses GitHub Repository"^] sowie die entsprechende link:https://www.netapp.com/media/91691-flex-pod-express-nva-ia-c.pdf["NVA"^]. Auch die VMware-Rollen im Repository können für die Bereitstellung einer VMware-basierten Umgebung genutzt werden.
+
+Für die automatisierte Bereitstellung von FlexPod Express mit Cisco UCS X-Series Direct Servern, Cisco Nexus Switches und NetApp ONTAP siehe link:https://github.com/ucs-compute-solutions/FlexPod-IMM-OpenShift["dieses GitHub Repository"^]. Die Playbooks in diesem Repository können verwendet werden, um die FlexPod Express Infrastruktur bereitzustellen und anschließend OpenShift darauf zu implementieren, mithilfe dieses link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_rh_openshift_bm_iac_deploy.html.["CVD"^].
