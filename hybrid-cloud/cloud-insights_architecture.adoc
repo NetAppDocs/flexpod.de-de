@@ -18,6 +18,7 @@ In diesem Abschnitt beschäftigen wir uns mit der Architektur einer konvergenten
 
 
 
+[[solution-technology]]
 == Lösungstechnologie
 
 Eine FlexPod Datacenter Lösung umfasst die folgenden Mindestkomponenten, um eine hochverfügbare, leicht skalierbare, validierte und unterstützte konvergente Infrastrukturumgebung bereitzustellen.
@@ -62,6 +63,7 @@ Damit Cloud Insights Daten sammeln kann, muss ein Unternehmen eine Erfassungsein
 |===
 
 
+[[architectural-diagram]]
 == Architekturdiagramm
 
 Die folgende Abbildung zeigt die Lösungsarchitektur.
@@ -70,6 +72,7 @@ image:cloud-insights_image2.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[hardware-requirements]]
 == Hardwareanforderungen
 
 In der folgenden Tabelle werden die Hardwarekomponenten aufgeführt, die für die Implementierung der Lösung erforderlich sind. Je nach den Anforderungen des Kunden können die tatsächlich in einer konkreten Implementierung dieser Lösung eingesetzten Hardwarekomponenten abweichen.
@@ -97,6 +100,7 @@ In der folgenden Tabelle werden die Hardwarekomponenten aufgeführt, die für di
 |===
 
 
+[[software-requirements]]
 == Softwareanforderungen
 
 In der folgenden Tabelle werden die Softwarekomponenten aufgeführt, die für die Implementierung der Lösung erforderlich sind. Je nach den Anforderungen des Kunden können die in einer konkreten Implementierung dieser Lösung verwendeten Softwarekomponenten abweichen.
@@ -124,6 +128,7 @@ In der folgenden Tabelle werden die Softwarekomponenten aufgeführt, die für di
 |===
 
 
+[[use-case-details]]
 == Einzelheiten zum Anwendungsfall
 
 Diese Lösung trifft auf folgende Anwendungsfälle zu:

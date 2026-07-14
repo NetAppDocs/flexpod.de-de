@@ -20,6 +20,7 @@ Viele Gesundheitseinrichtungen auf der ganzen Welt haben FlexPod als gemeinsame 
 
 
 
+[[where-to-find-additional-information]]
 == Wo Sie weitere Informationen finden
 
 Sehen Sie sich die folgenden Dokumente und Websites an, um mehr über die in diesem Dokument beschriebenen Daten zu erfahren:
@@ -72,6 +73,7 @@ https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_ope
 
 
 
+[[version-history]]
 == Versionsverlauf
 
 |===

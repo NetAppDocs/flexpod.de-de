@@ -26,12 +26,14 @@ NOTE: Für alle zusätzlichen Nodes, die dem Cluster hinzugefügt werden, muss d
 
 
 
+[[log-in-to-cimc-interface-for-cisco-ucs-c-series-standalone-servers]]
 == Melden Sie sich bei der CIMC-Schnittstelle für Standalone-Server der Cisco UCS C-Serie an
 
 Die folgenden Schritte beschreiben die Methode zur Anmeldung an der CIMC-Schnittstelle für Standalone-Server der Cisco UCS C-Serie. Sie müssen sich bei der CIMC-Schnittstelle anmelden, um die virtuelle KVM auszuführen, die es dem Administrator ermöglicht, die Installation des Betriebssystems über Remote-Medien zu starten.
 
 
 
+[[all-hosts]]
 === Alle Hosts
 
 . Navigieren Sie zu einem Webbrowser, und geben Sie die IP-Adresse für die CIMC-Schnittstelle für die Cisco UCS C-Serie ein. In diesem Schritt wird die CIMC GUI-Anwendung gestartet.
@@ -53,12 +55,14 @@ NOTE: Sie müssen eventuell zuerst auf virtuelle Geräte aktivieren klicken. Wä
 
 
 
+[[install-vmware-esxi]]
 == VMware ESXi installieren
 
 In den folgenden Schritten wird die Installation von VMware ESXi auf jedem Host beschrieben.
 
 
 
+[[download-esxi-6-7u2-cisco-custom-image]]
 === ESXi 6.7U2 Cisco Custom Image herunterladen
 
 . Navigieren Sie zum  https://support.broadcom.com/group/ecx/downloads["Downloadseite des Broadcom Supportportals"^]für benutzerdefinierte ISOs.
@@ -79,12 +83,14 @@ image:express-c-series-c190-deploy_image18.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[set-up-vmware-esxi-host-management-networking]]
 == Einrichten des VMware ESXi Host-Managementnetzwerkes
 
 Bei den folgenden Schritten wird beschrieben, wie das Management-Netzwerk für jeden VMware ESXi Host hinzugefügt wird.
 
 
 
+[[all-hosts]]
 === Alle Hosts
 
 . Geben Sie nach dem Neustart des Servers die Option zum Anpassen des Systems ein, indem Sie F2 drücken.
@@ -131,6 +137,7 @@ esxcli network vswitch standard policy failover set -v vSwitch0 -a vmnic2,vmnic4
 
 
 
+[[configure-esxi-host]]
 == Konfigurieren Sie den ESXi-Host
 
 Verwenden Sie die Informationen in der folgenden Tabelle, um jeden ESXi Host zu konfigurieren.
@@ -188,6 +195,7 @@ Verwenden Sie die Informationen in der folgenden Tabelle, um jeden ESXi Host zu 
 |===
 
 
+[[log-in-to-the-esxi-host]]
 === Melden Sie sich beim ESXi-Host an
 
 So melden Sie sich beim ESXi-Host an:
@@ -199,6 +207,7 @@ So melden Sie sich beim ESXi-Host an:
 
 
 
+[[configure-iscsi-boot]]
 === Konfigurieren Sie den iSCSI-Bootvorgang
 
 Gehen Sie wie folgt vor, um iSCSI-Starts zu konfigurieren:
@@ -247,6 +256,7 @@ image:express-c-series-c190-deploy_image21.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[configure-iscsi-multipathing]]
 === Konfigurieren Sie iSCSI-Multipathing
 
 Gehen Sie wie folgt vor, um iSCSI-Multipathing auf den ESXi-Hosts einzurichten:
@@ -277,6 +287,7 @@ NOTE: Sie können die iSCSI LIF IP-Adressen finden, indem Sie den Befehl show de
 
 
 
+[[configure-the-esxi-host]]
 === Konfigurieren Sie den ESXi-Host
 
 Führen Sie die folgenden Schritte aus, um ESXi-Starts zu konfigurieren:
@@ -297,6 +308,7 @@ NOTE: Für die IP-Hash-Methode zum Lastausgleich muss der zugrunde liegende phys
 
 
 
+[[configure-the-port-groups-and-vmkernel-nics]]
 === Konfigurieren Sie die Portgruppen und VMkernel NICs
 
 Führen Sie die folgenden Schritte aus, um die Portgruppen und VMkernel-NICs zu konfigurieren:
@@ -357,6 +369,7 @@ NOTE: Es gibt viele Möglichkeiten, ESXi Networking zu konfigurieren, einschlie�
 
 
 
+[[mount-the-first-datastores]]
 === Montieren Sie die ersten Datenspeicher
 
 Die ersten Datenspeicher, die gemountet werden sollen, sind die `infra_datastore` Datastore für VMs und das `infra_swap` Datenspeicher für VM-Auslagerungsdateien:
@@ -390,6 +403,7 @@ image:express-c-series-c190-deploy_image30.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[configure-ntp]]
 === Konfigurieren Sie NTP
 
 Gehen Sie wie folgt vor, um NTP für einen ESXi-Host zu konfigurieren:
@@ -406,6 +420,7 @@ image:express-c-series-c190-deploy_image31.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[move-the-vm-swap-file-location]]
 === Verschieben Sie den Speicherort der VM-Auslagerungsdatei
 
 Diese Schritte bieten Details zum Verschieben der VM-Auslagerungsdatei.

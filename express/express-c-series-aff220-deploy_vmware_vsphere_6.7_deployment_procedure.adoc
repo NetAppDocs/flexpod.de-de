@@ -25,12 +25,14 @@ Für alle zusätzlichen Nodes, die dem Cluster hinzugefügt werden, muss dieser 
 
 
 
+[[log-in-to-cimc-interface-for-cisco-ucs-c-series-standalone-servers]]
 == Melden Sie sich bei der CIMC-Schnittstelle für Standalone-Server der Cisco UCS C-Serie an
 
 Die folgenden Schritte beschreiben die Methode zur Anmeldung an der CIMC-Schnittstelle für Standalone-Server der Cisco UCS C-Serie. Sie müssen sich bei der CIMC-Schnittstelle anmelden, um die virtuelle KVM auszuführen, die es dem Administrator ermöglicht, die Installation des Betriebssystems über Remote-Medien zu starten.
 
 
 
+[[all-hosts]]
 === Alle Hosts
 
 . Navigieren Sie zu einem Webbrowser, und geben Sie die IP-Adresse für die CIMC-Schnittstelle für die Cisco UCS C-Serie ein. In diesem Schritt wird die CIMC GUI-Anwendung gestartet.
@@ -52,12 +54,14 @@ NOTE: Sie müssen eventuell zuerst auf virtuelle Geräte aktivieren klicken. Wä
 
 
 
+[[install-vmware-esxi]]
 == VMware ESXi installieren
 
 In den folgenden Schritten wird die Installation von VMware ESXi auf jedem Host beschrieben.
 
 
 
+[[download-esxi-6-7-cisco-custom-image]]
 === ESXi 6.7 Cisco Custom Image herunterladen
 
 . Navigieren Sie zum  https://support.broadcom.com/group/ecx/downloads["Downloadseite des Broadcom Supportportals"^]für benutzerdefinierte ISOs.
@@ -67,6 +71,7 @@ In den folgenden Schritten wird die Installation von VMware ESXi auf jedem Host 
 
 
 
+[[all-hosts]]
 === Alle Hosts
 
 . Beim Systemstart erkennt die Maschine die VMware ESXi Installationsmedien.
@@ -87,12 +92,14 @@ image:express-c-series-aff220-deploy_image22.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[set-up-vmware-esxi-host-management-networking]]
 == Einrichten des VMware ESXi Host-Managementnetzwerkes
 
 Bei den folgenden Schritten wird beschrieben, wie das Management-Netzwerk für jeden VMware ESXi Host hinzugefügt wird.
 
 
 
+[[all-hosts]]
 === Alle Hosts
 
 . Geben Sie nach dem Neustart des Servers die Option zum Anpassen des Systems ein, indem Sie F2 drücken.
@@ -130,6 +137,7 @@ image:express-c-series-aff220-deploy_image23.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[configure-esxi-host]]
 == Konfigurieren Sie den ESXi-Host
 
 Sie benötigen die Informationen in der folgenden Tabelle, um jeden ESXi Host zu konfigurieren.
@@ -187,6 +195,7 @@ Sie benötigen die Informationen in der folgenden Tabelle, um jeden ESXi Host zu
 |===
 
 
+[[log-in-to-esxi-host]]
 === Melden Sie sich beim ESXi-Host an
 
 . Öffnen Sie die Management-IP-Adresse des Hosts in einem Webbrowser.
@@ -196,6 +205,7 @@ Sie benötigen die Informationen in der folgenden Tabelle, um jeden ESXi Host zu
 
 
 
+[[configure-iscsi-boot]]
 === Konfigurieren Sie den iSCSI-Bootvorgang
 
 . Wählen Sie links die Option Netzwerk.
@@ -244,6 +254,7 @@ NOTE: Setzen Sie die MTU auf 9000 auf `iScsiBootPG- A.`
 
 
 
+[[configure-iscsi-multipathing]]
 === Konfigurieren Sie iSCSI-Multipathing
 
 Gehen Sie wie folgt vor, um iSCSI-Multipathing auf den ESXi-Hosts einzurichten:
@@ -273,6 +284,7 @@ NOTE: Sie können die iSCSI LIF IP-Adressen finden, indem Sie den Befehl `Networ
 
 
 
+[[configure-esxi-host]]
 === Konfigurieren Sie den ESXi-Host
 
 . Wählen Sie im linken Navigationsbereich die Option Netzwerk.
@@ -287,6 +299,7 @@ image:express-c-series-aff220-deploy_image29.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[configure-port-groups-and-vmkernel-nics]]
 === Konfigurieren Sie die Portgruppen und VMkernel NICs
 
 . Wählen Sie im linken Navigationsbereich die Option Netzwerk.
@@ -381,6 +394,7 @@ image:express-c-series-aff220-deploy_image35.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[configure-ntp]]
 === Konfigurieren Sie NTP
 
 Gehen Sie wie folgt vor, um NTP für einen ESXi-Host zu konfigurieren:
@@ -400,6 +414,7 @@ image:express-c-series-aff220-deploy_image37.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[move-the-virtual-machine-swap-file-location]]
 === Verschieben Sie den Speicherort der Swap-Datei der virtuellen Maschine
 
 Diese Schritte enthalten Details zum Verschieben des Speicherorts der Swap-Datei der virtuellen Maschine.
@@ -417,6 +432,7 @@ image:express-c-series-aff220-deploy_image39.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[install-the-netapp-nfs-plug-in-1-0-20-for-vmware-vaai]]
 === Installieren Sie das NetApp NFS Plug-in 1.0.20 für VMware VAAI
 
 Gehen Sie wie folgt vor, um das NetApp NFS Plug-in 1.0.20 für VMware VAAI zu installieren.

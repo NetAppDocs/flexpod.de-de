@@ -18,6 +18,7 @@ Ein FlexPod Express System erfordert eine Kombination aus Hardware- und Software
 
 
 
+[[hardware-requirements]]
 == Hardwareanforderungen
 
 Unabhängig vom ausgewählten Hypervisor nutzen alle FlexPod Express Konfigurationen dieselbe Hardware. Daher kann auch bei sich ändernden Geschäftsanforderungen jeder Hypervisor auf derselben FlexPod Express Hardware ausgeführt werden.
@@ -44,6 +45,7 @@ In der folgenden Tabelle werden die Hardwarekomponenten aufgeführt, die für al
 |===
 
 
+[[software-requirements]]
 == Softwareanforderungen
 
 In der folgenden Tabelle werden die Softwarekomponenten aufgeführt, die für die Implementierung der Architekturen der FlexPod Express Lösungen erforderlich sind.

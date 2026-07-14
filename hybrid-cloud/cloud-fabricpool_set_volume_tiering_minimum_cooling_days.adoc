@@ -18,6 +18,7 @@ Der `tiering-minimum-cooling-days` Die Einstellung legt fest, wie viele Tage vor
 
 
 
+[[auto]]
 == Automatisch
 
 Der Standardwert `tiering-minimum-cooling-days` Die Einstellung für die Auto-Tiering-Richtlinie beträgt 31 Tage.
@@ -31,12 +32,14 @@ NOTE: Objekt-Storage ist kein transaktionsorientierter ähnlicher Datei- oder Bl
 
 
 
+[[snapshot-only]]
 == Nur Snapshot
 
 Der Standardwert `tiering-minimum-cooling-days` Die Einstellung für die reine Snapshot Tiering-Richtlinie beträgt 2 Tage. Ein Minimum von zwei Tagen gibt zusätzliche Zeit für Hintergrundprozesse, um maximale Storage-Effizienz zu gewährleisten und verhindert, dass tägliche Datensicherungsprozesse vom Cloud-Tier aus die Daten lesen müssen.
 
 
 
+[[ontap-cli]]
 == CLI VON ONTAP
 
 Um die eines Volumens zu ändern `tiering-minimum-cooling-days` Führen Sie den folgenden Befehl aus, indem Sie die ONTAP-CLI verwenden:

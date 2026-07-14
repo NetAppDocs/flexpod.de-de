@@ -15,6 +15,7 @@ summary: Bei der Planung der Dimensionierung sollten folgende Punkte bewertet we
 
 
 
+[[size-the-performance-tier]]
 == Größe der Performance-Tier
 
 Beachten Sie bei der Planung der Dimensionierung, dass die Performance-Ebene in der Lage sein sollte, die folgenden Aufgaben zu erfüllen:
@@ -32,6 +33,7 @@ NOTE: Schreibvorgänge vom Cloud-Tier auf die Performance-Tier werden deaktivier
 
 
 
+[[size-the-cloud-tier]]
 == Größe des Cloud-Tiers
 
 Bei der Planung der Dimensionierung sollte der als Cloud-Tier wirkende Objektspeicher in der Lage sein, die folgenden Aufgaben zu erfüllen:

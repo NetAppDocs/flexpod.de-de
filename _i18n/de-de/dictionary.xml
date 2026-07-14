@@ -8031,7 +8031,6 @@
   <block id="6667cc003527f70428fbb3f46d896e10" category="cell">UCSX-S9108-100G</block>
   <block id="c78a25b3d391b3eabe5a4f6e3a159d89" category="inline-link">Cisco UCS 9108 Fabric Interconnect</block>
   <block id="55941e76508015eb43dd9b6db66a8de4" category="cell"><block ref="55941e76508015eb43dd9b6db66a8de4" category="inline-link-rx"></block></block>
-  <block id="3fbecaa187bec4c0133ee458cb18648e" category="cell">Cisco UCS X-Series Chassis</block>
   <block id="c42738d7d96a10ba2e13752c497fe352" category="cell"><block ref="d2f7a165d8728317906bc29daa2c85b4" category="inline-link-rx"></block></block>
   <block id="85a845d3a2419a09e5bc3078a0e2c402" category="cell">Cisco UCS X210c M7</block>
   <block id="542ae9366fc15c0eac09d9ca0b343ff2" category="cell">UCSX-210C-M7</block>
@@ -8053,7 +8052,6 @@
   <block id="be22b28321184ab2c1fab5ff51ab7621" category="cell">UCSX-410C-M8</block>
   <block id="fec8623d55f39e0df72c4d65c9a8a88c" category="inline-link">Cisco UCS X410c M8 Compute Node</block>
   <block id="d534d9e405380c188e8251558dc9a224" category="cell"><block ref="d534d9e405380c188e8251558dc9a224" category="inline-link-rx"></block></block>
-  <block id="03bd80ec3d64c289030b272008786311" category="cell">Cisco UCS X-Series Module</block>
   <block id="e1aac65c2b6e24c8e8adc95e43ed62ee" category="cell">Cisco UCS 9108 Intelligent Fabric Module</block>
   <block id="fcfe8e82e41744adc21a0e98c9d0fb10" category="cell">UCSX-I-9108-100G</block>
   <block id="ccd4443b7fa96e36677438df98acd96a" category="cell"><block ref="ccd4443b7fa96e36677438df98acd96a" category="inline-link-rx"></block></block>
@@ -8165,15 +8163,12 @@
   <block id="75b256e594cf5a8ba03273e8a68f2c27" category="paragraph">Die Mindesthardwareanforderungen für FlexPod Express sind unten aufgeführt:</block>
   <block id="7013f56669c02dbe795614370d0c956e" category="list-text">Zwei 10Gbps Standard-Ethernet-Switches in redundanter Konfiguration (Cisco Nexus 9200 und 9300 Modelle)</block>
   <block id="5f7768fa622b0c0e0bf05d27d8097e12" category="list-text">Cisco UCS C-Series Standalone Rackserver mit CIMC-basierter Standalone Rackserver-Konfiguration oder Intersight Standalone-Konfiguration oder Cisco UCS X-Series Direct mit Cisco Intersight verwalteter Konfiguration (IMM).</block>
-  <block id="0c31792ebf62debf53351a3c946658a4" category="list-text">Zwei Einstiegs-Controller der Serien NetApp AFF (A20, A30 oder C30), NetApp ASA (A20, A30 oder C30) oder NetApp FAS (2750 oder 2820) in einer Hochverfügbarkeits-(HA)-Paarkonfiguration, die als Zwei-Node-Cluster bereitgestellt wird</block>
   <block id="8cf756e67e6fe3a58a1405610ba75ad9" category="paragraph">Redundante Controller der Serien AFF, ASA oder FAS sind in der FlexPod Express-Architektur erforderlich. Die Controller führen die ONTAP-Software aus. Bei der Bestellung der Speichercontroller kann die bevorzugte Softwareversion auf den Controllern vorinstalliert werden. Für ONTAP kann das Cluster entweder mit einem Paar Cluster-Interconnect-Switches oder in einer Cluster ohne Switches-Konfiguration bereitgestellt werden.</block>
   <block id="d5c565b8a9c9c59fa0b692c9cbf65edd" category="admonition">Eine Cluster ohne Switches-Konfiguration wird nur für eine Zwei-Node-Konfiguration unterstützt. Cluster-Interconnect-Switches sind für Konfigurationen mit mehr als 4 Knoten erforderlich und für eine Zwei-Node-Konfiguration optional.</block>
   <block id="230b6be042c6a9e09ceea70fd8e2f108" category="paragraph">Je nach gewählter Speicherplattform stehen verschiedene Optionen und Konfigurationen zur Verfügung. Für Details zu diesen zusätzlichen Komponenten wenden Sie sich bitte an Ihren Vertriebsmitarbeiter.</block>
   <block id="ee65a1f1b80c1d59eba7dc665cc831bc" category="paragraph">Die in der folgenden Tabelle aufgeführten Controller-Familien eignen sich für den Einsatz in einer FlexPod-Lösung, da ihre Anbindung an die Cisco Nexus Switches nahtlos erfolgt. Siehe die<block ref="0012c2b4de81607ee8d0f71acdd6c9ab" category="inline-link-rx"></block>für spezifische Kompatibilitätsdetails zu den einzelnen Controller-Modellen.</block>
   <block id="b77cf317a6bb3b0806632ae61052e3ed" category="cell">NetApp Einstiegs-Speicherfamilie für FlexPod Express</block>
   <block id="ae80ae2c7480651e65f11ec1f29d6ede" category="cell">A20</block>
-  <block id="98b45ac98f4772440f6942c51078aa23" category="inline-link">AFF-Dokumentation</block>
-  <block id="6d13a3761ec1ece04280d9fdb13740bf" category="cell"><block ref="6d13a3761ec1ece04280d9fdb13740bf" category="inline-link-rx"></block></block>
   <block id="1d54842ba417c6ef95e35c602a80d5ac" category="cell">A30</block>
   <block id="71642a8ed4161123d0530fb7e39a80f1" category="cell">AFF C-Series</block>
   <block id="9c5fd388a2ee6ceb65d30336d2fec257" category="cell">C30</block>
@@ -8186,7 +8181,6 @@
   <block id="b547a5d94845d9471423356c66873bd5" category="inline-link">FAS-Dokumentation</block>
   <block id="3948a9d911a4ab4fca76092210e66452" category="cell"><block ref="3948a9d911a4ab4fca76092210e66452" category="inline-link-rx"></block></block>
   <block id="7ec34d91a495121e75b876eb6b33c2ae" category="cell">FAS 2820</block>
-  <block id="c7dd26489686f8b76f6a64795f0045f8" category="paragraph">Für die Speicherkontroller wird mindestens ein NetApp Festplattengehäuse benötigt.</block>
   <block id="41f841d43d71df7ac7a2d1ce1640196e" category="paragraph">Die folgende Tabelle listet die NetApp Festplattengehäuseoptionen für FlexPod Express zusammen mit Links zu den technischen Spezifikationen auf.</block>
   <block id="16e64e489b2d626c25c6029238c8e02d" category="paragraph">Um die Liste der für Ihr Disk-Shelf unterstützten Laufwerke zu erhalten, gehen Sie zu <block ref="c65ee892665eec3b19fff276893fb369" category="inline-link-macro-rx"></block>, wählen Sie unter *Products &gt; Storage &gt; Shelves* *ONTAP (AFF, ASA, FAS)* aus, wählen Sie die von Ihnen verwendete ONTAP-Version, dann den Shelf-Typ (zum Beispiel: *DS212C*) und klicken Sie auf *Show Results*. Mit einem Klick auf *Supported Drives* werden die für bestimmte Versionen von ONTAP und die Disk-Shelfs unterstützten Laufwerke angezeigt.</block>
   <block id="c0b9422f8b99654ad5dfbd724b636b92" category="inline-link">Festplattengehäuse und Speichermedien</block>
@@ -8256,10 +8250,7 @@
   <block id="9f3b2feb20361c715e59b7853fc3a7dd" category="section-title">Cisco UCS X-Series Direct Compute Node</block>
   <block id="41d8de6dde920afd25cc68ca8470d268" category="paragraph">Die technischen Spezifikationen für Cisco UCS X-Series Compute Node umfassen die folgenden Komponenten:</block>
   <block id="976d05ff90bf8350cd3dedc969b4638a" category="paragraph">Die technischen Spezifikationen für Cisco UCS X-Series Direct Compute-Knoten sind in der folgenden Tabelle aufgeführt.</block>
-  <block id="b96ae558e1b68647f125ce2c624b2088" category="section-title">Cisco UCS X-Series Direct Fabric Interconnects</block>
-  <block id="d6bdf6edbbba7a7263f55a78214d7fe4" category="paragraph">Die technischen Spezifikationen für Cisco UCS X-Series Fabric Interconnects umfassen Formfaktor, Gesamtzahl der Ports und Erweiterungssteckplätze sowie Durchsatzkapazität. Die folgende Tabelle zeigt das Cisco UCS X-Series Fabric Interconnect Datenblatt.</block>
   <block id="cd09ca628a1311fa28883fcb363e7fb4" category="cell"><block ref="cd09ca628a1311fa28883fcb363e7fb4" category="inline-link-rx"></block></block>
-  <block id="ccdfc1e80180dba9409464250526cffc" category="paragraph">Die technischen Spezifikationen der Cisco UCS C-Series Rack-Server umfassen Prozessorunterstützung, maximale Speicherkapazität, Anzahl der PCIe-Steckplätze und Formfaktor. Weitere Details zu kompatiblen UCS-Servermodellen sind in der <block ref="1420345f3000e0fcdfadf0c24d8bc000" category="inline-link-rx"></block> Liste zu finden. Die folgende Tabelle zeigt die Datenblätter der C-Series Rack-Server.</block>
   <block id="68ef22421a5462490103f0f4dd00e1bb" category="paragraph">Die technischen Spezifikationen für Cisco Nexus Switches sind im Datenblatt für jedes Modell enthalten. Zu den Spezifikationen gehören die Formfaktorgröße, die Anzahl der Supervisor-, Fabric-Modul- und Linecard-Steckplätze sowie die maximale Anzahl der Ports. Diese Datenblätter sind in der folgenden Tabelle zu finden.</block>
   <block id="30a68969b283f9f5fa98ed149daced0d" category="paragraph">Zu den technischen Spezifikationen für NetApp Storage-Controller gehören die Plattformkonfiguration, die maximale Bruttokapazität, der Speicher, der Formfaktor, die ONTAP Versionserfordernisse, die Festplattengehäuse usw.</block>
   <block id="beb9bc47e7d0013a58697d31a3843ac6" category="inline-link">Technische Spezifikationen der AFF A-Serie</block>
@@ -8308,4 +8299,57 @@
   <block id="0e7d997a5eeb1bf4a8fca9cc98549100" category="inline-link">NS224 mit NSM 100B Festplattengehäuse Dokumentation</block>
   <block id="8c86738df84f57b90dec50a017ceb7d9" category="cell"><block ref="8c86738df84f57b90dec50a017ceb7d9" category="inline-link-rx"></block></block>
   <block id="f674169036173cc4a9f01e223c275c8d" category="sidebar">Automatisierte Bereitstellung</block>
+  <block id="316a99a42cbbc4b239d852b672b39d4b" category="list-text">NetApp FlexPod Homepage</block>
+  <block id="add9a9edabbf3562a9337cdf146ea5bd" category="list-text">Cisco FlexPod Homepage</block>
+  <block id="6a105bdea4f9f755cc118f6097fdc896" category="inline-link"><block ref="6a105bdea4f9f755cc118f6097fdc896" category="inline-link-rx"></block></block>
+  <block id="716e40476d464a447f655388df0dd8b5" category="paragraph"><block ref="716e40476d464a447f655388df0dd8b5" category="inline-link-rx"></block></block>
+  <block id="b60704649fcb67a9da6cbc2a3bd02169" category="cell">Cisco UCS X-Series Direct Fabric Interconnect</block>
+  <block id="e8159cf1a120c2dad2cc824e86940263" category="cell">Cisco UCS X-Series Direct Chassis</block>
+  <block id="bc45afcc0add16ec7c135f59e6c4aa6e" category="cell">Cisco UCS X-Series Direct Compute Nodes</block>
+  <block id="b3d8dafdc485f8b4be4dfdc0bd0f19bc" category="cell">Cisco UCS X-Series Direktmodule</block>
+  <block id="05a30dd9183a15551e30711d095839b2" category="section-title">Cisco Unified Edge</block>
+  <block id="229e1796d0166c16a41eba6650efda05" category="paragraph">Cisco Unified Edge ist ein KI-fähiges System, das Computing am Edge durch die Zusammenführung von Rechenleistung, Netzwerk, Speicher und Sicherheit neu definiert. Das modulare Design ist zukunftsfähig, energieeffizient und wartungsfreundlich und kann auf heutige Workloads und Anwendungsfälle zugeschnitten werden, bleibt dabei jedoch anpassungsfähig an die sich rasant entwickelnde KI-Landschaft.</block>
+  <block id="8054dca6f3cc09aaffac8c2a0e0b82a8" category="inline-link-macro">Cisco Unified Edge auf einen Blick.</block>
+  <block id="76c88334c465067f22921bf2136b014f" category="paragraph">Einen schnellen Überblick über die Funktionen und Merkmale von Cisco Unified Edge bietet <block ref="243b31f685febd29a18b2b20d754e04f" category="inline-link-macro-rx"></block></block>
+  <block id="9012ae91b5629dee8af2f3183f8e53f6" category="paragraph">Cisco Unified Edge besteht aus den folgenden Komponenten:</block>
+  <block id="74704c58c0b25fd36045df51735a1ca5" category="list-text">Cisco UCS XE9305 Chassis</block>
+  <block id="5ab1116a529bba2d805247fbccdea67e" category="list-text">Zwei Cisco Unified Edge Management Controller mit integrierten 25G Switches</block>
+  <block id="6303bcf4348925a98b812af76019c64a" category="list-text">Rechenknoten – Auswahl</block>
+  <block id="399f8c6595645afb3afe8b7f19963fe9" category="list-text">Cisco UCS XE130c M8 Compute Node</block>
+  <block id="2c04fc30223433f4a729c55a69d01954" category="list-text">Cisco UCS XE150c M8 Compute Node</block>
+  <block id="d4596e0a5989187943f8238341521b14" category="paragraph">Die folgenden Tabellen führen die Optionen für das Cisco Unified Edge Chassis und die Compute-Nodes auf.</block>
+  <block id="a0dcd4323b3a5f80da1b9875ed5c5979" category="cell">Cisco Unified Edge Chassis</block>
+  <block id="3f08020e24294d582d148b911e1cc4a2" category="cell">UCSXE-9305-U</block>
+  <block id="2f8c8167cbd5b188c2acb5b0a76ab823" category="cell"><block ref="2f8c8167cbd5b188c2acb5b0a76ab823" category="inline-link-rx"></block></block>
+  <block id="3be0b9eb854192d2431d15457d10d8a7" category="cell">Cisco Unified Edge Compute-Nodes</block>
+  <block id="209cd1b2adaf0192afee5eb93e3dd701" category="cell">UCSXE-130C-M8</block>
+  <block id="1eb104e144deb30940d14e57122c736a" category="cell"><block ref="1eb104e144deb30940d14e57122c736a" category="inline-link-rx"></block></block>
+  <block id="22bd40a63ed2c9c49187fbd0583bf9fe" category="cell">UCSXE-150C-M8</block>
+  <block id="7930817dcb9af22b46e0b2ab1c7127fb" category="cell"><block ref="7930817dcb9af22b46e0b2ab1c7127fb" category="inline-link-rx"></block></block>
+  <block id="161c9027d6afcc8652df79c032c01c41" category="list-text">Zwei Einstiegs-Controller der Serien NetApp AFF (A20, A30 oder C30), NetApp ASA (A20, A30 oder C30) oder NetApp FAS (2750, 2820 oder FAS 50) in einer Hochverfügbarkeits-(HA)-Paarkonfiguration, bereitgestellt als Zwei-Node-Cluster</block>
+  <block id="a0ab09bcd71cc8c8e831f022615b28a4" category="cell"><block ref="a0ab09bcd71cc8c8e831f022615b28a4" category="inline-link-rx"></block></block>
+  <block id="6488de7d247a06b442a5018b0d91bfc6" category="inline-link">AFF C-Series-Dokumentation</block>
+  <block id="369fac7daa2f8b7e7c135f15db1bd0ed" category="cell"><block ref="369fac7daa2f8b7e7c135f15db1bd0ed" category="inline-link-rx"></block></block>
+  <block id="f5b8033d4491de22da52d561547096c6" category="cell">FAS 50</block>
+  <block id="c13941eabb373c3b7fd4f5a42e258085" category="paragraph">Für Storage-Controller, die kein integriertes Disk-Shelf besitzen, ist mindestens ein NetApp Disk-Shelf erforderlich. Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shelf verfügbar sind.</block>
+  <block id="a2d8dae03bf192729241cfd600818da2" category="paragraph">Die technischen Spezifikationen für Cisco UCS X-Series Direct Fabric Interconnect umfassen Formfaktor, Gesamtzahl der Ports und Erweiterungssteckplätze sowie Durchsatzkapazität. In der folgenden Tabelle finden Sie das Cisco UCS X-Series Direct Fabric Interconnect Datenblatt.</block>
+  <block id="7140bad7adf4e3f9b9bc2475033ab125" category="section-title">Cisco UCS XE9305 Chassis (Cisco Unified Edge)</block>
+  <block id="824fd2aa31faf7685a99b9dd0650e48a" category="paragraph">Die technischen Spezifikationen für Cisco UCS XE9305 Chassis, wie in der folgenden Tabelle dargestellt, umfassen die folgenden Komponenten:</block>
+  <block id="93701061c125de903ca058eafa2b253f" category="cell">Cisco UCS XE9305 Chassis</block>
+  <block id="e682f8a3fbfd1bdeaa40c62f0d55bf53" category="cell">5 Cisco UCS XE130c M8 Compute Nodes oder 2 Cisco UCS XE150c M8 Compute Nodes</block>
+  <block id="c4a00a11f1f529b07078feef29c1537c" category="inline-link-macro">Cisco UCS XE9305 Chassis Datenblatt</block>
+  <block id="513dbd1ff0722f6bb8c0c7e64f29f76b" category="paragraph">Weitere Informationen sind in der <block ref="6de15b1fcd20027c9f2069260fd57caf" category="inline-link-macro-rx"></block> zu finden.</block>
+  <block id="a0dad3f3d4475c3befd877cc6682747d" category="section-title">Cisco UCS Compute Nodes für Cisco Unified Edge</block>
+  <block id="278925fac07ad7dbf8f837dce0d0ac44" category="paragraph">Die technischen Spezifikationen für Cisco UCS Compute Nodes für Cisco Unified Edge umfassen die folgenden Komponenten:</block>
+  <block id="c9ec92a82b650fa95ba2f0e26022cd35" category="list-text">GPU-Unterstützung</block>
+  <block id="351a618532afa82052492a3628f763b7" category="paragraph">Die Rechenknoten unterstützen ebenfalls GPUs, der XE130c M8 unterstützt NVIDIA L4 GPU und der XE150c M8 unterstützt NVIDIA RTX PRO 4500 / 6000 Blackwell Server Edition GPUs. Die technischen Spezifikationen für Cisco UCS Unified Edge Rechenknoten sind in der folgenden Tabelle aufgeführt.</block>
+  <block id="aadadeab6a26b56379fe31b52f9e94c7" category="cell"><block ref="aadadeab6a26b56379fe31b52f9e94c7" category="inline-link-rx"></block></block>
+  <block id="5b1873f6cccb0f18dc6c9c4b88ad68f2" category="cell"><block ref="5b1873f6cccb0f18dc6c9c4b88ad68f2" category="inline-link-rx"></block></block>
+  <block id="0defdd0a0cad8694d75f5d415c59e852" category="inline-link-macro">Cisco Unified Edge Datenblattliste</block>
+  <block id="cfccf5d08c64aba24da167d5ee87ec4e" category="paragraph">Weitere Einzelheiten sind unter <block ref="361368a75a3a97c843641aad773ba359" category="inline-link-macro-rx"></block> zu finden.</block>
+  <block id="682a7264c9b56e8c0fc15a778aaf4962" category="paragraph">Die technischen Spezifikationen der Cisco UCS C-Series Rack-Server umfassen Prozessorunterstützung, maximale Speicherkapazität, Anzahl der PCIe-Steckplätze und Formfaktor. Weitere Details zu kompatiblen UCS-Servermodellen sind in der <block ref="1420345f3000e0fcdfadf0c24d8bc000" category="inline-link-rx"></block> Liste zu finden.</block>
+  <block id="0fc3d759fbf04ff8c70754496e367364" category="paragraph">Die technischen Spezifikationen für Cisco UCS C-Series Rack Server sind in der folgenden Tabelle aufgeführt.</block>
+  <block id="b64e0ef8e38bdf1b18a60607d7d0f675" category="cell">FAS50 Serie</block>
+  <block id="59454cc1e7857ff5697ed2ce10f85c1e" category="inline-link">FAS50 Wichtige Spezifikationen</block>
+  <block id="e1b46a8875c248d2454b135fe5ab3fc1" category="cell"><block ref="e1b46a8875c248d2454b135fe5ab3fc1" category="inline-link-rx"></block></block>
 </blocks>

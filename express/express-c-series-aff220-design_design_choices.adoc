@@ -13,18 +13,21 @@ Während der Architektur dieses Designs wurden folgende Technologien ausgewählt
 
 
 
+[[netapp-aff-a220-series-with-ontap-9-4]]
 == NetApp AFF A220 Serie mit ONTAP 9.4
 
 Bei dieser Lösung werden zwei der neuesten NetApp Produkte genutzt: Die Software NetApp AFF A220 und ONTAP 9.4.
 
 
 
+[[aff-a220-system]]
 === AFF A220 System
 
 Weitere Informationen zum AFF A220 Hardwaresystem finden Sie unter https://www.netapp.com/us/products/storage-systems/all-flash-array/aff-a-series.aspx["AFF A-Series Homepage"^].
 
 
 
+[[ontap-9-4-software]]
 === ONTAP 9.4 Software
 
 NetApp AFF A220 Systeme verwenden die neue Software ONTAP 9.4. ONTAP 9.4 ist die branchenweit führende Datenmanagement-Software der Enterprise-Klasse. Sie vereint ein neues Maß an Anwenderfreundlichkeit und Flexibilität mit leistungsfähigen Datenmanagement-Funktionen, Storage-Effizienzfunktionen und erstklassiger Cloud-Integration.
@@ -41,6 +44,7 @@ Diese nur einige der Kernfunktionen, die die FlexPod Express Lösung ergänzen. 
 
 
 
+[[cisco-nexus-3000-series]]
 == Cisco Nexus 3000 Serie
 
 Der Cisco Nexus 3172P ist ein robuster, kostengünstiger Switch mit 1/10/40/100-Gbit/s-Switches. Der Cisco Nexus 3172PQ Switch, einer Komponente der Unified Fabric Familie, ist ein kompakter 1-Rack-Switch (1 HE) für Datacenter-Implementierungen der Top-of-Rack-Einheiten. (Siehe folgende Abbildung.) Sie bietet bis zu 72 1/10-GbE-Ports in 1 HE oder 48 1/10 GbE und sechs 40-GbE-Ports in 1 HE. Und für maximale Flexibilität der physischen Schicht unterstützt sie auch 1/10/40 Gbit/s.
@@ -59,6 +63,7 @@ Weitere Informationen zu Cisco Nexus 3172-Switches finden Sie im https://www.cis
 
 
 
+[[cisco-ucs-c-series]]
 == Cisco UCS C-Serie
 
 Der Rack Server der Cisco UCS C-Serie wurde für FlexPod Express ausgewählt, da er dank der vielen Konfigurationsoptionen an spezifische Anforderungen einer FlexPod Express Implementierung angepasst werden kann.
@@ -81,6 +86,7 @@ Weitere Informationen zu C220 M5 Servern finden Sie im https://www.cisco.com/c/e
 
 
 
+[[connectivity-options-for-c220-m5-rack-servers]]
 === Konnektivitätsoptionen für C220 M5 Rack Server
 
 Die Konnektivitätsoptionen für die C220 M5 Rack Server lauten wie folgt:
@@ -105,6 +111,7 @@ image:express-c-series-aff220-design_image10.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[vmware-vsphere-6-7]]
 == VMware vSphere 6.7
 
 VMware vSphere 6.7 ist eine Hypervisor-Option zur Verwendung mit FlexPod Express. Mit VMware vSphere können Unternehmen ihren Strom- und Kühlungsbedarf senken und gleichzeitig die erworbene Computing-Kapazität vollständig nutzen. VMware vSphere ermöglicht außerdem den Schutz vor Hardware-Ausfällen (VMware High Availability, oder VMware HA) und den Lastausgleich von Ressourcen über einen Cluster von vSphere Hosts (VMware Distributed Resource Scheduler oder VMware DRS).
@@ -126,6 +133,7 @@ Weitere Informationen zu vSphere 6.7 U1 finden Sie unter https://blogs.vmware.co
 
 
 
+[[boot-architecture]]
 == Boot-Architektur
 
 Es werden die folgenden Optionen für die Boot-Architektur von FlexPod Express unterstützt:

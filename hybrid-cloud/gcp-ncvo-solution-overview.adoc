@@ -17,6 +17,7 @@ Ruchika Lahoti, NetApp
 
 
 
+[[introduction]]
 == Einführung
 
 Der Schutz von Daten mit Disaster Recovery (DR) ist ein wichtiges Ziel für die Aufrechterhaltung von Unternehmenskontinuität. DR ermöglicht Unternehmen ein Failover ihrer Betriebsabläufe an einem sekundären Standort und Recovery und Failback effizient und zuverlässig zum primären Standort. Aufgrund diverser Bedenken wie Naturkatastrophen, Netzwerkausfälle, Softwareschwachstellen und menschlichem Versagen ist die Entwicklung einer DR-Strategie eine der obersten IT-Prioritäten.
@@ -42,12 +43,14 @@ Diese Lösung bietet zahlreiche Vorteile, darunter:
 
 
 
+[[audience]]
 == Zielgruppe
 
 Dieses Dokument richtet sich an Vertriebsmitarbeiter, Berater im Außendienst, Professional Services, IT-Manager, Engineers von Partnern, Techniker für Standortzuverlässigkeit, Cloud-Architekten, Cloud Engineers und Kunden, die eine Infrastruktur nutzen möchten, um IT-Effizienz und IT-Innovationen zu liefern.
 
 
 
+[[solution-topology]]
 == Topologie der Lösung
 
 In diesem Abschnitt wird die logische Topologie der Lösung beschrieben. Die folgende Abbildung zeigt die Lösungstopologie der lokalen FlexPod Umgebung, NetApp Cloud Volumes ONTAP auf Google Cloud, Cisco Intersight und NetApp Cloud Manager.

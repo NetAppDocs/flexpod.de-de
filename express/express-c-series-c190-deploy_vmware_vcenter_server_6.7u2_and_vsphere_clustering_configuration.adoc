@@ -25,6 +25,7 @@ Gehen Sie wie folgt vor, um VMware vCenter Server 6.7- und vSphere-Clustering zu
 
 
 
+[[create-a-vsphere-cluster]]
 == Erstellen eines vSphere Clusters
 
 Gehen Sie zum Erstellen eines vSphere-Clusters wie folgt vor:
@@ -40,6 +41,7 @@ image:express-c-series-c190-deploy_image45.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[add-the-esxi-hosts-to-the-cluster]]
 == Fügen Sie die ESXi-Hosts dem Cluster hinzu
 
 Führen Sie die folgenden Schritte aus, um dem Cluster die ESXi-Hosts hinzuzufügen:
@@ -73,6 +75,7 @@ NOTE: Dieser Prozess muss für alle zusätzlichen Hosts abgeschlossen werden, di
 
 
 
+[[configure-coredump-on-the-esxi-hosts]]
 == Konfigurieren Sie coredump auf den ESXi-Hosts
 
 Führen Sie die folgenden Schritte aus, um coredump auf den ESXi-Hosts zu konfigurieren:

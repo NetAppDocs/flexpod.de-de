@@ -21,6 +21,7 @@ Jyh-shing Chen, NetApp
 
 
 
+[[flexpod-solution]]
 == Die FlexPod Lösung
 
 FlexPod ist eine Best-Practice-Architektur für konvergente Infrastrukturen, die die folgenden Komponenten von Cisco und NetApp umfasst:
@@ -42,6 +43,7 @@ Jede der gezeigten FlexPod-Komponentenfamilien (Cisco UCS, Cisco Nexus/MDS Switc
 
 
 
+[[disaster-recovery-and-business-continuity]]
 == Disaster Recovery und Business Continuity
 
 Unternehmen können auf verschiedene Weise sicherstellen, dass sie ihre Applikations- und Datenservices nach Ausfällen schnell wiederherstellen können. Mit einem Disaster Recovery- (DR-) und Business Continuity- Plan (BC), der Implementierung einer Lösung, die die Geschäftsziele erfüllt, und durch regelmäßige Tests der Disaster-Szenarien können Unternehmen die Wiederherstellung nach einem Notfall durchführen und wichtige Business Services nach einem Notfall aufrechterhalten.
@@ -54,6 +56,7 @@ Für Unternehmen, die Datenservices zur Umsatzgenerierung nutzen, müssen die Da
 
 
 
+[[recovery-point-objective-and-recovery-time-objective]]
 == Recovery-Zeitpunkt und Recovery-Zeitvorgabe
 
 Der Recovery-Zeitpunkt (Recovery Point Objective, RPO) bezeichnet die Menge an Daten im Hinblick auf die Zeit, die Sie sich leisten können, oder den Zeitpunkt, an dem Sie Ihre Daten wiederherstellen können. Mit einem täglichen Backup-Plan kann ein Unternehmen einen Tag an Daten verlieren, weil die Änderungen an den Daten seit dem letzten Backup in einem Notfall verloren gehen könnte. Für geschäftskritische und geschäftskritische Datenservices sind unter Umständen ein RPO von Null sowie ein Plan und eine zugehörige Infrastruktur zum Schutz von Daten ohne Datenverluste erforderlich.
@@ -62,6 +65,7 @@ Die Recovery-Zeitvorgabe (Recovery Time Objective, RTO) beschreibt, wie lange Si
 
 
 
+[[sm-bc]]
 == SM-BC
 
 Ab ONTAP 9.8 können Sie SAN-Workloads für transparentes Applikations-Failover mit NetApp SM-BC sichern. Sie können Konsistenzgruppen zwischen zwei AFF Clustern oder zwei ASA Clustern erstellen, um Daten zu replizieren, damit ein Recovery Point Objective von null und ein Recovery Time Objective von fast null erreicht wird.

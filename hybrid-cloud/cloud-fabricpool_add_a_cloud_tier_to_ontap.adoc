@@ -28,6 +28,7 @@ Sie benötigen die folgenden Informationen:
 
 
 
+[[oncommand-system-manager]]
 == OnCommand System Manager
 
 Um eine Cloud-Ebene mit OnCommand System Manager hinzuzufügen, gehen Sie wie folgt vor:
@@ -48,6 +49,7 @@ image:cloud-fabricpool_image13.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[ontap-cli]]
 == CLI VON ONTAP
 
 Geben Sie die folgenden Befehle ein, um mit der ONTAP CLI eine Cloud-Tier hinzuzufügen:

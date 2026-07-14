@@ -18,6 +18,7 @@ Dieser Abschnitt beschreibt die Implementierungsverfahren für die NetApp Virtua
 
 
 
+[[install-virtual-storage-console-9-6]]
 == Installieren Sie Virtual Storage Console 9.6
 
 Gehen Sie wie folgt vor, um die VSC 9.6-Software mithilfe einer OVF-Implementierung (Open Virtualization Format) zu installieren:
@@ -64,6 +65,7 @@ image:express-c-series-c190-deploy_image56.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[download-and-install-the-netapp-nfs-vaai-plug-in]]
 == Laden Sie das NetApp NFS VAAI Plug-in herunter und installieren Sie es
 
 So laden Sie das NetApp NFS VAAI Plug-in herunter und installieren es:
@@ -89,6 +91,7 @@ image:express-c-series-c190-deploy_image58.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[use-the-optimal-storage-settings-for-the-esxi-hosts]]
 == Optimale Speichereinstellungen für die ESXi Hosts verwenden
 
 VSC ermöglicht die automatisierte Konfiguration der Storage-Einstellungen für alle ESXi Hosts, die mit NetApp Storage Controllern verbunden sind. Gehen Sie wie folgt vor, um diese Einstellungen zu verwenden:

@@ -15,10 +15,12 @@ summary: Zum Erstellen von Initiatorgruppen benötigen Sie die iSCSI-Initiator-I
 
 
 
+[[ontap-san-boot-storage-setup]]
 == Einrichtung von ONTAP SAN Boot Storage
 
 
 
+[[create-iscsi-igroups]]
 === Erstellen von iSCSI-Initiatorgruppen
 
 Um Initiatorgruppen zu erstellen, führen Sie den folgenden Schritt aus:
@@ -39,6 +41,7 @@ NOTE: Dieser Schritt muss abgeschlossen sein, wenn zusätzliche Cisco UCS C-Seri
 
 
 
+[[map-boot-luns-to-igroups]]
 == Zuordnen von Boot-LUNs zu Initiatorgruppen
 
 Führen Sie die folgenden Befehle aus der SSH-Verbindung für das Cluster-Management aus, um Boot-LUNs Initiatorgruppen zuzuordnen:

@@ -20,6 +20,7 @@ Wir können den Terraform-Plan unter Verwendung eines Controllers ausführen. We
 
 
 
+[[prerequisites]]
 == Voraussetzungen
 
 Die Einrichtung der Lösung beginnt mit einer Management-Workstation mit Zugang zum Internet und einer funktionierenden Installation von Terraform.
@@ -28,6 +29,7 @@ Ein Leitfaden zur Installation von Terraform finden Sie unter https://learn.hash
 
 
 
+[[clone-github-repo]]
 == GitHub-Repo klonen
 
 Der erste Schritt in diesem Prozess besteht darin, den GitHub Repo in einen neuen leeren Ordner auf der Management-Workstation zu klonen. Gehen Sie wie folgt vor, um das GitHub-Repository zu klonen:

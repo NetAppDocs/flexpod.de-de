@@ -18,6 +18,7 @@ Ein FlexPod Design erfüllt die Mindestanforderungen für Strom und Verkabelung.
 
 
 
+[[power-requirements]]
 == Stromversorgung
 
 Die Stromanforderungen für das FlexPod Datacenter unterscheiden sich je nach Installationsort der FlexPod Datacenter Konfiguration.
@@ -30,6 +31,7 @@ Informationen zum Einschalten des NetApp Storage Controllers finden Sie im http:
 
 
 
+[[minimum-cable-requirements]]
 == Mindestanforderungen an die Kabel
 
 Die Anzahl und der Typ der erforderlichen Kabel und Adapter variiert je nach Implementierung des FlexPod Datacenter. Der Kabeltyp, der Transceiver-Typ und die Nummer werden während des Entwurfsprozesses anhand Ihrer Anforderungen ermittelt. In der folgenden Tabelle ist die Mindestanzahl der erforderlichen Kabel aufgeführt.

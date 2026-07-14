@@ -18,10 +18,12 @@ In diesem Abschnitt wird das NetApp AFF Storage-Implementierungsverfahren beschr
 
 
 
+[[netapp-storage-controller-aff-c190-series-installation]]
 == Installation von NetApp Storage Controller AFF C190 Serie
 
 
 
+[[netapp-hardware-universe]]
 === NetApp Hardware Universe
 
 Die NetApp Hardware Universe (HWU) Applikation bietet unterstützte Hardware- und Softwarekomponenten für jede spezifische ONTAP-Version. Das Tool liefert Konfigurationsinformationen für alle NetApp Storage Appliances, die derzeit von der ONTAP Software unterstützt werden. Zudem bietet er eine Tabelle mit den Kompatibilitäten der Komponenten.
@@ -47,16 +49,19 @@ Informationen zum Planen des physischen Standorts der Storage-Systeme finden Sie
 |===
 
 
+[[storage-controllers]]
 === Storage Controller
 
 Befolgen Sie die Anweisungen zur physischen Installation der Controller im AFF https://mysupport.netapp.com/documentation/docweb/index.html?productID=62937&language=en-US["C190"^] Dokumentation.
 
 
 
+[[netapp-ontap-9-6]]
 == NetApp ONTAP 9.6
 
 
 
+[[configuration-worksheet]]
 === Konfigurationsarbeitsblatt
 
 Bevor Sie das Setup-Skript ausführen, füllen Sie das Konfigurationsarbeitsblatt aus der Produktanleitung aus. Das Konfigurationsarbeitsblatt ist im ONTAP 9.6 Software-Setup-Leitfaden verfügbar.
@@ -119,6 +124,7 @@ Die nachfolgende Tabelle enthält Informationen zur Installation und Konfigurati
 |===
 
 
+[[configure-node-a]]
 === Konfigurieren Sie Node A
 
 Führen Sie die folgenden Schritte aus, um Node A zu konfigurieren:
@@ -179,6 +185,7 @@ Beginnen Sie während der Initialisierung von Node A mit der Konfiguration von N
 
 
 
+[[configure-node-b]]
 === Konfigurieren Sie Node B
 
 Führen Sie die folgenden Schritte aus, um Node B zu konfigurieren:
@@ -235,6 +242,7 @@ NOTE: Die Initialisierung und Erstellung des Root-Aggregats kann je nach Anzahl 
 
 
 
+[[continuation-of-the-node-a-configuration-and-cluster-configuration]]
 == Fortsetzung der Node A-Konfiguration und Cluster-Konfiguration
 
 Führen Sie von einem Konsolen-Port-Programm, das an den Storage Controller A (Node A)-Konsolenport angeschlossen ist, das Node-Setup-Skript aus. Dieses Skript wird angezeigt, wenn ONTAP 9.6 das erste Mal auf dem Node gebootet wird.
@@ -318,12 +326,14 @@ Wenn das System angibt, dass die Cluster-Konfiguration abgeschlossen ist, klicke
 
 
 
+[[continuation-of-the-storage-cluster-configuration]]
 == Fortsetzung der Storage-Cluster-Konfiguration
 
 Nach der Konfiguration der Storage-Nodes und des Basis-Clusters können Sie die Konfiguration des Storage-Clusters fortsetzen.
 
 
 
+[[zero-all-spare-disks]]
 === Alle freien Festplatten auf Null stellen
 
 Führen Sie den folgenden Befehl aus, um alle freien Festplatten im Cluster zu löschen:
@@ -333,6 +343,7 @@ disk zerospares
 ....
 
 
+[[set-the-on-board-uta2-ports-personality]]
 === Legen Sie die Persönlichkeit der Onboard-UTA2-Ports fest
 
 . Überprüfen Sie den aktuellen Modus und den aktuellen Typ für die Ports, indem Sie den ausführen `ucadmin show` Befehl.
@@ -373,6 +384,7 @@ NOTE: Wenn Sie die Port-Persönlichkeit geändert haben, müssen Sie jeden Node 
 
 
 
+[[rename-the-management-logical-interfaces]]
 == Benennen Sie die logischen Management-Schnittstellen um
 
 Führen Sie die folgenden Schritte aus, um die logischen Management-Schnittstellen (LIFs) umzubenennen:
@@ -396,6 +408,7 @@ network interface rename -vserver <<clustername>> -lif cluster_setup_node_mgmt_l
 
 
 
+[[set-auto-revert-on-cluster-management]]
 == Legen Sie für das Cluster-Management den automatischen Wechsel zurück
 
 Legen Sie den Parameter „Auto-revert“ auf der Cluster-Managementoberfläche fest.
@@ -405,6 +418,7 @@ network interface modify –vserver <<clustername>> -lif cluster_mgmt –auto-re
 ....
 
 
+[[set-up-the-service-processor-network-interface]]
 == Richten Sie die Service Processor-Netzwerkschnittstelle ein
 
 Um dem Service-Prozessor auf jedem Node eine statische IPv4-Adresse zuzuweisen, führen Sie die folgenden Befehle aus:
@@ -418,6 +432,7 @@ NOTE: Die Service-Prozessor-IP-Adressen sollten sich im gleichen Subnetz wie die
 
 
 
+[[enable-storage-failover-in-ontap]]
 == Aktivieren Sie Storage-Failover in ONTAP
 
 Führen Sie die folgenden Befehle in einem Failover-Paar aus, um zu überprüfen, ob das Storage-Failover aktiviert ist:
@@ -482,6 +497,7 @@ storage failover modify –hwassist-partner-ip <<var_nodeA_mgmt_ip>> -node <<var
 
 
 
+[[create-a-jumbo-frame-mtu-broadcast-domain-in-ontap]]
 == Erstellen Sie eine Jumbo Frame MTU Broadcast-Domäne in ONTAP
 
 Um eine Data Broadcast-Domäne mit einer MTU von 9000 zu erstellen, führen Sie die folgenden Befehle aus:
@@ -493,6 +509,7 @@ broadcast-domain create -broadcast-domain Infra_iSCSI-B -mtu 9000
 ....
 
 
+[[remove-the-data-ports-from-the-default-broadcast-domain]]
 == Entfernen Sie die Daten-Ports aus der Standard-Broadcast-Domäne
 
 Die 10-GbE-Daten-Ports werden für iSCSI/NFS-Datenverkehr verwendet, diese Ports sollten aus der Standarddomäne entfernt werden. Die Ports e0e und e0f werden nicht verwendet und sollten auch aus der Standarddomäne entfernt werden.
@@ -504,6 +521,7 @@ broadcast-domain remove-ports -broadcast-domain Default -ports <<var_nodeA>>:e0c
 ....
 
 
+[[disable-flow-control-on-uta2-ports]]
 == Deaktivieren Sie die Flusssteuerung bei UTA2-Ports
 
 Eine NetApp Best Practice ist es, die Flusskontrolle bei allen UTA2-Ports, die mit externen Geräten verbunden sind, zu deaktivieren. Um die Flusssteuerung zu deaktivieren, führen Sie den folgenden Befehl aus:
@@ -536,6 +554,7 @@ Do you want to continue? {y|n}: y
 ....
 
 
+[[configure-the-interface-group-lacp-in-ontap]]
 == Konfigurieren Sie LACP in ONTAP
 
 Diese Art von Interface Group erfordert zwei oder mehr Ethernet-Schnittstellen und einen Switch, der LACP unterstützt. Stellen Sie sicher, dass die Konfiguration auf der Grundlage der Schritte in diesem Handbuch in Abschnitt 5.1 basiert.
@@ -552,6 +571,7 @@ network port ifgrp add-port -node <<var_nodeB>> -ifgrp a0a -port e0d
 ....
 
 
+[[configure-the-jumbo-frames-in-ontap]]
 == Konfigurieren Sie die Jumbo Frames in ONTAP
 
 Um einen ONTAP-Netzwerkport zur Verwendung von Jumbo Frames zu konfigurieren (normalerweise mit einer MTU von 9,000 Byte), führen Sie die folgenden Befehle aus der Cluster-Shell aus:
@@ -568,6 +588,7 @@ Do you want to continue? {y|n}: y
 ....
 
 
+[[create-vlans-in-ontap]]
 == Erstellen von VLANs in ONTAP
 
 Gehen Sie wie folgt vor, um VLANs in ONTAP zu erstellen:
@@ -599,6 +620,7 @@ network port vlan create –node <<var_nodeB>> -vlan-name a0a-<<mgmt_vlan_id>>
 
 
 
+[[create-data-aggregates-in-ontap]]
 == Datenaggregate in ONTAP erstellen
 
 Während der ONTAP-Einrichtung wird ein Aggregat mit dem Root-Volume erstellt. Zum Erstellen weiterer Aggregate ermitteln Sie den Namen des Aggregats, den Node, auf dem er erstellt werden soll, und die Anzahl der enthaltenen Festplatten.
@@ -620,6 +642,7 @@ NOTE: Das Aggregat kann erst erstellt werden, wenn die Daten auf der Festplatte 
 
 
 
+[[configure-time-zone-in-ontap]]
 == Konfigurieren Sie die Zeitzone in ONTAP
 
 Führen Sie den folgenden Befehl aus, um die Zeitsynchronisierung zu konfigurieren und die Zeitzone auf dem Cluster festzulegen:
@@ -632,6 +655,7 @@ NOTE: Im Osten der USA gilt beispielsweise die Zeitzone Amerika/New_York. Nachde
 
 
 
+[[configure-snmp-in-ontap]]
 == Konfigurieren Sie SNMP in ONTAP
 
 Führen Sie die folgenden Schritte aus, um die SNMP zu konfigurieren:
@@ -653,6 +677,7 @@ snmp traphost add <<var_snmp_server_fqdn>>
 
 
 
+[[configure-snmpv1-in-ontap]]
 == Konfigurieren Sie SNMPv1 in ONTAP
 
 Um SNMPv1 zu konfigurieren, stellen Sie das freigegebene geheime Klartextkennwort ein, das als Community bezeichnet wird.
@@ -665,6 +690,7 @@ NOTE: Verwenden Sie die `snmp community delete all` Befehl mit Vorsicht. Wenn Co
 
 
 
+[[configure-snmpv3-in-ontap]]
 == Konfigurieren Sie SNMPv3 in ONTAP
 
 SNMPv3 erfordert, dass Sie einen Benutzer für die Authentifizierung definieren und konfigurieren. Gehen Sie wie folgt vor, um SNMPv3 zu konfigurieren:
@@ -683,6 +709,7 @@ security login create -username snmpv3user -authmethod usm -application snmp
 
 
 
+[[configure-autosupport-https-in-ontap]]
 == Konfigurieren Sie AutoSupport HTTPS in ONTAP
 
 Das NetApp AutoSupport Tool sendet Zusammenfassung von Support-Informationen über HTTPS an NetApp. Führen Sie den folgenden Befehl aus, um AutoSupport zu konfigurieren:
@@ -692,6 +719,7 @@ system node autosupport modify -node * -state enable –mail-hosts <<var_mailhos
 ....
 
 
+[[create-a-storage-virtual-machine]]
 == Erstellen Sie eine Speicher-Virtual Machine
 
 Um eine Storage Virtual Machine (SVM) für Infrastrukturen zu erstellen, gehen Sie wie folgt vor:
@@ -730,6 +758,7 @@ NOTE: Diese Befehle werden von ausgeführt `vserver` Befehlszeile, da SVMs zuvor
 
 
 
+[[configure-nfsv3-in-ontap]]
 == Konfigurieren Sie NFSv3 in ONTAP
 
 In der folgenden Tabelle sind die Informationen aufgeführt, die zum Abschließen dieser Konfiguration erforderlich sind.
@@ -766,6 +795,7 @@ NOTE: Die NetApp VSC verarbeitet automatisch die Exportrichtlinien, wenn Sie sie
 
 
 
+[[create-the-iscsi-service-in-ontap]]
 == Erstellen Sie den iSCSI-Dienst in ONTAP
 
 Führen Sie den folgenden Befehl aus, um den iSCSI-Service auf der SVM zu erstellen. Mit diesem Befehl wird auch der iSCSI-Service gestartet und der iSCSI-IQN für die SVM festgelegt. Überprüfen Sie, ob iSCSI konfiguriert wurde.
@@ -776,6 +806,7 @@ iscsi show
 ....
 
 
+[[create-load-sharing-mirror-of-svm-root-volume-in-ontap]]
 == Spiegelung zur Lastverteilung von SVM-Root-Volumes in ONTAP erstellen
 
 So erstellen Sie eine Spiegelung zur Lastverteilung des SVM-Root-Volumes in ONTAP:
@@ -807,6 +838,7 @@ snapmirror show
 
 
 
+[[configure-https-access-in-ontap]]
 == Konfigurieren Sie HTTPS-Zugriff in ONTAP
 
 Gehen Sie wie folgt vor, um den sicheren Zugriff auf den Storage Controller zu konfigurieren:
@@ -867,6 +899,7 @@ vserver services web modify –name spi –vserver * -enabled true
 
 
 
+[[create-a-netapp-flexvol-volume-in-ontap]]
 == Erstellen Sie in ONTAP ein NetApp FlexVol Volume
 
 Um ein NetApp FlexVol® Volume zu erstellen, geben Sie den Namen, die Größe und das Aggregat ein, auf dem es vorhanden ist. Erstellung von zwei VMware Datastore Volumes und einem Server Boot Volume
@@ -878,6 +911,7 @@ volume create -vserver Infra-SVM -volume esxi_boot -aggregate aggr1_nodeA -size 
 ....
 
 
+[[create-luns-in-ontap]]
 == Erstellen Sie LUNs in ONTAP
 
 Führen Sie die folgenden Befehle aus, um zwei Boot-LUNs zu erstellen:
@@ -891,6 +925,7 @@ NOTE: Beim Hinzufügen eines zusätzlichen Cisco UCS C-Series Servers müssen Si
 
 
 
+[[create-iscsi-lifs-in-ontap]]
 == Erstellen von iSCSI LIFs in ONTAP
 
 In der folgenden Tabelle sind die Informationen aufgeführt, die zum Abschließen dieser Konfiguration erforderlich sind.
@@ -933,6 +968,7 @@ network interface show
 ....
 
 
+[[create-nfs-lifs-in-ontap]]
 == Erstellen von NFS LIFs in ONTAP
 
 In der folgenden Tabelle sind die Informationen aufgeführt, die zum Abschließen dieser Konfiguration erforderlich sind.
@@ -961,6 +997,7 @@ network interface show
 ....
 
 
+[[add-an-infrastructure-svm-administrator]]
 == Hinzufügen eines Infrastruktur-SVM-Administrators
 
 In der folgenden Tabelle sind die Informationen aufgeführt, die zum Hinzufügen eines SVM-Administrators erforderlich sind.

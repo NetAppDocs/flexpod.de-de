@@ -18,6 +18,7 @@ In diesem Abschnitt werden zusätzliche, wichtige technische Spezifikationen fü
 
 
 
+[[cisco-ucs-x-series-direct-chassis]]
 == Cisco UCS X-Series Direct Chassis
 
 Die technischen Spezifikationen für Cisco UCS X-Series Direct Chassis, wie in der folgenden Tabelle dargestellt, umfassen die folgenden Komponenten:
@@ -47,6 +48,7 @@ Weitere Informationen finden Sie im link:https://www.cisco.com/c/en/us/products/
 
 
 
+[[cisco-ucs-x-series-direct-compute-node]]
 == Cisco UCS X-Series Direct Compute Node
 
 Die technischen Spezifikationen für Cisco UCS X-Series Compute Node umfassen die folgenden Komponenten:
@@ -86,9 +88,10 @@ Die technischen Spezifikationen für Cisco UCS X-Series Direct Compute-Knoten si
 |===
 
 
-== Cisco UCS X-Series Direct Fabric Interconnects
+[[cisco-ucs-x-series-direct-fabric-interconnect]]
+== Cisco UCS X-Series Direct Fabric Interconnect
 
-Die technischen Spezifikationen für Cisco UCS X-Series Fabric Interconnects umfassen Formfaktor, Gesamtzahl der Ports und Erweiterungssteckplätze sowie Durchsatzkapazität. Die folgende Tabelle zeigt das Cisco UCS X-Series Fabric Interconnect Datenblatt.
+Die technischen Spezifikationen für Cisco UCS X-Series Direct Fabric Interconnect umfassen Formfaktor, Gesamtzahl der Ports und Erweiterungssteckplätze sowie Durchsatzkapazität. In der folgenden Tabelle finden Sie das Cisco UCS X-Series Direct Fabric Interconnect Datenblatt.
 
 |===
 | Komponente | Cisco UCS Datenblatt 
@@ -98,9 +101,61 @@ Die technischen Spezifikationen für Cisco UCS X-Series Fabric Interconnects umf
 |===
 
 
+[[cisco-ucs-xe9305-chassis-cisco-unified-edge]]
+== Cisco UCS XE9305 Chassis (Cisco Unified Edge)
+
+Die technischen Spezifikationen für Cisco UCS XE9305 Chassis, wie in der folgenden Tabelle dargestellt, umfassen die folgenden Komponenten:
+
+|===
+| Komponente | Cisco UCS XE9305 Chassis 
+
+
+| Höheneinheiten | 3 
+
+
+| Maximale Anzahl an Nodes | 5 Cisco UCS XE130c M8 Compute Nodes oder 2 Cisco UCS XE150c M8 Compute Nodes 
+|===
+Weitere Informationen sind in der link:https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-xe9305-m8-chassis-spec-sheet.pdf["Cisco UCS XE9305 Chassis Datenblatt"^] zu finden.
+
+
+
+[[cisco-ucs-compute-nodes-for-cisco-unified-edge]]
+== Cisco UCS Compute Nodes für Cisco Unified Edge
+
+Die technischen Spezifikationen für Cisco UCS Compute Nodes für Cisco Unified Edge umfassen die folgenden Komponenten:
+
+* Anzahl der Prozessorsockeln
+* Prozessorunterstützung
+* GPU-Unterstützung
+* Speicherkapazität
+* Größe und Geschwindigkeit
+* Maximaler I/O-Durchsatz
+* Formfaktor
+
+
+Die Rechenknoten unterstützen ebenfalls GPUs, der XE130c M8 unterstützt NVIDIA L4 GPU und der XE150c M8 unterstützt NVIDIA RTX PRO 4500 / 6000 Blackwell Server Edition GPUs. Die technischen Spezifikationen für Cisco UCS Unified Edge Rechenknoten sind in der folgenden Tabelle aufgeführt.
+
+|===
+
+
+| Komponente | Cisco UCS Datenblatt 
+
+
+| Cisco UCS XE130c M8 Compute Node | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/ucs-c-series-rack-servers/ucs-xe130c-m8-compute-node-spec-sheet.pdf["Cisco UCS XE130c M8 Compute Node"] 
+
+
+| Cisco UCS XE150c M8 Compute Node | https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/unified-edge/cisco-ucs-xe150c-m8-compute-node.pdf["Cisco UCS XE150c M8 Compute Node"] 
+|===
+Weitere Einzelheiten sind unter link:https://www.cisco.com/c/en/us/products/servers-unified-computing/unified-edge/datasheet-listing.html["Cisco Unified Edge Datenblattliste"^] zu finden.
+
+
+
+[[cisco-ucs-c-series-rack-servers]]
 == Rack-Server der Cisco UCS C-Serie
 
-Die technischen Spezifikationen der Cisco UCS C-Series Rack-Server umfassen Prozessorunterstützung, maximale Speicherkapazität, Anzahl der PCIe-Steckplätze und Formfaktor. Weitere Details zu kompatiblen UCS-Servermodellen sind in der  https://ucshcltool.cloudapps.cisco.com/public/["Cisco Hardware-Kompatibilität"^] Liste zu finden. Die folgende Tabelle zeigt die Datenblätter der C-Series Rack-Server.
+Die technischen Spezifikationen der Cisco UCS C-Series Rack-Server umfassen Prozessorunterstützung, maximale Speicherkapazität, Anzahl der PCIe-Steckplätze und Formfaktor. Weitere Details zu kompatiblen UCS-Servermodellen sind in der  https://ucshcltool.cloudapps.cisco.com/public/["Cisco Hardware-Kompatibilität"^] Liste zu finden.
+
+Die technischen Spezifikationen für Cisco UCS C-Series Rack Server sind in der folgenden Tabelle aufgeführt.
 
 |===
 | Komponente | Cisco UCS Datenblatt 
@@ -128,6 +183,7 @@ Die technischen Spezifikationen der Cisco UCS C-Series Rack-Server umfassen Proz
 |===
 
 
+[[cisco-nexus-switches]]
 == Cisco Nexus Switches
 
 Die technischen Spezifikationen für Cisco Nexus Switches sind im Datenblatt für jedes Modell enthalten. Zu den Spezifikationen gehören die Formfaktorgröße, die Anzahl der Supervisor-, Fabric-Modul- und Linecard-Steckplätze sowie die maximale Anzahl der Ports. Diese Datenblätter sind in der folgenden Tabelle zu finden.
@@ -143,12 +199,14 @@ Die technischen Spezifikationen für Cisco Nexus Switches sind im Datenblatt fü
 |===
 
 
+[[netapp-storage-controllers]]
 == NetApp Storage Controller
 
 Zu den technischen Spezifikationen für NetApp Storage-Controller gehören die Plattformkonfiguration, die maximale Bruttokapazität, der Speicher, der Formfaktor, die ONTAP Versionserfordernisse, die Festplattengehäuse usw.
 
 
 
+[[netapp-aff-a-series]]
 === NetApp AFF A-Series
 
 Einstiegsmodelle NetApp AFF A-Series Speichercontroller werden für die Verwendung in FlexPod Express unterstützt. Weitere Informationen sind im https://www.netapp.com/pdf.html?item=/media/7828-ds-3582-aff-a-series-ai-era.pdf["Technische Spezifikationen der AFF A-Serie"^] Datenblatt und in der https://hwu.netapp.com/["NetApp Hardware Universe"^] verfügbar. Detaillierte Informationen zu einem bestimmten AFF Modell sind in der plattformspezifischen Dokumentation in der folgenden Tabelle zu finden.
@@ -164,6 +222,7 @@ Einstiegsmodelle NetApp AFF A-Series Speichercontroller werden für die Verwendu
 |===
 
 
+[[netapp-aff-c-series]]
 === NetApp AFF C-Series
 
 Einstiegsmodelle NetApp AFF C-Series Speichercontroller werden für den Einsatz in FlexPod Express unterstützt. Weitere Informationen sind im https://www.netapp.com/pdf.html?item=/media/81583-ds-4240-aff-c-series.pdf["Technische Spezifikationen der AFF C-Series"^] Datenblatt und in der https://hwu.netapp.com/["NetApp Hardware Universe"^] zu finden. Detaillierte Informationen zu einem bestimmten AFF Modell enthält die plattformspezifische Dokumentation in der folgenden Tabelle.
@@ -176,6 +235,7 @@ Einstiegsmodelle NetApp AFF C-Series Speichercontroller werden für den Einsatz 
 |===
 
 
+[[netapp-asa-a-series]]
 === NetApp ASA A-Series
 
 Einstiegsmodelle der NetApp ASA A-Series Speichercontroller werden für die Verwendung in FlexPod Express unterstützt. Weitere Informationen sind im https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA A-Series Technische Spezifikationen"^] Datenblatt und in der https://hwu.netapp.com/["NetApp Hardware Universe"^] zu finden. Detaillierte Informationen zu einem bestimmten ASA Modell enthält die plattformspezifische Dokumentation in der folgenden Tabelle.
@@ -191,6 +251,7 @@ Einstiegsmodelle der NetApp ASA A-Series Speichercontroller werden für die Verw
 |===
 
 
+[[netapp-asa-c-series]]
 === NetApp ASA C-Series
 
 Einstiegsmodelle der NetApp ASA C-Series Speichercontroller werden für die Verwendung in FlexPod Express unterstützt. Weitere Informationen sind im https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["NetApp ASA C-Series Technische Spezifikationen"^] Datenblatt und in der https://hwu.netapp.com/["NetApp Hardware Universe"^] zu finden. Detaillierte Informationen zu einem bestimmten ASA Modell sind in der plattformspezifischen Dokumentation in der folgenden Tabelle aufgeführt.
@@ -203,6 +264,7 @@ Einstiegsmodelle der NetApp ASA C-Series Speichercontroller werden für die Verw
 |===
 
 
+[[netapp-fas-series]]
 === NetApp FAS Serie
 
 Einstiegsmodelle FAS Speichercontroller werden für den Einsatz in einem FlexPod Express unterstützt. Detaillierte Spezifikationen für alle FAS Speichercontroller sind im  https://hwu.netapp.com/["NetApp Hardware Universe"^] verfügbar. Ausführliche Informationen zu einem bestimmten FAS Modell sind in der plattformspezifischen Dokumentation in der folgenden Tabelle zu finden.
@@ -215,9 +277,13 @@ Einstiegsmodelle FAS Speichercontroller werden für den Einsatz in einem FlexPod
 
 
 | FAS2820-Serie | https://docs.netapp.com/us-en/ontap-systems/fas2800/overview.html["FAS2820 Wichtige Spezifikationen"^] 
+
+
+| FAS50 Serie | https://docs.netapp.com/us-en/ontap-systems/fas50/overview.html["FAS50 Wichtige Spezifikationen"^] 
 |===
 
 
+[[netapp-disk-shelves]]
 === NetApp Platten-Shelves
 
 Die technischen Spezifikationen für NetApp Festplattengehäuse umfassen den Formfaktor, die Anzahl der Laufwerke pro Gehäuse und die Shelf-I/O-Module; diese Dokumentation befindet sich in der folgenden Tabelle. Weitere Informationen sind im  https://hwu.netapp.com/["NetApp Hardware Universe"^] zu finden.
@@ -242,6 +308,7 @@ Die technischen Spezifikationen für NetApp Festplattengehäuse umfassen den For
 |===
 
 
+[[netapp-drives]]
 === NetApp Laufwerke
 
 Die technischen Spezifikationen für NetApp Laufwerke umfassen Formfaktor Größe, Festplattenkapazität, Festplatten-U/min, unterstützende Controller und ONTAP Versionsanforderungen. Diese Spezifikationen finden Sie im Abschnitt Laufwerke des http://hwu.netapp.com/Drives/Index?queryId=1581392["NetApp Hardware Universe"^].

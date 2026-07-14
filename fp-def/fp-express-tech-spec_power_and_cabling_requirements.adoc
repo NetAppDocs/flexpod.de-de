@@ -18,6 +18,7 @@ In diesem Abschnitt werden die Stromversorgungsanforderungen und Verkabelungsric
 
 
 
+[[power-requirements]]
 == Stromversorgung
 
 Die Stromanforderungen für FlexPod Express unterscheiden sich je nach Standort, an dem die FlexPod Express Konfiguration installiert ist.
@@ -30,6 +31,7 @@ Für NetApp-Stromversorgungsdaten von Speichercontrollern siehe  http://hwu.neta
 
 
 
+[[cabling-guidelines]]
 == Verkabelungsrichtlinien
 
 Dieser Abschnitt enthält allgemeine Verkabelungsrichtlinien für ein FlexPod Express Design.

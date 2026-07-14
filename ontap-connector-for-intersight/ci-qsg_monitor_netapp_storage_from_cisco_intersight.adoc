@@ -18,6 +18,7 @@ Nachdem die Ziele beansprucht wurden, stehen die Registerkarten für NetApp Stor
 
 
 
+[[storage-inventory-overview]]
 == Überblick über den Storage-Bestand
 
 Im folgenden Screenshot wird der Bildschirm *Bedienung > Speicher* angezeigt.
@@ -33,6 +34,7 @@ image:ci-qsg_image10.png["Screenshot zeigt die Übersicht zum Storage-Cluster"]
 
 
 
+[[storage-widgets]]
 == Storage-Widgets
 
 Um Storage-Widgets anzuzeigen, navigieren Sie zu *Überwachung > Dashboards > NetApp Storage Widgets anzeigen*.

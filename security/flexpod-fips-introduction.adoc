@@ -22,12 +22,14 @@ FIPS 140-2 ist eine USA Dieser Standard erfüllt die Sicherheitsanforderungen f�
 
 
 
+[[scope]]
 == Umfang
 
 Dieses Dokument bietet eine technische Übersicht zu einem Cisco Unified Computing System (Cisco UCS), Cisco Nexus, Cisco MDS und einer auf NetApp ONTAP basierenden FlexPod Infrastruktur zum Hosten von IT-Applikationen oder Lösungen im Gesundheitswesen, die FIPS 140-2 Sicherheit erfordern.
 
 
 
+[[audience]]
 == Zielgruppe
 
 Dieses Dokument richtet sich an technische Leiter im Gesundheitswesen sowie an Lösungstechniker von Cisco und NetApp Partnern und Professional Services-Mitarbeiter. NetApp geht davon aus, dass der Leser gute Kenntnisse der Konzepte zur Berechnung der Storage- und Computing-Größenbemessung sowie der technischen Vertrautheit mit Bedrohungen für das Gesundheitswesen, mit der Sicherheit im Gesundheitswesen, MIT IT-Systemen im Gesundheitswesen, mit Cisco UCS und NetApp Storage-Systemen hat.

@@ -26,6 +26,7 @@ image:flexpod-fips-image6.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[solution-infrastructure-hardware-and-software-components]]
 == Hardware- und Softwarekomponenten der Lösungsinfrastruktur
 
 In den folgenden beiden Abbildungen sind die Hardware- und Software-Komponenten aufgeführt, die jeweils bei der Aktivierung von FIPS-Tests auf einem FlexPod verwendet werden. Beispiele sind die Empfehlungen in diesen Tabellen. Sie sollten mit Ihrem NetApp SME zusammenarbeiten, um sicherzustellen, dass die Komponenten für Ihr Unternehmen geeignet sind. Vergewissern Sie sich außerdem, dass die Komponenten und Versionen von unterstützt werden https://mysupport.netapp.com/matrix/["NetApp Interoperabilitäts-Matrix-Tool"^] (IMT) und https://ucshcltool.cloudapps.cisco.com/public/["Cisco Hardware Compatibility List (HCL)"^].

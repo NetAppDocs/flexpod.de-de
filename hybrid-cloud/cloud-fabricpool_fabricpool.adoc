@@ -15,6 +15,7 @@ summary: 'FabricPool ist eine Hybrid-Storage-Lösung in ONTAP mit einem All-Flas
 
 
 
+[[fabricpool-overview]]
 == Übersicht über FabricPool
 
 FabricPool ist eine Hybrid-Storage-Lösung in ONTAP mit einem All-Flash-Aggregat (SSD) als Performance-Tier und einem Objektspeicher in einem Public-Cloud-Service als Cloud-Tier. Diese Konfiguration ermöglicht richtlinienbasierte Datenverschiebung, je nachdem, ob häufig auf Daten zugegriffen wird. FabricPool wird in ONTAP sowohl für AFF- als auch für rein SSD-basierte Aggregate auf den FAS Plattformen unterstützt. Die Datenverarbeitung erfolgt auf Blockebene, wobei häufig abgerufene Datenblöcke in der All-Flash-Performance-Tier mit als „heiße“ und selten genutzte Blöcke gekennzeichnet sind.
@@ -30,6 +31,7 @@ In ONTAP 9.6 lässt sich FabricPool mit allen wichtigen Public-Cloud-Providern i
 
 
 
+[[the-composite-aggregate]]
 == Das zusammengesetzte Aggregat
 
 Eine FabricPool Instanz wird erstellt, indem ein ONTAP Flash-Aggregat mit einem Cloud-Objektspeicher wie einem AWS S3-Bucket verknüpft wird, um ein gruppiertes Aggregat zu erstellen. Wenn Volumes innerhalb des zusammengesetzten Aggregats erstellt werden, können sie die Tiering-Funktionen von FabricPool nutzen. Wenn Daten auf das Volume geschrieben werden, weist ONTAP jedem der Datenblöcke eine Temperatur zu. Wird der Block zum ersten Mal geschrieben, wird ihm die Temperatur „heiß“ zugewiesen. Im Verlauf der Zeit wird bei nicht abgerufenen Daten ein Kühlvorgang durchlaufen, bis dieser schließlich einem „kalten“ Status zugewiesen wird. Diese selten genutzten Datenblöcke werden dann vom Performance-SSD-Aggregat und in den Cloud-Objektspeicher verschoben.
@@ -38,6 +40,7 @@ Die Zeitspanne zwischen dem „Kaltstart“ und dem Verschieben in den Cloud-Obj
 
 
 
+[[inactive-data-reporting]]
 === Berichterstellung für inaktive Daten
 
 In ONTAP steht die Berichterstellung für inaktive Daten (Inactive Data Reporting, IDR) zur Verfügung. Dies unterstützt Sie bei der Bewertung der Menge an kalten Daten, die von einem Aggregat verteilt werden können. IDR ist in ONTAP 9.6 standardmäßig aktiviert und verwendet eine standardmäßige Kühlrichtlinie für 31 Tage, um zu bestimmen, welche Daten im Volume inaktiv sind.
@@ -47,6 +50,7 @@ NOTE: Die Menge der „kalten“ Daten in Tier hängt von den Tiering-Richtlinie
 
 
 
+[[object-creation-and-data-movement]]
 == Erstellen von Objekten und Verschieben von Daten
 
 FabricPool arbeitet auf Blockebene von NetApp WAFL, wobei Kühlblöcke, sie in Storage-Objekte verketten und diese Objekte auf eine Cloud-Tier migrieren. Jedes FabricPool Objekt hat 4 MB und besteht aus 1,024 4-KB-Blöcken. Die Objektgröße wurde auf 4 MB festgelegt, basierend auf Performance-Empfehlungen führender Cloud-Provider und kann nicht geändert werden. Wenn „kalte“ Blöcke gelesen und wieder „heiß“ werden, werden nur die angeforderten Blöcke im 4-MB-Objekt abgerufen und zurück zur Performance-Tier verschoben. Weder das gesamte Objekt noch die gesamte Datei werden zurückmigriert. Es werden nur die erforderlichen Blöcke migriert.
@@ -60,12 +64,14 @@ Wenn die Performance-Tier-Auslastung bei einer Kapazität von mehr als 70 % lieg
 
 
 
+[[reclaim-performance-tier-space]]
 == Performance-Tier-Speicherplatz zurückgewinnen
 
 Wie bereits erwähnt, besteht der primäre Anwendungsfall für FabricPool darin, hochperformante On-Premises-Flash-Storage am effizientesten zu nutzen. „Kalte“ Daten in Form von Volume-Snapshots und VM-Backups der virtuellen FlexPod Infrastruktur beanspruchen unter kann viel teuren Flash-Storage. Wertvolle Performance- Tiered Storage kann durch die Implementierung von zwei Tiering-Richtlinien freigegeben werden: Nur Snapshot oder Auto.
 
 
 
+[[snapshot-only-tiering-policy]]
 === Richtlinie für ausschließlich Snapshot-Tiering
 
 Mit der in der folgenden Abbildung gezeigten Richtlinie zum ausschließlich Snapshot Tiering werden Snapshot Daten für kalte Volumes und SnapCenter für vSphere Backups von VMs, die Speicherplatz belegen, aber keine Blöcke gemeinsam mit dem aktiven Filesystem an einen Cloud-Objektspeicher freigeben. Die reine Snapshot-Tiering-Richtlinie verschiebt selten genutzte Datenblöcke auf die Cloud-Tier. Wenn eine Wiederherstellung erforderlich ist, werden kalte Blöcke in der Cloud als „heiße“ und zurück in das Flash-Tier mit der Performance vor Ort verschoben.
@@ -74,6 +80,7 @@ image:cloud-fabricpool_image4.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[auto-tiering-policy]]
 === Automatisches Tiering
 
 Die in der folgenden Abbildung dargestellte FabricPool Auto Tiering-Richtlinie verschiebt nicht nur kalte Snapshot Datenblöcke in die Cloud, sondern auch alle kalten Blöcke im aktiven Filesystem. Dies kann VM-Vorlagen und sämtliche nicht verwendeten VM-Daten im Datastore Volume enthalten. Welche kalten Blöcke bewegt werden, wird vom gesteuert `tiering-minimum-cooling-days` Einstellung für die Lautstärke. Wenn kalte Blöcke im Cloud-Tier von einer Applikation zufällig gelesen werden, werden diese Blöcke „heiß“ gemacht und zurück auf die Performance-Tier gebracht. Wenn jedoch kalte Blöcke durch einen sequenziellen Prozess wie einen Virenschutzscanner gelesen werden, bleiben die Blöcke im Cloud-Objektspeicher erhalten und bleiben erhalten. Sie werden nicht zurück auf die Performance-Tier verschoben.
@@ -87,12 +94,14 @@ image:cloud-fabricpool_image5.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[all-tiering-policy]]
 === Alle Tiering-Richtlinien
 
 Im Gegensatz zu den reinen Snapshot- und Auto-Richtlinien werden bei der All-Tiering-Richtlinie ganze Datenvolumen sofort in die Cloud-Tier verschoben. Diese Richtlinie eignet sich am besten für sekundäre Datensicherungs- oder Archivierungs-Volumes, für die Daten zwar zu historischen oder gesetzlichen Zwecken aufbewahrt werden müssen, aber nur selten benötigt werden. Die Richtlinie „Alle“ wird für VMware Datastore Volumes nicht empfohlen, da alle in den Datastore geschriebenen Daten sofort in die Cloud-Tier verschoben werden. Nachfolgende Lesezugriffe werden aus der Cloud durchgeführt und können möglicherweise zu Performance-Problemen für VMs und Applikationen im Datastore Volume führen.
 
 
 
+[[security]]
 == Sicherheit
 
 Die Sicherheit spielt für die Cloud und für FabricPool eine zentrale Rolle. Alle nativen Sicherheitsfunktionen von ONTAP werden in der Performance-Tier unterstützt und das Verschieben von Daten ist bei der Übertragung in die Cloud-Tier sicher. FabricPool verwendet das https://tools.ietf.org/html/rfc5288["AES-256-GCM"^] Der Verschlüsselungsalgorithmus auf der Performance-Tier bleibt über eine End-to-End-Verschlüsselung in der Cloud-Tier erhalten. Datenblöcke, die in den Cloud-Objektspeicher verschoben werden, sind mit TLS (Transport Layer Security) v1.2 gesichert, um die Datenvertraulichkeit und -Integrität zwischen Storage Tiers zu wahren.
@@ -102,6 +111,7 @@ NOTE: Die Kommunikation mit dem Cloud-Objektspeicher über eine unverschlüsselt
 
 
 
+[[data-encryption]]
 === Datenverschlüsselung
 
 Die Datenverschlüsselung ist entscheidend für den Schutz geistigen Eigentums, Handelsinformationen und persönlich identifizierbare Kundeninformationen. FabricPool unterstützt sowohl NetApp Volume Encryption (NVE) als auch NetApp Storage Encryption (NSE) vollständig, um bestehende Datensicherungsstrategien zu beibehalten. Alle verschlüsselten Daten auf der Performance-Tier bleiben beim Verschieben in die Cloud-Tier verschlüsselt. Die Client-seitige Verschlüsselung befindet sich im Eigentum von ONTAP, und die serverseitigen Objektspeicherschlüssel sind im Eigentum des jeweiligen Cloud-Objektspeichers. Nicht mit NVE verschlüsselte Daten werden über den AES-256-GCM-Algorithmus verschlüsselt. Keine anderen AES-256-Chiffren werden unterstützt.

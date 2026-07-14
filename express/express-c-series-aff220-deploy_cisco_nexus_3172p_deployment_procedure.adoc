@@ -18,6 +18,7 @@ Im folgenden Abschnitt wird die in einer FlexPod Express-Umgebung verwendete Cis
 
 
 
+[[initial-setup-of-cisco-nexus-3172p-switch]]
 == Ersteinrichtung des Cisco Nexus 3172P-Switch
 
 In den folgenden Verfahren wird die Konfiguration von Cisco Nexus Switches für die Verwendung in einer grundlegenden FlexPod Express Umgebung beschrieben.
@@ -78,6 +79,7 @@ Use this configuration and save it? (yes/no) [y]: Enter
 
 
 
+[[enable-advanced-features]]
 == Aktivieren Sie erweiterte Funktionen
 
 Bestimmte erweiterte Funktionen müssen in Cisco NX-OS aktiviert sein, um zusätzliche Konfigurationsoptionen bereitzustellen.
@@ -104,6 +106,7 @@ port-channel load-balance src-dst ip-l4port
 
 
 
+[[perform-global-spanning-tree-configuration]]
 == Führen Sie eine globale Spanning-Tree-Konfiguration durch
 
 Die Cisco Nexus Plattform verwendet eine neue Sicherungsfunktion namens „Bridge Assurance“. Bridge Assurance schützt vor unidirektionalen Verbindungsfehlern oder anderen Softwarefehlern mit einem Gerät, das den Datenverkehr weiterführt, wenn der Spanning-Tree-Algorithmus nicht mehr ausgeführt wird. Die Ports können je nach Plattform in einen von mehreren Status platziert werden, einschließlich Netzwerk oder Edge.
@@ -122,6 +125,7 @@ spanning-tree port type edge bpduguard default
 ....
 
 
+[[define-vlans]]
 == Definieren Sie VLANs
 
 Bevor individuelle Ports mit unterschiedlichen VLANs konfiguriert sind, müssen auf dem Switch die Layer-2-VLANs definiert werden. Es ist auch eine gute Praxis, die VLANs zu benennen, um zukünftig eine einfache Fehlerbehebung zu ermöglichen.
@@ -147,6 +151,7 @@ exit
 ....
 
 
+[[configure-access-and-management-port-descriptions]]
 == Konfiguration von Zugriffs- und Management-Port-Beschreibungen
 
 Wie bei der Zuordnung von Namen zu den Layer-2-VLANs kann das Festlegen von Beschreibungen für alle Schnittstellen sowohl bei der Bereitstellung als auch bei der Fehlerbehebung hilfreich sein.
@@ -155,6 +160,7 @@ Im Konfigurationsmodus (`config t`) Geben Sie bei jedem der Switches die folgend
 
 
 
+[[cisco-nexus-switch-a]]
 === Cisco Nexus Switch A
 
 ....
@@ -177,6 +183,7 @@ int eth1/34
 ....
 
 
+[[cisco-nexus-switch-b]]
 === Cisco Nexus Switch B
 
 ....
@@ -199,6 +206,7 @@ int eth1/34
 ....
 
 
+[[configure-server-and-storage-management-interfaces]]
 == Konfiguration der Server- und Storage-Managementschnittstellen
 
 Die Management-Schnittstellen sowohl für den Server als auch für den Storage verwenden in der Regel nur ein einziges VLAN. Konfigurieren Sie daher die Ports der Managementoberfläche als Access Ports. Definieren Sie das Management-VLAN für jeden Switch und ändern Sie den Porttyp Spanning-Tree in Edge.
@@ -207,6 +215,7 @@ Im Konfigurationsmodus (`config t`Geben Sie die folgenden Befehle ein, um die Po
 
 
 
+[[cisco-nexus-switch-a]]
 === Cisco Nexus Switch A
 
 ....
@@ -219,6 +228,7 @@ exit
 ....
 
 
+[[cisco-nexus-switch-b]]
 === Cisco Nexus Switch B
 
 ....
@@ -231,6 +241,7 @@ exit
 ....
 
 
+[[perform-virtual-port-channel-global-configuration]]
 == Globale Konfiguration des virtuellen Port-Channels durchführen
 
 Über einen Virtual Port Channel (vPC) können Links, die physisch mit zwei verschiedenen Cisco Nexus-Switches verbunden sind, mit einem dritten Gerät als einzelner Port-Channel angezeigt werden. Das dritte Gerät kann ein Switch, Server oder ein anderes Netzwerkgerät sein. Ein vPC bietet Multipathing auf Layer-2-Ebene. Dadurch kann Redundanz erzeugt werden, indem die Bandbreite erhöht wird. Dies ermöglicht mehrere parallele Pfade zwischen Nodes und Lastverteilung zwischen alternativen Pfaden.
@@ -252,6 +263,7 @@ Im Konfigurationsmodus (`config t`Führen Sie die folgenden Befehle aus, um die 
 
 
 
+[[cisco-nexus-switch-a]]
 === Cisco Nexus Switch A
 
 ....
@@ -277,6 +289,7 @@ copy run start
 ....
 
 
+[[cisco-nexus-switch-b]]
 === Cisco Nexus Switch B
 
 ....
@@ -303,6 +316,7 @@ copy run start
 ....
 
 
+[[configure-storage-port-channels]]
 == Konfigurieren Sie Speicher-Port-Kanäle
 
 Die NetApp Storage-Controller ermöglichen eine aktiv/aktiv-Verbindung zum Netzwerk mithilfe des Link Aggregation Control Protocol (LACP). Die Verwendung von LACP wird bevorzugt, da es sowohl Verhandlungen als auch Protokollierung zwischen den Switches hinzufügt. Da das Netzwerk für vPC eingerichtet ist, können Sie mit diesem Ansatz aktiv/aktiv-Verbindungen vom Storage zu separaten physischen Switches nutzen. Jeder Controller verfügt über zwei Links zu jedem der Switches. Alle vier Links sind jedoch Teil derselben vPC und Interface Group (IFGRP).
@@ -351,6 +365,7 @@ NOTE: In dieser Lösungsvalidierung wurde eine MTU von 9000 verwendet. Basierend
 
 
 
+[[configure-server-connections]]
 == Serververbindungen konfigurieren
 
 Die Cisco UCS Server haben eine virtuelle Interface Card mit zwei Ports, VIC1387, die für den Datenverkehr und das Booten des ESXi Betriebssystems über iSCSI verwendet wird. Diese Schnittstellen werden für den Failover untereinander konfiguriert, wodurch über eine einzelne Verbindung hinaus eine zusätzliche Redundanz gewährleistet wird. Wenn diese Links über mehrere Switches verteilt werden, kann der Server sogar einen vollständigen Switch-Ausfall überstehen.
@@ -359,6 +374,7 @@ Im Konfigurationsmodus (`config t`), führen Sie die folgenden Befehle aus, um d
 
 
 
+[[cisco-nexus-switch-a-cisco-ucs-server-a-and-cisco-ucs-server-b-configuration]]
 === Cisco Nexus Switch A: Cisco UCS Server-A- und Cisco UCS Server-B-Konfiguration
 
 ....
@@ -374,6 +390,7 @@ copy run start
 ....
 
 
+[[cisco-nexus-switch-b-cisco-ucs-server-a-and-cisco-ucs-server-b-configuration]]
 === Cisco Nexus Switch B: Konfiguration von Cisco UCS Server A und Cisco UCS Server B
 
 ....
@@ -393,6 +410,7 @@ Um die Lösung durch Hinzufügen weiterer Cisco UCS Server zu skalieren, führen
 
 
 
+[[uplink-into-existing-network-infrastructure]]
 == Uplink zur bestehenden Netzwerkinfrastruktur
 
 Je nach verfügbarer Netzwerkinfrastruktur können zur Uplink der FlexPod Umgebung mehrere Methoden und Funktionen verwendet werden. Bei einer vorhandenen Cisco Nexus Umgebung empfiehlt NetApp den Einsatz von vPCs, um die in der FlexPod Umgebung enthaltenen Cisco Nexus 3172P Switches in die Infrastruktur zu integrieren. Bei den Uplinks kann es sich um 10-GbE-Uplinks für eine 10-GbE-Infrastrukturlösung oder 1 GbE für eine 1-GbE-Infrastrukturlösung (sofern erforderlich) handelt. Die zuvor beschriebenen Verfahren können zur Erstellung eines Uplink vPC in der vorhandenen Umgebung verwendet werden. Stellen Sie sicher, dass Sie den Kopierlauf ausführen, um die Konfiguration nach Abschluss der Konfiguration auf jedem Switch zu speichern.

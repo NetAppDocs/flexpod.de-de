@@ -13,12 +13,14 @@ Die in diesem Abschnitt aufgeführten Technologien wurden während der Designpha
 
 
 
+[[netapp-aff-c190-series-with-ontap-9-6]]
 == NetApp AFF C190 Serie mit ONTAP 9.6
 
 Bei dieser Lösung kommen zwei der neuesten NetApp Produkte zum Einsatz: Das NetApp AFF C190 System und die Software ONTAP 9.6.
 
 
 
+[[aff-c190-system]]
 === AFF C190 System
 
 Die Zielgruppe sind Kunden, die ihre IT-Infrastruktur mit All-Flash-Technologie zu einem erschwinglichen Preis modernisieren möchten. Das AFF C190 System wird mit der neuen Lizenzierung von ONTAP 9.6 und Flash Bundle ausgeliefert. Dies bedeutet, dass die folgenden Funktionen integriert sind:
@@ -59,6 +61,7 @@ Weitere Informationen zum AFF C190 Hardware-System finden Sie im https://www.net
 
 
 
+[[ontap-9-6-software]]
 === ONTAP 9.6 Software
 
 NetApp AFF C190 Systeme verwenden die neue Datenmanagement-Software ONTAP 9.6. ONTAP 9.6 ist die branchenweit führende Datenmanagement-Software der Enterprise-Klasse. Sie vereint ein neues Maß an Anwenderfreundlichkeit und Flexibilität mit leistungsfähigen Datenmanagement-Funktionen, Storage-Effizienzfunktionen und erstklassiger Cloud-Integration.
@@ -79,6 +82,7 @@ Weitere Funktionserweiterungen in ONTAP 9.6:
 
 
 
+[[cisco-nexus-3000-series]]
 == Cisco Nexus 3000 Serie
 
 Der Cisco Nexus 31108PC-V ist ein Top-of-Rack (Tor) Switch mit 10 Gbit/s SFP+-48 Ports und 6 QSFP28-Ports. Jeder SFP+ Port kann mit 100 MB/s, 10 GB/s betrieben werden. Jeder QSFP28-Port kann im nativen 100-Gbit/s- oder 40-Gbit/s-Modus oder 4-mal 10-Gbit/s-Modus ausgeführt werden und bietet flexible Migrationsoptionen. Dieser Switch ist ein echter PHY-loser Switch, der für niedrige Latenz und niedrigen Stromverbrauch optimiert ist.
@@ -97,6 +101,7 @@ Weitere Informationen zu Cisco Nexus 31108PC-V-Switches finden Sie unter https:/
 
 
 
+[[cisco-ucs-c-series]]
 == Cisco UCS C-Serie
 
 Der Rack Server der Cisco UCS C-Serie wurde für FlexPod Express ausgewählt, da er dank der vielen Konfigurationsoptionen an spezifische Anforderungen einer FlexPod Express Implementierung angepasst werden kann.
@@ -119,6 +124,7 @@ Weitere Informationen zu C220 M5 Servern finden Sie unter https://www.cisco.com/
 
 
 
+[[cisco-ucs-vic-1457-connectivity-for-c220-m5-rack-servers]]
 === Cisco UCS VIC 1457-Konnektivität für C220 M5 Rack Server
 
 Der in der folgenden Abbildung dargestellte Cisco UCS VIC 1457 Adapter ist eine SFP-Karte (Quad Port Small Form Factor Pluggable) auf dem Motherboard (mLOM), die für die M5-Generation von Cisco UCS C-Series Servern entwickelt wurde. Die Karte unterstützt 10/25 Gbit/s Ethernet oder FCoE. Die Karte kann dem Host standardkonforme PCIe-Schnittstellen zur Verfügung stellen, die dynamisch als NICs oder HBAs konfiguriert werden können.
@@ -129,6 +135,7 @@ Vollständige Informationen zum Cisco UCS VIC 1457-Adapter finden Sie unter http
 
 
 
+[[vmware-vsphere-6-7u2]]
 == VMware vSphere 6.7U2
 
 VMware vSphere 6.7U2 ist eine der Hypervisor-Optionen zur Verwendung mit FlexPod Express. Mit VMware vSphere können Unternehmen ihren Strom- und Kühlungsbedarf senken und gleichzeitig die erworbene Computing-Kapazität vollständig nutzen. Darüber hinaus ermöglicht VMware vSphere den Schutz vor Hardware-Ausfällen (VMware High Availability, oder VMware HA) und den Lastausgleich für Computing-Ressourcen über einen Cluster von vSphere Hosts (VMware Distributed Resource Scheduler im Wartungsmodus oder VMware DRS-MM).
@@ -158,6 +165,7 @@ NOTE: Obwohl diese Lösung mit vSphere 6.7U2 validiert wurde, unterstützt sie a
 
 
 
+[[boot-architecture]]
 == Boot-Architektur
 
 Zu den unterstützten Optionen der FlexPod Express Boot-Architektur gehören:
@@ -171,6 +179,7 @@ FlexPod Datacenter wird über iSCSI LUNs gestartet. Daher wird die Lösungsverwa
 
 
 
+[[esxi-host-virtual-network-interface-card-layout]]
 === Layout der ESXi Host Virtual Network Interface Card
 
 Cisco UCS VIC 1457 verfügt über vier physische Ports. Diese Lösungsvalidierung umfasst die vier physischen Ports in Verwendung des ESXi Hosts. Wenn Sie eine kleinere oder größere Anzahl von NICs haben, haben Sie möglicherweise unterschiedliche VMNIC-Zahlen.

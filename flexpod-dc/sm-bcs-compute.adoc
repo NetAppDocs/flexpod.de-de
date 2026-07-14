@@ -20,6 +20,7 @@ Die Computing-Konfiguration für die FlexPod SM-BC-Lösung folgt den typischen B
 
 
 
+[[connectivity]]
 == Konnektivität
 
 Die Konnektivität zwischen den UCS B200 Blade Servern und den IOMs wird durch die UCS VIC-Karte über die UCS 5108 Gehäuse-Backplane-Verbindungen bereitgestellt. Die für die Validierung verwendeten UCS 2204XP Fabric Extender verfügen über sechzehn 10G-Ports, um sich mit den acht Blade Servern mit halber Breite zu verbinden, z. B. zwei für jeden Server. Zur Erhöhung der Server-Konnektivitätsbandbreite kann ein zusätzlicher Mezzanine-basierter VIC hinzugefügt werden, um den Server mit dem alternativen UCS 2408 IOM zu verbinden, das vier 10G-Verbindungen zu jedem Server bietet.
@@ -104,6 +105,7 @@ NOTE: Zusätzliche Bandbreite lässt sich durch Komponenten erreichen, die Verbi
 
 
 
+[[service-profiles]]
 == Serviceprofile
 
 Ein Blade Server Chassis mit Fabric Interconnects, das von UCS Manager (UCSM) oder Cisco Intersight gemanagt wird, kann die Server durch Nutzung von Service-Profilen abstrahieren, die in UCSM und Server-Profilen in Intersight verfügbar sind. Diese Validierung nutzt UCSM und Serviceprofile, um das Server Management zu vereinfachen. Mithilfe von Serviceprofilen können Sie einen Server einfach durch die Verknüpfung des ursprünglichen Serviceprofils mit der neuen Hardware ersetzen oder aktualisieren.
@@ -123,6 +125,7 @@ Die erstellten Serviceprofile unterstützen für VMware ESXi Hosts Folgendes:
 
 
 
+[[san-boot]]
 == SAN Booting
 
 Für die iSCSI-SAN-Startkonfiguration sind die iSCSI-Startparameter so eingestellt, dass iSCSI von beiden iSCSI-Fabrics aus gestartet werden kann. Um das SM-BC Failover-Szenario unterzubringen, in dem ein iSCSI SAN Boot LUN vom sekundären Cluster bereitgestellt wird, wenn das primäre Cluster nicht verfügbar ist, sollte die statische iSCSI-Zielkonfiguration Ziele sowohl von Standort A als auch von Standort B umfassen Um die Boot-LUN-Verfügbarkeit zu maximieren, konfigurieren Sie darüber hinaus die iSCSI-Boot-Parameter-Einstellungen, damit sie von allen Storage Controllern gebootet werden können.

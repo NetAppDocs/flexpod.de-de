@@ -23,6 +23,7 @@ NOTE: Das Hinzufügen eines Cloud Tier zu einem Aggregat ist eine dauerhafte Akt
 
 
 
+[[oncommand-system-manager]]
 == OnCommand System Manager
 
 Gehen Sie wie folgt vor, um ein Cloud-Tier mit OnCommand System Manager an ein Aggregat anzuhängen:
@@ -45,6 +46,7 @@ image:cloud-fabricpool_image15.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[ontap-cli]]
 == CLI VON ONTAP
 
 Führen Sie die folgenden Befehle aus, um ein Cloud-Tier mit einem Aggregat über die ONTAP-CLI anzuhängen:

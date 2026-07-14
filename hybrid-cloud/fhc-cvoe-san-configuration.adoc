@@ -23,6 +23,7 @@ NOTE: Die folgenden Konfigurationsschritte sind spezifisch für den CentOS 8-Hos
 
 
 
+[[netapp-host-utility-kit]]
 == NetApp Host Utility Kit
 
 NetApp empfiehlt die Installation des NetApp Host Utility Kit (Host Utilities) auf den Betriebssystemen der Hosts, die mit den NetApp Storage-Systemen verbunden sind und auf diese zugreifen. Native Microsoft Multipath-I/O (MPIO) wird unterstützt. Das Betriebssystem muss für Multipathing asymmetrisch (Asymmetric Logical Unit Access, ALUA) fähig sein. Durch das Installieren der Host Utilities werden die HBA-Einstellungen (Host Bus Adapter) für den NetApp Storage konfiguriert.
@@ -34,6 +35,7 @@ NetApp Host Utilities können heruntergeladen werden https://mysupport.netapp.co
 ....
 
 
+[[discover-ontap-storage]]
 == ONTAP Storage entdecken
 
 Stellen Sie sicher, dass der iSCSI-Dienst ausgeführt wird, wenn die Anmeldungen erfolgen sollen. Um den Anmelde-Modus für ein bestimmtes Portal auf einem Ziel oder für alle Portale auf einem Ziel festzulegen, verwenden Sie die `iscsiadm` Befehl.
@@ -59,6 +61,7 @@ Healthcare_SVM                       /dev/sdc host34  iSCSI    200g    cDOT
 ....
 
 
+[[configure-multipathing]]
 == Konfigurieren Sie Multipathing
 
 Device Mapper Multipathing (DM-Multipath) ist ein natives Multipathing-Dienstprogramm in Linux. Es kann für Redundanz und zur Verbesserung der Leistung verwendet werden. Die Software aggregiert oder kombiniert die zahlreichen I/O-Pfade zwischen Servern und Storage und erstellt somit ein einziges Gerät auf Betriebssystemebene.
@@ -116,6 +119,7 @@ NOTE: Ausführliche Informationen zu diesen Schritten finden Sie unter https://d
 
 
 
+[[create-physical-volume]]
 == Erstellen eines physischen Volumes
 
 Verwenden Sie die `pvcreate` Befehl zum Initialisieren eines Blockgeräts, das als physisches Volume verwendet werden soll. Die Initialisierung ist analog zur Formatierung eines Dateisystems.
@@ -126,6 +130,7 @@ Physical volume "/dev/sdb" successfully created.
 ....
 
 
+[[create-volume-group]]
 == Volume-Gruppe erstellen
 
 Um eine Volume-Gruppe aus einem oder mehreren physischen Volumes zu erstellen, verwenden Sie die `vgcreate` Befehl. Mit diesem Befehl wird eine neue Volume-Gruppe nach Namen erstellt und ihr mindestens ein physisches Volume hinzugefügt.
@@ -161,6 +166,7 @@ Der `vgdisplay` Mit dem Befehl können die Eigenschaften der Volume-Gruppe (z. B
 ....
 
 
+[[create-logical-volume]]
 == Erstellung eines logischen Volumes
 
 Wenn Sie ein logisches Volume erstellen, wird das logische Volume mithilfe der freien Extents auf den physischen Volumes, aus denen die Volume-Gruppe besteht, aus einer Volume-Gruppe erstellt.
@@ -173,6 +179,7 @@ Mit diesem Befehl wird ein logisches Volume mit dem Namen erstellt `datalv` Dies
 
 
 
+[[create-file-system]]
 == Erstellen Sie ein Dateisystem
 
 ....
@@ -190,6 +197,7 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 ....
 
 
+[[make-folder-to-mount]]
 == Ordner zum Mounten erstellen
 
 ....
@@ -197,6 +205,7 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 ....
 
 
+[[mount-the-file-system]]
 == Mounten Sie das Dateisystem
 
 ....
@@ -219,6 +228,7 @@ Ausführliche Informationen zu diesen Aufgaben finden Sie auf der Seite link:htt
 
 
 
+[[data-generation]]
 == Datengenerierung
 
  `Dgen.pl`ist ein Perl-Skript-Datengenerator für den I/O-Simulator von EHR (GenerateIO).  Die Daten innerhalb der LUNs werden mit dem EHR generiert. `Dgen.pl` Skript.  Das Skript ist so konzipiert, dass es Daten erzeugt, die den Daten in einer EHR-Datenbank ähneln.
@@ -240,6 +250,7 @@ Während der Ausführung wird die angezeigt `Dgen.pl` Skript verwendet standardm
 
 
 
+[[configure-snapmirror-replication-between-on-premises-ontap-and-cloud-volumes-ontap]]
 == Konfiguration der SnapMirror Replizierung zwischen lokalem ONTAP und Cloud Volumes ONTAP
 
 NetApp SnapMirror repliziert Daten mit hohen Geschwindigkeiten über LAN oder WAN, so dass Sie in virtuellen und herkömmlichen Umgebungen hohe Datenverfügbarkeit und schnelle Datenreplizierung erhalten. Durch das Replizieren und ständige Aktualisieren der sekundären Daten auf NetApp Storage-Systemen sind die Daten immer aktuell und verfügbar. Es sind keine externen Replizierungsserver erforderlich.

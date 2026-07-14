@@ -21,6 +21,7 @@ NOTE: SAN Boot ist optional, wird aber dringend empfohlen, da es die Verschiebun
 
 
 
+[[iscsi-boot-option]]
 == ISCSI-Boot-Option
 
 Die Mindestanforderungen für die iSCSI-Bootoption umfassen:
@@ -32,6 +33,7 @@ Die Mindestanforderungen für die iSCSI-Bootoption umfassen:
 
 
 
+[[cisco-ucs-x-series-direct-and-direct-attached-aff-asa-fas-option]]
 == Cisco UCS X-Series Direkt und direkt angeschlossene AFF/ ASA/ FAS Option
 
 NetApp Storage-Controller können direkt an die Cisco UCS Fabric Interconnects ohne einen vorgelagerten SAN-Switch angeschlossen werden. FlexPod Express unterstützt sowohl FC- als auch iSCSI-Boot mit der UCS X-Series Direct.

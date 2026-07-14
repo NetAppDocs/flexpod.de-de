@@ -18,6 +18,7 @@ Diese FlexPod Express Lösung ist Teil des FlexPod Converged Infrastructure Prog
 
 
 
+[[flexpod-converged-infrastructure-program]]
 == FlexPod Converged Infrastructure Programm
 
 FlexPod Referenzarchitekturen werden als Cisco Validated Designs (CVDs) oder NetApp Verified Architectures (NVAs) bereitgestellt. Abweichungen, die auf Kundenanforderungen von einem bestimmten CVD oder NVA basieren, sind zulässig, wenn diese Variationen keine nicht unterstützte Konfiguration erstellen.
@@ -33,6 +34,7 @@ image:express-c-series-aff220-deploy_image3.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[netapp-verified-architecture-program]]
 == NetApp Verified Architecture das Programm
 
 Das Programm „NetApp Verified Architecture“ bietet verifizierte Architekturen für NetApp Lösungen an. Eine NetApp Verified Architecture bietet eine NetApp Lösungsarchitektur folgende Eigenschaften:
@@ -47,6 +49,7 @@ Dieser Leitfaden beschreibt das Design von FlexPod Express mit VMware vSphere. D
 
 
 
+[[solution-technology]]
 == Lösungstechnologie
 
 Diese Lösung nutzt die neuesten Technologien von NetApp, Cisco und VMware. Diese Lösung umfasst das neue NetApp AFF A220 mit ONTAP 9.4, zwei Cisco Nexus 3172P Switches und Cisco UCS C220 M5 Rack Servern, auf denen VMware vSphere 6.7 ausgeführt wird. Diese validierte Lösung nutzt 10-GbE-Technologie. Es wird auch eine Anleitung zur Skalierung der Computing-Kapazität bereitgestellt, indem jeweils zwei Hypervisor-Nodes hinzugefügt werden, damit sich die FlexPod Express-Architektur an die sich wandelnden Geschäftsanforderungen eines Unternehmens anpassen kann.
@@ -60,6 +63,7 @@ NOTE: Diese Validierung verwendet 10-GbE-Konnektivität und einen Cisco UCS VIC 
 
 
 
+[[use-case-summary]]
 == Zusammenfassung des Anwendungsfalls
 
 Die FlexPod Express Lösung kann für verschiedene Anwendungsfälle eingesetzt werden. Dazu zählen:

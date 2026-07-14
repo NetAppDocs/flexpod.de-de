@@ -18,6 +18,7 @@ NetApp Storage-Controller bilden die Storage-Grundlage in der FlexPod Express Ar
 
 
 
+[[netapp-storage-controller-options]]
 == Optionen für NetApp Storage Controller
 
 Redundante Controller der Serien AFF, ASA oder FAS sind in der FlexPod Express-Architektur erforderlich. Die Controller führen die ONTAP-Software aus. Bei der Bestellung der Speichercontroller kann die bevorzugte Softwareversion auf den Controllern vorinstalliert werden. Für ONTAP kann das Cluster entweder mit einem Paar Cluster-Interconnect-Switches oder in einer Cluster ohne Switches-Konfiguration bereitgestellt werden.
@@ -33,13 +34,13 @@ Die in der folgenden Tabelle aufgeführten Controller-Familien eignen sich für 
 | NetApp Einstiegs-Speicherfamilie für FlexPod Express | Modell | Technische Spezifikationen 
 
 
-.2+| AFF A-Serie | A20 .3+| https://www.netapp.com/pdf.html?item=/media/7828-ds-3582-aff-a-series-ai-era.pdf["AFF-Dokumentation"] 
+.2+| AFF A-Serie | A20 .2+| https://www.netapp.com/pdf.html?item=/media/7828-ds-3582-aff-a-series-ai-era.pdf["AFF A-Series - Dokumentation"] 
 
 
 | A30 
 
 
-| AFF C-Series | C30 
+| AFF C-Series | C30 | https://www.netapp.com/pdf.html?item=/media/81583-ds-4240-aff-c-series.pdf["AFF C-Series-Dokumentation"] 
 
 
 .2+| ASA A-Series | A20 .3+| https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["ASA-Dokumentation"] 
@@ -51,18 +52,20 @@ Die in der folgenden Tabelle aufgeführten Controller-Familien eignen sich für 
 | ASA C-Series | C30 
 
 
-.2+| FAS | FAS 2750 .2+| https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS-Dokumentation"] 
+.3+| FAS | FAS 2750 .3+| https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS-Dokumentation"] 
 
 
 | FAS 2820 
+
+
+| FAS 50 
 |===
 
 
+[[netapp-disk-shelves-and-disks]]
 == NetApp Platten-Shelves und Festplatten
 
-Für die Speicherkontroller wird mindestens ein NetApp Festplattengehäuse benötigt.
-
-Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shelf verfügbar sind.
+Für Storage-Controller, die kein integriertes Disk-Shelf besitzen, ist mindestens ein NetApp Disk-Shelf erforderlich. Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shelf verfügbar sind.
 
 
 NOTE: Alle Festplatten-Shelfs und Festplatten-Teilenummern können bei Ihrem Vertriebsmitarbeiter angegeben werden.
@@ -91,6 +94,7 @@ Um die Liste der für Ihr Disk-Shelf unterstützten Laufwerke zu erhalten, gehen
 |===
 
 
+[[netapp-software-licensing-options]]
 == NetApp Software-Lizenzoptionen
 
 Die folgende Tabelle listet die NetApp Softwarelizenzierungsoptionen auf.
@@ -108,6 +112,7 @@ Unter diesem Link sind weitere Informationen zur NetApp Softwarelizenzierung ver
 
 
 
+[[netapp-support-licensing-options]]
 == NetApp Support – Lizenzoptionen
 
 Die SupportEdge Premium Lizenzen sind erforderlich. Die Teilenummern dieser Lizenzen variieren je nach den im FlexPod Express Design ausgewählten Optionen.

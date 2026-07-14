@@ -27,6 +27,7 @@ image:cloud-fabricpool_image10.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[create-an-s3-bucket]]
 == Erstellen eines S3-Buckets
 
 . Geben Sie in der AWS Management-Konsole von der Startseite aus S3 in die Suchleiste ein.

@@ -24,6 +24,7 @@ Ransomware ist eine Art von Malware, die auf Kryptovirologie basiert, die die Ve
 
 
 
+[[how-does-ransomware-work]]
 == Wie funktioniert Ransomware?
 
 In den folgenden Schritten wird beschrieben, wie Ransomware die Daten des Opfers mit Kryptografie verschlüsselt, ohne dabei Möglichkeiten zur Entschlüsselung oder Wiederherstellung des Opfers haben zu müssen:
@@ -39,6 +40,7 @@ In den folgenden Schritten wird beschrieben, wie Ransomware die Daten des Opfers
 
 
 
+[[challenges]]
 == Herausforderungen
 
 Bei einem Ransomware-Angriff stehen Einzelpersonen und Unternehmen vor folgenden Herausforderungen:
@@ -53,6 +55,7 @@ Bei einem Ransomware-Angriff stehen Einzelpersonen und Unternehmen vor folgenden
 
 
 
+[[who-is-at-risk]]
 == Wer ist gefährdet?
 
 Jeder kann von Ransomware angegriffen werden, auch von Einzelpersonen und großen Unternehmen. Unternehmen, die keine klar definierten Sicherheitsmaßnahmen und -Praktiken implementieren, sind noch anfälliger für solche Angriffe. Die Auswirkungen des Angriffs auf ein großes Unternehmen können mehrere Male größer sein als das, was ein einzelner ertragen könnte.
@@ -71,6 +74,7 @@ Dies ist keine umfassende Liste von Zielen. Sie können sich nicht vor Angriffen
 
 
 
+[[how-does-ransomware-enter-a-system-or-spread]]
 == Wie kommt Ransomware in ein System oder verteilt?
 
 Ransomware kann auf verschiedene Weise in ein System eintreten oder auf andere Systeme übergreifen. In der heutigen Welt sind fast alle Systeme über das Internet, LANs, WANs usw. miteinander verbunden. Die Menge der Daten, die zwischen diesen Systemen generiert und ausgetauscht werden, steigt nur.
@@ -88,6 +92,7 @@ Ransomware kann sich am häufigsten mit vielen Methoden ausbreiten und auf die D
 
 
 
+[[consequences-of-data-loss]]
 == Konsequenzen eines Datenverlusts
 
 Die Folgen oder Auswirkungen von Datenverlusten können breiter ausfallen, als Unternehmen erwarten würden. Die Auswirkungen können variieren, je nach Dauer der Ausfallzeit oder Zeitraum, in dem ein Unternehmen keinen Zugriff auf seine Daten hat. Je länger der Angriff andauere, desto größer ist der Einfluss auf die Einnahmen, Marke und den Ruf der Organisation. Zudem kann sich ein Unternehmen mit rechtlichen Fragen und einem starken Produktivitätsrückgang konfrontiert sehen.
@@ -96,6 +101,7 @@ Während diese Probleme im Laufe der Zeit weiter bestehen, beginnen sie zu vergr
 
 
 
+[[financial-effects]]
 == Finanzielle Auswirkungen
 
 Laut einer aktuellen https://www.mcafee.com/enterprise/en-us/assets/executive-summaries/es-economic-impact-cybercrime.pdf["McAfee-Bericht"^]Die durch Cyberkriminalität verursachten globalen Kosten belaufen sich auf rund 600 Milliarden US-Dollar, was etwa 0.8 % des weltweiten BIP entspricht. Wenn dieser Betrag mit der weltweit wachsenden Internetwirtschaft von 4.2 Billionen Dollar verglichen wird, entspricht dies einer Wachstumssteuer von 14 %.
@@ -104,6 +110,7 @@ Ransomware ist einen bedeutenden Anteil dieser finanziellen Kosten. Die durch Ra
 
 
 
+[[what-is-the-solution]]
 == Welche Lösung bietet sich an?
 
 Eine Wiederherstellung nach einem Ransomware-Angriff mit minimaler Downtime ist nur durch die Implementierung eines proaktiven Disaster-Recovery-Plans möglich. Die Fähigkeit, sich von einem Angriff zu erholen, ist gut, aber einen Angriff insgesamt zu verhindern ist ideal.

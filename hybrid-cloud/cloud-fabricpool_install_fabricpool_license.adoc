@@ -28,6 +28,7 @@ image:cloud-fabricpool_image8.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[license-capacity]]
 == Lizenzkapazität
 
 Sie können die Lizenzkapazität entweder mit der ONTAP CLI oder mit OnCommand System Manager anzeigen. Führen Sie zum Anzeigen der lizenzierten Kapazität den folgenden Befehl in der ONTAP CLI aus:

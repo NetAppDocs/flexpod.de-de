@@ -18,6 +18,7 @@ In diesem Abschnitt werden die wichtigsten Funktionen der NetApp ONTAP Datenmana
 
 
 
+[[storage-netapp-ontap]]
 == NetApp ONTAP
 
 Die ONTAP Software bietet viele nützliche Funktionen für die Datensicherung, von denen die meisten für Kunden mit einem ONTAP System kostenlos sind. Sie können die folgenden Funktionen zu jeder Zeit nutzen, um Daten vor Angriffen zu schützen:
@@ -31,6 +32,7 @@ Die ONTAP Software bietet viele nützliche Funktionen für die Datensicherung, v
 
 
 
+[[network-cisco-nexus]]
 == Netzwerk: Cisco Nexus
 
 Die Cisco NX OS-Software unterstützt die NetFlow-Funktion, die eine verbesserte Erkennung von Netzwerkanomalien und -Sicherheit ermöglicht. NetFlow erfasst die Metadaten jedes Gesprächs im Netzwerk, die an der Kommunikation beteiligten Parteien, das verwendete Protokoll und die Dauer der Transaktion. Nachdem die Informationen aggregiert und analysiert wurden, können sie einen Einblick in das normale Verhalten geben.
@@ -41,6 +43,7 @@ NetFlow verwendet Flows, um Statistiken für die Netzwerküberwachung bereitzust
 
 
 
+[[compute-cisco-ucs]]
 == Computing: Cisco UCS
 
 Cisco UCS ist der Computing-Endpunkt in einer FlexPod Architektur. Sie können mehrere Cisco Produkte verwenden, um diese Stack-Ebene auf Betriebssystemebene zu sichern.

@@ -20,6 +20,7 @@ Die Netzwerkkonfiguration für die FlexPod SM-BC Lösung folgt an jedem Standort
 
 
 
+[[connectivity]]
 == Konnektivität
 
 Die FlexPod Nexus Switches an jedem Standort sorgen in einer hochverfügbaren Konfiguration für die lokale Konnektivität zwischen UCS Computing und ONTAP Storage. Die redundanten Komponenten und die redundante Konnektivität bieten die Ausfallsicherheit bei Single-Point-of-Failure-Szenarien.
@@ -117,6 +118,7 @@ NOTE: In der Tabelle oben ist die Konnektivität aus der Perspektive jedes FlexP
 
 
 
+[[port-channel-and-virtual-port-channel]]
 == Port Channel und virtueller Port Channel
 
 Port Channel ermöglicht die Link-Aggregation mithilfe des Link Aggregation Control Protocol (LACP) für Bandbreitenaggregation und Ausfallsicherheit bei Link-Ausfällen. Über den virtuellen Port-Kanal (vPC) können die Port-Channel-Verbindungen zwischen zwei Nexus-Switches logisch als eine angezeigt werden. Dadurch wird die Ausfallsicherheit bei Szenarien wie dem Ausfall einer einzelnen Verbindung oder eines Single Switch noch weiter verbessert.
@@ -153,6 +155,7 @@ In der folgenden Tabelle sind die Port-Channel-ID und die Port-Nutzung an jedem 
 |===
 
 
+[[vlans]]
 == VLANs
 
 In der folgenden Tabelle sind für das Einrichten der Validierungsumgebung der FlexPod SM-BC-Lösung und ihrer Verwendung konfigurierte VLANs aufgeführt.

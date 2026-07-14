@@ -15,10 +15,12 @@ summary: Dieser Abschnitt behandelt die Best Practices für das FlexPod Express 
 
 
 
+[[storage-best-practices]]
 == Best Practices für Storage
 
 
 
+[[high-availability]]
 === Hochverfügbarkeit
 
 Das NetApp Storage Cluster Design bietet Hochverfügbarkeit auf jeder Ebene:
@@ -33,12 +35,14 @@ Das NetApp Storage Cluster Design bietet Hochverfügbarkeit auf jeder Ebene:
 
 
 
+[[secure-multitenancy]]
 === Sichere Mandantenfähigkeit
 
 NetApp Storage Virtual Machines (SVMs) bieten ein Virtual Storage Array-Konstrukt, das Ihre Sicherheitsdomäne, Ihre Richtlinien und Ihr virtuelles Networking voneinander trennt. NetApp empfiehlt die Erstellung separater SVMs für jede Mandantenorganisation, die Daten im Storage Cluster hostet.
 
 
 
+[[netapp-storage-best-practices]]
 === Best Practices für NetApp Storage
 
 Folgende NetApp Best Practices für Storage sind zu berücksichtigen:
@@ -51,6 +55,7 @@ Folgende NetApp Best Practices für Storage sind zu berücksichtigen:
 
 
 
+[[san-boot]]
 === SAN Booting
 
 NetApp empfiehlt die Implementierung von SAN-Starts für Cisco UCS Server in der FlexPod Datacenter Lösung. Das Betriebssystem kann mit diesem Schritt sicher durch das NetApp AFF Storage-System gesichert werden, wodurch eine bessere Performance erzielt wird. Das in dieser Lösung beschriebene Design verwendet iSCSI SAN Boot.
@@ -63,6 +68,7 @@ Anders als NAS-Netzwerkschnittstellen werden die SAN-Netzwerkschnittstellen nich
 
 
 
+[[storage-efficiency-and-thin-provisioning]]
 === Storage-Effizienz und Thin Provisioning
 
 NetApp gehört bereits zu den Branchenführern im Bereich der Innovationen im Bereich Storage-Effizienz, beispielsweise mit der ersten Deduplizierung für primäre Workloads und mit Inline-Data-Compaction, durch die eine stärkere Komprimierung erzielt und kleine Dateien sowie I/O-Daten effizient gespeichert werden. ONTAP unterstützt sowohl die Inline-Hintergrund-Deduplizierung als auch die Inline- und Hintergrund-Komprimierung.
@@ -73,6 +79,7 @@ Um maximale Einsparungen durch Deduplizierung zu erzielen, sollten Sie eventuell
 
 
 
+[[quality-of-service]]
 === Um Servicequalität bieten zu können
 
 Systeme mit ONTAP Software können mithilfe der ONTAP Storage-QoS-Funktion den Durchsatz in Megabit pro Sekunde (MB/s) begrenzen und die IOPS für unterschiedliche Storage-Objekte wie Dateien, LUNs, Volumes oder ganze SVMs beschränken. Durch anpassungsfähige QoS wird eine IOPS-Untergrenze (Minimum für QoS) und eine Obergrenze (Maximum an QoS) festgelegt, die basierend auf der Datastore-Kapazität und dem belegten Speicherplatz dynamisch angeglichen werden.
@@ -87,6 +94,7 @@ Sie können die maximale QoS-Durchsatzbegrenzung für ein Objekt in Megabit pro 
 
 
 
+[[storage-layout]]
 === Storage-Layout
 
 Dieser Abschnitt enthält Best Practices für das Layout von LUNs, Volumes und Storage-Aggregaten.
@@ -143,6 +151,7 @@ Leitfaden für das Storage-Aggregat-Layout für AFF A300 Systeme (mit zwei Festp
 
 
 
+[[backup-best-practices]]
 == Best Practices für Backups
 
 NetApp SnapCenter wird für VM- und Datenbank-Backups eingesetzt. NetApp empfiehlt die folgenden Best Practices für Backups:
@@ -158,10 +167,12 @@ NetApp SnapCenter wird für VM- und Datenbank-Backups eingesetzt. NetApp empfieh
 
 
 
+[[infrastructure-best-practices]]
 == Best Practices für die Infrastruktur
 
 
 
+[[networking-best-practices]]
 === Best Practices für die Netzwerkumgebung
 
 NetApp empfiehlt die folgenden Best Practices für Netzwerke:
@@ -175,6 +186,7 @@ Weitere Best Practices für Netzwerke finden Sie in den FlexPod Leitfäden für 
 
 
 
+[[compute-best-practices]]
 == Best Practices für Computing
 
 NetApp empfiehlt die folgende Best Practice für Computing:
@@ -184,6 +196,7 @@ NetApp empfiehlt die folgende Best Practice für Computing:
 
 
 
+[[virtualization-best-practices]]
 == Best Practices für Virtualisierung
 
 NetApp empfiehlt die folgenden Best Practices für die Virtualisierung:
@@ -195,6 +208,7 @@ NetApp empfiehlt die folgenden Best Practices für die Virtualisierung:
 
 
 
+[[medical-imaging-system-best-practices]]
 == Best Practices für das medizinische Bildgebungssystem
 
 Beachten Sie die folgenden Best Practices und einige Anforderungen eines typischen medizinischen Bildgebungssystems:

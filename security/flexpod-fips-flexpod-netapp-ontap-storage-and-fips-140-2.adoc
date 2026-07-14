@@ -57,6 +57,7 @@ Ab ONTAP 9.7 werden neu erstellte Aggregate und Volumes standardmäßig bei Nutz
 
 
 
+[[ontap-nae-cli-commands]]
 == CLI-BEFEHLE VON ONTAP NAE
 
 Bevor Sie die folgenden CLI-Befehle ausführen, stellen Sie sicher, dass für das Cluster die erforderliche NVE-Lizenz vorhanden ist.
@@ -78,6 +79,7 @@ fp-health::> storage aggregate modify -aggregate aggregatename -node svmname -en
 ....
 
 
+[[ontap-nve-cli-commands]]
 == CLI-BEFEHLE VON ONTAP NVE
 
 Ab ONTAP 9.6 können Sie mithilfe der Verschlüsselung auf Aggregatebene dem enthaltenden Aggregat Schlüssel zuweisen, damit die Volumes verschlüsselt werden können. Die im Aggregat erstellten Volumes werden standardmäßig verschlüsselt.
@@ -99,6 +101,7 @@ fp-health::> volume show -is-encrypted true
 ....
 
 
+[[nse]]
 == NSE
 
 NSE nutzt SEDs, um die Datenverschlüsselung durch einen hardwarebeschleunigten Mechanismus durchzuführen.
@@ -114,6 +117,7 @@ Weitere Informationen zu NSE finden Sie unter https://www.netapp.com/pdf.html?it
 
 
 
+[[key-management]]
 == Schlüsselmanagement
 
 Der FIPS 140-2-Standard gilt für das kryptografische Modul gemäß der Definition der Grenze, wie in der folgenden Abbildung dargestellt.
@@ -124,6 +128,7 @@ Der Schlüsselmanager verfolgt alle von ONTAP verwendeten Datenschlüssel. NSE S
 
 
 
+[[support-for-external-key-manager]]
 == Unterstützung von externen Schlüsselmanagern
 
 Ab ONTAP 9.3 werden externe Schlüsselmanager sowohl in NVE als auch in NSE-Lösungen unterstützt. Der FIPS 140-2-Standard gilt für das kryptografische Modul, das bei der Implementierung des jeweiligen Anbieters verwendet wird. In den meisten Fällen nutzen FlexPod und ONTAP Kunden eine der folgenden Validierungen (entsprechend der http://mysupport.netapp.com/matrix["NetApp Interoperabilitätsmatrix"^]) Schlüsselmanager:
@@ -150,12 +155,14 @@ fp-health::> security key-manager external show
 ....
 
 
+[[combine-encryption-for-double-encryption-layered-defense]]
 == Kombinierte Verschlüsselung für doppelte Verschlüsselung (mehrstufige Verteidigung)
 
 Wenn Sie den Zugriff auf Daten getrennt halten und sicherstellen müssen, dass die Daten jederzeit geschützt sind, kann NSE SEDs mit Verschlüsselung auf Netzwerk- oder Fabric-Ebene kombiniert werden. NSE SEDs stehen wie ein Backstop, wenn ein Administrator die Verschlüsselung auf höherer Ebene nicht konfiguriert oder falsch konfiguriert. So können NSE SEDs mit NVE und NAE kombiniert werden, um zwei unterschiedliche Verschlüsselungsebenen zu schaffen.
 
 
 
+[[netapp-ontap-cluster-wide-control-plane-fips-mode]]
 == NetApp ONTAP Cluster-weite Kontrollebene FIPS-Modus
 
 Die NetApp ONTAP Datenmanagement-Software verfügt über eine FIPS-Mode-Konfiguration, die eine zusätzliche Sicherheit für den Kunden erzeugt. Dieser FIPS-Modus gilt nur für die Kontrollebene. Wenn der FIPS-Modus entsprechend den Schlüsselelementen von FIPS 140 aktiviert ist, sind Transport Layer Security v1 (TLSv1) und SSLv3 deaktiviert, und nur TLS v1.1 und TLS v1.2 bleiben aktiviert.

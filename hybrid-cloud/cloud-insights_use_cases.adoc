@@ -23,6 +23,7 @@ Diese Lösung trifft auf folgende Anwendungsfälle zu:
 
 
 
+[[target-audience]]
 == Zielgruppe
 
 Die Zielgruppe für die Lösung umfasst die folgenden Gruppen:

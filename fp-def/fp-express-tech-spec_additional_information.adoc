@@ -16,6 +16,14 @@ summary: Weitere Informationen zu den in diesem Dokument beschriebenen Daten fin
 [role="lead"]
 Weitere Informationen zu den in diesem Dokument beschriebenen Daten finden Sie in den folgenden Dokumenten und auf den folgenden Websites:
 
+* NetApp FlexPod Homepage
++
+https://www.netapp.com/flexpod/["https://www.netapp.com/flexpod/"^]
+
+* Cisco FlexPod Homepage
++
+https://www.cisco.com/site/us/en/solutions/computing/converged-infrastructure/flexpod/index.html["https://www.cisco.com/site/us/en/solutions/computing/converged-infrastructure/flexpod/index.html"^]
+
 * NetApp Produktdokumentation
 +
 https://docs.netapp.com/["https://docs.netapp.com/"^]
@@ -27,10 +35,6 @@ https://docs.netapp.com/us-en/ontap-family/index.html["https://docs.netapp.com/u
 * ONTAP Hardware Systeme Dokumentation
 +
 https://docs.netapp.com/us-en/ontap-systems-family/index.html["https://docs.netapp.com/us-en/ontap-systems-family/index.html"^]
-
-* FlexPod Startseite
-+
-https://www.netapp.com/flexpod/["https://www.netapp.com/flexpod/"^]
 
 * NetApp Interoperabilitäts-Matrix-Tool (IMT)
 +

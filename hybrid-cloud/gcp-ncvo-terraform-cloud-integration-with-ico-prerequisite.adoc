@@ -17,6 +17,7 @@ link:gcp-ncvo-cisco-intersight-configuration.html["Früher: Konfiguration von Ci
 
 
 
+[[procedure-1-connect-cisco-intersight-and-terraform-cloud]]
 == Prozedur 1: Cisco Intersight und Terraform Cloud verbinden
 
 . Mit den relevanten Terraform Cloud-Kontodetails können Sie ein Terraform-Cloud-Ziel anfordern oder erstellen.
@@ -28,6 +29,7 @@ Weitere Informationen finden Sie unter  https://community.cisco.com/t5/data-cent
 
 
 
+[[procedure-2-generate-user-token]]
 == Verfahren 2: Benutzer-Token generieren
 
 Beim Hinzufügen eines Ziels für Terraform Cloud müssen Sie auf der Terraform Cloud-Einstellungsseite den Benutzernamen und das API-Token bereitstellen.
@@ -39,6 +41,7 @@ Beim Hinzufügen eines Ziels für Terraform Cloud müssen Sie auf der Terraform 
 
 
 
+[[procedure-3-claim-terraform-cloud-target]]
 == Verfahren 3: Terraform Cloud-Ziel Beanspruchen
 
 . Melden Sie sich bei Intersight mit den Berechtigungen für Account Administrator, Geräteadministrator oder Gerätetechniker an.
@@ -64,6 +67,7 @@ Wenn alles korrekt eingegeben wurde, wird Ihr Terraform Cloud-Ziel im Abschnitt 
 
 
 
+[[procedure-4-add-terraform-cloud-agents]]
 == Verfahren 4: Terraform Cloud-Agenten hinzufügen
 
 Voraussetzungen:

@@ -18,6 +18,7 @@ In diesem Abschnitt werden die Mindestanforderungen an die Hardware für die ver
 
 
 
+[[flexpod-express-with-netapp-aff-asa-fas]]
 == FlexPod Express mit NetApp AFF/ ASA/ FAS
 
 Die Hardwareanforderungen für FlexPod Express-Lösungen, die NetApp AFF, ASA oder FAS Controller als zugrunde liegenden Speicher verwenden, umfassen die in diesem Abschnitt beschriebenen Konfigurationen.
@@ -26,5 +27,5 @@ Die Mindesthardwareanforderungen für FlexPod Express sind unten aufgeführt:
 
 * Zwei 10Gbps Standard-Ethernet-Switches in redundanter Konfiguration (Cisco Nexus 9200 und 9300 Modelle)
 * Cisco UCS C-Series Standalone Rackserver mit CIMC-basierter Standalone Rackserver-Konfiguration oder Intersight Standalone-Konfiguration oder Cisco UCS X-Series Direct mit Cisco Intersight verwalteter Konfiguration (IMM).
-* Zwei Einstiegs-Controller der Serien NetApp AFF (A20, A30 oder C30), NetApp ASA (A20, A30 oder C30) oder NetApp FAS (2750 oder 2820) in einer Hochverfügbarkeits-(HA)-Paarkonfiguration, die als Zwei-Node-Cluster bereitgestellt wird
+* Zwei Einstiegs-Controller der Serien NetApp AFF (A20, A30 oder C30), NetApp ASA (A20, A30 oder C30) oder NetApp FAS (2750, 2820 oder FAS 50) in einer Hochverfügbarkeits-(HA)-Paarkonfiguration, bereitgestellt als Zwei-Node-Cluster
 

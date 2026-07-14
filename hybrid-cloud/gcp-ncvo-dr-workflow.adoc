@@ -61,6 +61,7 @@ Die Aufgaben zum Erstellen des Cloud Volumes ONTAP-Clusters:
 
 
 
+[[procedure-1-create-the-workflow]]
 == Verfahren 1: Erstellen Sie den Workflow
 
 . Klicken Sie im linken Navigationsbereich auf *Orchestration* und klicken Sie auf *Workflow erstellen*.
@@ -78,6 +79,7 @@ image:gcp-ncvo-image7.png["Screenshot mit variablem Eingabebildschirm."]
 
 
 
+[[procedure-2-create-a-new-volume-in-flexpod]]
 == Verfahren 2. Erstellen Sie in FlexPod ein neues Volume
 
 . Gehen Sie zur Registerkarte *Designer* und klicken Sie im Abschnitt *Tools* auf *Tasks*.
@@ -182,6 +184,7 @@ NOTE: Ignorieren Sie den Fehler jetzt. Dieser Fehler wird angezeigt, weil es kei
 
 
 
+[[procedure-3-add-storage-export-policy]]
 == Verfahren 3: Add Storage Export Policy
 
 . Gehen Sie zur Registerkarte *Designer* und klicken Sie im Abschnitt *Tools* auf *Tasks*.
@@ -231,6 +234,7 @@ NOTE: Damit ist das Hinzufügen einer Exportrichtlinie zum Volume abgeschlossen.
 
 
 
+[[procedure-4-map-flexpod-volume-to-datastore]]
 == Prozedur 4: FlexPod Volume zu Datastore zuordnen
 
 . Gehen Sie zur Registerkarte *Designer* und klicken Sie im Abschnitt *Tools* auf *Tasks*.
@@ -358,6 +362,7 @@ image:gcp-ncvo-image45.png["Screenshot"]
 
 
 
+[[procedure-5-add-a-new-terraform-workspace]]
 == Prozedur 5: Fügen Sie einen neuen Terraform-Arbeitsbereich hinzu
 
 . Gehen Sie zur Registerkarte *Designer* und klicken Sie im Abschnitt *Tools* auf *Tasks*.
@@ -459,6 +464,7 @@ Damit ist die Erstellung eines Workspace in einem Terraform Cloud for Business-K
 
 
 
+[[procedure-6-add-non-sensitive-variables-to-workspace]]
 == Prozedur 6: Fügen Sie dem Arbeitsbereich nicht-sensible Variablen hinzu
 
 . Gehen Sie zur Registerkarte *Designer* und klicken Sie auf den Abschnitt *Workflows aus Tools*.
@@ -577,6 +583,7 @@ Damit ist das Hinzufügen der erforderlichen Terraform-Variablen zum Arbeitsbere
 
 
 
+[[procedure-7-add-sensitive-variables-to-a-workspace]]
 == Prozedur 7: Fügen Sie sensible Variablen zu einem Arbeitsbereich hinzu
 
 . Gehen Sie zur Registerkarte *Designer* und klicken Sie im Abschnitt *Tools* auf *Workflows*.
@@ -653,6 +660,7 @@ image:gcp-ncvo-image67.png["Screenshot"]
 
 
 
+[[procedure-8-start-a-new-terraform-plan]]
 == Verfahren 8: Starten Sie einen neuen Terraform-Plan
 
 . Gehen Sie zur Registerkarte *Designer* und klicken Sie im Abschnitt *Tools* auf *Tasks*.
@@ -701,6 +709,7 @@ Damit ist das Hinzufügen eines Terraform-Plans in Terraform Cloud for Business-
 
 
 
+[[procedure-9-sleep-task-for-synchronization]]
 == Prozedur 9: Sleep-Task für die Synchronisation
 
 Terraform Apply erfordert RunID, die im Rahmen der Terraform Plan-Aufgabe generiert wird. Wenn Sie ein paar Sekunden zwischen dem Terraform-Plan und den Aktionen Terraform Apply warten, werden zeitliche Probleme vermieden.
@@ -726,6 +735,7 @@ Damit ist die Schlafaufgabe abgeschlossen. Erstellen Sie als Nächstes die letzt
 
 
 
+[[procedure-10-confirm-and-apply-terraform-run]]
 == Prozedur 10: Terraform Run bestätigen und anwenden
 
 . Gehen Sie zur Registerkarte *Designer* und klicken Sie im Abschnitt *Tools* auf *Tasks*.
@@ -758,6 +768,7 @@ Hiermit ist die Aufgabe „Bestätigen und Anwenden von Terraform Run“ abgesch
 
 
 
+[[procedure-11-import-a-cisco-built-workflow]]
 == Prozedur 11: Importieren eines von Cisco entwickelten Workflows
 
 Mit Cisco Intersight Cloud Orchestrator können Sie Workflows von einem Cisco Intersight-Konto auf Ihr System exportieren und dann in ein anderes Konto importieren. Eine JSON-Datei wurde durch den Export des erstellten Workflows erstellt, der in Ihr Konto importiert werden kann.

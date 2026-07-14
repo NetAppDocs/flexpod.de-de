@@ -18,6 +18,7 @@ NetApp Storage-Controller bilden die Storage-Grundlage in der FlexPod-Architektu
 
 
 
+[[netapp-storage-controller-options]]
 == Optionen für NetApp Storage Controller
 
 In der FlexPod Architektur sind redundante NetApp FAS-, AFF- oder AFF ASA-Controller erforderlich. Die Controller verwenden ONTAP Software. Wenn die Speicher-Controller bestellt werden, kann die bevorzugte Softwareversion auf die Controller vorgeladen werden. Für ONTAP wird ein komplettes Cluster bestellt. Ein vollständiger Cluster umfasst zwei Storage Controller-Paare und einen Cluster Interconnect (Switch oder ohne Switch).
@@ -40,6 +41,7 @@ Die in der nachstehenden Tabelle aufgeführten Controller-Familien eignen sich f
 |===
 
 
+[[cluster-interconnect-switch-options]]
 == Optionen für Cluster-Interconnect-Switches
 
 In der folgenden Tabelle werden die verfügbaren Nexus Cluster Interconnect Switches für FlexPod Architekturen aufgeführt. Darüber hinaus unterstützt FlexPod alle von ONTAP unterstützten Cluster-Switches auch ohne Cisco Switches, sofern diese mit der zu implementierenden ONTAP Version kompatibel sind. Siehe https://hwu.netapp.com/["NetApp Hardware Universe"^] Weitere Kompatibilitätsangaben für bestimmte Switch-Modelle.
@@ -57,6 +59,7 @@ In der folgenden Tabelle werden die verfügbaren Nexus Cluster Interconnect Swit
 |===
 
 
+[[netapp-disk-shelf-and-drive-options]]
 == NetApp Platten-Shelf- und Laufwerksoptionen
 
 Für alle Storage Controller ist mindestens ein NetApp Platten-Shelf erforderlich.
@@ -85,6 +88,7 @@ Weitere Informationen zu den unterstützten Laufwerken erhalten Sie über den Li
 |===
 
 
+[[netapp-software-licensing-options]]
 == NetApp Software-Lizenzoptionen
 
 In der folgenden Tabelle sind die NetApp Software-Lizenzoptionen für die FlexPod Datacenter-Architektur aufgeführt. NetApp Software ist auf Controller-Ebene des FAS und AFF lizenziert.
@@ -100,6 +104,7 @@ In der folgenden Tabelle sind die NetApp Software-Lizenzoptionen für die FlexPo
 |===
 
 
+[[netapp-support-licensing-options]]
 == NetApp Support-Lizenzoptionen
 
 Für die FlexPod Architektur sind NetApp SupportEdge Premium Lizenzen erforderlich. Die Teilenummern dieser Lizenzen variieren jedoch je nach den Optionen im FlexPod-Design. Beispielsweise unterscheiden sich die Teilenummern für die Software-Lizenzen, je nachdem, welchen FAS-Controller Sie wählen. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um Informationen zu den genauen Teilenummern für einzelne Support-Lizenzen zu erhalten. Die folgende Tabelle zeigt ein Beispiel für eine SupportEdge-Lizenz.

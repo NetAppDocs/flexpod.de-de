@@ -20,6 +20,7 @@ Die FlexPod Lösung für SM-BC von Datacenter schützt Datenservices für versch
 
 
 
+[[solution-functions-validation]]
 == Validierung der Funktionen der Lösung
 
 In verschiedenen Testfällen werden die Funktionen der Lösung überprüft und teilweise oder vollständige Ausfallszenarien am Standort simuliert. Um die Duplizierung durch die bereits in den vorhandenen FlexPod Datacenter-Lösungen im Rahmen des Cisco Validated Design Programms durchgeführten Tests zu minimieren, liegt der Schwerpunkt dieses Berichts auf den SM-BC-bezogenen Aspekten der Lösung. Einige allgemeine FlexPod-Validierungen sind enthalten, damit die Praktizierenden für ihre Umsetzung Validierungen gehen.
@@ -30,6 +31,7 @@ Da SM-BC für Business-Applikationen wie Datenbankserver wichtig ist, Die Micros
 
 
 
+[[esxi-host-iscsi-san-boot-test]]
 == Bootstest für ESXi Host iSCSI SAN
 
 Die ESXi-Hosts in der Lösung sind für das Booten über das iSCSI-SAN konfiguriert. Die Verwendung von SAN-Boot vereinfacht das Servermanagement beim Austausch eines Servers, da das Serviceprofil des Servers einem neuen Server zugewiesen werden kann, damit der IT-Server ohne zusätzliche Konfigurationsänderungen gestartet werden kann.
@@ -54,6 +56,7 @@ Wenn ein Failover der Konsistenzgruppe auf dem primären Storage Cluster erfolgt
 
 
 
+[[vmware-vmotion-and-vmhost-affinity-test]]
 == VMware vMotion und VM/Host-Affinitätstest
 
 Obwohl eine allgemeine FlexPod VMware Datacenter Lösung Multi-Protokolle wie FC, iSCSI, NVMe und NFS unterstützt, unterstützt die FlexPod SM-BC Lösungsfunktion FC und iSCSI SAN-Protokolle, die üblicherweise für geschäftskritische Lösungen verwendet werden. Diese Validierung verwendet nur iSCSI-protokollbasierte Datenspeicher und iSCSI SAN Boot.
@@ -74,6 +77,7 @@ Tests von vMotion von Virtual Machines auf einem anderen Host an demselben Stand
 
 
 
+[[planned-storage-failover]]
 == Geplantes Storage-Failover
 
 Geplante Storage Failover-Vorgänge sollten nach der Erstkonfiguration der Lösung ausgeführt werden, um festzustellen, ob die Lösung nach dem Storage Failover ordnungsgemäß funktioniert. Der Test kann dabei helfen, alle Verbindungs- oder Konfigurationsprobleme zu identifizieren, die zu I/O-Unterbrechungen führen können. Durch regelmäßige Tests und Behebung von Verbindungs- oder Konfigurationsproblemen können im Falle eines wirklichen Standortausfalls unterbrechungsfreie Datenservices bereitgestellt werden. Geplante Storage-Failovers können auch vor geplanten Aktivitäten zur Storage-Wartung verwendet werden, damit Datenservices vom nicht betroffenen Standort bedient werden können.
@@ -105,6 +109,7 @@ image:sm-bcs-image55.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[unplanned-storage-failover]]
 == Ungeplantes Storage-Failover
 
 Wenn ein echter Notfall eintritt oder während einer Disaster Simulation auftritt, kann ein ungeplantes Storage-Failover erfolgen. Die folgende Abbildung zeigt beispielsweise, in der das Storage-System an Standort A einen Stromausfall hat, ein ungeplantes Storage-Failover ausgelöst wird und die Datenservices für Standort A LUNs, die durch die SM-BC-Beziehungen gesichert sind, von Standort B fortgesetzt werden
@@ -137,6 +142,7 @@ image:sm-bcs-image61.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[complete-site-maintenance-or-site-failure]]
 == Komplette Wartung des Standorts oder des Standorts
 
 Möglicherweise müssen Standortwartungsarbeiten durchgeführt, Stromverluste oder Naturkatastrophen wie Hurrikan oder Erdbeben ihre Auswirkungen haben. Daher ist es von entscheidender Bedeutung, dass geplante und ungeplante Standortausfälle angewendet werden, um sicherzustellen, dass Ihre FlexPod SM-BC Lösung richtig konfiguriert ist, damit diese Ausfälle all Ihrer geschäftskritischen Applikationen und Datenservices überleben können. Die folgenden standortbezogenen Szenarien wurden validiert.
@@ -167,6 +173,7 @@ image:sm-bcs-image65.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[microsoft-sql-server]]
 == Microsoft SQL Server
 
 Microsoft SQL Server ist eine weit verbreitete und implementierte Datenbankplattform für DIE IT in Unternehmen. Die Version Microsoft SQL Server 2019 enthält zahlreiche neue Funktionen und Verbesserungen für seine relationalen und analytischen Engines. Sie unterstützt Workloads bei Applikationen, die lokal, in der Cloud und bei hybriden Umgebungen über eine Kombination dieser Applikationen ausgeführt werden. Darüber hinaus kann die Lösung auf diversen Plattformen implementiert werden, darunter Windows, Linux und Container.

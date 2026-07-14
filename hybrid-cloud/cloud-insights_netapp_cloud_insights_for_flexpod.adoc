@@ -22,6 +22,7 @@ Die in diesem technischen Bericht detaillierte Lösung ist die Konfiguration des
 
 
 
+[[customer-value]]
 == Mehrwert für den Kunden
 
 Die hier vorgestellte Lösung bietet Kunden, die an einer umfassenden Monitoring-Lösung für ihre Hybrid Cloud-Umgebungen interessiert sind und in der ONTAP als primäres Storage-System implementiert wird. Dies umfasst FlexPod Umgebungen, die AFF und FAS Storage-Systeme von NetApp nutzen.

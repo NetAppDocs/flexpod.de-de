@@ -15,6 +15,7 @@ summary: In diesem Abschnitt werden die Anzahl der Studien und die entsprechende
 
 
 
+[[storage-sizing]]
 == Storage-Dimensionierung
 
 In diesem Abschnitt werden die Anzahl der Studien und die entsprechenden Infrastrukturanforderungen beschrieben.
@@ -62,6 +63,7 @@ Die in der folgenden Tabelle aufgeführten Speicheranforderungen gehen davon aus
 |===
 
 
+[[compute-sizing]]
 == Dimensionierung von Computing
 
 In der folgenden Tabelle sind die Computing-Anforderungen für kleine, mittlere und große medizinische Bildgebungssysteme aufgeführt.
@@ -104,6 +106,7 @@ In der folgenden Tabelle sind die Computing-Anforderungen für kleine, mittlere 
 |===
 
 
+[[networking-and-cisco-ucs-infrastructure-sizing]]
 == Dimensionierung der Netzwerk- und Cisco UCS-Infrastruktur
 
 In der folgenden Tabelle sind die Netzwerkanforderungen und die Anforderungen an die Cisco UCS Infrastruktur für kleine, mittlere und große medizinische Bildgebungssysteme aufgeführt.

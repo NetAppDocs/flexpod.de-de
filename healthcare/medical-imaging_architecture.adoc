@@ -22,12 +22,14 @@ image:medical-imaging_image3.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[storage-architecture]]
 == Storage-Architektur
 
 Mithilfe der in diesem Abschnitt aufgeführten Richtlinien zur Storage-Architektur können Sie Ihre Storage-Infrastruktur für ein medizinisches Bildgebungssystem eines Unternehmens konfigurieren.
 
 
 
+[[storage-tiers]]
 === Storage-Tiers
 
 Eine typische medizinische Bildgebungsumgebung in Unternehmen setzt sich aus mehreren unterschiedlichen Storage-Tiers zusammen. Jeder Tier verfügt über spezifische Anforderungen an Performance und Storage-Protokoll. NetApp Storage unterstützt verschiedene RAID-Technologien, weitere Informationen sind verfügbar https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-psmg%2FGUID-488B0EC4-3B03-4566-8321-5B8E568F34E4.html["Hier"^]. Im Folgenden erfahren Sie, wie NetApp AFF Storage-Systeme die Anforderungen verschiedener Storage Tiers für das Bildgebungssystem erfüllen:
@@ -67,6 +69,7 @@ Die folgende Tabelle führt die einzelnen Tiers auf, die für ein typisches Bild
 |===
 
 
+[[storage-network-connectivity]]
 === Konnektivität zum Storage-Netzwerk
 
 
@@ -108,6 +111,7 @@ Die folgende Tabelle führt die einzelnen Tiers auf, die für ein typisches Bild
 
 
 
+[[backup-and-recovery]]
 === Backup und Recovery
 
 FlexPod Datacenter basiert auf einem Storage-Array, das von der Datenmanagement-Software NetApp ONTAP gemanagt wird. Die ONTAP Software hat sich über 20 Jahre lang weiterentwickelt und bietet viele Datenmanagement-Funktionen für VMs, Oracle Datenbanken, SMB/CIFS-Dateifreigaben und NFS. Zudem stellt sie Sicherungstechnologien wie die NetApp Snapshot Technologie, die SnapMirror Technologie und die Datenreplizierungstechnologie NetApp FlexClone bereit. Die NetApp SnapCenter Software verfügt über einen Server und einen GUI-Client zur Verwendung von ONTAP Snapshot, SnapRestore und FlexClone Funktionen für VM, SMB/CIFS File Shares, NFS und Oracle Datenbanken Backup und Recovery.
@@ -139,6 +143,7 @@ NetApp MetroCluster Konfigurationen werden von Tausenden von Unternehmen weltwei
 
 
 
+[[networking]]
 == Netzwerkbetrieb
 
 Ein Cisco Nexus Switch-Paar stellt redundante Pfade für den IP-Datenverkehr vom Computing zum Storage und für externe Clients der Image-Viewer des medizinischen Bildgebungssystems bereit:
@@ -157,6 +162,7 @@ Ein Cisco Nexus Switch-Paar stellt redundante Pfade für den IP-Datenverkehr vom
 
 
 
+[[computecisco-unified-computing-system]]
 == Computing – Cisco Unified Computing System
 
 Zwei Cisco UCS Fabrics über verschiedene Fabric Interconnects bieten zwei Ausfall-Domains. Jede Fabric ist sowohl mit IP-Netzwerk-Switches als auch mit unterschiedlichen FC-Netzwerk-Switches verbunden.
@@ -172,6 +178,7 @@ Zum Ausführen von VMware ESXi werden für jedes Cisco UCS Blade identische Serv
 
 
 
+[[virtualization]]
 == Einheitliche
 
 Auf dem VMware ESXi-Host-Cluster werden Workload-VMs ausgeführt. Der Cluster umfasst ESXi Instanzen, die auf Cisco UCS Blade-Servern ausgeführt werden.
@@ -194,6 +201,7 @@ Jeder ESXi-Host umfasst die folgenden Netzwerkkomponenten:
 
 
 
+[[medical-imaging-system-architecture]]
 == Architektur des Bildgebungssystems für den medizinischen Bereich
 
 In medizinischen Einrichtungen sind Bildgebungssysteme wichtige Applikationen und gut in die klinischen Workflows integriert – angefangen bei der Registrierung von Patienten bis hin zur Abrechnung über Aktivitäten im Umsatzzyklus.

@@ -18,6 +18,7 @@ In diesem Abschnitt werden die allgemeinen Konnektivitätsanforderungen für die
 
 
 
+[[connectivity-requirements-for-flexpod-express-with-netapp-aff-asa-fas]]
 == Konnektivitätsanforderungen für FlexPod Express mit NetApp AFF/ ASA/ FAS
 
 Die Verbindungsanforderungen für FlexPod Express mit NetApp AFF/ ASA/ FAS umfassen im Allgemeinen:

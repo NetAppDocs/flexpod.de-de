@@ -24,6 +24,7 @@ Vor der Bereitstellung oder Wartung von FlexPod Express-Geräten ist zu überpr�
 
 
 
+[[checking-netapp-equipment-support]]
 == Überprüfung der NetApp Geräteunterstützung
 
 NetApp bietet Supportinformationen über das Hardware Universe (HWU).
@@ -42,6 +43,7 @@ NOTE: Um alle Plattformen anzuzeigen, muss der Filter *Plattformlebenszyklus* au
 
 
 
+[[checking-cisco-equipment-support]]
 == Überprüfung der Cisco Geräteunterstützung
 
 Cisco gibt auf den Cisco-Produktsupportseiten die Daten für das Verkaufsende und das Supportende an.

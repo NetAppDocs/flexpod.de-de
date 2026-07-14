@@ -28,6 +28,7 @@ Bemerkenswert ist, dass die in dieser Lösung validierten relativ wenigen Anwend
 
 
 
+[[application-development-and-testing-devtest]]
 == Applikationsentwicklung und -Tests (Entw./Test)
 
 Zur Beschleunigung der Applikationsentwicklung können replizierte Daten am DR-Standort geklont und zum entwickeln und Testen von Applikationen genutzt werden. Durch das Zusammenführen von DR- und Entwicklungs-/Testumgebungen lässt sich die Auslastung von Backup- oder DR-Einrichtungen immens verbessern. Zudem stehen durch Klone für Test und Entwicklung so viele Datenkopien wie nötig zur Verfügung, um die Produktion zu beschleunigen.
@@ -146,6 +147,7 @@ So wird überprüft, ob Sie die DR-Umgebung für Entwicklung und Tests von Appli
 
 
 
+[[disaster-recovery]]
 == Disaster Recovery
 
 SnapMirror Technologie wird auch als Teil von DR-Plänen eingesetzt. Wenn kritische Daten an einen anderen physischen Standort repliziert werden, muss ein schwerwiegender Ausfall nicht zu längeren Datenperioden für geschäftskritische Applikationen führen. Clients können bis zur Wiederherstellung des Produktionsstandorts vor Beschädigung, versehentlichem Löschen, Naturkatastrophen usw. über das Netzwerk auf replizierte Daten zugreifen.
@@ -257,6 +259,7 @@ Dieser Abschnitt veranschaulicht die erfolgreiche Lösung eines DR-Szenarios, we
 
 
 
+[[verification-of-data-on-the-production-site]]
 == Verifizierung der Daten am Produktionsstandort
 
 Nach der Wiederherstellung des Produktionsstandorts müssen Sie sicherstellen, dass die ursprüngliche Konfiguration wiederhergestellt ist und Clients vom Quellstandort aus auf die Daten zugreifen können.

@@ -30,6 +30,7 @@ image:sm-bcs-image39.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[end-to-end-network-connectivity]]
 == Umfassende Netzwerkkonnektivität
 
 Die FlexPod SM-BC Lösung umfasst FlexPod-Infrastrukturen an jedem Standort, Netzwerkkonnektivität zwischen Standorten und den ONTAP Mediator, der an einem dritten Standort implementiert wird, um die erforderlichen RPO- und RTO-Vorgaben zu erfüllen. Die folgende Abbildung zeigt die End-to-End-Netzwerkkonnektivität zwischen den Cisco UCS B200M5 Servern an jedem Standort und dem NetApp Storage mit SM-BC Funktionen innerhalb eines Standorts und über mehrere Standorte hinweg.
@@ -42,6 +43,7 @@ Die erweiterte Layer-2-Architektur dient einer nahtlosen Multi-Site-Data-Fabric-
 
 
 
+[[virtual-networking]]
 == Virtuelle Netzwerke
 
 Jeder Host im Cluster wird unabhängig vom Speicherort für identische virtuelle Netzwerke bereitgestellt. Das Design trennt die verschiedenen Traffic-Typen mit VMware Virtual Switches (vSwitch) und VMware Virtual Distributed Switches (VdS). Der VMware vSwitch wird hauptsächlich für die FlexPod-Infrastrukturnetzwerke und VdS für Applikationsnetzwerke verwendet, ist aber nicht erforderlich.
@@ -58,6 +60,7 @@ In diesem Design werden zwei iSCSI Boot vSwitches verwendet. Beim Booten von Cis
 
 
 
+[[vm-host-affinity-groups-and-rules]]
 == VM-Host-Gruppen und Regeln
 
 Damit Virtual Machines auf jedem ESXi Host an beiden SM-BC-Sites ausgeführt werden können, müssen alle ESXi Hosts die iSCSI-Datenspeicher von beiden Standorten aus mounten. Wenn die Datastores von beiden Standorten ordnungsgemäß von allen ESXi Hosts eingebunden werden, können Sie eine Virtual Machine zwischen beliebigen Hosts mit vMotion migrieren, und die VM bleibt weiterhin Zugriff auf alle ihre virtuellen Festplatten, die aus diesen Datastores erstellt wurden.
@@ -78,6 +81,7 @@ image:sm-bcs-image44.png["Fehler: Fehlendes Grafikbild"]
 
 
 
+[[vsphere-ha-heartbeat]]
 == Ha-Herzschlag von vSphere
 
 VMware vSphere HA verfügt über einen Heartbeat-Mechanismus zur Validierung des Hoststatus. Der primäre Heartbeat-Mechanismus wird über das Netzwerk durchgeführt. Der sekundäre Heartbeat-Mechanismus erfolgt über den Datenspeicher. Wenn keine Herzschläge empfangen werden, entscheidet sie dann, ob sie vom Netzwerk isoliert wird, indem sie das Standard-Gateway oder die manuell konfigurierten Isolationsadressen pingen. Beim Herzschlag des Datenspeichers empfiehlt VMware, die Heartbeat-Datenspeicher für ein dehnbares Cluster von mindestens zwei auf vier zu erhöhen.

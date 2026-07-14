@@ -17,6 +17,7 @@ link:fhc-cvoe-solution-components.html["Früher: Lösungskomponenten."]
 
 
 
+[[netapp-cloud-volumes-ontap-deployment]]
 == NetApp Cloud Volumes ONTAP Implementierung
 
 Führen Sie die folgenden Schritte aus, um Ihre Cloud Volumes ONTAP-Instanz zu konfigurieren:
@@ -51,6 +52,7 @@ Bei dieser Lösung haben wir ein Cloud Volumes ONTAP System mit einem einzigen K
 
 
 
+[[on-premises-flexpod-deployment]]
 == Lokale FlexPod-Implementierung
 
 Informationen über die Designdetails von FlexPod with UCS X-Series, VMware and NetApp ONTAP finden Sie im https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_xseries_esxi7u2_design.html["FlexPod Datacenter mit Cisco UCS X-Serie"^] Designleitfaden Dieses Dokument enthält Anleitungen zum Design, wie Sie die von Cisco Intersight gemanagte Plattform der UCS X-Serie in die FlexPod Datacenter-Infrastruktur integrieren können.
@@ -69,6 +71,7 @@ Die FlexPod-Implementierung kann mit „Infrastructure-as-Code“ über Ansible 
 
 
 
+[[on-premises-ontap-storage-configuration]]
 == On-Premises-ONTAP Storage-Konfiguration
 
 In diesem Abschnitt werden einige der wichtigen für diese Lösung spezifischen ONTAP Konfigurationsschritte beschrieben.
@@ -136,6 +139,7 @@ IGroups ermöglichen den Serverzugriff auf LUNs. Für Linux-Host kann der Server
 
 
 
+[[add-on-premises-flexpod-storage-to-the-netapp-console]]
 == Fügen Sie der NetApp Console lokalen FlexPod Speicher hinzu.
 
 Führen Sie die folgenden Schritte aus, um Ihren FlexPod -Speicher mithilfe der Konsole zum System hinzuzufügen.

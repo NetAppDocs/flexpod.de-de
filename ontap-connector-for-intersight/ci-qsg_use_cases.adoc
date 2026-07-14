@@ -18,6 +18,7 @@ Dies sind einige Anwendungsbeispiele für die Überwachung und Orchestrierung vo
 
 
 
+[[use-case-1-monitoring-netapp-storage-inventory-and-widgets]]
 == Anwendungsfall 1: Monitoring des NetApp Storage-Bestands und der Widgets
 
 Wenn die NetApp Storage-Umgebung in Cisco Intersight verfügbar ist, können Sie NetApp Storage-Objekte aus dem Storage-Inventar im Detail überwachen und erhalten einen Überblick über die Storage Widgets.
@@ -30,6 +31,7 @@ Wenn die NetApp Storage-Umgebung in Cisco Intersight verfügbar ist, können Sie
 
 
 
+[[use-case-2-netapp-storage-orchestration-using-reference-workflows]]
 == Anwendungsfall 2: NetApp Storage-Orchestrierung mithilfe von Referenz-Workflows
 
 Wenn NetApp Storage- und vCenter-Umgebungen in Cisco Intersight zur Verfügung stehen, können Sie End-to-End-Referenz-Workflows verwenden, die in GitHub über die verfügbar sind https://github.com/ucs-compute-solutions/FlexPod-Intersight-Workflow["FlexPod Intersight Workflow-Repository"^].
@@ -73,6 +75,7 @@ Hier eine Liste der Workflows, die im GitHub FlexPod-Intersight-Workflow-Reposit
 
 
 
+[[use-case-3-custom-workflows-using-designer-free-form]]
 == Anwendungsfall 3: Benutzerdefinierte Workflows mit Designer-freiem Formular
 
 Wenn die NetApp Storage- und vCenter-Umgebungen in Cisco Intersight verfügbar sind, können Sie benutzerdefinierte Workflows mit NetApp Storage- und Virtualisierungsaufgaben erstellen.
