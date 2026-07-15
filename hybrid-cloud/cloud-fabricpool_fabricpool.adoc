@@ -76,7 +76,7 @@ Wie bereits erwähnt, besteht der primäre Anwendungsfall für FabricPool darin,
 
 Mit der in der folgenden Abbildung gezeigten Richtlinie zum ausschließlich Snapshot Tiering werden Snapshot Daten für kalte Volumes und SnapCenter für vSphere Backups von VMs, die Speicherplatz belegen, aber keine Blöcke gemeinsam mit dem aktiven Filesystem an einen Cloud-Objektspeicher freigeben. Die reine Snapshot-Tiering-Richtlinie verschiebt selten genutzte Datenblöcke auf die Cloud-Tier. Wenn eine Wiederherstellung erforderlich ist, werden kalte Blöcke in der Cloud als „heiße“ und zurück in das Flash-Tier mit der Performance vor Ort verschoben.
 
-image:cloud-fabricpool_image4.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-fabricpool_image4.png[""]
 
 
 
@@ -90,7 +90,7 @@ Bei Verwendung der Auto-Tiering-Richtlinie werden Blöcke, auf die selten zugegr
 
 NOTE: Der Objektspeicher-Profiler sollte verwendet werden, um die Latenz und den Durchsatz beim Objektspeicher zu testen, bevor sie an ein FabricPool Aggregat angehängt werden.
 
-image:cloud-fabricpool_image5.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-fabricpool_image5.png[""]
 
 
 

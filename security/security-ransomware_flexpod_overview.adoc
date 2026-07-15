@@ -18,7 +18,7 @@ FlexPod ist eine vorkonfigurierte, integrierte und validierte Architektur, die S
 
 Die Abbildung unten zeigt die FlexPod Architektur und hebt die Hochverfügbarkeit auf allen Ebenen des Stacks deutlich hervor. Die Infrastrukturkomponenten von Storage, Netzwerk und Computing sind so konfiguriert, dass bei einem Ausfall einer Komponente sofort ein Failover zum verbleibenden Partner möglich ist.
 
-image:security-ransomware_image2.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image2.png[""]
 
 Ein großer Vorteil für ein FlexPod System ist, dass es vorab integriert und für mehrere Workloads validiert wurde. Für jede Lösungsvalidierung werden detaillierte Design- und Implementierungsleitfäden veröffentlicht. In diesen Dokumenten finden Sie Best Practices, die Sie für Workloads einsetzen müssen, damit sie nahtlos auf FlexPod ausgeführt werden können. Diese Lösungen basieren auf erstklassigen Computing-, Netzwerk- und Storage-Produkten sowie einer Vielzahl von Funktionen, die auf Sicherheit und Härtung der gesamten Infrastruktur liegen.
 

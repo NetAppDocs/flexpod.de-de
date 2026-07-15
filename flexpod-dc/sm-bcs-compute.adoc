@@ -25,11 +25,11 @@ Die Computing-Konfiguration für die FlexPod SM-BC-Lösung folgt den typischen B
 
 Die Konnektivität zwischen den UCS B200 Blade Servern und den IOMs wird durch die UCS VIC-Karte über die UCS 5108 Gehäuse-Backplane-Verbindungen bereitgestellt. Die für die Validierung verwendeten UCS 2204XP Fabric Extender verfügen über sechzehn 10G-Ports, um sich mit den acht Blade Servern mit halber Breite zu verbinden, z. B. zwei für jeden Server. Zur Erhöhung der Server-Konnektivitätsbandbreite kann ein zusätzlicher Mezzanine-basierter VIC hinzugefügt werden, um den Server mit dem alternativen UCS 2408 IOM zu verbinden, das vier 10G-Verbindungen zu jedem Server bietet.
 
-image:sm-bcs-image17.png["Fehler: Fehlendes Grafikbild"]
+image:sm-bcs-image17.png[""]
 
 Die Konnektivität zwischen dem UCS 5108 Gehäuse und dem für die Validierung verwendeten UCS 6454 FIS wird durch das IOM 2204XP bereitgestellt, welches vier 10G-Verbindungen verwendet. Die FI-Ports 1 bis 4 sind als Serveranschlüsse für diese Verbindungen konfiguriert. Die FI-Ports 25 bis 28 sind als Netzwerk-Uplink-Ports zum Nexus-Switch A und B am lokalen Standort konfiguriert. Die folgende Abbildung und Tabelle enthalten das Konnektivitätsdiagramm und die Details zur Port-Verbindung, mit denen UCS 6454 FIS eine Verbindung zum UCS 5108-Chassis und den Nexus-Switches herstellen kann.
 
-image:sm-bcs-image18.png["Fehler: Fehlendes Grafikbild"]
+image:sm-bcs-image18.png[""]
 
 |===
 | Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 
@@ -132,7 +132,7 @@ Für die iSCSI-SAN-Startkonfiguration sind die iSCSI-Startparameter so eingestel
 
 Das statische iSCSI-Ziel kann in der Boot-Policy der Service-Profile-Vorlagen unter dem Dialogfeld Set iSCSI Boot Parameter konfiguriert werden, wie in der folgenden Abbildung dargestellt. Die empfohlene Konfiguration für den iSCSI-Boot-Parameter ist in der folgenden Tabelle dargestellt, welche die oben beschriebene Boot-Strategie implementiert, um eine hohe Verfügbarkeit zu erreichen.
 
-image:sm-bcs-image19.png["Fehler: Fehlendes Grafikbild"]
+image:sm-bcs-image19.png[""]
 
 |===
 | ISCSI Fabric | Priorität | ISCSI-Ziel | ISCSI LIF 

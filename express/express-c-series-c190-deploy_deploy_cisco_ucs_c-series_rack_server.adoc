@@ -50,7 +50,7 @@ NOTE: Die CIMC-Version, die in dieser Validierung verwendet wird, ist CIMC 4.0.(
 Schalten Sie den Server ein, und drücken Sie F8, wenn Sie dazu aufgefordert werden, die CIMC-Konfiguration einzugeben.
 
 +
-image:express-c-series-c190-deploy_image5.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image5.png[""]
 
 . Legen Sie im CIMC-Konfigurationsprogramm die folgenden Optionen fest:
 +
@@ -82,7 +82,7 @@ NIC-Redundanz
 Keine: `[X]`
 
 +
-image:express-c-series-c190-deploy_image6.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image6.png[""]
 
 
 
@@ -181,7 +181,7 @@ Gehen Sie wie folgt vor, um die Konfiguration der Startreihenfolge festzulegen:
 . Klicken Sie im Browser-Fenster der CIMC-Schnittstelle auf die Registerkarte Compute, und wählen Sie BIOS aus.
 . Klicken Sie auf Startreihenfolge konfigurieren, und klicken Sie dann auf OK.
 +
-image:express-c-series-c190-deploy_image7.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image7.png[""]
 
 . Konfigurieren Sie die folgenden Geräte, indem Sie auf das Gerät unter Startgerät hinzufügen klicken und zur Registerkarte Erweitert wechseln:
 +
@@ -235,7 +235,7 @@ Anschluss: 3
 . Klicken Sie Auf Gerät Hinzufügen.
 . Klicken Sie auf Änderungen speichern und dann auf Schließen.
 +
-image:express-c-series-c190-deploy_image8.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image8.png[""]
 
 . Starten Sie den Server neu, um mit Ihrer neuen Startreihenfolge zu starten.
 
@@ -252,7 +252,7 @@ Führen Sie die folgenden Schritte aus, wenn Ihr C-Series-Server einen RAID-Cont
 . Blättern Sie nach unten zu PCIe Slot:HBA Option ROM.
 . Wenn der Wert nicht bereits deaktiviert ist, setzen Sie ihn auf deaktiviert.
 +
-image:express-c-series-c190-deploy_image9.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image9.png[""]
 
 
 
@@ -270,7 +270,7 @@ NOTE: Das Standard-Port-Channeling zwischen den Ports 0, 1, 2 und 3 muss deaktiv
 . Deaktivieren Sie auf der Registerkarte Allgemein den Port-Kanal.
 . Speichern Sie die Änderungen, und starten Sie den CIMC neu.
 +
-image:express-c-series-c190-deploy_image10.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image10.png[""]
 
 
 
@@ -301,13 +301,13 @@ Gehen Sie wie folgt vor, um iSCSI-vNICs zu erstellen:
 ** Eingabe `\<<var_iscsi_vlan_b>>` Als VLAN.
 ** Stellen Sie den Uplink-Port auf 3 ein.
 +
-image:express-c-series-c190-deploy_image11.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image11.png[""]
 
 
 
 . Wählen Sie links die vNIC eth1 aus.
 +
-image:express-c-series-c190-deploy_image12.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image12.png[""]
 
 . Geben Sie unter iSCSI Boot Properties die Initiator-Details ein:
 +
@@ -316,7 +316,7 @@ image:express-c-series-c190-deploy_image12.png["Fehler: Fehlendes Grafikbild"]
 ** Subnetzmaske: `\<<var_esxi_hostA_iscsiA_mask>>`
 ** Gateway: `\<<var_esxi_hostA_iscsiA_gateway>>`
 +
-image:express-c-series-c190-deploy_image13.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image13.png[""]
 
 
 
@@ -352,7 +352,7 @@ NOTE: Achten Sie darauf, die IQN-Namen für jede vNIC aufzuzeichnen. Sie brauche
 ** Subnetzmaske: `\<<var_esxi_hostb_iscsib_mask>>`
 ** Gateway: `\<<var_esxi_hostb_iscsib_gateway>>`
 +
-image:express-c-series-c190-deploy_image14.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image14.png[""]
 
 
 
@@ -395,11 +395,11 @@ Gehen Sie wie folgt vor, um vNICs für ESXi zu konfigurieren:
 . Setzen Sie die MTU auf 9000. Klicken Sie Auf Änderungen Speichern.
 . Setzen Sie das VLAN auf natives VLAN 2.
 +
-image:express-c-series-c190-deploy_image15.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image15.png[""]
 
 . Wiederholen Sie die Schritte 3 und 4 für eth1. Überprüfen Sie, ob der Uplink-Port für eth1 auf 1 gesetzt ist.
 +
-image:express-c-series-c190-deploy_image16.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image16.png[""]
 
 +
 

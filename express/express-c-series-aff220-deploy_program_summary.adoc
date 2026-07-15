@@ -10,7 +10,7 @@ summary: Aktuell stellen immer mehr Unternehmen ihre Rechenzentren auf eine Shar
 
 Savita Kumari, NetApp
 
-In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
+In Partnerschaft mit: image:cisco logo.png[""]
 
 [role="lead"]
 Aktuell stellen immer mehr Unternehmen ihre Rechenzentren auf eine Shared IT Infrastructure und Cloud Computing um. Außerdem wünschen sich Unternehmen eine einfache und effektive Lösung für Remote-Standorte und Zweigstellen, die ihnen die Technologie nutzt, die sie in ihrem Datacenter kennen.

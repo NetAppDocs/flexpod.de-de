@@ -27,7 +27,7 @@ Die FlexPod Nexus Switches an jedem Standort sorgen in einer hochverfügbaren Ko
 
 Das folgende Diagramm zeigt die lokale Konnektivität von Nexus Switch an den einzelnen Standorten. Neben den im Diagramm dargestellten Informationen gibt es für jede Komponente auch Konsolen- und Management-Netzwerkverbindungen. Die 40G bis 4 x 10G-Breakout-Kabel werden zur Verbindung der Nexus-Switches mit dem UCS FIS und den ONTAP AFF A250 Storage Controllern verwendet. Alternativ können Sie mit den 100 G bis 4 x 25 G Breakout Kabeln die Kommunikationsgeschwindigkeit zwischen den Nexus Switches und den AFF A250 Storage Controllern erhöhen. Zur Vereinfachung werden die beiden AFF A250-Controller zur Verkabelungsabbildung logisch nebeneinander dargestellt. Dank der beiden Verbindungen zwischen den beiden Storage Controllern kann der Storage ein Cluster ohne Switches bilden.
 
-image:sm-bcs-image20.png["Fehler: Fehlendes Grafikbild"]
+image:sm-bcs-image20.png[""]
 
 Die folgende Tabelle zeigt die Konnektivität zwischen Nexus Switches und AFF A250 Storage-Controllern an jedem Standort.
 
@@ -60,7 +60,7 @@ Die folgende Tabelle zeigt die Konnektivität zwischen Nexus Switches und AFF A2
 |===
 Die Konnektivität zwischen den FlexPod-Switches an Standort A und Standort B ist in der folgenden Abbildung dargestellt. Die entsprechende Verkabelung ist in der Tabelle aufgeführt. Die Verbindungen zwischen den beiden Switches an jedem Standort gelten für die vPC-Peer-Links. Auf der anderen Seite stellen die Verbindungen zwischen den Switches über die Standorte hinweg die Verbindungen zwischen den Standorten dar. Die Links erweitern die VLANs auf mehrere Standorte für Cluster-übergreifende Kommunikation, SM-BC Datenreplizierung, in-Band-Management und Datenzugriff für die Ressourcen des Remote-Standorts.
 
-image:sm-bcs-image21.png["Fehler: Fehlendes Grafikbild"]
+image:sm-bcs-image21.png[""]
 
 |===
 | Lokales Gerät | Lokaler Port | Remote-Gerät | Remote-Port 

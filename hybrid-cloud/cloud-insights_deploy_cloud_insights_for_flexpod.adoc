@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um eine VMware VM zu erstellen, die als Erfassungseinhe
 . Starten Sie einen Webbrowser, und melden Sie sich bei VMware vSphere an, und wählen Sie den Cluster aus, der eine VM hosten soll.
 . Klicken Sie mit der rechten Maustaste auf diesen Cluster, und wählen Sie im Menü die Option Create A Virtual Machine aus.
 +
-image:cloud-insights_image3.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image3.png[""]
 
 . Klicken Sie im Assistenten für neue virtuelle Maschinen auf Weiter.
 . Geben Sie den Namen der VM an, und wählen Sie das Datacenter aus, in das sie installiert werden soll, und klicken Sie dann auf Weiter.
@@ -53,7 +53,7 @@ image:cloud-insights_image3.png["Fehler: Fehlendes Grafikbild"]
 . Vergewissern Sie sich, dass der Kompatibilitätsmodus für die VM auf festgelegt ist `ESXi 6.7 or later` Und klicken Sie auf Weiter.
 . Wählen Sie Guest OS Family Linux, Guest OS Version: Red hat Enterprise Linux 7 (64-Bit).
 +
-image:cloud-insights_image4.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image4.png[""]
 
 . Die nächste Seite ermöglicht die Anpassung der Hardwareressourcen auf der VM. Für die Cloud Insights-Erfassungseinheit sind die folgenden Ressourcen erforderlich: Klicken Sie nach Auswahl der Ressourcen auf Weiter:
 +
@@ -63,7 +63,7 @@ image:cloud-insights_image4.png["Fehler: Fehlendes Grafikbild"]
 .. Ein Netzwerk, das über eine SSL-Verbindung am Port 443 Ressourcen im FlexPod-Datacenter und dem Cloud Insights-Server erreichen kann.
 .. Ein ISO-Image der ausgewählten Linux-Distribution (Red hat Enterprise Linux) zum Booten von.
 +
-image:cloud-insights_image5.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image5.png[""]
 
 
 
@@ -79,7 +79,7 @@ So installieren Sie Red hat Enterprise Linux:
 
 . Schalten Sie die VM ein, klicken Sie auf das Fenster, um die virtuelle Konsole zu starten, und wählen Sie dann die Option zum Installieren von Red hat Enterprise Linux 7.6 aus.
 +
-image:cloud-insights_image6.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image6.png[""]
 
 . Wählen Sie die gewünschte Sprache aus, und klicken Sie auf Weiter.
 +
@@ -90,14 +90,14 @@ Die nächste Seite ist die Zusammenfassung der Installation. Die Standardeinstel
 .. Um die Partitionierung für den Server anzupassen, klicken Sie auf Installationsziel.
 .. Bestätigen Sie, dass die VMware Virtual Disk mit 100 gib mit einem schwarzen Häkchen ausgewählt ist, und aktivieren Sie das Optionsfeld I will Configure Partitioning.
 +
-image:cloud-insights_image7.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image7.png[""]
 
 .. Klicken Sie Auf Fertig.
 +
 Es wird ein neues Menü angezeigt, in dem Sie die Partitionstabelle anpassen können. Jeweils 25 GB widmen `/opt/netapp` Und `/var/log/netapp`. Sie können dem System den Rest des Storage automatisch zuweisen.
 
 +
-image:cloud-insights_image8.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image8.png[""]
 
 .. Um zur Installationsübersicht zurückzukehren, klicken Sie auf „Fertig“.
 
@@ -107,7 +107,7 @@ image:cloud-insights_image8.png["Fehler: Fehlendes Grafikbild"]
 .. Geben Sie einen Hostnamen für den Server ein.
 .. Schalten Sie den Netzwerkadapter ein, indem Sie auf die Schieberegler-Schaltfläche klicken. Wenn DHCP (Dynamic Host Configuration Protocol) in Ihrem Netzwerk konfiguriert ist, erhalten Sie eine IP-Adresse. Falls nicht, klicken Sie auf Konfigurieren, und weisen Sie eine Adresse manuell zu.
 +
-image:cloud-insights_image9.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image9.png[""]
 
 .. . Klicken Sie auf „Fertig“, um zur Installationsübersicht zurückzukehren.
 
@@ -115,15 +115,15 @@ image:cloud-insights_image9.png["Fehler: Fehlendes Grafikbild"]
 . Klicken Sie auf der Seite Installationsübersicht auf Installation starten.
 . Auf der Seite Installationsfortschritt können Sie das Root-Passwort festlegen oder ein lokales Benutzerkonto erstellen. Klicken Sie nach Abschluss der Installation auf Neu starten, um den Server neu zu starten.
 +
-image:cloud-insights_image10.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image10.png[""]
 
 . Melden Sie sich nach dem Neustart des Systems bei Ihrem Server an, und registrieren Sie ihn bei Red hat Subscription Manager.
 +
-image:cloud-insights_image11.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image11.png[""]
 
 . Fügen Sie ein verfügbares Abonnement für Red hat Enterprise Linux bei.
 +
-image:cloud-insights_image12.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image12.png[""]
 
 
 
@@ -136,32 +136,32 @@ Gehen Sie wie folgt vor, um eine Erfassungseinheit im Cloud Insights-Portal zu e
 
 . Bewegen Sie auf der Startseite von Cloud Insights den Mauszeiger über den Eintrag Admin im Hauptmenü links und wählen Sie im Menü Datensammler aus.
 +
-image:cloud-insights_image13.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image13.png[""]
 
 . Klicken Sie in der oberen Mitte der Seite Data Collectors auf den Link für Acquisition Units.
 +
-image:cloud-insights_image14.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image14.png[""]
 
 . Um eine neue Akquisitionseinheit zu erstellen, klicken Sie auf die Schaltfläche auf der rechten Seite.
 +
-image:cloud-insights_image15.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image15.png[""]
 
 . Wählen Sie das Betriebssystem aus, das Sie zum Hosten Ihrer Erfassungseinheit verwenden möchten, und befolgen Sie die Schritte, um das Installationsskript von der Webseite zu kopieren.
 +
 In diesem Beispiel handelt es sich um einen Linux-Server, der ein Snippet und ein Token zum Einfügen in die CLI auf unserem Host bereitstellt. Auf der Webseite wird darauf gewartet, dass die Erfassungseinheit eine Verbindung herstellt.
 
 +
-image:cloud-insights_image16.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image16.png[""]
 
 . Fügen Sie das Snippet in die CLI des bereitgestellten Red hat Enterprise Linux-Rechners ein, und klicken Sie auf Enter.
 +
-image:cloud-insights_image17.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image17.png[""]
 
 +
 Das Installationsprogramm lädt ein komprimiertes Paket herunter und beginnt mit der Installation. Nach Abschluss der Installation erhalten Sie eine Nachricht, die besagt, dass die Erwerbseinheit bei NetApp Cloud Insights registriert wurde.
 
 +
-image:cloud-insights_image18.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image18.png[""]
 
 
 
@@ -174,24 +174,24 @@ Um das ONTAP Storage-System aus einer FlexPod Implementierung hinzuzufügen, geh
 
 . Kehren Sie zur Seite „Acquisition Units“ im Cloud Insights-Portal zurück und suchen Sie die neu registrierte Einheit. Um eine Zusammenfassung des Geräts anzuzeigen, klicken Sie auf das Gerät.
 +
-image:cloud-insights_image19.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image19.png[""]
 
 . Um einen Assistenten zum Hinzufügen des Speichersystems zu starten, klicken Sie auf der Seite Zusammenfassung auf die Schaltfläche zum Erstellen eines Datensammlers. Auf der ersten Seite werden alle Systeme angezeigt, aus denen Daten erfasst werden können. Verwenden Sie die Suchleiste, um nach ONTAP zu suchen.
 +
-image:cloud-insights_image20.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image20.png[""]
 
 . Wählen Sie ONTAP Datenmanagement-Software.
 +
 Es wird eine Seite angezeigt, auf der Sie einen Namen für die Bereitstellung festlegen und die zu verwendende Akquisitionseinheit auswählen können. Sie können die Konnektivitätsinformationen und Anmeldeinformationen für das ONTAP System angeben und die Verbindung zur Bestätigung testen.
 
 +
-image:cloud-insights_image21.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image21.png[""]
 
 . Klicken Sie Auf Setup Abschließen.
 +
 Das Portal kehrt zur Seite Data Collectors zurück und der Data Collector beginnt seine erste Umfrage, bei der Daten aus dem ONTAP Storage-System im FlexPod Datacenter gesammelt werden.
 
 +
-image:cloud-insights_image22.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-insights_image22.png[""]
 
 

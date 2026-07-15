@@ -31,7 +31,7 @@ Die folgende Liste der Gesundheitseinrichtungen wurde von den böswilligen Agent
 
 Die Vielfalt der Applikationen, die ein Gesundheitswesen ausmachen, ist unbestreitbar und wird zunehmend komplexer. Büros für Informationssicherheit stehen vor der Herausforderung, eine Governance für eine Vielzahl VON IT-Systemen und -Assets zu gewährleisten. Die folgende Abbildung zeigt die klinischen Möglichkeiten eines typischen Krankenhaussystems.
 
-image:flexpod-fips-image2.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-fips-image2.png[""]
 
 Patientendaten bilden das Herzstück dieses Bildes. Der Verlust von Patientendaten und das Stigma, das mit sensiblen Erkrankungen verbunden ist, sind sehr real. Weitere sensible Themen sind das Risiko sozialer Ausgrenzung, Erpressung, Profiling, die Anfälligkeit für zielgerichtetes Marketing, Ausbeutung und die mögliche finanzielle Haftung gegenüber Kostenträgern über medizinische Informationen jenseits der Privilegien des Zahlers.
 

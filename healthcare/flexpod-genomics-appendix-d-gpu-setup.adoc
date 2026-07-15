@@ -27,10 +27,10 @@ Kernpunkte dieses Setups:
 
 . Wir haben eine PCIe NVIDIA Tesla P6 GPU in einem Mezzanine-Steckplatz in den UCS B200 M5 Servern verwendet.
 +
-image:flexpod-genomics-image18.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image18.png[""]
 
 +
-image:flexpod-genomics-image19.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image19.png[""]
 
 . Wir haben uns für dieses Setup im NVIDIA Partner-Portal registriert und eine Evaluierungslizenz (auch als Berechtigung bekannt) erhalten, die GPUs im Compute-Modus verwenden kann.
 . Wir haben die erforderliche NVIDIA vGPU-Software von der NVIDIA-Partner-Website heruntergeladen.
@@ -75,32 +75,32 @@ Wed Aug 18 21:37:19 2021
 ....
 . Mit vCenter https://blogs.vmware.com/apps/2018/09/using-gpus-with-virtual-machines-on-vsphere-part-2-vmdirectpath-i-o.html["Konfigurieren"^] Die Einstellungen des Grafikgeräts auf „Shared Direct“.
 +
-image:flexpod-genomics-image20.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image20.png[""]
 
 +
-image:flexpod-genomics-image21.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image21.png[""]
 
 . Vergewissern Sie sich, dass der sichere Boot für die RedHat-VM deaktiviert ist.
 . Stellen Sie sicher, dass die Firmware für VM-Startoptionen auf EFI ( gesetzt ist https://docs.vmware.com/en/VMware-vSphere-Bitfusion/3.0/Install-Guide/GUID-2005A8C6-4FDC-46DF-BB6B-989F6E91F3E2.html["ref"^]).
 +
-image:flexpod-genomics-image22.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image22.png[""]
 
 . Stellen Sie sicher, dass die folgenden PARAMS zur erweiterten Konfiguration der VM-Optionen hinzugefügt werden. Der Wert des `pciPassthru.64bitMMIOSizeGB` Parameter hängt vom GPU-Speicher und der Anzahl der der der VM zugewiesenen GPUs ab. Beispiel:
 +
 .. Wenn einer VM 4 x 32-GB-V100-GPUs zugewiesen sind, sollte dieser Wert 128 sein.
 .. Wenn einer VM 4 x 16-GB-P6-GPUs zugewiesen sind, sollte dieser Wert 64 sein.
 +
-image:flexpod-genomics-image23.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image23.png[""]
 
 +
-image:flexpod-genomics-image24.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image24.png[""]
 
 
 
 . Wenn Sie der virtuellen Maschine in vCenter vGPUs als neues PCI-Gerät hinzufügen, stellen Sie sicher, dass Sie NVIDIA GRID vGPU als PCI-Gerätetyp auswählen.
 . Wählen Sie das richtige GPU-Profil aus, das die verwendete GPU, den GPU-Speicher und den Nutzungszweck anführt, z. B. Grafik oder Rechner.
 +
-image:flexpod-genomics-image25.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image25.png[""]
 
 . Auf der RedHat Linux VM können NVIDIA-Treiber installiert werden, indem Sie den folgenden Befehl ausführen:
 +
@@ -159,7 +159,7 @@ Wed Aug 18 20:30:56 2021
 
 . Nach dem Neustart der VM sollten Sie einen Eintrag unter lizenzierte Clients im Lizenzserver sehen, wie unten gezeigt.
 +
-image:flexpod-genomics-image26.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image26.png[""]
 
 . Weitere Informationen zum Herunterladen der Software GATK und Cromwell finden Sie im Abschnitt Solutions Setup.
 . Nachdem GATK GPUs vor Ort, die Workflow-Beschreibungssprache, verwenden kann `*. wdl` Enthält die Laufzeitattribute wie unten dargestellt.

@@ -26,40 +26,40 @@ Gehen Sie wie folgt vor, um die VSC 9.6-Software mithilfe einer OVF-Implementier
 . Wechseln Sie zu vSphere Web Client > Host Cluster > Deploy OVF Template.
 . Öffnen Sie die VSC OVF-Datei, die von der NetApp Support-Website heruntergeladen wurde.
 +
-image:express-c-series-c190-deploy_image49.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image49.png[""]
 
 . Geben Sie den VM-Namen ein, und wählen Sie ein Datacenter oder einen Ordner aus, in dem die Bereitstellung erfolgen soll. Klicken Sie Auf Weiter.
 +
-image:express-c-series-c190-deploy_image50.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image50.png[""]
 
 . Wählen Sie das FlexPod Cluster ESXi Cluster aus und klicken Sie auf Weiter.
 . Überprüfen Sie die Details und klicken Sie auf Weiter.
 +
-image:express-c-series-c190-deploy_image51.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image51.png[""]
 
 . Klicken Sie auf Akzeptieren, um die Lizenz zu akzeptieren, und klicken Sie auf Weiter.
 . Wählen Sie das Format der virtuellen Thin Provisioning-Festplatte und einen der NFS-Datenspeicher aus. Klicken Sie Auf Weiter.
 +
-image:express-c-series-c190-deploy_image52.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image52.png[""]
 
 . Wählen Sie unter Netzwerke auswählen ein Zielnetzwerk aus, und klicken Sie auf Weiter.
 +
-image:express-c-series-c190-deploy_image53.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image53.png[""]
 
 . Geben Sie in der Vorlage „Anpassen“ das VSC Administratorpasswort, den vCenter-Namen oder die IP-Adresse und andere Konfigurationsdetails ein, und klicken Sie auf „Weiter“.
 +
-image:express-c-series-c190-deploy_image54.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image54.png[""]
 
 . Überprüfen Sie die eingegebenen Konfigurationsdetails und klicken Sie auf „Fertig stellen“, um die Implementierung der NetApp-VSC VM abzuschließen.
 . Schalten Sie die NetApp-VSC VM ein und öffnen Sie die VM-Konsole.
 . Während des Bootens von NetApp-VSC VMs sehen Sie eine Eingabeaufforderung zur Installation von VMware Tools. Wählen Sie in vCenter NetApp-VSC VM > Gastbetriebssystem > VMware Tools installieren aus.
 +
-image:express-c-series-c190-deploy_image55.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image55.png[""]
 
 . Während der Anpassung der OVF-Vorlage wurden Informationen zur Netzwerkkonfiguration und Registrierung für vCenter bereitgestellt. Nach der Ausführung der NetApp-VSC VM sind VSC, vSphere API for Storage Awareness (VASA) und VMware Storage Replication Adapter (SRA) bei vCenter registriert.
 . Melden Sie sich vom vCenter Client ab, und melden Sie sich erneut an. Bestätigen Sie im Home Menü, dass die NetApp VSC installiert ist.
 +
-image:express-c-series-c190-deploy_image56.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image56.png[""]
 
 
 
@@ -78,14 +78,14 @@ So laden Sie das NetApp NFS VAAI Plug-in herunter und installieren es:
 .. Wählen Sie im Startbildschirm des vSphere Web Client die Option Virtual Storage Console aus.
 .. Laden Sie unter Virtual Storage Console > Einstellungen > NFS VAAI Tools das NFS-Plug-in hoch, indem Sie die Option Datei auswählen und dort navigieren, wo das heruntergeladene Plug-in gespeichert ist.
 +
-image:express-c-series-c190-deploy_image57.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image57.png[""]
 
 
 
 . Klicken Sie auf Hochladen, um das Plug-in nach vCenter zu übertragen.
 . Wählen Sie den Host aus, und wählen Sie dann NetApp VSC > NFS-Plug-in für VMware VAAI installieren aus.
 +
-image:express-c-series-c190-deploy_image58.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image58.png[""]
 
 
 
@@ -98,14 +98,14 @@ VSC ermöglicht die automatisierte Konfiguration der Storage-Einstellungen für 
 
 . Wählen Sie im Hauptmenü die Option vCenter > Hosts und Clusters aus. Klicken Sie für jeden ESXi Host mit der rechten Maustaste, und wählen Sie NetApp VSC > Empfohlene Werte festlegen aus.
 +
-image:express-c-series-c190-deploy_image59.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image59.png[""]
 
 . Überprüfen Sie die Einstellungen, die Sie auf die ausgewählten vSphere-Hosts anwenden möchten. Klicken Sie auf OK, um die Einstellungen anzuwenden.
 +
-image:express-c-series-c190-deploy_image60.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image60.png[""]
 
 +
-image:express-c-series-c190-deploy_image61.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image61.png[""]
 
 . Starten Sie DEN ESXI-Host neu, nachdem diese Einstellungen angewendet wurden.
 

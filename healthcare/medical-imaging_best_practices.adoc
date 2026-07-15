@@ -62,7 +62,7 @@ NetApp empfiehlt die Implementierung von SAN-Starts für Cisco UCS Server in der
 
 Beim Booten über iSCSI SAN werden jedem Cisco UCS Server zwei iSCSI vNICs zugewiesen (einer für jede SAN-Fabric), die dem Storage redundante Konnektivität bieten. Die Speicher-Ports in diesem Beispiel, e2a und e2e, die mit den Cisco Nexus-Switches verbunden sind, werden zu einem logischen Port zusammengefasst, einer Interface Group (ifrp) (in diesem Beispiel a0a). Die iSCSI-VLANs werden auf der Initiatorgruppe erstellt, und die iSCSI-LIFs werden auf iSCSI-Portgruppen erstellt (in diesem Beispiel a0a-<iSCSI-A-VLAN>). Die iSCSI-Boot-LUN wird über die iSCSI-LIF den Servern mittels iGroups zur Verfügung gestellt. Dieser Ansatz ermöglicht es nur dem autorisierten Server, auf die Boot-LUN zuzugreifen. Informationen zu dem Port und dem LIF-Layout finden Sie in der Abbildung unten.
 
-image:medical-imaging_image8.png["Fehler: Fehlendes Grafikbild"]
+image:medical-imaging_image8.png[""]
 
 Anders als NAS-Netzwerkschnittstellen werden die SAN-Netzwerkschnittstellen nicht für den Failover beim Ausfall konfiguriert. Wenn stattdessen eine Netzwerkschnittstelle nicht mehr verfügbar ist, wählt der Host einen neuen optimierten Pfad zu einer verfügbaren Netzwerkschnittstelle aus. ALUA, ein von NetApp unterstützter Standard, bietet Informationen zu SCSI-Zielen, sodass ein Host den besten Pfad zum Storage ermitteln kann.
 

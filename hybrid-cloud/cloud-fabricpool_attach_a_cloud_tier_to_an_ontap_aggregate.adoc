@@ -31,13 +31,13 @@ Gehen Sie wie folgt vor, um ein Cloud-Tier mit OnCommand System Manager an ein A
 . Starten Sie den OnCommand System Manager.
 . Klicken Sie Auf Applikationen Und Tiers.
 +
-image:cloud-fabricpool_image14.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-fabricpool_image14.png[""]
 
 . Klicken Sie Auf Storage Tiers.
 . Klicken Sie auf ein Aggregat.
 . Klicken Sie auf Aktionen und wählen Sie Cloud Tier anhängen.
 +
-image:cloud-fabricpool_image15.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-fabricpool_image15.png[""]
 
 . Wählen Sie eine Cloud-Tier.
 . Anzeigen und Aktualisieren der Tiering-Richtlinien für die Volumes im Aggregat (optional) Standardmäßig wird die Tiering-Richtlinie für Volumes nur als Snapshot festgelegt.

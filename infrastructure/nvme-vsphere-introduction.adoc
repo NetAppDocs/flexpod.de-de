@@ -15,7 +15,7 @@ summary: Diese Lösung bietet einen allgemeinen Überblick über die FC-NVMe Per
 
 Chris Schmitt und Kamini Singh, NetApp
 
-In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
+In Partnerschaft mit: image:cisco logo.png[""]
 
 [role="lead"]
 Der NVMe-Storage-Standard, eine moderne Kerntechnologie, verändert den Zugriff und die Datenübertragung zu Enterprise-Storage durch sehr hohe Bandbreite und den Storage-Zugriff mit sehr niedriger Latenz für aktuelle und zukünftige Speichertechnologien. NVMe ersetzt den SCSI-Befehlssatz durch den NVMe-Befehlssatz.
@@ -26,7 +26,7 @@ FlexPod ist eine Datacenter-Architektur mit Best Practices und umfasst Cisco Uni
 
 Die Produktfamilien von FlexPod in der folgenden Abbildung.
 
-image:nvme-vsphere-image1.png["Fehler: Fehlendes Grafikbild"]
+image:nvme-vsphere-image1.png[""]
 
 FlexPod ist die ideale Plattform zur Einführung von FC-NVMe. Es kann durch Hinzufügen der Cisco UCS VIC 1400 Serie und Port Expander in bestehenden Cisco UCS B200 M5 oder M6 Servern oder Cisco UCS C-Series M5 oder M6 Rack Servern unterstützt werden. Zudem lassen sich einfache, unterbrechungsfreie Software-Upgrades für das Cisco UCS System, die Cisco MDS 32Gbps Switches, Und die NetApp AFF Storage-Arrays. Nach Installation der unterstützten Hardware und Software ist die Konfiguration von FC-NVMe vergleichbar mit der FCP-Konfiguration.
 

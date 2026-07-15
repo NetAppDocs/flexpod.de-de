@@ -20,7 +20,7 @@ Dieses Dokument beschreibt das Cisco und NetApp FlexPod-Datacenter mit NetApp ON
 * Cisco UCS C-Serie
 
 
-Darüber hinaus sind die Cisco Intersight- und NetApp Active IQ-SaaS-Managementplattformen enthalten.
+Ebenfalls enthalten sind Cisco Intersight und NetApp Active IQ Digital Advisor (auch bekannt als Digital Advisor) SaaS Managementplattformen.
 
 FlexPod-Datacenter mit NetApp ONTAP 9.7, Cisco UCS Unified Software Release 4.1(2) und VMware vSphere 7.0 umfassen eine vorab entwickelte Best-Practice Datacenter-Architektur auf Basis des Cisco Unified Computing System (Cisco UCS), der Cisco Nexus 9000 Switches, MDS 9000 Multilayer Fabric Switches, Und den NetApp Storage-Arrays der AFF A-Serie mit der Datenmanagement-Software ONTAP 9.7.
 

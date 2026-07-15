@@ -18,7 +18,7 @@ Diese Referenzvalidierung ist verkabelt, wie in den folgenden Abbildungen und Ta
 
 Diese Abbildung zeigt die Verkabelung zur Referenzvalidierung.
 
-image:express-c-series-c190-deploy_image3.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image3.png[""]
 
 In der folgenden Tabelle sind die Verkabelungsinformationen für den Cisco Nexus Switch 31108PC-V-A aufgeführt
 

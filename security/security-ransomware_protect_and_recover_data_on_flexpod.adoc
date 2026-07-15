@@ -34,15 +34,15 @@ In diesem Abschnitt werden der Status der Dateien vor einem Angriff auf die VM u
 
 Der Ordner Dokumente der VM hatte eine Reihe von PDF-Dateien, die noch nicht durch die WannaCry Malware verschlüsselt wurden.
 
-image:security-ransomware_image3.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image3.png[""]
 
 Der folgende Screenshot zeigt die CIFS-Freigabe, die der VM zugeordnet war.
 
-image:security-ransomware_image4.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image4.png[""]
 
 Der folgende Screenshot zeigt die Dateien auf der CIFS-Freigabe `fpolicy_share` Die noch nicht durch die WannaCry-Malware verschlüsselt wurden.
 
-image:security-ransomware_image5.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image5.png[""]
 
 
 
@@ -53,19 +53,19 @@ Details zur Storage-Effizienz und die Größe der Snapshot-Kopie vor einem Angri
 
 Storage-Einsparungen von 19 % wurden durch Deduplizierung auf dem Volume, das die VM hostet, erzielt.
 
-image:security-ransomware_image6.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image6.png[""]
 
 Durch Deduplizierung beim CIFS-Share wurden Storage-Einsparungen von 45 % erzielt `fpolicy_share`.
 
-image:security-ransomware_image7.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image7.png[""]
 
 Für das Volume, das die VM hostet, wurde eine Snapshot-Kopie von 456 KB beobachtet.
 
-image:security-ransomware_image8.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image8.png[""]
 
 Für den CIFS-Share wurde eine Snapshot Kopie von 160 KB beobachtet `fpolicy_share`.
 
-image:security-ransomware_image9.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image9.png[""]
 
 
 
@@ -78,11 +78,11 @@ Die folgenden Schritte zeigen, wie die WannaCry-Malware-Binärdatei in die VM ei
 
 . Die gesicherte Malware wurde extrahiert.
 +
-image:security-ransomware_image10.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image10.png[""]
 
 . Die Binärdatei wurde ausgeführt.
 +
-image:security-ransomware_image11.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image11.png[""]
 
 
 
@@ -95,11 +95,11 @@ Das lokale Dateisystem und die zugeordnete CIFS-Share wurden durch den WannaCry 
 
 Malware beginnt, Dateien mit WNCRY-Erweiterungen zu verschlüsseln.
 
-image:security-ransomware_image12.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image12.png[""]
 
 Die Malware verschlüsselt alle Dateien in der lokalen VM und der zugeordneten Freigabe.
 
-image:security-ransomware_image13.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image13.png[""]
 
 
 
@@ -109,15 +109,15 @@ Als die Malware mit der Verschlüsselung der Dateien begann, führte sie zu eine
 
 Wir erkannten eine drastische Zunahme der Snapshot-Größe auf 820.98MB für das Volume, das während des Angriffs die CIFS-Freigabe hostet.
 
-image:security-ransomware_image14.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image14.png[""]
 
 Wir erkannten eine Erhöhung der Snapshot-Kopie auf 404,3MB für den Volumen, der die VM hostet.
 
-image:security-ransomware_image15.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image15.png[""]
 
 Die Storage-Effizienz für das Volume, auf dem der CIFS-Share gehostet wird, sank auf 34 %.
 
-image:security-ransomware_image16.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image16.png[""]
 
 
 
@@ -131,23 +131,23 @@ Um die VM wiederherzustellen, führen Sie die folgenden Schritte aus:
 
 . Verwenden Sie die mit SnapCenter erstellte Snapshot Kopie zum Wiederherstellen der VM.
 +
-image:security-ransomware_image17.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image17.png[""]
 
 . Wählen Sie die gewünschte VMware- konsistente Snapshot Kopie für die Wiederherstellung aus.
 +
-image:security-ransomware_image18.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image18.png[""]
 
 . Die gesamte VM wird wiederhergestellt und neu gestartet.
 +
-image:security-ransomware_image19.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image19.png[""]
 
 . Klicken Sie auf Fertig stellen, um den Wiederherstellungsvorgang zu starten.
 +
-image:security-ransomware_image20.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image20.png[""]
 
 . Die VM und ihre Dateien sind wiederhergestellt.
 +
-image:security-ransomware_image21.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image21.png[""]
 
 
 
@@ -157,15 +157,15 @@ Gehen Sie wie folgt vor, um die CIFS-Freigabe wiederherzustellen:
 
 . Verwenden Sie die Snapshot-Kopie des vor dem Angriff aufgenommene Volumes, um die Freigabe wiederherzustellen.
 +
-image:security-ransomware_image22.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image22.png[""]
 
 . Klicken Sie auf OK, um den Wiederherstellungsvorgang zu starten.
 +
-image:security-ransomware_image23.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image23.png[""]
 
 . Zeigen Sie die CIFS-Freigabe nach der Wiederherstellung an.
 +
-image:security-ransomware_image24.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image24.png[""]
 
 
 
@@ -192,8 +192,8 @@ Mit dieser Richtlinie sind Dateien mit den Erweiterungen WNCRY, Locky und ad4c n
 
 Anzeigen des Status von Dateien vor dem Angriff – sie sind unverschlüsselt und in einem sauberen System.
 
-image:security-ransomware_image25.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image25.png[""]
 
 Die Dateien auf der VM sind verschlüsselt. Die WannaCry Malware versucht, die Dateien in der CIFS-Share zu verschlüsseln, aber FPolicy verhindert, dass sie die Dateien zu beeinflussen.
 
-image:security-ransomware_image26.png["Fehler: Fehlendes Grafikbild"]
+image:security-ransomware_image26.png[""]

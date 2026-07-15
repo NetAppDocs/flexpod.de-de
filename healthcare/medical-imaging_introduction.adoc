@@ -103,7 +103,7 @@ Das kooperative Support-Modell für FlexPod ist besonders dann nützlich, wenn I
 
 
 
-image:medical-imaging_image2.png["Fehler: Fehlendes Grafikbild"]
+image:medical-imaging_image2.png[""]
 
 
 

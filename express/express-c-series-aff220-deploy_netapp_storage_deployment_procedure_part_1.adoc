@@ -271,7 +271,7 @@ Das Cluster-Setup kann auch über die CLI durchgeführt werden. In diesem Dokume
 . Klicken Sie auf Guided Setup, um das Cluster zu konfigurieren.
 . Eingabe `\<<var_clustername>>` Für den Cluster-Namen und `\<<var_nodeA>>` Und `\<<var_nodeB>>` Für jeden der Nodes, die Sie konfigurieren. Geben Sie das Passwort ein, das Sie für das Speichersystem verwenden möchten. Wählen Sie für den Cluster-Typ Cluster ohne Switch aus. Geben Sie die Cluster-Basislizenz ein.
 +
-image:express-c-series-aff220-deploy_image6.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image6.png[""]
 
 . Außerdem können Funktionslizenzen für Cluster, NFS und iSCSI eingegeben werden.
 . Eine Statusmeldung, die angibt, dass das Cluster erstellt wird. Diese Statusmeldung durchlaufen mehrere Statusarten. Dieser Vorgang dauert mehrere Minuten.
@@ -298,7 +298,7 @@ Sie können auch einen alternativen NTP-Server eingeben.
 Sie müssen mindestens die Methode für die Ereignisbenachrichtigung einrichten, bevor Sie fortfahren können. Sie können eine beliebige der Methoden auswählen.
 
 +
-image:express-c-series-aff220-deploy_image7.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image7.png[""]
 
 
 

@@ -13,7 +13,7 @@ summary: NetApp und Cisco bieten gemeinsam Cisco Intersight, eine Komplettansich
 :imagesdir: ./../media/
 
 
-In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
+In Partnerschaft mit: image:cisco logo.png[""]
 
 
 

@@ -25,29 +25,29 @@ FlexPod unterstützt beide Varianten der NetApp MetroCluster Software für durch
 
 Die folgende Abbildung zeigt die Architektur von FlexPod Datacenter mit NetApp MetroCluster.
 
-image:dc-tech-spec_image1.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image1.png[""]
 
 Folgende Abbildung zeigt die FlexPod Datacenter mit NetApp MetroCluster IP Architektur:
 
-image:dc-tech-spec_image2.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image2.png[""]
 
 Ab ONTAP 9.8 kann ONTAP Mediator an einem dritten Standort implementiert werden, um die MetroCluster IP Lösung zu überwachen und bei einem Standortausfall eine automatisierte ungeplante Umschaltung zu ermöglichen.
 
 Bei der Implementierung einer FlexPod MetroCluster IP-Lösung mit einer erweiterten Site-to-Site-Konnektivität zwischen Schicht und 2 können Sie Kosteneinsparungen erzielen, indem Sie ISL freigeben und FlexPod Switches als MetroCluster-konforme IP-Switches verwenden, wenn die Netzwerkbandbreite und die Switches den in der folgenden Abbildung dargestellten Anforderungen entsprechen. Zeigt die FlexPod MetroCluster IP-Lösung mit ISL-Freigabe und konformen Switches.
 
-image:dc-tech-spec_image10.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image10.png[""]
 
 In den folgenden beiden Abbildungen wird das VXLAN Multi-Site Fabric und das MetroCluster IP Storage Fabric für eine FlexPod MetroCluster IP-Lösung mit VXLAN Multi-Site Fabric-Implementierung dargestellt.
 
 * VXLAN-Multi-Site Fabric für FlexPod MetroCluster IP-Lösung
 
 
-image:dc-tech-spec_image11.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image11.png[""]
 
 * MetroCluster IP Storage Fabric für FlexPod MetroCluster IP-Lösung
 
 
-image:dc-tech-spec_image12.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image12.png[""]
 
 
 
@@ -64,7 +64,7 @@ Weitere Informationen über die FlexPod Konfigurationen und Performance-Vorteile
 
 Weitere Informationen zur ONTAP-Implementierung finden Sie unter https://www.netapp.com/pdf.html?item=/media/10681-tr4684pdf.pdf["TR-4684: Implementieren und Konfigurieren moderner SANs mit NVMe"^].
 
-image:dc-tech-spec_image3.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image3.png[""]
 
 
 
@@ -82,9 +82,9 @@ Weitere Anleitungen zu einem MDS-basierten Design finden Sie im CVD https://www.
 
 Die folgenden Abbildungen zeigen ein Beispiel für das FlexPod Datacenter für FC mit MDS-Konnektivität und das FlexPod Datacenter für FC mit Cisco Nexus 93180YC-FX.
 
-image:dc-tech-spec_image4.jpg["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image4.jpg[""]
 
-image:dc-tech-spec_image5.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image5.png[""]
 
 
 
@@ -107,7 +107,7 @@ NOTE: Die Verwendung der Switches der Cisco Nexus 7000 oder 9000 Familie schlie�
 
 In der folgenden Abbildung ist eine Konfiguration der FC-Konnektivität dargestellt.
 
-image:dc-tech-spec_image6.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image6.png[""]
 
 
 
@@ -129,7 +129,7 @@ NOTE: Durch die Verwendung der Switches der Cisco Nexus 9000 Serie ist FCoE ausg
 
 Die folgende Abbildung zeigt ein Szenario des FCoE-Startens.
 
-image:dc-tech-spec_image7.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image7.png[""]
 
 
 
@@ -145,7 +145,7 @@ Die iSCSI-Startoption umfasst die folgenden Lizenzierungs- und Hardwareanforderu
 
 Die folgende Abbildung zeigt eine reine Ethernet-Konfiguration, die über iSCSI gestartet wird.
 
-image:dc-tech-spec_image8.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image8.png[""]
 
 
 
@@ -171,7 +171,7 @@ Die Lizenz- und Hardwareanforderungen lauten wie folgt:
 
 In der folgenden Abbildung ist eine Konfiguration für die Direktverbindung per FC dargestellt.
 
-image:dc-tech-spec_image9.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image9.png[""]
 
 *Hinweise:*
 
@@ -182,7 +182,7 @@ image:dc-tech-spec_image9.png["Fehler: Fehlendes Grafikbild"]
 
 Die folgende Abbildung zeigt eine iSCSI/Unified IP Direct-Connect-Konfiguration.
 
-image:dc-tech-spec_image10.png["Fehler: Fehlendes Grafikbild"]
+image:dc-tech-spec_image10.png[""]
 
 *Hinweise:*
 

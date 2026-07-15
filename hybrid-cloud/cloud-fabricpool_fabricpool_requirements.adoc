@@ -90,7 +90,7 @@ Die FabricPool Leselatenz ist eine Funktion der Verbindung zum Cloud-Tier. Inter
 
 NOTE: Beim Einsatz von FabricPool in hochperformanten Umgebungen müssen weiterhin minimale Performance-Anforderungen für Client-Applikationen eingehalten werden, und die Recovery-Zeitvorgaben sollten entsprechend angepasst werden.
 
-image:cloud-fabricpool_image6.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-fabricpool_image6.png[""]
 
 
 
@@ -114,7 +114,7 @@ storage aggregate object-store profiler show
 ....
 Cloud-Tiers bieten keine Performance ähnlich wie bei der Performance-Tier (normalerweise GB pro Sekunde). Obwohl FabricPool Aggregate problemlos SATA-ähnliche Performance bieten, sind sie für Tiering-Lösungen, die keine SATA-ähnliche Performance benötigen, auch Latenzzeiten von bis zu 10 Sekunden und einen niedrigen Durchsatz tolerierbar.
 
-image:cloud-fabricpool_image7.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-fabricpool_image7.png[""]
 
 
 
@@ -142,7 +142,7 @@ FabricPool Lizenzen sind im unbefristeten oder langfristigen Format (1 Jahr oder
 
 Tiering in das Cloud-Tier stoppt, wenn die auf dem Cloud-Tier gespeicherten Datenmengen (genutzte Kapazität) die lizenzierte Kapazität erreichen. Zusätzliche Daten, einschließlich SnapMirror Kopien auf Volumes mit der All-Tiering-Richtlinie, können erst abgestuft werden, wenn die Lizenzkapazität erhöht wird. Obwohl das Tiering unterbrochen wird, sind die Daten trotzdem über das Cloud-Tier zugänglich. Zusätzliche „kalte“ Daten bleiben auf SSDs, bis die lizenzierte Kapazität erhöht wird.
 
-Eine kostenlose 10-TB-Kapazität, die term-basierte FabricPool Lizenz ist beim Kauf eines neuen ONTAP 9.5 oder höheren Clusters enthalten. Unter Umständen fallen zusätzliche Support-Kosten an. FabricPool Lizenzen (einschließlich zusätzlicher Kapazität für vorhandene Lizenzen) können in 1-TB-Schritten erworben werden.
+FabricPool Lizenzen (einschließlich zusätzlicher Kapazität für bestehende Lizenzen) können in 1-TB-Schritten erworben werden.
 
 Eine FabricPool Lizenz kann nur aus einem Cluster gelöscht werden, das keine FabricPool-Aggregate enthält.
 

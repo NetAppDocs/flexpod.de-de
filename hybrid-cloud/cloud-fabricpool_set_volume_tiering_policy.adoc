@@ -53,7 +53,7 @@ Um die Tiering-Richtlinie eines Volumes mithilfe von OnCommand System Manager zu
 . Wählen Sie die Tiering-Richtlinie aus, die auf das Volume angewendet werden soll.
 . Klicken Sie auf Speichern .
 +
-image:cloud-fabricpool_image16.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-fabricpool_image16.png[""]
 
 
 

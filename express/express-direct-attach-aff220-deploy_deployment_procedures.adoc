@@ -1653,7 +1653,7 @@ Um einen Block von IP-Adressen für Tastatur-, Video-, Maus- (KVM)-Zugriff in de
 . Klicken Sie mit der rechten Maustaste auf IP-Pool-ext-Management, und wählen Sie Block von IPv4-Adressen erstellen.
 . Geben Sie die Start-IP-Adresse des Blocks, die Anzahl der erforderlichen IP-Adressen sowie die Subnetzmaske und Gateway-Informationen ein.
 +
-image:express-direct-attach-aff220-deploy_image7.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image7.png[""]
 
 . Klicken Sie auf OK, um den Block zu erstellen.
 . Klicken Sie in der Bestätigungsmeldung auf OK.
@@ -1674,12 +1674,12 @@ So synchronisieren Sie die Cisco UCS-Umgebung mit den NTP-Servern auf den Nexus-
 . Klicken Sie auf NTP-Server hinzufügen.
 . Eingabe `<switch-a-ntp-ip> or <Nexus-A-mgmt-IP>` Klicken Sie anschließend auf OK. Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image8.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image8.png[""]
 
 . Klicken Sie auf NTP-Server hinzufügen.
 . Eingabe `<switch-b-ntp-ip>` `or <Nexus-B-mgmt-IP>` Klicken Sie anschließend auf OK. Klicken Sie auf OK auf die Bestätigung.
 +
-image:express-direct-attach-aff220-deploy_image9.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image9.png[""]
 
 
 
@@ -1717,7 +1717,7 @@ Führen Sie die folgenden Schritte aus, um Server- und Uplink-Ports zu aktiviere
 . Wählen Sie im linken Fensterbereich unter Fabric Interconnect A die Option Fixed Module aus 
 . Vergewissern Sie sich auf der Registerkarte Ethernet-Ports, dass die Ports in der Spalte „Wenn-Rolle“ richtig konfiguriert wurden. Wenn auf dem Skalierbarkeitsport Server der C-Serie konfiguriert wurden, klicken Sie darauf, um die Anschlussverbindung dort zu überprüfen.
 +
-image:express-direct-attach-aff220-deploy_image10.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image10.png[""]
 
 . Erweitern Sie die Ausrüstung > Fabric Interconnects > Fabric Interconnect B > Festes Modul.
 . Erweitern Sie Ethernet-Ports.
@@ -1730,7 +1730,7 @@ image:express-direct-attach-aff220-deploy_image10.png["Fehler: Fehlendes Grafikb
 . Wählen Sie im linken Fensterbereich unter Fabric Interconnect B die Option Fixed Module aus 
 . Vergewissern Sie sich auf der Registerkarte Ethernet-Ports, dass die Ports in der Spalte „Wenn-Rolle“ richtig konfiguriert wurden. Wenn auf dem Skalierbarkeitsport Server der C-Serie konfiguriert wurden, klicken Sie darauf, um die Anschlussverbindung dort zu überprüfen.
 +
-image:express-direct-attach-aff220-deploy_image11.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image11.png[""]
 
 
 
@@ -1753,7 +1753,7 @@ NOTE: In diesem Verfahren werden zwei Port-Kanäle erstellt: Einer von Fabric A 
 . Geben Sie den Namen des Port-Kanals vPC-13-Nexus ein.
 . Klicken Sie Auf Weiter.
 +
-image:express-direct-attach-aff220-deploy_image12.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image12.png[""]
 
 . Wählen Sie die folgenden Ports aus, die dem Port-Kanal hinzugefügt werden sollen:
 +
@@ -1818,7 +1818,7 @@ Gehen Sie wie folgt vor, um die Ports der Speichergeräte und Speicher-VLANs zu 
 . Eingabe `\<<var_nfs_vlan_id>>` Für die VLAN-ID.
 . Den Freigabetyp auf Keine setzen lassen.
 +
-image:express-direct-attach-aff220-deploy_image13.jpeg["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image13.jpeg[""]
 
 . Klicken Sie auf OK, und klicken Sie erneut auf OK, um das VLAN zu erstellen.
 . Klicken Sie mit der rechten Maustaste auf VLANs unter Appliances „Cloud“.
@@ -1840,14 +1840,14 @@ image:express-direct-attach-aff220-deploy_image13.jpeg["Fehler: Fehlendes Grafik
 . Eingabe `\<<var_native_vlan_id>>` Für die VLAN-ID.
 . Klicken Sie auf OK, und klicken Sie erneut auf OK, um das VLAN zu erstellen.
 +
-image:express-direct-attach-aff220-deploy_image14.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image14.png[""]
 
 . Erweitern Sie im Navigationsbereich unter LAN > Richtlinien Appliances und klicken Sie mit der rechten Maustaste auf Network Control Policies.
 . Wählen Sie Netzwerksteuerungsrichtlinie Erstellen.
 . Richtlinie benennen `Enable_CDP_LLPD` Und wählen Sie neben CDP aktiviert aus.
 . Aktivieren Sie die Funktionen zum Senden und Empfangen von LLDP.
 +
-image:express-direct-attach-aff220-deploy_image15.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image15.png[""]
 
 . Klicken Sie auf OK und anschließend erneut auf OK, um die Richtlinie zu erstellen.
 . Erweitern Sie im Navigationsbereich unter LAN > Appliances Cloud die Struktur Fabric A.
@@ -1858,7 +1858,7 @@ image:express-direct-attach-aff220-deploy_image15.png["Fehler: Fehlendes Grafikb
 . Wählen Sie unter VLANs iSCSI-A-VLAN, NFS-VLAN und natives VLAN aus. Legen Sie das native VLAN als natives VLAN fest. Deaktivieren Sie die Standard-VLAN-Auswahl.
 . Klicken Sie auf Änderungen speichern und OK.
 +
-image:express-direct-attach-aff220-deploy_image16.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image16.png[""]
 
 . Wählen Sie unter Fabric A Appliance Interface 1/4 aus
 . Geben Sie im Feld „Benutzerbeschriftung“ Informationen ein, die den Port des Speichercontrollers angeben, z. B. `<storage_controller_02_name>:e0e`. Klicken Sie auf Änderungen speichern und OK.
@@ -1874,7 +1874,7 @@ image:express-direct-attach-aff220-deploy_image16.png["Fehler: Fehlendes Grafikb
 . Wählen Sie Enable_CDP Network Control Policy und Save Changes and OK.
 . Wählen Sie unter VLANs das iSCSI-B-VLAN, NFS-VLAN und natives VLAN aus. Legen Sie das native VLAN als natives VLAN fest. Heben Sie die Auswahl des Standard-VLAN auf.
 +
-image:express-direct-attach-aff220-deploy_image17.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image17.png[""]
 
 . Klicken Sie auf Änderungen speichern und OK.
 . Wählen Sie unter Fabric B Appliance Interface 1/4 aus
@@ -1896,7 +1896,7 @@ Gehen Sie wie folgt vor, um Jumbo Frames zu konfigurieren und Servicequalität i
 . Klicken Sie im rechten Fensterbereich auf die Registerkarte Allgemein.
 . Geben Sie in der Zeile „Beste Anstrengung“ in das Feld unter der MTU-Spalte 9216 ein.
 +
-image:express-direct-attach-aff220-deploy_image18.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image18.png[""]
 
 . Klicken Sie Auf Änderungen Speichern.
 . Klicken Sie auf OK.
@@ -1939,7 +1939,7 @@ Gehen Sie wie folgt vor, um eine Firmware-Management-Richtlinie für eine bestim
 . Wählen Sie im Bereich Aktionen die Option Paketversionen ändern aus.
 . Wählen Sie die Version 4.0(1b) für beide Blade-Pakete aus.
 +
-image:express-direct-attach-aff220-deploy_image19.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image19.png[""]
 
 . Klicken Sie erneut auf OK und anschließend auf OK, um das Host-Firmware-Paket zu ändern.
 
@@ -1969,7 +1969,7 @@ NOTE: Für die FlexPod-Lösung empfiehlt es sich, 0A in das nächste Oktett der 
 
 . Geben Sie eine Größe für den MAC-Adressenpool an, die ausreichend ist, um die verfügbaren Blade- oder Serverressourcen zu unterstützen. Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image20.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image20.png[""]
 
 . Klicken Sie Auf Fertig Stellen.
 . Klicken Sie in der Bestätigungsmeldung auf OK.
@@ -2013,7 +2013,7 @@ NOTE: Wenn mehrere Cisco UCS Domänen verwendet werden, muss möglicherweise ein
 . Geben Sie 1 in das Feld von ein.
 . Geben Sie die Größe des IQN-Blocks an, der ausreicht, um die verfügbaren Serverressourcen zu unterstützen. Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image21.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image21.png[""]
 
 . Klicken Sie Auf Fertig Stellen.
 
@@ -2109,7 +2109,7 @@ Gehen Sie wie folgt vor, um eine Netzwerkkontrollrichtlinie für das Cisco Disco
 . Scrollen Sie bei LLDP nach unten und wählen Sie aktiviert für Senden und Empfangen aus.
 . Klicken Sie auf OK, um die Netzwerksteuerungsrichtlinie zu erstellen. Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image22.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image22.png[""]
 
 
 
@@ -2128,7 +2128,7 @@ Um eine Energiekontrollrichtlinie für die Cisco UCS-Umgebung zu erstellen, füh
 . Ändern Sie die Einstellung für die Stromkappung auf „Keine Kap.“.
 . Klicken Sie auf OK, um die Energiekontrollrichtlinie zu erstellen. Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image23.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image23.png[""]
 
 
 
@@ -2153,7 +2153,7 @@ NOTE: Dieses Beispiel erstellt eine Richtlinie für Cisco UCS Server der B-Serie
 . Klicken Sie auf OK, um die CPU/Core-Qualifizierung zu erstellen.
 . Klicken Sie auf OK, um die Richtlinie zu erstellen, und klicken Sie anschließend auf OK, um die Bestätigung zu erhalten.
 +
-image:express-direct-attach-aff220-deploy_image24.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image24.png[""]
 
 
 
@@ -2172,7 +2172,7 @@ Gehen Sie wie folgt vor, um eine Server-BIOS-Richtlinie für die Cisco UCS-Umgeb
 . Ändern Sie die Einstellung für den stillen Start auf deaktiviert.
 . Ändern Sie die konsistente Gerätenennung in aktiviert.
 +
-image:express-direct-attach-aff220-deploy_image25.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image25.png[""]
 
 . Wählen Sie die Registerkarte Prozessor aus, und legen Sie die folgenden Parameter fest:
 +
@@ -2181,7 +2181,7 @@ image:express-direct-attach-aff220-deploy_image25.png["Fehler: Fehlendes Grafikb
 ** Prozessor-C3-Bericht: Deaktiviert
 ** Prozessor-C7-Bericht: Deaktiviert
 +
-image:express-direct-attach-aff220-deploy_image26.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image26.png[""]
 
 
 
@@ -2191,7 +2191,7 @@ image:express-direct-attach-aff220-deploy_image26.png["Fehler: Fehlendes Grafikb
 ** Frequenzbereich: Aktiviert
 ** DRAM-Clock-Drosselung: Performance
 +
-image:express-direct-attach-aff220-deploy_image27.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image27.png[""]
 
 
 
@@ -2199,7 +2199,7 @@ image:express-direct-attach-aff220-deploy_image27.png["Fehler: Fehlendes Grafikb
 +
 ** LV DDR-Modus: Leistungsmodus
 +
-image:express-direct-attach-aff220-deploy_image28.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image28.png[""]
 
 
 
@@ -2220,7 +2220,7 @@ Gehen Sie wie folgt vor, um die Standardwartungsrichtlinie zu aktualisieren:
 . Ändern Sie die Richtlinie für den Neustart in Benutzerack.
 . Wählen Sie auf Next Boot, um die Wartungsfenster an Server-Administratoren zu delegieren.
 +
-image:express-direct-attach-aff220-deploy_image29.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image29.png[""]
 
 . Klicken Sie Auf Änderungen Speichern.
 . Klicken Sie auf OK, um die Änderung zu übernehmen.
@@ -2264,7 +2264,7 @@ Führen Sie zum Erstellen einer vNIC für die Infrastruktur die folgenden Schrit
 . Klicken Sie auf OK, um die vNIC-Vorlage zu erstellen.
 . Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image30.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image30.png[""]
 
 
 
@@ -2296,7 +2296,7 @@ NOTE: Die Auswahl von Failover ist ein wichtiger Schritt zur Verbesserung der Li
 . Klicken Sie auf OK, um die vNIC-Vorlage zu erstellen.
 . Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image31.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image31.png[""]
 
 
 
@@ -2324,7 +2324,7 @@ Gehen Sie wie folgt vor, um iSCSI-vNICs zu erstellen:
 . Klicken Sie auf OK, um die Erstellung der vNIC-Vorlage abzuschließen.
 . Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image32.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image32.png[""]
 
 . Wählen Sie links LAN aus.
 . Wählen Sie Richtlinien > Root.
@@ -2344,7 +2344,7 @@ image:express-direct-attach-aff220-deploy_image32.png["Fehler: Fehlendes Grafikb
 . Klicken Sie auf OK, um die Erstellung der vNIC-Vorlage abzuschließen.
 . Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image33.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image33.png[""]
 
 
 
@@ -2369,7 +2369,7 @@ Gehen Sie wie folgt vor, um die erforderliche Infrastruktur-LAN-Konnektivitätsr
 . Wählen Sie aus der Dropdown-Liste Adapterrichtlinie VMware aus.
 . Klicken Sie auf OK, um diese vNIC zur Richtlinie hinzuzufügen.
 +
-image:express-direct-attach-aff220-deploy_image34.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image34.png[""]
 
 . Klicken Sie oben auf Hinzufügen, um einen vNIC hinzuzufügen.
 . Geben Sie im Dialogfeld vNIC erstellen ein `Site-01-vNIC-B` Als Name der vNIC.
@@ -2398,7 +2398,7 @@ image:express-direct-attach-aff220-deploy_image34.png["Fehler: Fehlendes Grafikb
 . Wählen Sie Keine (standardmäßig verwendet) als MAC-Adresszuweisung.
 . Klicken Sie auf OK, um die iSCSI-vNIC zur Richtlinie hinzuzufügen.
 +
-image:express-direct-attach-aff220-deploy_image35.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image35.png[""]
 
 . Klicken Sie im Bereich iSCSI vNICs hinzufügen auf die Option Lower Add, um die iSCSI vNIC hinzuzufügen.
 . Geben Sie im Dialogfeld iSCSI vNIC erstellen ein `Site-01-iSCSI-B` Als Name der vNIC.
@@ -2409,7 +2409,7 @@ image:express-direct-attach-aff220-deploy_image35.png["Fehler: Fehlendes Grafikb
 . Klicken Sie auf OK, um die iSCSI-vNIC zur Richtlinie hinzuzufügen.
 . Klicken Sie Auf Änderungen Speichern.
 +
-image:express-direct-attach-aff220-deploy_image36.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image36.png[""]
 
 
 
@@ -2446,7 +2446,7 @@ Dieses VMware ESXi 6.7U1 ISO kann von  https://support.broadcom.com/group/ecx/do
 Bei allen neuen Servern, die der Cisco UCS Umgebung hinzugefügt werden, kann die vMedia-Service-Profilvorlage zur Installation des ESXi Hosts verwendet werden. Beim ersten Booten startet der Host in den ESXi Installer, da die über SAN bereitgestellte Festplatte leer ist. Nach der Installation von ESXi wird auf die vMedia nicht verwiesen, solange auf die Boot-Diskette zugegriffen werden kann.
 
 +
-image:express-direct-attach-aff220-deploy_image37.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image37.png[""]
 
 
 
@@ -2477,7 +2477,7 @@ Gehen Sie wie folgt vor, um eine Boot-Richtlinie für die Cisco UCS-Umgebung zu 
 . Geben Sie im Dialogfeld iSCSI-Boot hinzufügen ein `Site-01-iSCSI-B`. Klicken Sie auf OK.
 . Klicken Sie auf OK, um die Richtlinie zu erstellen.
 +
-image:express-direct-attach-aff220-deploy_image38.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image38.png[""]
 
 
 
@@ -2498,7 +2498,7 @@ Um die Service-Profilvorlage zu erstellen, gehen Sie wie folgt vor:
 . Wählen Sie die Option Vorlage aktualisieren aus.
 . Wählen Sie unter UUID die Option aus `UUID_Pool` Als UUID-Pool. Klicken Sie Auf Weiter.
 +
-image:express-direct-attach-aff220-deploy_image39.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image39.png[""]
 
 
 
@@ -2523,7 +2523,7 @@ Gehen Sie wie folgt vor, um die Netzwerkoptionen zu konfigurieren:
 . Wählen Sie iSCSI-Boot aus dem Dropdown-Menü LAN Connectivity Policy.
 . Wählen Sie `IQN_Pool` In Initiator-Namenszuweisung. Klicken Sie Auf Weiter.
 +
-image:express-direct-attach-aff220-deploy_image40.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image40.png[""]
 
 
 
@@ -2571,7 +2571,7 @@ Gehen Sie wie folgt vor, um die Server-Startreihenfolge zu konfigurieren:
 
 . Wählen Sie `Boot-Fabric-A` Für Boot Policy.
 +
-image:express-direct-attach-aff220-deploy_image41.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image41.png[""]
 
 . Wählen Sie in der Boor-Reihenfolge aus `Site-01- iSCSI-A`.
 . Klicken Sie auf iSCSI-Startparameter festlegen.
@@ -2582,22 +2582,22 @@ image:express-direct-attach-aff220-deploy_image41.png["Fehler: Fehlendes Grafikb
 . Klicken Sie Auf Hinzufügen.
 . Geben Sie den iSCSI-Zielnamen ein. Um den iSCSI-Zielnamen Infra-SVM zu erhalten, melden Sie sich bei der Storage-Cluster-Managementoberfläche an, und führen Sie den aus `iscsi show` Befehl.
 +
-image:express-direct-attach-aff220-deploy_image42.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image42.png[""]
 
 . Geben Sie die IP-Adresse von ein `iscsi_lif_02a` Für das Feld IPv4-Adresse.
 +
-image:express-direct-attach-aff220-deploy_image43.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image43.png[""]
 
 . Klicken Sie auf OK, um das statische iSCSI-Ziel hinzuzufügen.
 . Klicken Sie Auf Hinzufügen.
 . Geben Sie den iSCSI-Zielnamen ein.
 . Geben Sie die IP-Adresse von ein `iscsi_lif_01a` Für das Feld IPv4-Adresse.
 +
-image:express-direct-attach-aff220-deploy_image44.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image44.png[""]
 
 . Klicken Sie auf OK, um das statische iSCSI-Ziel hinzuzufügen.
 +
-image:express-direct-attach-aff220-deploy_image45.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image45.png[""]
 
 +
 
@@ -2612,22 +2612,22 @@ NOTE: Die Ziel-IPs wurden mit Storage Node 02 IP zuerst und Storage Node 01 IP S
 . Klicken Sie Auf Hinzufügen.
 . Geben Sie den iSCSI-Zielnamen ein. Um den iSCSI-Zielnamen Infra-SVM zu erhalten, melden Sie sich bei der Storage-Cluster-Managementoberfläche an, und führen Sie den aus `iscsi show` Befehl.
 +
-image:express-direct-attach-aff220-deploy_image42.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image42.png[""]
 
 . Geben Sie die IP-Adresse von ein `iscsi_lif_02b` Für das Feld IPv4-Adresse.
 +
-image:express-direct-attach-aff220-deploy_image46.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image46.png[""]
 
 . Klicken Sie auf OK, um das statische iSCSI-Ziel hinzuzufügen.
 . Klicken Sie Auf Hinzufügen.
 . Geben Sie den iSCSI-Zielnamen ein.
 . Geben Sie die IP-Adresse von ein `iscsi_lif_01b` Für das Feld IPv4-Adresse.
 +
-image:express-direct-attach-aff220-deploy_image47.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image47.png[""]
 
 . Klicken Sie auf OK, um das statische iSCSI-Ziel hinzuzufügen.
 +
-image:express-direct-attach-aff220-deploy_image48.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image48.png[""]
 
 . Klicken Sie Auf Weiter.
 
@@ -2640,7 +2640,7 @@ Gehen Sie wie folgt vor, um die Wartungsrichtlinie zu konfigurieren:
 
 . Ändern Sie die Wartungsrichtlinie in den Standardwert.
 +
-image:express-direct-attach-aff220-deploy_image49.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image49.png[""]
 
 . Klicken Sie Auf Weiter.
 
@@ -2655,7 +2655,7 @@ Gehen Sie wie folgt vor, um die Serverzuweisung zu konfigurieren:
 . Wählen Sie nach unten als Betriebszustand aus, der angewendet werden soll, wenn das Profil mit dem Server verknüpft ist.
 . Erweitern Sie die Firmware-Verwaltung unten auf der Seite und wählen Sie die Standardrichtlinie aus.
 +
-image:express-direct-attach-aff220-deploy_image50.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image50.png[""]
 
 . Klicken Sie Auf Weiter.
 
@@ -2669,7 +2669,7 @@ Gehen Sie wie folgt vor, um die Betriebsrichtlinien zu konfigurieren:
 . Wählen Sie aus der Dropdown-Liste BIOS-Richtlinie VM-Host aus.
 . Erweitern Sie die Konfiguration der Energiesteuerungsrichtlinie, und wählen Sie in der Dropdown-Liste Stromsteuerungsrichtlinie die Option Keine Einschaltgrenze aus.
 +
-image:express-direct-attach-aff220-deploy_image51.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image51.png[""]
 
 . Klicken Sie auf Fertig stellen, um die Service-Profilvorlage zu erstellen.
 . Klicken Sie in der Bestätigungsmeldung auf OK.
@@ -2708,7 +2708,7 @@ Um Service-Profile aus der Vorlage für Service-Profile zu erstellen, gehen Sie 
 .. Wählen Sie root als Organisation aus.
 .. Klicken Sie auf OK, um die Serviceprofile zu erstellen.
 +
-image:express-direct-attach-aff220-deploy_image52.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image52.png[""]
 
 
 
@@ -2867,7 +2867,7 @@ Gehen Sie wie folgt vor, um jeden ESXi-Host mit Zugriff auf das Managementnetzwe
 . Stellen Sie sicher, dass die Nummern im Feld Hardwarebezeichnung mit den Nummern im Feld Gerätename übereinstimmen.
 . Drücken Sie Die Eingabetaste.
 +
-image:express-direct-attach-aff220-deploy_image53.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image53.png[""]
 
 . Wählen Sie die Option VLAN (Optional) aus, und drücken Sie die Eingabetaste.
 . Geben Sie das ein `<ib-mgmt-vlan-id>` Und drücken Sie die Eingabetaste.
@@ -3054,11 +3054,11 @@ NOTE: Um IP-Adressenkonflikte zu vermeiden, sollten die Cisco UCS iSCSI IP-Pool-
 . Klicken Sie auf Erstellen .
 . Wählen Sie die Registerkarte Virtuelle Switches aus, und wählen Sie dann vSwitch0 aus. Die Eigenschaften für vSwitch0 VMkernel NICs sollten dem folgenden Beispiel ähnlich sein:
 +
-image:express-direct-attach-aff220-deploy_image54.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image54.png[""]
 
 . Wählen Sie die Registerkarte VMkernel NICs aus, um die konfigurierten virtuellen Adapter zu bestätigen. Die aufgeführten Adapter sollten dem folgenden Beispiel ähnlich sein:
 +
-image:express-direct-attach-aff220-deploy_image55.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image55.png[""]
 
 
 
@@ -3074,14 +3074,14 @@ So richten Sie iSCSI-Multipathing auf den ESXi-Host-VM-Host-Infra-01 und VM-Host
 . Klicken Sie im mittleren Fensterbereich auf Adapter.
 . Wählen Sie den iSCSI-Software-Adapter aus, und klicken Sie auf iSCSI konfigurieren.
 +
-image:express-direct-attach-aff220-deploy_image56.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image56.png[""]
 
 . Klicken Sie unter dynamische Ziele auf dynamische Ziele hinzufügen.
 . Geben Sie die IP-Adresse von ein `iSCSI_lif01a`.
 . Wiederholen Sie die Eingabe dieser IP-Adressen: `iscsi_lif01b`, `iscsi_lif02a`, und `iscsi_lif02b`.
 . Klicken Sie Auf Konfiguration Speichern.
 +
-image:express-direct-attach-aff220-deploy_image57.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image57.png[""]
 
 +
 Um alle zu erhalten `iscsi_lif` IP-Adressen: Melden Sie sich bei der NetApp Storage Cluster Managementoberfläche an, und führen Sie den aus `network interface show` Befehl.
@@ -3105,7 +3105,7 @@ Um die erforderlichen Datastores zu mounten, führen Sie die folgenden Schritte 
 . Wählen Sie im mittleren Fensterbereich New Datastore aus, um einen neuen Datenspeicher hinzuzufügen.
 . Wählen Sie im Dialogfeld Neuer Datastore die Option Mount NFS Datastore aus, und klicken Sie auf Next.
 +
-image:express-direct-attach-aff220-deploy_image58.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image58.png[""]
 
 . Führen Sie auf der Seite „NFS Mount Details angeben“ die folgenden Schritte aus:
 +
@@ -3115,7 +3115,7 @@ image:express-direct-attach-aff220-deploy_image58.png["Fehler: Fehlendes Grafikb
 .. NFS-Version auf NFS 3 einstellen.
 .. Klicken Sie Auf Weiter.
 +
-image:express-direct-attach-aff220-deploy_image59.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image59.png[""]
 
 
 
@@ -3133,7 +3133,7 @@ image:express-direct-attach-aff220-deploy_image59.png["Fehler: Fehlendes Grafikb
 
 . Klicken Sie Auf Fertig Stellen. Der Datastore sollte nun in der Datastore-Liste angezeigt werden.
 +
-image:express-direct-attach-aff220-deploy_image60.jpeg["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image60.jpeg[""]
 
 . Mounten Sie beide Datenspeicher auf beiden ESXi Hosts.
 
@@ -3153,7 +3153,7 @@ Gehen Sie auf jedem Host wie folgt vor, um NTP auf den ESXi-Hosts zu konfigurier
 . Wählen Sie im Dropdown-Menü Start und Stopp mit Host aus.
 . Geben Sie die beiden Nexus-Switch-NTP-Adressen in das durch Komma getrennte NTP-Server-Feld ein.
 +
-image:express-direct-attach-aff220-deploy_image61.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image61.png[""]
 
 . Klicken Sie auf Speichern, um die Konfigurationsänderungen zu speichern.
 . Wählen Sie Actions > NTP Service > Start aus.
@@ -3174,11 +3174,11 @@ Führen Sie die folgenden Schritte auf jedem Host aus, um den Host-Swap auf den 
 
 . Klicken Sie im linken Navigationsbereich auf Verwalten. Wählen Sie im rechten Fensterbereich die Option System aus, und klicken Sie auf Tausch.
 +
-image:express-direct-attach-aff220-deploy_image62.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image62.png[""]
 
 . Klicken Sie Auf Einstellungen Bearbeiten. Wählen Sie `infra_swap` In den Datastore-Optionen.
 +
-image:express-direct-attach-aff220-deploy_image63.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image63.png[""]
 
 . Klicken Sie auf Speichern .
 
@@ -3221,7 +3221,7 @@ Gehen Sie wie folgt vor, um VCSA zu installieren:
 
 . Laden Sie die VCSA herunter. Öffnen Sie den Download-Link, indem Sie bei der Verwaltung des ESXi-Hosts auf das Symbol vCenter Server abrufen klicken.
 +
-image:express-direct-attach-aff220-deploy_image64.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image64.png[""]
 
 . Laden Sie die VCSA von der VMware-Website herunter.
 +
@@ -3235,26 +3235,26 @@ NOTE: Obwohl die installierbare Microsoft Windows vCenter Server unterstützt wi
 . Akzeptieren Sie die EULA.
 . Wählen Sie als Bereitstellungstyp den Embedded Platform Services Controller aus.
 +
-image:express-direct-attach-aff220-deploy_image65.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image65.png[""]
 
 +
 Falls erforderlich wird auch die Controller-Implementierung für externe Plattformen im Rahmen der FlexPod Express Lösung unterstützt.
 
 . Geben Sie auf der Seite Appliance Deployment Target die IP-Adresse eines bereitgestellten ESXi-Hosts, den Root-Benutzernamen und das Root-Passwort ein. Klicken Sie Auf Weiter.
 +
-image:express-direct-attach-aff220-deploy_image66.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image66.png[""]
 
 . Legen Sie die Appliance-VM fest, indem Sie VCSA als VM-Name und das Root-Passwort eingeben, das Sie für VCSA verwenden möchten. Klicken Sie Auf Weiter.
 +
-image:express-direct-attach-aff220-deploy_image67.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image67.png[""]
 
 . Wählen Sie die Implementierungsgröße aus, die am besten zu Ihrer Umgebung passt. Klicken Sie Auf Weiter.
 +
-image:express-direct-attach-aff220-deploy_image68.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image68.png[""]
 
 . Wählen Sie die aus `infra_datastore_1` Datenspeicher: Klicken Sie Auf Weiter.
 +
-image:express-direct-attach-aff220-deploy_image69.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image69.png[""]
 
 . Geben Sie auf der Seite Netzwerkeinstellungen konfigurieren die folgenden Informationen ein, und klicken Sie auf Weiter.
 +
@@ -3265,7 +3265,7 @@ image:express-direct-attach-aff220-deploy_image69.png["Fehler: Fehlendes Grafikb
 .. Geben Sie das Standard-Gateway ein.
 .. Geben Sie den DNS-Server ein.
 +
-image:express-direct-attach-aff220-deploy_image70.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image70.png[""]
 
 
 
@@ -3275,7 +3275,7 @@ Die VCSA wird jetzt installiert. Dieser Vorgang dauert mehrere Minuten.
 
 . Wenn Phase 1 abgeschlossen ist, wird eine Meldung angezeigt, die angibt, dass sie abgeschlossen ist. Klicken Sie auf Weiter, um die Konfiguration von Phase 2 zu beginnen.
 +
-image:express-direct-attach-aff220-deploy_image71.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image71.png[""]
 
 . Klicken Sie auf der Seite Einführung in Phase 2 auf Weiter.
 . Eingabe `\<<var_ntp_id>>` Für die NTP-Serveradresse. Sie können mehrere NTP-IP-Adressen eingeben.
@@ -3323,7 +3323,7 @@ Gehen Sie zum Erstellen eines vSphere-Clusters wie folgt vor:
 . Wählen Sie DRS und vSphere HA-Optionen aus und aktivieren Sie sie.
 . Klicken Sie auf OK.
 +
-image:express-direct-attach-aff220-deploy_image72.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image72.png[""]
 
 
 
@@ -3333,7 +3333,7 @@ Führen Sie die folgenden Schritte aus, um dem Cluster ESXi-Hosts hinzuzufügen:
 
 . Wählen Sie im Menü Aktionen des Clusters die Option Host hinzufügen aus.
 +
-image:express-direct-attach-aff220-deploy_image73.png["Fehler: Fehlendes Grafikbild"]
+image:express-direct-attach-aff220-deploy_image73.png[""]
 
 . Gehen Sie wie folgt vor, um dem Cluster einen ESXi-Host hinzuzufügen:
 +

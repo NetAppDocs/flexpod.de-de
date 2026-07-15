@@ -15,7 +15,7 @@ summary: Ransomware ist eine Art von Malware, die auf Kryptovirologie basiert, d
 
 Arvind Ramakrishnan, NetApp
 
-In Zusammenarbeit mit:image:cisco logo.png["Fehler: Fehlendes Grafikbild"]
+In Partnerschaft mit: image:cisco logo.png[""]
 
 [role="lead"]
 Um Ransomware zu verstehen, ist es notwendig, zunächst ein paar wichtige Punkte zur Kryptografie zu verstehen. Kryptografische Methoden ermöglichen die Verschlüsselung von Daten mit einem gemeinsamen geheimen Schlüssel (symmetrische Schlüsselverschlüsselung) oder einem Schlüsselpaar (asymmetrische Verschlüsselungsschlüsselverschlüsselung). Einer dieser Schlüssel ist ein weit verbreiteter öffentlicher Schlüssel und der andere ist ein nicht offenbarter privater Schlüssel.

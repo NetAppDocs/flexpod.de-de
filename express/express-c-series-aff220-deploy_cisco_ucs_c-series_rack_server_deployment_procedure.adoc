@@ -48,7 +48,7 @@ NOTE: Die CIMC-Version, die in dieser Validierung verwendet wird, ist CIMC 3.1.3
 . Schließen Sie den Cisco Keyboard-, Video- und Mausdongle (KVM) (im Lieferumfang des Servers enthalten) an den KVM-Port an der Vorderseite des Servers an. Schließen Sie einen VGA-Monitor und eine USB-Tastatur an die entsprechenden KVM-Dongle-Ports an.
 . Schalten Sie den Server ein, und drücken Sie F8, wenn Sie dazu aufgefordert werden, die CIMC-Konfiguration einzugeben.
 +
-image:express-c-series-aff220-deploy_image8.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image8.png[""]
 
 . Legen Sie im CIMC-Konfigurationsprogramm die folgenden Optionen fest:
 +
@@ -71,7 +71,7 @@ image:express-c-series-aff220-deploy_image8.png["Fehler: Fehlendes Grafikbild"]
 *** NIC-Redundanz
 *** Keine: [X]
 +
-image:express-c-series-aff220-deploy_image9.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image9.png[""]
 
 
 
@@ -93,7 +93,7 @@ image:express-c-series-aff220-deploy_image9.png["Fehler: Fehlendes Grafikbild"]
 *** Port-Eigenschaften: Standardwerte verwenden.
 *** Portprofile: Lassen Sie das Löschen.
 +
-image:express-c-series-aff220-deploy_image10.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image10.png[""]
 
 
 
@@ -167,7 +167,7 @@ Gehen Sie wie folgt vor, um die Konfiguration der Startreihenfolge festzulegen:
 . Klicken Sie im Browser-Fenster der CIMC-Schnittstelle auf die Registerkarte Server, und wählen Sie BIOS aus.
 . Klicken Sie auf Startreihenfolge konfigurieren, und klicken Sie dann auf OK.
 +
-image:express-c-series-aff220-deploy_image11.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image11.png[""]
 
 . Konfigurieren Sie die folgenden Geräte, indem Sie unter Startgerät hinzufügen auf das Gerät klicken und zur Registerkarte Erweitert wechseln.
 +
@@ -202,7 +202,7 @@ image:express-c-series-aff220-deploy_image11.png["Fehler: Fehlendes Grafikbild"]
 . Klicken Sie Auf Gerät Hinzufügen.
 . Klicken Sie auf Änderungen speichern und dann auf Schließen.
 +
-image:express-c-series-aff220-deploy_image12.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image12.png[""]
 
 . Starten Sie den Server neu, um mit Ihrer neuen Startreihenfolge zu starten.
 
@@ -219,7 +219,7 @@ Führen Sie die folgenden Schritte aus, wenn Ihr C-Series-Server einen RAID-Cont
 . Blättern Sie nach unten zu PCIe Slot:HBA Option ROM.
 . Wenn der Wert nicht bereits deaktiviert ist, setzen Sie ihn auf deaktiviert.
 +
-image:express-c-series-aff220-deploy_image13.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image13.png[""]
 
 
 
@@ -244,7 +244,7 @@ Die folgenden Konfigurationsschritte gelten für den Cisco VIC 1387 für iSCSI B
 ** VLAN-Modus: TRUNK
 ** PXE-Start aktivieren: Prüfen
 +
-image:express-c-series-aff220-deploy_image14.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image14.png[""]
 
 
 
@@ -258,7 +258,7 @@ image:express-c-series-aff220-deploy_image14.png["Fehler: Fehlendes Grafikbild"]
 
 . Wählen Sie die vNIC aus `iSCSI-vNIC-A` Auf der linken Seite.
 +
-image:express-c-series-aff220-deploy_image15.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image15.png[""]
 
 . Geben Sie unter iSCSI Boot Properties die Initiator-Details ein:
 +
@@ -267,7 +267,7 @@ image:express-c-series-aff220-deploy_image15.png["Fehler: Fehlendes Grafikbild"]
 ** Subnetzmaske: \<<var_esxi_hostA_iscsiA_maska>>
 ** Gateway: \<<var_esxi_hostA_iscsiA_Gateway>>
 +
-image:express-c-series-aff220-deploy_image16.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image16.png[""]
 
 
 
@@ -291,7 +291,7 @@ Sie können die Speicher-IQN-Nummer abrufen, indem Sie den ausführen `vserver i
 NOTE: Achten Sie darauf, die IQN-Namen für jede vNIC aufzuzeichnen. Sie brauchen sie für einen späteren Schritt.
 
 +
-image:express-c-series-aff220-deploy_image17.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image17.png[""]
 
 
 
@@ -339,16 +339,16 @@ NOTE: Achten Sie darauf, die IQN-Namen für jede vNIC aufzuzeichnen. Sie brauche
 . Klicken Sie im CIMC-Schnittstellenbrowser-Fenster auf Inventar und anschließend im rechten Fensterbereich auf Cisco VIC-Adapter.
 . Wählen Sie unter Adapterkarten Cisco UCS VIC 1387 aus und wählen Sie dann die darunter liegende vNICs aus.
 +
-image:express-c-series-aff220-deploy_image18.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image18.png[""]
 
 . Wählen Sie eth0 aus, und klicken Sie auf Eigenschaften.
 . Setzen Sie die MTU auf 9000. Klicken Sie Auf Änderungen Speichern.
 +
-image:express-c-series-aff220-deploy_image19.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image19.png[""]
 
 . Wiederholen Sie die Schritte 3 und 4 für eth1. Überprüfen Sie, ob der Uplink-Port auf festgelegt ist `1` Für eth1.
 +
-image:express-c-series-aff220-deploy_image20.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-aff220-deploy_image20.png[""]
 
 +
 

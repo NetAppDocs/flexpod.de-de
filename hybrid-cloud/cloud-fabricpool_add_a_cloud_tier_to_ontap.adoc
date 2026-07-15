@@ -45,7 +45,7 @@ Geben Sie im Feld Container-Name den Bucket- oder Containernamen des Objektspeic
 . Klicken Sie auf Save and Attach Aggregates.
 
 
-image:cloud-fabricpool_image13.png["Fehler: Fehlendes Grafikbild"]
+image:cloud-fabricpool_image13.png[""]
 
 
 

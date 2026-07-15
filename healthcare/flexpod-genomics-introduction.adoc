@@ -62,6 +62,6 @@ Dieses Dokument richtet sich an technische Leiter im Gesundheitswesen sowie an L
 
 Ein typisches Krankenhaus verfügt über eine Reihe an IT-Systemen. Der Großteil solcher Systeme wird bei einem Anbieter gekauft, während nur sehr wenige von dem Krankenhaussystem im Haus gebaut werden. Aus diesem Grund muss das Kliniksystem eine diverse Infrastrukturumgebung in seinen Datacentern managen. Wenn Krankenhäuser ihre Systeme in einer konvergenten Infrastrukturplattform wie FlexPod zusammenführen, können Unternehmen ihren Datacenter-Betrieb standardisieren. Mit FlexPod können Gesundheitseinrichtungen klinische und nicht klinische Systeme auf derselben Plattform implementieren und so den Datacenter-Betrieb vereinheitlichen.
 
-image:flexpod-genomics-image2.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-genomics-image2.png[""]
 
 link:flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html["Der nächste Schritt: Vorteile der Implementierung genomischer Workloads auf FlexPod."]

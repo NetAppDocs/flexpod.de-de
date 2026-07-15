@@ -35,7 +35,7 @@ Gehen Sie zum Erstellen eines vSphere-Clusters wie folgt vor:
 . Aktivieren Sie DR und vSphere HA, indem Sie die Kontrollkästchen auswählen.
 . Klicken Sie auf OK.
 +
-image:express-c-series-c190-deploy_image45.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image45.png[""]
 
 
 
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um dem Cluster die ESXi-Hosts hinzuzufü
 
 . Klicken Sie mit der rechten Maustaste auf das Cluster, und wählen Sie Host hinzufügen aus.
 +
-image:express-c-series-c190-deploy_image46.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image46.png[""]
 
 . Gehen Sie wie folgt vor, um dem Cluster einen ESXi-Host hinzuzufügen:
 +
@@ -84,7 +84,7 @@ Führen Sie die folgenden Schritte aus, um coredump auf den ESXi-Hosts zu konfig
 . Klicken Sie auf Services und wählen Sie VMware vSphere ESXI Dump Collector.
 . Starten Sie den VMware vSphere ESXI Dump Collector Service.
 +
-image:express-c-series-c190-deploy_image47.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image47.png[""]
 
 . Stellen Sie mithilfe von SSH eine Verbindung zum Management-IP-ESXi-Host her, geben Sie Root für den Benutzernamen ein und geben Sie das Root-Passwort ein.
 . Führen Sie folgende Befehle aus:
@@ -96,7 +96,7 @@ esxcli system coredump network check
 ....
 . Die Nachricht `Verified the configured netdump server is running` Wird angezeigt, nachdem Sie den letzten Befehl eingegeben haben.
 +
-image:express-c-series-c190-deploy_image48.png["Fehler: Fehlendes Grafikbild"]
+image:express-c-series-c190-deploy_image48.png[""]
 
 +
 

@@ -44,7 +44,7 @@ NVE ist eine softwarebasierte Lösung zur Verschlüsselung von Daten im Ruhezust
 
 So funktioniert der Prozess: Wenn Daten verschlüsselt werden, wird er an das kryptografische Modul gesendet, das nach FIPS 140-2 Level 1 zertifiziert ist. Das kryptografische Modul verschlüsselt die Daten und sendet sie zurück an die RAID-Schicht. Die verschlüsselten Daten werden dann an die Festplatte gesendet. Somit sind die Daten mit der Kombination von NVE und NAE bereits auf dem Weg zur Festplatte verschlüsselt. Lesezugriffe folgen dem umgekehrten Pfad. Mit anderen Worten: Die Daten lassen die Festplatte verschlüsselt, werden an RAID gesendet, durch das kryptografische Modul entschlüsselt und dann den Rest des Stacks, wie in der folgenden Abbildung dargestellt, hochgeschickt.
 
-image:flexpod-fips-image3.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-fips-image3.png[""]
 
 
 NOTE: NVE kommt mit einem softwarebasierten kryptografischen Modul zum Einsatz, das nach FIPS 140-2 Level 1 zertifiziert ist.
@@ -108,7 +108,7 @@ NSE nutzt SEDs, um die Datenverschlüsselung durch einen hardwarebeschleunigten 
 
 NSE kann mit Self-Encrypting Drives nach FIPS 140-2 Level 2 verwendet werden, um Compliance und die Rückgabe von Ersatzteilen zu ermöglichen. Dazu wird der Schutz von Daten im Ruhezustand durch transparente AES-256-Bit-Festplattenverschlüsselung ermöglicht. Die Laufwerke führen alle Datenverschlüsselungsvorgänge intern aus, wie in der folgenden Abbildung dargestellt, einschließlich Schlüsselgenerierung. Um unbefugten Zugriff auf die Daten zu verhindern, muss sich das Speichersystem mit dem Laufwerk authentifizieren und einen Authentifizierungsschlüssel verwenden, der bei der ersten Verwendung des Laufwerks eingerichtet wurde.
 
-image:flexpod-fips-image4.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-fips-image4.png[""]
 
 
 NOTE: NSE verwendet Hardware-Verschlüsselung auf jedem Laufwerk, das nach FIPS 140-2 Level 2 zertifiziert ist.
@@ -122,7 +122,7 @@ Weitere Informationen zu NSE finden Sie unter https://www.netapp.com/pdf.html?it
 
 Der FIPS 140-2-Standard gilt für das kryptografische Modul gemäß der Definition der Grenze, wie in der folgenden Abbildung dargestellt.
 
-image:flexpod-fips-image5.png["Fehler: Fehlendes Grafikbild"]
+image:flexpod-fips-image5.png[""]
 
 Der Schlüsselmanager verfolgt alle von ONTAP verwendeten Datenschlüssel. NSE SEDs verwenden den Schlüsselmanager, um die Authentifizierungsschlüssel für NSE SEDs festzulegen. Bei Verwendung des Schlüsselmanagers besteht die kombinierte NVE und NAE-Lösung aus einem softwarebasierten kryptografischen Modul und einem Schlüsselmanager. NVE verwendet für jedes Volume einen eindeutigen XTS-AES 256-Datenverschlüsselung, der vom Schlüsselmanager gespeichert wird. Der für ein Daten-Volume verwendete Schlüssel liegt nur bei dem Daten-Volume in diesem Cluster und wird bei der Erstellung des verschlüsselten Volume generiert. Auf ähnliche Weise verwendet ein NAE-Volume eindeutige XTS-AES 256-Datenschlüssel pro Aggregat, das ebenfalls vom Schlüsselmanager gespeichert wird. NAE-Schlüssel werden erzeugt, wenn das verschlüsselte Aggregat erstellt wird. ONTAP generiert keine Schlüssel vorab, verwendet sie nicht oder zeigt sie in Klartext an. Sie werden vom Schlüsselmanager gespeichert und geschützt.
 

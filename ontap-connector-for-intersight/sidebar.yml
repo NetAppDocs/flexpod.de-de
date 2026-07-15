@@ -4,7 +4,6 @@ title: Cisco Intersight mit NetApp ONTAP Storage
 entries:
 - title: Einführung
   url: "/ontap-connector-for-intersight/index.html"
-  type: solutions
 - title: Was ist neu
   url: "/ontap-connector-for-intersight/ci-qsg_new.html"
 - title: Anforderungen
