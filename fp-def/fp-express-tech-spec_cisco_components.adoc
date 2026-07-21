@@ -128,7 +128,7 @@ Die folgenden Tabellen führen die Optionen für das Cisco Unified Edge Chassis 
 [[cisco-ucs-c-series-rack-server-options]]
 == Rack Server-Optionen für Cisco UCS C-Serie
 
-Cisco UCS C-Series Rack-Server sind in ein- und zwei-HE-Varianten (Rack Units) mit verschiedenen CPU-, Speicher- und I/O-Optionen erhältlich. Die in der folgenden Tabelle aufgeführten Teilenummern beziehen sich auf die Basisserver. Sie beinhalten keine CPUs, Speicher, Festplatten oder Peripheral Component Interconnect Express (PCIe)-Karten. Mehrere Konfigurationsoptionen sind verfügbar und werden in der FlexPod-Architektur unterstützt.
+Cisco UCS C-Series Rack Server sind in Varianten mit einer, zwei und vier Höheneinheiten (HE) erhältlich, mit verschiedenen CPU-, Speicher- und I/O-Optionen. Die in der folgenden Tabelle aufgeführten Teilenummern beziehen sich auf die Basisserver. Sie beinhalten keine CPUs, Speicher, Laufwerke oder Peripheral Component Interconnect Express (PCIe)-Karten. Mehrere Konfigurationsoptionen sind verfügbar und werden in der FlexPod Architektur unterstützt.
 
 In der folgenden Tabelle werden die Optionen für Cisco UCS Rack Server der C-Serie aufgeführt.
 
