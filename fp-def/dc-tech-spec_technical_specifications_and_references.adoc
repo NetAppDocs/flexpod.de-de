@@ -451,7 +451,7 @@ Alle aktuellen Modelle der NetApp AFF ASA A-Series Storage Controller werden zur
 [[netapp-disk-shelves]]
 === NetApp Platten-Shelves
 
-Die technischen Spezifikationen für NetApp Platten-Shelves umfassen die Größe des Formfaktor, die Anzahl der Laufwerke pro Gehäuse und die Shelf-I/O-Module. Diese Dokumentation finden Sie in der folgenden Tabelle. Weitere Informationen finden Sie im http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Technische Spezifikationen zu NetApp Platten-Shelfs und Storage-Medien"^] Und das https://hwu.netapp.com/["NetApp Hardware Universe"^].
+Die technischen Spezifikationen für NetApp Festplattengehäuse umfassen den Formfaktor, die Anzahl der Laufwerke pro Gehäuse und die Shelf-I/O-Module; diese Dokumentation befindet sich in der folgenden Tabelle. Weitere Informationen sind in der  https://www.netapp.com/data-storage/disk-shelves-storage-media/["Technische Spezifikationen zu NetApp Platten-Shelfs und Storage-Medien"^] und der  https://hwu.netapp.com/["NetApp Hardware Universe"^] zu finden.
 
 |===
 | Komponente | Dokumentation des NetApp FAS/AFF Festplatten-Shelf 

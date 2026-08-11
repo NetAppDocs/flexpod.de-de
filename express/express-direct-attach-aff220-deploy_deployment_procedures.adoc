@@ -527,10 +527,10 @@ NOTE: Das System ist in einer Konfiguration mit zwei Nodes ohne Switches eingeri
 | DNS-Server-IP (Sie können mehrere eingeben) | \<<var_dns_Server_ip>> 
 
 
-| NTP-SERVER A-IP | << Switch-a-ntp-ip >> 
+| NTP-SERVER A-IP | +<< switch-a-ntp-ip >>+ 
 
 
-| NTP-SERVER B-IP | << Switch-b-ntp-ip >> 
+| NTP-SERVER B-IP | +<< switch-b-ntp-ip >>+ 
 |===
 
 

@@ -25,7 +25,7 @@ Die Stromanforderungen für FlexPod Express unterscheiden sich je nach Standort,
 
 Weitere Daten zur maximal benötigten Leistung und detaillierte Informationen zur Leistungsaufnahme sind in der link:https://docs.netapp.com/us-en/flexpod/fp-def/fp-express-tech-spec_technical_specifications_and_references.html["technische Spezifikationen"^] für jede Hardwarekomponente zu finden.
 
-Detaillierte Informationen zur Stromversorgung von Cisco UCS finden Sie im http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/["Cisco UCS – Stromversorgungsrechner"^].
+Detaillierte Cisco UCS Leistungsdaten sind unter  https://ucspowercalculator.cisco.com/["Cisco UCS – Stromversorgungsrechner"^] zu finden.
 
 Für NetApp-Stromversorgungsdaten von Speichercontrollern siehe  http://hwu.netapp.com/Controller/Index?platformTypeId=6780858["NetApp Hardware Universe"^]. Unter *Plattformen* die gewünschte Speicherplattform (zum Beispiel AFF A20) und die ONTAP-Version auswählen und anschließend auf *Ergebnisse anzeigen* klicken. Netzkabeldaten sind im Abschnitt *Unterstützte Netzkabel* aufgeführt. Einzelheiten zu Größe, Gewicht, Wattzahl usw. finden sich im Abschnitt *Größe, Gewicht, Geräuschentwicklung, Stromversorgung*.
 

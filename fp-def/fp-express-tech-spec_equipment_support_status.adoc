@@ -50,7 +50,7 @@ Cisco gibt auf den Cisco-Produktsupportseiten die Daten für das Verkaufsende un
 
 
 
-==== Informationen zum Verkaufs- und Supportende von Cisco UCS Servern
+==== Informationen zum End-of-Sale und End-of-Support für Cisco UCS Server
 
 * Navigieren Sie zu link:https://www.cisco.com/c/en/us/support/eol/index.html["Cisco Produkt-Supportseite"].
 * Unter *Produktkategorien* die Option *Server – UCS und HCI* auswählen und auf den jeweiligen Servertyp klicken (Beispiel: *UCS C-Series Rack Servers*). Das spezifische Modell suchen (Beispiel: *UCS C220 M5*) und die End-of-Sale- sowie End-of-Support-Daten beachten.
@@ -58,7 +58,7 @@ Cisco gibt auf den Cisco-Produktsupportseiten die Daten für das Verkaufsende un
 
 
 
-==== Informationen zum Verkaufs- und Supportende von Cisco Nexus Switches
+==== Informationen zum Verkaufs- und Supportende für Cisco Nexus Switches
 
 * Navigieren Sie zu link:https://www.cisco.com/c/en/us/support/eol/index.html["Cisco Produkt-Supportseite"].
 * Unter *Produktkategorien* *Switches* auswählen und auf den jeweiligen Switch-Typ klicken (Beispiel: *Nexus 9000*). Das spezifische Modell suchen (Beispiel: *9236C*) und die End-of-Sale- sowie End-of-Support-Daten beachten.

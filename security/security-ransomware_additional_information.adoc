@@ -15,28 +15,10 @@ summary: Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr ü
 
 Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die in diesem Dokument beschriebenen Informationen zu erfahren:
 
-* NetApp Snapshot Software
-+
-https://www.netapp.com/us/products/platform-os/snapshot.aspx["https://www.netapp.com/us/products/platform-os/snapshot.aspx"^]
-
-* SnapCenter Backup-Management
-+
-https://www.netapp.com/us/products/backup-recovery/snapcenter-backup-management.aspx["https://www.netapp.com/us/products/backup-recovery/snapcenter-backup-management.aspx"^]
-
-* SnapLock Datenkonformität
-+
-https://www.netapp.com/us/products/backup-recovery/snaplock-compliance.aspx["https://www.netapp.com/us/products/backup-recovery/snaplock-compliance.aspx"^]
-
-* NetApp Produktdokumentation
-+
-https://www.netapp.com/us/documentation/index.aspx["https://www.netapp.com/us/documentation/index.aspx"^]
-
-* Cisco Advanced Malware Protection (AMP)
-+
-https://www.cisco.com/c/en/us/products/security/advanced-malware-protection/index.html["https://www.cisco.com/c/en/us/products/security/advanced-malware-protection/index.html"^]
-
-* Cisco Stealthwatch
-+
-https://www.cisco.com/c/en_in/products/security/stealthwatch/index.html["https://www.cisco.com/c/en_in/products/security/stealthwatch/index.html"^]
-
+* https://docs.netapp.com/us-en/ontap/concepts/snapshot-copies-concept.html["NetApp Snapshot Software"^]
+* https://www.netapp.com/snapcenter/["SnapCenter Backup-Management"^]
+* https://www.netapp.com/ontap-data-management-software/snaplock/["SnapLock Datenkonformität"^]
+* https://docs.netapp.com/["NetApp Produktdokumentation"^]
+* https://www.cisco.com/c/en/us/products/security/advanced-malware-protection/index.html["Cisco Advanced Malware Protection (AMP)"^]
+* https://www.cisco.com/c/en_in/products/security/stealthwatch/index.html["Cisco Stealthwatch"^]
 

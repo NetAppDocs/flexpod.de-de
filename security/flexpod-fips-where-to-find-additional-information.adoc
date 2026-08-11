@@ -18,106 +18,31 @@ link:flexpod-fips-conclusion.html["Zurück: Schlussfolgerung."]
 [role="lead"]
 Sehen Sie sich die folgenden Dokumente und Websites an, um mehr über die in diesem Dokument beschriebenen Daten zu erfahren:
 
-* Cisco MDS 9000-Produktreihe NX-OS Security Configuration Guide
-+
-https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/8_x/config/security/cisco_mds9000_security_config_guide_8x/configuring_fips.html#task_1188151[]
-
-* Cisco Nexus 9000 Series NX-OS Security Configuration Guide, Release 9.3(x)
-+
-https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/security/configuration/guide/b-cisco-nexus-9000-nx-os-security-configuration-guide-93x/m-configuring-fips.html[]
-
-* NetApp and Federal Information Processing Standard (FIPS) Veröffentlichung 140-2
-+
-https://www.netapp.com/company/trust-center/compliance/fips-140-2/[]
-
-* FIPS 140-2
-+
-https://fieldportal.netapp.com/s/article/tr4781-fips-1402-1694000809616[]
-
-* NetApp Leitfaden zur Härtung von ONTAP 9
-+
-https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf[]
-
-* NetApp Encryption Power Guide
-+
-https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-nve%2Fhome.html[]
-
-* Datenblatt zu NVE und NAE
-+
-https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf[]
-
-* NSE Datenblatt
-+
-https://www.netapp.com/pdf.html?item=/media/7563-ds-3213-en.pdf[]
-
-* ONTAP 9 Dokumentationszentrum
-+
-http://docs.netapp.com[]
-
-* NetApp and Federal Information Processing Standard (FIPS) Veröffentlichung 140-2
-+
-https://www.netapp.com/company/trust-center/compliance/fips-140-2/[]
-
-* Cisco und FIPS 140-2 Compliance
-+
-https://www.cisco.com/c/en/us/solutions/industries/government/global-government-certifications/fips-140.html[]
-
-* NetApp Cryptographic Security Module
-+
-https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2648.pdf[]
-
-* Cyber-Sicherheitsverfahren für mittelgroße und große Organisationen im Gesundheitswesen
-+
-https://hhscyber.hhs.gov/Documents/HICP/tech-vol2-508.pdf[]
-
-* Validierungsprogramm für kryptografische Module (CMVP). NIST CMVP Datenbank für validierte kryptografische Module, einschließlich Cisco Angeboten.
-+
-https://csrc.nist.gov/projects/cryptographic-module-validation-program[]
-
-* NetApp Storage Encryption, NVMe Self-Encrypting Drives, NetApp Volume Encryption und NetApp Aggregate Encryption
-+
-https://www.netapp.com/pdf.html?item=/media/17073-ds-3898.pdf[]
-
-* NetApp Volume Encryption und NetApp Aggregate Encryption
-+
-https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf[]
-
-* NetApp Storage Encryption
-+
-https://www.netapp.com/pdf.html?item=/media/7563-ds-3213-en.pdf[]
-
-* FlexPod für elektronische Krankenakten
-+
-https://www.netapp.com/pdf.html?item=/media/22199-tr-4881.pdf[]
-
-* Bild: Whitepaper „Data Now: Improving Performance in Epic EHR Environments with Cloud-Connected Flash Technology“
-+
-https://www.netapp.com/media/10809-cloud-connected-flash-wp.pdf[]
-
-* FlexPod Datacenter für Epic EHR-Infrastruktur
-+
-https://www.netapp.com/pdf.html?item=/media/17061-ds-3683.pdf[]
-
-* FlexPod Datacenter for Epic EHR Deployment Guide
-+
-https://www.netapp.com/media/10658-tr-4693.pdf[]
-
-* FlexPod für medizinische Bildverarbeitung
-+
-https://www.netapp.com/media/19793-tr-4865.pdf[]
-
-* KI im Gesundheitswesen
-+
-https://www.netapp.com/pdf.html?item=/media/7393-na-369pdf.pdf[]
-
-* FlexPod für das Gesundheitswesen vereinfachen den Wandel
-+
-https://flexpod.com/solutions/verticals/healthcare/[]
-
-* FlexPod von Cisco und NetApp
-+
-https://flexpod.com/[]
-
+* https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/8_x/config/security/cisco_mds9000_security_config_guide_8x/configuring_fips.html#task_1188151["Cisco MDS 9000-Produktreihe NX-OS Security Configuration Guide"^]
+* https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/security/configuration/guide/b-cisco-nexus-9000-nx-os-security-configuration-guide-93x/m-configuring-fips.html["Cisco Nexus 9000 Series NX-OS Security Configuration Guide, Release 9.3(x)"^]
+* https://www.netapp.com/company/trust-center/compliance/fips-140-2/["NetApp and Federal Information Processing Standard (FIPS) Veröffentlichung 140-2"^]
+* https://fieldportal.netapp.com/s/article/tr4781-fips-1402-1694000809616["FIPS 140-2"^]
+* https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["NetApp Leitfaden zur Härtung von ONTAP 9"^]
+* https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-nve%2Fhome.html["NetApp Encryption Power Guide"^]
+* https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["Datenblatt zu NVE und NAE"^]
+* https://www.netapp.com/pdf.html?item=/media/7563-ds-3213-en.pdf["NSE Datenblatt"^]
+* https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 Dokumentationszentrum"^]
+* https://www.netapp.com/company/trust-center/compliance/fips-140-2/["NetApp and Federal Information Processing Standard (FIPS) Veröffentlichung 140-2"^]
+* https://www.cisco.com/c/en/us/solutions/industries/government/global-government-certifications/fips-140.html["Cisco und FIPS 140-2 Compliance"^]
+* https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2648.pdf["NetApp Cryptographic Security Module"^]
+* https://hhscyber.hhs.gov/Documents/HICP/tech-vol2-508.pdf["Cyber-Sicherheitsverfahren für mittelgroße und große Organisationen im Gesundheitswesen"^]
+* https://csrc.nist.gov/projects/cryptographic-module-validation-program["Validierungsprogramm für kryptografische Module (CMVP). NIST CMVP Datenbank für validierte kryptografische Module, einschließlich Cisco Angeboten."^]
+* https://www.netapp.com/pdf.html?item=/media/17073-ds-3898.pdf["NetApp Storage Encryption, NVMe Self-Encrypting Drives, NetApp Volume Encryption und NetApp Aggregate Encryption"^]
+* https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption und NetApp Aggregate Encryption"^]
+* https://www.netapp.com/pdf.html?item=/media/7563-ds-3213-en.pdf["NetApp Storage Encryption"^]
+* https://www.netapp.com/pdf.html?item=/media/22199-tr-4881.pdf["FlexPod für elektronische Krankenakten"^]
+* https://www.netapp.com/media/10809-cloud-connected-flash-wp.pdf["Bild: Whitepaper „Data Now: Improving Performance in Epic EHR Environments with Cloud-Connected Flash Technology“"^]
+* https://www.netapp.com/pdf.html?item=/media/17061-ds-3683.pdf["FlexPod Datacenter für Epic EHR-Infrastruktur"^]
+* https://www.netapp.com/media/10658-tr-4693.pdf["FlexPod Datacenter for Epic EHR Deployment Guide"^]
+* https://www.netapp.com/media/19793-tr-4865.pdf["FlexPod für medizinische Bildverarbeitung"^]
+* https://www.netapp.com/pdf.html?item=/media/7393-na-369.pdf["KI im Gesundheitswesen"^]
+* https://flexpod.com/solutions/verticals/healthcare/["FlexPod für das Gesundheitswesen vereinfachen den Wandel"^]
+* https://flexpod.com/["FlexPod von Cisco und NetApp"^]
 
 
 

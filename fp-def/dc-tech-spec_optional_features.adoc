@@ -62,7 +62,7 @@ Die folgende Abbildung veranschaulicht das FlexPod Datacenter für FC mit Cisco 
 
 Weitere Informationen über die FlexPod Konfigurationen und Performance-Vorteile finden Sie unter https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html["Whitepaper: End-to-End-NVMe für FlexPod"^]
 
-Weitere Informationen zur ONTAP-Implementierung finden Sie unter https://www.netapp.com/pdf.html?item=/media/10681-tr4684pdf.pdf["TR-4684: Implementieren und Konfigurieren moderner SANs mit NVMe"^].
+Weitere Informationen zur ONTAP Implementierung sind unter  https://www.netapp.com/pdf.html?item=/media/10681-tr4684.pdf["TR-4684: Implementieren und Konfigurieren moderner SANs mit NVMe"^] zu finden.
 
 image:dc-tech-spec_image3.png[""]
 
