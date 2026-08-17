@@ -69,13 +69,13 @@ Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shel
 
 NOTE: Alle Festplatten-Shelfs und Festplatten-Teilenummern können bei Ihrem Vertriebsmitarbeiter angegeben werden.
 
-Weitere Informationen zu den unterstützten Laufwerken erhalten Sie über den Link NetApp Hardware Universe in der folgenden Tabelle, und wählen Sie dann unterstützte Laufwerke aus.
+Weitere Informationen zu den Festplattengehäusen und Speichermedien sind im Link „Technische Spezifikationen für Festplattengehäuse und Speichermedien“ in der folgenden Tabelle zu finden.
 
 |===
 | Festplatten-Shelf | Technische Spezifikationen 
 
 
-| DS224C .4+| http://www.netapp.com/us/products/storage-systems/disk-shelves-and-storage-media/disk-shelves-tech-specs.aspx["Festplatten-Shelfs und unterstützte Storage-Medien auf NetApp Hardware Universe"] 
+| DS224C .4+| https://www.netapp.com/data-storage/disk-shelves-storage-media/["Technische Spezifikationen für Festplattengehäuse und Speichermedien"] 
 
 
 | DS212C 
