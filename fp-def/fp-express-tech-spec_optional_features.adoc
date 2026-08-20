@@ -41,7 +41,7 @@ NetApp Storage-Controller können direkt an die Cisco UCS Fabric Interconnects o
 Die Lizenz- und Hardwareanforderungen lauten wie folgt:
 
 * Auf dem NetApp Storage Controller ist eine Protokolllizenz erforderlich.
-* Auf dem Server ist ein Cisco UCS Adapter (Initiator) erforderlich. Eine Liste der unterstützten Cisco UCS-Adapter finden Sie im NetApp http://mysupport.netapp.com/matrix["IMT"^].
+* Auf dem Server wird ein Cisco UCS-Adapter (Initiator) benötigt. Eine Liste der unterstützten Cisco UCS-Adapter befindet sich in der NetApp https://imt.netapp.com["IMT"^].
 * Auf dem NetApp Storage Controller ist ein Target-Adapter erforderlich.
 
 

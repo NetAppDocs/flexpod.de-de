@@ -153,7 +153,7 @@ Weitere Einzelheiten sind unter link:https://www.cisco.com/c/en/us/products/serv
 [[cisco-ucs-c-series-rack-servers]]
 == Rack-Server der Cisco UCS C-Serie
 
-Die technischen Spezifikationen der Cisco UCS C-Series Rack-Server umfassen Prozessorunterstützung, maximale Speicherkapazität, Anzahl der PCIe-Steckplätze und Formfaktor. Weitere Details zu kompatiblen UCS-Servermodellen sind in der  https://ucshcltool.cloudapps.cisco.com/public/["Cisco Hardware-Kompatibilität"^] Liste zu finden.
+Die technischen Spezifikationen der Cisco UCS C-Series Rack-Server umfassen Prozessorunterstützung, maximale Speicherkapazität, Anzahl der PCIe-Steckplätze und Formfaktor. Weitere Details zu kompatiblen UCS-Servermodellen sind in der  https://ucshcltool.cloudapps.cisco.com/public["Cisco Hardware-Kompatibilität"^] Liste zu finden.
 
 Die technischen Spezifikationen für Cisco UCS C-Series Rack Server sind in der folgenden Tabelle aufgeführt.
 
@@ -298,4 +298,4 @@ Die technischen Spezifikationen für NetApp Festplattengehäuse umfassen den For
 [[netapp-drives]]
 === NetApp Laufwerke
 
-Die technischen Spezifikationen für NetApp Laufwerke umfassen Formfaktor Größe, Festplattenkapazität, Festplatten-U/min, unterstützende Controller und ONTAP Versionsanforderungen. Diese Spezifikationen finden Sie im Abschnitt Laufwerke des http://hwu.netapp.com/Drives/Index?queryId=1581392["NetApp Hardware Universe"^].
+Die technischen Spezifikationen für NetApp Laufwerke umfassen Formfaktor, Speicherkapazität, Drehzahl, unterstützte Controller und ONTAP Versionsanforderungen. Diese Spezifikationen sind im Abschnitt „Laufwerke“ der  http://hwu.netapp.com["NetApp Hardware Universe"^] zu finden.
