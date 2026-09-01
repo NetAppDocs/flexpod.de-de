@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/dc-tech-spec_netapp_ontap.html 
-keywords: ontap, fas, aff, system, datacenter, techincal, specifications, flexpod, software 
-summary: Auf jedem NetApp FAS oder AFF System wird NetApp ONTAP Software installiert. FlexPod wurde mit der ONTAP Software validiert und bietet eine hochskalierbare Storage-Architektur, die unterbrechungsfreien Betrieb, unterbrechungsfreie Upgrades und eine Agile Data Infrastructure ermöglicht. 
+keywords: ontap, aff, asa, fas, afx, system, datacenter, technical, specifications, flexpod, software 
+summary: Die NetApp ONTAP Software ist auf jedem NetApp AFF, ASA, FAS und AFX System installiert. FlexPod ist mit ONTAP Software validiert und bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreien Betrieb, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht. 
 ---
 = NetApp ONTAP
 :hardbreaks:
@@ -14,6 +14,6 @@ summary: Auf jedem NetApp FAS oder AFF System wird NetApp ONTAP Software install
 
 
 [role="lead"]
-NetApp ONTAP Software ist auf allen NetApp FAS, AFF und AFF All SAN Array (ASA) Systemen installiert. FlexPod ist mit ONTAP Software validiert und bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreie Betriebsabläufe, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht.
+Die NetApp ONTAP Software ist das Betriebssystem, das auf AFF, ASA, FAS und AFX Speichersystemen läuft. ONTAP bietet eine hochskalierbare Speicherarchitektur, die unterbrechungsfreie Betriebsabläufe, unterbrechungsfreie Upgrades und eine agile Dateninfrastruktur ermöglicht. Mit dem ONTAP One Lizenzmodell sind alle Enterprise-Datendienste in einem einzigen Paket enthalten, was die Bereitstellung und Verwaltung vereinfacht und gleichzeitig vollen Zugriff auf erweiterte Funktionen bietet. ONTAP bietet robusten Datenschutz durch Technologien wie SnapMirror für Datenreplizierung und Disaster Recovery sowie SnapCenter für applikationskonsistente Sicherung und Wiederherstellung. Es sind zudem integrierte Sicherheitsfunktionen enthalten, darunter Autonomous Ransomware Protection und Verschlüsselung, um Daten vor modernen Bedrohungen zu schützen. Darüber hinaus ermöglicht ONTAP eine nahtlose Integration in Hybrid-Cloud-Umgebungen mit Funktionen wie SnapMirror Cloud und S3-basierter Replizierung, sodass Datenmobilität zwischen lokalen und Cloud-Umgebungen bei gleichzeitiger Wahrung von Konsistenz und Kontrolle möglich ist.
 
 Weitere Informationen zu ONTAP sind auf der  https://www.netapp.com/ontap-data-management-software/["ONTAP Data Management-Software"^] Produktseite verfügbar.

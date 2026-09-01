@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_equipment_support_status.html 
+keywords: equipment, support status, end of life, end of support, verification 
+summary: In diesem Abschnitt wird erläutert, wie der Supportstatus für Cisco- und NetApp-Komponenten überprüft werden kann. 
+---
+= Status der Geräteunterstützung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+FlexPod ist eine flexible Lösung, mit der Kunden sowohl vorhandene als auch neue Geräte, die derzeit von Cisco und NetApp verkauft werden, einsetzen können. Gelegentlich werden bestimmte Ausrüstung von Cisco und NetApp als Ende des Lebenszyklus bezeichnet.
+
+Auch wenn diese Modelle nicht mehr verfügbar sind, können Kunden, die vor dem Verkaufsende eines dieser Modelle gekauft haben, dieses System in einer FlexPod Konfiguration verwenden.
+
+Darüber hinaus werden FlexPod Datacenter-Architekturen regelmäßig aktualisiert, um die neueste Hardware und Software von Cisco und NetApp in die FlexPod Datacenter-Lösung einzubringen.
+
+Vor der Bereitstellung oder Wartung von FlexPod Datacenter-Ausrüstung ist zu überprüfen, ob alle Komponenten weiterhin vom Hersteller unterstützt werden. Dieser Abschnitt erläutert, wie Informationen zum Verkaufsende und Supportende für Cisco und NetApp Komponenten geprüft werden können.
+
+
+
+[[checking-netapp-equipment-support]]
+== Überprüfung der NetApp Geräteunterstützung
+
+NetApp bietet Supportinformationen über das Hardware Universe (HWU).
+
+Gehe zu link:https://hwu.netapp.com["NetApp Hardware Universe"^].
+
+* *Produkte > Plattformen* auswählen, dann die Plattform (Beispiel: *AFF A-Series*) und das Modell (Beispiel: *AFF A800*) wählen.
+
+
+
+NOTE: Um alle Plattformen anzuzeigen, muss der Filter *Plattformlebenszyklus* auf *Alle anzeigen* geändert werden. Standardmäßig ist *EOA ausblenden* ausgewählt.
+
+* Die *ONTAP*-Version auswählen und auf *Ergebnisse anzeigen* klicken.
+* Die Endtermine des Supports für Ihre Geräte sind im Abschnitt *Systemverfügbarkeit und Support* aufgeführt.
+
+
+
+
+[[checking-cisco-equipment-support]]
+== Überprüfung der Cisco-Geräteunterstützung
+
+Cisco gibt auf den Cisco-Produktsupportseiten die Daten für das Verkaufsende und das Supportende an.
+
+
+
+==== Informationen zum End-of-Sale und End-of-Support für Cisco UCS Server
+
+* Navigieren Sie zu link:https://www.cisco.com/c/en/us/support/eol/index.html["Cisco Produkt-Supportseite"].
+* Unter *Produktkategorien* die Option *Server – UCS und HCI* auswählen und auf den jeweiligen Servertyp klicken (Beispiel: *UCS C-Series Rack Servers*). Das spezifische Modell suchen (Beispiel: *UCS C220 M5*) und die End-of-Sale- und End-of-Support-Daten prüfen.
+
+
+
+
+==== Informationen zum Verkaufs- und Supportende für Cisco Nexus Switches
+
+* Navigieren Sie zu link:https://www.cisco.com/c/en/us/support/eol/index.html["Cisco Produkt-Supportseite"].
+* Unter *Produktkategorien* *Switches* auswählen und auf den jeweiligen Switch-Typ klicken (Beispiel: *Nexus 9000*). Das spezifische Modell suchen (Beispiel: *9236C*) und die End-of-Sale- sowie End-of-Support-Daten beachten.
+

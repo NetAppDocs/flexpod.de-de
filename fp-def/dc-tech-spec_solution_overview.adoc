@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/dc-tech-spec_solution_overview.html 
-keywords: flexpod, datacenter, technucal, specifications, platform, architecture 
-summary: 'Die FlexPod Plattform ist eine vorkonfigurierte, Best Practice Datacenter-Architektur, die auf Cisco Unified Computing System (Cisco UCS), der Cisco Nexus Switch-Produktfamilie und NetApp Storage Controllern (NetApp AFF oder FAS Systeme) basiert.' 
+keywords: flexpod, datacenter, technical specifications, platform, architecture 
+summary: 'Die FlexPod Plattform ist eine vorkonfigurierte, nach Best Practices entwickelte Rechenzentrumsarchitektur, die auf dem Cisco Unified Computing System (Cisco UCS), der Cisco Nexus Familie von Switches und NetApp Storage Controllern (NetApp AFF, ASA, FAS oder AFX Systemen) basiert.' 
 ---
-= TR-4036: Technische Spezifikationen zu FlexPod Datacenter
+= Technische Spezifikationen für FlexPod Datacenter
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -13,14 +13,12 @@ summary: 'Die FlexPod Plattform ist eine vorkonfigurierte, Best Practice Datacen
 :imagesdir: ../media/
 
 
-Arvind Ramakrishnan und Jyh-Sing Chen, NetApp
-
 [role="lead"]
-Die FlexPod Plattform ist eine vorkonfigurierte, Best Practice Datacenter-Architektur, die auf Cisco Unified Computing System (Cisco UCS), der Cisco Nexus Switch-Produktfamilie und NetApp Storage Controllern (AFF, ASA oder FAS Systeme) basiert.
+Die FlexPod Plattform ist eine vorkonfigurierte, nach Best Practices entwickelte Rechenzentrumsarchitektur, die auf dem Cisco Unified Computing System (Cisco UCS), der Cisco Nexus und MDS (für FC) Familie von Switches sowie NetApp Storage Controllern (AFF, ASA, FAS oder AFX Systeme) basiert.
 
 FlexPod ist eine geeignete Plattform für die Ausführung einer Vielzahl von Virtualisierungs-Hypervisoren sowie für Bare-Metal-Betriebssysteme und Enterprise Workloads. FlexPod bietet nicht nur eine Basiskonfiguration, sondern auch die Flexibilität, gemäß den Anforderungen vieler verschiedener Anwendungsfälle und Anwendungsfälle dimensioniert zu werden.
 
 
-NOTE: Informationen zur Bestellung einer vollständigen FlexPod-Konfiguration finden Sie im http://www.netapp.com/us/technology/flexpod["Konvergente FlexPod Infrastruktur"^] Seite auf netapp.com für die aktuelle Version dieser technischen Spezifikationen.
+NOTE: Bevor Sie eine komplette FlexPod Konfiguration bestellen, finden Sie auf der  http://www.netapp.com/us/technology/flexpod["NetApp FlexPod Homepage"^] Seite die aktuelle Version dieser technischen Spezifikationen.
 
 link:dc-tech-spec_flexpod_platforms.html["Als Nächstes: FlexPod Plattformen."]

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/dc-tech-spec_netapp_components.html 
-keywords: storage, controllers, cluster, interconnect, switches, drives, disk, shelves, licensing, options 
+keywords: storage, controllers, cluster, aff, asa, fas, afx, ontap, interconnect switches, drives, disk, shelves, licensing, options 
 summary: NetApp Storage-Controller bilden die Storage-Grundlage in der FlexPod-Architektur für Boot- und Applikationsdaten-Storage. NetApp Komponenten umfassen Storage Controller, Cluster Interconnect Switches, Laufwerke und Festplatten-Shelfs sowie Lizenzoptionen. 
 ---
 = Komponenten von NetApp
@@ -21,38 +21,100 @@ NetApp Storage-Controller bilden die Storage-Grundlage in der FlexPod-Architektu
 [[netapp-storage-controller-options]]
 == Optionen für NetApp Storage Controller
 
-In der FlexPod Architektur sind redundante NetApp FAS-, AFF- oder AFF ASA-Controller erforderlich. Die Controller verwenden ONTAP Software. Wenn die Speicher-Controller bestellt werden, kann die bevorzugte Softwareversion auf die Controller vorgeladen werden. Für ONTAP wird ein komplettes Cluster bestellt. Ein vollständiger Cluster umfasst zwei Storage Controller-Paare und einen Cluster Interconnect (Switch oder ohne Switch).
+Redundante NetApp FAS, AFF, ASA oder AFX Controller sind in der FlexPod Architektur erforderlich. Die Controller führen ONTAP Software aus. Bei der Bestellung der Storage Controller kann die bevorzugte Softwareversion auf den Controllern vorinstalliert werden. Für ONTAP wird ein kompletter Cluster bestellt. Ein kompletter Cluster umfasst ein Paar Storage Controller und eine Cluster-Interconnect (Switch oder Cluster ohne Switches).
+
+
+NOTE: Eine Cluster ohne Switches Konfiguration wird nur für eine Zwei-Node-Cluster-Konfiguration unterstützt. Cluster-Interconnect-Switches sind für Konfigurationen mit vier oder mehr Knoten erforderlich und für eine Zwei-Node-Cluster-Konfiguration optional.
 
 Abhängig von der ausgewählten Storage-Plattform stehen verschiedene Optionen und Konfigurationen zur Verfügung. Details zu diesen zusätzlichen Komponenten finden Sie von Ihrem Ansprechpartner.
 
 Die in der nachstehenden Tabelle aufgeführten Controller-Familien eignen sich für die Verwendung in einer FlexPod Datacenter-Lösung, da ihre Verbindung zu den Cisco Nexus-Switches nahtlos ist. Siehe https://hwu.netapp.com/["NetApp Hardware Universe"^] Für bestimmte Kompatibilitätsdetails zu jedem Controller-Modell.
 
 |===
-| Storage Controller-Produktfamilie | Technische Spezifikationen 
+| NetApp Speicherfamilie für FlexPod Datacenter | Modell | Technische Spezifikationen 
 
 
-| AFF A-Serie | https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62247["AFF A-Series - Dokumentation"] 
+.6+| AFF A-Serie | AFF A20 .6+| https://www.netapp.com/pdf.html?item=/media/7828-ds-3582-aff-a-series-ai-era.pdf["AFF A-Series Datenblatt"] 
 
 
-| AFF ASA A-SERIES | https://www.netapp.com/data-storage/san-storage-area-network/documentation/["AFF ASA A-Series - Dokumentation"] 
+| AFF A30 
 
 
-| FAS Serie | https://mysupport.netapp.com/documentation/productsatoz/index.html#F["Dokumentation der FAS Serie"] 
+| AFF A50 
+
+
+| AFF A70 
+
+
+| AFF A90 
+
+
+| AFF A1K 
+
+
+.3+| AFF C-Series | AFF C30 .3+| https://www.netapp.com/pdf.html?item=/media/81583-ds-4240-aff-c-series.pdf["AFF C-Series Datenblatt"] 
+
+
+| AFF C60 
+
+
+| AFF C80 
+
+
+.7+| ASA | ASA A20 .7+| https://www.netapp.com/pdf.html?item=/media/85736-ds-4254-asa.pdf["ASA Datenblatt"] 
+
+
+| ASA A30 
+
+
+| ASA C30 
+
+
+| ASA A50 
+
+
+| ASA A70 
+
+
+| ASA A90 
+
+
+| ASA A1K 
+
+
+.5+| FAS | FAS2750 .5+| https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf["FAS Datenblatt"] 
+
+
+| FAS2820 
+
+
+| FAS50 
+
+
+| FAS70 
+
+
+| FAS90 
+
+
+.2+| AFX | AFX 1K .2+| https://www.netapp.com/pdf.html?item=/media/142853-ds-3466-netapp-afx-datasheet.pdf["AFX Datenblatt"] 
+
+
+| AFX 2K 
 |===
 
 
 [[cluster-interconnect-switch-options]]
 == Optionen für Cluster-Interconnect-Switches
 
-In der folgenden Tabelle werden die verfügbaren Nexus Cluster Interconnect Switches für FlexPod Architekturen aufgeführt. Darüber hinaus unterstützt FlexPod alle von ONTAP unterstützten Cluster-Switches auch ohne Cisco Switches, sofern diese mit der zu implementierenden ONTAP Version kompatibel sind. Siehe https://hwu.netapp.com/["NetApp Hardware Universe"^] Weitere Kompatibilitätsangaben für bestimmte Switch-Modelle.
+Die folgende Tabelle listet die Nexus Cluster-Interconnect-Switches auf, die für FlexPod Architekturen verfügbar sind. FlexPod unterstützt alle von ONTAP unterstützten Cluster-Switches, einschließlich Nicht-Cisco-Switches, sofern sie mit der eingesetzten ONTAP-Version kompatibel sind.
+
+Eine Liste der unterstützten Cluster InterConnect Switches finden Sie unter https://hwu.netapp.com/["NetApp Hardware Universe"^], indem Sie auf *Products > Networking > Switches* klicken und anschließend *Cluster InterConnect Switch* auswählen. Es besteht die Möglichkeit, nach Herstellertyp zu filtern, einen Switch auszuwählen und auf *Show results* zu klicken, um detaillierte Informationen zum Switch anzuzeigen.
+
+Die folgende Tabelle listet die Cisco Switches auf, die als Cluster Interconnect Switch verwendet werden können.
 
 |===
-
-
 | Cluster-Interconnect-Switch | Technische Spezifikationen 
-
-
-| Cisco Nexus 3132Q-V | https://mysupport.netapp.com/documentation/docweb/index.html?productID=62377&language=en-US["NetApp Dokumentation: Cisco Nexus 3132Q-V Switches"] 
 
 
 | Cisco Nexus 9336C-FX2 | https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html["NetApp Dokumentation: Cisco Nexus 9336C-FX2 Switches"^] 
@@ -62,56 +124,66 @@ In der folgenden Tabelle werden die verfügbaren Nexus Cluster Interconnect Swit
 [[netapp-disk-shelf-and-drive-options]]
 == NetApp Platten-Shelf- und Laufwerksoptionen
 
-Für alle Storage Controller ist mindestens ein NetApp Platten-Shelf erforderlich.
-
-Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shelf verfügbar sind.
+Für Storage-Controller, die kein integriertes Disk-Shelf besitzen, ist mindestens ein NetApp Disk-Shelf erforderlich. Der ausgewählte NetApp Shelf-Typ bestimmt, welche Laufwerkstypen in diesem Shelf verfügbar sind.
 
 
 NOTE: Alle Festplatten-Shelfs und Festplatten-Teilenummern können bei Ihrem Vertriebsmitarbeiter angegeben werden.
 
-Weitere Informationen zu den Festplattengehäusen und Speichermedien sind im Link „Technische Spezifikationen für Festplattengehäuse und Speichermedien“ in der folgenden Tabelle zu finden.
+Die folgende Tabelle listet die NetApp Disk Shelf-Optionen für FlexPod Datacenter zusammen mit Links zu deren technischen Spezifikationen auf.
+
+Um die Liste der für Ihr Disk Shelf unterstützten Laufwerke zu erhalten, gehen Sie zu link:https://hwu.netapp.com/["NetApp Hardware Universe"^], wählen Sie unter *Products > Storage > Shelves* *ONTAP (AFF, ASA, FAS) oder ONTAP (AFX)* aus, wählen Sie die von Ihnen verwendete ONTAP-Version, dann den Shelf-Typ (zum Beispiel: *DS212C*) und klicken Sie auf *Show Results*. Mit einem Klick auf *Supported Drives* werden die für bestimmte Versionen von ONTAP und die Disk Shelves unterstützten Laufwerke angezeigt.
 
 |===
 | Festplatten-Shelf | Technische Spezifikationen 
 
 
-| DS224C .4+| https://www.netapp.com/data-storage/disk-shelves-storage-media/["Technische Spezifikationen für Festplattengehäuse und Speichermedien"] 
+| DS212C .6+| https://www.netapp.com/data-storage/disk-shelves-storage-media/["Festplattengehäuse und Speichermedien"] 
 
 
-| DS212C 
+| DS224C 
 
 
 | DS460C 
 
 
 | NS224 
+
+
+| NS224 mit NSM100B 
+
+
+| NX224 
 |===
 
 
 [[netapp-software-licensing-options]]
 == NetApp Software-Lizenzoptionen
 
-In der folgenden Tabelle sind die NetApp Software-Lizenzoptionen für die FlexPod Datacenter-Architektur aufgeführt. NetApp Software ist auf Controller-Ebene des FAS und AFF lizenziert.
+Die folgende Tabelle listet die NetApp Softwarelizenzierungsoptionen auf.
 
 |===
-| NetApp Softwarelizenzen | Teilenummer | Technische Spezifikationen 
+| NetApp Softwarelizenzierung | Technische Spezifikationen 
 
 
-| SW, komplette BNDL (Controller), -C | SW-8XXX-COMP-BNDL-C .2+| http://mysupport.netapp.com/documentation/productsatoz/index.html["Produktbibliothek Von A–Z"] 
+| ONTAP One für AFF, FAS und AFX .2+| Wenden Sie sich an Ihr NetApp Vertriebsteam, um weitere Lizenzierungsinformationen zu erhalten. 
 
 
-| SW, ONTAP Essentials (Controller), -C | SW-8XXX-ONTAP9-C 
+| ONTAP One für SAN für ASA 
 |===
+Weitere Informationen zur NetApp Softwarelizenzierung sind unter folgendem Link verfügbar:  https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["NetApp Softwarelizenzierung"^].
+
 
 
 [[netapp-support-licensing-options]]
-== NetApp Support-Lizenzoptionen
+== NetApp Support – Lizenzoptionen
 
-Für die FlexPod Architektur sind NetApp SupportEdge Premium Lizenzen erforderlich. Die Teilenummern dieser Lizenzen variieren jedoch je nach den Optionen im FlexPod-Design. Beispielsweise unterscheiden sich die Teilenummern für die Software-Lizenzen, je nachdem, welchen FAS-Controller Sie wählen. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um Informationen zu den genauen Teilenummern für einzelne Support-Lizenzen zu erhalten. Die folgende Tabelle zeigt ein Beispiel für eine SupportEdge-Lizenz.
+SupportEdge Premium-Lizenzen sind erforderlich, und die Teilenummern für diese Lizenzen variieren je nach den im FlexPod Datacenter Design ausgewählten Optionen.
+
+Die folgende Tabelle listet die NetApp Support-Lizenzierungsoptionen für NetApp AFF, ASA, FAS und AFX Storage-Systeme auf.
 
 |===
-| NetApp Support-Lizenzierung | Teilenummer | Technische Spezifikationen 
+| Lizenzierung des NetApp Supports | Technische Spezifikationen 
 
 
-| SupportEdge Premium 4 Stunden vor Ort – Monate: 36 | CS-O2-4HR | https://www.netapp.com/pdf.html?item=/media/8745-supportedge-premium-product-description.pdf["NetApp SupportEdge Premium"^] 
+| NetApp SupportEdge | https://www.netapp.com/netapp-services/[] 
 |===

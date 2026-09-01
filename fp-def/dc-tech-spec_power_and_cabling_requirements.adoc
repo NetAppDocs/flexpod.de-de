@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/dc-tech-spec_power_and_cabling_requirements.html 
-keywords: power, cabling, requirements, minimum, techincal, datacenter, specifications 
-summary: Ein FlexPod Design erfüllt die Mindestanforderungen für Strom und Verkabelung. 
+keywords: power, cabling, requirements, flexpod, datacenter, netapp, cisco, ucs, disk shelves 
+summary: Dieser Abschnitt beschreibt die Stromversorgungsanforderungen und die Richtlinien für die Verkabelung der Festplattengehäuse für ein FlexPod Datacenter-Design. 
 ---
-= Strom- und Verkabelungsanforderungen
+= Richtlinien für Stromversorgung und Verkabelung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Ein FlexPod Design erfüllt die Mindestanforderungen für Strom und Ver
 
 
 [role="lead"]
-Ein FlexPod Design erfüllt die Mindestanforderungen für Strom und Verkabelung.
+Dieser Abschnitt beschreibt die Stromversorgungsanforderungen und Verkabelungsrichtlinien für ein FlexPod Datacenter Design.
 
 
 
@@ -25,84 +25,31 @@ Die Stromanforderungen für das FlexPod Datacenter unterscheiden sich je nach In
 
 Weitere Informationen über die maximale Leistung, die benötigt wird, und weitere detaillierte Informationen zur Stromversorgung finden Sie in den technischen Spezifikationen für jede im Abschnitt aufgeführte Hardware-Komponente link:dc-tech-spec_technical_specifications_and_references.html["Technische Spezifikationen und Referenzen: Hardware-Komponenten"].
 
-Detaillierte Informationen zur Stromversorgung von Cisco UCS finden Sie im http://www.cisco.com/assets/cdc_content_elements/flash/dataCenter/cisco_ucs_power_calculator/["Cisco UCS – Stromversorgungsrechner"^].
+Detaillierte Cisco UCS Leistungsdaten sind unter  https://ucspowercalculator.cisco.com/["Cisco UCS – Stromversorgungsrechner"^] zu finden.
 
-Informationen zum Einschalten des NetApp Storage Controllers finden Sie im http://hwu.netapp.com/Controller/Index?platformTypeId=6780858["NetApp Hardware Universe"^]. Wählen Sie unter Plattformen die Storage-Plattform aus, die Sie für die Konfiguration verwenden möchten (FAS/V-Series oder AFF). Wählen Sie die ONTAP-Version und den Speicher-Controller aus, und klicken Sie dann auf die Schaltfläche Ergebnisse anzeigen.
+Informationen zu Stromdaten des NetApp Speichercontrollers finden sich im https://hwu.netapp.com/["NetApp Hardware Universe"^]. Unter *Plattformen* die gewünschte Speicherplattform auswählen (zum Beispiel AFF A90), die ONTAP-Version auswählen und dann auf *Ergebnisse anzeigen* klicken. Netzkabeldaten sind im Abschnitt *Unterstützte Netzkabel* aufgeführt. Einzelheiten zu Größe, Gewicht, Wattzahl usw. stehen im Abschnitt *Größe, Gewicht, Geräuschentwicklung, Stromversorgung*.
 
 
 
-[[minimum-cable-requirements]]
-== Mindestanforderungen an die Kabel
+[[cabling-guidelines]]
+== Verkabelungsrichtlinien
 
-Die Anzahl und der Typ der erforderlichen Kabel und Adapter variiert je nach Implementierung des FlexPod Datacenter. Der Kabeltyp, der Transceiver-Typ und die Nummer werden während des Entwurfsprozesses anhand Ihrer Anforderungen ermittelt. In der folgenden Tabelle ist die Mindestanzahl der erforderlichen Kabel aufgeführt.
+Dieser Abschnitt enthält allgemeine Verkabelungsrichtlinien für ein FlexPod Datacenter Design.
+
+* Redundante Konnektivität für die Compute- und Storage-Verbindungen sicherstellen.
+* Die Geschwindigkeit der Verbindungen muss mit den angeschlossenen Komponenten kompatibel sein.
+* Im Abschnitt link:https://docs.netapp.com/us-en/flexpod/fp-def/dc-tech-spec_topologies.html["FlexPod Datacenter-Topologien"^] sind zusätzliche Verkabelungsrichtlinien für spezifische Topologien aufgeführt.
+
+
+Die folgende Tabelle enthält Verkabelungsrichtlinien für NetApp Festplattengehäuse, die in einem FlexPod Datacenter-Design verwendet werden können.
 
 |===
-| Trennt | Modellnummer | Kabel erforderlich 
 
 
-| Cisco UCS-Gehäuse | Cisco UCS 5108 | Mindestens zwei Twinaxialkabel pro Cisco UCS 2104XP, 2204XP oder 2208XP Modul 
+| Festplatten-Shelf | Verkabelungsrichtlinien 
 
 
-.6+| Cisco UCS Fabric Interconnects | Cisco UCS 6248UP  a| 
-* Zwei Cat5e-Kabel für Management-Ports
-* Zwei Cat5e-Kabel für L1, L2-Interconnects pro Fabric-Paar
-* Mindestens vier Twinaxialkabel pro Fabric Interconnect
-* Mindestens vier FC-Kabel pro Fabric Interconnect
-
-
-
-
-| Cisco UCS 6296UP 
-
-
-| Cisco UCS 6332-16UP 
-
-
-| Cisco UCS 6454 
-
-
-| Cisco UCS 6332  a| 
-* Zwei Cat5e-Kabel für Management-Ports
-* Zwei Cat5e-Kabel für L1, L2-Interconnects pro Fabric-Paar
-* Mindestens vier Twinaxialkabel pro Fabric Interconnect
-
-
-
-
-| Cisco UCS 6324  a| 
-* Zwei 10/100/1000 MBit/s-Management-Ports
-* Mindestens zwei Twinaxialkabel pro Fabric Interconnect
-
-
-
-
-.2+| Switches der Cisco Nexus 5000 und 7000 Serie | Cisco Nexus 5000 Serie  a| 
-* Mindestens zwei 10-GbE-Glasfaserkabel oder Twinaxialkabel pro Switch
-* Mindestens zwei FC-Kabel pro Switch (bei FC/FCoE-Konnektivität)
-
-
-
-
-| Cisco Nexus 7000 Serie 
-
-
-| Switches Der Cisco Nexus 9000-Serie | Cisco Nexus 9000 Serie | Mindestens zwei 10-GbE-Kabel pro Switch 
-
-
-.2+| NetApp FAS Controller | AFF A-Serie  a| 
-* Ein SAS- oder SATA-Kabel pro Storage Controller
-* Mindestens zwei FC-Kabel pro Controller, wenn ältere FC-Ressourcen verwendet werden
-* Mindestens zwei 10-GbE-Kabel pro Controller
-* Mindestens ein GbE-Kabel für Management pro Controller
-* Für ONTAP werden pro Paar Cluster-Interconnect-Switches acht kurze Twinaxialkabel benötigt
-
-
-
-
-| FAS Serie 
-
-
-.4+| NetApp Platten-Shelves | DS212C .3+| Zwei SAS-, SATA- oder FC-Kabel pro Festplatten-Shelf 
+| DS212C .3+| link:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html#configuration-rules["SAS-Verkabelungsregeln"^] 
 
 
 | DS224C 
@@ -111,5 +58,11 @@ Die Anzahl und der Typ der erforderlichen Kabel und Adapter variiert je nach Imp
 | DS460C 
 
 
-| NS224 | Zwei 100 Gbit/s-Kupferkabel pro Festplatten-Shelf 
+| NS224 .3+| link:https://docs.netapp.com/us-en/ontap-systems/drive-shelves/index.html["Anforderungen und Best Practices für NS224 und NX224 Gehäuse"^] 
+
+
+| NS224 mit NSM100B 
+
+
+| NX224 
 |===

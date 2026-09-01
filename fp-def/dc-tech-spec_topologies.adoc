@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_topologies.html 
+keywords: topologies, iSCSI boot, x-series-direct,x-series-modular, ucs-c-series,ip-based san, fc-based san 
+summary: Dieser Abschnitt beschreibt die Beispieltopologien für FlexPod Datacenter. 
+---
+= FlexPod Datacenter-Topologien
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+Dieser Abschnitt beschreibt die Beispieltopologien für FlexPod Datacenter.
+
+
+
+[[cisco-ucs-x-series-modular-system-and-c-series-rack-servers-with-fc-and-ip-based-san]]
+== Cisco UCS X-Series Modular System und C-Series Rack Server mit FC- und IP-basiertem SAN
+
+Die folgenden Abbildungen zeigen ein Beispiel für FlexPod Datacenter mit X-Series Modular System und C-Series Rackservern für die IP-basierte iSCSI-Konfiguration. Die Topologie unterstützt außerdem NFS und NVMe-TCP.
+
+image:dc-tech-spec_image15.png["FlexPod Datacenter für IP-basierte iSCSI-Konnektivität"]
+
+Die folgende Abbildung zeigt ein Beispiel für FlexPod Datacenter mit X-Series Modular System und C-Series Rack-Servern für eine FC-basierte SAN-Konfiguration mit MDS-Switches. Die oben dargestellte Topologie unterstützt außerdem NFS und FC-NVMe.
+
+image:dc-tech-spec_image16.png["FlexPod Datacenter für FC-basierte SAN-Konnektivität"]
+
+Die Konnektivitätsanforderungen für die oben genannten Topologien umfassen:
+
+* AFF Cluster-Konnektivität: Bei einem 2-Knoten AFF Cluster können die Controller direkt mit Kabeln miteinander verbunden werden, ohne dass Cluster-Switches verwendet werden.
+* Storage Ethernet-Konnektivität: NetApp Storage-Controller müssen direkt mit den Cisco Nexus Switches verbunden sein.
+* Cisco UCS X9508 Chassis wird über Cisco UCSX-I-9108-100G IFMs mit den Fabric Interconnects verbunden. Die Cisco UCSX-I-9108-25G IFMs können ebenfalls mit 4x25G Breakout-Kabeln verwendet werden, um das Chassis mit den Fabric Interconnects zu verbinden.
+* Die modularen Rechenknoten der Cisco UCS X-Series enthalten Cisco VICs und können mit beiden IFMs verwendet werden.
+* Cisco UCS C-series Rack-Server enthalten Cisco VICs und sind mit Fabric Interconnects verbunden.
+* Virtuelle Portkanäle (vPCs) werden benötigt, um die Cisco Nexus Switches mit den NetApp Storage-Controllern zu verbinden und um Cisco UCS Fabric Interconnects mit den Cisco Nexus Switches zu verbinden.
+* FC-Konnektivitätsanforderungen:
++
+** Die NetApp Speichercontroller sind über 32-Gbit/s-FC-Verbindungen für die SAN-Konnektivität mit den Cisco MDS-Switches verbunden.
+** Cisco UCS Fabric Interconnects sind über 32-Gbit/s-FC-Verbindungen, die als einzelner Portkanal für die SAN-Konnektivität konfiguriert sind, mit Cisco MDS Switches verbunden.
+
+
+
+
+Sie können ausschließlich IP-basiertes SAN, ausschließlich FC-basiertes SAN oder beide implementieren, um unterschiedliche Protokolle für Workload-Latenz und Anforderungen an den Durchsatz zu nutzen. Die NVMe over fabric Protokolle bieten aufgrund effizienterer Geräteverbindungen, Befehlssätze und reduzierter CPU-Auslastung geringere Latenz und eine höhere Anzahl an Ein-/Ausgabeoperationen pro Sekunde (IOPs).
+
+
+NOTE: Die obige Beispieltopologie bezieht sich auf eine X-Series Modular und C-Series Rack-Serverlösungskonfiguration mit NetApp AFF. Jedoch kann dieselbe Topologie auch für NetApp ASA und FAS verwendet werden.
+
+Weitere Informationen zu dieser Konfiguration sind unter link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m7_imm_vmware_design.html#PhysicalTopology["FlexPod Datacenter mit Cisco UCS M7 IMM, VMware vSphere 8.0 und NetApp ONTAP 9.12 Designleitfaden"^] zu finden.
+
+
+
+[[cisco-ucs-x-series-direct-with-direct-attached-fc-and-ip-based-san]]
+== Cisco UCS X-Series Direct mit direkt angeschlossenem FC und IP-basiertem SAN
+
+Die folgende Abbildung zeigt eine UCS X-Series Direct und direkt angeschlossene ASA Beispieltopologie für FlexPod Datacenter IP-basierte und FC-basierte SAN.
+
+image:dc-tech-spec_image14.png["UCS X-Series Direct und direkt angeschlossene ASA Topologie für IP-basierte und FC-basierte SAN"]
+
+Die Konnektivitätsanforderungen für diese Topologie umfassen:
+
+* ASA Cluster-Konnektivität: Bei einem 2-Knoten ASA Cluster können die Controller direkt mit Kabeln miteinander verbunden werden, ohne dass Cluster-Switches verwendet werden.
+* Storage-Ethernet-Konnektivität: Die NetApp Storage-Controller können direkt mit den integrierten Fabric Interconnects verbunden werden. Die beiden Storage-Controller in ASA verfügen über Konnektivität zu zwei unabhängigen IP-SAN-Fabrics, die von FI A und FI B bereitgestellt werden.
+* FI-Netzwerk-Uplink-Konnektivität: Bei IP-basierter SAN-Konnektivität sind die Uplink-Nexus-Switches nicht in die SAN-Datenpfade eingebunden. SAN-IO erfolgt direkt von den UCS Compute-Knoten zum ASA-Speicher über deren Verbindungen zu FI A oder FI B. Daher können vorhandene Top-of-Rack-Switches, die VLAN und vPC unterstützen, genutzt werden, um externen Netzwerkzugriff auf die FlexPod SAN-Lösungsumgebung bereitzustellen.
+* Für FC-basierte SAN-Konnektivität müssen die UCS FI (FC) Ports als Breakout-Ports konfiguriert werden.
+* Cisco UCS sollte im FC-Switching-Modus konfiguriert werden, wenn es für eine FC-basierte SAN Lösung verwendet wird.
+
+
+Die Cisco UCS X-Series Direct kann auch einen Switch Attached Storage ähnlich der regulären X-Series nutzen, verwendet jedoch die eingebetteten Fabric Interconnects anstelle der externen Fabric Interconnects.
+
+Weitere Informationen zu dieser Konfiguration sind unter  https://www.netapp.com/pdf.html?item=/media/135828-flexpod-san-ucs-xdirect-asa-nva-deploy-guide.pdf["FlexPod SAN-Lösung mit Cisco UCS X-Series Direct und NetApp ASA"^] zu finden.
+
+[NOTE]
+====
+Die obige Beispieltopologie bezieht sich auf eine direkt angeschlossene Speicherlösung mit NetApp ASA. Jedoch kann dieselbe Topologie auch für NetApp AFF und FAS verwendet werden.
+
+Für eine IP-basierte direkt angeschlossene NAS-Speicherkonfiguration mit NetApp AFF oder FAS Storage müssen die Uplink Nexus Switches korrekt konfiguriert werden, um bestimmte Ausfallszenarien zu unterstützen. Zusätzliche Konfigurationsinformationen sind unter dem folgenden Link verfügbar.
+
+https://www.netapp.com/pdf.html?item=/media/22621-nva-1154-DESIGN.pdf[]
+
+https://www.netapp.com/pdf.html?item=/media/21938-nva-1154-DEPLOY.pdf[]
+
+====

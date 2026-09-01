@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: fp-def/dc-tech-spec_other_requirements.html 
-keywords: flexpod, datacenter, technical, specifications, requirements, interoperability 
+keywords: flexpod, datacenter, technical, specifications, requirements, broadcom, vmware, openshift 
 summary: Eine FlexPod Architektur verfügt über die folgenden zusätzlichen Anforderungen bezüglich Interoperabilität und Support 
 ---
 = Andere Anforderungen
@@ -14,21 +14,8 @@ summary: Eine FlexPod Architektur verfügt über die folgenden zusätzlichen Anf
 
 
 [role="lead"]
-Eine FlexPod Architektur verfügt über die folgenden zusätzlichen Anforderungen bezüglich Interoperabilität und Support:
+Zusätzliche Anforderungen für FlexPod Datacenter umfassen Folgendes:
 
-* Alle Hardware- und Software-Komponenten müssen auf der NetApp aufgeführt und unterstützt werden http://mysupport.netapp.com/matrix["IMT"^], Das https://ucshcltool.cloudapps.cisco.com/public/["Cisco UCS Hardware- und Software-Kompatibilitätsliste"^]Und das Cisco UCS Hardware and Software Interoperability Matrix Tool.
-* Für alle Geräte sind gültige Support-Verträge erforderlich, darunter:
-+
-** Smart Net Total Care (SmartNet)-Support für Cisco-Geräte
-** SupportEdge Advisor oder SupportEdge Premium Support für NetApp Systeme
+* Wenn VMware ESXi als Hypervisor vorgesehen ist, bietet die link:https://compatibilityguide.broadcom.com/["Broadcom Kompatibilitätsleitfaden"] einen Überblick darüber, ob die Hardware- und Softwarekomponenten unterstützt werden.
+* Für eine auf OpenShift basierende Bereitstellung ist sicherzustellen, dass die erforderlichen Hardware- und Softwarekomponenten vorhanden sind, die mit OpenShift kompatibel sind. Weitere Informationen sind in der link:https://catalog.redhat.com/en/search["OpenShift Katalog"] zu finden.
 
-
-* Relevante Verkaufsmerkmale des Verkaufsauftrags zur Unterstützung:
-+
-** FlexPod Berechtigungen
-** FlexPod Lösungs-Supportberechtigungen
-
-
-
-
-Weitere Informationen finden Sie im NetApp http://mysupport.netapp.com/matrix["IMT"^].

@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: fp-def/dc-tech-spec_software_version_recommendations.html 
+keywords: software, recommendations, flexpod, datacenter, technical specifications, cisco, ontap, ucs, intersight, intersight-standalone, nx-os 
+summary: Die folgenden Informationen beschreiben die Softwareversionsempfehlungen für eine FlexPod Konfiguration. 
+---
+= Empfehlungen zur Softwareversion
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./../media/
+
+
+[role="lead"]
+Eine FlexPod Konfiguration hat die folgenden Softwareversionsempfehlungen:
+
+* ONTAP Version: Die neueste ONTAP Version wird für alle FlexPod Datacenter Konfigurationen empfohlen. Weitere Informationen zur neuesten ONTAP Version finden sich unter link:https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAP Versionshinweise"^].
+* Cisco NX-OS Version: Für allgemeine Empfehlungen zur Cisco NX-OS Version für die Switches der Cisco 9000 Serie von Cisco siehe link:https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/recommended_release/b_Minimum_and_Recommended_Cisco_NX-OS_Releases_for_Cisco_Nexus_9000_Series_Switches.html["Empfohlene Cisco NX-OS Releases für Cisco Nexus 9000 Series Switches"^].
+* Cisco UCS Firmware-Version:
++
+** Unter diesem Link sind die neuesten Versionen für link:https://www.cisco.com/c/en/us/support/servers-unified-computing/intersight/products-release-notes-list.html["Cisco Intersight Managed Mode Infrastruktur und Server-Firmware, Chassis-Firmware und PCIe-Knoten-Firmware"^] verfügbar.
+** Unter diesem Link sind die neuesten Versionen für link:https://intersight.com/help/saas/supported_systems/Intersight_Standalone_Mode["Cisco Intersight Standalone Mode und CIMC Firmware"^] verfügbar.
+
+
+
+
+
+NOTE: Alle Softwarekomponenten müssen im  https://imt.netapp.com["NetApp IMT"^] aufgeführt und unterstützt sein, alle NetApp Hardwarekomponenten und ONTAP Versionen müssen im  https://hwu.netapp.com/Home/Index["NetApp Hardware Universe"^] aufgeführt und unterstützt sein und alle Cisco Hardwarekomponenten müssen im  https://ucshcltool.cloudapps.cisco.com/public/["Cisco HCL"^] aufgeführt und unterstützt sein.

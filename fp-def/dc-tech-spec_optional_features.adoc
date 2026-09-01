@@ -17,176 +17,154 @@ summary: NetApp unterstützt mehrere optionale Komponenten, um FlexPod Datacente
 NetApp unterstützt mehrere optionale Komponenten, um FlexPod Datacenter-Architekturen noch weiter zu verbessern. Optionale Komponenten werden in den folgenden Abschnitten beschrieben.
 
 
-
-[[metrocluster]]
-== MetroCluster
-
-FlexPod unterstützt beide Varianten der NetApp MetroCluster Software für durchgängige Verfügbarkeit in Cluster-Konfigurationen mit zwei oder vier Nodes. MetroCluster bietet synchrone Replizierung für kritische Workloads. Es ist eine Konfiguration mit zwei Standorten erforderlich, die mit Cisco Switching verbunden ist. Die maximal unterstützte Entfernung zwischen den Standorten beträgt etwa 186 km für MetroCluster FC und beträgt für MetroCluster IP ca. 435 km. Die folgenden Abbildungen veranschaulichen ein FlexPod Datacenter mit NetApp MetroCluster Architektur und FlexPod Datacenter mit NetApp MetroCluster IP Architektur.
-
-Die folgende Abbildung zeigt die Architektur von FlexPod Datacenter mit NetApp MetroCluster.
-
-image:dc-tech-spec_image1.png[""]
-
-Folgende Abbildung zeigt die FlexPod Datacenter mit NetApp MetroCluster IP Architektur:
-
-image:dc-tech-spec_image2.png[""]
-
-Ab ONTAP 9.8 kann ONTAP Mediator an einem dritten Standort implementiert werden, um die MetroCluster IP Lösung zu überwachen und bei einem Standortausfall eine automatisierte ungeplante Umschaltung zu ermöglichen.
-
-Bei der Implementierung einer FlexPod MetroCluster IP-Lösung mit einer erweiterten Site-to-Site-Konnektivität zwischen Schicht und 2 können Sie Kosteneinsparungen erzielen, indem Sie ISL freigeben und FlexPod Switches als MetroCluster-konforme IP-Switches verwenden, wenn die Netzwerkbandbreite und die Switches den in der folgenden Abbildung dargestellten Anforderungen entsprechen. Zeigt die FlexPod MetroCluster IP-Lösung mit ISL-Freigabe und konformen Switches.
-
-image:dc-tech-spec_image10.png[""]
-
-In den folgenden beiden Abbildungen wird das VXLAN Multi-Site Fabric und das MetroCluster IP Storage Fabric für eine FlexPod MetroCluster IP-Lösung mit VXLAN Multi-Site Fabric-Implementierung dargestellt.
-
-* VXLAN-Multi-Site Fabric für FlexPod MetroCluster IP-Lösung
-
-
-image:dc-tech-spec_image11.png[""]
-
-* MetroCluster IP Storage Fabric für FlexPod MetroCluster IP-Lösung
-
-
-image:dc-tech-spec_image12.png[""]
-
-
-
-[[end-to-end-fc-nvme]]
-== End-to-End FC-NVMe
-
-Mit einem umfassenden FC-NVMe wird die vorhandene SAN-Infrastruktur eines Kunden für Echtzeitapplikationen nahtlos erweitert und gleichzeitig höhere IOPS-Werte und einen höheren Durchsatz bei niedrigerer Latenz bereitgestellt.
-
-Eine vorhandene 32-Gbit-FC-SAN-Übertragung kann zur gleichzeitigen Übertragung von NVMe und SCSI-Workloads verwendet werden.
-
-Die folgende Abbildung veranschaulicht das FlexPod Datacenter für FC mit Cisco MDS.
-
-Weitere Informationen über die FlexPod Konfigurationen und Performance-Vorteile finden Sie unter https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-b-series-blade-servers/whitepaper-c11-741907.html["Whitepaper: End-to-End-NVMe für FlexPod"^]
-
-Weitere Informationen zur ONTAP Implementierung sind unter  https://www.netapp.com/pdf.html?item=/media/10681-tr4684.pdf["TR-4684: Implementieren und Konfigurieren moderner SANs mit NVMe"^] zu finden.
-
-image:dc-tech-spec_image3.png[""]
-
-
-
-[[fc-san-boot-through-cisco-mds]]
-== FC SAN-Boot über Cisco MDS
-
-Zur Erhöhung der Skalierbarkeit durch ein dediziertes SAN-Netzwerk unterstützt FlexPod FC über Cisco MDS Switches und Nexus Switches mit FC-Unterstützung, wie beispielsweise Cisco Nexus 93108TC-FX. Die FC-SAN-Boot-Option über Cisco MDS hat folgende Lizenzierungs- und Hardwareanforderungen:
-
-* Mindestens zwei FC-Ports pro NetApp Storage Controller, ein Port pro SAN-Fabric
-* Eine FC-Lizenz auf jedem NetApp Storage Controller
-* Cisco MDS-Switches und Firmware-Versionen, die von NetApp unterstützt werden http://mysupport.netapp.com/matrix["IMT"^]
-
-
-Weitere Anleitungen zu einem MDS-basierten Design finden Sie im CVD https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_datacenter_vmware_netappaffa.html["FlexPod Datacenter mit VMware vSphere 6.7U1 Fibre Channel und iSCSI Deployment Guide"^].
-
-Die folgenden Abbildungen zeigen ein Beispiel für das FlexPod Datacenter für FC mit MDS-Konnektivität und das FlexPod Datacenter für FC mit Cisco Nexus 93180YC-FX.
-
-image:dc-tech-spec_image4.jpg[""]
-
-image:dc-tech-spec_image5.png[""]
-
-
-
-[[fc-san-boot-with-cisco-nexus]]
-== FC SAN booten mit Cisco Nexus
-
-Der klassische FC-SAN-Boot-Service erfüllt folgende Lizenzierungs- und Hardwareanforderungen:
-
-* Wenn FC-Zoning auf dem Cisco Nexus 5000 Series Switch ausgeführt wird, ist eine Lizenz für das Storage Protocols Service Package für die Switches der Cisco Nexus 5000 Serie (FC_FEATURES_PKG) erforderlich.
-* Wenn FC Zoning auf dem Cisco Nexus 5000 Series Switch ausgeführt wird, sind SAN-Links zwischen dem Fabric Interconnect und dem Cisco Nexus 5000 Series Switch erforderlich. Für zusätzliche Redundanz werden SAN-Port-Kanäle zwischen den Links empfohlen.
-* Für die Cisco Nexus 5010, 5020 und 5548P Switches ist ein separates FC- oder Universal Port-Modul (UP) erforderlich, um mit dem Cisco UCS Fabric Interconnect und mit dem NetApp Storage Controller verbunden zu werden.
-* Für die Cisco Nexus 93180YC-FX ist eine FC-Funktionslizenz erforderlich, die die FC-Aktivierung ermöglicht.
-* Jeder NetApp Storage-Controller benötigt für Konnektivität mindestens zwei 8/16/32-GB-FC-Ports.
-* Auf dem NetApp Storage Controller ist eine FC-Lizenz erforderlich.
-+
-
-NOTE: Die Verwendung der Switches der Cisco Nexus 7000 oder 9000 Familie schließt die Verwendung des herkömmlichen FC aus, es sei denn, FC Zoning wird im Fabric Interconnect ausgeführt. In diesem Fall werden SAN-Uplinks zum Switch nicht unterstützt.
-
-
-
-In der folgenden Abbildung ist eine Konfiguration der FC-Konnektivität dargestellt.
-
-image:dc-tech-spec_image6.png[""]
-
-
-
-[[fcoe-san-boot-option]]
-== Bootsoption für FCoE SAN
-
-Das Booten der FCoE SAN-Option umfasst die folgenden Lizenzierungs- und Hardwareanforderungen:
-
-* Wenn das FC Zoning auf dem Switch ausgeführt wird, ist eine Lizenz für das Storage Protocols Service Package für die Switches der Cisco Nexus 5000 oder 7000 Serie `(FC_FEATURES_PKG`) Ist erforderlich.
-* Wenn auf dem Switch FC-Zoning durchgeführt wird, sind FCoE-Uplinks zwischen dem Fabric Interconnect und den Switches der Cisco Nexus 5000 oder 7000 Serie erforderlich. Für zusätzliche Redundanz werden FCoE-Port-Kanäle zwischen den Links ebenfalls empfohlen.
-* Jeder NetApp Storage Controller benötigt mindestens eine UTA-Zusatzkarte (Dual Port Unified Target Adapter) für FCoE-Konnektivität, es sei denn, integrierte UTA2-Ports (Unified Target Adapter 2) sind vorhanden.
-* Für diese Option ist eine FC-Lizenz auf dem NetApp Storage Controller erforderlich.
-* Wenn Sie die Switches der Cisco Nexus 7000 Serie und FC Zoning auf dem Switch verwenden, ist eine Karte erforderlich, die FCoE unterstützt.
-+
-
-NOTE: Durch die Verwendung der Switches der Cisco Nexus 9000 Serie ist FCoE ausgeschlossen, es sei denn, FC Zoning wird im Fabric Interconnect ausgeführt und der Storage ist mit den Fabric Interconnects mit Appliance-Ports verbunden. In diesem Fall werden FCoE-Uplinks zum Switch nicht unterstützt.
-
-
-
-Die folgende Abbildung zeigt ein Szenario des FCoE-Startens.
-
-image:dc-tech-spec_image7.png[""]
+NOTE: SAN Boot ist optional, wird aber dringend empfohlen, da es die Verschiebung von Serverprofilen bei Hardware-Upgrades oder Austausch ermöglicht.
 
 
 
 [[iscsi-boot-option]]
 == ISCSI-Boot-Option
 
-Die iSCSI-Startoption umfasst die folgenden Lizenzierungs- und Hardwareanforderungen:
+Die Mindestanforderungen für die iSCSI-Bootoption umfassen:
 
-* Es ist eine iSCSI-Lizenz auf dem NetApp Storage Controller erforderlich.
-* Im Cisco UCS Server, der iSCSI-Boot kann, ist ein Adapter erforderlich.
-* Es ist ein 2-Port 10 Gbit/s Ethernet Adapter auf dem NetApp Storage Controller erforderlich.
-
-
-Die folgende Abbildung zeigt eine reine Ethernet-Konfiguration, die über iSCSI gestartet wird.
-
-image:dc-tech-spec_image8.png[""]
+* Eine iSCSI-Lizenz/-Funktion ist auf dem NetApp Storage Controller aktiviert
+* Einen 2-Port 10 GB/s Ethernet Adapter auf jedem Node im NetApp Storage Controller HA-Paar
+* Ein Adapter im Cisco UCS Server, der iSCSI Boot unterstützen kann
 
 
+Die folgenden Abbildungen zeigen ein Beispiel für FlexPod Datacenter mit X-Series Modular System und C-Series Rack-Servern für die IP-basierte iSCSI-Konfiguration.
 
-[[cisco-ucs-direct-connect-with-netapp-storage]]
-== Cisco UCS Direktverbindung zu NetApp Storage
+image:dc-tech-spec_image15.png["FlexPod Datacenter für IP-basierte iSCSI-Konnektivität"]
 
-NetApp AFF und FAS Controller können ohne Upstream SAN Switch direkt mit den Cisco UCS Fabric Interconnects verbunden werden.
+Weitere Informationen zu dieser Konfiguration sind unter link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m7_imm_vmware_design.html#PhysicalTopology["FlexPod Datacenter mit Cisco UCS M7 IMM, VMware vSphere 8.0 und NetApp ONTAP 9.12 Designleitfaden"^] zu finden.
 
-Vier Cisco UCS Port-Typen können zur direkten Verbindung zu NetApp Storage verwendet werden:
 
-* *Storage FC-Port.* Verbinden Sie diesen Port direkt mit einem FC-Port auf NetApp Storage.
-* *Storage-FCoE-Port.* Verbinden Sie diesen Port direkt mit einem FCoE-Port auf NetApp Storage.
-* *Appliance-Port.* Verbinden Sie diesen Port direkt mit einem 10-GbE-Port auf NetApp Storage.
-* *Unified Storage Port.* diesen Port direkt mit einer NetApp UTA verbinden.
 
+[[fc-boot-with-cisco-mds]]
+== FC Boot mit Cisco MDS
+
+Um durch die Nutzung eines dedizierten SAN-Netzwerks eine höhere Skalierbarkeit zu bieten, unterstützt FlexPod FC über Cisco MDS Switches. Die FC SAN Boot-Option über Cisco MDS hat die folgenden Lizenz- und Hardwareanforderungen:
+
+* Mindestens zwei FC-Ports pro NetApp Storage Controller, ein Port pro SAN-Fabric
+* Eine FC-Lizenz auf jedem NetApp Speichercontroller.
+* Ein Adapter im Cisco UCS Server, der FC-Boot unterstützt.
+
+
+Die folgende Abbildung zeigt ein Beispiel für FlexPod Datacenter mit X-Series Modular System und C-Series Rack-Servern für eine FC-basierte SAN-Konfiguration mit MDS-Switches.
+
+image:dc-tech-spec_image16.png["FlexPod Datacenter für FC-basierte SAN-Konnektivität"]
+
+Weitere Informationen zu dieser Konfiguration sind unter link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m7_imm_vmware_design.html#PhysicalTopology["FlexPod Datacenter mit Cisco UCS M7 IMM, VMware vSphere 8.0 und NetApp ONTAP 9.12 Designleitfaden"^] zu finden.
+
+
+
+[[fc-san-boot-with-cisco-nexus]]
+== FC SAN booten mit Cisco Nexus
+
+Cisco Nexus 93180YC-FX, 93360YC-FX2 oder 9336C-FX2-E Switches können als Switching-Fabric sowohl für LAN als auch für SAN eingesetzt werden.
+
+Die folgende Abbildung zeigt ein Beispiel für FlexPod Datacenter mit X-Series Modular System und C-Series Rack-Servern für eine FC-basierte SAN-Konfiguration mit Cisco Nexus SAN Switching.
+
+
+NOTE: Für die Nutzung der Cisco Nexus Switches zur FC SAN-Konnektivität ist eine Storage Add-on-Lizenz auf den Cisco Nexus Switches erforderlich.
+
+image:dc-tech-spec_image17.png["FlexPod Datacenter für FC-basierte SAN-Konnektivität mit Cisco Nexus"]
+
+Weitere Informationen zu dieser Konfiguration sind unter link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m7_imm_vmware_design.html#PhysicalTopology["FlexPod Datacenter mit Cisco UCS M7 IMM, VMware vSphere 8.0 und NetApp ONTAP 9.12 Designleitfaden"^] zu finden.
+
+
+
+[[end-to-end-fc-nvme]]
+== End-to-End FC-NVMe
+
+Eine durchgängige FC-NVMe-Lösung erweitert die bestehende SAN-Infrastruktur eines Kunden nahtlos für Echtzeitanwendungen und bietet gleichzeitig verbesserte IOPS und höheren Durchsatz bei reduzierter Latenz. Ein vorhandener 32G FC SAN-Transport kann genutzt werden, um NVMe- und SCSI-Workloads gleichzeitig zu übertragen.
+
+Weitere Informationen zu dieser Konfiguration sind unter link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_m7_imm_vmware_design.html#PhysicalTopology["FlexPod Datacenter mit Cisco UCS M7 IMM, VMware vSphere 8.0 und NetApp ONTAP 9.12 Designleitfaden"^] zu finden.
+
+
+
+[[cisco-ucs-x-series-direct-and-direct-attached-aff-asa-fas-for-fc-and-ip-based-san]]
+== Cisco UCS X-Series Direct und direkt angeschlossene AFF/ ASA/ FAS für FC- und IP-basierte SAN
+
+NetApp Storage-Controller können direkt an die Cisco UCS Fabric Interconnects ohne vorgelagerten SAN-Switch angeschlossen werden. FlexPod unterstützt sowohl FC- als auch iSCSI-Boot mit UCS X-Series Direct.
 
 Die Lizenz- und Hardwareanforderungen lauten wie folgt:
 
 * Auf dem NetApp Storage Controller ist eine Protokolllizenz erforderlich.
-* Auf dem Server ist ein Cisco UCS Adapter (Initiator) erforderlich. Eine Liste der unterstützten Cisco UCS-Adapter finden Sie im NetApp http://mysupport.netapp.com/matrix["IMT"^].
+* Auf dem Server wird ein Cisco UCS-Adapter (Initiator) benötigt. Eine Liste der unterstützten Cisco UCS-Adapter befindet sich in der NetApp https://imt.netapp.com["IMT"^].
 * Auf dem NetApp Storage Controller ist ein Target-Adapter erforderlich.
 
 
-In der folgenden Abbildung ist eine Konfiguration für die Direktverbindung per FC dargestellt.
+Die folgende Abbildung zeigt eine UCS X-Series Direct und direkt angeschlossene ASA Topologie für IP-basiertes SAN.
 
-image:dc-tech-spec_image9.png[""]
-
-*Hinweise:*
-
-* Cisco UCS ist im FC-Switching-Modus konfiguriert.
-* Die FCoE-Ports vom Ziel bis zu Fabric Interconnects werden als FCoE-Storage-Ports konfiguriert.
-* FC-Ports vom Ziel bis zu Fabric Interconnects werden als FC-Storage-Ports konfiguriert.
-
-
-Die folgende Abbildung zeigt eine iSCSI/Unified IP Direct-Connect-Konfiguration.
-
-image:dc-tech-spec_image10.png[""]
+image:dc-tech-spec_image13.png["UCS X-Series Direct und direkt angeschlossene ASA Topologie für IP-basiertes SAN"]
 
 *Hinweise:*
 
 * Cisco UCS ist im Ethernet Switching-Modus konfiguriert.
 * ISCSI-Ports vom Ziel bis zu Fabric Interconnects werden als Ethernet Storage-Ports für iSCSI-Daten konfiguriert.
-* Ethernet-Ports vom Ziel bis hin zu Fabric Interconnects werden als Ethernet Storage Ports für CIFS-/NFS-Daten konfiguriert.
 
+
+Die folgende Abbildung zeigt eine UCS X-Series Direct und direkt angeschlossene ASA Topologie für IP-basierte und FC-basierte SAN.
+
+image:dc-tech-spec_image14.png["UCS X-Series Direct und direkt angeschlossene ASA Topologie für IP-basierte und FC-basierte SAN"]
+
+*Hinweise:*
+
+* Cisco UCS ist im FC-Switching-Modus konfiguriert.
+* FC-Ports vom Ziel bis zu Fabric Interconnects werden als FC-Storage-Ports konfiguriert.
+
+
+Weitere Informationen zu dieser Konfiguration sind unter  https://www.netapp.com/pdf.html?item=/media/135828-flexpod-san-ucs-xdirect-asa-nva-deploy-guide.pdf["FlexPod SAN-Lösung mit Cisco UCS X-Series Direct und NetApp ASA"^] zu finden.
+
+
+NOTE: Die obigen Beispiele verwenden den NetApp ASA Speichercontroller, aber die gleiche Konfiguration wird auch mit den NetApp AFF und FAS Speichercontrollern unterstützt.
+
+
+
+[[metrocluster]]
+== MetroCluster
+
+FlexPod MetroCluster IP mit VXLAN Multi-Site Fabric-Lösung besteht aus zwei FlexPods, die sich an zwei durch eine gewisse Distanz getrennten Standorten befinden, aber miteinander verbunden und gepaart sind, um eine hochverfügbare, hochflexible und hochzuverlässige Datenzentrums-Lösung bereitzustellen, die Geschäftskontinuität auch bei einem Standortausfall ermöglicht. Die maximal unterstützte Entfernung zwischen den Standorten beträgt etwa 435 Meilen (700 km).
+
+In der FlexPod MetroCluster IP-Lösung ermöglicht die Cisco VXLAN Multi-Site-Lösung die Verbindung und zentrale Verwaltung von VXLAN-Fabrics, die in separaten, geografisch verteilten Rechenzentren bereitgestellt sind. NetApp MetroCluster IP bietet eine synchrone Replizierungslösung zwischen zwei NetApp Storage-Clustern und gewährleistet so hohe Speicherverfügbarkeit und Disaster Recovery auf einem Campus oder im Großraumgebiet. Die Lösung ermöglicht die Konzeption einer VMware vSphere-basierten Private Cloud auf einer verteilten, integrierten Infrastruktur und die Bereitstellung einer einheitlichen Lösung, die es mehreren Standorten ermöglicht, sich weitgehend wie ein einzelner Standort zu verhalten, während Datendienste vor verschiedenen Single-Point-of-Failure-Szenarien, einschließlich eines vollständigen Standortausfalls, geschützt werden.
+
+In den folgenden beiden Abbildungen wird das VXLAN Multi-Site Fabric und das MetroCluster IP Storage Fabric für eine FlexPod MetroCluster IP-Lösung mit VXLAN Multi-Site Fabric-Implementierung dargestellt.
+
+* VXLAN-Multi-Site Fabric für FlexPod MetroCluster IP-Lösung
+
+
+image:dc-tech-spec_image11.png["VXLAN-Multi-Site Fabric für FlexPod MetroCluster IP-Lösung"]
+
+* MetroCluster IP Storage Fabric für FlexPod MetroCluster IP-Lösung
+
+
+image:dc-tech-spec_image12.png["MetroCluster IP Storage Fabric für FlexPod MetroCluster IP-Lösung"]
+
+Weitere Informationen zu dieser Konfiguration sind unter  https://www.cisco.com/c/dam/en/us/products/collateral/servers-unified-computing/flexpod-metrocluster-ip-vxlan-multi-site-wp.pdf["FlexPod MetroCluster IP mit VXLAN Multi-Site FrontendFabric"^] zu finden.
+
+
+
+[[snapmirror-active-sync-solution-for-flexpod-metrocluster-ip-solution]]
+=== SnapMirror Aktiv/Aktiv-Sync-Lösung für FlexPod MetroCluster IP-Lösung
+
+Mithilfe der NetApp Snapshot Technologie in NetApp ONTAP Software können unternehmenskritische SAN-Datendienste schnell mit Daten aus Snapshot-basierten Backups wiederhergestellt werden.
+
+* Die beiden an zwei verschiedenen Standorten eingesetzten ONTAP Cluster sind per Peering verbunden und mit SnapMirror active sync für synchrone Datenreplizierung und Notfallwiederherstellung konfiguriert.
+* Der ONTAP Mediator wird in einer dritten Ausfalldomäne eingesetzt, wie in der Abbildung unten dargestellt. Zusammen mit den Clustern vervollständigt der ONTAP Mediator das Quorum für die SnapMirror Aktiv/Aktiv-Synchronisierungslösung.
+* Der ONTAP Mediator empfängt Statusinformationen von den verbundenen ONTAP Clustern und -Knoten und koordiniert die Kommunikation zwischen ihnen, um ihren Status zu ermitteln. Die Statusdaten helfen den Clustern, verschiedene Fehlertypen zu unterscheiden und zu entscheiden, ob ein automatisches Failover durchgeführt werden soll.
+
+
+image:dc-tech-spec_image18.png["SnapMirror Aktiv/Aktiv-Sync-Lösungskomponenten für die FlexPod MetroCluster IP-Lösung"]
+
+
+
+[[symmetric-active-active-multi-path-support-for-flexpod-metrocluster-ip-solution]]
+=== Symmetrische Aktiv/Aktiv-Mehrwegeunterstützung für FlexPod MetroCluster IP Lösung
+
+Damit Hosts/Clients die replizierten LUNs nutzen können, werden im Remote-Cluster igroups erstellt, die replizierten LUNs den entsprechenden igroups zugewiesen und die Hosts/Clients so eingerichtet, dass sie das iSCSI-Ziel und die vom Remote-Cluster verfügbaren LUNs als zusätzliche Pfade erkennen können.
+
+Wie in der Abbildung unten dargestellt, können Unternehmensanwendungen auf einem Speicherclient mithilfe von iSCSI-basierten LUNs bereitgestellt werden, die von zwei ONTAP ASA Clustern gehostet werden, die für synchrone Datenreplizierung zwischen Standorten konfiguriert sind. Eine im Diagramm dargestellte Konsistenzgruppe umfasst drei anwendungsspezifische LUNs, deren Daten durch SnapMirror active sync synchron auf den verbundenen Cluster repliziert werden.
+
+image:dc-tech-spec_image19.png["SnapMirror active sync symmetrisches Aktiv/Aktiv SAN Multipathing"]
+
+Weitere Informationen finden sich unter  https://community.netapp.com/community/discussion/465452/level-up-flexpod-san-solution-storage-resiliency-with-snapmirror-active-sync["Die Ausfallsicherheit der FlexPod SAN-Lösungsspeicher mit SnapMirror Active Sync erhöhen"^].
