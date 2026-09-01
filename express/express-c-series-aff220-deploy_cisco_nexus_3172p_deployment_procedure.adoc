@@ -10,7 +10,7 @@ summary: Im folgenden Abschnitt wird die in einer FlexPod Express-Umgebung verwe
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

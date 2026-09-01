@@ -10,7 +10,7 @@ summary: Die Verkabelung zur Referenzvalidierung ist in den folgenden Tabellen d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

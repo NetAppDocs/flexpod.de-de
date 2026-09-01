@@ -10,7 +10,7 @@ summary: Stellen Sie sicher, dass die Hardware-, Software- und Lizenzierungsanfo
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

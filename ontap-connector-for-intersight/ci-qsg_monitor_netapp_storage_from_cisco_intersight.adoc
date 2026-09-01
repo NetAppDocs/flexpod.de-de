@@ -10,7 +10,7 @@ summary: Nachdem die Ziele beansprucht wurden, stehen die Registerkarten für Ne
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

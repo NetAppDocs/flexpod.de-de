@@ -10,7 +10,7 @@ summary: Führen Sie zum Erstellen von Initiatorgruppen die folgenden Befehle ü
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

@@ -10,7 +10,7 @@ summary: Auf dieser Seite werden die Ressourcen aufgeführt, die zur Bereitstell
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-solution-components.html["Früher: Lösungskomponenten."]

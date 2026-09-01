@@ -10,7 +10,7 @@ summary: FlexPod bietet eine einzige Plattform, die FC, FCoE, iSCSI, NFS/pNFS, S
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Jaya Kishore Esanakula und Atul Bhalodia, NetApp

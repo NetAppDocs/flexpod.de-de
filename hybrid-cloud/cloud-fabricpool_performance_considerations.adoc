@@ -10,7 +10,7 @@ summary: Bei der Planung der Dimensionierung sollten folgende Punkte bewertet we
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

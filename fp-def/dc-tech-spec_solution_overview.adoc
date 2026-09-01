@@ -10,7 +10,7 @@ summary: 'Die FlexPod Plattform ist eine vorkonfigurierte, Best Practice Datacen
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Arvind Ramakrishnan und Jyh-Sing Chen, NetApp

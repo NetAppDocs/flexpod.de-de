@@ -10,7 +10,7 @@ summary: Bevor ein Objektspeicher an ein Aggregat angehängt werden kann, muss e
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

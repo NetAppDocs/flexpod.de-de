@@ -10,7 +10,7 @@ summary: Unten ist der Versionsverlauf dieses Dokuments aufgeführt.
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 |===

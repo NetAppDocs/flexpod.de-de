@@ -10,7 +10,7 @@ summary: Dieser Abschnitt beschreibt, wie die Daten eines Endbenutzers im Falle 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

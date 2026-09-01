@@ -10,7 +10,7 @@ summary: Dies sind einige Anwendungsbeispiele für die Überwachung und Orchestr
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

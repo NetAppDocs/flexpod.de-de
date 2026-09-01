@@ -10,7 +10,7 @@ summary: In dieser Lösung wurden der NetApp Cloud Data Service, die Cloud Volum
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-solution-validation.html["Zurück: Lösungsvalidierung."]

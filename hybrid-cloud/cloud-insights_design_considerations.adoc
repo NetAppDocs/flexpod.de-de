@@ -10,7 +10,7 @@ summary: Die FlexPod Datacenter Lösung ist eine von Cisco und NetApp entwickelt
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

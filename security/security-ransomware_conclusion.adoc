@@ -10,7 +10,7 @@ summary: Die Autoren empfehlen, im Falle eines Angriffs kein Lösegeld zu zahlen
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

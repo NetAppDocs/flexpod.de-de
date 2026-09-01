@@ -10,7 +10,7 @@ summary: Diese Referenzvalidierung ist verkabelt, wie in den folgenden Abbildung
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

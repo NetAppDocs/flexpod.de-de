@@ -10,7 +10,7 @@ summary: Bevor Sie beginnen, installieren oder aktualisieren Sie AIQ um, erstell
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

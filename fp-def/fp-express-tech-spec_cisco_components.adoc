@@ -10,7 +10,7 @@ summary: Cisco leistet einen erheblichen Beitrag zum Design und der Architektur 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

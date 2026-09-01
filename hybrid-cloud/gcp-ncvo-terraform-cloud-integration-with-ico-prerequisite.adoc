@@ -10,7 +10,7 @@ summary: Auf dieser Seite wird beschrieben, wie Sie Cisco Intersight und Terrafo
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-cisco-intersight-configuration.html["Früher: Konfiguration von Cisco Intersight."]

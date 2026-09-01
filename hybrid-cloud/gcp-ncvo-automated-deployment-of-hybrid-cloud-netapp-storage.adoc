@@ -10,7 +10,7 @@ summary: In diesem Abschnitt wird die automatisierte Implementierung von NetApp 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-configure-public-cloud-service-provider.html["Früher: Public Cloud-Service-Provider konfigurieren."]

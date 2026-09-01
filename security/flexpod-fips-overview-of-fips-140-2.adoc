@@ -10,7 +10,7 @@ summary: FIPS 140-2 legt die Sicherheitsanforderungen für ein kryptografisches 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-cybersecurity-threats-in-healthcare.html["Früher: Cybersicherheitsbedrohungen im Gesundheitswesen."]

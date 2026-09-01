@@ -10,7 +10,7 @@ summary: Nachfolgend sind die Konnektivitätsanforderungen für die FlexPod-Konf
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

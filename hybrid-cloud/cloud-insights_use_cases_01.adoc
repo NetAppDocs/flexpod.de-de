@@ -10,7 +10,7 @@ summary: Mit Cloud Insights für das Monitoring Ihrer FlexPod Datacenter Lösung
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

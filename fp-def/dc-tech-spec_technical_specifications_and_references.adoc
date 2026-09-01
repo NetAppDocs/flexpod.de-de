@@ -10,7 +10,7 @@ summary: Technische Spezifikationen enthalten Details zu den Hardwarekomponenten
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

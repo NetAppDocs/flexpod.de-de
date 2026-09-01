@@ -10,7 +10,7 @@ summary: Ransomware ist eine Art von Malware, die auf Kryptovirologie basiert, d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Arvind Ramakrishnan, NetApp

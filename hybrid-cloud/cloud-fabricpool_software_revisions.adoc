@@ -10,7 +10,7 @@ summary: Die folgende Tabelle zeigt validierte Hardware- und Softwareversionen. 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

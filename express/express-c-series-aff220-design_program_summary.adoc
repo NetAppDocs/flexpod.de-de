@@ -10,7 +10,7 @@ summary: FlexPod Referenzarchitekturen werden als Cisco Validated Designs oder a
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

@@ -10,7 +10,7 @@ summary: Dieser Abschnitt bietet einen allgemeinen Überblick über die Validier
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:nvme-vsphere-introduction.html["Zurück: Einführung."]

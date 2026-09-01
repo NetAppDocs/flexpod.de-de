@@ -10,7 +10,7 @@ summary: Wir können den Terraform-Plan unter Verwendung eines Controllers ausf�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-dr-workflow.html["Früher: DR-Workflow."]

@@ -10,7 +10,7 @@ summary: Cisco hat entscheidend zum Design und der Architektur von FlexPod beige
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

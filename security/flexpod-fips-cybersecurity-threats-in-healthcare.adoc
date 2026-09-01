@@ -10,7 +10,7 @@ summary: Bedrohungen für die Gesundheit sind multidimensional in der Natur und 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-introduction.html["Zurück: Einführung."]

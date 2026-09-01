@@ -10,7 +10,7 @@ summary: Als Switching-Komponente bei einer bestimmten FlexPod Implementierung k
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

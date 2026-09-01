@@ -10,7 +10,7 @@ summary: Die Computing-Konfiguration für die FlexPod SM-BC-Lösung folgt den ty
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-solution-validation_overview.html["Preiiwous: Lösungsvalidierung – Überblick."]

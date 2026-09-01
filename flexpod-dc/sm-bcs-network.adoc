@@ -10,7 +10,7 @@ summary: Die Netzwerkkonfiguration für die FlexPod SM-BC Lösung folgt an jedem
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-compute.html["Früher: Lösungsvalidierung – Computing."]

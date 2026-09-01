@@ -10,7 +10,7 @@ summary: Durch die Ausführung Ihrer Applikationen im Gesundheitswesen auf einer
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-additional-flexpod-security-consideration.html["Früher: Weitere FlexPod-Sicherheitsüberlegungen."]

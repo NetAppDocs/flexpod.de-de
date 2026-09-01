@@ -10,7 +10,7 @@ summary: 'Dieses Dokument bietet eine technische Übersicht zu einem Cisco Unifi
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 JayaKishore Esanakula, NetApp John McAbel, Cisco

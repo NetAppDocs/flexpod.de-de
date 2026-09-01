@@ -10,7 +10,7 @@ summary: In diesem Abschnitt werden die Anzahl der Studien und die entsprechende
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

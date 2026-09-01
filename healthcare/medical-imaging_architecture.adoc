@@ -10,7 +10,7 @@ summary: Die FlexPod-Architektur bietet Hochverfügbarkeit, wenn eine Komponente
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

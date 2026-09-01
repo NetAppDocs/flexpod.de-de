@@ -10,7 +10,7 @@ summary: Dieser Abschnitt bietet eine kurze Übersicht über die Vorteile, die z
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-introduction.html["Zurück: Einführung."]

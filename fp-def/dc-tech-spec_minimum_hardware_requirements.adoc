@@ -10,7 +10,7 @@ summary: Eine FlexPod Datacenter Konfiguration verfügt über ein Minimum an Har
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Viele Gesundheitseinrichtungen auf der ganzen Welt haben FlexPod als ge
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-appendix-d-gpu-setup.html["Zurück: GPU-Setup."]

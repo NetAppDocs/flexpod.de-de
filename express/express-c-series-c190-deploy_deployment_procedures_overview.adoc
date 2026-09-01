@@ -10,7 +10,7 @@ summary: Dieses Dokument enthält Details zur Konfiguration eines vollständig r
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

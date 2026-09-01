@@ -10,7 +10,7 @@ summary: Durch die Ausführung einer medizinischen Bildgebungsumgebung mit FlexP
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

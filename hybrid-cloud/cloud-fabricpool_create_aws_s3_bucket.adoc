@@ -10,7 +10,7 @@ summary: Buckets sind Objektspeicher-Container, in denen Daten gespeichert sind.
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

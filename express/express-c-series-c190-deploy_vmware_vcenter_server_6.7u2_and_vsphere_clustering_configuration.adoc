@@ -10,7 +10,7 @@ summary: Führen Sie die auf dieser Seite beschriebenen Schritte aus, um VMware 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

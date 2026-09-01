@@ -10,7 +10,7 @@ summary: Diese Seite bietet eine Einführung in die Verwendung von FlexPod mit S
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 Die FlexPod Plattform ist eine vorkonfigurierte Datacenter-Architektur mit Best Practices, die auf Cisco Unified Computing System (Cisco UCS), den Cisco Nexus Switches und NetApp Storage Controllern basiert.

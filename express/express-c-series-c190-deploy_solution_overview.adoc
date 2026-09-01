@@ -10,7 +10,7 @@ summary: Diese FlexPod Express Lösung ist Teil des FlexPod Converged Infrastruc
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

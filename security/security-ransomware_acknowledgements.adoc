@@ -10,7 +10,7 @@ summary: Der Autor möchte den folgenden Personen für ihre Beiträge zur Erstel
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

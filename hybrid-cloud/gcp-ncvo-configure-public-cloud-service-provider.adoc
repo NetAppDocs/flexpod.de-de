@@ -10,7 +10,7 @@ summary: Auf dieser Seite wird beschrieben, wie Sie auf NetApp Cloud Manager zug
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-terraform-cloud-integration-with-ico-prerequisite.html["Früher: Terraform Cloud Integration mit ICO-Voraussetzung."]

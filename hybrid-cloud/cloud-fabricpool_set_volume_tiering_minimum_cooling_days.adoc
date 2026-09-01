@@ -10,7 +10,7 @@ summary: Die Tiering-Einstellung für minimale Kühltage bestimmt, wie viele Tag
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

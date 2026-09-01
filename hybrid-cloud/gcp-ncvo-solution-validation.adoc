@@ -10,7 +10,7 @@ summary: Auf dieser Seite greifen wir zurück auf die Lösung mit einem Beispiel
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:gcp-ncvo-terraform-execution-from-controller.html["Früher: Terraform-Ausführung vom Controller."]

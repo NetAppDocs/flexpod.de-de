@@ -10,7 +10,7 @@ summary: Führen Sie die folgenden Schritte aus, um das Implementierungsverfahre
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Zum Zeitpunkt der Veröffentlichung bietet das GATK-Tool keine native U
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-appendix-c.html["Zurück: Ausgabe für die Ausführung von GATK mit der Cromwell-Engine."]

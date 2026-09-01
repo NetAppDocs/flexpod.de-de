@@ -10,7 +10,7 @@ summary: Der Weg in die Cloud unterscheidet sich zwischen Unternehmen, verschied
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

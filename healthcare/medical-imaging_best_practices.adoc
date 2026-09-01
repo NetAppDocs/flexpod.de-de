@@ -10,7 +10,7 @@ summary: Dieser Abschnitt behandelt die Best Practices für das FlexPod Express 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

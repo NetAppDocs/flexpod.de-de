@@ -10,7 +10,7 @@ summary: Weitere Anforderungen für FlexPod Express sind unten aufgeführt.
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 'FlexPod ist eine flexible Lösung, mit der Sie Ihre vorhandenen System
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: AIQ um mit Proxy-Server-Konfigurationen müssen über die CLI eingerich
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

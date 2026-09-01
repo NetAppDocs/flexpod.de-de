@@ -10,7 +10,7 @@ summary: Die Plattform der Cisco MDS 9000 Serie mit Software 8.4.x ist FIPS 140-
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-flexpod-cisco-ucs-compute-and-fips-140-2.html["Früher: FlexPod Cisco UCS Computing und FIPS 140-2."]

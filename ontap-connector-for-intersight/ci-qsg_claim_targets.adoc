@@ -10,7 +10,7 @@ summary: Nach der Installation von Cisco Intersight Assist können Sie Ihre NetA
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

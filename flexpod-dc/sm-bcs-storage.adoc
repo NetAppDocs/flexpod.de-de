@@ -10,7 +10,7 @@ summary: Die Storage-Konfiguration für die FlexPod SM-BC Lösung folgt den typi
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-network.html["Zurück: Lösungsvalidierung - Netzwerk."]

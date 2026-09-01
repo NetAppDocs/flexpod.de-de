@@ -10,7 +10,7 @@ summary: Die Autoren möchten John George für seine Unterstützung und seinen B
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

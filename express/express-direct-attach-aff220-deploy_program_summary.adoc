@@ -10,7 +10,7 @@ summary: 'FlexPod Express ist eine vorkonfigurierte Best Practice-Architektur au
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 See Lakshmi Lanka, NetApp

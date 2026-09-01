@@ -10,7 +10,7 @@ summary: In diesem Abschnitt wird die in dieser Lösung verwendete Lösungsinfra
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-benefits-of-deploying-genomic-workloads-on-flexpod.html["Previous: Vorteile der Implementierung genomische Workloads auf FlexPod."]

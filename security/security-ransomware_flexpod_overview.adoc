@@ -10,7 +10,7 @@ summary: 'FlexPod ist eine vorkonfigurierte, integrierte und validierte Architek
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

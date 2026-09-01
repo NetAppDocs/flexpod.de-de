@@ -10,7 +10,7 @@ summary: Dieses Dokument enthält die technischen Spezifikationen der FlexPod Ex
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

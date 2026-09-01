@@ -10,7 +10,7 @@ summary: Zum Erstellen von Initiatorgruppen benötigen Sie die iSCSI-Initiator-I
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 

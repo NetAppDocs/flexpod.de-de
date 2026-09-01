@@ -10,7 +10,7 @@ summary: Der Aufbau einer Hybrid Cloud hat für die meisten Organisationen im Ge
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:fhc-cvoe-solution-validation.html["Zurück: Lösungsvalidierung."]

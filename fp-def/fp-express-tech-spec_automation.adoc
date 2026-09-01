@@ -10,7 +10,7 @@ summary: Die automatisierte Bereitstellung für FlexPod Express ist über ein Gi
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

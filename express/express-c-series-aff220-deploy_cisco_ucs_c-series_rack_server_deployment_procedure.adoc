@@ -10,7 +10,7 @@ summary: Der folgende Abschnitt enthält ein detailliertes Verfahren zur Konfigu
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: In der FlexPod SM-BC Lösung an mehreren Standorten managt ein einzelne
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-storage.html["Früher: Lösungsvalidierung – Storage."]

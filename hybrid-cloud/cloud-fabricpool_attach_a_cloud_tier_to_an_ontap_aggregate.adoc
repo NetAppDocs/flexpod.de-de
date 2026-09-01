@@ -10,7 +10,7 @@ summary: Nachdem ein Objektspeicher von ONTAP hinzugefügt und von ihm identifiz
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

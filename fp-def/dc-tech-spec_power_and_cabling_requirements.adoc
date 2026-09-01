@@ -10,7 +10,7 @@ summary: Ein FlexPod Design erfüllt die Mindestanforderungen für Strom und Ver
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: In diesem Abschnitt wird die Installation und Konfiguration von Cloud V
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:fhc-cvoe-solution-components.html["Früher: Lösungskomponenten."]

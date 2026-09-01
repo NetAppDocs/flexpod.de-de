@@ -10,7 +10,7 @@ summary: Mit der konvergenten Infrastrukturplattform von FlexPod können Gesundh
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 JayaKishore Esanakula, NetApp

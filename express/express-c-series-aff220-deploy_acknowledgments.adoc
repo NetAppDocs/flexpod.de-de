@@ -10,7 +10,7 @@ summary: Die Autoren möchten bestimmte Personen für ihre Unterstützung und ih
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

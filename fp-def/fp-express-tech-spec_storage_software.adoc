@@ -10,7 +10,7 @@ summary: Die in diesem Abschnitt aufgeführten Storage-Betriebssysteme werden vo
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

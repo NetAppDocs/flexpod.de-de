@@ -10,7 +10,7 @@ summary: Dieser Abschnitt enthält die JAR-Dateiausgabe von GATK.
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-genomics-genomics---gatk-setup-and-execution.html["Früher: Genomik - GATK Einrichtung und Ausführung."]

@@ -10,7 +10,7 @@ summary: 'Bei der Implementierung einer FIPS 140-2-2-Strategie ist es wichtig zu
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:flexpod-fips-overview-of-fips-140-2.html["Zurück: Übersicht von FIPS 140-2."]

@@ -10,7 +10,7 @@ summary: Auf jedem NetApp FAS oder AFF System wird NetApp ONTAP Software install
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

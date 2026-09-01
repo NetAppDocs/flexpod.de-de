@@ -10,7 +10,7 @@ summary: Sie können VMware vCenter Server 6.7- und vSphere-Clustering konfiguri
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]

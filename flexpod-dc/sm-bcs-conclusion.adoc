@@ -10,7 +10,7 @@ summary: Das FlexPod Datacenter mit SM-BC beruht auf einem aktiv/aktiv-Datacente
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 link:sm-bcs-validated-scenarios.html["Zurück: Lösungsvalidierung - validierte Szenarien."]
