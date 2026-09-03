@@ -68,7 +68,7 @@ Damit Cloud Insights Daten sammeln kann, muss ein Unternehmen eine Erfassungsein
 
 Die folgende Abbildung zeigt die Lösungsarchitektur.
 
-image:cloud-insights_image2.png[""]
+image:cloud-insights_image2.png["Ein Diagramm, das Cisco UCS, Nexus Switches, NetApp AFF A800 Controller und MDS Switches zeigt, die durch Netzwerkverbindungen miteinander verbunden sind"]
 
 
 

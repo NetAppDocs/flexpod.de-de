@@ -34,15 +34,15 @@ In diesem Abschnitt werden der Status der Dateien vor einem Angriff auf die VM u
 
 Der Ordner Dokumente der VM hatte eine Reihe von PDF-Dateien, die noch nicht durch die WannaCry Malware verschlüsselt wurden.
 
-image:security-ransomware_image3.png[""]
+image:security-ransomware_image3.png["Ein Screenshot eines Windows-Dokumentenordners mit einer Liste unverschlüsselter WorkDoc PDF-Dateien"]
 
 Der folgende Screenshot zeigt die CIFS-Freigabe, die der VM zugeordnet war.
 
-image:security-ransomware_image4.png[""]
+image:security-ransomware_image4.png["Ein Screenshot, der das CIFS-Netzlaufwerk fpolicy_share als Laufwerk Z: im Windows File Explorer anzeigt."]
 
 Der folgende Screenshot zeigt die Dateien auf der CIFS-Freigabe `fpolicy_share` Die noch nicht durch die WannaCry-Malware verschlüsselt wurden.
 
-image:security-ransomware_image5.png[""]
+image:security-ransomware_image5.png["Ein Screenshot des Datei-Explorers zeigt unverschlüsselte Dateien auf der CIFS-Freigabe fpolicy_share, die als Laufwerk Z gemappt ist."]
 
 
 
@@ -53,19 +53,19 @@ Details zur Storage-Effizienz und die Größe der Snapshot-Kopie vor einem Angri
 
 Storage-Einsparungen von 19 % wurden durch Deduplizierung auf dem Volume, das die VM hostet, erzielt.
 
-image:security-ransomware_image6.png[""]
+image:security-ransomware_image6.png["Ein Screenshot der Speichereffizienz von infra_datastore1 zeigt 5,84 GB (19 %) Einsparungen durch Deduplizierung"]
 
 Durch Deduplizierung beim CIFS-Share wurden Storage-Einsparungen von 45 % erzielt `fpolicy_share`.
 
-image:security-ransomware_image7.png[""]
+image:security-ransomware_image7.png["Ein Screenshot der Speichereffizienz von cifS_volume mit einer Einsparung von 5,05 GB (45 %) durch Deduplizierung"]
 
 Für das Volume, das die VM hostet, wurde eine Snapshot-Kopie von 456 KB beobachtet.
 
-image:security-ransomware_image8.png[""]
+image:security-ransomware_image8.png["Ein Screenshot der Snapshot Copies von infra_datastore1 zeigt before_attack mit einer Gesamtgröße von 456 KB"]
 
 Für den CIFS-Share wurde eine Snapshot Kopie von 160 KB beobachtet `fpolicy_share`.
 
-image:security-ransomware_image9.png[""]
+image:security-ransomware_image9.png["Ein Screenshot der Registerkarte „cifS_volume Snapshot Copies“, der den Snapshot „before_attack_cifs“ mit einer Gesamtgröße von 160 KB zeigt"]
 
 
 
@@ -78,11 +78,11 @@ Die folgenden Schritte zeigen, wie die WannaCry-Malware-Binärdatei in die VM ei
 
 . Die gesicherte Malware wurde extrahiert.
 +
-image:security-ransomware_image10.png[""]
+image:security-ransomware_image10.png["Ein Symbol für einen komprimierten Ordner namens Ransomware.WannaCry"]
 
 . Die Binärdatei wurde ausgeführt.
 +
-image:security-ransomware_image11.png[""]
+image:security-ransomware_image11.png["Ein Screenshot des Windows File Explorer, der eine ausgewählte WannaCry-ausführbare Datei mit der Menüoption „Als Administrator ausführen“ zeigt"]
 
 
 
@@ -95,11 +95,11 @@ Das lokale Dateisystem und die zugeordnete CIFS-Share wurden durch den WannaCry 
 
 Malware beginnt, Dateien mit WNCRY-Erweiterungen zu verschlüsseln.
 
-image:security-ransomware_image12.png[""]
+image:security-ransomware_image12.png["Ein Screenshot von Windows File Explorer, der PDF-Dateien und verschlüsselte WNCRY-Dateien im Ordner Dokumente zeigt"]
 
 Die Malware verschlüsselt alle Dateien in der lokalen VM und der zugeordneten Freigabe.
 
-image:security-ransomware_image13.png[""]
+image:security-ransomware_image13.png["Ein Screenshot, der lokale und zugeordnete CIFS-Freigabedateien mit WNCRY-Erweiterungen verschlüsselt zeigt"]
 
 
 
@@ -109,15 +109,15 @@ Als die Malware mit der Verschlüsselung der Dateien begann, führte sie zu eine
 
 Wir erkannten eine drastische Zunahme der Snapshot-Größe auf 820.98MB für das Volume, das während des Angriffs die CIFS-Freigabe hostet.
 
-image:security-ransomware_image14.png[""]
+image:security-ransomware_image14.png["Ein Screenshot, der den Tab „cifs_volume Snapshot Copies“ mit einer Snapshot-Größe von 820,98 MB zeigt"]
 
 Wir erkannten eine Erhöhung der Snapshot-Kopie auf 404,3MB für den Volumen, der die VM hostet.
 
-image:security-ransomware_image15.png[""]
+image:security-ransomware_image15.png["Ein Screenshot des Tabs „Snapshot Copies“ von infra_datastore1 zeigt eine 404,3 MB große Snapshot-Kopie „before_attack“."]
 
 Die Storage-Effizienz für das Volume, auf dem der CIFS-Share gehostet wird, sank auf 34 %.
 
-image:security-ransomware_image16.png[""]
+image:security-ransomware_image16.png["Ein Screenshot der Speichereffizienz von cifsv_volume zeigt eine Gesamteinsparung von 5 GB bei 34 %"]
 
 
 
@@ -131,23 +131,23 @@ Um die VM wiederherzustellen, führen Sie die folgenden Schritte aus:
 
 . Verwenden Sie die mit SnapCenter erstellte Snapshot Kopie zum Wiederherstellen der VM.
 +
-image:security-ransomware_image17.png[""]
+image:security-ransomware_image17.png["Ein Screenshot des vSphere-Aktionsmenüs für WannaCry-2016-1 mit ausgewählter NetApp SnapCenter Restore-Option"]
 
 . Wählen Sie die gewünschte VMware- konsistente Snapshot Kopie für die Wiederherstellung aus.
 +
-image:security-ransomware_image18.png[""]
+image:security-ransomware_image18.png["Ein Screenshot des Wiederherstellungsassistenten, der die verfügbaren VMware Snapshot Backups auflistet, wobei eines ausgewählt ist"]
 
 . Die gesamte VM wird wiederhergestellt und neu gestartet.
 +
-image:security-ransomware_image19.png[""]
+image:security-ransomware_image19.png["Ein Wiederherstellungsassistent, der die gesamte WannaCry-2016-1 virtuelle Maschine auswählt und sie auf einem ESXi Host neu startet"]
 
 . Klicken Sie auf Fertig stellen, um den Wiederherstellungsvorgang zu starten.
 +
-image:security-ransomware_image20.png[""]
+image:security-ransomware_image20.png["Eine Zusammenfassung des Wiederherstellungsassistenten für die virtuelle Maschine WannaCry-2016-1 mit einer Schaltfläche „Fertigstellen“ und einer Warnung zum Herunterfahren"]
 
 . Die VM und ihre Dateien sind wiederhergestellt.
 +
-image:security-ransomware_image21.png[""]
+image:security-ransomware_image21.png["Ein Screenshot des Windows File Explorer, der die wiederhergestellten PDF-Dateien im Ordner „Dokumente“ zeigt"]
 
 
 
@@ -157,15 +157,15 @@ Gehen Sie wie folgt vor, um die CIFS-Freigabe wiederherzustellen:
 
 . Verwenden Sie die Snapshot-Kopie des vor dem Angriff aufgenommene Volumes, um die Freigabe wiederherzustellen.
 +
-image:security-ransomware_image22.png[""]
+image:security-ransomware_image22.png["Ein Screenshot, der die Registerkarte „Snapshot Copies“ für cifs_volume mit der ausgewählten Aktion „Restore“ zeigt."]
 
 . Klicken Sie auf OK, um den Wiederherstellungsvorgang zu starten.
 +
-image:security-ransomware_image23.png[""]
+image:security-ransomware_image23.png["Ein Bestätigungsdialogfeld zum Wiederherstellen von cif_volume aus einer Snapshot-Kopie mit den Schaltflächen OK und Abbrechen"]
 
 . Zeigen Sie die CIFS-Freigabe nach der Wiederherstellung an.
 +
-image:security-ransomware_image24.png[""]
+image:security-ransomware_image24.png["Ein Screenshot des Windows File Explorer, der das zugeordnete CIFS-Laufwerk fpolicy_share mit Ordnern, Datenträgerabbildern und PDF-Dateien zeigt"]
 
 
 
@@ -192,8 +192,8 @@ Mit dieser Richtlinie sind Dateien mit den Erweiterungen WNCRY, Locky und ad4c n
 
 Anzeigen des Status von Dateien vor dem Angriff – sie sind unverschlüsselt und in einem sauberen System.
 
-image:security-ransomware_image25.png[""]
+image:security-ransomware_image25.png["Ein Screenshot, der unverschlüsselte WorkDoc PDF-Dateien in „Dokumente“ und im Laufwerk „fpolicy_share“ zeigt"]
 
 Die Dateien auf der VM sind verschlüsselt. Die WannaCry Malware versucht, die Dateien in der CIFS-Share zu verschlüsseln, aber FPolicy verhindert, dass sie die Dateien zu beeinflussen.
 
-image:security-ransomware_image26.png[""]
+image:security-ransomware_image26.png["Ein Screenshot von verschlüsselten VM-Dateien neben unbeschädigten PDF-Dateien in einer FPolicy CIFS-Freigabe"]

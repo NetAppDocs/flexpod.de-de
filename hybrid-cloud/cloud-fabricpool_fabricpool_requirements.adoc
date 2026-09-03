@@ -90,7 +90,7 @@ Die FabricPool Leselatenz ist eine Funktion der Verbindung zum Cloud-Tier. Inter
 
 NOTE: Beim Einsatz von FabricPool in hochperformanten Umgebungen müssen weiterhin minimale Performance-Anforderungen für Client-Applikationen eingehalten werden, und die Recovery-Zeitvorgaben sollten entsprechend angepasst werden.
 
-image:cloud-fabricpool_image6.png[""]
+image:cloud-fabricpool_image6.png["Ein Diagramm, das zwei NetApp AFF A300 Controller zeigt, die Intercluster-LIFs mit AWS S3 verbinden."]
 
 
 
@@ -114,7 +114,7 @@ storage aggregate object-store profiler show
 ....
 Cloud-Tiers bieten keine Performance ähnlich wie bei der Performance-Tier (normalerweise GB pro Sekunde). Obwohl FabricPool Aggregate problemlos SATA-ähnliche Performance bieten, sind sie für Tiering-Lösungen, die keine SATA-ähnliche Performance benötigen, auch Latenzzeiten von bis zu 10 Sekunden und einen niedrigen Durchsatz tolerierbar.
 
-image:cloud-fabricpool_image7.png[""]
+image:cloud-fabricpool_image7.png["Ein Screenshot der ONTAP CLI Objektspeicher-Profilergebnisse, der die Latenz und den Durchsatz von PUT- und GET-Anfragen anzeigt"]
 
 
 

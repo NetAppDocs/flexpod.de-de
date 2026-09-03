@@ -18,7 +18,7 @@ Diese Referenzvalidierung ist verkabelt, wie in den folgenden Abbildungen und Ta
 
 Diese Abbildung zeigt die Verkabelung zur Referenzvalidierung.
 
-image:express-c-series-c190-deploy_image3.png[""]
+image:express-c-series-c190-deploy_image3.png["Ein Diagramm, das die Rückansichten von zwei Nexus Switches, zwei Cisco UCS Servern und AFF C190 Controllern zeigt"]
 
 In der folgenden Tabelle sind die Verkabelungsinformationen für den Cisco Nexus Switch 31108PC-V-A aufgeführt
 

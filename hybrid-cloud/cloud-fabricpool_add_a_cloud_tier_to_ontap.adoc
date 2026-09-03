@@ -45,7 +45,7 @@ Geben Sie im Feld Container-Name den Bucket- oder Containernamen des Objektspeic
 . Klicken Sie auf Save and Attach Aggregates.
 
 
-image:cloud-fabricpool_image13.png[""]
+image:cloud-fabricpool_image13.png["Ein Screenshot des Formulars „Cloud-Tier hinzufügen“, konfiguriert für einen Amazon S3 Cloud-Tier-Anbieter"]
 
 
 

@@ -103,7 +103,7 @@ Das kooperative Support-Modell für FlexPod ist besonders dann nützlich, wenn I
 
 
 
-image:medical-imaging_image2.png[""]
+image:medical-imaging_image2.png["Ein Diagramm, das das FlexPod Cooperative Support-Modell zwischen Kunden, Cisco und NetApp zeigt"]
 
 
 

@@ -20,31 +20,31 @@ Die Tests bestanden aus der Ausführung der FIO-Workloads, um die FC-NVMe-Perfor
 
 Das folgende Diagramm zeigt unsere Ergebnisse bei der Ausführung eines Workloads mit 100 % zufälligen Lesevorgängen mit 8-KB-Blockgrößen.
 
-image:nvme-vsphere-image3.png[""]
+image:nvme-vsphere-image3.png["Ein Diagramm der FlexPod AFF A800 8KB Random Read IOPS im Vergleich zur Latenz, mit 1,25 Mio. IOPS bei 0,76 ms."]
 
 In unseren Tests stellten wir fest, dass das System bei einer Latenz von weniger als 0,35 ms durch eine serverseitige Latenz über 1,2 Millionen IOPS erreicht hat.
 
 Das folgende Diagramm zeigt unsere Ergebnisse bei der Ausführung eines Workloads mit 100 % zufälligen Schreibvorgängen mit 8-KB-Blockgrößen.
 
-image:nvme-vsphere-image4.png[""]
+image:nvme-vsphere-image4.png["Ein Diagramm, das zeigt, wie bei FlexPod AFF A800 die 8KB zufällige Schreiblatenz mit den IOPS ansteigt"]
 
 In unseren Tests stellten wir fest, dass das System fast bis 300.000 IOPS erreicht hat und dabei eine serverseitige Latenz von nur weniger als 1 ms erzielt hat.
 
 Bei 8 KB Blockgröße mit 80 % zufälligen Lesevorgängen und 20 % Schreibvorgängen beobachteten wir die folgenden Ergebnisse:
 
-image:nvme-vsphere-image5.png[""]
+image:nvme-vsphere-image5.png["Ein Diagramm von FlexPod AFF A800 8KB 80:20, bei dem die Latenz bei 1M IOPS auf 0,95 ms ansteigt"]
 
 In unseren Tests stellten wir fest, dass das System über 1 Mio. IOPS erreichte und dabei eine Latenz von nur knapp unter 1 ms bei serverseitiger Latenz erreichte.
 
 Bei 64 KB Blockgröße und 100 % sequenziellen Lesevorgängen haben wir die folgenden Ergebnisse beobachtet:
 
-image:nvme-vsphere-image6.png[""]
+image:nvme-vsphere-image6.png["Ein Diagramm zeigt, wie die FlexPod AFF A800 64KB sequenzielle Leselatenz mit steigender IOPS von 0,2 auf 0,78 ms ansteigt."]
 
 In unseren Tests stellten wir fest, dass das System ungefähr 250.000 IOPS erreichte und dabei eine Latenz von nur knapp unter 1 ms bei serverseitiger Latenz erreichte.
 
 Bei 64 KB Blockgröße und 100 % sequenziellen Schreibvorgängen haben wir die folgenden Ergebnisse beobachtet:
 
-image:nvme-vsphere-image7.png[""]
+image:nvme-vsphere-image7.png["Ein Diagramm, das zeigt, wie bei FlexPod AFF A800 die 64KB sequenzielle Schreiblatenz mit den IOPS ansteigt"]
 
 In unseren Tests stellten wir fest, dass das System ungefähr 120.000 IOPS erreichte und dabei eine Latenz von unter 1 ms bei serverseitiger Latenz erreichte.
 
