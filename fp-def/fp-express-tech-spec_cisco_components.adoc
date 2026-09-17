@@ -174,16 +174,11 @@ Redundante Cisco Nexus Switches sind in der FlexPod-Architektur erforderlich.
 [[cisco-support-licensing-options]]
 == Lizenzoptionen für Cisco Support
 
-Für alle Cisco Geräte in der FlexPod Express-Architektur sind gültige TSANet-Supportverträge erforderlich.
 
+NOTE: Es wird empfohlen, die Lizenzanforderungen vor der Bestellung mit Ihrem Cisco- oder NetApp-Vertriebsmitarbeiter abzuklären.
 
-NOTE: Die benötigten Lizenzen und zugehörigen Teilenummern können je nach Produkt und Konfiguration variieren. Es wird empfohlen, die Lizenzanforderungen vor der Bestellung mit Ihrem Cisco- oder NetApp-Vertriebsmitarbeiter abzuklären.
+link:https://www.cisco.com/c/dam/en_us/about/doing_business/legal/service_descriptions/docs/solution-support-smart-total-care.pdf["Cisco Solution Support"^] ist ein Angebot für technischen Support, das für Cisco Lösungen gilt, die sowohl Hardware als auch Software von Cisco oder von Cisco und Solution Support Alliance Partnern umfassen und ausschließlich aus Cisco Produkten und Produkten von Drittanbietern (Solution Support Alliance Partner(s)) bestehen.
 
-In der folgenden Tabelle sind die Cisco Support-Lizenzoptionen aufgeführt.
+Cisco unterstützt komplexe Kundenumgebungen durch sein link:https://www.cisco.com/c/en/us/support/web/tac/technical-services-resource-guide.html["Technisches Unterstützungszentrum"]. Cisco Solution Support berechtigt Kunden zum Zugriff auf ein Team von TAC-Ingenieuren, die als Hauptansprechpartner für Probleme innerhalb der Lösung sowie für den Produktsupport für die Hardware und Software, die die Lösung bilden, fungieren.
 
-|===
-| Cisco Support-Lizenzierung | Lizenzhandbuch 
-
-
-| TSANet | https://www.tsanet.org/cisco-tsanet-case-study/[] 
-|===
+Cisco nutzt das link:https://www.tsanet.org/cisco-tsanet-case-study/["TSANet Partnerprogramm"^] Framework, um Solution Support Partners in eine private Gruppe im TSANet Connect System aufzunehmen. TSANet Connect bietet eine einheitliche Methode für Support-Ingenieure zur Zusammenarbeit mit den technischen Teams der Partner, wodurch eine effiziente Kommunikation und eine beschleunigte Problemlösung ohne die durch informelle Kooperationsversuche entstehenden Reibungsverluste sichergestellt werden.

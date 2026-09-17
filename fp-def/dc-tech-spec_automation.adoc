@@ -27,7 +27,7 @@ Die GitHub Repositories bieten einen strukturierten Ansatz für die Bereitstellu
 * Automatisierte Bereitstellung von FlexPod Datacenter mit VMware vSphere und Cisco IMM
 +
 ** Für die automatisierte Bereitstellung einer FlexPod Datacenter Konfiguration mit Cisco Nexus Switches, Cisco UCS C-Series Servern oder Cisco UCS X-Series Direct mit IMM und NetApp ONTAP mit VMware vSphere wird auf die link:https://github.com/ucs-compute-solutions/FlexPod-IMM-VMware["FlexPod Datacenter mit VMware vSphere und Cisco IMM GitHub Repo"^] und die entsprechende link:https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/flexpod_imm_m7_iac.html["CVD"^] verwiesen.
-** Die in den Ansible Playbooks definierten VMware-Rollen können für VMware-bezogene Konfigurationen verwendet werden.
+** Die in den Ansible Playbooks definierten VMware Rollen können für VMware bezogene Konfigurationen verwendet werden.
 
 
 

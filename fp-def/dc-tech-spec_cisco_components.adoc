@@ -232,7 +232,7 @@ Redundante Switches der Cisco Nexus 9000 Series sind in der FlexPod-Architektur 
 [[cisco-apic-options]]
 == Cisco APIC-Optionen
 
-Cisco APIC ist die zentrale Architekturkomponente von Cisco ACI. Es ist der einheitliche Punkt für Automatisierung und Management des Cisco ACI Fabric.
+Cisco APIC ist die zentrale Architekturkomponente von Cisco ACI. Es bietet zentralisierte Verwaltung, Richtlinienkontrolle und Automatisierung für Cisco ACI Fabrics.
 
 Weitere Informationen zu den APIC-Produktspezifikationen sind Tabelle 1 bis Tabelle 3 auf der  https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/application-policy-infrastructure-controller-apic/datasheet-c78-739715.html["Datenblatt Zum Cisco Application Policy Infrastructure Controller"^] zu entnehmen.
 

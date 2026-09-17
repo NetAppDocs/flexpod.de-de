@@ -25,12 +25,12 @@ Eine FlexPod-Konfiguration umfasst die folgenden Mindestanforderungen an die Har
 NOTE: Bei der Bereitstellung einer ACI-Architektur sind die folgenden zusätzlichen Anforderungen zu berücksichtigen: * Die Cisco Nexus 9000 Series Switches sind in einer Leaf-Spine-Topologie bereitzustellen. * Drei Cisco Application Policy Infrastructure Controller (APICs) sind zu verwenden.
 
 * Zwei Cisco UCS 6400, 6500 oder 6600 Series Fabric Interconnects in redundanter Konfiguration, wenn die UCS C-Series Rack Server oder die X-Series Modular systems verwendet werden.
-* Zwei Cisco UCS C-Series Rack-Server mit FI-Konnektivität und Intersight-verwalteter Konfiguration (IMM), oder Cisco UCS X-Series Direct mit Cisco IMM, oder Cisco UCS X-Series Modular mit Cisco Intersight-verwalteter Konfiguration (IMM).
+* Zwei Cisco UCS C-Series Rack Server mit FI-Konnektivität und Intersight Managed Mode Konfiguration (IMM), oder Cisco UCS X-Series Direct mit Cisco IMM, oder Cisco UCS X-Series Modular mit Cisco IMM.
 
 
 
-NOTE: Wenn Sie die UCS Rackserver ohne FI-Konnektivität verwenden, können Sie CIMC oder den Intersight Standalone-Modus für das Management verwenden.
+NOTE: Wenn Sie die UCS Rackserver ohne FI-Konnektivität verwenden, können Sie CIMC oder den Intersight Standalone-Modus für das Management (ISM) einsetzen.
 
-* Zwei NetApp AFF, NetApp ASA oder NetApp FAS Controller in einer hochverfügbaren (HA) Paar-Konfiguration, bereitgestellt als Zwei-Node-Cluster. Bei Verwendung von NetApp AFX sind mindestens vier NetApp AFX Controller erforderlich, die zusammen mit einem Paar Cluster-Interconnect-Switches als Vier-Node-HA-Cluster bereitgestellt werden.
+* Zwei NetApp AFF, NetApp ASA oder NetApp FAS Controller in einer Hochverfügbarkeitskonfiguration (HA) als Zwei-Node-Cluster bereitgestellt. Bei Verwendung von NetApp AFX sind mindestens vier NetApp AFX Controller erforderlich, die als Vier-Node-Cluster mit zwei HA-Paaren sowie einem Paar Cluster-Interconnect-Switches bereitgestellt werden müssen.
 * Für Storage-Controller, die kein integriertes Disk-Shelf besitzen, ist mindestens ein NetApp Disk-Shelf erforderlich.
 
