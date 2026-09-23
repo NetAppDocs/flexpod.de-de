@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: ontap-select-cisco-unified-edge/ontap-select-cisco-unified-edge-overview.html 
+keywords: ontap select, cisco unified edge, overview, flexpod 
+summary: ONTAP Select läuft als virtuelle Maschine auf Cisco Unified Edge Compute-Knoten und bietet eine konsolidierte Speicherarchitektur mit einem einzelnen Controller für Edge-Standorte, wobei betriebliche Kompromisse bestehen, die bei der Planung berücksichtigt werden müssen. 
+---
+= Bereitstellung von ONTAP Select auf Cisco Unified Edge
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Als softwaredefinierte Speicheralternative zu einer dedizierten NetApp Appliance läuft ONTAP Select als virtuelle Maschine auf einem unterstützten Hypervisor (KVM oder VMware vSphere) und nutzt lokal angeschlossenen Speicher zur Bereitstellung von NAS- und SAN-Diensten. ONTAP Select ist ideal für Außenstellen, Backoffice-Standorte, speziell entwickelt Edge-Bereitstellungen, mobile Umgebungen und andere Szenarien, in denen Kunden den vollständigen Funktionsumfang der ONTAP Datendienste wünschen.
+
+
+NOTE: ONTAP Select (OTS) auf Cisco Unified Edge wird als Einzelknoteninstanz ohne Hochverfügbarkeit (HA) bereitgestellt.
+
+Wenn ONTAP Select und Cisco Unified Edge gemeinsam implementiert werden, entsteht eine konsolidierte Edge-Architektur. Ein speicheroptimierter Compute-Knoten stellt die lokalen NVMe-Medien bereit. Der Hypervisor stellt der ONTAP Select virtuellen Maschine die entsprechenden Ressourcen zur Verfügung. ONTAP Select organisiert die lokalen Medien anschließend in ONTAP Aggregaten und Volumes und stellt Speicher für Anwendungs-Workloads bereit, die lokal im selben Chassis oder an einem anderen Edge-Standort ausgeführt werden. Dieses Design hält Daten nahe bei den Anwendungen, verringert die Abhängigkeit von WAN-Konnektivität im täglichen Betrieb und entspricht zentralisierten Management- und Datenschutzpraktiken.
+
+image::ots-on-cue.png[ONTAP Select auf Cisco Unified Edge Architektur]
+
+Die Beschränkung auf vier Laufwerke und die Abhängigkeit von Software-RAID in den Rechenknoten XE130c und XE150c begrenzen ONTAP Select Implementierungen auf eine Architektur mit einem einzigen Controller. Im Gegensatz zu einer Speicherarchitektur mit mehreren Knoten mit Controller-Failover kann ein einzelner Speichercontroller nicht für Wartungsarbeiten auf Controller-Ebene offline genommen werden, ohne die lokalen Speicherdienste zu beeinträchtigen.
+
+Diese Einschränkung mindert nicht den Wert der Architektur, muss aber im Betriebsmodell berücksichtigt werden. Geeignete Workloads sind solche, die geplante Speicherausfälle tolerieren, auf Anwendungsebene resilient sind oder zur Wiederherstellung eine Replikation in eine zentrale ONTAP Umgebung nutzen. Kunden sollten Wartungskalender definieren, Servicefenster den Anwendungsverantwortlichen mitteilen, vor unterbrechenden Arbeiten aktuelle Backups oder Replikate überprüfen und Rollback-Verfahren dokumentieren. Wenn Workloads während der Controller-Wartung eine kontinuierliche Speicherverfügbarkeit erfordern, sollte ein externes ONTAP Storage Array anstelle einer ONTAP Select Konfiguration mit einem einzelnen Controller in Betracht gezogen werden.

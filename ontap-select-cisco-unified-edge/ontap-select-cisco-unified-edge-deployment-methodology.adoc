@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: ontap-select-cisco-unified-edge/ontap-select-cisco-unified-edge-deployment-methodology.html 
+keywords: ontap select, cisco unified edge, deployment, methodology, flexpod 
+summary: Beschreibt die wichtigsten Schritte für die Lizenzierung, Dimensionierung, Konfiguration des lokalen Speichers und die Bereitstellung von ONTAP Select auf Cisco Unified Edge. 
+---
+= High-Level-Bereitstellungsmethodik
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dieser Abschnitt beschreibt die wichtigsten Schritte für die Lizenzierung, Dimensionierung, Konfiguration des lokalen Speichers und die Bereitstellung von ONTAP Select auf Cisco Unified Edge.
+
+
+
+[[1-ontap-select-licensing]]
+== 1. ONTAP Select Lizenzierung
+
+Für die Verwendung von NVMe-Laufwerken ist eine Premium XL Lizenz erforderlich. Kunden können zwischen einer flexiblen Kapazitätspool-Lizenz, die die Kapazität zwischen mehreren Standorten teilt, und einer unbefristeten Lizenz wählen, die an einen bestimmten Knoten gebunden ist. Weitere Einzelheiten sind unter link:https://docs.netapp.com/us-en/ontap-select/concept_lic_workflow.html["Workflow für den Lizenzkauf für ONTAP Select"] zu finden.
+
+
+
+[[2-obtain-ontap-select-deploy-software]]
+== 2. ONTAP Select Deploy Software beschaffen
+
+ONTAP Select Deploy ist das Verwaltungstool, das zum Bereitstellen und Verwalten von ONTAP Select Clustern verwendet wird. Deploy wird als virtuelle Linux-Maschine bereitgestellt, die vor dem Erstellen eines ONTAP Select Clusters installiert werden muss. Es kann von link:https://stackautomation.cisco.com/["Cisco Stack Automation"] installiert oder als .ova von der link:https://mysupport.netapp.com/site/["NetApp Support Site"] heruntergeladen werden.
+
+
+
+[[3-choose-ontap-select-virtual-machine-size]]
+== 3. ONTAP Select virtuelle Maschinengröße auswählen
+
+ONTAP Select mit Premium XL Lizenz kann als kleine, mittlere oder große virtuelle Maschineninstanz bereitgestellt werden, um die Anforderungen an die Speicherleistung zu erfüllen. XE130c oder XE150c Compute-Nodes mit 12 Kernen können kleine oder mittlere Instanzgrößen unterstützen, während für große Instanzen 20- oder 32-Kern-Nodes erforderlich sind. Weitere Informationen zu den Anforderungen an die Instanzgrößen enthält link:https://docs.netapp.com/us-en/ontap-select/reference_plan_ots_hardware.html#basic-hardware-requirements["ONTAP Select VMware-Hypervisor und Hardwareüberlegungen"].
+
+
+
+[[4-prepare-local-storage]]
+== 4. Lokalen Speicher vorbereiten
+
+VMDirectPath I/O Pass-through wird auf den NVMe-Laufwerken verwendet, um die Effizienz zu maximieren. Diese Einstellung macht die Laufwerke für die virtuelle Maschine sichtbar, sodass ONTAP direkten PCI-Zugriff auf das Gerät erhält. Weitere Informationen zum Aktivieren des NVMe Pass-through sind unter link:https://docs.netapp.com/us-en/ontap-select/task_chk_nvme_configure.html["Konfigurieren eines ONTAP Select Hosts zur Verwendung von NVMe-Laufwerken"] zu finden.
+
+Eine der vier NVMe-Festplatten wird als Systemfestplatte verwendet und enthält das Bootlaufwerk der virtuellen Maschine, den Core und NVRAM. Die drei verbleibenden Festplatten sind als Datenfestplatten mit Software RAID 4 konfiguriert, um einen auf Parität basierenden Schutz gegen den Ausfall einzelner Festplatten bereitzustellen. Jede Datenfestplatte ist in drei Partitionen unterteilt: eine kleine Root-Partition und zwei gleich große Partitionen, um zwei Datenfestplatten zu erstellen, die innerhalb der ONTAP Select VM sichtbar sind. Weitere Einzelheiten sind in link:https://docs.netapp.com/us-en/ontap-select/concept_stor_swraid_local.html#ontap-select-virtual-and-physical-disks["ONTAP Select Software-RAID-Konfigurationsdienste für lokal angeschlossenen Speicher"] zu finden.
+
+Die Systemfestplatte kann eine geringere Speicherkapazität als die drei Datenfestplatten aufweisen, um die Gesamtspeicherkosten der Lösung zu senken. Eine 1,6-TB Hochleistungs- und Hochendurance-Festplatte (UCSXE-NVE11T6K1P) ist ausreichend.
+
+
+
+[[5-deploy-the-ontap-select-instance]]
+== 5. Die ONTAP Select Instanz bereitstellen
+
+ONTAP Select wird als virtuelle Maschine mithilfe der ONTAP Select Deploy Tools und der unterstützten Hypervisor-Umgebung bereitgestellt. Während der Bereitstellung definiert der Administrator den Node, die Management-Schnittstellen, die Data-Schnittstellen, die Kapazität und die lokalen Festplattenzuweisungen. Nachdem ONTAP Select läuft, empfiehlt es sich für Administratoren, Volumes oder LUNs für die lokalen Anwendungen zu erstellen und entsprechende Richtlinien, Freigaben, Initiatorgruppen oder Zugriffskontrollen anzuwenden.
