@@ -174,7 +174,7 @@ image:sm-bcs-image11.png["Ein Diagramm, das NetApp AFF und ASA Controller sowie 
 | AFF Serie | link:https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62247["Dokumentation der AFF Serie"^] 
 
 
-| ASA Serie | link:https://docs.netapp.com/allsan/index.jsp["Dokumentation der ASA Serie"^] 
+| ASA r2-Systeme | link:https://docs.netapp.com/us-en/ontap-systems/asa-r2/index.html["ASA r2 Systemdokumentation"^] 
 |===
 Konsultieren Sie die https://www.netapp.com/data-storage/disk-shelves-storage-media/["Dokumentation der Platten-Shelfs und Storage-Medien von NetApp"^] Und https://hwu.netapp.com/["NetApp Hardware Universe"^] Weitere Informationen zu den Festplatten-Shelfs und zu unterstützten Platten-Shelfs für jedes Storage-Controller-Modell
 
