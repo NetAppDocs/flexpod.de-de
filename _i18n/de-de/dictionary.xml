@@ -279,7 +279,6 @@
   <block id="d3d9446802a44259755d38e6d163e820" category="cell">10</block>
   <block id="254f642527b45bc260048e30704edb39" category="cell">Konfiguration</block>
   <block id="1945ffc106a2a99fdaa0b14de9d5fcd2" category="cell">70 TB</block>
-  <block id="767945ca8f676ff25ce389fce1df6c41" category="summary">Cisco leistet einen erheblichen Beitrag zum Design und der Architektur von FlexPod Express und steuert die Computing- und Networking-Schichten der Lösung.</block>
   <block id="ae19f05a830d151c2615c3f564dbf6e4" category="paragraph">Cisco leistet einen erheblichen Beitrag zum Design und der Architektur von FlexPod Express und steuert die Computing- und Networking-Schichten der Lösung. In diesem Abschnitt werden die Cisco Komponenten UCS und Cisco Nexus beschrieben, die für FlexPod Express verfügbar sind.</block>
   <block id="83842e9d3448fa9b32e931956ae716a9" category="section-title">Lizenzoptionen für Cisco Support</block>
   <block id="107b85601e13443e848d96d910bee735" category="summary">Diese Seite bietet eine Einführung in die Verwendung von FlexPod mit SAP HANA und anderen SAP-Anwendungen.</block>
@@ -8564,4 +8563,6 @@
   <block id="22d05c38a6e8032e35e9ff8d6b826ee0" category="inline-link-macro">ASA r2 Systemdokumentation</block>
   <block id="5a043bdfd29a9c2a632078901fc0d525" category="cell"><block ref="5a043bdfd29a9c2a632078901fc0d525" category="inline-link-macro-rx"></block></block>
   <block id="a04fde0f303f9cefcbd34e8be1810d1e" category="paragraph">Akademische medizinische Zentren und andere Organisationen im Gesundheitswesen und den Lebenswissenschaften sind auf einem guten Weg, Exzellenzzentren (COE) in der Genomwissenschaft zu etablieren. Laut Dr. Charlie Gersbach, Dr. Greg Crawford und Dr. Tim E Reddy von der Duke University „wissen wir, dass Gene nicht durch einen einfachen binären Schalter ein- oder ausgeschaltet werden, sondern dass dies das Ergebnis mehrerer Genregulationsschalter ist, die zusammenwirken. “ Außerdem stellten sie fest, dass „keiner dieser Teile des Genoms isoliert funktioniert. Das Genom ist ein sehr komplexes Geflecht, das die Evolution gewoben hat“ (<block ref="7e5e4c153f3bad20a8e4230a913e554e" category="inline-link-rx"></block>).</block>
+  <block id="a9100704d09dc0243e72fa3e969a3376" category="doc">Übersicht der Bereitstellungsverfahren</block>
+  <block id="c94f9bfe6b4fcd272eb296a929c3be2f" category="summary">Cisco steuert die Rechen- und Netzwerkschichten des FlexPod Express Designs und der Architektur bei, einschließlich UCS Servern und Nexus Switches.</block>
 </blocks>

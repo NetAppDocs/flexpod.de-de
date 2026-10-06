@@ -10,7 +10,7 @@ summary: Die folgenden Informationen beschreiben die Softwareversionsempfehlunge
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./../media/
+:imagesdir: ../media/
 
 
 [role="lead"]
