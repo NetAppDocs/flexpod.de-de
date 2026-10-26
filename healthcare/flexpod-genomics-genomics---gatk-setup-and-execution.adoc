@@ -158,7 +158,7 @@ Wir haben die BAM-Dateien und die entsprechenden Index-, Wörterbuch- und Refere
 
 Cromwell ist eine Open-Source-Engine, die auf wissenschaftliche Workflows ausgerichtet ist und Workflow-Management ermöglicht. Der Cromwell Motor kann in zwei laufen https://cromwell.readthedocs.io/en/stable/Modes/["Modi"^], Servermodus oder ein Einzelworkflowmodus. Das Verhalten des Cromwell-Motors kann mit dem gesteuert werden https://github.com/broadinstitute/cromwell/blob/develop/cromwell.example.backends/cromwell.examples.conf["Cromwell Engine-Konfigurationsdatei"^].
 
-* *Servermodus.* aktiviert https://cromwell.readthedocs.io/en/stable/api/RESTAPI/["Rest-konforme"^] Ausführung von Workflows in Cromwell Engine.
+* *Servermodus.* Ermöglicht https://cromwell.readthedocs.io/en/stable/Modes/["Rest-konforme"^] die Ausführung von Workflows in der Cromwell Engine.
 * *Run-Modus.* der Run-Modus eignet sich am besten zur Ausführung einzelner Workflows in Cromwell, https://cromwell.readthedocs.io/en/stable/CommandLine/["ref"^] Für einen vollständigen Satz verfügbarer Optionen im Run-Modus.
 
 
